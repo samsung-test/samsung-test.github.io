@@ -4,7 +4,6 @@ environment: production
 permalink: /:title
 markdown: kramdown
 highlighter: pygments
-docsVersion: docs
 exclude:
 - .gitignore
 - README.md
