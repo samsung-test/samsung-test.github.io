@@ -6,9 +6,7 @@
 	{% include head.html %}
 </head>
 <body>
- {{content}}
- {{site.docsVersion}}
- <h1>version landing page</h1>
+ <h1>version landing page -  {{site.docsVersion}}</h1>
  <ul>
 	{% assign pages = site.pages %}
 	{% for page in pages %}
