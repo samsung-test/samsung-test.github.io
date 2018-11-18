@@ -21,6 +21,7 @@ jobs:
           git config --global user.email $GITHUB_USER_EMAIL
           git config --global user.name $GITHUB_USER_NAME
           bundle exec jekyll build
+          mkdir ../output
           cp -r _site/* ../output
           git checkout _config.yml
           git checkout master
@@ -29,7 +30,7 @@ jobs:
           if [ -f index.html ]; then
            rm index.html
           fi
-          cp -r ../output ./
+          cp -rf ../output/* ./
           git add -A
           git commit -m "update"
           git push origin master
