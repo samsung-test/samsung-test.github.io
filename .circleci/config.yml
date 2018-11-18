@@ -26,7 +26,9 @@ jobs:
           git checkout master
           rm -rf css/
           rm -rf js/
-          rm index.html
+          if [ -f index.html ]; then
+           rm index.html
+          fi
           cp -r ../output ./
           git add -A
           git commit -m "update"
