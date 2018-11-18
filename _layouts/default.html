@@ -1,5 +1,17 @@
 ---
 ---
-{{ content }}
+<!DOCTYPE html>
+<html>
+<head>
+	{% include head.html %}
+</head>
+<body>
+ {{content}}
+ {{site.docsVersion}}
+ <div class="widgetLatestVersionNotification"></div>
+<div id="widgetOldVersions"></div>
+<div id="widgetVersionSwitcher"></div>
+</body>
+</html>
 
-{{site.docsVersion}}
+
