@@ -14,25 +14,20 @@ jobs:
           fingerprints:
             - $GITHUB_SSH_FINGERPRINT
             
-      # Configure Git 
-      - type: shell
-        name: Configure git
-        command: |
-          git config --global user.email $GITHUB_USER_EMAIL
-          git config --global user.name $GITHUB_USER_NAME
-      
       # Download code from staging
       - type: shell
         name: Download code from staging
         command: |
-          echo "docsVersion: '"$CIRCLE_BRANCH"'" >> _config.yml
+          git config --global user.email $GITHUB_USER_EMAIL
+          git config --global user.name $GITHUB_USER_NAME
           bundle exec jekyll build
-          cp _site ../output
+          cp -r _site ../output
+          git checkout _config.yml
           git checkout master
           rm -rf css/
           rm -rf js/
           rm index.html
-          cp ../output ./
+          cp -r ../output ./
           git add -A
           git commit -m "update"
           git push origin master
