@@ -1,7 +1,7 @@
 # Site settings
 title: Docs Test
 environment: production
-permalink: /:title
+permalink: /:title/
 markdown: kramdown
 highlighter: pygments
 exclude:

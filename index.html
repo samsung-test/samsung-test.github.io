@@ -10,8 +10,9 @@
  {{site.docsVersion}}
  <h1>version landing page</h1>
  <ul>
-	{% for post in site.pages %}
-		<li><a href="{{site.docsVersion}}/{{post.url}}">{{post.title}}</a></li>
+	{% assign pages = site.pages %}
+	{% for page in pages %}
+		<li><a href="{{site.docsVersion | remove_first: "/"}}{{page.url}}">{{page.title}}</a></li>
 	{% endfor %}
  </ul>
  
