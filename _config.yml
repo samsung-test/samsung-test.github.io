@@ -7,6 +7,8 @@ highlighter: pygments
 exclude:
 - .gitignore
 - README.md
+- Gemfile
+- Gemfile.lock
 
 sass:
     sass_dir: css

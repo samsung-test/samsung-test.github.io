@@ -25,7 +25,7 @@ jobs:
           bundle exec jekyll build
           ls
           mkdir ../output
-          cp -r _site ../output
+          cp -r _site/* ../output
           git checkout _config.yml
           git checkout master
           rm -rf $CIRCLE_BRANCH
