@@ -8,6 +8,12 @@
 <body>
  {{content}}
  {{site.docsVersion}}
- version landing page
+ <h1>version landing page</h1>
+ <ul>
+	{% for post in site.posts %}
+		<li><a href="{{site.docsVersion}}/{{post.url}}">{{post.title}}</a></li>
+	{% endfor %}
+ </ul>
+ 
 </body>
 </html>
