@@ -29,7 +29,7 @@ jobs:
           git checkout _config.yml
           git checkout master
           rm -rf $CIRCLE_BRANCH
-          cp ../output $CIRCLE_BRANCH
+          cp -r ../output $CIRCLE_BRANCH
           git add -A
           git commit -m "update"
           git push origin master
