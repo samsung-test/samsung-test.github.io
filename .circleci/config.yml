@@ -26,6 +26,7 @@ jobs:
           ls
           mkdir ../output
           cp -r _site ../output
+          it checkout _config.yml
           git checkout master
           rm -rf $CIRCLE_BRANCH
           cp ../output $CIRCLE_BRANCH
