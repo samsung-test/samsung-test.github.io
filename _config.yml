@@ -1,0 +1,13 @@
+# Site settings
+title: Docs Test
+environment: production
+permalink: pretty
+markdown: kramdown
+highlighter: pygments
+exclude:
+- .gitignore
+- README.md
+
+sass:
+    sass_dir: css
+ 
