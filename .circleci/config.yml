@@ -21,7 +21,7 @@ jobs:
           git config --global user.email $GITHUB_USER_EMAIL
           git config --global user.name $GITHUB_USER_NAME
           bundle exec jekyll build
-          cp -r _site ../output
+          cp -r _site/* ../output
           git checkout _config.yml
           git checkout master
           rm -rf css/
