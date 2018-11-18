@@ -1,0 +1,52 @@
+version: 2
+jobs:
+  version-prod:
+    working_directory: /project/workspace/
+    docker:
+      - image: lakhanmandloi/docker-ubuntu-ruby-python-npm:2.0
+    steps:
+    
+      # Checkout
+      - checkout
+          
+      # Add SSH Key   
+      - add_ssh_keys:
+          fingerprints:
+            - $GITHUB_SSH_FINGERPRINT
+            
+      # Configure Git 
+      - type: shell
+        name: Configure git
+        command: |
+          git config --global user.email $GITHUB_USER_EMAIL
+          git config --global user.name $GITHUB_USER_NAME
+      
+      # Download code from staging
+      - type: shell
+        name: Download code from staging
+        command: |
+          echo "docsVersion: '"$CIRCLE_BRANCH"'" >> _config.yml
+          bundle exec jekyll build
+          cp _site ../output
+          git checkout master
+          rm -rf css/
+          rm -rf js/
+          rm index.html
+          cp ../output ./
+          git add -A
+          git commit -m "update"
+          git push origin master
+           
+          
+workflows:
+  version: 2
+  version-build-deploy:
+    jobs:
+      - version-prod:
+          filters:
+            branches:
+              ignore:
+                - master
+                - toc
+ 
+
