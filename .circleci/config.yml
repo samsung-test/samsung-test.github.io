@@ -45,8 +45,7 @@ workflows:
       - version-prod:
           filters:
             branches:
-              ignore:
-                - master
+              only:
                 - toc
  
 
