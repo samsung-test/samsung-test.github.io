@@ -1,9 +1,10 @@
 # Site settings
 title: Docs Test
 environment: production
-permalink: pretty
+permalink: /:title
 markdown: kramdown
 highlighter: pygments
+docsVersion: docs
 exclude:
 - .gitignore
 - README.md
