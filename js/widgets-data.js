@@ -16,7 +16,7 @@ var widgetsData = {
          "latest":false,
          "published":true
       },
-      {  docs
+      {
          "title":"1.8",
          "branch":"1.8",
          "desc":"",
