@@ -2,4 +2,4 @@
 title: B
 layout: default
 ---
-#This is page B
+# This is page B
