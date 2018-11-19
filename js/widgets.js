@@ -6,7 +6,11 @@ latestVersion = widgetsData.versions.filter(function(version){
 });
 currentVersion = $('#docsVersion').attr("content");
 currentVersionData = widgetsData.versions.find( version => version.title === currentVersion);
-console.log(currentVersionData);
+
 $(function(){
 	$("#templates").load("/js/templates.html"); 
 });
+console.log('published version',publishedVersions);
+console.log('latest version',latestVersion);
+console.log('current version',currentVersionData);
+//console.log('current url',currentUrl);
