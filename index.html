@@ -10,12 +10,12 @@
  <ul>
 	{% assign pages = site.pages %}
 	{% for page in pages %}
-		<li><a href="{{site.docsVersion | remove_first: "/"}}{{page.url}}">{{page.title}}</a></li>
+		<li><a href="{{page.url | remove_first: "/"}}">{{page.title}}</a></li>
 	{% endfor %}
  </ul>
 	
 	Hi,
-	This is 1.8 ..
+	This is {{site.docsVersion}}.. This is coming from {{site.docsVersion}} branch
  
 </body>
 </html>
