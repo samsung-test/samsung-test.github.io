@@ -9,6 +9,14 @@ var widgetsData = {
          "published":true
       },
       {  
+         "title":"1.10",
+         "branch":"1.10",
+         "desc":"",
+         "releaseDate":"21st Nov",
+         "latest":false,
+         "published":true
+      },
+      {  
          "title":"1.9",
          "branch":"1.9",
          "desc":"",
