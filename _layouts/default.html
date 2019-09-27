@@ -1,20 +1,23 @@
 ---
 ---
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	{% include head.html %}
 </head>
 <body>
-  <a href="/">Homepage URL</a>
-  <h1>Version - {{site.docsVersion}} </h1>
-  {{content}}
- <p>Hi, This is {{site.docsVersion}}.. This is coming from {{site.docsVersion}} branch </p>
- <h4>Widgets are - </h4>
- <div id="templates"></div>
- <div id="widgetOldVersions"></div>
- <div id="widgetVersionSwitcher"></div>
- <div class="widgetLatestVersionNotification"></div>
+    <div class="scroller">
+        {% include header.html %}
+        {{content}}
+        {% include footer.html %}
+    </div>
+    {% include foot.html %}
+    <a href="/">Homepage URL</a>
+   <p>Hi, This is {{site.docsVersion}}.. This is coming from {{site.docsVersion}} branch </p>
+   <div id="templates"></div>
+   <div id="widgetOldVersions"></div>
+   <div id="widgetVersionSwitcher"></div>
+   <div class="widgetLatestVersionNotification"></div>
 </body>
 </html>
 
