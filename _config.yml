@@ -5,6 +5,7 @@ permalink: pretty
 markdown: kramdown
 highlighter: pygments
 docsVersion: docs
+theme: jekyll-theme-cayman
 exclude:
 - .gitignore
 - README.md
