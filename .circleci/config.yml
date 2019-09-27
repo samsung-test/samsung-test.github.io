@@ -30,6 +30,7 @@ jobs:
           rm -rf fonts/
           rm -rf images/
           rm -rf vendor/
+          rm -rf _site/
 
           if [ -f index.html ]; then
            rm index.html
