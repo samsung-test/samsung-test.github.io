@@ -24,12 +24,14 @@ jobs:
           echo "docsVersion: '"$CIRCLE_BRANCH"'" >> _config.yml
           bundle exec jekyll build
           ls
+          rm -rf ../output
           mkdir ../output
           cp -r _site/* ../output
           git checkout _config.yml
           git checkout master
           rm -rf $CIRCLE_BRANCH
           cp -r ../output $CIRCLE_BRANCH/
+          rm -rf _site/
           git add -A
           git commit -m "update"
           git push origin master
