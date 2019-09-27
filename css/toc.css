@@ -1,1 +1,119 @@
-.landing-tizen .nav.side-menu{padding-bottom:20px;background:#f7f7f7;position:inherit}.landing-tizen .nav.side-menu>li>a{padding:10px 20px 10px 30px!important;font-size:16px;background:none;position:relative;margin:0}.landing-tizen .nav.side-menu>li>a:focus,.landing-tizen .nav.side-menu>li>a:hover{background:#f0f2f3;color:#2c84b9}.landing-tizen .nav.side-menu>li>a.open.active{color:#2c84b9}.landing-tizen .td-tocs{padding-left:0;font-size:14px;display:none}.landing-tizen .td-tocs li a{display:block;color:inherit;text-decoration:none!important;padding:0;position:relative;background:none;line-height:1.2;padding:5px 0;padding-right:20px!important}.landing-tizen .td-tocs li a:focus,.landing-tizen .td-tocs li a:hover{background:#f0f2f3;color:#2c84b9}.landing-tizen .td-tocs li a.open.active{color:#2c84b9}.landing-tizen .td-tocs.depth-1>li>a{padding-left:50px!important}.landing-tizen .td-tocs.depth-2>li>a{padding-left:70px!important}.landing-tizen .td-tocs.depth-3>li>a{padding-left:90px!important;font-family:museosans-300;font-size:13px}.landing-tizen .td-tocs.depth-4>li>a{padding-left:110px!important;font-family:museosans-300;font-size:13px}.landing-tizen .td-tocs.depth-5>li>a{padding-left:130px!important;font-family:museosans-300;font-size:13px}.landing-tizen .td-tocs.depth-6>li>a{padding-left:150px!important;font-family:museosans-300;font-size:13px}.landing-tizen .td-tocs.depth-3>li>a>.arrow,.landing-tizen .td-tocs.depth-4>li>a>.arrow,.landing-tizen .td-tocs.depth-5>li>a>.arrow,.landing-tizen .td-tocs.depth-6>li>a>.arrow{width:16px;height:16px}.landing-tizen .nav.side-menu>li.open>a.hasChild+.td-tocs{display:block}.landing-tizen .td-tocs>li{font-size:inherit}.landing-tizen .td-tocs>li>a.active+.td-tocs{display:block}.landing-tizen .nav.side-menu>li>a>.arrow,.landing-tizen .td-tocs>li>a>.arrow{float:right;content:url(/images/btn_lnb_arrow_open.png);margin-top:3px}.landing-tizen .nav.side-menu>li.active>a>.arrow,.landing-tizen .nav.side-menu>li.open>a>.arrow,.landing-tizen .td-tocs>li.active>a>.arrow,.landing-tizen .td-tocs>li.open>a>.arrow{float:right;content:url(/images/btn_lnb_arrow_close.png);margin-top:3px}
+.landing-tizen .nav.side-menu {
+    padding-bottom: 20px;
+    background: #f7f7f7;
+    position: inherit
+}
+
+.landing-tizen .nav.side-menu>li>a {
+    padding: 10px 20px 10px 30px !important;
+    font-size: 16px;
+    background: none;
+    position: relative;
+    margin: 0
+}
+
+.landing-tizen .nav.side-menu>li>a:focus,
+.landing-tizen .nav.side-menu>li>a:hover {
+    background: #f0f2f3;
+    color: #2c84b9
+}
+
+.landing-tizen .nav.side-menu>li>a.open.active {
+    color: #2c84b9
+}
+
+.landing-tizen .td-tocs {
+    padding-left: 0;
+    font-size: 14px;
+    display: none
+}
+
+.landing-tizen .td-tocs li a {
+    display: block;
+    color: inherit;
+    text-decoration: none !important;
+    padding: 0;
+    position: relative;
+    background: none;
+    line-height: 1.2;
+    padding: 5px 0;
+    padding-right: 20px !important
+}
+
+.landing-tizen .td-tocs li a:focus,
+.landing-tizen .td-tocs li a:hover {
+    background: #f0f2f3;
+    color: #2c84b9
+}
+
+.landing-tizen .td-tocs li a.open.active {
+    color: #2c84b9
+}
+
+.landing-tizen .td-tocs.depth-1>li>a {
+    padding-left: 50px !important
+}
+
+.landing-tizen .td-tocs.depth-2>li>a {
+    padding-left: 70px !important
+}
+
+.landing-tizen .td-tocs.depth-3>li>a {
+    padding-left: 90px !important;
+    font-family: museosans-300;
+    font-size: 13px
+}
+
+.landing-tizen .td-tocs.depth-4>li>a {
+    padding-left: 110px !important;
+    font-family: museosans-300;
+    font-size: 13px
+}
+
+.landing-tizen .td-tocs.depth-5>li>a {
+    padding-left: 130px !important;
+    font-family: museosans-300;
+    font-size: 13px
+}
+
+.landing-tizen .td-tocs.depth-6>li>a {
+    padding-left: 150px !important;
+    font-family: museosans-300;
+    font-size: 13px
+}
+
+.landing-tizen .td-tocs.depth-3>li>a>.arrow,
+.landing-tizen .td-tocs.depth-4>li>a>.arrow,
+.landing-tizen .td-tocs.depth-5>li>a>.arrow,
+.landing-tizen .td-tocs.depth-6>li>a>.arrow {
+    width: 16px;
+    height: 16px
+}
+
+.landing-tizen .nav.side-menu>li.open>a.hasChild+.td-tocs {
+    display: block
+}
+
+.landing-tizen .td-tocs>li {
+    font-size: inherit
+}
+
+.landing-tizen .td-tocs>li>a.active+.td-tocs {
+    display: block
+}
+
+.landing-tizen .nav.side-menu>li>a>.arrow,
+.landing-tizen .td-tocs>li>a>.arrow {
+    float: right;
+    content: url(/images/btn_lnb_arrow_open.png);
+    margin-top: 3px
+}
+
+.landing-tizen .nav.side-menu>li.active>a>.arrow,
+.landing-tizen .nav.side-menu>li.open>a>.arrow,
+.landing-tizen .td-tocs>li.active>a>.arrow,
+.landing-tizen .td-tocs>li.open>a>.arrow {
+    float: right;
+    content: url(/images/btn_lnb_arrow_close.png);
+    margin-top: 3px
+}
