@@ -1,6 +1,7 @@
 # Site settings
 title: Tizen Docs
 environment: production
+layout: default
 exclude:
 - README.md
 - Gemfile
