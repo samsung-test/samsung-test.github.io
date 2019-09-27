@@ -27,6 +27,9 @@ jobs:
           git checkout master
           rm -rf css/
           rm -rf js/
+          rm -rf fonts/
+          rm -rf images/
+          rm -rf vendor/
           if [ -f index.html ]; then
            rm index.html
           fi
