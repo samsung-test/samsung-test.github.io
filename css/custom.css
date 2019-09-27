@@ -1,1 +1,1136 @@
-@import "discourse_custom.css";@import "../vendor/font-awesome/css/font-awesome.min.css";@import "print.css";@import "codehilite.css";@import "toc.css";:root{--card-width:210px;--card-height:410px;--card-focus-width:260px;--card-focus-height:450px}.container>.navbar-header{margin-left:0;padding-left:0}.container>.navbar-right{margin-right:48px}body{font-family:museosans-100}h1{font-family:museosans-700}h2{font-family:museosans-500}.scroller{max-height:100vh}.portal-main .navbar-nav>li.active>a,.portal-main .navbar-nav>li.active>a:hover,.portal-main .navbar-nav>li.navbar-divisor,.portal-main .navbar-nav>li>a,.portal-main .navbar-nav>li>a:hover,.portal-main .navbar a.navbar-brand,.portal-main .navbar a.navbar-brand:hover{color:#fff;border-color:#fff}.portal-main .navbar{background-color:transparent}.portal-main .navbar-nav>li.active>a,.portal-main .navbar-nav>li>a:hover{border-bottom:2px solid #fff}.carousel-caption p.banner-title{font-family:museosans-700;font-size:84px;text-shadow:none}.carousel-caption p.banner-body{font-family:museosans-500;font-size:28px;text-shadow:none}.btn-transparent{color:#fff;background-color:transparent;font-family:museosans-700;font-size:16px;border:2px solid #fff}.btn-docs{background-color:#56c4d8;border:2px solid #56c4d8}.btn-dashboard,.btn-docs{margin-top:30px;color:#fff;font-family:museosans-700;font-size:16px}.btn-dashboard{background-color:#567bd8;border:2px solid #567bd8}.btn-craftroom{margin-top:30px;color:#fff;background-color:#56a5d8;font-family:museosans-700;font-size:16px;border:2px solid #56a5d8}.feature-card-inner{width:180px;text-align:center;margin:20px auto auto;word-wrap:break-word}.feature-card{display:inline-table;padding:10px;text-align:center;margin:auto 5px;vertical-align:middle;box-shadow:0 4px 8px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);font-family:museosans-300;font-size:14px;width:var(--card-width);height:var(--card-height)}.feature-card,.feature-card.hover,.feature-card:hover{-webit-transition-duration:.5s;transition-duration:.5s}.feature-card.hover,.feature-card:hover{width:var(--card-focus-width);height:var(--card-focus-height)}.feature-card-top{height:20px;background-color:#ddd;margin:-10px}.feature-card-title{font-family:museosans-700;font-size:18px}.feature-card:hover .feature-card-top{background-image:url(../images/feature_card_top.png)}.feature-card-link{text-align:right;display:none;font-family:museosans-700}.feature-card:hover .feature-card-link{display:inherit}.feature-card-container{text-align:center;margin:0 15px;height:calc(var(--card-focus-height) + 50px)}.feature-card-inner>h2{font-family:museosans-700}.feature-card-inner>p{font-family:museosans-300}.news-feed{background-color:#f1f1f1;padding-bottom:95px;margin:0 15px}.news-feed-main-title{text-align:center;margin-top:90px;margin-bottom:70px;font-family:museosans-700;font-size:42px}.news-feed-title{margin-top:50px;margin-bottom:57px;font-family:museosans-500;font-size:23px}.news-feed-body{font-family:museosans-300;font-size:14px;color:#444;margin-bottom:34px}.news-feed-card{background-color:#fff;width:560px;height:466px;display:inline-table;margin:auto 20px auto 5px}.news-feed-card-body{display:table-cell}.news-feed-card-inner{display:table;padding:0 52px 52px 30px}.news-feed-card-more-btn{float:right;width:0;height:0;background-color:transparent;border-bottom:26px solid #85d2e0;border-left:26px solid #85d2e0;border-right:26px solid #f4f4f4;border-top:26px solid #f4f4f4}.news-feed-card-more-btn-plus{margin-left:-23px;margin-top:-23px}.news-feed-card-more-btn-plus a{color:#fff;font-family:museosans-700;font-size:40px}.news-feed-card-more-btn-plus a:hover{text-decoration:none}.news-feed-avatar{display:table-cell;width:70px}.news-feed-avatar>img{margin-top:20px}.news-feed-author{font-family:museosans-300;font-size:14px;color:#999}.news-feed-more{float:right;margin-top:37px}.footer,body{background-color:#fff}.footer{border-top:1px solid #e5e5e5;padding:0 48px 0 40px;border:none;font-family:museosans-700;font-size:16px;height:128px}.footer .family-sites{padding-top:34px;float:right}.footer .family-sites>a{color:#333}.footer .family-sites>a:hover{color:#56c4d8}.footer .outer-links{padding-top:25px;margin-right:-30px;float:right}.footer .outer-links .item{margin-right:30px;display:inline-block;font-family:museosans-300;font-size:14px;color:#333}.footer .outer-links .item>a{color:#333}.footer .outer-links .item>a:hover{font-family:museosans-300;color:#56c4d8}.footer .outer-links .item img{margin-right:10px}.footer .divider{display:inline-block;margin:auto 30px;height:13px;border-left:1px solid rgba(51,51,51,.35)}.footer .copyright{font-family:museosans-500;font-size:13px;line-height:22px;color:#555;float:left;text-align:left;margin-top:37px}.landing-top{background-image:url(../images/img_docs_banner_bg.png);height:500px}.landing-top .top-title{font-family:museosans-700;font-size:48px;color:#fff;margin-top:140px;margin-bottom:14px;margin-left:26px;width:515px}.landing-top .top-subtitle{font-family:museosans-700;font-size:32px;color:#000}.landing-top .body{font-family:museosans-500;font-size:18px;line-height:24px;color:#fff;margin-left:26px;width:515px}.landing-top .landing-image-right{float:right;width:590px;margin-top:90px;margin-left:46px}.landing-top .landing-image-left{float:left;width:590px}.landing-middle{background-color:#fff;width:100%;text-align:center}.landing-middle .container{padding:0 35px 65px 30px}.landing-middle .landing-middle-main-title{font-family:museosans-700;font-size:40px;color:#000;text-align:center;margin-top:61px;margin-bottom:59px}.landing-middle .landing-card{width:459px;height:261px;display:inline-block;margin:22px;display:inline-table;box-shadow:3px 3px 1px rgba(0,0,0,.15)}.landing-middle .landing-card .landing-card-img{display:table-cell;width:120px}.landing-middle .landing-card .landing-card-body{display:table-cell;position:relative}.landing-middle .landing-card .landing-card-body .title{font-family:museosans-700;font-size:20px;color:#333;margin-top:40px;margin-left:10px;text-align:left}.landing-middle .landing-card .landing-card-body .body{font-family:museosans-300;font-size:14px;line-height:24px;color:#555;margin-left:10px;text-align:left}.landing-middle .landing-card .landing-card-body .landing-card-link{font-family:museosans-700;font-size:14px;color:#56c4d8;text-align:right;margin-right:36px;position:absolute;bottom:25px;right:36px}.moving-arrow a .img-normal{visibility:visible;vertical-align:middle;margin-left:6px}.moving-arrow a .img-active{visibility:hidden;vertical-align:middle;margin-left:6px}.moving-arrow a:hover{text-decoration:none;color:#337ab7;margin-left:6px}.moving-arrow a:hover .img-normal{visibility:hidden;vertical-align:middle;margin-left:6px}.moving-arrow a:hover .img-active{vertical-align:middle;visibility:visible;margin-left:6px;transform:translateX(5px);transition-duration:.5s}#circle{width:2px;height:2px;border-radius:50%;display:inline-block;background:#000;vertical-align:middle;text-align:left}.landing-tizen{background-color:#fff;width:100%;padding-top:83px;min-height:854px}.landing-tizen .container{width:100%;padding:0;display:table}.landing-tizen .container .row{height:100%;display:-ms-inline-flexbox;display:inline-flex;margin:0}.landing-tizen .body{width:1050px;margin-top:30px;margin-left:35px;display:inline-block;text-align:left}.landing-tizen .body h1{font-family:museosans-700;font-size:36px}.landing-tizen .body h2{font-family:museosans-500;font-size:24px}.landing-tizen .body h3{font-family:museosans-500;font-size:22px}.landing-tizen .body h4,.landing-tizen .body h5,.landing-tizen .body h6{font-family:museosans-500;font-size:20px}.landing-tizen .body p,.landing-tizen .body ul li{font-family:museosans-300;font-size:14px;line-height:25px;text-align:inherit;color:#333}.landing-tizen .container .print-btn{width:110px;height:44px;margin-bottom:80px;border-radius:6px;font-family:museosans-700;font-size:14px;color:#fff;text-align:center;background-color:#56a5d8;float:right}.landing-tizen .container .print-btn:hover{background-color:#1a689b}.nav.side-menu{background-color:#f1f1f1;display:inline-block;vertical-align:top;padding-top:15px;overflow-y:auto;height:100%;width:384px;position:-webkit-sticky;position:sticky;top:83px}.nav.side-menu>li{width:384px;font-family:museosans-500;font-size:16px;color:#555}.nav.side-menu>li>a,.nav.side-menu>li>a:focus{padding:15px 32px 15px 40px;font-family:museosans-500;font-size:16px;color:#555}.nav.side-menu>li>a:hover{background-color:hsla(216,6%,84%,.3)}.nav.side-menu>li.active>a,.nav.side-menu>li.active>a:focus{background-color:hsla(216,6%,84%,.6);padding-left:34px;border-left:6px solid #56c4d8}.nav.side-menu>li.active>a:hover{background-color:hsla(216,6%,84%,.3)}.nav.side-menu>li>a>.arrow{display:inline-block;float:right;margin-top:3px}.nav.side-menu>li>a>.arrow:after{content:url(../images/btn_lnb_arrow_open.png)}.nav.side-menu>li.open>a>.arrow{display:inline-block;float:right;content:url(../images/btn_lnb_arrow_close.png);margin-top:3px}.nav.side-menu>li span.fa{float:right}.nav.side-menu>li span.fa-chevron-down:before{content:url(../images/btn_lnb_arrow_open.png)}.nav.side-menu>li span.fa-chevron-up:before{content:url(../images/btn_lnb_arrow_close.png)}.nav.side-menu li .child_menu{display:none;background-color:#f1f1f1;margin:8px 0 16px}.nav.side-menu li.active .child_menu{display:inherit}.nav.side-menu li .child_menu>li>a,.nav.side-menu li .child_menu>li>a:focus{color:#555;font-family:museosans-500;font-size:16px;height:48px;padding:13px 0 13px 56px}.nav.side-menu li .child_menu>li>a:hover{color:#555;font-family:museosans-500}.nav.side-menu .child_menu>li.active>a,.nav.side-menu .child_menu>li.active>a:focus{background-color:#f1f1f1;font-family:museosans-500;font-size:16px;color:#56a5d8}.nav.side-menu .child_menu>li.active.open>a,.nav.side-menu .child_menu>li.active.open>a:focus{background-color:#f1f1f1;font-family:museosans-500;font-size:16px;color:#555}.nav.side-menu .child_child_menu{background-color:#f1f1f1;padding:0}.nav.side-menu .child_child_menu>li>a{color:#555;font-family:museosans-300;font-size:15px;height:48px;padding:13px 0 13px 5px;display:inline-block}.nav.side-menu .child_child_menu>li:hover,.nav.side-menu .child_child_menu>li>a:hover{font-family:museosans-500;background-color:#f1f1f1}.nav.side-menu .child_child_menu>li.active>a{font-family:museosans-500;font-size:15px;color:#56a5d8}.nav.side-menu .child_child_menu>li:first-child .img-lnb-divider{content:url(../images/img_lnb_divider_01.png);margin-top:-30px;margin-left:63px;margin-right:5px;display:inline-block}.nav.side-menu .child_child_menu>li .img-lnb-divider{content:url(../images/img_lnb_divider_02.png);margin-top:-53px;margin-left:63px;margin-right:5px;display:inline-block}.carousel-indicators li{width:8px;height:8px;border-radius:8px;background-color:hsla(0,0%,100%,.5);border:none;margin:auto 12px;vertical-align:middle}.carousel-indicators .active{margin:auto 10px;vertical-align:middle}.docs_row{left:0;margin-left:0}.docs_body{left:0;margin-left:452px}.breadcrumb{padding:0;margin-bottom:14px;background-color:#fff;font-family:museosans-500;font-size:15px;color:#555}.breadcrumb>li+li:before{padding:0 8px;content:url(../images/img_navi_arrow_default.png)}.breadcrumb>li:nth-last-child(2)+li:before{padding:0 8px}.breadcrumb a{color:#56a5d8}.docs-toc-row{display:-ms-inline-flexbox;display:inline-flex;padding-right:15px;padding-left:15px;margin-top:50px;margin-left:30px;margin-right:50px}.docs-toc-row,.toc{float:right;width:300px}.toc{color:#555;font-family:museosans-500;position:fixed}.toc .toc-ul-root{border:1px solid #ddd;border-radius:4px}.toc .toc-ul-root.nav.toc-top{border:none}.toc.affix{position:static;max-height:72%;overflow:auto}.toc .nav>.active :focus>a,.toc .nav>.active:hover>a,.toc .nav>.active>a{border-right:2px solid #428bca}.toc .nav .nav{display:block;margin-bottom:8px}.toc .nav .nav>li>a{font-size:90%}.toc .toc-heading{color:#333;background-color:#f5f5f5;border-bottom:1px solid #ddd;font-family:museosans-700;font-size:18px}.docs-toc-row .nav.toc-top li a:focus,.docs-toc-row .nav.toc-top li a:hover{background-color:#fff}.toc .toc-link-2{padding-left:25px}.toc .toc-link-3{padding-left:50px}.toc .toc-link-4{padding-left:75px}.toc .toc-link-5{padding-left:100px}.toc .toc-link-6{padding-left:125px}@media screen and (min-width:992px) and (min-height:700px){.toc.affix{position:fixed}.toc .nav>.active>ul{display:block}}.sampletab{overflow:visible;display:block;width:100%;border-bottom:1px solid #dee2e6;margin-bottom:25px;margin-top:25px}.sampletab .tablinks{border:1px solid transparent;border-top-left-radius:4px;border-top-right-radius:4px;padding:10px 25px;background:none;color:#56a5d8;font-size:15px;font-weight:700;box-shadow:none!important;outline:none!important}.sampletab .tablinks.active{color:#495057;background-color:#fff;border-color:#dee2e6 #dee2e6 #fff;margin-bottom:0;position:relative;overflow:visible}.sampletab .tablinks.active:after{position:absolute;content:"";bottom:-2px;left:0;width:100%;height:2px;background:#fff}.tabcontent{display:none;margin-bottom:25px}table{margin-top:15px}table,td,th{border:none}table td,table th{padding:16px 20px}table tbody{border-top:1px solid #dee2e6}table td,table th{border-bottom:1px solid #dee2e6}table tr:nth-child(2n){background:none}table tr:hover td{background:#edf9ff}html{position:relative;height:100%}.error-pages .footer{position:absolute;width:100%;bottom:0}.error-pages{padding-top:82px;padding-bottom:128px}.error-pages .header-404{padding:0 0 37px;border-bottom:1px solid #e5e5e5}.error-pages .header-404 h1{margin:0;padding:0;color:#d6d6d6;font-size:120px;font-family:museosans-700,sans-serif;white-space:nowrap;line-height:100%}.error-pages .header-404 h2{margin:5px 0 0;padding:0;color:#2d2d2d;font-size:24px;font-family:museosans-500,sans-serif}.error-pages .error-page-wrapper{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center}.error-pages .desc-404 ul{padding:0 0 0 20px;margin:0}.error-pages .desc-404,.error-pages .desc-404 li{margin-top:25px}.error-pages .desc-404 p{margin:0 0 4px;padding:0;font-family:museosans-500,sans-serif;color:#494949;font-size:18px}.hljs{display:block;padding:.5em;color:#333;overflow-x:auto}.hljs-comment,.hljs-meta{color:#969896}.hljs-emphasis,.hljs-quote,.hljs-string,.hljs-strong,.hljs-template-variable,.hljs-variable{color:#df5000}.hljs-keyword,.hljs-selector-tag,.hljs-type{color:#a71d5d}.hljs-attribute,.hljs-bullet,.hljs-literal,.hljs-symbol{color:#0086b3}.hljs-name,.hljs-section{color:#63a35c}.hljs-tag{color:#333}.hljs-attr,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-selector-pseudo,.hljs-title{color:#795da3}.hljs-addition{color:#55a532;background-color:#eaffea}.hljs-deletion{color:#bd2c00;background-color:#ffecec}.hljs-link{text-decoration:underline}table{overflow:auto;display:block;width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;-ms-overflow-style:-ms-autohiding-scrollbar}blockquote.caution,blockquote.note,blockquote.tip{color:#494949;margin:.8em 0;overflow:auto;padding:20px 23px;width:auto}blockquote.note{background-color:#def4ff;border-left:2px solid #62c1f0}blockquote.caution{background-color:#ffefe8;border-left:2px solid #f2a88f}blockquote.tip{background-color:#fff8de;border-left:2px solid #f5d473}blockquote *{font-family:MuseoSans-300,Malgun Gothic,Helvetica,Arial,sans-serif;font-size:14px}blockquote strong{font-family:MuseoSans-500,Malgun Gothic,Helvetica,Arial,sans-serif;font-size:16px;font-weight:400}.navbar a.navbar-brand{color:#777;display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center}.navbar a.navbar-brand .brand-docs{font-size:16px;margin-left:7px;color:#141418;font-family:MuseoSans-700,Malgun Gothic,Helvetica,Arial,sans-serif;text-transform:none}.navbar-default .navbar-nav>li>a{color:#141418!important}
+@import "discourse_custom.css";
+@import "../vendor/font-awesome/css/font-awesome.min.css";
+@import "print.css";
+@import "codehilite.css";
+@import "toc.css";
+
+:root {
+    --card-width: 210px;
+    --card-height: 410px;
+    --card-focus-width: 260px;
+    --card-focus-height: 450px
+}
+
+.container>.navbar-header {
+    margin-left: 0;
+    padding-left: 0
+}
+
+.container>.navbar-right {
+    margin-right: 48px
+}
+
+body {
+    font-family: museosans-100
+}
+
+h1 {
+    font-family: museosans-700
+}
+
+h2 {
+    font-family: museosans-500
+}
+
+.scroller {
+    max-height: 100vh
+}
+
+.portal-main .navbar-nav>li.active>a,
+.portal-main .navbar-nav>li.active>a:hover,
+.portal-main .navbar-nav>li.navbar-divisor,
+.portal-main .navbar-nav>li>a,
+.portal-main .navbar-nav>li>a:hover,
+.portal-main .navbar a.navbar-brand,
+.portal-main .navbar a.navbar-brand:hover {
+    color: #fff;
+    border-color: #fff
+}
+
+.portal-main .navbar {
+    background-color: transparent
+}
+
+.portal-main .navbar-nav>li.active>a,
+.portal-main .navbar-nav>li>a:hover {
+    border-bottom: 2px solid #fff
+}
+
+.carousel-caption p.banner-title {
+    font-family: museosans-700;
+    font-size: 84px;
+    text-shadow: none
+}
+
+.carousel-caption p.banner-body {
+    font-family: museosans-500;
+    font-size: 28px;
+    text-shadow: none
+}
+
+.btn-transparent {
+    color: #fff;
+    background-color: transparent;
+    font-family: museosans-700;
+    font-size: 16px;
+    border: 2px solid #fff
+}
+
+.btn-docs {
+    background-color: #56c4d8;
+    border: 2px solid #56c4d8
+}
+
+.btn-dashboard,
+.btn-docs {
+    margin-top: 30px;
+    color: #fff;
+    font-family: museosans-700;
+    font-size: 16px
+}
+
+.btn-dashboard {
+    background-color: #567bd8;
+    border: 2px solid #567bd8
+}
+
+.btn-craftroom {
+    margin-top: 30px;
+    color: #fff;
+    background-color: #56a5d8;
+    font-family: museosans-700;
+    font-size: 16px;
+    border: 2px solid #56a5d8
+}
+
+.feature-card-inner {
+    width: 180px;
+    text-align: center;
+    margin: 20px auto auto;
+    word-wrap: break-word
+}
+
+.feature-card {
+    display: inline-table;
+    padding: 10px;
+    text-align: center;
+    margin: auto 5px;
+    vertical-align: middle;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
+    font-family: museosans-300;
+    font-size: 14px;
+    width: var(--card-width);
+    height: var(--card-height)
+}
+
+.feature-card,
+.feature-card.hover,
+.feature-card:hover {
+    -webit-transition-duration: .5s;
+    transition-duration: .5s
+}
+
+.feature-card.hover,
+.feature-card:hover {
+    width: var(--card-focus-width);
+    height: var(--card-focus-height)
+}
+
+.feature-card-top {
+    height: 20px;
+    background-color: #ddd;
+    margin: -10px
+}
+
+.feature-card-title {
+    font-family: museosans-700;
+    font-size: 18px
+}
+
+.feature-card:hover .feature-card-top {
+    background-image: url(../images/feature_card_top.png)
+}
+
+.feature-card-link {
+    text-align: right;
+    display: none;
+    font-family: museosans-700
+}
+
+.feature-card:hover .feature-card-link {
+    display: inherit
+}
+
+.feature-card-container {
+    text-align: center;
+    margin: 0 15px;
+    height: calc(var(--card-focus-height) + 50px)
+}
+
+.feature-card-inner>h2 {
+    font-family: museosans-700
+}
+
+.feature-card-inner>p {
+    font-family: museosans-300
+}
+
+.news-feed {
+    background-color: #f1f1f1;
+    padding-bottom: 95px;
+    margin: 0 15px
+}
+
+.news-feed-main-title {
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 70px;
+    font-family: museosans-700;
+    font-size: 42px
+}
+
+.news-feed-title {
+    margin-top: 50px;
+    margin-bottom: 57px;
+    font-family: museosans-500;
+    font-size: 23px
+}
+
+.news-feed-body {
+    font-family: museosans-300;
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 34px
+}
+
+.news-feed-card {
+    background-color: #fff;
+    width: 560px;
+    height: 466px;
+    display: inline-table;
+    margin: auto 20px auto 5px
+}
+
+.news-feed-card-body {
+    display: table-cell
+}
+
+.news-feed-card-inner {
+    display: table;
+    padding: 0 52px 52px 30px
+}
+
+.news-feed-card-more-btn {
+    float: right;
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    border-bottom: 26px solid #85d2e0;
+    border-left: 26px solid #85d2e0;
+    border-right: 26px solid #f4f4f4;
+    border-top: 26px solid #f4f4f4
+}
+
+.news-feed-card-more-btn-plus {
+    margin-left: -23px;
+    margin-top: -23px
+}
+
+.news-feed-card-more-btn-plus a {
+    color: #fff;
+    font-family: museosans-700;
+    font-size: 40px
+}
+
+.news-feed-card-more-btn-plus a:hover {
+    text-decoration: none
+}
+
+.news-feed-avatar {
+    display: table-cell;
+    width: 70px
+}
+
+.news-feed-avatar>img {
+    margin-top: 20px
+}
+
+.news-feed-author {
+    font-family: museosans-300;
+    font-size: 14px;
+    color: #999
+}
+
+.news-feed-more {
+    float: right;
+    margin-top: 37px
+}
+
+.footer,
+body {
+    background-color: #fff
+}
+
+.footer {
+    border-top: 1px solid #e5e5e5;
+    padding: 0 48px 0 40px;
+    border: none;
+    font-family: museosans-700;
+    font-size: 16px;
+    height: 128px
+}
+
+.footer .family-sites {
+    padding-top: 34px;
+    float: right
+}
+
+.footer .family-sites>a {
+    color: #333
+}
+
+.footer .family-sites>a:hover {
+    color: #56c4d8
+}
+
+.footer .outer-links {
+    padding-top: 25px;
+    margin-right: -30px;
+    float: right
+}
+
+.footer .outer-links .item {
+    margin-right: 30px;
+    display: inline-block;
+    font-family: museosans-300;
+    font-size: 14px;
+    color: #333
+}
+
+.footer .outer-links .item>a {
+    color: #333
+}
+
+.footer .outer-links .item>a:hover {
+    font-family: museosans-300;
+    color: #56c4d8
+}
+
+.footer .outer-links .item img {
+    margin-right: 10px
+}
+
+.footer .divider {
+    display: inline-block;
+    margin: auto 30px;
+    height: 13px;
+    border-left: 1px solid rgba(51, 51, 51, .35)
+}
+
+.footer .copyright {
+    font-family: museosans-500;
+    font-size: 13px;
+    line-height: 22px;
+    color: #555;
+    float: left;
+    text-align: left;
+    margin-top: 37px
+}
+
+.landing-top {
+    background-image: url(../images/img_docs_banner_bg.png);
+    height: 500px
+}
+
+.landing-top .top-title {
+    font-family: museosans-700;
+    font-size: 48px;
+    color: #fff;
+    margin-top: 140px;
+    margin-bottom: 14px;
+    margin-left: 26px;
+    width: 515px
+}
+
+.landing-top .top-subtitle {
+    font-family: museosans-700;
+    font-size: 32px;
+    color: #000
+}
+
+.landing-top .body {
+    font-family: museosans-500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+    margin-left: 26px;
+    width: 515px
+}
+
+.landing-top .landing-image-right {
+    float: right;
+    width: 590px;
+    margin-top: 90px;
+    margin-left: 46px
+}
+
+.landing-top .landing-image-left {
+    float: left;
+    width: 590px
+}
+
+.landing-middle {
+    background-color: #fff;
+    width: 100%;
+    text-align: center
+}
+
+.landing-middle .container {
+    padding: 0 35px 65px 30px
+}
+
+.landing-middle .landing-middle-main-title {
+    font-family: museosans-700;
+    font-size: 40px;
+    color: #000;
+    text-align: center;
+    margin-top: 61px;
+    margin-bottom: 59px
+}
+
+.landing-middle .landing-card {
+    width: 459px;
+    height: 261px;
+    display: inline-block;
+    margin: 22px;
+    display: inline-table;
+    box-shadow: 3px 3px 1px rgba(0, 0, 0, .15)
+}
+
+.landing-middle .landing-card .landing-card-img {
+    display: table-cell;
+    width: 120px
+}
+
+.landing-middle .landing-card .landing-card-body {
+    display: table-cell;
+    position: relative
+}
+
+.landing-middle .landing-card .landing-card-body .title {
+    font-family: museosans-700;
+    font-size: 20px;
+    color: #333;
+    margin-top: 40px;
+    margin-left: 10px;
+    text-align: left
+}
+
+.landing-middle .landing-card .landing-card-body .body {
+    font-family: museosans-300;
+    font-size: 14px;
+    line-height: 24px;
+    color: #555;
+    margin-left: 10px;
+    text-align: left
+}
+
+.landing-middle .landing-card .landing-card-body .landing-card-link {
+    font-family: museosans-700;
+    font-size: 14px;
+    color: #56c4d8;
+    text-align: right;
+    margin-right: 36px;
+    position: absolute;
+    bottom: 25px;
+    right: 36px
+}
+
+.moving-arrow a .img-normal {
+    visibility: visible;
+    vertical-align: middle;
+    margin-left: 6px
+}
+
+.moving-arrow a .img-active {
+    visibility: hidden;
+    vertical-align: middle;
+    margin-left: 6px
+}
+
+.moving-arrow a:hover {
+    text-decoration: none;
+    color: #337ab7;
+    margin-left: 6px
+}
+
+.moving-arrow a:hover .img-normal {
+    visibility: hidden;
+    vertical-align: middle;
+    margin-left: 6px
+}
+
+.moving-arrow a:hover .img-active {
+    vertical-align: middle;
+    visibility: visible;
+    margin-left: 6px;
+    transform: translateX(5px);
+    transition-duration: .5s
+}
+
+#circle {
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    display: inline-block;
+    background: #000;
+    vertical-align: middle;
+    text-align: left
+}
+
+.landing-tizen {
+    background-color: #fff;
+    width: 100%;
+    padding-top: 83px;
+    min-height: 854px
+}
+
+.landing-tizen .container {
+    width: 100%;
+    padding: 0;
+    display: table
+}
+
+.landing-tizen .container .row {
+    height: 100%;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin: 0
+}
+
+.landing-tizen .body {
+    width: 1050px;
+    margin-top: 30px;
+    margin-left: 35px;
+    display: inline-block;
+    text-align: left
+}
+
+.landing-tizen .body h1 {
+    font-family: museosans-700;
+    font-size: 36px
+}
+
+.landing-tizen .body h2 {
+    font-family: museosans-500;
+    font-size: 24px
+}
+
+.landing-tizen .body h3 {
+    font-family: museosans-500;
+    font-size: 22px
+}
+
+.landing-tizen .body h4,
+.landing-tizen .body h5,
+.landing-tizen .body h6 {
+    font-family: museosans-500;
+    font-size: 20px
+}
+
+.landing-tizen .body p,
+.landing-tizen .body ul li {
+    font-family: museosans-300;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: inherit;
+    color: #333
+}
+
+.landing-tizen .container .print-btn {
+    width: 110px;
+    height: 44px;
+    margin-bottom: 80px;
+    border-radius: 6px;
+    font-family: museosans-700;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    background-color: #56a5d8;
+    float: right
+}
+
+.landing-tizen .container .print-btn:hover {
+    background-color: #1a689b
+}
+
+.nav.side-menu {
+    background-color: #f1f1f1;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 15px;
+    overflow-y: auto;
+    height: 100%;
+    width: 384px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 83px
+}
+
+.nav.side-menu>li {
+    width: 384px;
+    font-family: museosans-500;
+    font-size: 16px;
+    color: #555
+}
+
+.nav.side-menu>li>a,
+.nav.side-menu>li>a:focus {
+    padding: 15px 32px 15px 40px;
+    font-family: museosans-500;
+    font-size: 16px;
+    color: #555
+}
+
+.nav.side-menu>li>a:hover {
+    background-color: hsla(216, 6%, 84%, .3)
+}
+
+.nav.side-menu>li.active>a,
+.nav.side-menu>li.active>a:focus {
+    background-color: hsla(216, 6%, 84%, .6);
+    padding-left: 34px;
+    border-left: 6px solid #56c4d8
+}
+
+.nav.side-menu>li.active>a:hover {
+    background-color: hsla(216, 6%, 84%, .3)
+}
+
+.nav.side-menu>li>a>.arrow {
+    display: inline-block;
+    float: right;
+    margin-top: 3px
+}
+
+.nav.side-menu>li>a>.arrow:after {
+    content: url(../images/btn_lnb_arrow_open.png)
+}
+
+.nav.side-menu>li.open>a>.arrow {
+    display: inline-block;
+    float: right;
+    content: url(../images/btn_lnb_arrow_close.png);
+    margin-top: 3px
+}
+
+.nav.side-menu>li span.fa {
+    float: right
+}
+
+.nav.side-menu>li span.fa-chevron-down:before {
+    content: url(../images/btn_lnb_arrow_open.png)
+}
+
+.nav.side-menu>li span.fa-chevron-up:before {
+    content: url(../images/btn_lnb_arrow_close.png)
+}
+
+.nav.side-menu li .child_menu {
+    display: none;
+    background-color: #f1f1f1;
+    margin: 8px 0 16px
+}
+
+.nav.side-menu li.active .child_menu {
+    display: inherit
+}
+
+.nav.side-menu li .child_menu>li>a,
+.nav.side-menu li .child_menu>li>a:focus {
+    color: #555;
+    font-family: museosans-500;
+    font-size: 16px;
+    height: 48px;
+    padding: 13px 0 13px 56px
+}
+
+.nav.side-menu li .child_menu>li>a:hover {
+    color: #555;
+    font-family: museosans-500
+}
+
+.nav.side-menu .child_menu>li.active>a,
+.nav.side-menu .child_menu>li.active>a:focus {
+    background-color: #f1f1f1;
+    font-family: museosans-500;
+    font-size: 16px;
+    color: #56a5d8
+}
+
+.nav.side-menu .child_menu>li.active.open>a,
+.nav.side-menu .child_menu>li.active.open>a:focus {
+    background-color: #f1f1f1;
+    font-family: museosans-500;
+    font-size: 16px;
+    color: #555
+}
+
+.nav.side-menu .child_child_menu {
+    background-color: #f1f1f1;
+    padding: 0
+}
+
+.nav.side-menu .child_child_menu>li>a {
+    color: #555;
+    font-family: museosans-300;
+    font-size: 15px;
+    height: 48px;
+    padding: 13px 0 13px 5px;
+    display: inline-block
+}
+
+.nav.side-menu .child_child_menu>li:hover,
+.nav.side-menu .child_child_menu>li>a:hover {
+    font-family: museosans-500;
+    background-color: #f1f1f1
+}
+
+.nav.side-menu .child_child_menu>li.active>a {
+    font-family: museosans-500;
+    font-size: 15px;
+    color: #56a5d8
+}
+
+.nav.side-menu .child_child_menu>li:first-child .img-lnb-divider {
+    content: url(../images/img_lnb_divider_01.png);
+    margin-top: -30px;
+    margin-left: 63px;
+    margin-right: 5px;
+    display: inline-block
+}
+
+.nav.side-menu .child_child_menu>li .img-lnb-divider {
+    content: url(../images/img_lnb_divider_02.png);
+    margin-top: -53px;
+    margin-left: 63px;
+    margin-right: 5px;
+    display: inline-block
+}
+
+.carousel-indicators li {
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    background-color: hsla(0, 0%, 100%, .5);
+    border: none;
+    margin: auto 12px;
+    vertical-align: middle
+}
+
+.carousel-indicators .active {
+    margin: auto 10px;
+    vertical-align: middle
+}
+
+.docs_row {
+    left: 0;
+    margin-left: 0
+}
+
+.docs_body {
+    left: 0;
+    margin-left: 452px
+}
+
+.breadcrumb {
+    padding: 0;
+    margin-bottom: 14px;
+    background-color: #fff;
+    font-family: museosans-500;
+    font-size: 15px;
+    color: #555
+}
+
+.breadcrumb>li+li:before {
+    padding: 0 8px;
+    content: url(../images/img_navi_arrow_default.png)
+}
+
+.breadcrumb>li:nth-last-child(2)+li:before {
+    padding: 0 8px
+}
+
+.breadcrumb a {
+    color: #56a5d8
+}
+
+.docs-toc-row {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 50px
+}
+
+.docs-toc-row,
+.toc {
+    float: right;
+    width: 300px
+}
+
+.toc {
+    color: #555;
+    font-family: museosans-500;
+    position: fixed
+}
+
+.toc .toc-ul-root {
+    border: 1px solid #ddd;
+    border-radius: 4px
+}
+
+.toc .toc-ul-root.nav.toc-top {
+    border: none
+}
+
+.toc.affix {
+    position: static;
+    max-height: 72%;
+    overflow: auto
+}
+
+.toc .nav>.active :focus>a,
+.toc .nav>.active:hover>a,
+.toc .nav>.active>a {
+    border-right: 2px solid #428bca
+}
+
+.toc .nav .nav {
+    display: block;
+    margin-bottom: 8px
+}
+
+.toc .nav .nav>li>a {
+    font-size: 90%
+}
+
+.toc .toc-heading {
+    color: #333;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+    font-family: museosans-700;
+    font-size: 18px
+}
+
+.docs-toc-row .nav.toc-top li a:focus,
+.docs-toc-row .nav.toc-top li a:hover {
+    background-color: #fff
+}
+
+.toc .toc-link-2 {
+    padding-left: 25px
+}
+
+.toc .toc-link-3 {
+    padding-left: 50px
+}
+
+.toc .toc-link-4 {
+    padding-left: 75px
+}
+
+.toc .toc-link-5 {
+    padding-left: 100px
+}
+
+.toc .toc-link-6 {
+    padding-left: 125px
+}
+
+@media screen and (min-width:992px) and (min-height:700px) {
+    .toc.affix {
+        position: fixed
+    }
+
+    .toc .nav>.active>ul {
+        display: block
+    }
+}
+
+.sampletab {
+    overflow: visible;
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #dee2e6;
+    margin-bottom: 25px;
+    margin-top: 25px
+}
+
+.sampletab .tablinks {
+    border: 1px solid transparent;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 10px 25px;
+    background: none;
+    color: #56a5d8;
+    font-size: 15px;
+    font-weight: 700;
+    box-shadow: none !important;
+    outline: none !important
+}
+
+.sampletab .tablinks.active {
+    color: #495057;
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff;
+    margin-bottom: 0;
+    position: relative;
+    overflow: visible
+}
+
+.sampletab .tablinks.active:after {
+    position: absolute;
+    content: "";
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff
+}
+
+.tabcontent {
+    display: none;
+    margin-bottom: 25px
+}
+
+table {
+    margin-top: 15px
+}
+
+table,
+td,
+th {
+    border: none
+}
+
+table td,
+table th {
+    padding: 16px 20px
+}
+
+table tbody {
+    border-top: 1px solid #dee2e6
+}
+
+table td,
+table th {
+    border-bottom: 1px solid #dee2e6
+}
+
+table tr:nth-child(2n) {
+    background: none
+}
+
+table tr:hover td {
+    background: #edf9ff
+}
+
+html {
+    position: relative;
+    height: 100%
+}
+
+.error-pages .footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0
+}
+
+.error-pages {
+    padding-top: 82px;
+    padding-bottom: 128px
+}
+
+.error-pages .header-404 {
+    padding: 0 0 37px;
+    border-bottom: 1px solid #e5e5e5
+}
+
+.error-pages .header-404 h1 {
+    margin: 0;
+    padding: 0;
+    color: #d6d6d6;
+    font-size: 120px;
+    font-family: museosans-700, sans-serif;
+    white-space: nowrap;
+    line-height: 100%
+}
+
+.error-pages .header-404 h2 {
+    margin: 5px 0 0;
+    padding: 0;
+    color: #2d2d2d;
+    font-size: 24px;
+    font-family: museosans-500, sans-serif
+}
+
+.error-pages .error-page-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.error-pages .desc-404 ul {
+    padding: 0 0 0 20px;
+    margin: 0
+}
+
+.error-pages .desc-404,
+.error-pages .desc-404 li {
+    margin-top: 25px
+}
+
+.error-pages .desc-404 p {
+    margin: 0 0 4px;
+    padding: 0;
+    font-family: museosans-500, sans-serif;
+    color: #494949;
+    font-size: 18px
+}
+
+.hljs {
+    display: block;
+    padding: .5em;
+    color: #333;
+    overflow-x: auto
+}
+
+.hljs-comment,
+.hljs-meta {
+    color: #969896
+}
+
+.hljs-emphasis,
+.hljs-quote,
+.hljs-string,
+.hljs-strong,
+.hljs-template-variable,
+.hljs-variable {
+    color: #df5000
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-type {
+    color: #a71d5d
+}
+
+.hljs-attribute,
+.hljs-bullet,
+.hljs-literal,
+.hljs-symbol {
+    color: #0086b3
+}
+
+.hljs-name,
+.hljs-section {
+    color: #63a35c
+}
+
+.hljs-tag {
+    color: #333
+}
+
+.hljs-attr,
+.hljs-selector-attr,
+.hljs-selector-class,
+.hljs-selector-id,
+.hljs-selector-pseudo,
+.hljs-title {
+    color: #795da3
+}
+
+.hljs-addition {
+    color: #55a532;
+    background-color: #eaffea
+}
+
+.hljs-deletion {
+    color: #bd2c00;
+    background-color: #ffecec
+}
+
+.hljs-link {
+    text-decoration: underline
+}
+
+table {
+    overflow: auto;
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar
+}
+
+blockquote.caution,
+blockquote.note,
+blockquote.tip {
+    color: #494949;
+    margin: .8em 0;
+    overflow: auto;
+    padding: 20px 23px;
+    width: auto
+}
+
+blockquote.note {
+    background-color: #def4ff;
+    border-left: 2px solid #62c1f0
+}
+
+blockquote.caution {
+    background-color: #ffefe8;
+    border-left: 2px solid #f2a88f
+}
+
+blockquote.tip {
+    background-color: #fff8de;
+    border-left: 2px solid #f5d473
+}
+
+blockquote * {
+    font-family: MuseoSans-300, Malgun Gothic, Helvetica, Arial, sans-serif;
+    font-size: 14px
+}
+
+blockquote strong {
+    font-family: MuseoSans-500, Malgun Gothic, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400
+}
+
+.navbar a.navbar-brand {
+    color: #777;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.navbar a.navbar-brand .brand-docs {
+    font-size: 16px;
+    margin-left: 7px;
+    color: #141418;
+    font-family: MuseoSans-700, Malgun Gothic, Helvetica, Arial, sans-serif;
+    text-transform: none
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #141418 !important
+}
