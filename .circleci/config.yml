@@ -36,6 +36,9 @@ jobs:
            rm index.html
           fi
           cp -rf ../output/* ./
+          LATEST_VERSION=$(<js/latest-version.txt)
+          echo $LATEST_VERSION
+          ln -s $LATEST_VERSION'/' latest
           git add -A
           git commit -m "update"
           git push origin master
