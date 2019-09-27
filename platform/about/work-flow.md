@@ -1,3 +1,7 @@
+---
+title: Tizen Development Workflow
+---
+
 # Tizen Development Workflow
 
 The Tizen development system has 2 main components:
