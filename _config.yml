@@ -1,5 +1,5 @@
 # Site settings
-title: Docs Test
+title: Tizen Docs
 environment: production
 permalink: pretty
 markdown: kramdown
