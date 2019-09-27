@@ -1134,3 +1134,11 @@ blockquote strong {
 .navbar-default .navbar-nav>li>a {
     color: #141418 !important
 }
+.VersionNotification {
+    color: #856404;
+    background-color: #fff3cd;
+    border: 1px solid #fff3cd;
+    padding: 10px 20px;
+    margin: 10px 0 20px 0;
+    border-radius: 5px;
+}
