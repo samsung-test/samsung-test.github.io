@@ -36,12 +36,12 @@
 
     <p>Git introduces the master branch (also known as development branch) during the initialization of a repository, thus the default branch in a repository is the master branch and most developers keep the repository’s most robust and dependable line of development on the master branch.</p>
 
-    <p>In other words, the master branch hosts each project’s full source tree (for example, in C/C++, <code>.h</code>, and <code>makefile</code> files), including the upstream source and any Tizen local changes. Though the master branch can be renamed or even deleted, it is best practice to regard it as mandatory and leave as is.</p>
+    <p>In other words, the master branch hosts each project’s full source tree (for example, in C/C++, <code class="highlighter-rouge">.h</code>, and <code class="highlighter-rouge">makefile</code> files), including the upstream source and any Tizen local changes. Though the master branch can be renamed or even deleted, it is best practice to regard it as mandatory and leave as is.</p>
 
     <blockquote>
       <p><strong>Note</strong></p>
 
-      <p>You are responsible for maintaining the packaging change log within the <code>/packaging</code> folder of each Git tree.</p>
+      <p>You are responsible for maintaining the packaging change log within the <code class="highlighter-rouge">/packaging</code> folder of each Git tree.</p>
     </blockquote>
   </li>
   <li>
@@ -136,7 +136,7 @@
     </ul>
   </li>
   <li>Maintainers approve the patches (“Code-Review +2”) after they pass verification (“Verified +1”) and then merge code changes to the Gerrit repository.</li>
-  <li>Maintainers and developers submit packages to OBS by using the <code>gbs submit</code> command.
+  <li>Maintainers and developers submit packages to OBS by using the <code class="highlighter-rouge">gbs submit</code> command.
     <blockquote>
       <p><strong>Note</strong></p>
 
@@ -155,7 +155,7 @@
   <li>
     <p>Create a tarball.</p>
 
-    <p>Create the tarball using the <code>git-archive</code> command. The <code>/packaging</code> directory must be included in the tarball as well. The tarball version is abstracted from the spec file by <strong>rpmbuild</strong>.</p>
+    <p>Create the tarball using the <code class="highlighter-rouge">git-archive</code> command. The <code class="highlighter-rouge">/packaging</code> directory must be included in the tarball as well. The tarball version is abstracted from the spec file by <strong>rpmbuild</strong>.</p>
   </li>
   <li>
     <p>Take the contents of the packaging directory and put them alongside the tarball.</p>
