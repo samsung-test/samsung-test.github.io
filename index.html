@@ -1,26 +1,137 @@
 ---
+layout: default
+title: Tizen Documentation
+desc: Tizen is an open and flexible operating system built from the ground up to address the needs of all stakeholders of the mobile and connected device ecosystem, including device manufacturers, mobile operators, application developers and independent software vendors (ISVs).
+keywords: Tizen, OS, Open Source
 ---
-<!DOCTYPE html>
-<html>
-<head>
-	{% include head.html %}
-</head>
-<body>
- <a href="/">Homepage URL</a>
- <h1>Version landing page -  {{site.docsVersion}}</h1>
- <h4>Pages are - </h4>
- <ul>
-	{% assign pages = site.pages %}
-	{% for page in pages %}
-		<li><a href="{{page.url | remove_first: "/"}}">{{page.title}}</a></li>
-	{% endfor %}
- </ul>
- <p>Hi, This is {{site.docsVersion}}.. This is coming from {{site.docsVersion}} branch </p>
- <h4>Widgets are - </h4>
- <div id="templates"></div>
- <div id="widgetOldVersions"></div>
- <div id="widgetVersionSwitcher"></div>
- <div class="widgetLatestVersionNotification"></div>
- 
-</body>
-</html>
+<div class="landing-top">
+  <div class="container">
+    <div class="row">
+      <div class="landing-image-right"><img src="/images/img_docs_banner_con.png"></div>
+      <p class="top-title">What is Tizen?</p>
+      <p class="body">Tizen is an open and flexible operating system built from the ground up to address the needs of
+        all stakeholders of the mobile and connected device ecosystem, including device manufacturers, mobile operators,
+        application developers and independent software vendors (ISVs).</p>
+      <p class="body">Tizen is developed by a community of developers, under open source governance, and is open to all
+        members who wish to participate.</p>
+    </div>
+  </div>
+</div>
+<div class="landing-middle">
+  <div class="container">
+
+    <div class="row">
+      <h1 class="landing-middle-main-title">Get Started</h1>
+
+      <div class="landing-card">
+        <div class="landing-card-img">
+          <img src="/images/ic_docs_opensource.png">
+        </div>
+        <div class="landing-card-body">
+          <p class="title">Open Source Project</p>
+          <div class="horizon-divider"></div>
+          <p class="body">
+            <!--div id="circle"></div-->
+            <a href="/platform/about/tizen-open-source-overview">- What is Tizen Open Source Project?</a><br>
+            - Developers can register for an account at:<br>&nbsp;&nbsp;&nbsp;<a
+              href="https://www.tizen.org/user/register">https://www.tizen.org/user/register</a><br><br>
+            <a href="/platform/developing/cloning">
+              <img src="/images/ic_docs_download.png"><b> Download Tizen Source</b>
+            </a>
+          </p>
+          <div class="landing-card-link">
+            <div class="moving-arrow">
+              <a href="/platform/developing/installing">More
+                <img class="img-normal" style="margin-left;margin-bottom:3px;"
+                  src="/images/btn_docs_link_arrow_nor.png">
+                <img class="img-active" style="margin-left:-9px;margin-bottom:3px;"
+                  src="/images/btn_docs_link_arrow_over.png">
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="landing-card">
+        <div class="landing-card-img">
+          <img src="/images/ic_docs_tizennet.png">
+        </div>
+        <div class="landing-card-body">
+          <p class="title">Tizen .NET</p>
+          <div class="horizon-divider"></div>
+          <p class="body"><a href="/application/dotnet/index">- What is Tizen .NET Application?<br>
+            </a><a href="/application/dotnet/get-started/overview">- Creating Tizen .NET Applications<br><br>
+            </a><a href="https://marketplace.visualstudio.com/items?itemName=tizen.VisualStudioToolsforTizen">
+              <img src="/images/ic_docs_download.png"><b> Download Visual Studio Tools for Tizen</b>
+            </a>
+          </p>
+          <div class="landing-card-link">
+            <div class="moving-arrow">
+              <a href="/application/dotnet/index">More
+                <img class="img-normal" style="margin-left;margin-bottom:3px;"
+                  src="/images/btn_docs_link_arrow_nor.png">
+                <img class="img-active" style="margin-left:-9px;margin-bottom:3px;"
+                  src="/images/btn_docs_link_arrow_over.png">
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="landing-card">
+        <div class="landing-card-img">
+          <img src="/images/ic_docs_iot.png">
+        </div>
+        <div class="landing-card-body">
+          <p class="title">IOT world on Craftroom</p>
+          <div class="horizon-divider"></div>
+          <p class="body"><a href="/iot/index">- What is Tizen IoT?</a><br>
+            <a href="/iot/get-started/overview">- How to make IoT devices</a><br>
+          </p>
+          <div class="landing-card-link">
+            <div class="moving-arrow">
+              <a href="https://craftroom.tizen.org">Go to Craftroom
+                <img class="img-normal" style="margin-left;margin-bottom:3px;"
+                  src="/images/btn_docs_link_arrow_nor.png">
+                <img class="img-active" style="margin-left:-9px;margin-bottom:3px;"
+                  src="/images/btn_docs_link_arrow_over.png">
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="landing-card">
+        <div class="landing-card-img">
+          <img src="/images/ic_docs_tizenstudio.png">
+        </div>
+        <div class="landing-card-body">
+          <p class="title">Tizen Studio</p>
+          <div class="horizon-divider"></div>
+          <p class="body"><a href="/application/index">- What is Tizen Application?<br>
+            </a><a href="/application/native/get-started/overview">- Creating Tizen Native Applications<br>
+            </a><a href="/application/web/get-started/overview">- Creating Tizen Web Applicaions<br><br>
+            </a><a href="https://developer.tizen.org/development/tizen-studio/download">
+              <img src="/images/ic_docs_download.png"><b> Download Tizen Studio</b>
+            </a>
+          </p>
+          <div class="landing-card-link">
+            <div class="moving-arrow">
+              <a href="/application/tizen-studio/index">More
+                <img class="img-normal" style="margin-left;margin-bottom:3px;"
+                  src="/images/btn_docs_link_arrow_nor.png">
+                <img class="img-active" style="margin-left:-9px;margin-bottom:3px;"
+                  src="/images/btn_docs_link_arrow_over.png">
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

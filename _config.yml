@@ -1,14 +1,14 @@
 # Site settings
-title: Docs Test
+title: Tizen Docs
 environment: production
-permalink: /:title/
+permalink: pretty
 markdown: kramdown
 highlighter: pygments
 exclude:
-- .gitignore
 - README.md
 - Gemfile
 - Gemfile.lock
+- .sass-cache
 
 sass:
     sass_dir: css
