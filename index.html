@@ -1,24 +1,206 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=10, user-scalable=yes" />
+	<meta charset="UTF-8">
+<meta name="viewport" content="device-width, initial-scale=1">
 <meta id="docsVersion" content="docs" />
 
-<link rel="stylesheet" href="/css/style.css?27092019"  />
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-<script type="text/javascript" src="/js/bootstrap.min.js?27092019"></script>
-<script type="text/javascript" src="/js/handlebars-v4.0.11.js?27092019"></script>
-<script type="text/javascript" src="/js/widgets-data.js?27092019"></script>
-<script type="text/javascript" src="/js/widgets.js?27092019"></script>
+ <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
+ <link rel="stylesheet" href="/css/carousel.css?v=27092019">
+ <link rel="stylesheet" href="/css/custom.css?v=27092019">
+ <link rel="stylesheet" href="/css/responsive.css?v=27092019">
+ <link rel="stylesheet" href="/css/main.css?v=27092019">
+
+<script type="text/javascript" src="/vendor/jquery/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/common.js?v=27092019"></script>
+<script type="text/javascript" src="/js/handlebars-v4.0.11.js?v=27092019"></script>
+<script type="text/javascript" src="/js/widgets-data.js?v=27092019"></script>
+<script type="text/javascript" src="/js/widgets.js?v=27092019"></script>
 
 </head>
 <body>
-	<h1>Main page of site</h1>
-	
-	<p>Please see the widgets below - </p>
-	<div id="templates"></div>
-	<div id="widgetOldVersions"></div>
-	<p> Master docs are available at - <a href="/docs/">here</a></p>
+    <div class="scroller">
+        <div class="navbar-wrapper">
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Docs</a>
+            </div>
+
+            <ul id="navbar" class="nav navbar-nav navbar-right">
+                <li><a href="/docs/what-is-tizen/overview/tizen.page">What is Tizen</a></li>
+                <li><a href="/docs/open-source-tizen/about/tizen-open-source-overview.page">Open Source Tizen</a></li>
+                <li><a href="https://developer.tizen.org" target="_blank">Application</a></li>
+                <li><a href="https://developer.tizen.org/development/tizen-studio/download" target="_blank">Download</a></li>
+                <li class='navbar-divisor'></li>
+
+                 <li class='search'><a id='gnb_search_btn' href="#"><div class='search-btn'></div></a>
+                <!--div id='gnb_search_box' class='searchbox'-->
+                    <form method='GET' id='gnb_search_box' class='searchbox' action=<?=$portal_search_url?> >
+                        <input class='form-control' type=text name='q' placeholder="Search ...">
+                        <a href='#'><img src='/images/ic_search_ac.png'></a>
+                    </form>
+                      <!--/div-->
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div><!-- //navbar-wrapper-->
+
+        <div class="landing-top">
+        <div class="container">
+          <div class="row">
+            <div class='landing-image-right'><img src="/images/img_docs_banner_con.png"/></div>
+            <p class=top-title>What is Tizen?</p>
+            <p class=body>The guidelines we provide will show you how to design useful and aesthetically pleasing Tizen apps that users will enjoy. 
+                          Let's begin by sharing our vision for Tizen app design and the visual language we use. These concepts will help you provide 
+                          users with an enjoyable Tizen experience.</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="landing-middle">
+        <div class="container">
+  
+          <div class="row">
+            <h1 class="landing-middle-main-title">Getting Started</h1>
+  
+            <div class='landing-card'>
+              <div class="landing-card-img">
+                <img src="/images/ic_docs_opensource.png">
+              </div>
+              <div class="landing-card-body">
+                <p class='title'>Open Source Tizen</p>
+                <div class="horizon-divider"></div>
+                <p class='body'><!--div id="circle"></div-->
+                                  <a href="/docs/what-is-tizen/overview/tizen.page">- What is Tizen<br>
+                                  <a href="/docs/open-source-tizen/about/tizen-open-source-overview.page">- Open Source Tizen<br>
+                </p>
+                <div class='landing-card-link'>
+                  <div class='moving-arrow'>
+                    <a href="/docs/open-source-tizen/about/tizen-open-source-overview.page">Go to page
+                      <img class='img-normal' style='margin-left;margin-bottom:3px;' src="/images/btn_docs_link_arrow_nor.png">
+                      <img class='img-active' style='margin-left:-9px;margin-bottom:3px;' src="/images/btn_docs_link_arrow_over.png">
+                    </a>
+                  </div>
+                </div>
+  
+              </div>
+            </div>
+  
+            <div class='landing-card'>
+              <div class="landing-card-img">
+                <img src="/images/ic_docs_tizennet.png">
+              </div>
+              <div class="landing-card-body">
+                <p class='title'>Tizen .NET</p>
+                <div class="horizon-divider"></div>
+                <p class='body'><a href="https://developer.tizen.org/development/tizen-.net-preview/introduction/overview" target="_blank">- What is Tizen .NET Application?<br>
+                                <a href="https://developer.tizen.org/development/tizen-.net-preview/getting-started/creating-your-first-tizen-.net-application" target="_blank">- Creating Tizen .NET Applications<br>
+                                <a href="https://developer.tizen.org/development/tizen-.net-preview/visual-studio-tools-tizen" target="_blank">- Downloading Visual Studio Tools for Tizen<br-->
+                </p>
+                <div class='landing-card-link'>
+                  <div class='moving-arrow'>
+                    <a href='https://developer.tizen.org/development/tizen-.net-preview/introduction' target="_blank">Go to page
+                      <img class='img-normal' style='margin-left;margin-bottom:3px;' src="/images/btn_docs_link_arrow_nor.png">
+                      <img class='img-active' style='margin-left:-9px;margin-bottom:3px;' src="/images/btn_docs_link_arrow_over.png">
+                    </a>
+                  </div>
+                </div>
+  
+              </div>
+            </div>
+  
+            <div class='landing-card'>
+              <div class="landing-card-img">
+                <img src="/images/ic_docs_iot.png">
+              </div>
+              <div class="landing-card-body">
+                <p class='title'>IOT world on Craftroom</p>
+                <div class="horizon-divider"></div>
+                <p class='body'>- What is Tizen IoT?<br>
+                                - How to make IoT devices<br>
+                </p>
+                <div class='landing-card-link'>
+                  <div class='moving-arrow'>
+                    <a href='#'>Go to page
+                      <img class='img-normal' style='margin-left;margin-bottom:3px;' src="/images/btn_docs_link_arrow_nor.png">
+                      <img class='img-active' style='margin-left:-9px;margin-bottom:3px;' src="/images/btn_docs_link_arrow_over.png">
+                    </a>
+                  </div>
+                </div>
+  
+              </div>
+            </div>
+  
+            <div class='landing-card'>
+              <div class="landing-card-img">
+                <img src="/images/ic_docs_tizenstudio.png">
+              </div>
+              <div class="landing-card-body">
+                <p class='title'>Tizen Studio</p>
+                <div class="horizon-divider"></div>
+                <p class='body'><a href="https://developer.tizen.org/development/training/native-application" target="_blank">- What is Tizen Native Application?<br>
+                                <a href="https://developer.tizen.org/development/training/native-application/getting-started" target="_blank">- Creating with Tizen Native Application<br>
+                                <a href="https://developer.tizen.org/development/training/web-application" target="_blank">- What is Tizen Web Application?<br>
+                                <a href="https://developer.tizen.org/development/training/web-application/getting-started" target="_blank">- Creating with Tizen Web Applicaion<br>
+                </p>
+                <div class='landing-card-link'>
+                  <div class='moving-arrow'>
+                    <a href='https://developer.tizen.org/development/tizen-studio' target="_blank">Go to page
+                      <img class='img-normal' style='margin-left;margin-bottom:3px;' src="/images/btn_docs_link_arrow_nor.png">
+                      <img class='img-active' style='margin-left:-9px;margin-bottom:3px;' src="/images/btn_docs_link_arrow_over.png">
+                    </a>
+                  </div>
+                </div>
+  
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </div><!-- div class="landing-middle" -->
+        <div class="footer">
+        <div class="copyright">
+          &copy; 2019 Tizen Project, a <a href="http://www.linuxfoundation.org/">Linux Foundation</a> Project. All Rights Reserved. Linux is a registered trademark of Linus Torvalds.<br>
+          Tizen is a registered trademark of The Linux Foundation. * Other names and brands may be claimed as the property of others.<br>
+          Except as noted, this content is licensed under Creative Commons Attribution 3.0. For details, see the <a href="https://www.tizen.org/content-license">Content License.</a><br>
+        </div>
+        <div class="family-sites">
+          <a href="https://portal.tizen.org">Tizen Portal</a>
+          <div class="divider"></div>
+          <a href="https://docs.tizen.org">Docs</a>
+          <div class="divider"></div>
+          <a href="https://dashboard.tizen.org">Dashboard</a>
+          <div class="divider"></div>
+          <a href="https://craftroom.tizen.org/">Craftroom</a>
+        </div>
+        <div class="outer-links">
+          <div class="item">
+            <a href="https://twitter.com/TizenProject"><img src="/images/ic_footer_twitter.png">Twitter</a>
+          </div>
+          <div class="item">
+            <a href="http://www.facebook.com/pages/Tizen-Project/179577455452943?ref=ts"><img src="/images/ic_footer_facebook.png">Facebook</a>
+          </div>
+          <div class="item">
+            <a href="https://bugs.tizen.org"><img src="/images/ic_footer_bug.png">Bug Tracker</a>
+          </div>
+          <div class="item">
+            <a href="http://lists.tizen.org"><img src="/images/ic_footer_mailing.png">Mailing Lists</a>
+          </div>
+          <div class="item">
+            <a href="http://www.tizenstore.com"><img src="/images/ic_footer_tizenstore.png">Tizen Store</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
 </body>
 </html>
