@@ -30,8 +30,6 @@ jobs:
           rm -rf fonts/
           rm -rf images/
           rm -rf vendor/
-          rm -rf .sass-cache/
-          rm _config.yml
 
           if [ -f index.html ]; then
            rm index.html
