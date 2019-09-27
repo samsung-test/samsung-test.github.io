@@ -14,12 +14,13 @@ jobs:
           fingerprints:
             - $GITHUB_SSH_FINGERPRINT
             
-      # Download code from staging
+      # Generate Site
       - type: shell
-        name: Download code from staging
+        name: Generate Site
         command: |
           git config --global user.email $GITHUB_USER_EMAIL
           git config --global user.name $GITHUB_USER_NAME
+          echo "docsVersion: 'latest'" >> _config.yml
           bundle exec jekyll build
           mkdir ../output
           cp -r _site/* ../output
