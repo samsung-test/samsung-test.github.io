@@ -7,11 +7,10 @@ highlighter: pygments
 docsVersion: docs
 theme: jekyll-theme-cayman
 exclude:
-- .gitignore
 - README.md
 - Gemfile
 - Gemfile.lock
-- .sass
+- .sass-cache
 
 sass:
     sass_dir: css
