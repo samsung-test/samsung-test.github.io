@@ -22,38 +22,47 @@
 <body>
     <div class="scroller">
         <div class="navbar-wrapper">
-    <nav class="navbar navbar-default navbar-static-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/">Docs</a>
+        <nav class="navbar navbar-default navbar-static-top navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand active open" href="/">
+                        <span class="brand-tizen"><img src="/images/logo.png" alt="logo"></span>
+                        <span class="brand-docs">Docs</span>
+                    </a>
+                </div>
+    
+                <ul id="navbar" class="nav navbar-nav navbar-right navbar-collapse collapse">
+                    <!--li><a href="/what-is-tizen/overview/tizen">What is Tizen</a></li-->
+                    <li><a href="/platform/about/tizen-open-source-overview">Platform</a></li>
+                    <li><a href="/application/">Application</a></li>
+                    <li><a href="/iot/">IoT</a></li>
+                    <!--li><a href="https://developer.tizen.org" target="_blank">Application</a></li-->
+                    <li><a href="https://developer.tizen.org/development/tizen-studio/download" target="_blank">Download</a></li>
+                    <li class="navbar-divisor"></li>
+    
+                    <li class="search"><a id="gnb_search_btn" href="#"><div class="search-btn"></div></a>
+                        <form method="GET" id="gnb_search_box" class="searchbox" action="/search.php" name="searchbox">
+                            <input class="form-control" type="text" name="q" placeholder="Search ..." required="true">
+                        <a href="#" onclick="if (document.forms['searchbox'].q.value !== '') 
+                                                $(this).closest('form').submit()
+                                                else
+                                                    document.getElementById('gnb_search_box').addEventListener('click', function(event){
+                                                    event.preventDefault()
+                                                });
+                                                "><img src="/images/ic_search_ac.png"></a>
+                        </form>
+                    </li>
+                    
+                </ul>
             </div>
-
-            <ul id="navbar" class="nav navbar-nav navbar-right">
-                <li><a href="/docs/what-is-tizen/overview/tizen.page">What is Tizen</a></li>
-                <li><a href="/docs/open-source-tizen/about/tizen-open-source-overview.page">Open Source Tizen</a></li>
-                <li><a href="https://developer.tizen.org" target="_blank">Application</a></li>
-                <li><a href="https://developer.tizen.org/development/tizen-studio/download" target="_blank">Download</a></li>
-                <li class='navbar-divisor'></li>
-
-                 <li class='search'><a id='gnb_search_btn' href="#"><div class='search-btn'></div></a>
-                <!--div id='gnb_search_box' class='searchbox'-->
-                    <form method='GET' id='gnb_search_box' class='searchbox' action=<?=$portal_search_url?> >
-                        <input class='form-control' type=text name='q' placeholder="Search ...">
-                        <a href='#'><img src='/images/ic_search_ac.png'></a>
-                    </form>
-                      <!--/div-->
-                </li>
-            </ul>
-        </div>
-    </nav>
-</div><!-- //navbar-wrapper-->
-
+        </nav>
+    </div>
         <div class="landing-top">
         <div class="container">
           <div class="row">
@@ -167,14 +176,14 @@
           </div>
         </div>
       </div><!-- div class="landing-middle" -->
-        <div class="footer">
+        <div class="footer clearfix">
         <div class="copyright">
-          &copy; 2019 Tizen Project, a <a href="http://www.linuxfoundation.org/">Linux Foundation</a> Project. All Rights Reserved. Linux is a registered trademark of Linus Torvalds.<br>
+          © 2019 Tizen Project, a <a href="http://www.linuxfoundation.org/">Linux Foundation</a> Project. All Rights Reserved. Linux is a registered trademark of Linus Torvalds.<br>
           Tizen is a registered trademark of The Linux Foundation. * Other names and brands may be claimed as the property of others.<br>
           Except as noted, this content is licensed under Creative Commons Attribution 3.0. For details, see the <a href="https://www.tizen.org/content-license">Content License.</a><br>
         </div>
         <div class="family-sites">
-          <a href="https://portal.tizen.org">Tizen Portal</a>
+          <a href="https://developer.tizen.org/">Developers</a>
           <div class="divider"></div>
           <a href="https://docs.tizen.org">Docs</a>
           <div class="divider"></div>
@@ -200,7 +209,6 @@
           </div>
         </div>
       </div>
-
     </div>
 </body>
 </html>
