@@ -1,6 +1,7 @@
 ---
-title: Tizen Open Source Project
+title: Cloning Tizen Source Files
 ---
+
 # Cloning Tizen Source Files
 
 You can clone Tizen source files over SSH or HTTPS.

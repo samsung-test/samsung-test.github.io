@@ -1,6 +1,7 @@
 ---
-title: Tizen Open Source Project
+title: Building All Packages Locally with GBS
 ---
+
 # Building All Packages Locally with GBS
 
 You can perform a build for all Tizen packages using the Git Build System (GBS).

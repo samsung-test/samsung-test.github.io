@@ -1,3 +1,7 @@
+---
+title: Development Tips
+---
+
 # Development Tips
 
 - **SSH configuration file content**
