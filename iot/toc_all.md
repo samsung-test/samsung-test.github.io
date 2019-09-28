@@ -1,75 +1,91 @@
-# [IoT extension SDK](/iot/index.md)
+# Overview
+## [Development Workflow](/platform/about/work-flow.md)
+## [Git Repository Structure](/platform/about/git-repo-structure.md)
+## [Typographic Conventions](/platform/about/conventions.md)
 
-# Get Started
-## [Tizen IoT](/iot/get-started/overview.md)
-## Setting up Board
-### [Overview](/iot/get-started/setting-up-board.md)
-### [ARTIK530/ARTIK530S with no SD card based](/iot/get-started/artik-no-sd-5.0.md)
-### [ARTIK530/ARTIK530S with SD card based](/iot/get-started/artik-sd-5.0.md)
-### [Raspberry Pi3](/iot/get-started/rpi3-5.0.md)
-## Developing Applications
-### [Developing Applications with Things SDK API](/iot/get-started/things-app-development-5.0.md)
-### [Setting up Smartthings Cloud](/iot/get-started/things-cloud-setup.md)
-### [Testing with Smartthings App](/iot/get-started/cloud-app-test.md)
+# Developing
+## [Installing Development Tools](/platform/developing/installing.md)
+## [Setting up Development Environment](/platform/developing/setting-up.md)
+## [Cloning Tizen Source Files](/platform/developing/cloning.md)
+## [Building Packages Locally with GBS](/platform/developing/building.md)
+## [Building All Packages Locally with GBS](/platform/developing/building-all.md)
+## [Contributing Code to Tizen](/platform/developing/contributing.md)
+## [Creating Tizen Images with MIC](/platform/developing/creating.md)
+## [Flashing an Image to Device](/platform/developing/flashing.md)
+## [Development Tips](/platform/developing/tips.md)
 
-# API Guides
-## [Overview](/iot/guides/iot-api.md)
-## Things SDK API
-### [Overview](/iot/guides/things-api-5.0.md)
-### [Device Definition](/iot/guides/things-api-device-5.0.md)
-### [API Usage](/iot/guides/things-api-guide-5.0.md)
-## Tizen Peripheral I/O Native API
-### [Overview](/iot/guides/peripheral-io-api.md)
-### [GPIO](/iot/guides/peripheral-io-api-gpio.md)
-### [PWM](/iot/guides/peripheral-io-api-pwm.md)
-### [SPI](/iot/guides/peripheral-io-api-spi.md)
-### [I2C](/iot/guides/peripheral-io-api-i2c.md)
-### [UART](/iot/guides/peripheral-io-api-uart.md)
-## [ZigBee](/iot/guides/zigbee.md)
-## [Tizen Update Control Native API](/iot/guides/update-control-api.md)
+# Porting
+## [Overview](/platform/porting/overview.md)
+## [Kernel](/platform/porting/kernel.md)
+## [System](/platform/porting/system.md)
+## [Graphics and UI](/platform/porting/graphics-and-ui.md)
+## [Recovery](/platform/porting/recovery.md)
+## [Multimedia](/platform/porting/multimedia.md)
+## [Connectivity](/platform/porting/connectivity.md)
+## [Location](/platform/porting/location.md)
+## [Telephony](/platform/porting/telephony.md)
+## [Application](/platform/porting/application.md)
 
-# API Reference
-## [Things SDK API Reference](https://developer.tizen.org/dev-guide/things-sdk/latest)
-## Peripheral I/O API
-### [Tizen Common Headed API Reference](https://developer.tizen.org/dev-guide/tizen-iot-headed/latest)
-### [Tizen Common Headless API Reference](https://developer.tizen.org/dev-guide/tizen-iot-headless/latest)
+# Reference
+## [Gerrit](/platform/reference/gerrit-usage.md)
+## Git Build System (GBS)
+### [Overview](/platform/reference/gbs/gbs-overview.md)
+### [GBS Configuration](/platform/reference/gbs/gbs.conf.md)
+### [GBS Maintenance Models](/platform/reference/gbs/gbs-maintenance-models.md)
+### [GBS Reference](/platform/reference/gbs/gbs-reference.md)
+### [FAQ](/platform/reference/gbs/gbs-faq.md)
 
-# Tizen IoT Preview 2
+## MIC Image Creator
+### [Overview](/platform/reference/mic/mic-overview.md)
+### [Customizing Images](/platform/reference/mic/mic-customize-image.md)
+### [MIC Reference](/platform/reference/mic/mic-reference.md)
+### [FAQ](/platform/reference/mic/mic-faq.md)
 
-## Getting Started
-### [Tizen IoT](/iot/preview2/getting-started/overview.md)
-### [Installing Tizen Studio](/iot/preview2/getting-started/tizen-studio-install.md)
-### [Flashing Tizen Images](/iot/preview2/getting-started/tizen-image-download-flash.md)
-### [Hardware Configuration](/iot/preview2/getting-started/hardware-configuration.md)
-### [Developing Applications with the things sdk api](/iot/preview2/getting-started/things-app-development.md)
-### [setting up the smartthings cloud](/iot/preview2/getting-started/things-cloud-setup.md)
-### [testing with smartthings app](/iot/preview2/getting-started/cloud-app-test.md)
+# Release Notes
+## [Tizen 5.5 Public M1](/platform/release-notes/tizen-5-5-m1.md)
+## [Tizen 5.0 Public M2](/platform/release-notes/tizen-5-0-m2.md)
+## [Tizen 4.0 Public M3](/platform/release-notes/tizen-4-0-m3.md)
+## [Tizen 5.0 Public M1](/platform/release-notes/tizen-5-0-m1.md)
+## [Tizen 4.0 Public M2](/platform/release-notes/tizen-4-0-m2.md)
+## [Tizen 4.0 Public M1](/platform/release-notes/tizen-4-0-m1.md)
+## [Tizen 3.0 Public M4](/platform/release-notes/tizen-3-0-m4.md)
+## [Tizen 3.0 Public M3](/platform/release-notes/tizen-3-0-m3.md)
+## [Tizen 3.0 Public M2](/platform/release-notes/tizen-3-0-m2.md)
+## [Tizen 3.0 Milestones](/platform/release-notes/tizen-3-0-milestones.md)
+## [Tizen Common Milestones](/platform/release-notes/tizen-common-milestones.md)
+## [Tizen IVI 3.0 Milestones](/platform/release-notes/tizen-ivi-3-0-milestones.md)
+## [Tizen 2.3.2 for Wearable](/platform/release-notes/tizen-2-3-2.md)
+## [Tizen 2.4](/platform/release-notes/tizen-2-4.md)
+## [Tizen 2.3.1](/platform/release-notes/tizen-2-3-1.md)
+## [Tizen 2.3](/platform/release-notes/tizen-2-3.md)
+## [Tizen 2.2.1](/platform/release-notes/tizen-2-2-1.md)
+## [Tizen 2.2](/platform/release-notes/tizen-2-2.md)
+## [Tizen 2.1](/platform/release-notes/tizen-2-1.md)
+## [Tizen 2.0](/platform/release-notes/tizen-2-0.md)
+## [Tizen 1.0](/platform/release-notes/tizen-1-0.md)
 
-## [Customized Platform Guide](/iot/preview2/customized-platform/overview.md)
+# Compliance
+## [Tizen Compliance Program](/platform/compliance/compliance-program.md)
+## [Tizen Compliance Specification](/platform/compliance/compliance-specification.md)
+## [Tizen Compliance Test](/platform/compliance/compliance-test.md)
 
-## API Guides
-### [Overview](/iot/preview2/guides/iot-api.md)
-### Things SDK API
-#### [Overview](/iot/preview2/guides/things-api.md)
-#### [Device Definition](/iot/preview2/guides/things-api-device.md)
-#### [API Usage](/iot/preview2/guides/things-api-guide.md)
-### Tizen Peripheral I/O Native API
-#### [Overview](/iot/preview2/guides/peripheral-io-api.md)
-#### [GPIO](/iot/preview2/guides/peripheral-io-api-gpio.md)
-#### [PWM](/iot/preview2/guides/peripheral-io-api-pwm.md)
-#### [SPI](/iot/preview2/guides/peripheral-io-api-spi.md)
-#### [I2C](/iot/preview2/guides/peripheral-io-api-i2c.md)
-#### [UART](/iot/preview2/guides/peripheral-io-api-uart.md)
+# Tizen RT
+## [Overview](/platform/tizen-rt/tizen-rt-overview.md)
+## [Getting Started](/platform/tizen-rt/rt-getting-started.md)
+## [API](/platform/tizen-rt/rt-api.md)
+## [1.0 Specification](/platform/tizen-rt/rt-specification-1-0.md)
+## [Long-term Goals](/platform/tizen-rt/rt-goal.md)
+## Release Notes
+### [Tizen RT 1.0 M1](/platform/tizen-rt/release-notes/tizen-rt-1-0-m1.md)
 
-## API Reference
-### [Things SDK API Reference](https://developer.tizen.org/dev-guide/things-sdk/4.0)
-### Peripheral I/O API
-#### [Tizen Common Headed API Reference](https://developer.tizen.org/dev-guide/tizen-iot-headed/4.0)
-#### [Tizen Common Headless API Reference](https://developer.tizen.org/dev-guide/tizen-iot-headless/4.0)
-
-## Samples
-### [Network Audio Sample Overview](/iot/preview2/sample/iot-sample.md)
-
-# IoT Partners
-## [Nubison Cloud](/iot/iot-partners/nubison.md)
-## [thingspark Cloud](/iot/iot-partners/thingspark.md)
+# Tizen Studio
+## [Overview](/platform/tizen-studio/overview.md)
+## [Contributing to Tizen Studio](/platform/tizen-studio/contribute-gerrit.md)
+## Developing Extensions
+### [IDE Extension Development](/platform/tizen-studio/web-extension-guide.md)
+### [Emulator Extension Development](/platform/tizen-studio/emulator-extension-guide.md)
+### [Package File Description](/platform/tizen-studio/package-file-desc-guide.md)
+### [Metapackage File Description](/platform/tizen-studio/meta-package.md)
+## Building Tizen Studio Code
+### [Build Environment](/platform/tizen-studio/environment.md)
+### [Local Build Guide](/platform/tizen-studio/local-build.md)
