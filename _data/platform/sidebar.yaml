@@ -1,0 +1,63 @@
+- sidebar:
+      - title: Overview
+        url: platform/about/work-flow
+        subfolderitems:
+          - page: Development Workflow
+            url: platform/about/work-flow
+          - page: Git Repository Structure
+            url: platform/about/git-repo-structure
+          - page: Typographic Conventions
+            url: platform/about/conventions
+      - title: Developing
+        url: platform/developing/installing
+        subfolderitems:
+          - page: Installing Development Tools
+            url: platform/developing/installing 
+          - page: Setting up Development Environment
+            url:  platform/developing/setting-up      
+          - page: Cloning Tizen Source Files
+            url: platform/developing/cloning  
+            subfolderitems:
+               - page: Development Workflow
+                 url: platform/about/work-flow
+               - page: Git Repository Structure
+                 url: platform/about/git-repo-structure
+               - page: Typographic Conventions
+                 url: platform/about/conventions
+          - page: Development Workflow
+            url: platform/about/work-flow
+          - page: Git Repository Structure
+            url: platform/about/git-repo-structure
+          - page: Typographic Conventions
+            url: platform/about/conventions
+      - title: Porting
+        url: platform/about/work-flow
+        subfolderitems:
+          - page: Development Workflow
+            url: platform/about/work-flow
+          - page: Git Repository Structure
+            url: platform/about/git-repo-structure
+          - page: Typographic Conventions
+            url: platform/about/conventions
+      - title: Reference
+        url: platform/developing/installing
+        subfolderitems:
+          - page: Installing Development Tools
+            url: platform/developing/installing 
+          - page: Setting up Development Environment
+            url:  platform/developing/setting-up      
+          - page: Cloning Tizen Source Files
+            url: platform/developing/cloning  
+            subfolderitems:
+               - page: Development Workflow
+                 url: platform/about/work-flow
+               - page: Git Repository Structure
+                 url: platform/about/git-repo-structure
+               - page: Typographic Conventions
+                 url: platform/about/conventions
+          - page: Development Workflow
+            url: platform/about/work-flow
+          - page: Git Repository Structure
+            url: platform/about/git-repo-structure
+          - page: Typographic Conventions
+            url: platform/about/conventions
