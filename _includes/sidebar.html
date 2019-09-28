@@ -1,6 +1,6 @@
 <ul class="nav side-menu">
     {% assign directory = page.path | split: '/' %}
-    {% for version in site.data.platform.sidebar %}
+    {% for version in site.data.sidebar %}
     {% for menu in version.sidebar %}
     {% assign finalurl = menu.url %}
     {% assign sections = finalurl | split: '/' %}

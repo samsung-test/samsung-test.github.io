@@ -1,25 +1,33 @@
 ---
 title: Tizen Open Source Project
 ---
-# IoT extension SDK
+# Tizen Open Source Project
 
-The Internet of Things (IoT) is connected networks of various types  of things, such as sensors, actuators, electronic devices, home  appliances, and so on. These networks of end-devices, hubs, and servers  enable exchange of data and execution of operations among things for  specific purposes. Communications and executions through the connections  are designed to happen without human interventions. In the broad sense,  the IoT means a combination of software and platforms for automatic and  intelligent services, as well as the networks itself.
+Tizen is an open source software stack created for a wide array of devices with different form factors. The primary objectives of Tizen are to create an open software platform available for carriers, OEMs, and developers to make their innovative ideas a reality, and to introduce a successful, real-world product that improves the mobile experience for users. We have also wanted to make sure there is no central point of failure, where 1 industry player can restrict or control the innovations of another. The result is a full, production-quality consumer product with source code open for customization and porting.
 
-The IoT applications are extensive, for example, home automation with  smart consumer electronics and appliances, smart factories that consist  of connected manufacturing equipment, and transportation systems for  connected vehicles and traffic control, etc. Each application is  realized through the operations of physical device control, networking,  data analysis, and decision making. In general, the IoT end devices are  lightweight, low-cost, and power-efficient. While, the back-end systems  have the capability to analyze data from the end devices and to make  decisions based on pre-defined algorithms or trained intelligence. For  competitive IoT ecosystems, it is required to be scalable in attaching  new forms of devices to the networks; and to be sufficient controls  available from the networks. Further, from the end devices to the  services, all the components have to be tightly integrated throughout  the whole ecosystem.
+The Tizen operating system is available in multiple profiles to serve different industry requirements. The current Tizen profiles are Tizen IVI (in-vehicle infotainment), Tizen Mobile, Tizen TV, and Tizen Wearable. Additionally, as of Tizen 3.0, all profiles are built on top of a common, shared infrastructure called Tizen Common.
 
-To address IoT-specific requirements, Tizen IoT is derived from Tizen. Tizen IoT is the Tizen implementation for the [SmartThings ecosystem](https://smartthings.developer.samsung.com/develop/index.html).
+With Tizen:
 
-Tizen IoT is composed of:
+- **Device manufacturers** can begin with 1 of the profiles and modify it to serve their own needs, or use the Tizen Common base to develop a new profile to meet the memory, processing, and power requirements of any device and quickly bring it to market.
+- **Mobile operators** can work with device partners to customize the operating system and user experience to meet the needs of specific customer segments or demographics.
+- **Application developers and ISVs** can take advantage of the power of native application development with the flexibility of unparalleled HTML5 support. Tizen also offers the potential for application developers to extend their reach to new "smart devices" running Tizen, including wearables, consumer electronics (such as TVs, gaming consoles, and DVRs), cars, and appliances.
 
-- [Lightweight OS](get-started/setting-up-board.md) for IoT devices,
-- [Peripheral I/O API](guides/peripheral-io-api.md) for the access and control of the devices, and
-- [Things SDK API](guides/things-api.md) for the integration with the [SmartThings Cloud](https://smartthings.developer.samsung.com/develop/index.html).
+The Tizen project is a part of the [Linux Foundation](https://www.linuxfoundation.org/projects/) and is governed by a Technical Steering Group, which is the primary decision-making body for the open source project, with a focus on platform development and delivery, along with the formation of working groups to support device verticals.
 
-Connected with the Cloud, the SmartThings App on your smart phone  provides easy and convenient ways for users to manage and configure the  devices and the services. For more information about Samsung's  SmartThings solution, see [SmartThings website.](https://smartthings.developer.samsung.com/)
+The [Tizen Association](http://www.tizenassociation.org/) has been formed to guide the industry role of Tizen, including gathering of requirements, identification and facilitation of service models, and overall industry marketing and education.
 
 
-**Figure: SmartThings Ecosystem**
+## Get Started with Tizen
 
-[![SmartThings Ecosystem](media/ST_dev_eco_diagram.png)](https://smartthings.developer.samsung.com/)
+To get started with Tizen development:
 
-[Source: https://smartthings.developer.samsung.com/](https://smartthings.developer.samsung.com/)
+- Get access
+
+  You can register for an account at [https://www.tizen.org/user/register](https://www.tizen.org/user/register).
+
+- Study the development workflow
+
+  Tizen developers use the Git and [GBS command-line tools](reference/gbs/gbs-overview.md) for most of their work. Tizen source code is managed by [Gerrit](reference/gerrit-usage.md), a code review system for Git-based projects. Source code cloning, development, and review are done under ACL (Access Control Lists). Make sure you have access rights to them.
+
+Start by reading the [Development Workflow](about/work-flow.md) page.
