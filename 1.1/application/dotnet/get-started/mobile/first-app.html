@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon"  href="/favicon.ico" />
+<title>Tizen Open Source Project</title>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<base id="baseURL" href="/1.1/" />
+<meta id="docsVersion" content="1.1" />
+<meta name="last-modified" content="2019-09-28 20:43:38 +0530" />
+<meta http-equiv="cache-control" content="max-age=24" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-store" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="Expires" content="600" />
+
+<link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/carousel.css?v=28092019">
+<link rel="stylesheet" href="/css/custom.css?v=28092019">
+<link rel="stylesheet" href="/css/responsive.css?v=28092019">
+<link rel="stylesheet" href="/css/main.css?v=28092019">
+
+</head>
+<body>
+    <div class="scroller">
+        <div class="navbar-wrapper">
+    <nav class="navbar navbar-default navbar-static-top navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand active open" href="/">
+                    <span class="brand-tizen"><img src="/images/logo.png" alt="logo"></span>
+                    <span class="brand-docs">Docs</span>
+                </a>
+            </div>
+
+            <ul id="navbar" class="nav navbar-nav navbar-right navbar-collapse collapse">
+                <!--li><a href="what-is-tizen/overview/tizen">What is Tizen</a></li-->
+                <li><a href="platform/about/tizen-open-source-overview">Platform</a></li>
+                <li><a href="application/">Application</a></li>
+                <li><a href="iot/">IoT</a></li>
+                <!--li><a href="https://developer.tizen.org" target="_blank">Application</a></li-->
+                <li><a href="https://developer.tizen.org/development/tizen-studio/download" target="_blank">Download</a>
+                </li>
+                <li class="navbar-divisor"></li>
+                <li class="search">
+                    <a id="gnb_search_btn" href="#">
+                        <div class="search-btn"></div>
+                    </a>
+                    <form method="GET" id="gnb_search_box" class="searchbox" action="/search.php" name="searchbox">
+                        <input class="form-control" type="text" name="q" placeholder="Search ..." required="true">
+                        <a href="#" onclick="if (document.forms['searchbox'].q.value !== '') 
+                                                $(this).closest('form').submit()
+                                                else
+                                                    document.getElementById('gnb_search_box').addEventListener('click', function(event){
+                                                    event.preventDefault()
+                                                });
+                                                "><img src="/images/ic_search_ac.png"></a>
+                    </form>
+                </li>
+                <li>
+                    <div id="widgetVersionSwitcher"></div>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+</div>
+        <div class="landing-tizen">
+            <div class="container">
+                <div class="row">
+                    <ul class="nav side-menu">
+    <li><a class="hasChild" href="#">Overview<span class="arrow"></span></a>
+        <ul class="td-tocs depth-1">
+            <li><a href="platform/about/work-flow">Development Workflow</a></li>
+            <li><a href="platform/about/git-repo-structure">Git Repository Structure</a></li>
+            <li><a href="platform/about/conventions">Typographic Conventions</a></li>
+        </ul>
+    </li>
+    <li class="open"><a class="hasChild active" href="#">Developing<span class="arrow"></span></a>
+        <ul class="td-tocs depth-1">
+            <li class="open"><a href="platform/developing/installing" class="active open">Installing Development
+                    Tools</a></li>
+            <li><a href="platform/developing/setting-up">Setting up Development Environment</a>
+            </li>
+            <li><a href="platform/developing/cloning">Cloning Tizen Source Files</a></li>
+            <li><a href="platform/developing/building">Building Packages Locally with GBS</a></li>
+            <li><a href="platform/developing/building-all">Building All Packages Locally with
+                    GBS</a></li>
+            <li><a href="platform/developing/contributing">Contributing Code to Tizen</a></li>
+            <li><a href="platform/developing/creating">Creating Tizen Images with MIC</a></li>
+            <li><a href="platform/developing/flashing">Flashing an Image to Device</a></li>
+            <li><a href="platform/developing/tips">Development Tips</a></li>
+        </ul>
+    </li>
+    <li><a class="hasChild" href="#">Porting<span class="arrow"></span></a>
+        <ul class="td-tocs depth-1">
+            <li><a href="platform/porting/overview">Overview</a></li>
+            <li><a href="platform/porting/kernel">Kernel</a></li>
+            <li><a href="platform/porting/system">System</a></li>
+            <li><a href="platform/porting/graphics-and-ui">Graphics and UI</a></li>
+            <li><a href="platform/porting/recovery">Recovery</a></li>
+            <li><a href="platform/porting/multimedia">Multimedia</a></li>
+            <li><a href="platform/porting/connectivity">Connectivity</a></li>
+            <li><a href="platform/porting/location">Location</a></li>
+            <li><a href="platform/porting/telephony">Telephony</a></li>
+            <li><a href="platform/porting/application">Application</a></li>
+        </ul>
+    </li>
+    <li><a class="hasChild" href="#">Reference<span class="arrow"></span></a>
+        <ul class="td-tocs depth-1">
+            <li><a href="platform/reference/gerrit-usage">Gerrit</a></li>
+            <li><a class="hasChild" href="#">Git Build System (GBS)<span class="arrow"></span></a>
+                <ul class="td-tocs depth-2">
+                    <li><a href="platform/reference/gbs/gbs-overview">Overview</a></li>
+                    <li><a href="platform/reference/gbs/gbs.conf">GBS Configuration</a></li>
+                    <li><a href="platform/reference/gbs/gbs-maintenance-models">GBS Maintenance
+                            Models</a></li>
+                    <li><a href="platform/reference/gbs/gbs-reference">GBS Reference</a></li>
+                    <li><a href="platform/reference/gbs/gbs-faq">FAQ</a></li>
+                </ul>
+            </li>
+            <li><a class="hasChild" href="#">MIC Image Creator<span class="arrow"></span></a>
+                <ul class="td-tocs depth-2">
+                    <li><a href="platform/reference/mic/mic-overview">Overview</a></li>
+                    <li><a href="platform/reference/mic/mic-customize-image">Customizing Images</a>
+                    </li>
+                    <li><a href="platform/reference/mic/mic-reference">MIC Reference</a></li>
+                    <li><a href="platform/reference/mic/mic-faq">FAQ</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li><a class="hasChild" href="#">Release Notes<span class="arrow"></span></a>
+        <ul class="td-tocs depth-1">
+            <li><a href="platform/release-notes/tizen-5-5-m1">Tizen 5.5 Public M1</a></li>
+            <li><a href="platform/release-notes/tizen-5-0-m2">Tizen 5.0 Public M2</a></li>
+            <li><a href="platform/release-notes/tizen-4-0-m3">Tizen 4.0 Public M3</a></li>
+            <li><a href="platform/release-notes/tizen-5-0-m1">Tizen 5.0 Public M1</a></li>
+            <li><a href="platform/release-notes/tizen-4-0-m2">Tizen 4.0 Public M2</a></li>
+            <li><a href="platform/release-notes/tizen-4-0-m1">Tizen 4.0 Public M1</a></li>
+            <li><a href="platform/release-notes/tizen-3-0-m4">Tizen 3.0 Public M4</a></li>
+            <li><a href="platform/release-notes/tizen-3-0-m3">Tizen 3.0 Public M3</a></li>
+            <li><a href="platform/release-notes/tizen-3-0-m2">Tizen 3.0 Public M2</a></li>
+            <li><a href="platform/release-notes/tizen-3-0-milestones">Tizen 3.0 Milestones</a></li>
+            <li><a href="platform/release-notes/tizen-common-milestones">Tizen Common
+                    Milestones</a></li>
+            <li><a href="platform/release-notes/tizen-ivi-3-0-milestones">Tizen IVI 3.0
+                    Milestones</a></li>
+            <li><a href="platform/release-notes/tizen-2-3-2">Tizen 2.3.2 for Wearable</a></li>
+            <li><a href="platform/release-notes/tizen-2-4">Tizen 2.4</a></li>
+            <li><a href="platform/release-notes/tizen-2-3-1">Tizen 2.3.1</a></li>
+            <li><a href="platform/release-notes/tizen-2-3">Tizen 2.3</a></li>
+            <li><a href="platform/release-notes/tizen-2-2-1">Tizen 2.2.1</a></li>
+            <li><a href="platform/release-notes/tizen-2-2">Tizen 2.2</a></li>
+            <li><a href="platform/release-notes/tizen-2-1">Tizen 2.1</a></li>
+            <li><a href="platform/release-notes/tizen-2-0">Tizen 2.0</a></li>
+            <li><a href="platform/release-notes/tizen-1-0">Tizen 1.0</a></li>
+        </ul>
+    </li>
+    <li><a class="hasChild" href="#">Compliance<span class="arrow"></span></a>
+        <ul class="td-tocs depth-1">
+            <li><a href="platform/compliance/compliance-program">Tizen Compliance Program</a></li>
+            <li><a href="platform/compliance/compliance-specification">Tizen Compliance
+                    Specification</a></li>
+            <li><a href="platform/compliance/compliance-test">Tizen Compliance Test</a></li>
+        </ul>
+    </li>
+    <li><a class="hasChild" href="#">Tizen RT<span class="arrow"></span></a>
+        <ul class="td-tocs depth-1">
+            <li><a href="platform/tizen-rt/tizen-rt-overview">Overview</a></li>
+            <li><a href="platform/tizen-rt/rt-getting-started">Getting Started</a></li>
+            <li><a href="platform/tizen-rt/rt-api">API</a></li>
+            <li><a href="platform/tizen-rt/rt-specification-1-0">1.0 Specification</a></li>
+            <li><a href="platform/tizen-rt/rt-goal">Long-term Goals</a></li>
+            <li><a class="hasChild" href="#">Release Notes<span class="arrow"></span></a>
+                <ul class="td-tocs depth-2">
+                    <li>
+                        <a href="platform/tizen-rt/release-notes/tizen-rt-1-0-m1">Tizen RT 1.0
+                            M1</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li><a class="hasChild" href="#">Tizen Studio<span class="arrow"></span></a>
+        <ul class="td-tocs depth-1">
+            <li><a href="platform/tizen-studio/overview">Overview</a></li>
+            <li><a href="platform/tizen-studio/contribute-gerrit">Contributing to Tizen Studio</a>
+            </li>
+            <li><a class="hasChild" href="#">Developing Extensions<span class="arrow"></span></a>
+                <ul class="td-tocs depth-2">
+                    <li><a href="platform/tizen-studio/web-extension-guide">IDE Extension
+                            Development</a></li>
+                    <li><a href="platform/tizen-studio/emulator-extension-guide">Emulator Extension
+                            Development</a></li>
+                    <li><a href="platform/tizen-studio/package-file-desc-guide">Package File
+                            Description</a></li>
+                    <li><a href="platform/tizen-studio/meta-package">Metapackage File
+                            Description</a></li>
+                </ul>
+            </li>
+            <li><a class="hasChild" href="#">Building Tizen Studio Code<span class="arrow"></span></a>
+                <ul class="td-tocs depth-2">
+                    <li><a href="platform/tizen-studio/environment">Build Environment</a></li>
+                    <li><a href="platform/tizen-studio/local-build">Local Build Guide</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+                    <div class="body" id="printableArea">
+                        <div class="widgetLatestVersionNotification"></div>
+                        <h1 id="create-your-first-tizen-mobile-net-application">Create Your First Tizen Mobile .NET Application</h1>
+
+<p>The Tizen .NET framework allows you to easily and efficiently create
+applications for Tizen. Study the following instructions to help
+familiarize yourself with the Tizen .NET application development
+process. With the instructions, you can create and run a basic .NET
+application, which displays some text on the screen with no user
+interaction.</p>
+
+<ol>
+  <li>
+    <p>Before you get started with developing Tizen applications, set up the <a href="../../../vstools/install.md">development environment</a>.</p>
+  </li>
+  <li>
+    <p><a href="#creating-a-project">Creating a Project</a> using Visual Studio.</p>
+
+    <p>This step shows how you can use a predesigned project template that
+ creates all the basic files and folders required for your project.</p>
+  </li>
+  <li>
+    <p><a href="#building-your-application">Building Your Application</a>.</p>
+
+    <p>After you have implemented code for the features you want, this step
+ shows how you can build the application to validate and compile
+ the code.</p>
+  </li>
+  <li>
+    <p><a href="#deploying-and-running-your-application">Deploying and Running Your Application</a>.</p>
+
+    <p>This step shows how you can deploy and run the application on the emulator or a real target device.</p>
+  </li>
+  <li>
+    <p><a href="#enhancing-your-application">Enhancing Your Application</a>.</p>
+
+    <p>This step shows how you can enhance your application by creating a
+ UI and making small alterations to it to improve the usability of the application.</p>
+  </li>
+</ol>
+
+<h2 id="creating-a-project">Creating a Project</h2>
+
+<p>The following example shows you how to create and configure a basic
+Tizen .NET application project in Visual Studio. An application project
+contains all the files that make up an application.</p>
+
+<p>The following figure illustrates the output of application. The
+application screen displays a message, <strong>Welcome to Xamarin Forms!</strong> and there is no user interaction.</p>
+
+<p><strong>Figure: Application running on the mobile emulator</strong></p>
+
+<p><img src="media/cs_first_building_emulator_mobile.png" alt="Application running on the mobile
+emulator" /></p>
+
+<p>To create a new Tizen .NET project:</p>
+
+<ol>
+  <li>Launch Visual Studio.</li>
+  <li>
+    <p>In the Visual Studio menu, select <strong>File &gt; New &gt; Project</strong>.</p>
+
+    <p><img src="media/cs_first_creating_menupath.png" alt="Create a new project" /></p>
+
+    <p>A New Project window appears.</p>
+  </li>
+  <li>
+    <p>Select <strong>Installed &gt; Visual C# &gt; Tizen</strong> and select
+ <strong>Tizen App (Xamarin.Forms)</strong> template.</p>
+
+    <p>Define the project properties and click <strong>OK</strong>. You can enter the <strong>Name</strong>, <strong>Location</strong>, and <strong>Solution name</strong>.</p>
+
+    <p><img src="media/cs_first_creating_new_project.png" alt="Select a template" /></p>
+
+    <p>The <strong>Tizen Project Wizard</strong> pop-up window appears.</p>
+  </li>
+  <li>
+    <p>Select the profile, <strong>Mobile</strong>. Click <strong>OK</strong>.</p>
+
+    <p><img src="media/cs_first_creating_project_wizard.png" alt="Tizen Project Wizard" /></p>
+
+    <p>If you select the <strong>Common</strong> profile, you cannot select <strong>Mobile</strong>,
+ <strong>TV</strong>, or <strong>Wearable</strong>.</p>
+  </li>
+</ol>
+
+<p>The following figure illustrates a solution with four projects created and displayed in the <strong>Solution Explorer</strong> view:</p>
+
+<p><strong>Figure: Project with mobile, TV, and wearable profiles</strong></p>
+
+<p><img src="media/vstools_solution.png" alt="Project with mobile, TV, and wearable
+profiles" /></p>
+
+<ul>
+  <li>The <strong>&lt;projectname&gt;</strong> project contains the Xamarin.Forms code
+  shared across platforms.</li>
+  <li>If you select the common profile in the Tizen Project Wizard, a
+common project titled <strong>&lt;projectname&gt;.Tizen</strong> is added. It
+contains code to instantiate your common application within the
+Tizen framework.</li>
+  <li>If you select the mobile profile in the Tizen Project Wizard, a
+mobile project titled <strong>&lt;projectname&gt;.Tizen.Mobile</strong> is added.
+It contains code to instantiate your mobile application within the Tizen framework.</li>
+</ul>
+
+<p>If you are already familiar with Xamarin.Forms, this project has the
+same structure as a Xamarin.Forms portable application. The
+<strong>&lt;projectname&gt;</strong> project is the portable class library and the
+others are the platform-specific projects; however, in Tizen .NET, only
+the Tizen platform-specific project is generated.</p>
+
+<p>The <code class="highlighter-rouge">.cs</code> file in the portable project already contains simple
+Xamarin.Forms code that makes a basic UI.</p>
+
+<h2 id="building-your-application">Building Your Application</h2>
+
+<p>After you have created the application project, you can implement the
+required features. In this example, only the default features from the
+project template are used, and no code changes are required.</p>
+
+<p>When your application code is ready, build the application. The building
+process performs a validation check and compiles your files. You must
+sign the application package with an author certificate when building
+the application. If you have not yet registered a Tizen certificate in
+Visual Studio, see <a href="../../../vstools/tools/certificate-manager.md">Certificate
+Manager</a>.</p>
+
+<p>There are 2 different ways to build the application:</p>
+
+<ul>
+  <li>In the Visual Studio menu, select <strong>Build &gt; Build Solution</strong>.</li>
+  <li>In the <strong>Solution Explorer</strong> view, right-click the solution name and
+select <strong>Build</strong>.</li>
+</ul>
+
+<p>Tizen .NET applications are always deployed as installed packages. The
+package files have the <code class="highlighter-rouge">.tpk</code> file extension, and the process of generating a package is controlled by the <a href="../../../vstools/tools/manifest-editor.md">manifest
+file</a>. The Visual Studio
+template generates the manifest file (<code class="highlighter-rouge">tizen-manifest.xml</code>) to the top
+level of the &lt;projectname&gt;.Tizen project (if you create projects
+with mobile, TV, or wearable profiles, a separate manifest file is
+generated for each profile).</p>
+
+<p>For this example application, the default manifest is sufficient. If you
+want to make any changes in the application, such as changing the
+application icon or installing resources that are used by the
+application at runtime, see <a href="#packaging-your-application">Packaging Your Application</a>.</p>
+
+<p>After you have built the application, deploy and run it.</p>
+
+<h2 id="deploying-and-running-your-application">Deploying and Running Your Application</h2>
+
+<p>To run the application, you must first deploy it to the target: either a
+device or an emulator. Deploying means transferring the package file
+(<code class="highlighter-rouge">.tpk</code>) to the target and invoking the Tizen package manager to install
+it.</p>
+
+<p>To deploy and run the application on the emulator:</p>
+
+<ol>
+  <li>
+    <p>In the Visual Studio menu, select <strong>Tools &gt; Tizen &gt; Tizen
+Emulator Manager</strong>.</p>
+
+    <p>Alternatively, click <strong>Launch Tizen Emulator</strong> in the Visual Studio toolbar to launch the Tizen Emulator Manager.</p>
+
+    <p><img src="media/cs_launch_tizen_emu.png" alt="Launch Tizen Emulator" /></p>
+  </li>
+  <li>
+    <p>In the Emulator Manager, select an emulator from the list and click
+ <strong>Launch</strong>.</p>
+
+    <p>If no applicable emulator instance exists, <a href="../../../vstools/tools/emulator-manager.md#create">create
+ one</a>.</p>
+
+    <p><img src="media/cs_first_building_emulator_manager.png" alt="Tizen Emulator
+ Manager" /></p>
+  </li>
+  <li>
+    <p>Once you launch an emulator instance, you can deploy the application
+ by clicking the emulator instance in the Visual Studio toolbar.</p>
+
+    <p>In the Visual Studio toolbar, you can select the target from the drop-down list to change the deployment target.</p>
+
+    <p><img src="media/vs_emulator_launch.png" alt="Tizen Emulator Manager" /></p>
+
+    <p><img src="media/cs_first_building_emulator_list.png" alt="Select deployment
+ target" /></p>
+  </li>
+  <li>
+    <p>If deployment is successful, the application icon is visible on the
+ emulator or device screen. Click the icon to launch the application.
+ The following figure shows the launched application on the mobile emulator:</p>
+
+    <p><img src="media/cs_first_building_emulator_mobile.png" alt="Application running on the mobile
+ emulator" /></p>
+  </li>
+</ol>
+
+<p>Visual Studio uses the Smart Development Bridge (SDB) to communicate
+with the target device or emulator. If you encounter problems with
+detecting the device in Visual Studio, you can check the SDB manually:</p>
+
+<ol>
+  <li>In the Visual Studio menu, select <strong>Tools &gt; Tizen &gt; Tizen Sdb
+Command Prompt</strong>.</li>
+  <li>
+    <p>In the command prompt, enter <code class="highlighter-rouge">sdb devices</code>.</p>
+
+    <p><img src="media/cs_first_building_sdb_prompt.png" alt="Emulator detection" /></p>
+
+    <p>A list of the attached devices appears.</p>
+  </li>
+</ol>
+
+<p>If you face any issues during deployment, it is recommended to manually install the application using SDB:</p>
+
+<ul>
+  <li>
+    <p>Mobile application:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>sdb <span class="nb">install</span> &lt;path-to-package&gt;/org.tizen.example.CrossTemplate1.Tizen.Mobile-1.0.0.tpk
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="enhancing-your-application">Enhancing Your Application</h2>
+
+<p>Xamarin.Forms provides a way to build portable applications which run in
+a native way. It provides a set of controls for building a user
+interface, as well as generates code which adapts the user interface
+code to use the native facilities of the supported platforms. The
+following is a brief introduction to the Xamarin.Forms controls, and how
+to use them to build on the application you have just created.</p>
+
+<h3 id="understanding-the-source-code">Understanding the Source Code</h3>
+
+<p>The C# code from your first application displays a label centered on
+the screen, containing the <strong>Welcome to Xamarin Forms!</strong> text. This
+CrossTemplate1 application created from the template is set up and ready
+to be built and run by Visual Studio right after you create it, as
+described above.</p>
+
+<p>The Xamarin.Forms controls used to create the user interface of a Tizen
+.NET application can be broadly categorized into 4 groups:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">Pages</code> represent screens within an application. The UI of an
+application is built from one or more pages and with a navigation
+mechanism, if needed. The navigation scheme is specified by the
+<code class="highlighter-rouge">INavigation</code> interface. Many pages are of the <code class="highlighter-rouge">ContentPage</code> type,
+which describes the view of a single screen.</li>
+  <li><code class="highlighter-rouge">Layouts</code> are containers used to compose views into
+logical structures. Some available types are absolute, grid,
+relative, and stack layouts; each provide mechanisms, such as
+orientation, spacing, and padding, to control the layout. The
+<code class="highlighter-rouge">StackLayout</code> class is a basic layout where you can simply stack
+controls on top of, or side-by-side, one another. Layouts can also
+be bundled with and nested into each other.</li>
+  <li><code class="highlighter-rouge">Views</code> are the controls displayed on the user interface, such as
+labels, buttons, and text entry boxes.</li>
+  <li><code class="highlighter-rouge">Cells</code> are specialized elements used for items in tables and lists,
+which help describe how the items must be rendered.</li>
+</ul>
+
+<p>The following shows the portable code portion of the Tizen Xamarin.Forms
+project <strong>CrossTemplate1.cs</strong> file, generated by the template:</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Linq</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Text</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Xamarin.Forms</span><span class="p">;</span>
+
+<span class="k">namespace</span> <span class="nn">CrossTemplate1</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">class</span> <span class="nc">App</span> <span class="p">:</span> <span class="n">Application</span>
+    <span class="p">{</span>
+        <span class="k">public</span> <span class="nf">App</span><span class="p">()</span>
+        <span class="p">{</span>
+            <span class="c1">/// Root page of your application</span>
+            <span class="n">MainPage</span> <span class="p">=</span> <span class="k">new</span> <span class="n">ContentPage</span>
+            <span class="p">{</span>
+                <span class="n">Content</span> <span class="p">=</span> <span class="k">new</span> <span class="n">StackLayout</span>
+                <span class="p">{</span>
+                    <span class="n">VerticalOptions</span> <span class="p">=</span> <span class="n">LayoutOptions</span><span class="p">.</span><span class="n">Center</span><span class="p">,</span>
+                    <span class="n">Children</span> <span class="p">=</span>
+                    <span class="p">{</span>
+                        <span class="k">new</span> <span class="n">Label</span>
+                        <span class="p">{</span>
+                            <span class="n">HorizontalTextAlignment</span> <span class="p">=</span> <span class="n">TextAlignment</span><span class="p">.</span><span class="n">Center</span><span class="p">,</span>
+                            <span class="n">Text</span> <span class="p">=</span> <span class="s">"Welcome to Xamarin Forms!"</span>
+                        <span class="p">}</span>
+                    <span class="p">}</span>
+                <span class="p">}</span>
+            <span class="p">};</span>
+        <span class="p">}</span>
+        <span class="k">protected</span> <span class="k">override</span> <span class="k">void</span> <span class="nf">OnStart</span><span class="p">()</span>
+        <span class="p">{</span>
+            <span class="c1">/// Handle when your app starts</span>
+        <span class="p">}</span>
+        <span class="k">protected</span> <span class="k">override</span> <span class="k">void</span> <span class="nf">OnSleep</span><span class="p">()</span>
+        <span class="p">{</span>
+            <span class="c1">/// Handle when your app sleeps</span>
+        <span class="p">}</span>
+        <span class="k">protected</span> <span class="k">override</span> <span class="k">void</span> <span class="nf">OnResume</span><span class="p">()</span>
+        <span class="p">{</span>
+            <span class="c1">/// Handle when your app resumes</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>This application is constructed with the following Xamarin.Forms
+controls:</p>
+
+<ul>
+  <li>The <code class="highlighter-rouge">App</code> class is declared, deriving from the
+<a href="https://developer.xamarin.com/api/type/Xamarin.Forms.Application/">Xamarin.Forms.Application</a>
+class, which represents a cross-platform mobile application.</li>
+  <li>The <code class="highlighter-rouge">App</code> class constructor creates a <code class="highlighter-rouge">ContentPage</code> instance where
+  you set up the view to display.</li>
+  <li>
+    <p>You assign what you want to display to the <code class="highlighter-rouge">Content</code> property of the
+  <code class="highlighter-rouge">ContentPage</code> class.</p>
+
+    <p>In this case, the content is a container, specifically a
+  <code class="highlighter-rouge">StackLayout</code> instance. This layout positions (“stacks”) its child
+  elements in a single vertical (default) or horizontal line.</p>
+  </li>
+  <li>Child elements are added to the <code class="highlighter-rouge">Children</code> property. In this
+  example, a single <code class="highlighter-rouge">Label</code> instance is added, whose <code class="highlighter-rouge">Text</code> property
+  is the message you want to display.</li>
+  <li>Some lines implement control over the layout. For example, the stack
+  is set to vertically center the child elements, and the label is set
+  to use center-alignment for its text.</li>
+  <li>Besides the <code class="highlighter-rouge">App</code> constructor, the rest of the file is just
+  a template. Event handlers from the <code class="highlighter-rouge">Application</code> class can be
+  filled in if the application needs to handle application
+  state changes.</li>
+</ul>
+
+<p>The code does not show the instantiation of the <code class="highlighter-rouge">App</code> class. Since
+application launching is platform-specific, the launching part,
+including the instantiation of the <code class="highlighter-rouge">App</code> class and the declaration of
+the <code class="highlighter-rouge">Main()</code> function (required as the entry point of every C#
+program), happens in the &lt;projectname&gt;.Tizen project, in the
+matching file there. For example, if the file you are looking at in the
+portable project is named <code class="highlighter-rouge">&lt;projectname&gt;.cs</code>, the platform-specific file
+in the &lt;projectname&gt;.Tizen.&lt;platform&gt; project is
+<code class="highlighter-rouge">&lt;projectname&gt;.Tizen.Mobile.cs</code>. For a similar application,
+which uses only Xamarin.Forms controls, the generated code at the
+&lt;projectname&gt;.Tizen part of the project contains everything
+needed, and you do not need to make any modifications. The following
+example shows the content of the <code class="highlighter-rouge">&lt;projectname&gt;.Tizen.Mobile.cs</code> file:</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
+
+<span class="k">namespace</span> <span class="nn">CrossTemplate1</span>
+<span class="p">{</span>
+    <span class="k">class</span> <span class="nc">Program</span> <span class="p">:</span> <span class="k">global</span><span class="p">::</span><span class="n">Xamarin</span><span class="p">.</span><span class="n">Forms</span><span class="p">.</span><span class="n">Platform</span><span class="p">.</span><span class="n">Tizen</span><span class="p">.</span><span class="n">FormsApplication</span>
+    <span class="p">{</span>
+        <span class="k">protected</span> <span class="k">override</span> <span class="k">void</span> <span class="nf">OnCreate</span><span class="p">()</span>
+        <span class="p">{</span>
+            <span class="k">base</span><span class="p">.</span><span class="nf">OnCreate</span><span class="p">();</span>
+            <span class="nf">LoadApplication</span><span class="p">(</span><span class="k">new</span> <span class="nf">App</span><span class="p">());</span>
+        <span class="p">}</span>
+
+        <span class="k">static</span> <span class="k">void</span> <span class="nf">Main</span><span class="p">(</span><span class="kt">string</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="kt">var</span> <span class="n">app</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">Program</span><span class="p">();</span>
+            <span class="k">global</span><span class="p">::</span><span class="n">Xamarin</span><span class="p">.</span><span class="n">Forms</span><span class="p">.</span><span class="n">Platform</span><span class="p">.</span><span class="n">Tizen</span><span class="p">.</span><span class="n">Forms</span><span class="p">.</span><span class="nf">Init</span><span class="p">(</span><span class="n">app</span><span class="p">);</span>
+            <span class="n">app</span><span class="p">.</span><span class="nf">Run</span><span class="p">(</span><span class="n">args</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="adding-a-button-and-second-label">Adding a Button and Second Label</h3>
+
+<p>To modify and build a new application, create a new project. The default
+name for the second project is <strong>CrossTemplate2</strong> (as shown in the
+namespace declaration in the following step list), but of course you can
+name it anything you want.</p>
+
+<p>The basic template uses a label which displays text in an area of the
+screen. The properties inherited from the base classes of <code class="highlighter-rouge">Label</code> give
+control over the display: font attributes, families, and sizes, as well
+as layout options. Modify the application by adding a button control. It
+is similar to the label, but is specifically designed to react to click
+events. As a result, the <code class="highlighter-rouge">Button</code> class defines the <code class="highlighter-rouge">Clicked</code> event,
+which tells the application what to do when the click event takes place.</p>
+
+<p>In order to do something visible on the screen to show that you have
+received the click event, define another label. Give the new label a
+value to be displayed in the initial state, and make the button click
+event handler update the text and button color once the click event
+triggers.</p>
+
+<p>To modify the application by adding a button and label:</p>
+
+<ol>
+  <li>
+    <p>Since the click event triggers outside the class constructor,
+ declare the button, the label, and a click counter at the class
+ level:</p>
+
+    <div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
+ <span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
+ <span class="k">using</span> <span class="nn">System.Linq</span><span class="p">;</span>
+ <span class="k">using</span> <span class="nn">System.Text</span><span class="p">;</span>
+ <span class="k">using</span> <span class="nn">Xamarin.Forms</span><span class="p">;</span>
+
+ <span class="k">namespace</span> <span class="nn">CrossTemplate2</span>
+ <span class="p">{</span>
+     <span class="k">public</span> <span class="k">class</span> <span class="nc">App</span> <span class="p">:</span> <span class="n">Application</span>
+     <span class="p">{</span>
+         <span class="n">Button</span> <span class="n">button</span><span class="p">;</span>
+         <span class="n">Label</span> <span class="n">label</span><span class="p">;</span>
+         <span class="kt">int</span> <span class="n">clicks</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Instantiate the button, and add the <code class="highlighter-rouge">OnButtonClicked</code> event handler to the button’s <code class="highlighter-rouge">Clicked</code> event:</p>
+
+    <div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>         <span class="k">public</span> <span class="nf">App</span><span class="p">()</span>
+         <span class="p">{</span>
+             <span class="n">button</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Button</span>
+             <span class="p">{</span>
+                 <span class="n">Text</span> <span class="p">=</span> <span class="s">"Click here!"</span><span class="p">,</span>
+                 <span class="n">BackgroundColor</span> <span class="p">=</span> <span class="n">Color</span><span class="p">.</span><span class="n">Red</span><span class="p">,</span>
+                 <span class="n">HorizontalOptions</span> <span class="p">=</span> <span class="n">LayoutOptions</span><span class="p">.</span><span class="n">Center</span><span class="p">,</span>
+             <span class="p">};</span>
+             <span class="n">button</span><span class="p">.</span><span class="n">Clicked</span> <span class="p">+=</span> <span class="n">OnButtonClicked</span><span class="p">;</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Instantiate the label, and give the label a value to be displayed in
+ the initial state by setting the <code class="highlighter-rouge">Text</code> property:</p>
+
+    <div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>             <span class="n">label</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Label</span>
+             <span class="p">{</span>
+                 <span class="n">Text</span> <span class="p">=</span> <span class="s">"unclicked"</span><span class="p">,</span>
+                 <span class="n">HorizontalOptions</span> <span class="p">=</span> <span class="n">LayoutOptions</span><span class="p">.</span><span class="n">Center</span><span class="p">,</span>
+             <span class="p">};</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Change the initial text of the first label to “Welcome to Tizen!”,
+ and include the new button and label as children of the
+ <code class="highlighter-rouge">StackLayout</code>, so they are stacked below the first label:</p>
+
+    <div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>             <span class="c1">/// The root page of your application</span>
+             <span class="n">MainPage</span> <span class="p">=</span> <span class="k">new</span> <span class="n">ContentPage</span>
+             <span class="p">{</span>
+                 <span class="n">Content</span> <span class="p">=</span> <span class="k">new</span> <span class="n">StackLayout</span>
+                 <span class="p">{</span>
+                     <span class="n">VerticalOptions</span> <span class="p">=</span> <span class="n">LayoutOptions</span><span class="p">.</span><span class="n">Center</span><span class="p">,</span>
+                     <span class="n">Children</span> <span class="p">=</span> <span class="p">{</span>
+                         <span class="k">new</span> <span class="n">Label</span> <span class="p">{</span>
+                             <span class="n">HorizontalTextAlignment</span> <span class="p">=</span> <span class="n">TextAlignment</span><span class="p">.</span><span class="n">Center</span><span class="p">,</span>
+                             <span class="n">Text</span> <span class="p">=</span> <span class="s">"Welcome to Tizen!"</span>
+                         <span class="p">},</span>
+                         <span class="n">button</span><span class="p">,</span>
+                         <span class="n">label</span><span class="p">,</span>
+                     <span class="p">}</span>
+                 <span class="p">}</span>
+             <span class="p">};</span>
+         <span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>To change the new label’s properties when the button is clicked,
+ define the <code class="highlighter-rouge">OnButtonClicked</code> event handler.</p>
+
+    <p>When an event triggers, 2 parameters are delivered to any handler
+ set up to watch it. The first parameter is an object representing
+ the control that triggered the event and the second parameter is the
+ event data appropriate to the event type.</p>
+
+    <p>Increment the click counter, build a string showing how many times
+ the button has been clicked, and set the <code class="highlighter-rouge">Text</code> property of the
+ label to that string.</p>
+
+    <p>Just for visual effect, you can also set the button background color
+ to something different than the initial color set when the button
+ was instantiated.</p>
+
+    <div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>         <span class="k">void</span> <span class="nf">OnButtonClicked</span><span class="p">(</span><span class="kt">object</span> <span class="n">s</span><span class="p">,</span> <span class="n">EventArgs</span> <span class="n">e</span><span class="p">)</span>
+         <span class="p">{</span>
+             <span class="n">clicks</span> <span class="p">+=</span> <span class="m">1</span><span class="p">;</span>
+             <span class="n">label</span><span class="p">.</span><span class="n">Text</span> <span class="p">=</span> <span class="n">String</span><span class="p">.</span><span class="nf">Format</span><span class="p">(</span><span class="s">"Number of clicks: {0}"</span><span class="p">,</span> <span class="n">clicks</span><span class="p">);</span>
+             <span class="n">button</span><span class="p">.</span><span class="n">BackgroundColor</span> <span class="p">=</span> <span class="n">Color</span><span class="p">.</span><span class="n">Blue</span><span class="p">;</span>
+         <span class="p">}</span>
+         <span class="k">protected</span> <span class="k">override</span> <span class="k">void</span> <span class="nf">OnStart</span><span class="p">()</span>
+         <span class="p">{</span>
+             <span class="c1">/// Handle when your app starts</span>
+         <span class="p">}</span>
+         <span class="k">protected</span> <span class="k">override</span> <span class="k">void</span> <span class="nf">OnSleep</span><span class="p">()</span>
+         <span class="p">{</span>
+             <span class="c1">/// Handle when your app sleeps</span>
+         <span class="p">}</span>
+         <span class="k">protected</span> <span class="k">override</span> <span class="k">void</span> <span class="nf">OnResume</span><span class="p">()</span>
+         <span class="p">{</span>
+             <span class="c1">/// Handle when your app resumes</span>
+         <span class="p">}</span>
+     <span class="p">}</span>
+ <span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p>The following image shows what happens when you run the modified code.
+At startup, the button is red and the text below the button is
+<strong>unclicked</strong>. After a couple of clicks, the click counter is displayed
+below the button, and the button color has changed.</p>
+
+<p><strong>Figure: Enhanced application</strong></p>
+
+<p><img src="media/cs_first_building_emulator_enhanced.png" alt="Enhanced application" /></p>
+
+<p>This topic only introduces the controls in use in the example above. For
+more information on Xamarin.Forms, see the <a href="https://developer.xamarin.com/guides/xamarin-forms/">Xamarin Developer
+Center</a>. There is also <a href="https://developer.xamarin.com/guides/xamarin-forms/creating-mobile-apps-xamarin-forms/">a comprehensive book about Xamarin.Forms</a>
+available as a free download from Microsoft Press.</p>
+
+<h2 id="packaging-your-application">Packaging Your Application</h2>
+
+<p>A Tizen .NET application is deployed in the form of an installable
+package, with the package file extension <code class="highlighter-rouge">.tpk</code>. A Tizen .NET package
+has a relatively simple structure: internally it is a ZIP file with
+content that matches the directory layout of the project.</p>
+
+<p>The package contains the following:</p>
+
+<ul>
+  <li>
+    <p>The <code class="highlighter-rouge">shared</code> directory, which is for items that are considered
+  system-wide (shareable).</p>
+
+    <p>The application icon is packaged in the <code class="highlighter-rouge">shared/res</code> directory on
+  installation, and the icon appears on the home screen with the icons
+  for the other applications. You can either replace the icon (which
+  is just a copy of the default Tizen logo) with one of your own using
+  the file name generated by Visual Studio, or put a new icon in the
+  same project directory and update the package manifest to indicate
+  the new name.</p>
+  </li>
+  <li>
+    <p>The <code class="highlighter-rouge">res</code> directory, which is for application-private resources.</p>
+
+    <p>If the application needs a file to open at runtime, it can be
+  placed here.</p>
+  </li>
+  <li>The <code class="highlighter-rouge">bin</code> directory, which contains the generated
+  application executable.</li>
+  <li>
+    <p>The <code class="highlighter-rouge">lib</code> directory, which contains the generated application
+  support code.</p>
+
+    <p>If you use nugget libraries, they are imported in the lib directory.</p>
+  </li>
+  <li>The package manifest, which defines the application properties and
+  is used at the installation time.</li>
+  <li>2 signature files (author and distributor), which are checked at the
+  installation time.</li>
+</ul>
+
+<p>The following figure shows the layout of the platform-specific (Tizen)
+project. It includes the <code class="highlighter-rouge">lib</code>, <code class="highlighter-rouge">res</code>, and <code class="highlighter-rouge">shared</code> (with a <code class="highlighter-rouge">res</code>
+subdirectory containing an image file) directories, and the
+<strong>tizen-manifest.xml</strong> file. There is also the <code class="highlighter-rouge">bin</code> directory, which
+Visual Studio only shows if you select the <strong>Show all files</strong> option for
+the solution. These pieces all go into the package.</p>
+
+<p><strong>Figure: Project layout</strong></p>
+
+<p><img src="media/vstools_solution.png" alt="Project layout" /></p>
+
+<p>Package generation (and in fact installation) is controlled by the
+<strong>tizen-manifest.xml</strong> package manifest file. The following figure shows
+the <code class="highlighter-rouge">.tpk</code> file for the initial application, to illustrate how the
+combination of the directory layout and the package manifest leads to
+the actual package.</p>
+
+<p><strong>Figure: Package content</strong></p>
+
+<p><img src="media/cs_first_packaging_content.png" alt="Package content" /></p>
+
+<p>When packaging your application, you also need to consider whether any
+feature or privilege declarations are needed in the manifest file, and
+how to place any language-specific files.</p>
+
+                        <button class="print-btn hidden-print" onclick="printDiv('printableArea')">PRINT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer clearfix">
+  <div class="copyright">
+    © 2019 Tizen Project, a <a href="http://www.linuxfoundation.org/">Linux Foundation</a> Project. All Rights Reserved.
+    Linux is a registered trademark of Linus Torvalds.<br>
+    Tizen is a registered trademark of The Linux Foundation. * Other names and brands may be claimed as the property of
+    others.<br>
+    Except as noted, this content is licensed under Creative Commons Attribution 3.0. For details, see the <a
+      href="https://www.tizen.org/content-license">Content License.</a><br>
+  </div>
+  <div class="family-sites">
+    <a href="https://developer.tizen.org/">Developers</a>
+    <div class="divider"></div>
+    <a href="https://docs.tizen.org">Docs</a>
+    <div class="divider"></div>
+    <a href="https://dashboard.tizen.org">Dashboard</a>
+    <div class="divider"></div>
+    <a href="https://craftroom.tizen.org/">Craftroom</a>
+  </div>
+  <div class="outer-links">
+    <div class="item">
+      <a href="https://twitter.com/TizenProject"><img src="/images/ic_footer_twitter.png">Twitter</a>
+    </div>
+    <div class="item">
+      <a href="http://www.facebook.com/pages/Tizen-Project/179577455452943?ref=ts"><img
+          src="/images/ic_footer_facebook.png">Facebook</a>
+    </div>
+    <div class="item">
+      <a href="https://bugs.tizen.org"><img src="/images/ic_footer_bug.png">Bug Tracker</a>
+    </div>
+    <div class="item">
+      <a href="http://lists.tizen.org"><img src="/images/ic_footer_mailing.png">Mailing Lists</a>
+    </div>
+    <div class="item">
+      <a href="http://www.tizenstore.com"><img src="/images/ic_footer_tizenstore.png">Tizen Store</a>
+    </div>
+  </div>
+</div>
+    </div>
+    <script type="text/javascript" src="/vendor/jquery/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/common.js?v=28092019"></script>
+<script type="text/javascript" src="/js/handlebars-v4.0.11.js?v=28092019"></script>
+<script type="text/javascript" src="/js/widgets-data.js?v=28092019"></script>
+<script type="text/javascript" src="/js/widgets.js?v=28092019"></script>
+<script type="text/javascript" src="/js/toc.js"></script>
+    <div id="templates"></div>    
+</body>
+
+</html>
