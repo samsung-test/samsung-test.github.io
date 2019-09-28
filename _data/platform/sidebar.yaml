@@ -14,50 +14,52 @@
           - page: Installing Development Tools
             url: platform/developing/installing 
           - page: Setting up Development Environment
-            url:  platform/developing/setting-up      
+            url:  platform/developing/setting-up
           - page: Cloning Tizen Source Files
-            url: platform/developing/cloning  
-            subfolderitems:
-               - page: Development Workflow
-                 url: platform/about/work-flow
-               - page: Git Repository Structure
-                 url: platform/about/git-repo-structure
-               - page: Typographic Conventions
-                 url: platform/about/conventions
-          - page: Development Workflow
-            url: platform/about/work-flow
-          - page: Git Repository Structure
-            url: platform/about/git-repo-structure
-          - page: Typographic Conventions
-            url: platform/about/conventions
+            url: platform/developing/cloning
+          - page: Building Packages Locally with GBS
+            url: platform/developing/building
+          - page: Building All Packages Locally with GBS
+            url: platform/developing/building-all
+          - page: Contributing Code to Tizen
+            url: platform/developing/contributing
+          - page: Creating Tizen Images with MIC
+            url: platform/developing/creating
+          - page: Flashing an Image to Device
+            url: platform/developing/flashing
+          - page: Development Tips
+            url: platform/developing/tips 
       - title: Porting
-        url: platform/about/work-flow
+        url: platform/porting/overview
         subfolderitems:
-          - page: Development Workflow
-            url: platform/about/work-flow
-          - page: Git Repository Structure
-            url: platform/about/git-repo-structure
-          - page: Typographic Conventions
-            url: platform/about/conventions
+          - page: Overview
+            url: platform/porting/overview
+          - page: Kernel
+            url: platform/porting/kernel
+          - page: System
+            url: platform/porting/system
+          - page: Graphics and UI
+            url: platform/porting/graphics-and-ui          
       - title: Reference
-        url: platform/developing/installing
+        url: platform/reference/gerrit-usage
         subfolderitems:
-          - page: Installing Development Tools
-            url: platform/developing/installing 
-          - page: Setting up Development Environment
-            url:  platform/developing/setting-up      
-          - page: Cloning Tizen Source Files
-            url: platform/developing/cloning  
+          - page: Gerrit
+            url: platform/reference/gerrit-usage
+          - page: Git Build System (GBS)
+            url:  platform/reference/gbs/gbs-overview       
             subfolderitems:
-               - page: Development Workflow
-                 url: platform/about/work-flow
-               - page: Git Repository Structure
-                 url: platform/about/git-repo-structure
-               - page: Typographic Conventions
-                 url: platform/about/conventions
-          - page: Development Workflow
-            url: platform/about/work-flow
-          - page: Git Repository Structure
-            url: platform/about/git-repo-structure
-          - page: Typographic Conventions
-            url: platform/about/conventions
+               - page: Overview
+                 url: platform/reference/gbs/gbs-overview
+               - page: GBS Configuration
+                 url: platform/reference/gbs/gbs.conf
+               - page: GBS Maintenance Models
+                 url: platform/reference/gbs/gbs-maintenance-models
+          - page: MIC Image Creator
+            url: platform/reference/mic/mic-overview
+            subfolderitems:
+               - page: Overview
+                 url: platform/reference/mic/mic-overview
+               - page: Customizing Images
+                 url: platform/reference/mic/mic-customize-image
+               - page: MIC Reference
+                 url: platform/reference/mic/mic-reference
