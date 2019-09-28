@@ -1,24 +1,7 @@
 <!-- Templates-->
-<script id="template-widgetOldVersions" type="text/x-handlebars-template">
-	<div id="toc" class="toc maintoc">
-		<div id="toctitle">
-			<h2 id="olderVersionsHeading">Older Versions</h2>
-		</div>
-		<ul id="olderVersions">
-		{{#each versions}}
-			{{#unless this.latest}}
-			{{#if this.published}}
-				<li>
-					<a href="/{{this.branch}}/" >{{this.title}}</a>
-				</li>
-			{{/if}}	
-			{{/unless}}
-		{{/each}}
-		</ul>
-	</div>
-</script>
 <script id="template-widgetVersionSwitcher" type="text/x-handlebars-template">
 	<select>
+	<option value="/">Home</option>
 	{{#each versions}}
 		{{#if this.published}}
 			<option value="{{this.branch}}" >
@@ -36,13 +19,7 @@
 <!-- /Templates-->
 
 <script>
-$(function () {
-	// Old versions on main TOC
-	var widgetOldVersionsContainer = $("#template-widgetOldVersions").html();
-	var widgetOldVersionsTemplate = Handlebars.compile(widgetOldVersionsContainer);
-	var widgetOldVersionsTemplateHtml = widgetOldVersionsTemplate(widgetsData);
-	$('#widgetOldVersions').html(widgetOldVersionsTemplateHtml);
-	
+$(function () {	
 	// Widget Switcher
 	var widgetVersionSwitcherContainer = $("#template-widgetVersionSwitcher").html();
 	var widgetVersionSwitcherTemplate = Handlebars.compile(widgetVersionSwitcherContainer);
@@ -56,19 +33,24 @@ $(function () {
 	$('.widgetLatestVersionNotification').html(widgetLatestVersionNotificationTemplateHtml);
 	
 });
-</script>
-<script>
-$(".js-latestVersion-title").text(latestVersion[0].title);
-$(".js-latestVersion-releaseDate").text(latestVersion[0].releaseDate);
-$(".js-thisVersion-title").text(currentVersion);
 
+// Current URL
 currentUrl = window.location.pathname;
 console.log('current url',currentUrl);
+
+// While page load select current version
 $('#widgetVersionSwitcher select').val(currentVersion);
+
+// On Version change
 $('#widgetVersionSwitcher select').on('change', function () {
 	switchVersion = $(this).val();
-	updatedUrl = currentUrl.replace('latest',switchVersion);
-	updatedUrl = updatedUrl.replace(currentVersion,switchVersion);
+	console.log('switch version', switchVersion);
+	if (currentVersion == 'toc'){
+		updatedUrl = window.location.origin + '/' + switchVersion;
+	} else {
+		updatedUrl = currentUrl.replace('latest',switchVersion);
+		updatedUrl = updatedUrl.replace(currentVersion,switchVersion);
+	}
 	window.location = updatedUrl; 
 });
 if (currentVersion == latestVersion[0].branch){
