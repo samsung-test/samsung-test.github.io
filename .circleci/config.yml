@@ -38,9 +38,6 @@ jobs:
           fi
           cp -rf ../output/* ./
 
-          if [ -f latest ]; then
-           rm latest
-          fi
           LATEST_VERSION=$(<js/latest-version.txt)
           echo $LATEST_VERSION
           ln -s $LATEST_VERSION'/' latest
