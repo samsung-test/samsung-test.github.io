@@ -5,9 +5,9 @@
     {% assign finalurl = menu.url %}
     {% assign sections = finalurl | split: '/' %}
 
-    <li class="{% if (sections[0] == directory[0] ) %}open{% endif %}">
+    <li class="{% if (sections[1] == directory[1] ) %}open{% endif %}">
         <a href="{{finalurl}}" class="hasChild">
-            {{menu.title}} -- {{sections[0]}} -- {{directory[0]}}
+            {{menu.title}} 
             <span class="arrow"></span>
         </a>
         {% if menu.subfolderitems[0] %}
