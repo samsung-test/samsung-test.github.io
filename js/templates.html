@@ -32,8 +32,6 @@ $(function () {
 	var widgetLatestVersionNotificationTemplateHtml = widgetLatestVersionNotificationTemplate(widgetsData);
 	$('.widgetLatestVersionNotification').html(widgetLatestVersionNotificationTemplateHtml);
 	
-
-
 // Current URL
 currentUrl = window.location.pathname;
 console.log('current url',currentUrl);
@@ -46,7 +44,7 @@ $('#widgetVersionSwitcher select').on('change', function () {
 	switchVersion = $(this).val();
 	console.log('switch version', switchVersion);
 	if (switchVersion == '/'){
-		updatedUrl = window.location.origin + '/' + switchVersion;
+		updatedUrl = window.location.origin;
 	} else {
 		updatedUrl = currentUrl.replace('latest',switchVersion);
 		updatedUrl = updatedUrl.replace(currentVersion,switchVersion);
