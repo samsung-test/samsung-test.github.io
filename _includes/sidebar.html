@@ -7,7 +7,7 @@
 
     <li class="{% if (sections[0] == directory[0] ) %}open{% endif %}">
         <a href="{{finalurl}}" class="hasChild">
-            {{menu.title}}
+            {{menu.title}} -- {{sections[0]}} -- {{directory[0]}}
             <span class="arrow"></span>
         </a>
         {% if menu.subfolderitems[0] %}
