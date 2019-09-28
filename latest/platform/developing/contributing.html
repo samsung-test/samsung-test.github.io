@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta id="docsVersion" content="latest" />
+<title>Tizen Open Source Project</title>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<link rel="icon"  href="/favicon.ico" />
+<base id="baseURL" href="/latest/" />
+<meta name="last-modified" content="28092019" />
+<meta http-equiv="cache-control" content="max-age=24" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-store" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="Expires" content="600" />
+
+<link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/carousel.css?v=28092019">
+<link rel="stylesheet" href="/css/custom.css?v=28092019">
+<link rel="stylesheet" href="/css/responsive.css?v=28092019">
+<link rel="stylesheet" href="/css/main.css?v=28092019">
+
+</head>
+<body>
+    <div class="scroller">
+        <div class="navbar-wrapper">
+    <nav class="navbar navbar-default navbar-static-top navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand active open" href="/">
+                    <span class="brand-tizen"><img src="/images/logo.png" alt="logo"></span>
+                    <span class="brand-docs">Docs</span>
+                </a>
+            </div>
+
+            <ul id="navbar" class="nav navbar-nav navbar-right navbar-collapse collapse">
+                <!--li><a href="what-is-tizen/overview/tizen">What is Tizen</a></li-->
+                <li><a href="platform/about/tizen-open-source-overview">Platform</a></li>
+                <li><a href="application/">Application</a></li>
+                <li><a href="iot/">IoT</a></li>
+                <!--li><a href="https://developer.tizen.org" target="_blank">Application</a></li-->
+                <li><a href="https://developer.tizen.org/development/tizen-studio/download" target="_blank">Download</a>
+                </li>
+                <li class="navbar-divisor"></li>
+                <li class="search">
+                    <a id="gnb_search_btn" href="#">
+                        <div class="search-btn"></div>
+                    </a>
+                    <form method="GET" id="gnb_search_box" class="searchbox" action="/search.php" name="searchbox">
+                        <input class="form-control" type="text" name="q" placeholder="Search ..." required="true">
+                        <a href="#" onclick="if (document.forms['searchbox'].q.value !== '') 
+                                                $(this).closest('form').submit()
+                                                else
+                                                    document.getElementById('gnb_search_box').addEventListener('click', function(event){
+                                                    event.preventDefault()
+                                                });
+                                                "><img src="/images/ic_search_ac.png"></a>
+                    </form>
+                </li>
+                <li>
+                    <div id="widgetVersionSwitcher"></div>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+</div>
+        <div class="landing-tizen">
+            <div class="container">
+                <div class="row">
+                    <ul class="nav side-menu">
+    <li><a class="hasChild" href="#">Overview<span class="arrow"></span></a>
+        <ul class="td-tocs depth-1">
+            <li><a href="platform/about/work-flow">Development Workflow</a></li>
+            <li><a href="platform/about/git-repo-structure">Git Repository Structure</a></li>
+            <li><a href="platform/about/conventions">Typographic Conventions</a></li>
+        </ul>
+    </li>
+    <li class="open"><a class="hasChild active" href="#">Developing<span class="arrow"></span></a>
+        <ul class="td-tocs depth-1">
+            <li class="open"><a href="platform/developing/installing" class="active open">Installing Development
+                    Tools</a></li>
+            <li><a href="platform/developing/setting-up">Setting up Development Environment</a>
+            </li>
+            <li><a href="platform/developing/cloning">Cloning Tizen Source Files</a></li>
+            <li><a href="platform/developing/building">Building Packages Locally with GBS</a></li>
+            <li><a href="platform/developing/building-all">Building All Packages Locally with
+                    GBS</a></li>
+            <li><a href="platform/developing/contributing">Contributing Code to Tizen</a></li>
+            <li><a href="platform/developing/creating">Creating Tizen Images with MIC</a></li>
+            <li><a href="platform/developing/flashing">Flashing an Image to Device</a></li>
+            <li><a href="platform/developing/tips">Development Tips</a></li>
+        </ul>
+    </li>
+    <li><a class="hasChild" href="#">Porting<span class="arrow"></span></a>
+        <ul class="td-tocs depth-1">
+            <li><a href="platform/porting/overview">Overview</a></li>
+            <li><a href="platform/porting/kernel">Kernel</a></li>
+            <li><a href="platform/porting/system">System</a></li>
+            <li><a href="platform/porting/graphics-and-ui">Graphics and UI</a></li>
+            <li><a href="platform/porting/recovery">Recovery</a></li>
+            <li><a href="platform/porting/multimedia">Multimedia</a></li>
+            <li><a href="platform/porting/connectivity">Connectivity</a></li>
+            <li><a href="platform/porting/location">Location</a></li>
+            <li><a href="platform/porting/telephony">Telephony</a></li>
+            <li><a href="platform/porting/application">Application</a></li>
+        </ul>
+    </li>
+    <li><a class="hasChild" href="#">Reference<span class="arrow"></span></a>
+        <ul class="td-tocs depth-1">
+            <li><a href="platform/reference/gerrit-usage">Gerrit</a></li>
+            <li><a class="hasChild" href="#">Git Build System (GBS)<span class="arrow"></span></a>
+                <ul class="td-tocs depth-2">
+                    <li><a href="platform/reference/gbs/gbs-overview">Overview</a></li>
+                    <li><a href="platform/reference/gbs/gbs.conf">GBS Configuration</a></li>
+                    <li><a href="platform/reference/gbs/gbs-maintenance-models">GBS Maintenance
+                            Models</a></li>
+                    <li><a href="platform/reference/gbs/gbs-reference">GBS Reference</a></li>
+                    <li><a href="platform/reference/gbs/gbs-faq">FAQ</a></li>
+                </ul>
+            </li>
+            <li><a class="hasChild" href="#">MIC Image Creator<span class="arrow"></span></a>
+                <ul class="td-tocs depth-2">
+                    <li><a href="platform/reference/mic/mic-overview">Overview</a></li>
+                    <li><a href="platform/reference/mic/mic-customize-image">Customizing Images</a>
+                    </li>
+                    <li><a href="platform/reference/mic/mic-reference">MIC Reference</a></li>
+                    <li><a href="platform/reference/mic/mic-faq">FAQ</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li><a class="hasChild" href="#">Release Notes<span class="arrow"></span></a>
+        <ul class="td-tocs depth-1">
+            <li><a href="platform/release-notes/tizen-5-5-m1">Tizen 5.5 Public M1</a></li>
+            <li><a href="platform/release-notes/tizen-5-0-m2">Tizen 5.0 Public M2</a></li>
+            <li><a href="platform/release-notes/tizen-4-0-m3">Tizen 4.0 Public M3</a></li>
+            <li><a href="platform/release-notes/tizen-5-0-m1">Tizen 5.0 Public M1</a></li>
+            <li><a href="platform/release-notes/tizen-4-0-m2">Tizen 4.0 Public M2</a></li>
+            <li><a href="platform/release-notes/tizen-4-0-m1">Tizen 4.0 Public M1</a></li>
+            <li><a href="platform/release-notes/tizen-3-0-m4">Tizen 3.0 Public M4</a></li>
+            <li><a href="platform/release-notes/tizen-3-0-m3">Tizen 3.0 Public M3</a></li>
+            <li><a href="platform/release-notes/tizen-3-0-m2">Tizen 3.0 Public M2</a></li>
+            <li><a href="platform/release-notes/tizen-3-0-milestones">Tizen 3.0 Milestones</a></li>
+            <li><a href="platform/release-notes/tizen-common-milestones">Tizen Common
+                    Milestones</a></li>
+            <li><a href="platform/release-notes/tizen-ivi-3-0-milestones">Tizen IVI 3.0
+                    Milestones</a></li>
+            <li><a href="platform/release-notes/tizen-2-3-2">Tizen 2.3.2 for Wearable</a></li>
+            <li><a href="platform/release-notes/tizen-2-4">Tizen 2.4</a></li>
+            <li><a href="platform/release-notes/tizen-2-3-1">Tizen 2.3.1</a></li>
+            <li><a href="platform/release-notes/tizen-2-3">Tizen 2.3</a></li>
+            <li><a href="platform/release-notes/tizen-2-2-1">Tizen 2.2.1</a></li>
+            <li><a href="platform/release-notes/tizen-2-2">Tizen 2.2</a></li>
+            <li><a href="platform/release-notes/tizen-2-1">Tizen 2.1</a></li>
+            <li><a href="platform/release-notes/tizen-2-0">Tizen 2.0</a></li>
+            <li><a href="platform/release-notes/tizen-1-0">Tizen 1.0</a></li>
+        </ul>
+    </li>
+    <li><a class="hasChild" href="#">Compliance<span class="arrow"></span></a>
+        <ul class="td-tocs depth-1">
+            <li><a href="platform/compliance/compliance-program">Tizen Compliance Program</a></li>
+            <li><a href="platform/compliance/compliance-specification">Tizen Compliance
+                    Specification</a></li>
+            <li><a href="platform/compliance/compliance-test">Tizen Compliance Test</a></li>
+        </ul>
+    </li>
+    <li><a class="hasChild" href="#">Tizen RT<span class="arrow"></span></a>
+        <ul class="td-tocs depth-1">
+            <li><a href="platform/tizen-rt/tizen-rt-overview">Overview</a></li>
+            <li><a href="platform/tizen-rt/rt-getting-started">Getting Started</a></li>
+            <li><a href="platform/tizen-rt/rt-api">API</a></li>
+            <li><a href="platform/tizen-rt/rt-specification-1-0">1.0 Specification</a></li>
+            <li><a href="platform/tizen-rt/rt-goal">Long-term Goals</a></li>
+            <li><a class="hasChild" href="#">Release Notes<span class="arrow"></span></a>
+                <ul class="td-tocs depth-2">
+                    <li>
+                        <a href="platform/tizen-rt/release-notes/tizen-rt-1-0-m1">Tizen RT 1.0
+                            M1</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li><a class="hasChild" href="#">Tizen Studio<span class="arrow"></span></a>
+        <ul class="td-tocs depth-1">
+            <li><a href="platform/tizen-studio/overview">Overview</a></li>
+            <li><a href="platform/tizen-studio/contribute-gerrit">Contributing to Tizen Studio</a>
+            </li>
+            <li><a class="hasChild" href="#">Developing Extensions<span class="arrow"></span></a>
+                <ul class="td-tocs depth-2">
+                    <li><a href="platform/tizen-studio/web-extension-guide">IDE Extension
+                            Development</a></li>
+                    <li><a href="platform/tizen-studio/emulator-extension-guide">Emulator Extension
+                            Development</a></li>
+                    <li><a href="platform/tizen-studio/package-file-desc-guide">Package File
+                            Description</a></li>
+                    <li><a href="platform/tizen-studio/meta-package">Metapackage File
+                            Description</a></li>
+                </ul>
+            </li>
+            <li><a class="hasChild" href="#">Building Tizen Studio Code<span class="arrow"></span></a>
+                <ul class="td-tocs depth-2">
+                    <li><a href="platform/tizen-studio/environment">Build Environment</a></li>
+                    <li><a href="platform/tizen-studio/local-build">Local Build Guide</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+                    <div class="body" id="printableArea">
+                        <div class="widgetLatestVersionNotification"></div>
+                        <h1 id="contributing-code-to-tizen">Contributing Code to Tizen</h1>
+
+<p>This topic describes how you can contribute code to Tizen.</p>
+
+<p>For more information about the whole work process, see <a href="../about/work-flow.md">Tizen Development Workflow</a>.</p>
+
+<h2 id="cloning-source-files-over-ssh">Cloning Source Files over SSH</h2>
+
+<p>To clone source files for a specific project, see <a href="cloning.md">Cloning Tizen Source Files</a>.</p>
+
+<h2 id="submitting-a-patch-to-gerrit">Submitting a Patch to Gerrit</h2>
+
+<p>You can perform patch submission and review on Gerrit.</p>
+
+<p>To submit a patch to Gerrit:</p>
+
+<ol>
+  <li>
+    <p>Switch to the project directory and perform local development.</p>
+  </li>
+  <li>Stage the revised content:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git add &lt;Revised_File&gt;...
+</code></pre></div>    </div>
+  </li>
+  <li>Commit the revised content:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git commit
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Push the patch to Gerrit:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git push origin HEAD:refs/for/&lt;remote_branch_name&gt;
+</code></pre></div>    </div>
+    <blockquote>
+      <p><strong>Note</strong></p>
+
+      <p>Valid values for <code class="highlighter-rouge">&lt;remote_branch_name&gt;</code> are:</p>
+      <ul>
+        <li><code class="highlighter-rouge">tizen</code>: corresponds to the branch of the latest Tizen version</li>
+        <li><code class="highlighter-rouge">tizen_3.0</code>: corresponds to the Tizen 3.0 branch</li>
+      </ul>
+    </blockquote>
+  </li>
+</ol>
+
+<p>For more information, see <a href="https://review.tizen.org/gerrit/Documentation/index.html">Gerrit Documentation</a>.</p>
+
+<h2 id="reviewing-a-patch-on-gerrit">Reviewing a Patch on Gerrit</h2>
+
+<p>To review a patch in the Gerrit Web UI, publish the comments and vote for the patch.</p>
+
+<p>The patch is merged or discarded depending on the voting results.The merge is performed if:</p>
+
+<ul>
+  <li>The patch has at least one “+2” score and no “-2” score in the Code Review category.</li>
+  <li>The patch has at least one “+1” score and no “-1” score in the Verified category.</li>
+</ul>
+
+<blockquote>
+  <p><strong>Note</strong></p>
+
+  <p>Voting “+2” requires a proper privilege level.</p>
+</blockquote>
+
+<p>When a patch meets the above criteria, privileged users can submit to merge the patch to the Git repository.</p>
+
+<h2 id="submitting-packages-to-the-build-system">Submitting Packages to the Build System</h2>
+
+<p>You can submit a single package or a group of packages.</p>
+
+<h3 id="submitting-a-single-package">Submitting a Single Package</h3>
+
+<p>To submit a package to the build system, execute the following command:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ gbs submit [-c &lt;Commit_ID&gt;] -m "&lt;Comments&gt;"
+</code></pre></div></div>
+
+<p>During the submission, GBS automatically creates an annotated tag in the following format:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>submit/$Tizen_Version/$(%Y%m%d.%H%M%S)
+</code></pre></div></div>
+
+<p>If the code change has already been merged in Gerrit, a merge request is created and release engineers are notified to review.</p>
+
+<blockquote>
+  <p><strong>Note</strong></p>
+
+  <p>If the patch has not been merged in Gerrit, the backend services abort the operation and send an email to the patch owner, to notify that the patch needs to be re-submitted after it is merged.</p>
+</blockquote>
+
+<h3 id="submitting-a-group-of-packages">Submitting a Group of Packages</h3>
+
+<p>If multiple changed packages have mutual dependencies, they must be submitted as a group. This means that all of the packages must be submitted with 1 unified identification, through a process known as <strong>group submission</strong>.</p>
+
+<p>This feature is supported by the collaboration of the Tizen client development tool (GBS) and Tizen backend services.</p>
+
+<p>For the platform developers, GBS provides the <code class="highlighter-rouge">--tag &lt;TAG&gt;</code> option, to accept a developer-specified “TAG” for the <code class="highlighter-rouge">gbs submit</code> command. All submissions for multiple packages with the same TAG are considered as a group, and packages in the same group are handled in the build system together.</p>
+
+<p>For example, assume that “ail”, a low level library, depends on “aul”. “ail” developers have changed some APIs, and “aul” must be updated to adapt to the new API changes in “ail”. Therefore, once all related patches have been merged to “ail” and “aul” separately, these 2 packages must be submitted as a group:</p>
+
+<ol>
+  <li>
+    <p>Submit 1 of the packages in the group to create a tag:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cd platform/core/appfw/aul-1/
+$ gbs submit -m "&lt;Comments&gt;"
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Obtain the tag name from the output of the above command, and use the same tag as a <code class="highlighter-rouge">--tag</code> parameter for other packages in the group:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cd platform/core/appfw/ail/
+$ gbs submit --tag &lt;same_tag&gt; -m "&lt;Comments&gt;"
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p>You can also specify the tag yourself, and use the same tag for all packages in the package group. In this case, the tag must follow the usual tag format with an optional suffix:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>submit/$Tizen_Version/$(%Y%m%d.%H%M%S).N (N is a number you can choose freely)
+</code></pre></div></div>
+
+<p>Tizen backend services take care of all submissions with the same tag, and build them together.</p>
+
+<h2 id="reviewing-a-package-on-the-build-server">Reviewing a Package on the Build Server</h2>
+
+<p>If you are a release engineer, you can review and accept changes on the build system side.</p>
+
+<p>After a developer runs the <code class="highlighter-rouge">gbs submit</code> command, the Tizen backend service starts the pre-release and normal release processes at the same time. During the pre-release process, packages and Tizen images with a specific package inside are presented to release engineers and Quality Assurance (QA) engineers for review.</p>
+
+<p>QA engineers are responsible for testing packages as isolated objects, as well as verifying Tizen images with a specific package inside to offer release engineers comprehensive information to make appropriate decision about whether to accept or reject a package, including the following:</p>
+
+<ul>
+  <li>Whether the package impacts other dependent package builds.</li>
+  <li>Whether the package brings in new bugs.</li>
+  <li>Whether the package causes regression issues.</li>
+  <li>Whether the package influences the performance of the Tizen image.</li>
+</ul>
+
+<p>After the packages are accepted by release engineers, the corresponding images are automatically created by the normal release process and can be obtained on <a href="http://download.tizen.org/releases/daily">http://download.tizen.org/releases/daily</a>.</p>
+
+                        <button class="print-btn hidden-print" onclick="printDiv('printableArea')">PRINT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer clearfix">
+  <div class="copyright">
+    © 2019 Tizen Project, a <a href="http://www.linuxfoundation.org/">Linux Foundation</a> Project. All Rights Reserved.
+    Linux is a registered trademark of Linus Torvalds.<br>
+    Tizen is a registered trademark of The Linux Foundation. * Other names and brands may be claimed as the property of
+    others.<br>
+    Except as noted, this content is licensed under Creative Commons Attribution 3.0. For details, see the <a
+      href="https://www.tizen.org/content-license">Content License.</a><br>
+  </div>
+  <div class="family-sites">
+    <a href="https://developer.tizen.org/">Developers</a>
+    <div class="divider"></div>
+    <a href="https://docs.tizen.org">Docs</a>
+    <div class="divider"></div>
+    <a href="https://dashboard.tizen.org">Dashboard</a>
+    <div class="divider"></div>
+    <a href="https://craftroom.tizen.org/">Craftroom</a>
+  </div>
+  <div class="outer-links">
+    <div class="item">
+      <a href="https://twitter.com/TizenProject"><img src="/images/ic_footer_twitter.png">Twitter</a>
+    </div>
+    <div class="item">
+      <a href="http://www.facebook.com/pages/Tizen-Project/179577455452943?ref=ts"><img
+          src="/images/ic_footer_facebook.png">Facebook</a>
+    </div>
+    <div class="item">
+      <a href="https://bugs.tizen.org"><img src="/images/ic_footer_bug.png">Bug Tracker</a>
+    </div>
+    <div class="item">
+      <a href="http://lists.tizen.org"><img src="/images/ic_footer_mailing.png">Mailing Lists</a>
+    </div>
+    <div class="item">
+      <a href="http://www.tizenstore.com"><img src="/images/ic_footer_tizenstore.png">Tizen Store</a>
+    </div>
+  </div>
+</div>
+    </div>
+    <script type="text/javascript" src="/vendor/jquery/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/common.js?v=28092019"></script>
+<script type="text/javascript" src="/js/handlebars-v4.0.11.js?v=28092019"></script>
+<script type="text/javascript" src="/js/widgets-data.js?v=28092019"></script>
+<script type="text/javascript" src="/js/widgets.js?v=28092019"></script>
+    <div id="templates"></div>    
+</body>
+
+</html>
