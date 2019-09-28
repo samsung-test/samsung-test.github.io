@@ -20,6 +20,7 @@ jobs:
         command: |
           git config --global user.email $GITHUB_USER_EMAIL
           git config --global user.name $GITHUB_USER_NAME
+          echo "docsBranch: 'toc'" >> _config.yml
           echo "docsVersion: 'latest'" >> _config.yml
           bundle exec jekyll build
           mkdir ../output
