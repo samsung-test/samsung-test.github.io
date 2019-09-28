@@ -5,7 +5,7 @@
           - page: Application Development Workflow
             url: application/about/work-flow
           - page: Application Git Repository Structure
-            url: Application application/about/git-repo-structure
+            url: application/about/git-repo-structure
           - page: Typographic Conventions
             url: application/about/conventions
       - title: Application Developing
