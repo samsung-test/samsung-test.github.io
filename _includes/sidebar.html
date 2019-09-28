@@ -18,29 +18,18 @@
                 <!--<div class="">-->
                 {% assign submenufinalurl = submenu.url %}
                 <a href="{{submenufinalurl}}"
-                    class="{% if submenufinalurl == page.url %}sidebar-link-selected{% endif %}">
+                    class="hasChild {% if submenufinalurl == page.url %}active open{% endif %}">
                     {{submenu.page}}
+                    <span class="arrow"></span>
                 </a>
-                <ul class="sidebar-group">
+                <ul class="td-tocs depth-2">
                     {% for subsubmenu in submenu.subfolderitems %}
                     <li>
                         {% assign subsubmenufinalurl = subsubmenu.url %}
-                        <a href="{{subsubmenufinalurl}}" {% if subsubmenu.target %}target="_{{subsubmenu.target}}"
-                            {% endif %} class="{% if subsubmenufinalurl == page.url %}sidebar-link-selected{% endif %}">
+                        <a href="{{subsubmenufinalurl}}" 
+                           class="{% if subsubmenufinalurl == page.url %}active open{% endif %}">
                             {{subsubmenu.page}}
                         </a>
-                        <ul class="sidebar-group">
-                            {% for subsubsubmenu in subsubmenu.subfolderitems %}
-                            <li>
-                                {% assign subsubsubmenufinalurl = subsubsubmenu.url %}
-                                <a href="{{subsubsubmenufinalurl}}"
-                                    {% if subsubsubmenu.target %}target="_{{subsubsubmenu.target}}" {% endif %}
-                                    class="{% if subsubsubmenufinalurl == page.url %}sidebar-link-selected{% endif %}">
-                                    {{subsubsubmenu.page}}
-                                </a>
-                            </li>
-                            {% endfor %}
-                        </ul>
                     </li>
                     {% endfor %}
                 </ul>
@@ -48,7 +37,7 @@
                 {% else %}
                 {% assign submenufinalurl = submenu.url %}
                 <a href="{{submenufinalurl}}"
-                    class="{% if submenufinalurl== page.url %}sidebar-link-selected{% endif %}">
+                    class="{% if submenufinalurl== page.url %}active open{% endif %}">
                     {{submenu.page}}
                 </a>
                 {% endif %}
