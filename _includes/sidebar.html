@@ -1,20 +1,16 @@
 {% assign directory = page.path | split: '/' %}
-
-<div id="" class="sidebar-cover">
-
-    <div id="widgetVersionSwitcher"></div>
-
-    <div class="sidebar-wrapper {{directory[0] | slugify}}">
         {% for version in site.data.platform.sidebar %}
         {% for menu in version.sidebar %}
         {% assign finalurl = menu.url %}
         {% assign sections = finalurl | split: '/' %}
-        <div class="{% if (sections[0] == directory[0] ) %}active{% endif %}">
-            <a href="{{finalurl}}" {% if menu.target %}target="_{{menu.target}}" {% endif %}>
-                <h4 class="sidebar-group-title">{{menu.title}}</h4>
-            </a>
+        <ul class="nav side-menu {% if (sections[0] == directory[0] ) %}active{% endif %}">
+            <li>
+                <a href="{{finalurl}}" {% if menu.target %}target="_{{menu.target}}" {% endif %} class="hasChild">
+                    {{menu.title}}
+                    <span class="arrow"></span>
+                </a>
             {% if menu.subfolderitems[0] %}
-            <ul class="sidebar-group">
+            <ul class="td-tocs depth-1">
                 {% for submenu in menu.subfolderitems %}
                 <li>
                     {% if submenu.subfolderitems[0] %}
@@ -60,11 +56,10 @@
                 {% endfor %}
             </ul>
             {% endif %}
-        </div>
+        </li>
+        </ul>
         {% endfor %}
         {% endfor %}
-    </div>
-</div>
 
 <script>
     $("a[href$='{{page.url | remove_first: " / "  }}']").addClass("sidebar-link-selected");
