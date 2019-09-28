@@ -1,7 +1,7 @@
 <!-- Templates-->
 <script id="template-widgetVersionSwitcher" type="text/x-handlebars-template">
 	<select>
-	<option value="" selected="selected">Home</option>
+	<option value="/" selected="selected">Home</option>
 	{{#each versions}}
 		{{#if this.published}}
 			<option value="{{this.branch}}" >
