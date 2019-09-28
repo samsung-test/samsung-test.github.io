@@ -8,7 +8,7 @@
             url: platform/about/git-repo-structure
           - page: Typographic Conventions
             url: platform/about/conventions
-      - title: .NET Apllication
+      - title: .NET Application
         url: platform/developing/installing
         subfolderitems:
           - page: Installing Development Tools
