@@ -1,5 +1,5 @@
 - sidebar:
-      - title: Overview
+      - title: Platform Overview
         url: platform/about/work-flow
         subfolderitems:
           - page: Development Workflow
