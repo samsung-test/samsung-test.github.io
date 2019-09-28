@@ -16,20 +16,39 @@ jobs:
 
       # Generate Version site
       - type: shell
-        name: Download code
+        name: Generate Version site
         command: |
           git config --global user.email $GITHUB_USER_EMAIL
           git config --global user.name $GITHUB_USER_NAME
+
           echo "docsVersion: '"$CIRCLE_BRANCH"'" >> _config.yml
           bundle exec jekyll build
-          ls
           rm -rf ../output
           mkdir ../output
           cp -r _site/* ../output
+
+          LATEST_VERSION=$(curl https://raw.githubusercontent.com/samsung-test/samsung-test.github.io/toc/js/latest-version.txt)
+          if [[ $LATEST_VERSION = $CIRCLE_BRANCH ]]
+          then
+           sed -i '$ d' _config.yml
+           echo "docsVersion: latest" >> _config.yml
+           rm -rf ../latest
+           mkdir ../latest
+           bundle exec jekyll build
+           cp -r _site/* ../latest
+          else
+           echo "Do Nothing"
+          fi
+
           git checkout _config.yml
           git checkout master
           rm -rf $CIRCLE_BRANCH
           cp -r ../output $CIRCLE_BRANCH/
+          if [[ $LATEST_VERSION = $CIRCLE_BRANCH ]]
+          then
+           rm -rf latest
+           cp -r ../latest latest/
+          fi
           rm -rf _site/
           git add -A
           git commit -m "update"
