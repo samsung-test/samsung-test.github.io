@@ -38,12 +38,9 @@ jobs:
           fi
           cp -rf ../output/* ./
 
-          if [ -f latest ]; then
-           rm latest
-          fi
           LATEST_VERSION=$(<js/latest-version.txt)
           echo $LATEST_VERSION
-          ln -s '/'$LATEST_VERSION'/' latest
+          ln -sfn '/'$LATEST_VERSION'/' latest
 
           if [ -z "$(git status --untracked-files=no --porcelain)" ]; then 
            echo "Nothing to commit"
