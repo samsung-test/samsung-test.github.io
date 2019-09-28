@@ -1,0 +1,65 @@
+- sidebar:
+      - title: IOT Overview
+        url: iot/about/work-flow
+        subfolderitems:
+          - page: Development Workflow
+            url: iot/about/work-flow
+          - page: Git Repository Structure
+            url: iot/about/git-repo-structure
+          - page: Typographic Conventions
+            url: iot/about/conventions
+      - title: Developing
+        url: iot/developing/installing
+        subfolderitems:
+          - page: Installing Development Tools
+            url: iot/developing/installing 
+          - page: Setting up Development Environment
+            url:  iot/developing/setting-up
+          - page: Cloning Tizen Source Files
+            url: iot/developing/cloning
+          - page: Building Packages Locally with GBS
+            url: iot/developing/building
+          - page: Building All Packages Locally with GBS
+            url: iot/developing/building-all
+          - page: Contributing Code to Tizen
+            url: iot/developing/contributing
+          - page: Creating Tizen Images with MIC
+            url: iot/developing/creating
+          - page: Flashing an Image to Device
+            url: iot/developing/flashing
+          - page: Development Tips
+            url: iot/developing/tips 
+      - title: Porting
+        url: iot/porting/overview
+        subfolderitems:
+          - page: Overview
+            url: iot/porting/overview
+          - page: Kernel
+            url: iot/porting/kernel
+          - page: System
+            url: iot/porting/system
+          - page: Graphics and UI
+            url: iot/porting/graphics-and-ui          
+      - title: Reference
+        url: iot/reference/gerrit-usage
+        subfolderitems:
+          - page: Gerrit
+            url: iot/reference/gerrit-usage
+          - page: Git Build System (GBS)
+            url:  iot/reference/gbs/gbs-overview       
+            subfolderitems:
+               - page: Overview
+                 url: iot/reference/gbs/gbs-overview
+               - page: GBS Configuration
+                 url: iot/reference/gbs/gbs.conf
+               - page: GBS Maintenance Models
+                 url: iot/reference/gbs/gbs-maintenance-models
+          - page: MIC Image Creator
+            url: iot/reference/mic/mic-overview
+            subfolderitems:
+               - page: Overview
+                 url: iot/reference/mic/mic-overview
+               - page: Customizing Images
+                 url: iot/reference/mic/mic-customize-image
+               - page: MIC Reference
+                 url: iot/reference/mic/mic-reference
