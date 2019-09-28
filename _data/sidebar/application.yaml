@@ -1,0 +1,65 @@
+- sidebar:
+      - title: Application Overview
+        url: application/about/work-flow
+        subfolderitems:
+          - page: Development Workflow
+            url: application/about/work-flow
+          - page: Git Repository Structure
+            url: application/about/git-repo-structure
+          - page: Typographic Conventions
+            url: application/about/conventions
+      - title: Developing
+        url: application/developing/installing
+        subfolderitems:
+          - page: Installing Development Tools
+            url: application/developing/installing 
+          - page: Setting up Development Environment
+            url:  application/developing/setting-up
+          - page: Cloning Tizen Source Files
+            url: application/developing/cloning
+          - page: Building Packages Locally with GBS
+            url: application/developing/building
+          - page: Building All Packages Locally with GBS
+            url: application/developing/building-all
+          - page: Contributing Code to Tizen
+            url: application/developing/contributing
+          - page: Creating Tizen Images with MIC
+            url: application/developing/creating
+          - page: Flashing an Image to Device
+            url: application/developing/flashing
+          - page: Development Tips
+            url: application/developing/tips 
+      - title: Porting
+        url: application/porting/overview
+        subfolderitems:
+          - page: Overview
+            url: application/porting/overview
+          - page: Kernel
+            url: application/porting/kernel
+          - page: System
+            url: application/porting/system
+          - page: Graphics and UI
+            url: application/porting/graphics-and-ui          
+      - title: Reference
+        url: application/reference/gerrit-usage
+        subfolderitems:
+          - page: Gerrit
+            url: application/reference/gerrit-usage
+          - page: Git Build System (GBS)
+            url:  application/reference/gbs/gbs-overview       
+            subfolderitems:
+               - page: Overview
+                 url: application/reference/gbs/gbs-overview
+               - page: GBS Configuration
+                 url: application/reference/gbs/gbs.conf
+               - page: GBS Maintenance Models
+                 url: application/reference/gbs/gbs-maintenance-models
+          - page: MIC Image Creator
+            url: application/reference/mic/mic-overview
+            subfolderitems:
+               - page: Overview
+                 url: application/reference/mic/mic-overview
+               - page: Customizing Images
+                 url: application/reference/mic/mic-customize-image
+               - page: MIC Reference
+                 url: application/reference/mic/mic-reference
