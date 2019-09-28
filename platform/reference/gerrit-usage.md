@@ -2,7 +2,6 @@
 title: Gerrit
 ---
 
-
 # Gerrit
 
 You can perform various operations in Gerrit:
