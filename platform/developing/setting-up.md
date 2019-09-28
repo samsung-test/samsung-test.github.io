@@ -1,3 +1,7 @@
+---
+title: Setting up the Development Environment
+---
+
 # Setting up the Development Environment
 
 This topic provides information on how to set up a development environment.

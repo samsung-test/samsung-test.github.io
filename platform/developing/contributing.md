@@ -1,6 +1,7 @@
 ---
-title: Tizen Open Source Project
+title: Contributing Code to Tizen
 ---
+
 # Contributing Code to Tizen
 
 This topic describes how you can contribute code to Tizen.
