@@ -45,7 +45,7 @@ $('#widgetVersionSwitcher select').val(currentVersion);
 $('#widgetVersionSwitcher select').on('change', function () {
 	switchVersion = $(this).val();
 	console.log('switch version', switchVersion);
-	if (currentVersion == 'toc'){
+	if (switchVersion == '/'){
 		updatedUrl = window.location.origin + '/' + switchVersion;
 	} else {
 		updatedUrl = currentUrl.replace('latest',switchVersion);
