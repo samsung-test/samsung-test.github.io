@@ -48,7 +48,11 @@ $('#widgetVersionSwitcher select').on('change', function () {
 	} else {
 		updatedUrl = currentUrl.replace('latest',switchVersion);
 		updatedUrl = updatedUrl.replace(currentVersion,switchVersion);
+		if (currentUrl == '/'){
+			updatedUrl = window.location.origin + '/' + switchVersion + '/' ;
+		}
 	}
+	console.log('updated url', updatedUrl);
 	window.location = updatedUrl; 
 });
 if (currentVersion == latestVersion[0].branch){
