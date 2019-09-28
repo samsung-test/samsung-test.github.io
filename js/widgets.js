@@ -15,4 +15,3 @@ console.log('published version',publishedVersions);
 console.log('latest version',latestVersion);
 console.log('current version',currentVersion);
 console.log('current version Data',currentVersionData);
-console.log('current url',currentUrl);
