@@ -2,13 +2,13 @@
       - title: IOT Overview
         url: iot/about/work-flow
         subfolderitems:
-          - page: Development Workflow
+          - page: IOT Development Workflow
             url: iot/about/work-flow
-          - page: Git Repository Structure
+          - page: IOT Git Repository Structure
             url: iot/about/git-repo-structure
           - page: Typographic Conventions
             url: iot/about/conventions
-      - title: Developing
+      - title: IOT Developing
         url: iot/developing/installing
         subfolderitems:
           - page: Installing Development Tools

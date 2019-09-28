@@ -1,7 +1,7 @@
 ---
 title: Tizen Open Source Project
 ---
-
+# Platform Folder
 # Tizen Open Source Project
 
 Tizen is an open source software stack created for a wide array of devices with different form factors. The primary objectives of Tizen are to create an open software platform available for carriers, OEMs, and developers to make their innovative ideas a reality, and to introduce a successful, real-world product that improves the mobile experience for users. We have also wanted to make sure there is no central point of failure, where 1 industry player can restrict or control the innovations of another. The result is a full, production-quality consumer product with source code open for customization and porting.
