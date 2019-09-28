@@ -1,3 +1,6 @@
+---
+title: Tizen Open Source Project
+---
 # Get Started for Mobile
 
 The Get Started Tutorial teaches you how to create basic Tizen applications for mobile devices.

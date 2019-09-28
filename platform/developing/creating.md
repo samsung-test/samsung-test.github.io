@@ -1,3 +1,6 @@
+---
+title: Tizen Open Source Project
+---
 # Creating Tizen Images with MIC
 
 This topic provides information on how to create a Tizen image.

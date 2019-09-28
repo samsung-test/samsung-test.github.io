@@ -1,5 +1,5 @@
 ---
-title: 
+title: Tizen Open Source Project
 ---
 # Tizen Open Source Project
 

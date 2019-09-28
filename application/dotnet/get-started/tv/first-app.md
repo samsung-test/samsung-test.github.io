@@ -1,4 +1,6 @@
-
+---
+title: Tizen Open Source Project
+---
 # Create Your First Tizen TV .NET Application
 
 The Tizen .NET framework allows you to easily and efficiently create

@@ -1,3 +1,6 @@
+---
+title: Tizen Open Source Project
+---
 # Contents
 
 [Installing Tizen Studio](#Installing-Tizen-Studio)

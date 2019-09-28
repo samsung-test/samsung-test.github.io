@@ -1,3 +1,6 @@
+---
+title: Tizen Open Source Project
+---
 # Tizen Applications
 
 <style>

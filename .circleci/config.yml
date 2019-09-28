@@ -13,9 +13,8 @@ jobs:
       - add_ssh_keys:
           fingerprints:
             - $GITHUB_SSH_FINGERPRINT
-            
-      
-      # Download code from staging
+
+      # Generate Version site
       - type: shell
         name: Download code
         command: |
@@ -35,8 +34,7 @@ jobs:
           git add -A
           git commit -m "update"
           git push origin master
-           
-          
+
 workflows:
   version: 2
   version-build-deploy:
@@ -47,5 +45,3 @@ workflows:
               ignore:
                 - master
                 - toc
- 
-
