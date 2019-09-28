@@ -2,13 +2,13 @@
       - title: Application Overview
         url: application/about/work-flow
         subfolderitems:
-          - page: Development Workflow
+          - page: Application Development Workflow
             url: application/about/work-flow
-          - page: Git Repository Structure
-            url: application/about/git-repo-structure
+          - page: Application Git Repository Structure
+            url: Application application/about/git-repo-structure
           - page: Typographic Conventions
             url: application/about/conventions
-      - title: Developing
+      - title: Application Developing
         url: application/developing/installing
         subfolderitems:
           - page: Installing Development Tools

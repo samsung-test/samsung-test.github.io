@@ -8,7 +8,7 @@
 
     <li class="{% if (sections[1] == directory[1] ) %}open{% endif %}">
         <a href="{{finalurl}}" class="hasChild">
-            {{menu.title}} 
+            {{menu.title}}
             <span class="arrow"></span>
         </a>
         {% if menu.subfolderitems[0] %}
@@ -16,14 +16,13 @@
             {% for submenu in menu.subfolderitems %}
             <li>
                 {% if submenu.subfolderitems[0] %}
-                <!--<div class="">-->
                 {% assign submenufinalurl = submenu.url %}
                 <a href="{{submenufinalurl}}"
                     class="hasChild {% if submenufinalurl == page.url %}active open{% endif %}">
                     {{submenu.page}}
                     <span class="arrow"></span>
                 </a>
-                <ul class="td-tocs depth-2">
+                <ul class="td-tocs depth-2 {% if (sections[1] == directory[1] ) %}open{% endif %}">
                     {% for subsubmenu in submenu.subfolderitems %}
                     <li>
                         {% assign subsubmenufinalurl = subsubmenu.url %}
@@ -34,11 +33,10 @@
                     </li>
                     {% endfor %}
                 </ul>
-                <!--</div>-->
                 {% else %}
                 {% assign submenufinalurl = submenu.url %}
                 <a href="{{submenufinalurl}}" class="{% if submenufinalurl== page.url %}active open{% endif %}">
-                  {{submenu.page}}
+                    {{submenu.page}}
                 </a>
                 {% endif %}
             </li>
@@ -51,5 +49,5 @@
     {% endfor %}
 </ul>
 <script>
-    $("a[href$='{{page.url | remove_first: " / "  }}']").addClass("sidebar-link-selected");
+    $("a[href$='{{page.url | remove_first: " / "  }}']").addClass("active open");
 </script>

@@ -2,13 +2,13 @@
       - title: Platform Overview
         url: platform/about/work-flow
         subfolderitems:
-          - page: Development Workflow
+          - page: Platform Development Workflow
             url: platform/about/work-flow
-          - page: Git Repository Structure
+          - page: Platform Git Repository Structure
             url: platform/about/git-repo-structure
           - page: Typographic Conventions
             url: platform/about/conventions
-      - title: Developing
+      - title: Platform Developing
         url: platform/developing/installing
         subfolderitems:
           - page: Installing Development Tools
