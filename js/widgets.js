@@ -10,7 +10,7 @@ currentVersionData = widgetsData.versions.find( version => version.title === cur
 $(function(){
 	$("#templates").load("/js/templates.html"); 
 });
-console.log('published version',publishedVersions);
+/*console.log('published version',publishedVersions);
 console.log('latest version',latestVersion);
 console.log('current version',currentVersion);
-console.log('current version Data',currentVersionData);
+console.log('current version Data',currentVersionData);*/
