@@ -32,7 +32,7 @@ $(function () {
 	var widgetLatestVersionNotificationTemplateHtml = widgetLatestVersionNotificationTemplate(widgetsData);
 	$('.widgetLatestVersionNotification').html(widgetLatestVersionNotificationTemplateHtml);
 	
-});
+
 
 // Current URL
 currentUrl = window.location.pathname;
@@ -63,4 +63,5 @@ olderVersionsCount = $('ul#olderVersions li').length;
 if (olderVersionsCount<1){
 	$('#olderVersionsHeading').hide();
 }
+});
 </script>
