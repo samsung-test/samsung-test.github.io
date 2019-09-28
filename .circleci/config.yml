@@ -37,7 +37,9 @@ jobs:
            rm index.html
           fi
           cp -rf ../output/* ./
-          rm latest
+          if [ -f latest ]; then
+           rm latest
+          fi
           LATEST_VERSION=$(<js/latest-version.txt)
           echo $LATEST_VERSION
           ln -s $LATEST_VERSION'/' latest
