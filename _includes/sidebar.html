@@ -26,8 +26,8 @@
                     {% for subsubmenu in submenu.subfolderitems %}
                     <li>
                         {% assign subsubmenufinalurl = subsubmenu.url %}
-                        <a href="{{subsubmenufinalurl}}" 
-                           class="{% if subsubmenufinalurl == page.url %}active open{% endif %}">
+                        <a href="{{subsubmenufinalurl}}"
+                            class="{% if subsubmenufinalurl == page.url %}active open{% endif %}">
                             {{subsubmenu.page}}
                         </a>
                     </li>
@@ -36,9 +36,8 @@
                 <!--</div>-->
                 {% else %}
                 {% assign submenufinalurl = submenu.url %}
-                <a href="{{submenufinalurl}}"
-                    class="{% if submenufinalurl== page.url %}active open{% endif %}">
-                    {{submenu.page}}
+                <a href="{{submenufinalurl}}" class="{% if submenufinalurl== page.url %}active open{% endif %}">
+                  {{submenu.page}}
                 </a>
                 {% endif %}
             </li>
