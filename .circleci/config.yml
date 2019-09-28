@@ -40,7 +40,7 @@ jobs:
 
           LATEST_VERSION=$(<js/latest-version.txt)
           echo $LATEST_VERSION
-          ln -s $LATEST_VERSION'/' latest
+          ln -s '/'$LATEST_VERSION'/' latest
 
           if [ -z "$(git status --untracked-files=no --porcelain)" ]; then 
            echo "Nothing to commit"
