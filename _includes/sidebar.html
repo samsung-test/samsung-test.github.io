@@ -1,66 +1,66 @@
-{% assign directory = page.path | split: '/' %}
-        {% for version in site.data.platform.sidebar %}
-        {% for menu in version.sidebar %}
-        {% assign finalurl = menu.url %}
-        {% assign sections = finalurl | split: '/' %}
-        <ul class="nav side-menu {% if (sections[0] == directory[0] ) %}active{% endif %}">
+<ul class="nav side-menu">
+    {% assign directory = page.path | split: '/' %}
+    {% for version in site.data.platform.sidebar %}
+    {% for menu in version.sidebar %}
+    {% assign finalurl = menu.url %}
+    {% assign sections = finalurl | split: '/' %}
+
+    <li class="{% if (sections[0] == directory[0] ) %}open{% endif %}">
+        <a href="{{finalurl}}" class="hasChild">
+            {{menu.title}}
+            <span class="arrow"></span>
+        </a>
+        {% if menu.subfolderitems[0] %}
+        <ul class="td-tocs depth-1">
+            {% for submenu in menu.subfolderitems %}
             <li>
-                <a href="{{finalurl}}" {% if menu.target %}target="_{{menu.target}}" {% endif %} class="hasChild">
-                    {{menu.title}}
-                    <span class="arrow"></span>
+                {% if submenu.subfolderitems[0] %}
+                <!--<div class="">-->
+                {% assign submenufinalurl = submenu.url %}
+                <a href="{{submenufinalurl}}"
+                    class="{% if submenufinalurl == page.url %}sidebar-link-selected{% endif %}">
+                    {{submenu.page}}
                 </a>
-            {% if menu.subfolderitems[0] %}
-            <ul class="td-tocs depth-1">
-                {% for submenu in menu.subfolderitems %}
-                <li>
-                    {% if submenu.subfolderitems[0] %}
-                    <div class="">
-                        {% assign submenufinalurl = submenu.url %}
-                        <a href="{{submenufinalurl}}" {% if submenu.target %}target="_{{submenu.target}}" {% endif %}
-                            class="{% if submenufinalurl == page.url %}sidebar-link-selected{% endif %}">
-                            {{submenu.page}}
+                <ul class="sidebar-group">
+                    {% for subsubmenu in submenu.subfolderitems %}
+                    <li>
+                        {% assign subsubmenufinalurl = subsubmenu.url %}
+                        <a href="{{subsubmenufinalurl}}" {% if subsubmenu.target %}target="_{{subsubmenu.target}}"
+                            {% endif %} class="{% if subsubmenufinalurl == page.url %}sidebar-link-selected{% endif %}">
+                            {{subsubmenu.page}}
                         </a>
                         <ul class="sidebar-group">
-                            {% for subsubmenu in submenu.subfolderitems %}
+                            {% for subsubsubmenu in subsubmenu.subfolderitems %}
                             <li>
-                                {% assign subsubmenufinalurl = subsubmenu.url %}
-                                <a href="{{subsubmenufinalurl}}"
-                                    {% if subsubmenu.target %}target="_{{subsubmenu.target}}" {% endif %}
-                                    class="{% if subsubmenufinalurl == page.url %}sidebar-link-selected{% endif %}">
-                                    {{subsubmenu.page}}
+                                {% assign subsubsubmenufinalurl = subsubsubmenu.url %}
+                                <a href="{{subsubsubmenufinalurl}}"
+                                    {% if subsubsubmenu.target %}target="_{{subsubsubmenu.target}}" {% endif %}
+                                    class="{% if subsubsubmenufinalurl == page.url %}sidebar-link-selected{% endif %}">
+                                    {{subsubsubmenu.page}}
                                 </a>
-                                <ul class="sidebar-group">
-                                    {% for subsubsubmenu in subsubmenu.subfolderitems %}
-                                    <li>
-                                        {% assign subsubsubmenufinalurl = subsubsubmenu.url %}
-                                        <a href="{{subsubsubmenufinalurl}}"
-                                            {% if subsubsubmenu.target %}target="_{{subsubsubmenu.target}}" {% endif %}
-                                            class="{% if subsubsubmenufinalurl == page.url %}sidebar-link-selected{% endif %}">
-                                            {{subsubsubmenu.page}}
-                                        </a>
-                                    </li>
-                                    {% endfor %}
-                                </ul>
                             </li>
                             {% endfor %}
                         </ul>
-                    </div>
-                    {% else %}
-                    {% assign submenufinalurl = submenu.url %}
-                    <a href="{{submenufinalurl}}" {% if submenu.target %}target="_{{submenu.target}}" {% endif %}
-                        class="{% if submenufinalurl== page.url %}sidebar-link-selected{% endif %}">
-                        {{submenu.page}}
-                    </a>
-                    {% endif %}
-                </li>
-                {% endfor %}
-            </ul>
-            {% endif %}
-        </li>
+                    </li>
+                    {% endfor %}
+                </ul>
+                <!--</div>-->
+                {% else %}
+                {% assign submenufinalurl = submenu.url %}
+                <a href="{{submenufinalurl}}"
+                    class="{% if submenufinalurl== page.url %}sidebar-link-selected{% endif %}">
+                    {{submenu.page}}
+                </a>
+                {% endif %}
+            </li>
+            {% endfor %}
         </ul>
-        {% endfor %}
-        {% endfor %}
+        {% endif %}
+    </li>
 
+    {% endfor %}
+    {% endfor %}
+</ul>
 <script>
     $("a[href$='{{page.url | remove_first: " / "  }}']").addClass("sidebar-link-selected");
 </script>
