@@ -3,6 +3,7 @@ title: Git Repository Structure
 ---
 
 # Git Repository Structure
+## GIT 
 
 The following table describes the Git repository structure for Tizen 3.0 and higher.
 
