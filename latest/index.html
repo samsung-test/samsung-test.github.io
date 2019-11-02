@@ -9,76 +9,78 @@
 <meta name="description" content="Tizen is an open and flexible operating system built from the ground up to address the needs of all stakeholders of the mobile and connected device ecosystem, including device manufacturers, mobile operators, application developers and independent software vendors (ISVs)."/>
 <meta name="keywords" content="Tizen, OS, Open Source"/>
 <base id="baseURL" href="/latest/" />
-<meta id="docsVersion" content="1.1" />
-<meta name="last-modified" content="2019-10-04 12:16:44 +0530" />
+<meta id="docsVersion" content="" />
+<meta name="last-modified" content="2019-11-03 04:32:08 +0530" />
 <meta http-equiv="cache-control" content="max-age=24" />
 <meta http-equiv="cache-control" content="no-cache" />
 <meta http-equiv="Cache-Control" content="no-store" />
 <meta http-equiv="pragma" content="no-cache" />
 <meta http-equiv="Expires" content="600" />
 
-<link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" href="/css/carousel.css?v=04102019">
-<link rel="stylesheet" href="/css/custom.css?v=04102019">
-<link rel="stylesheet" href="/css/responsive.css?v=04102019">
-<link rel="stylesheet" href="/css/main.css?v=04102019">
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/styles.css?v=03112019">
+
+<script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/common.js?v=03112019"></script>
+<script type="text/javascript" src="/js/handlebars-v4.0.11.js?v=03112019"></script>
+<script type="text/javascript" src="/js/widgets-data.js?v=03112019"></script>
+<script type="text/javascript" src="/js/widgets.js?v=03112019"></script>
+<script type="text/javascript" src="/js/toc.js"></script>
+
+<script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
 
 </head>
 <body>
     <div class="scroller">
-        <div class="navbar-wrapper">
+        <header class="navbar-wrapper header">
     <nav class="navbar navbar-default navbar-static-top navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
                     <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                    <ion-icon name="menu"></ion-icon>
                 </button>
                 <a class="navbar-brand active open" href="/">
                     <span class="brand-tizen"><img src="/images/logo.png" alt="logo"></span>
                     <span class="brand-docs">Docs</span>
                 </a>
             </div>
-
             <ul id="navbar" class="nav navbar-nav navbar-right navbar-collapse collapse">
-                <!--li><a href="what-is-tizen/overview/tizen">What is Tizen</a></li-->
-                <li><a href="platform/about/tizen-open-source-overview">Platform</a></li>
-                <li><a href="application/">Application</a></li>
-                <li><a href="iot/">IoT</a></li>
-                <!--li><a href="https://developer.tizen.org" target="_blank">Application</a></li-->
-                <li><a href="https://developer.tizen.org/development/tizen-studio/download" target="_blank">Download</a>
-                </li>
-                <li class="navbar-divisor"></li>
-                <li class="search">
-                    <a id="gnb_search_btn" href="#">
-                        <div class="search-btn"></div>
-                    </a>
-                    <form method="GET" id="gnb_search_box" class="searchbox" action="/search.php" name="searchbox">
-                        <input class="form-control" type="text" name="q" placeholder="Search ..." required="true">
-                        <a href="#" onclick="if (document.forms['searchbox'].q.value !== '') 
-                                                $(this).closest('form').submit()
-                                                else
-                                                    document.getElementById('gnb_search_box').addEventListener('click', function(event){
-                                                    event.preventDefault()
-                                                });
-                                                "><img src="/images/ic_search_ac.png"></a>
-                    </form>
+                <li>
+                    <a href="platform/about/tizen-open-source-overview">Platform</a>
                 </li>
                 <li>
-                    <div id="widgetVersionSwitcher"></div>
+                    <a href="application/">Application</a>
                 </li>
-
+                <li>
+                    <a href="iot/">IoT</a>
+                </li>
+                <li>
+                    <a href="https://developer.tizen.org/development/tizen-studio/download" target="_blank">Download</a>
+                </li>
             </ul>
+            <form action="/search.html" method="get" class="search-box">
+                <div class="input-group">
+                    <input type="search" name="q" placeholder="Search ..." autofocus="off" class="form-control">
+                    <div class="input-group-btn">
+                        <button type="submit" onclick="submitSearch()" title="Search" class="btn btn-default">
+                            <ion-icon name="search"></ion-icon>
+                        </button>
+                    </div>
+                </div>
+            </form>
         </div>
     </nav>
-</div>
+</header>
+		<main>
         <div class="landing-tizen">
             <div class="container">
                 <div class="row">
                     
 
+<div id="widgetVersionSwitcher"></div>
 <ul class="nav side-menu">
     
 </ul>
@@ -221,51 +223,71 @@
                 </div>
             </div>
         </div>
-        <div class="footer clearfix">
+		</main>
+        <footer class="footer">
+  <div class="family-sites">
+    <ul>
+      <li>
+        <a href="https://developer.tizen.org/" target="_blank">
+          Developers
+        </a>
+      </li>
+      <li>
+        <a href="https://docs.tizen.org" target="_blank">
+          Docs
+        </a>
+      </li>
+      <li>
+        <a href="https://dashboard.tizen.org" target="_blank">
+          Dashboard
+        </a>
+      </li>
+      <li>
+        <a href="https://craftroom.tizen.org/" target="_blank">
+          Craftroom
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="outer-links">
+    <ul>
+      <li>
+        <a href="https://twitter.com/TizenProject" target="_blank">
+          <ion-icon name="logo-twitter"></ion-icon> Twitter
+        </a>
+      </li>
+      <li>
+        <a href="http://www.facebook.com/pages/Tizen-Project" target="_blank">
+          <ion-icon name="logo-facebook"></ion-icon> Facebook
+        </a>
+      </li>
+      <li>
+        <a href="https://bugs.tizen.org" target="_blank">
+          <ion-icon name="bug"></ion-icon> Bug Tracker
+        </a>
+      </li>
+      <li>
+        <a href="http://lists.tizen.org" target="_blank">
+          <ion-icon name="mail"></ion-icon> Mailing Lists
+        </a>
+      </li>
+      <li>
+        <a href="http://www.tizenstore.com" target="_blank">
+          <ion-icon name="cart"></ion-icon> Tizen Store
+        </a>
+      </li>
+    </ul>
+    </div>
   <div class="copyright">
-    © 2019 Tizen Project, a <a href="http://www.linuxfoundation.org/">Linux Foundation</a> Project. All Rights Reserved.
+    © 2019 Tizen Project, a <a href="http://www.linuxfoundation.org/" target="_blank">Linux Foundation</a> Project. All Rights Reserved.
     Linux is a registered trademark of Linus Torvalds.<br>
     Tizen is a registered trademark of The Linux Foundation. * Other names and brands may be claimed as the property of
     others.<br>
     Except as noted, this content is licensed under Creative Commons Attribution 3.0. For details, see the <a
       href="https://www.tizen.org/content-license">Content License.</a><br>
   </div>
-  <div class="family-sites">
-    <a href="https://developer.tizen.org/">Developers</a>
-    <div class="divider"></div>
-    <a href="https://docs.tizen.org">Docs</a>
-    <div class="divider"></div>
-    <a href="https://dashboard.tizen.org">Dashboard</a>
-    <div class="divider"></div>
-    <a href="https://craftroom.tizen.org/">Craftroom</a>
-  </div>
-  <div class="outer-links">
-    <div class="item">
-      <a href="https://twitter.com/TizenProject"><img src="/images/ic_footer_twitter.png">Twitter</a>
+</footer>
     </div>
-    <div class="item">
-      <a href="http://www.facebook.com/pages/Tizen-Project/179577455452943?ref=ts"><img
-          src="/images/ic_footer_facebook.png">Facebook</a>
-    </div>
-    <div class="item">
-      <a href="https://bugs.tizen.org"><img src="/images/ic_footer_bug.png">Bug Tracker</a>
-    </div>
-    <div class="item">
-      <a href="http://lists.tizen.org"><img src="/images/ic_footer_mailing.png">Mailing Lists</a>
-    </div>
-    <div class="item">
-      <a href="http://www.tizenstore.com"><img src="/images/ic_footer_tizenstore.png">Tizen Store</a>
-    </div>
-  </div>
-</div>
-    </div>
-    <script type="text/javascript" src="/vendor/jquery/jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="/vendor/bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="/js/common.js?v=04102019"></script>
-<script type="text/javascript" src="/js/handlebars-v4.0.11.js?v=04102019"></script>
-<script type="text/javascript" src="/js/widgets-data.js?v=04102019"></script>
-<script type="text/javascript" src="/js/widgets.js?v=04102019"></script>
-<script type="text/javascript" src="/js/toc.js"></script>
     <div id="templates"></div>    
 </body>
 

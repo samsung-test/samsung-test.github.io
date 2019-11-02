@@ -1,0 +1,47 @@
+<h1 id="development-tips">Development Tips</h1>
+
+<ul>
+  <li>
+    <p><strong>SSH configuration file content</strong></p>
+
+    <ul>
+      <li>
+        <p>When working at home, you do not need a proxy, so the SSH configuration file is identical for all Linux distribution versions:</p>
+
+        <pre><code>Host tizen review.tizen.org
+Hostname review.tizen.org
+IdentityFile ~/.ssh/id_rsa
+User &lt;Gerrit_Username&gt;
+Port 29418
+</code></pre>
+      </li>
+      <li>
+        <p>When working in a corporate environment, a proxy line in the SSH configuration is mandatory, and its format depends on the Linux distribution version you are using.</p>
+
+        <p>For Ubuntu, openSUSE, and CentOS, append <code>ProxyCommand nc -X5 -x &lt;Proxy Address&gt;:&lt;Port&gt; %h %p</code> to the SSH configuration, whereas for Fedora, append <code>ProxyCommand nc --proxy-type socks4 --proxy &lt;Proxy Address&gt;:&lt;Port&gt; %h %p</code> instead.</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Problems when cloning through SSH/HTTP</strong></p>
+
+    <ul>
+      <li>
+        <p>If you are located in China, you can experience problems connecting to Google servers when downloading the repo tool, initializing the repository, and synchronizing Tizen source.</p>
+
+        <p>In a typical error situation, no error message is displayed when downloading the repo tool by using curl, but connection problems occur when attempting to run the <code>repo init</code> command. In such cases, clear the Git HEAD and try running the repo commands through the <code>tsocks</code> proxy:</p>
+
+        <pre><code>$ tsocks curl http://commondatastorage.googleapis.com/git-repo-downloads/repo &gt; ~/bin/repo
+$ tsocks repo init -u ssh://&lt;Username&gt;@review.tizen.org:29418/scm/manifest -b tizen -m ivi.xml
+$ tsocks repo init -u https://&lt;Username&gt;:&lt;HTTPS_Password&gt;@review.tizen.org/gerrit/p/scm/manifest -b tizen -m ivi.xml
+</code></pre>
+      </li>
+      <li>
+        <p>When initializing and cloning through HTTP, you can be blocked by the “server certificate verification” issue. Run the following command and try again:</p>
+
+        <pre><code>$ export GIT_SSL_NO_VERIFY=1
+</code></pre>
+      </li>
+    </ul>
+  </li>
+</ul>
