@@ -1,48 +1,40 @@
-<div class="navbar-wrapper">
+<header class="navbar-wrapper header">
     <nav class="navbar navbar-default navbar-static-top navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
                     <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                    <ion-icon name="menu"></ion-icon>
                 </button>
                 <a class="navbar-brand active open" href="/">
                     <span class="brand-tizen"><img src="/images/logo.png" alt="logo"></span>
                     <span class="brand-docs">Docs</span>
                 </a>
             </div>
-
             <ul id="navbar" class="nav navbar-nav navbar-right navbar-collapse collapse">
-                <!--li><a href="what-is-tizen/overview/tizen">What is Tizen</a></li-->
-                <li><a href="platform/about/tizen-open-source-overview">Platform</a></li>
-                <li><a href="application/">Application</a></li>
-                <li><a href="iot/">IoT</a></li>
-                <!--li><a href="https://developer.tizen.org" target="_blank">Application</a></li-->
-                <li><a href="https://developer.tizen.org/development/tizen-studio/download" target="_blank">Download</a>
-                </li>
-                <li class="navbar-divisor"></li>
-                <li class="search">
-                    <a id="gnb_search_btn" href="#">
-                        <div class="search-btn"></div>
-                    </a>
-                    <form method="GET" id="gnb_search_box" class="searchbox" action="/search.php" name="searchbox">
-                        <input class="form-control" type="text" name="q" placeholder="Search ..." required="true">
-                        <a href="#" onclick="if (document.forms['searchbox'].q.value !== '') 
-                                                $(this).closest('form').submit()
-                                                else
-                                                    document.getElementById('gnb_search_box').addEventListener('click', function(event){
-                                                    event.preventDefault()
-                                                });
-                                                "><img src="/images/ic_search_ac.png"></a>
-                    </form>
+                <li>
+                    <a href="platform/about/tizen-open-source-overview">Platform</a>
                 </li>
                 <li>
-                    <div id="widgetVersionSwitcher"></div>
+                    <a href="application/">Application</a>
                 </li>
-
+                <li>
+                    <a href="iot/">IoT</a>
+                </li>
+                <li>
+                    <a href="https://developer.tizen.org/development/tizen-studio/download" target="_blank">Download</a>
+                </li>
             </ul>
+            <form action="/search.html" method="get" class="search-box">
+                <div class="input-group">
+                    <input type="search" name="q" placeholder="Search ..." autofocus="off" class="form-control">
+                    <div class="input-group-btn">
+                        <button type="submit" onclick="submitSearch()" title="Search" class="btn btn-default">
+                            <ion-icon name="search"></ion-icon>
+                        </button>
+                    </div>
+                </div>
+            </form>
         </div>
     </nav>
-</div>
+</header>

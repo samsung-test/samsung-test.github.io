@@ -1,5 +1,6 @@
 {% assign directory = page.path | split: '/' %}
 {% assign subdirectory = directory[0] %}
+<div id="widgetVersionSwitcher"></div>
 <ul class="nav side-menu">
     {% for version in site.data.sidebar[subdirectory] %}
     {% for menu in version.sidebar %}
