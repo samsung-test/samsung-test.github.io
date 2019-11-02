@@ -1,0 +1,275 @@
+<h1 id="application">Application</h1>
+
+<p>Tizen supports both core and reference applications. Core applications are developed with platform internal interfaces, such as the Enlightenment Foundation Libraries (EFL) and other third party libraries. Reference applications are developed with Tizen native APIs.</p>
+
+<p>The following table shows whether the core and reference versions of the preloaded sample applications are supported by default on the emulator and target device.</p>
+
+<p><strong>Table: Sample application support</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Application name</th>
+      <th>Emulator</th>
+      <th> </th>
+      <th>Target</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td><strong>Core application</strong></td>
+      <td><strong>Reference application</strong></td>
+      <td><strong>Core application</strong></td>
+      <td><strong>Reference application</strong></td>
+    </tr>
+    <tr>
+      <td>Calculator</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Calendar</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>CalendarService</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Camera</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Clock</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Contacts</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Gallery</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Home</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>ImageViewer</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Internet</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Lock</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Memo</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Messages</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>MusicPlayer</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>MyFiles</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Phone</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Settings</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>VideoPlayer</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="configuration">Configuration</h2>
+
+<p>You can switch a preloaded sample application between core and reference applications using the <a href="../reference/mic/mic-overview.md">MIC image creator</a>. To switch the application, remove the preloaded application package and add the new package image with the correct name. The following table shows the core and reference application image names of the preloaded sample applications.</p>
+
+<p><strong>Table: Sample application image names</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Application name</th>
+      <th>Core application</th>
+      <th>Reference application</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Calculator</td>
+      <td><code>org.tizen.calculator</code></td>
+      <td><code>apps.Calculator</code></td>
+    </tr>
+    <tr>
+      <td>Calendar</td>
+      <td><code>org.tizen.calendar</code></td>
+      <td><code>apps.Calendar</code></td>
+    </tr>
+    <tr>
+      <td>CalendarService</td>
+      <td><code>org.tizencalendar-service</code></td>
+      <td><code>apps.CalendarService</code></td>
+    </tr>
+    <tr>
+      <td>Camera</td>
+      <td><code>org.tizen.camera-app</code></td>
+      <td><code>apps.Camera</code></td>
+    </tr>
+    <tr>
+      <td>Clock</td>
+      <td><code>org.tizen.clock</code></td>
+      <td><code>apps.Clock</code></td>
+    </tr>
+    <tr>
+      <td>Contacts</td>
+      <td><code>org.tizen.contacts</code></td>
+      <td><code>apps.Contacts</code></td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td><code>org.tizen.email</code></td>
+      <td><code>apps.Email</code></td>
+    </tr>
+    <tr>
+      <td>Gallery</td>
+      <td><code>org.tizen.gallery</code></td>
+      <td><code>apps.Gallery</code></td>
+    </tr>
+    <tr>
+      <td>Home</td>
+      <td><code>org.tizen.menu-screen</code></td>
+      <td><code>apps.Home</code></td>
+    </tr>
+    <tr>
+      <td>ImageViewer</td>
+      <td><code>org.tizen.image-viewer</code></td>
+      <td><code>apps.ImageViewer</code></td>
+    </tr>
+    <tr>
+      <td>Internet</td>
+      <td><code>org.tizen.browser</code></td>
+      <td><code>apps.Internet</code></td>
+    </tr>
+    <tr>
+      <td>Lock</td>
+      <td><code>org.tizen.lockscreen</code></td>
+      <td><code>apps.Lock</code></td>
+    </tr>
+    <tr>
+      <td>Memo</td>
+      <td><code>org.tizen.memo</code></td>
+      <td><code>apps.Memo</code></td>
+    </tr>
+    <tr>
+      <td>Messages</td>
+      <td><code>org.tizen.message</code></td>
+      <td><code>apps.Messages</code></td>
+    </tr>
+    <tr>
+      <td>MusicPlayer</td>
+      <td><code>org.tizen.music-player</code></td>
+      <td><code>apps.MusicPlayer</code></td>
+    </tr>
+    <tr>
+      <td>MyFiles</td>
+      <td><code>org.tizen.myfile</code></td>
+      <td><code>apps.MyFiles</code></td>
+    </tr>
+    <tr>
+      <td>Phone</td>
+      <td><code>org.tizen.call</code></td>
+      <td><code>apps.Phone</code></td>
+    </tr>
+    <tr>
+      <td>Settings</td>
+      <td><code>org.tizen.setting</code></td>
+      <td><code>apps.Settings</code></td>
+    </tr>
+    <tr>
+      <td>VideoPlayer</td>
+      <td><code>org.tizen.video-player</code></td>
+      <td><code>apps.VideoPlayer</code></td>
+    </tr>
+  </tbody>
+</table>
+

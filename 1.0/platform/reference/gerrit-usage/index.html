@@ -1,0 +1,61 @@
+<h1 id="gerrit">Gerrit</h1>
+
+<p>You can perform various operations in Gerrit:</p>
+
+<ul>
+  <li>
+    <p>To watch a project</p>
+
+    <p>If you are interested in a package that has an important relation to yours, like a dependency, you can watch that package project. You receive notifications when a patchset for a watched project is uploaded to Gerrit.</p>
+
+    <p>To adjust the <strong>Watched Projects</strong> settings to monitor new projects, in the Gerrit Web UI, go to <strong>Settings (top right) &gt; Watched Projects</strong>, enter the project name, and click <strong>Watch</strong>.</p>
+  </li>
+  <li>
+    <p>To replace a patch set</p>
+
+    <p>You can add a new patch set that replaces an existing patch set with an updated version of the same logical modification, by sending a new commit to the change’s ref number. For example, to add a commit where the SHA-1 starts with “c0ffee”, as a new patch set for change number 1979, use the following command:</p>
+
+    <pre><code>$ git push ssh://review.tizen.org/&lt;PROJECT_NAME&gt; c0ffee:refs/changes/1979
+</code></pre>
+
+    <blockquote>
+      <p><strong>Tip:</strong></p>
+
+      <p>Sometimes you can use the <code>git commit --amend</code> command to update an existing local commit, and then push to Gerrit using <code>HEAD:refs/changes/1979</code>, instead of having to use a hash ID.</p>
+    </blockquote>
+  </li>
+  <li>
+    <p>To use command line tools</p>
+
+    <p>You can use various command attributes to manage command line tools:</p>
+
+    <pre><code>ssh -p &lt;port&gt; &lt;host&gt; gerrit review [--message &lt;MESSAGE&gt;] [--verified &lt;N&gt;] [--code-review &lt;N&gt;] [--abandon]{COMMIT | CHANGEID,PATCHSET}...
+</code></pre>
+  </li>
+  <li>
+    <p>To review a patch set</p>
+
+    <p>You can review patch sets by using the command line. For example, to verify, approve, and submit the patch “c0ff33”:</p>
+
+    <pre><code>$ ssh review.tizen.org gerrit review --verified=+1 --code-review=+2 --submit c0ff33
+</code></pre>
+  </li>
+  <li>
+    <p>To abandon a patch set</p>
+
+    <p>You can drop an uploaded patch by clicking <strong>Abandon</strong> in the Gerrit Web UI or using a command:</p>
+
+    <pre><code>$ ssh review.tizen.org gerrit review --abandon c0ff33
+</code></pre>
+  </li>
+  <li>
+    <p>To access more detailed instructions</p>
+
+    <p>For detailed instructions, use the <code>--help</code> command:</p>
+
+    <pre><code>$ ssh review.tizen.org gerrit --help
+</code></pre>
+
+    <p>or see <a href="https://review.tizen.org/gerrit/Documentation/cmd-index.html">Gerrit Code Review - Command Line Tools</a>.</p>
+  </li>
+</ul>
