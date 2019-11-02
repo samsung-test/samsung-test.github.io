@@ -1,0 +1,40 @@
+.search-box {
+    float: right;
+    width: 350px;
+    margin: 23px 20px 0 0;
+    box-shadow: 1px 3px 2px 2px rgba(0,0,0,.075);
+    border-radius: 3px;
+    transition: all 0.5s ease-in-out;
+    background: rgba(255,255,255,0.4);
+    overflow: hidden;
+    &:hover,
+    &:focus {
+        box-shadow: 1px 3px 2px 3px rgba(0,0,0,.25);
+        background: rgba(255,255,255,0.8);
+    }
+    .form-control,
+    .form-control:hover,
+    .form-control:focus,
+    .btn,
+    .btn:hover,
+    .btn:focus {
+        background: transparent;
+        border: 0;
+        outline: none;
+        box-shadow: none;
+        border-radius: 0;
+        color: #141418 !important;
+        font-size: 16px;
+    }
+    .btn,
+    .btn:hover,
+    .btn:focus {
+        font-size: 20px;
+        line-height: 14px;
+    }
+}
+.header .navbar-default{
+    background: url(../images/img_docs_banner_bg.png);
+    border: 0;
+    box-shadow: 0 0 5px 2px rgba(0,0,0,0.1);
+}

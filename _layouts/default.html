@@ -6,12 +6,11 @@
 	{% include head.html %}
 </head>
 <body>
-    <div class="scroller">
-        {% include header.html %}
+    {% include header.html %}
+    <main>
         {{content}}
-        {% include footer.html %}
-    </div>
-    {% include foot.html %}
+    </main>
+    {% include footer.html %}
     <div id="templates"></div>
 </body>
 </html>
