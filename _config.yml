@@ -1,18 +1,16 @@
 # Site settings
 title: Tizen Docs
 environment: production
-layout: default
+permalink: pretty
+markdown: kramdown
+highlighter: pygments
+docsVersion: docs
 exclude:
 - README.md
 - Gemfile
 - Gemfile.lock
 - .sass-cache
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      layout: "default"
+
 sass:
     sass_dir: css
- 
+    style: compressed
