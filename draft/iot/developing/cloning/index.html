@@ -1,0 +1,66 @@
+<h1 id="cloning-tizen-source-files">Cloning Tizen Source Files</h1>
+
+<p>You can clone Tizen source files over SSH or HTTPS.</p>
+
+<blockquote>
+  <p><strong>Note</strong></p>
+
+  <p>The procedures to clone Tizen source files over SSH and HTTPS are almost identical, the only difference being the URL in the Git command. However, you can only contribute code to Tizen using the SSH protocol.</p>
+</blockquote>
+
+<p>Before cloning source files, study the following instructions:</p>
+
+<ul>
+  <li><a href="setting-up.md">Setting up the Development Environment</a></li>
+  <li><a href="installing.md">Installing Development Tools</a></li>
+</ul>
+
+<h2 id="cloning-over-ssh">Cloning over SSH</h2>
+
+<p>You can clone source files over SSH, either for a specific project or for all Tizen projects.</p>
+
+<p>To clone a specific project over SSH:</p>
+
+<ol>
+  <li>
+    <p>Confirm the package name by checking it on Tizen <a href="https://review.tizen.org/gerrit/#/admin/projects/">Project List</a> or by running the following command:</p>
+
+    <pre><code>$ ssh review.tizen.org gerrit ls-projects
+</code></pre>
+  </li>
+  <li>
+    <p>Clone the required package:</p>
+
+    <pre><code>$ git clone [-b &lt;Branch&gt;] ssh://&lt;Username&gt;@review.tizen.org:29418/&lt;Gerrit_Project&gt; [&lt;Local_Project&gt;]
+</code></pre>
+
+    <p>For example:</p>
+
+    <pre><code>$ git clone ssh://&lt;Username&gt;@review.tizen.org:29418/platform/core/account/account-common
+</code></pre>
+  </li>
+</ol>
+
+<p>To clone all Tizen projects over SSH, see <a href="building-all.md#cloning-all-projects-over-ssh">Cloning All Projects over SSH</a>.</p>
+
+<h2 id="cloning-over-https">Cloning over HTTPS</h2>
+
+<p>You can clone source files over HTTPS, either for a specific project or for all Tizen projects.</p>
+
+<p>To clone a specific project over HTTPS:</p>
+
+<ol>
+  <li>
+    <p>Clone the required package:</p>
+
+    <pre><code>$ git clone [-b &lt;Branch&gt;] https://git.tizen.org/cgit/&lt;Gerrit_Project&gt; [&lt;Local_Project&gt;]
+</code></pre>
+
+    <p>For example:</p>
+
+    <pre><code>$ git clone https://git.tizen.org/cgit/platform/core/multimedia/avsystem
+</code></pre>
+  </li>
+</ol>
+
+<p>To clone all Tizen projects over HTTPS, see <a href="building-all.md#cloning-all-projects-over-https">Cloning All Projects over HTTPS</a>.</p>
