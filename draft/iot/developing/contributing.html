@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="icon"  href="/favicon.ico" />
-<title>Tizen Open Source Project</title>
+<title>Contributing Code to Tizen</title>
 <meta name="description" content=""/>
 <meta name="keywords" content=""/>
 <base id="baseURL" href="/draft/" />
@@ -123,7 +123,7 @@
         
         
     
-        <li class="">
+        <li class="open">
             <a href="iot/developing/installing" class="hasChild">
                 IOT Developing
                 <span class="arrow"></span>
@@ -375,50 +375,153 @@
 
 
 <script>
-    $("a[href$='/iot/']").addClass("active open");
+    $("a[href$='/iot/developing/contributing.html']").addClass("active open");
 </script>
                     <div class="body" id="printableArea">
                         <div class="text-right">
                             <button class="print-btn hidden-print" onclick="printDiv('printableArea')">PRINT</button>
                         </div>
                         <div class="widgetLatestVersionNotification"></div>
-                        <h1 id="iot-folder">IOT Folder</h1>
-<h1 id="tizen-open-source-project">Tizen Open Source Project</h1>
+                        <h1 id="contributing-code-to-tizen">Contributing Code to Tizen</h1>
 
-<p>Tizen is an open source software stack created for a wide array of devices with different form factors. The primary objectives of Tizen are to create an open software platform available for carriers, OEMs, and developers to make their innovative ideas a reality, and to introduce a successful, real-world product that improves the mobile experience for users. We have also wanted to make sure there is no central point of failure, where 1 industry player can restrict or control the innovations of another. The result is a full, production-quality consumer product with source code open for customization and porting.</p>
+<p>This topic describes how you can contribute code to Tizen.</p>
 
-<p>The Tizen operating system is available in multiple profiles to serve different industry requirements. The current Tizen profiles are Tizen IVI (in-vehicle infotainment), Tizen Mobile, Tizen TV, and Tizen Wearable. Additionally, as of Tizen 3.0, all profiles are built on top of a common, shared infrastructure called Tizen Common.</p>
+<p>For more information about the whole work process, see <a href="../about/work-flow.md">Tizen Development Workflow</a>.</p>
 
-<p>With Tizen:</p>
+<h2 id="cloning-source-files-over-ssh">Cloning Source Files over SSH</h2>
 
-<ul>
-  <li><strong>Device manufacturers</strong> can begin with 1 of the profiles and modify it to serve their own needs, or use the Tizen Common base to develop a new profile to meet the memory, processing, and power requirements of any device and quickly bring it to market.</li>
-  <li><strong>Mobile operators</strong> can work with device partners to customize the operating system and user experience to meet the needs of specific customer segments or demographics.</li>
-  <li><strong>Application developers and ISVs</strong> can take advantage of the power of native application development with the flexibility of unparalleled HTML5 support. Tizen also offers the potential for application developers to extend their reach to new “smart devices” running Tizen, including wearables, consumer electronics (such as TVs, gaming consoles, and DVRs), cars, and appliances.</li>
-</ul>
+<p>To clone source files for a specific project, see <a href="cloning.md">Cloning Tizen Source Files</a>.</p>
 
-<p>The Tizen project is a part of the <a href="https://www.linuxfoundation.org/projects/">Linux Foundation</a> and is governed by a Technical Steering Group, which is the primary decision-making body for the open source project, with a focus on platform development and delivery, along with the formation of working groups to support device verticals.</p>
+<h2 id="submitting-a-patch-to-gerrit">Submitting a Patch to Gerrit</h2>
 
-<p>The <a href="http://www.tizenassociation.org/">Tizen Association</a> has been formed to guide the industry role of Tizen, including gathering of requirements, identification and facilitation of service models, and overall industry marketing and education.</p>
+<p>You can perform patch submission and review on Gerrit.</p>
 
-<h2 id="get-started-with-tizen">Get Started with Tizen</h2>
+<p>To submit a patch to Gerrit:</p>
 
-<p>To get started with Tizen development:</p>
-
-<ul>
+<ol>
   <li>
-    <p>Get access</p>
-
-    <p>You can register for an account at <a href="https://www.tizen.org/user/register">https://www.tizen.org/user/register</a>.</p>
+    <p>Switch to the project directory and perform local development.</p>
+  </li>
+  <li>Stage the revised content:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git add &lt;Revised_File&gt;...
+</code></pre></div>    </div>
+  </li>
+  <li>Commit the revised content:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git commit
+</code></pre></div>    </div>
   </li>
   <li>
-    <p>Study the development workflow</p>
+    <p>Push the patch to Gerrit:</p>
 
-    <p>Tizen developers use the Git and <a href="reference/gbs/gbs-overview.md">GBS command-line tools</a> for most of their work. Tizen source code is managed by <a href="reference/gerrit-usage.md">Gerrit</a>, a code review system for Git-based projects. Source code cloning, development, and review are done under ACL (Access Control Lists). Make sure you have access rights to them.</p>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git push origin HEAD:refs/for/&lt;remote_branch_name&gt;
+</code></pre></div>    </div>
+    <blockquote>
+      <p><strong>Note</strong></p>
+
+      <p>Valid values for <code class="highlighter-rouge">&lt;remote_branch_name&gt;</code> are:</p>
+      <ul>
+        <li><code class="highlighter-rouge">tizen</code>: corresponds to the branch of the latest Tizen version</li>
+        <li><code class="highlighter-rouge">tizen_3.0</code>: corresponds to the Tizen 3.0 branch</li>
+      </ul>
+    </blockquote>
   </li>
+</ol>
+
+<p>For more information, see <a href="https://review.tizen.org/gerrit/Documentation/index.html">Gerrit Documentation</a>.</p>
+
+<h2 id="reviewing-a-patch-on-gerrit">Reviewing a Patch on Gerrit</h2>
+
+<p>To review a patch in the Gerrit Web UI, publish the comments and vote for the patch.</p>
+
+<p>The patch is merged or discarded depending on the voting results.The merge is performed if:</p>
+
+<ul>
+  <li>The patch has at least one “+2” score and no “-2” score in the Code Review category.</li>
+  <li>The patch has at least one “+1” score and no “-1” score in the Verified category.</li>
 </ul>
 
-<p>Start by reading the <a href="about/work-flow.md">Development Workflow</a> page.</p>
+<blockquote>
+  <p><strong>Note</strong></p>
+
+  <p>Voting “+2” requires a proper privilege level.</p>
+</blockquote>
+
+<p>When a patch meets the above criteria, privileged users can submit to merge the patch to the Git repository.</p>
+
+<h2 id="submitting-packages-to-the-build-system">Submitting Packages to the Build System</h2>
+
+<p>You can submit a single package or a group of packages.</p>
+
+<h3 id="submitting-a-single-package">Submitting a Single Package</h3>
+
+<p>To submit a package to the build system, execute the following command:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ gbs submit [-c &lt;Commit_ID&gt;] -m "&lt;Comments&gt;"
+</code></pre></div></div>
+
+<p>During the submission, GBS automatically creates an annotated tag in the following format:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>submit/$Tizen_Version/$(%Y%m%d.%H%M%S)
+</code></pre></div></div>
+
+<p>If the code change has already been merged in Gerrit, a merge request is created and release engineers are notified to review.</p>
+
+<blockquote>
+  <p><strong>Note</strong></p>
+
+  <p>If the patch has not been merged in Gerrit, the backend services abort the operation and send an email to the patch owner, to notify that the patch needs to be re-submitted after it is merged.</p>
+</blockquote>
+
+<h3 id="submitting-a-group-of-packages">Submitting a Group of Packages</h3>
+
+<p>If multiple changed packages have mutual dependencies, they must be submitted as a group. This means that all of the packages must be submitted with 1 unified identification, through a process known as <strong>group submission</strong>.</p>
+
+<p>This feature is supported by the collaboration of the Tizen client development tool (GBS) and Tizen backend services.</p>
+
+<p>For the platform developers, GBS provides the <code class="highlighter-rouge">--tag &lt;TAG&gt;</code> option, to accept a developer-specified “TAG” for the <code class="highlighter-rouge">gbs submit</code> command. All submissions for multiple packages with the same TAG are considered as a group, and packages in the same group are handled in the build system together.</p>
+
+<p>For example, assume that “ail”, a low level library, depends on “aul”. “ail” developers have changed some APIs, and “aul” must be updated to adapt to the new API changes in “ail”. Therefore, once all related patches have been merged to “ail” and “aul” separately, these 2 packages must be submitted as a group:</p>
+
+<ol>
+  <li>
+    <p>Submit 1 of the packages in the group to create a tag:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cd platform/core/appfw/aul-1/
+$ gbs submit -m "&lt;Comments&gt;"
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Obtain the tag name from the output of the above command, and use the same tag as a <code class="highlighter-rouge">--tag</code> parameter for other packages in the group:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cd platform/core/appfw/ail/
+$ gbs submit --tag &lt;same_tag&gt; -m "&lt;Comments&gt;"
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p>You can also specify the tag yourself, and use the same tag for all packages in the package group. In this case, the tag must follow the usual tag format with an optional suffix:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>submit/$Tizen_Version/$(%Y%m%d.%H%M%S).N (N is a number you can choose freely)
+</code></pre></div></div>
+
+<p>Tizen backend services take care of all submissions with the same tag, and build them together.</p>
+
+<h2 id="reviewing-a-package-on-the-build-server">Reviewing a Package on the Build Server</h2>
+
+<p>If you are a release engineer, you can review and accept changes on the build system side.</p>
+
+<p>After a developer runs the <code class="highlighter-rouge">gbs submit</code> command, the Tizen backend service starts the pre-release and normal release processes at the same time. During the pre-release process, packages and Tizen images with a specific package inside are presented to release engineers and Quality Assurance (QA) engineers for review.</p>
+
+<p>QA engineers are responsible for testing packages as isolated objects, as well as verifying Tizen images with a specific package inside to offer release engineers comprehensive information to make appropriate decision about whether to accept or reject a package, including the following:</p>
+
+<ul>
+  <li>Whether the package impacts other dependent package builds.</li>
+  <li>Whether the package brings in new bugs.</li>
+  <li>Whether the package causes regression issues.</li>
+  <li>Whether the package influences the performance of the Tizen image.</li>
+</ul>
+
+<p>After the packages are accepted by release engineers, the corresponding images are automatically created by the normal release process and can be obtained on <a href="http://download.tizen.org/releases/daily">http://download.tizen.org/releases/daily</a>.</p>
 
                     </div>
                 </div>
