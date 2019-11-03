@@ -1,10 +1,7 @@
 # Site settings
 title: Tizen Docs
 environment: production
-permalink: pretty
-markdown: kramdown
-highlighter: pygments
-docsVersion: docs
+layout: default
 exclude:
 - README.md
 - Gemfile
