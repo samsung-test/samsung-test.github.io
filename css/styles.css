@@ -606,7 +606,8 @@ pre code {
 body {
   color: #5a5a5a;
   font-family: museosans-100;
-  background-color: #fff; }
+  background: #ffffff url(../images/mask.png);
+  background-size: 3px 3px; }
 
 html {
   margin: 0 !important;
@@ -947,9 +948,7 @@ h2 {
 
 .landing-middle {
   width: 100%;
-  text-align: center;
-  background: #f5f5f5 url(../images/mask.png);
-  background-size: 3px 3px; }
+  text-align: center; }
 
 .landing-middle .container {
   padding: 0 35px 65px 30px; }
