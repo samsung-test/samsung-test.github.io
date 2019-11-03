@@ -694,7 +694,7 @@ html {
   .navbar-wrapper .navbar {
     padding-right: 0;
     padding-left: 0;
-    border-radius: 4px; }
+    border-radius: 0; }
 
   .carousel-caption p {
     margin-bottom: 20px;
