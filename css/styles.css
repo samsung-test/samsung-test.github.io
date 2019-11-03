@@ -574,7 +574,7 @@ pre code {
   box-shadow: 1px 3px 2px 2px rgba(0, 0, 0, 0.075);
   border-radius: 3px;
   transition: all 0.5s ease-in-out;
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.6);
   overflow: hidden; }
   .search-box:hover, .search-box:focus {
     box-shadow: 1px 3px 2px 3px rgba(0, 0, 0, 0.25);
@@ -964,28 +964,31 @@ body {
 .landing-middle .landing-card {
   width: 459px;
   height: 261px;
-  display: inline-block;
+  display: inline-flex;
   margin: 22px;
-  display: inline-table;
-  box-shadow: 0px 0 2px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.15);
   background: #fff;
-  border-radius: 3px; }
+  border-radius: 2px; }
 
 .landing-middle .landing-card .landing-card-img {
-  display: table-cell;
   width: 120px; }
 
 .landing-middle .landing-card .landing-card-body {
-  display: table-cell;
+  width: 100%;
   position: relative; }
 
 .landing-middle .landing-card .landing-card-body .title {
   font-family: museosans-700;
   font-size: 20px;
   color: #333;
-  margin-top: 40px;
+  margin-top: 25px;
   margin-left: 10px;
   text-align: left; }
+
+.hydrated {
+  vertical-align: middle;
+  margin: 0 2px;
+  font-size: inherit; }
 
 .landing-middle .landing-card .landing-card-body .body {
   font-family: museosans-300;
@@ -1000,10 +1003,23 @@ body {
   font-size: 14px;
   color: #56c4d8;
   text-align: right;
-  margin-right: 36px;
   position: absolute;
-  bottom: 25px;
-  right: 36px; }
+  bottom: 20px;
+  right: 25px; }
+  .landing-middle .landing-card .landing-card-body .landing-card-link a {
+    background: #337ab7;
+    color: #eee;
+    padding: 2px 2px 2px 8px;
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2); }
+    .landing-middle .landing-card .landing-card-body .landing-card-link a:hover, .landing-middle .landing-card .landing-card-body .landing-card-link a:focus {
+      text-decoration: none; }
+    .landing-middle .landing-card .landing-card-body .landing-card-link a ion-icon {
+      margin-left: 5px;
+      font-weight: 600;
+      font-size: 16px; }
 
 .moving-arrow a .img-normal {
   visibility: visible;
@@ -2077,16 +2093,16 @@ blockquote {
 .footer {
   height: auto;
   min-height: 128px;
-  background: #333;
-  color: #fff !important;
+  background: #1a1a1a;
+  color: #bbb !important;
   border-top: 1px solid #e5e5e5;
-  padding: 15px 48px 0 40px;
+  padding: 15px 48px 10px 40px;
   border: none;
   font-family: museosans-700;
   font-size: 16px; }
   .footer ul {
     list-style: none;
-    color: #fff;
+    color: #bbb;
     display: flex;
     justify-content: flex-end; }
     .footer ul li {
@@ -2094,7 +2110,7 @@ blockquote {
       .footer ul li a,
       .footer ul li a:hover,
       .footer ul li a:focus {
-        color: #fff;
+        color: #bbb;
         display: flex;
         align-items: center; }
         .footer ul li a ion-icon,
@@ -2105,10 +2121,11 @@ blockquote {
     font-family: museosans-500;
     font-size: 12px;
     line-height: 17px;
-    color: #bbb;
+    color: #777;
     margin-top: 20px; }
     .footer .copyright a {
-      color: #fff; }
+      color: #777;
+      text-decoration: underline; }
 
 .landing-top .landing-image-right img {
   max-width: 100%;
