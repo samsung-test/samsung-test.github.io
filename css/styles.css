@@ -470,25 +470,40 @@ pre code {
 .landing-tizen .nav.side-menu {
   padding-bottom: 20px;
   position: inherit;
-  min-height: 100vh; }
+  min-height: 100vh;
+  background: #b016ff url(../images/mask.png);
+  color: #fff;
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 15px;
+  overflow-y: auto;
+  height: 100%;
+  width: 384px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 60px;
+  left: 0; }
 
 #widgetVersionSwitcher {
-  padding: 0 20px 15px 30px;
-  text-align: right;
+  padding: 0 20px 15px 20px;
   font-size: 16px;
   font-weight: 500;
   font-family: museosans-500;
-  margin-bottom: 15px;
+  margin-bottom: 0;
   border-bottom: 1px solid #ccc; }
   #widgetVersionSwitcher select {
-    font-size: 14px; }
+    font-size: 14px;
+    color: #333; }
+
+.landing-tizen .nav.side-menu li a {
+  color: #fff; }
 
 .landing-tizen .nav.side-menu > li > a {
-  padding: 10px 20px 10px 30px !important;
   font-size: 16px;
   background: none;
   position: relative;
-  margin: 0; }
+  margin: 0;
+  color: #fff; }
 
 .landing-tizen .nav.side-menu > li > a:focus,
 .landing-tizen .nav.side-menu > li > a:hover {
@@ -511,32 +526,44 @@ pre code {
   position: relative;
   background: none;
   line-height: 1.2;
-  padding: 5px 0;
+  padding: 8px 0;
   padding-right: 20px !important; }
 
 .landing-tizen .td-tocs li a:focus,
 .landing-tizen .td-tocs li a:hover {
-  background: #f0f2f3;
+  background: rgba(255, 255, 255, 0.7);
   color: #2c84b9; }
 
 .landing-tizen .td-tocs li a.open.active {
   color: #2c84b9; }
 
 .landing-tizen .td-tocs.depth-1 > li > a {
-  padding-left: 50px !important; }
+  padding-left: 30px !important; }
+
+.landing-tizen .td-tocs.depth-1 > li.active > a {
+  padding-left: 18px !important; }
 
 .landing-tizen .td-tocs.depth-2 > li > a {
-  padding-left: 70px !important; }
+  padding-left: 40px !important; }
+
+.landing-tizen .td-tocs.depth-2 > li.active > a {
+  padding-left: 28px !important; }
 
 .landing-tizen .td-tocs.depth-3 > li > a {
-  padding-left: 90px !important;
+  padding-left: 50px !important;
   font-family: museosans-300;
   font-size: 13px; }
 
+.landing-tizen .td-tocs.depth-3 > li.active > a {
+  padding-left: 38px !important; }
+
 .landing-tizen .td-tocs.depth-4 > li > a {
-  padding-left: 110px !important;
+  padding-left: 60px !important;
   font-family: museosans-300;
   font-size: 13px; }
+
+.landing-tizen .td-tocs.depth-4 > li.active > a {
+  padding-left: 48px !important; }
 
 .landing-tizen .td-tocs.depth-5 > li > a {
   padding-left: 130px !important;
@@ -988,8 +1015,8 @@ h2 {
   font-size: 40px;
   color: #000;
   text-align: center;
-  margin-top: 61px;
-  margin-bottom: 59px; }
+  margin-top: 60px;
+  margin-bottom: 20px; }
 
 .landing-middle .landing-card {
   width: 459px;
@@ -1101,7 +1128,7 @@ ion-icon {
 
 .landing-tizen {
   width: 100%;
-  padding-top: 83px;
+  padding-top: 60px;
   min-height: 854px; }
 
 .landing-tizen .container {
@@ -1120,7 +1147,7 @@ ion-icon {
   display: inline-block;
   text-align: left;
   background: #fff;
-  padding: 30px 35px;
+  padding: 20px 35px;
   width: 100%; }
 
 .landing-tizen .body h1 {
@@ -1150,7 +1177,6 @@ ion-icon {
   color: #333; }
 
 .landing-tizen .container .print-btn {
-  margin-bottom: 10px;
   border-radius: 2px;
   font-family: museosans-700;
   font-size: 14px;
@@ -1164,17 +1190,6 @@ ion-icon {
 .landing-tizen .container .print-btn:hover {
   background-color: #1a689b; }
 
-.nav.side-menu {
-  display: inline-block;
-  vertical-align: top;
-  padding-top: 15px;
-  overflow-y: auto;
-  height: 100%;
-  width: 384px;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 83px; }
-
 .nav.side-menu > li {
   width: 100%;
   font-family: museosans-500;
@@ -1183,7 +1198,7 @@ ion-icon {
 
 .nav.side-menu > li > a,
 .nav.side-menu > li > a:focus {
-  padding: 15px 32px 15px 40px;
+  padding: 10px 20px 10px 20px;
   font-family: museosans-500;
   font-size: 16px;
   color: #555; }
@@ -1192,13 +1207,22 @@ ion-icon {
   background-color: rgba(212, 214, 217, 0.3); }
 
 .nav.side-menu > li.active > a,
+.nav.side-menu > li.active > a:hover,
 .nav.side-menu > li.active > a:focus {
   background-color: rgba(212, 214, 217, 0.6);
-  padding-left: 34px;
+  padding-left: 14px;
   border-left: 6px solid #56c4d8; }
 
 .nav.side-menu > li.active > a:hover {
-  background-color: rgba(212, 214, 217, 0.3); }
+  background-color: #d4d6d9; }
+
+.nav.side-menu .td-tocs li.active > a,
+.nav.side-menu .td-tocs li.active > a:focus {
+  background-color: rgba(212, 214, 217, 0.6);
+  border-left: 10px solid #ff75f1; }
+
+.nav.side-menu .td-tocs li.active > a:hover {
+  background-color: #d4d6d9; }
 
 .nav.side-menu > li > a > .arrow {
   display: inline-block;
