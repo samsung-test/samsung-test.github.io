@@ -438,32 +438,36 @@ body {
 .landing-middle .landing-card {
     width: 459px;
     height: 261px;
-    display: inline-block;
+    display: inline-flex;
     margin: 22px;
-    display: inline-table;
-    box-shadow: 0px 0 2px 2px rgba(0,0,0,0.15);
+    box-shadow: 0 0 3px 2px rgba(0,0,0,0.15);
     background: #fff;
-    border-radius: 3px;
+    border-radius: 2px;
 }
 
 .landing-middle .landing-card .landing-card-img {
-    display: table-cell;
     width: 120px
 }
 
 .landing-middle .landing-card .landing-card-body {
-    display: table-cell;
-    position: relative
+    width: 100%;
+    position: relative;
 }
 
 .landing-middle .landing-card .landing-card-body .title {
     font-family: museosans-700;
     font-size: 20px;
     color: #333;
-    margin-top: 40px;
+    margin-top: 25px;
     margin-left: 10px;
     text-align: left
 }
+.hydrated {
+    vertical-align: middle;
+    margin: 0 2px;
+    font-size: inherit;
+}
+
 
 .landing-middle .landing-card .landing-card-body .body {
     font-family: museosans-300;
@@ -479,10 +483,27 @@ body {
     font-size: 14px;
     color: #56c4d8;
     text-align: right;
-    margin-right: 36px;
     position: absolute;
-    bottom: 25px;
-    right: 36px
+    bottom: 20px;
+    right: 25px;
+    a {
+        background: #337ab7;
+        color: #eee;
+        padding: 2px 2px 2px 8px;
+        display: flex;
+        align-items: center;
+        border-radius: 2px;
+        box-shadow: 0 0 2px 1px rgba(0,0,0,0.2);
+        &:hover,
+        &:focus {
+            text-decoration: none;
+        }
+        ion-icon {
+            margin-left: 5px;
+            font-weight: 600;
+            font-size: 16px;
+        }
+    }
 }
 
 .moving-arrow a .img-normal {
@@ -1782,16 +1803,16 @@ blockquote {
 .footer {
     height: auto;
     min-height: 128px;
-    background: #333;
-    color: #fff !important;
+    background: #1a1a1a;
+    color: #bbb !important;
     border-top: 1px solid #e5e5e5;
-    padding: 15px 48px 0 40px;
+    padding: 15px 48px 10px 40px;
     border: none;
     font-family: museosans-700;
     font-size: 16px;
     ul {
         list-style: none;
-        color: #fff;
+        color: #bbb;
         display: flex;
         justify-content: flex-end;
         li {
@@ -1799,7 +1820,7 @@ blockquote {
             a,
             a:hover,
             a:focus {
-                color: #fff;
+                color: #bbb;
                 display: flex;
                 align-items: center;
                 ion-icon {
@@ -1812,10 +1833,11 @@ blockquote {
         font-family: museosans-500;
         font-size: 12px;
         line-height: 17px;
-        color: #bbb;
+        color: #777;
         margin-top:20px;
         a {
-            color: #fff;
+            color: #777;
+            text-decoration: underline;
         }
     }
 }
