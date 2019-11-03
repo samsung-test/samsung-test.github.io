@@ -1,4 +1,396 @@
-<h1 id="gbs-configuration">GBS Configuration</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon"  href="/favicon.ico" />
+<title>GBS Configuration</title>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<base id="baseURL" href="/1.0/" />
+<meta id="docsVersion" content="" />
+<meta name="last-modified" content="2019-11-03 15:35:21 +0530" />
+<meta http-equiv="cache-control" content="max-age=24" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-store" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="Expires" content="600" />
+
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/styles.css?v=03112019">
+
+<script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/common.js?v=03112019"></script>
+<script type="text/javascript" src="/js/handlebars-v4.0.11.js?v=03112019"></script>
+<script type="text/javascript" src="/js/widgets-data.js?v=03112019"></script>
+<script type="text/javascript" src="/js/widgets.js?v=03112019"></script>
+<script type="text/javascript" src="/js/toc.js"></script>
+
+<script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+
+</head>
+<body>
+    <div class="scroller">
+        <header class="navbar-wrapper header">
+    <nav class="navbar navbar-default navbar-static-top navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <ion-icon name="menu"></ion-icon>
+                </button>
+                <a class="navbar-brand active open" href="/">
+                    <span class="brand-tizen"><img src="/images/logo.png" alt="logo"></span>
+                    <span class="brand-docs">Docs</span>
+                </a>
+            </div>
+            <ul id="navbar" class="nav navbar-nav navbar-right navbar-collapse collapse">
+                <li>
+                    <a href="platform/about/tizen-open-source-overview">Platform</a>
+                </li>
+                <li>
+                    <a href="application/">Application</a>
+                </li>
+                <li>
+                    <a href="iot/">IoT</a>
+                </li>
+                <li>
+                    <a href="https://developer.tizen.org/development/tizen-studio/download" target="_blank">Download</a>
+                </li>
+            </ul>
+            <form action="/search.html" method="get" class="search-box">
+                <div class="input-group">
+                    <input type="search" name="q" placeholder="Search ..." autofocus="off" class="form-control">
+                    <div class="input-group-btn">
+                        <button type="submit" onclick="submitSearch()" title="Search" class="btn btn-default">
+                            <ion-icon name="search"></ion-icon>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </nav>
+</header>
+		<main>
+        <div class="landing-tizen">
+            <div class="container">
+                <div class="row body-cover">
+                    
+
+
+    
+    <ul class="nav side-menu">
+        <div id="widgetVersionSwitcher"></div>
+        
+        
+        
+        
+    
+        <li class="">
+            <a href="platform/about/work-flow" class="hasChild">
+                Platform Overview
+                <span class="arrow"></span>
+            </a>
+            
+            <ul class="td-tocs depth-1">
+                
+                <li>
+                    
+                    
+                    <a href="platform/about/work-flow" class="">
+                        Platform Development Workflow
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a href="platform/about/git-repo-structure" class="">
+                        Platform Git Repository Structure
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a href="platform/about/conventions" class="">
+                        Typographic Conventions
+                    </a>
+                    
+                </li>
+                
+            </ul>
+            
+        </li>
+    
+        
+        
+        
+    
+        <li class="">
+            <a href="platform/developing/installing" class="hasChild">
+                Platform Developing
+                <span class="arrow"></span>
+            </a>
+            
+            <ul class="td-tocs depth-1">
+                
+                <li>
+                    
+                    
+                    <a href="platform/developing/installing" class="">
+                        Installing Development Tools
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a href="platform/developing/setting-up" class="">
+                        Setting up Development Environment
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a href="platform/developing/cloning" class="">
+                        Cloning Tizen Source Files
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a href="platform/developing/building" class="">
+                        Building Packages Locally with GBS
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a href="platform/developing/building-all" class="">
+                        Building All Packages Locally with GBS
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a href="platform/developing/contributing" class="">
+                        Contributing Code to Tizen
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a href="platform/developing/creating" class="">
+                        Creating Tizen Images with MIC
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a href="platform/developing/flashing" class="">
+                        Flashing an Image to Device
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a href="platform/developing/tips" class="">
+                        Development Tips
+                    </a>
+                    
+                </li>
+                
+            </ul>
+            
+        </li>
+    
+        
+        
+        
+    
+        <li class="">
+            <a href="platform/porting/overview" class="hasChild">
+                Porting
+                <span class="arrow"></span>
+            </a>
+            
+            <ul class="td-tocs depth-1">
+                
+                <li>
+                    
+                    
+                    <a href="platform/porting/overview" class="">
+                        Overview
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a href="platform/porting/kernel" class="">
+                        Kernel
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a href="platform/porting/system" class="">
+                        System
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a href="platform/porting/graphics-and-ui" class="">
+                        Graphics and UI
+                    </a>
+                    
+                </li>
+                
+            </ul>
+            
+        </li>
+    
+        
+        
+        
+    
+        <li class="open">
+            <a href="platform/reference/gerrit-usage" class="hasChild">
+                Reference
+                <span class="arrow"></span>
+            </a>
+            
+            <ul class="td-tocs depth-1">
+                
+                <li>
+                    
+                    
+                    <a href="platform/reference/gerrit-usage" class="">
+                        Gerrit
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a href="platform/reference/gbs/gbs-overview"
+                        class="hasChild ">
+                        Git Build System (GBS)
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="td-tocs depth-2 open">
+                        
+                        <li>
+                            
+                            <a href="platform/reference/gbs/gbs-overview"
+                                class="">
+                                Overview
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a href="platform/reference/gbs/gbs.conf"
+                                class="">
+                                GBS Configuration
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a href="platform/reference/gbs/gbs-maintenance-models"
+                                class="">
+                                GBS Maintenance Models
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a href="platform/reference/mic/mic-overview"
+                        class="hasChild ">
+                        MIC Image Creator
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="td-tocs depth-2 open">
+                        
+                        <li>
+                            
+                            <a href="platform/reference/mic/mic-overview"
+                                class="">
+                                Overview
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a href="platform/reference/mic/mic-customize-image"
+                                class="">
+                                Customizing Images
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a href="platform/reference/mic/mic-reference"
+                                class="">
+                                MIC Reference
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+                
+            </ul>
+            
+        </li>
+    
+        
+        
+    </ul>
+
+
+<script>
+    $("a[href$='/platform/reference/gbs/gbs.conf/']").addClass("active open");
+</script>
+                    <div class="body" id="printableArea">
+                        <div class="text-right">
+                            <button class="print-btn hidden-print" onclick="printDiv('printableArea')">PRINT</button>
+                        </div>
+                        <div class="widgetLatestVersionNotification"></div>
+                        <h1 id="gbs-configuration">GBS Configuration</h1>
 
 <p>The GBS configuration files are all simple INI-style files that record various choices and settings used by many GBS commands. Some settings represent purely personal preferences, while others are vital to a correctly-functioning build, and still others simply tweak command behavior a little.</p>
 
@@ -239,3 +631,76 @@ work_dir=~/test
 buildconf=${work_dir}/tizen.conf
 buildroot=${tmpdir}/profile.tizen/
 </code></pre>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+		</main>
+        <footer class="footer">
+  <div class="family-sites">
+    <ul>
+      <li>
+        <a href="https://developer.tizen.org/" target="_blank">
+          Developers
+        </a>
+      </li>
+      <li>
+        <a href="https://docs.tizen.org" target="_blank">
+          Docs
+        </a>
+      </li>
+      <li>
+        <a href="https://dashboard.tizen.org" target="_blank">
+          Dashboard
+        </a>
+      </li>
+      <li>
+        <a href="https://craftroom.tizen.org/" target="_blank">
+          Craftroom
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="outer-links">
+    <ul>
+      <li>
+        <a href="https://twitter.com/TizenProject" target="_blank">
+          <ion-icon name="logo-twitter"></ion-icon> Twitter
+        </a>
+      </li>
+      <li>
+        <a href="http://www.facebook.com/pages/Tizen-Project" target="_blank">
+          <ion-icon name="logo-facebook"></ion-icon> Facebook
+        </a>
+      </li>
+      <li>
+        <a href="https://bugs.tizen.org" target="_blank">
+          <ion-icon name="bug"></ion-icon> Bug Tracker
+        </a>
+      </li>
+      <li>
+        <a href="http://lists.tizen.org" target="_blank">
+          <ion-icon name="mail"></ion-icon> Mailing Lists
+        </a>
+      </li>
+      <li>
+        <a href="http://www.tizenstore.com" target="_blank">
+          <ion-icon name="cart"></ion-icon> Tizen Store
+        </a>
+      </li>
+    </ul>
+    </div>
+  <div class="copyright">
+    © 2019 Tizen Project, a <a href="http://www.linuxfoundation.org/" target="_blank">Linux Foundation</a> Project. All Rights Reserved.
+    Linux is a registered trademark of Linus Torvalds.<br>
+    Tizen is a registered trademark of The Linux Foundation. * Other names and brands may be claimed as the property of
+    others.<br>
+    Except as noted, this content is licensed under Creative Commons Attribution 3.0. For details, see the <a
+      href="https://www.tizen.org/content-license">Content License.</a><br>
+  </div>
+</footer>
+    </div>
+    <div id="templates"></div>    
+</body>
+</html>
