@@ -1,0 +1,31 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% include head.html %}
+</head>
+<body>
+    <div class="scroller">
+        {% include header.html %}
+		<main>
+        <div class="landing-tizen">
+            <div class="container">
+                <div class="row body-cover">
+                    {% include sidebar.html %}
+                    <div class="body" id="printableArea">
+                        <div class="text-right">
+                            <button class="print-btn hidden-print" onclick="printDiv('printableArea')">PRINT</button>
+                        </div>
+                        <div class="widgetLatestVersionNotification"></div>
+                        {{content}}
+                    </div>
+                </div>
+            </div>
+        </div>
+		</main>
+        {% include footer.html %}
+    </div>
+    <div id="templates"></div>    
+</body>
+</html>

@@ -11,6 +11,13 @@ exclude:
 - Gemfile.lock
 - .sass-cache
 
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "docs"
+
 sass:
     sass_dir: css
     
