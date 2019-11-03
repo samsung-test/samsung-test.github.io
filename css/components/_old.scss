@@ -453,8 +453,8 @@ h2 {
     font-size: 40px;
     color: #000;
     text-align: center;
-    margin-top: 61px;
-    margin-bottom: 59px
+    margin-top: 60px;
+    margin-bottom: 20px
 }
 
 .landing-middle .landing-card {
@@ -586,7 +586,7 @@ ion-icon {
 
 .landing-tizen {
     width: 100%;
-    padding-top: 83px;
+    padding-top: 60px;
     min-height: 854px
 }
 
@@ -607,7 +607,7 @@ ion-icon {
     display: inline-block;
     text-align: left;
     background: #fff;
-    padding: 30px 35px;
+    padding: 20px 35px;
     width: 100%;
 }
 
@@ -643,7 +643,6 @@ ion-icon {
 }
 
 .landing-tizen .container .print-btn {
-    margin-bottom: 10px;
     border-radius: 2px;
     font-family: museosans-700;
     font-size: 14px;
@@ -659,17 +658,6 @@ ion-icon {
     background-color: #1a689b
 }
 
-.nav.side-menu {
-    display: inline-block;
-    vertical-align: top;
-    padding-top: 15px;
-    overflow-y: auto;
-    height: 100%;
-    width: 384px;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 83px
-}
 
 .nav.side-menu>li {
     width: 100%;
@@ -680,7 +668,7 @@ ion-icon {
 
 .nav.side-menu>li>a,
 .nav.side-menu>li>a:focus {
-    padding: 15px 32px 15px 40px;
+    padding: 10px 20px 10px 20px;
     font-family: museosans-500;
     font-size: 16px;
     color: #555
@@ -691,14 +679,26 @@ ion-icon {
 }
 
 .nav.side-menu>li.active>a,
+.nav.side-menu>li.active>a:hover,
 .nav.side-menu>li.active>a:focus {
     background-color: hsla(216, 6%, 84%, .6);
-    padding-left: 34px;
+    padding-left: 14px;
     border-left: 6px solid #56c4d8
 }
 
 .nav.side-menu>li.active>a:hover {
-    background-color: hsla(216, 6%, 84%, .3)
+    background-color: hsla(216, 6%, 84%, 1);
+}
+
+
+.nav.side-menu .td-tocs li.active>a,
+.nav.side-menu .td-tocs li.active>a:focus {
+    background-color: hsla(216, 6%, 84%, .6);
+    border-left: 10px solid #ff75f1;
+}
+
+.nav.side-menu .td-tocs li.active>a:hover {
+    background-color: hsla(216, 6%, 84%, 1);
 }
 
 .nav.side-menu>li>a>.arrow {

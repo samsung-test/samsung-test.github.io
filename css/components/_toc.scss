@@ -2,26 +2,40 @@
     padding-bottom: 20px;
     position: inherit;
     min-height: 100vh;
+    background: #b016ff url(../images/mask.png);
+    color: #fff;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 15px;
+    overflow-y: auto;
+    height: 100%;
+    width: 384px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 60px;
+    left: 0;
 }
 #widgetVersionSwitcher {
-    padding: 0 20px 15px 30px;
-    text-align: right;
+    padding: 0 20px 15px 20px;
     font-size: 16px;
     font-weight: 500;
     font-family: museosans-500;
-    margin-bottom: 15px;
+    margin-bottom: 0;
     border-bottom: 1px solid #ccc;
     select {
         font-size: 14px;
+        color: #333;
     }
 }
-
+.landing-tizen .nav.side-menu li a{
+    color: #fff;
+}
 .landing-tizen .nav.side-menu>li>a {
-    padding: 10px 20px 10px 30px !important;
     font-size: 16px;
     background: none;
     position: relative;
-    margin: 0
+    margin: 0;
+    color: #fff;
 }
 
 .landing-tizen .nav.side-menu>li>a:focus,
@@ -48,13 +62,13 @@
     position: relative;
     background: none;
     line-height: 1.2;
-    padding: 5px 0;
-    padding-right: 20px !important
+    padding: 8px 0;
+    padding-right: 20px !important;
 }
 
 .landing-tizen .td-tocs li a:focus,
 .landing-tizen .td-tocs li a:hover {
-    background: #f0f2f3;
+    background: rgba(255,255,255,0.7);
     color: #2c84b9
 }
 
@@ -63,23 +77,35 @@
 }
 
 .landing-tizen .td-tocs.depth-1>li>a {
-    padding-left: 50px !important
+    padding-left: 30px !important
+}
+.landing-tizen .td-tocs.depth-1>li.active>a {
+    padding-left: 18px !important
 }
 
 .landing-tizen .td-tocs.depth-2>li>a {
-    padding-left: 70px !important
+    padding-left: 40px !important
+}
+.landing-tizen .td-tocs.depth-2>li.active>a {
+    padding-left: 28px !important
 }
 
 .landing-tizen .td-tocs.depth-3>li>a {
-    padding-left: 90px !important;
+    padding-left: 50px !important;
     font-family: museosans-300;
     font-size: 13px
 }
+.landing-tizen .td-tocs.depth-3>li.active>a {
+    padding-left: 38px !important
+}
 
 .landing-tizen .td-tocs.depth-4>li>a {
-    padding-left: 110px !important;
+    padding-left: 60px !important;
     font-family: museosans-300;
     font-size: 13px
+}
+.landing-tizen .td-tocs.depth-4>li.active>a {
+    padding-left: 48px !important
 }
 
 .landing-tizen .td-tocs.depth-5>li>a {
