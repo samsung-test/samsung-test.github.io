@@ -560,7 +560,6 @@ ion-icon {
 }
 
 .landing-tizen {
-    background-color: #fff;
     width: 100%;
     padding-top: 83px;
     min-height: 854px
@@ -574,17 +573,17 @@ ion-icon {
 
 .landing-tizen .container .row {
     height: 100%;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
     margin: 0
 }
-
+.landing-tizen .body-cover {
+    display: flex !important;
+}
 .landing-tizen .body {
-    width: 1050px;
-    margin-top: 30px;
-    margin-left: 35px;
     display: inline-block;
-    text-align: left
+    text-align: left;
+    background: #fff;
+    padding: 30px 35px;
+    width: 100%;
 }
 
 .landing-tizen .body h1 {
@@ -619,16 +618,16 @@ ion-icon {
 }
 
 .landing-tizen .container .print-btn {
-    width: 110px;
-    height: 44px;
-    margin-bottom: 80px;
-    border-radius: 6px;
+    margin-bottom: 10px;
+    border-radius: 2px;
     font-family: museosans-700;
     font-size: 14px;
     color: #fff;
     text-align: center;
-    background-color: #56a5d8;
-    float: right
+    background-color: #888;
+    padding: 4px 10px;
+    border: 0;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .landing-tizen .container .print-btn:hover {
@@ -636,7 +635,6 @@ ion-icon {
 }
 
 .nav.side-menu {
-    background-color: #f1f1f1;
     display: inline-block;
     vertical-align: top;
     padding-top: 15px;
@@ -649,7 +647,7 @@ ion-icon {
 }
 
 .nav.side-menu>li {
-    width: 384px;
+    width: 100%;
     font-family: museosans-500;
     font-size: 16px;
     color: #555
@@ -1772,10 +1770,6 @@ blockquote {
     float: right
 }
 @media (min-width:1200px) {
-    .landing-tizen .body {
-        width: calc(100% - 500px);
-        max-width: 1050px
-    }
 
     .docs-toc-row {
         display: none
@@ -1787,9 +1781,6 @@ blockquote {
 }
 
 @media (min-width:1500px) {
-    .landing-tizen .body {
-        width: calc(100% - 500px - 320px)
-    }
 
     .docs-toc-row {
         display: block;

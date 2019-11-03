@@ -1,7 +1,19 @@
 .landing-tizen .nav.side-menu {
     padding-bottom: 20px;
-    background: #f7f7f7;
-    position: inherit
+    position: inherit;
+    min-height: 100vh;
+}
+#widgetVersionSwitcher {
+    padding: 0 20px 15px 30px;
+    text-align: right;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: museosans-500;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+    select {
+        font-size: 14px;
+    }
 }
 
 .landing-tizen .nav.side-menu>li>a {
