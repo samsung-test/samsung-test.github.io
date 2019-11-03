@@ -469,8 +469,19 @@ pre code {
     display: table-cell !important; } }
 .landing-tizen .nav.side-menu {
   padding-bottom: 20px;
-  background: #f7f7f7;
-  position: inherit; }
+  position: inherit;
+  min-height: 100vh; }
+
+#widgetVersionSwitcher {
+  padding: 0 20px 15px 30px;
+  text-align: right;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: museosans-500;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ccc; }
+  #widgetVersionSwitcher select {
+    font-size: 14px; }
 
 .landing-tizen .nav.side-menu > li > a {
   padding: 10px 20px 10px 30px !important;
@@ -1068,7 +1079,6 @@ ion-icon {
   text-align: left; }
 
 .landing-tizen {
-  background-color: #fff;
   width: 100%;
   padding-top: 83px;
   min-height: 854px; }
@@ -1080,16 +1090,17 @@ ion-icon {
 
 .landing-tizen .container .row {
   height: 100%;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   margin: 0; }
 
+.landing-tizen .body-cover {
+  display: flex !important; }
+
 .landing-tizen .body {
-  width: 1050px;
-  margin-top: 30px;
-  margin-left: 35px;
   display: inline-block;
-  text-align: left; }
+  text-align: left;
+  background: #fff;
+  padding: 30px 35px;
+  width: 100%; }
 
 .landing-tizen .body h1 {
   font-family: museosans-700;
@@ -1118,22 +1129,21 @@ ion-icon {
   color: #333; }
 
 .landing-tizen .container .print-btn {
-  width: 110px;
-  height: 44px;
-  margin-bottom: 80px;
-  border-radius: 6px;
+  margin-bottom: 10px;
+  border-radius: 2px;
   font-family: museosans-700;
   font-size: 14px;
   color: #fff;
   text-align: center;
-  background-color: #56a5d8;
-  float: right; }
+  background-color: #888;
+  padding: 4px 10px;
+  border: 0;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2); }
 
 .landing-tizen .container .print-btn:hover {
   background-color: #1a689b; }
 
 .nav.side-menu {
-  background-color: #f1f1f1;
   display: inline-block;
   vertical-align: top;
   padding-top: 15px;
@@ -1145,7 +1155,7 @@ ion-icon {
   top: 83px; }
 
 .nav.side-menu > li {
-  width: 384px;
+  width: 100%;
   font-family: museosans-500;
   font-size: 16px;
   color: #555; }
@@ -2072,19 +2082,12 @@ blockquote {
   float: right; }
 
 @media (min-width: 1200px) {
-  .landing-tizen .body {
-    width: calc(100% - 500px);
-    max-width: 1050px; }
-
   .docs-toc-row {
     display: none; }
 
   .landing-tizen .container .row {
     display: block; } }
 @media (min-width: 1500px) {
-  .landing-tizen .body {
-    width: calc(100% - 500px - 320px); }
-
   .docs-toc-row {
     display: block;
     padding-right: 15px;
