@@ -1,54 +1,58 @@
 {% assign directory = page.path | split: '/' %}
 {% assign subdirectory = directory[0] %}
-<div id="widgetVersionSwitcher"></div>
-<ul class="nav side-menu">
-    {% for version in site.data.sidebar[subdirectory] %}
-    {% for menu in version.sidebar %}
-    {% assign finalurl = menu.url %}
-    {% assign sections = finalurl | split: '/' %}
 
-    <li class="{% if (sections[1] == directory[1] ) %}open{% endif %}">
-        <a href="{{finalurl}}" class="hasChild">
-            {{menu.title}}
-            <span class="arrow"></span>
-        </a>
-        {% if menu.subfolderitems[0] %}
-        <ul class="td-tocs depth-1">
-            {% for submenu in menu.subfolderitems %}
-            <li>
-                {% if submenu.subfolderitems[0] %}
-                {% assign submenufinalurl = submenu.url %}
-                <a href="{{submenufinalurl}}"
-                    class="hasChild {% if submenufinalurl == page.url %}active open{% endif %}">
-                    {{submenu.page}}
-                    <span class="arrow"></span>
-                </a>
-                <ul class="td-tocs depth-2 {% if (sections[1] == directory[1] ) %}open{% endif %}">
-                    {% for subsubmenu in submenu.subfolderitems %}
-                    <li>
-                        {% assign subsubmenufinalurl = subsubmenu.url %}
-                        <a href="{{subsubmenufinalurl}}"
-                            class="{% if subsubmenufinalurl == page.url %}active open{% endif %}">
-                            {{subsubmenu.page}}
-                        </a>
-                    </li>
-                    {% endfor %}
-                </ul>
-                {% else %}
-                {% assign submenufinalurl = submenu.url %}
-                <a href="{{submenufinalurl}}" class="{% if submenufinalurl== page.url %}active open{% endif %}">
-                    {{submenu.page}}
-                </a>
-                {% endif %}
-            </li>
-            {% endfor %}
-        </ul>
-        {% endif %}
-    </li>
+    
+    <ul class="nav side-menu">
+        <div id="widgetVersionSwitcher"></div>
+        {% for version in site.data.sidebar[subdirectory] %}
+        {% for menu in version.sidebar %}
+        {% assign finalurl = menu.url %}
+        {% assign sections = finalurl | split: '/' %}
+    
+        <li class="{% if (sections[1] == directory[1] ) %}open{% endif %}">
+            <a href="{{finalurl}}" class="hasChild">
+                {{menu.title}}
+                <span class="arrow"></span>
+            </a>
+            {% if menu.subfolderitems[0] %}
+            <ul class="td-tocs depth-1">
+                {% for submenu in menu.subfolderitems %}
+                <li>
+                    {% if submenu.subfolderitems[0] %}
+                    {% assign submenufinalurl = submenu.url %}
+                    <a href="{{submenufinalurl}}"
+                        class="hasChild {% if submenufinalurl == page.url %}active open{% endif %}">
+                        {{submenu.page}}
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="td-tocs depth-2 {% if (sections[1] == directory[1] ) %}open{% endif %}">
+                        {% for subsubmenu in submenu.subfolderitems %}
+                        <li>
+                            {% assign subsubmenufinalurl = subsubmenu.url %}
+                            <a href="{{subsubmenufinalurl}}"
+                                class="{% if subsubmenufinalurl == page.url %}active open{% endif %}">
+                                {{subsubmenu.page}}
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    {% else %}
+                    {% assign submenufinalurl = submenu.url %}
+                    <a href="{{submenufinalurl}}" class="{% if submenufinalurl== page.url %}active open{% endif %}">
+                        {{submenu.page}}
+                    </a>
+                    {% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </li>
+    
+        {% endfor %}
+        {% endfor %}
+    </ul>
 
-    {% endfor %}
-    {% endfor %}
-</ul>
+
 <script>
     $("a[href$='{{page.url | remove_first: " / "  }}']").addClass("active open");
 </script>
