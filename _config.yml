@@ -14,5 +14,5 @@ exclude:
 - .sass-cache
 
 sass:
-  sass_dir:          _scss
-  style:            :compressed
+  sass_dir: _scss
+  style: scompressed
