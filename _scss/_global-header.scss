@@ -3,7 +3,27 @@
 * hero banner text *************************************************************
 *
 */
-
+#widgetVersionSwitcher {
+    float: left;
+    select {
+        border: 0;
+        background: transparent;
+        color: #fff;
+        margin: 14px;
+        outline: none;
+        option {
+            font-size: 13.5px;
+            line-height: 16px;
+            color: #1488c6;
+            background: #fff;
+            padding: 5px 15px;
+            &:hover {
+                background: #1488c6;
+                color: #fff;
+            }
+        }
+    }
+}
 .hero-text {
     -ms-flex-align: center;
     align-items: center;
