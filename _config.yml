@@ -15,4 +15,3 @@ exclude:
 
 sass:
   sass_dir: _scss
-  style: scompressed
