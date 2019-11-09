@@ -1,40 +1,67 @@
-<header class="navbar-wrapper header">
-    <nav class="navbar navbar-default navbar-static-top navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <ion-icon name="menu"></ion-icon>
-                </button>
-                <a class="navbar-brand active open" href="/">
-                    <!--<span class="brand-tizen"><img src="/images/logo.png" alt="logo"></span>-->
-                    <span class="brand-docs">Tizen Docs</span>
-                </a>
+<header>
+    <div class="header">
+        <div class="fan"></div>
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="nav-primary">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <a class="logo" href="/" title="Tizen Documentation">
+                                Tizen
+                            </a>
+                        </div>
+                        <div class="navbar-collapse collapse">
+                            <ul class="primary nav navbar-nav">
+                                <li>
+                                    <a href="platform/about/tizen-open-source-overview">Platform</a>
+                                </li>
+                                <li>
+                                    <a href="application/">Application</a>
+                                </li>
+                                <li>
+                                    <a href="iot/">IoT</a>
+                                </li>
+                                <li>
+                                    <a href="https://developer.tizen.org/development/tizen-studio/download" target="_blank">Download</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
             </div>
-            <ul id="navbar" class="nav navbar-nav navbar-right navbar-collapse collapse">
-                <li>
-                    <a href="platform/about/tizen-open-source-overview">Platform</a>
-                </li>
-                <li>
-                    <a href="application/">Application</a>
-                </li>
-                <li>
-                    <a href="iot/">IoT</a>
-                </li>
-                <li>
-                    <a href="https://developer.tizen.org/development/tizen-studio/download" target="_blank">Download</a>
-                </li>
-            </ul>
-            <form action="/search.html" method="get" class="search-box">
-                <div class="input-group">
-                    <input type="search" name="q" placeholder="Search ..." autofocus="off" class="form-control">
-                    <div class="input-group-btn">
-                        <button type="submit" onclick="submitSearch()" title="Search" class="btn btn-default">
-                            <ion-icon name="search"></ion-icon>
-                        </button>
+        </div>
+        <!-- hero banner text -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="hero-text">
+                    <div class="hero-text-centered">
+                        <h1>Tizen Documentation</h1>
+                        <p>An open and flexible operating system built from the ground up to address the needs of
+                            all stakeholders of the mobile and connected device ecosystem, including device manufacturers, mobile operators, application developers and independent software vendors (ISVs).</p>
+                        <ul class="buttons">
+                            <li>
+                                <a class="button transparent-btn" href="https://www.tizen.org/user/register" target="_blank">
+                                    Register
+                                </a>
+                            </li>
+                            <li>
+                                <a class="button secondary-btn" href="platform/developing/cloning" target="_blank">
+                                    Get Tizen
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </form>
+            </div>
         </div>
-    </nav>
+        <!-- nav-secondary -->
+        <!-- data-offset-top should calculated as follows: (height of <header> - header of <nav>) -->
+        <nav class="nav-secondary-tabs" data-spy="affix" data-offset-top="385">
+            <div class="container-fluid">
+                <div class="navbar-collapse" aria-expanded="false" style="height: 1px;">
+                    {% include navigation.html %}
+                </div>
+            </div>
+        </nav>
+    </div>
 </header>

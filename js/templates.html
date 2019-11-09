@@ -1,11 +1,11 @@
 <!-- Templates-->
 <script id="template-widgetVersionSwitcher" type="text/x-handlebars-template">
-	Version : <select>
+	<select>
 	<option value="/" selected="selected"></option>
 	{{#each versions}}
 		{{#if this.published}}
 			<option value="{{this.branch}}" >
-				{{this.title}} {{#if this.latest}}(Latest){{/if}}
+				{{this.title}} {{#if this.latest}}(current){{/if}}
 			</option>
 		{{/if}}	
 	{{/each}}

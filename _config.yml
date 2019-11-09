@@ -4,6 +4,8 @@ environment: production
 permalink: pretty
 markdown: kramdown
 highlighter: pygments
+gitOrg: samsung-test
+gitRepo: samsung-test.github.io
 docsVersion: docs
 exclude:
 - README.md
@@ -12,5 +14,5 @@ exclude:
 - .sass-cache
 
 sass:
-    sass_dir: css
-    
+  sass_dir:          _scss
+  style:            :compressed
