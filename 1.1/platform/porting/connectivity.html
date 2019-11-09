@@ -9,380 +9,72 @@
 <meta name="keywords" content=""/>
 <base id="baseURL" href="/1.1/" />
 <meta id="docsVersion" content="1.1" />
-<meta name="last-modified" content="2019-11-03 23:54:25 +0530" />
+<meta name="last-modified" content="2019-11-10 00:23:31 +0530" />
 <meta http-equiv="cache-control" content="max-age=24" />
 <meta http-equiv="cache-control" content="no-cache" />
 <meta http-equiv="Cache-Control" content="no-store" />
 <meta http-equiv="pragma" content="no-cache" />
 <meta http-equiv="Expires" content="600" />
 
+<link rel="stylesheet" href="/css/font-awesome.min.css">
 <link rel="stylesheet" href="/css/bootstrap.min.css">
-<link rel="stylesheet" href="/css/styles.css?v=03112019">
+<link rel="stylesheet" href="/css/pygments/perldoc.css">
+<link rel="stylesheet" href="/css/style.css?v=10112019">
+<link rel="stylesheet" href="/css/github.css?v=10112019">
 
 <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
 
 </head>
 <body class="">
-    <div class="scroller">
-        <header class="navbar-wrapper header">
-    <nav class="navbar navbar-default navbar-static-top navbar-fixed-top">
-        <div class="container">
+	 <header>
+    <nav class="nav-secondary navbar navbar-fixed-top">
+        <div class="container-fluid">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <ion-icon name="menu"></ion-icon>
-                </button>
-                <a class="navbar-brand active open" href="/">
-                    <!--<span class="brand-tizen"><img src="/images/logo.png" alt="logo"></span>-->
-                    <span class="brand-docs">Tizen Docs</span>
+                <a class="logo" href="/" title="Tizen Documentation">
+                    Tizen
                 </a>
             </div>
-            <ul id="navbar" class="nav navbar-nav navbar-right navbar-collapse collapse">
-                <li>
-                    <a href="platform/about/tizen-open-source-overview">Platform</a>
-                </li>
-                <li>
-                    <a href="application/">Application</a>
-                </li>
-                <li>
-                    <a href="iot/">IoT</a>
-                </li>
-                <li>
-                    <a href="https://developer.tizen.org/development/tizen-studio/download" target="_blank">Download</a>
-                </li>
-            </ul>
-            <form action="/search.html" method="get" class="search-box">
-                <div class="input-group">
-                    <input type="search" name="q" placeholder="Search ..." autofocus="off" class="form-control">
-                    <div class="input-group-btn">
-                        <button type="submit" onclick="submitSearch()" title="Search" class="btn btn-default">
-                            <ion-icon name="search"></ion-icon>
-                        </button>
-                    </div>
-                </div>
-            </form>
+            <div class="navbar-collapse" aria-expanded="false" style="height: 1px;">
+                <div class="search-form" id="search-div">
+    <form class="search-form form-inline ng-pristine ng-valid" id="searchForm" action="/search/">
+        <input class="search-field form-control ds-input" id="st-search-input" value="" name="q" placeholder="Search the docs" type="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;">
+        <div id="autocompleteContainer">
+            <div id="autocompleteResults"></div>
+        </div>
+        <!-- <button type="submit" class="search-submit btn btn-default">Search</button> -->
+    </form>
+</div>
+<div class="sidebar-toggle">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</div>
+<div class="nav-container">
+    <div id="tabs">
+        <ul class="tabs" id="jsTOCHorizontal">
+
+        </ul>
+    </div>
+    <div class="ctrl-right hidden-xs hidden-sm">
+        <a href="javascript:void(0)" id="menu-toggle"><i class="fa fa-indent" aria-hidden="true"></i></a>
+        <div id="widgetVersionSwitcher"></div>
+    </div>
+</div>
+            </div>
         </div>
     </nav>
 </header>
-		<main>
-        <div class="landing-tizen">
-            <div class="container">
-                <div class="row body-cover">
-                    
-
-
-    
-    <ul class="nav side-menu">
-        <div id="widgetVersionSwitcher"></div>
-        
-        
-        
-        
-    
-        <li class="">
-            <a href="platform/about/work-flow" class="hasChild">
-                Platform Overview
-                <span class="arrow"></span>
-            </a>
-            
-            <ul class="td-tocs depth-1">
-                
-                <li>
-                    
-                    
-                    <a href="platform/about/work-flow" class="">
-                        Platform Development Workflow
-                    </a>
-                    
-                </li>
-                
-                <li>
-                    
-                    
-                    <a href="platform/about/git-repo-structure" class="">
-                        Platform Git Repository Structure
-                    </a>
-                    
-                </li>
-                
-                <li>
-                    
-                    
-                    <a href="platform/about/conventions" class="">
-                        Typographic Conventions
-                    </a>
-                    
-                </li>
-                
-            </ul>
-            
-        </li>
-    
-        
-        
-        
-    
-        <li class="">
-            <a href="platform/developing/installing" class="hasChild">
-                Platform Developing
-                <span class="arrow"></span>
-            </a>
-            
-            <ul class="td-tocs depth-1">
-                
-                <li>
-                    
-                    
-                    <a href="platform/developing/installing" class="">
-                        Installing Development Tools
-                    </a>
-                    
-                </li>
-                
-                <li>
-                    
-                    
-                    <a href="platform/developing/setting-up" class="">
-                        Setting up Development Environment
-                    </a>
-                    
-                </li>
-                
-                <li>
-                    
-                    
-                    <a href="platform/developing/cloning" class="">
-                        Cloning Tizen Source Files
-                    </a>
-                    
-                </li>
-                
-                <li>
-                    
-                    
-                    <a href="platform/developing/building" class="">
-                        Building Packages Locally with GBS
-                    </a>
-                    
-                </li>
-                
-                <li>
-                    
-                    
-                    <a href="platform/developing/building-all" class="">
-                        Building All Packages Locally with GBS
-                    </a>
-                    
-                </li>
-                
-                <li>
-                    
-                    
-                    <a href="platform/developing/contributing" class="">
-                        Contributing Code to Tizen
-                    </a>
-                    
-                </li>
-                
-                <li>
-                    
-                    
-                    <a href="platform/developing/creating" class="">
-                        Creating Tizen Images with MIC
-                    </a>
-                    
-                </li>
-                
-                <li>
-                    
-                    
-                    <a href="platform/developing/flashing" class="">
-                        Flashing an Image to Device
-                    </a>
-                    
-                </li>
-                
-                <li>
-                    
-                    
-                    <a href="platform/developing/tips" class="">
-                        Development Tips
-                    </a>
-                    
-                </li>
-                
-            </ul>
-            
-        </li>
-    
-        
-        
-        
-    
-        <li class="open">
-            <a href="platform/porting/overview" class="hasChild">
-                Porting
-                <span class="arrow"></span>
-            </a>
-            
-            <ul class="td-tocs depth-1">
-                
-                <li>
-                    
-                    
-                    <a href="platform/porting/overview" class="">
-                        Overview
-                    </a>
-                    
-                </li>
-                
-                <li>
-                    
-                    
-                    <a href="platform/porting/kernel" class="">
-                        Kernel
-                    </a>
-                    
-                </li>
-                
-                <li>
-                    
-                    
-                    <a href="platform/porting/system" class="">
-                        System
-                    </a>
-                    
-                </li>
-                
-                <li>
-                    
-                    
-                    <a href="platform/porting/graphics-and-ui" class="">
-                        Graphics and UI
-                    </a>
-                    
-                </li>
-                
-            </ul>
-            
-        </li>
-    
-        
-        
-        
-    
-        <li class="">
-            <a href="platform/reference/gerrit-usage" class="hasChild">
-                Reference
-                <span class="arrow"></span>
-            </a>
-            
-            <ul class="td-tocs depth-1">
-                
-                <li>
-                    
-                    
-                    <a href="platform/reference/gerrit-usage" class="">
-                        Gerrit
-                    </a>
-                    
-                </li>
-                
-                <li>
-                    
-                    
-                    <a href="platform/reference/gbs/gbs-overview"
-                        class="hasChild ">
-                        Git Build System (GBS)
-                        <span class="arrow"></span>
-                    </a>
-                    <ul class="td-tocs depth-2 ">
-                        
-                        <li>
-                            
-                            <a href="platform/reference/gbs/gbs-overview"
-                                class="">
-                                Overview
-                            </a>
-                        </li>
-                        
-                        <li>
-                            
-                            <a href="platform/reference/gbs/gbs.conf"
-                                class="">
-                                GBS Configuration
-                            </a>
-                        </li>
-                        
-                        <li>
-                            
-                            <a href="platform/reference/gbs/gbs-maintenance-models"
-                                class="">
-                                GBS Maintenance Models
-                            </a>
-                        </li>
-                        
-                    </ul>
-                    
-                </li>
-                
-                <li>
-                    
-                    
-                    <a href="platform/reference/mic/mic-overview"
-                        class="hasChild ">
-                        MIC Image Creator
-                        <span class="arrow"></span>
-                    </a>
-                    <ul class="td-tocs depth-2 ">
-                        
-                        <li>
-                            
-                            <a href="platform/reference/mic/mic-overview"
-                                class="">
-                                Overview
-                            </a>
-                        </li>
-                        
-                        <li>
-                            
-                            <a href="platform/reference/mic/mic-customize-image"
-                                class="">
-                                Customizing Images
-                            </a>
-                        </li>
-                        
-                        <li>
-                            
-                            <a href="platform/reference/mic/mic-reference"
-                                class="">
-                                MIC Reference
-                            </a>
-                        </li>
-                        
-                    </ul>
-                    
-                </li>
-                
-            </ul>
-            
-        </li>
-    
-        
-        
-    </ul>
-
-
-<script>
-    $("a[href$='/platform/porting/connectivity.html']").addClass("active open");
-</script>
-                    <div class="body" id="printableArea">
-                        <div class="text-right">
-                            <button class="print-btn hidden-print" onclick="printDiv('printableArea')">PRINT</button>
-                        </div>
-                        <div class="widgetLatestVersionNotification"></div>
-                        <h1 id="connectivity">Connectivity</h1>
+    <div class="wrapper right-open">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-body">
+					<main class="col-content content">
+						<section class="section">
+							<h1 id="connectivity">Connectivity</h1>
 
 <p>You can implement various connectivity features, such as Bluetooth, WLAN, and NFC.</p>
 
@@ -1070,83 +762,128 @@ libmtp opensource
   <li>Media Transfer Protocol v.1.1 Spec: <a href="http://www.usb.org/developers/docs/devclass_docs/">http://www.usb.org/developers/docs/devclass_docs/</a></li>
 </ul>
 
-                    </div>
-                </div>
-            </div>
-        </div>
-		</main>
-        <footer class="footer">
-  <div class="family-sites">
-    <ul>
-      <li>
-        <a href="https://developer.tizen.org/" target="_blank">
-          Developers
-        </a>
-      </li>
-      <li>
-        <a href="https://docs.tizen.org" target="_blank">
-          Docs
-        </a>
-      </li>
-      <li>
-        <a href="https://dashboard.tizen.org" target="_blank">
-          Dashboard
-        </a>
-      </li>
-      <li>
-        <a href="https://craftroom.tizen.org/" target="_blank">
-          Craftroom
-        </a>
-      </li>
+						</section>
+					</main>
+					<nav class="col-nav">
+						<div id="sidebar-nav" class="sidebar hidden-sm hidden-xs">
+						    <div id="navbar" class="nav-sidebar">
+    <ul class="nav" id="jsTOCLeftNav">
     </ul>
-  </div>
-  <div class="outer-links">
+</div>
+
+						</div>
+					</nav>
+					<div class="col-toc">
+						<div class="sidebar hidden-xs hidden-sm">
+							<div class="toc-nav">
+								<div class="feedback-links">
+									<ul>
+										
+                                        <li style="visibility: hidden">
+                                            <a href="">
+                                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i> 
+                                                Edit this page
+                                            </a>
+                                        </li>
+                                        
+										<li>
+                                            <a href="https://github.com/samsung-test/samsung-test.github.io/edit/1.1/platform/porting/connectivity.md" target="_blank">
+                                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                                Edit Page
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://github.com/samsung-test/samsung-test.github.io/issues/new" class="nomunge" target="_blank">
+                                                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                                Report Issue
+                                            </a>
+                                        </li>
+									</ul>
+								</div>
+								   
+									<div id="side-toc-title">On this page:</div>
+									
+<ul id="my_toc" class="inline_toc">
+  <li><a href="#bluetooth" class="nomunge">Bluetooth</a>
     <ul>
-      <li>
-        <a href="https://twitter.com/TizenProject" target="_blank">
-          <ion-icon name="logo-twitter"></ion-icon> Twitter
-        </a>
-      </li>
-      <li>
-        <a href="http://www.facebook.com/pages/Tizen-Project" target="_blank">
-          <ion-icon name="logo-facebook"></ion-icon> Facebook
-        </a>
-      </li>
-      <li>
-        <a href="https://bugs.tizen.org" target="_blank">
-          <ion-icon name="bug"></ion-icon> Bug Tracker
-        </a>
-      </li>
-      <li>
-        <a href="http://lists.tizen.org" target="_blank">
-          <ion-icon name="mail"></ion-icon> Mailing Lists
-        </a>
-      </li>
-      <li>
-        <a href="http://www.tizenstore.com" target="_blank">
-          <ion-icon name="cart"></ion-icon> Tizen Store
-        </a>
-      </li>
+      <li><a href="#porting-the-oal-interface" class="nomunge">Porting the OAL Interface</a></li>
+      <li><a href="#configuration" class="nomunge">Configuration</a></li>
+      <li><a href="#references" class="nomunge">References</a></li>
     </ul>
+  </li>
+  <li><a href="#wlan" class="nomunge">WLAN</a>
+    <ul>
+      <li><a href="#porting-the-oal-interface-1" class="nomunge">Porting the OAL Interface</a></li>
+      <li><a href="#references-1" class="nomunge">References</a></li>
+    </ul>
+  </li>
+  <li><a href="#nfc" class="nomunge">NFC</a>
+    <ul>
+      <li><a href="#porting-the-oal-interface-2" class="nomunge">Porting the OAL Interface</a></li>
+      <li><a href="#configuration-1" class="nomunge">Configuration</a></li>
+      <li><a href="#references-2" class="nomunge">References</a></li>
+    </ul>
+  </li>
+  <li><a href="#mtp" class="nomunge">MTP</a>
+    <ul>
+      <li><a href="#porting-the-oal-interface-3" class="nomunge">Porting the OAL Interface</a></li>
+      <li><a href="#configuration-2" class="nomunge">Configuration</a></li>
+      <li><a href="#references-3" class="nomunge">References</a></li>
+    </ul>
+  </li>
+</ul>
+
+
+								</div>
+								
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="container">
+  <div class="top_footer">
+    <div class="footer-nav">
+      <nav class="footer_sub_nav">
+        <ul class="menu">
+          <li><a href="https://developer.tizen.org/">Developer</a></li>
+          <li><a href="https://dashboard.tizen.org/">Dashboard</a></li>
+          <li><a href="https://craftroom.tizen.org/">Craftroom</a></li>
+        </ul>
+      </nav>
     </div>
-  <div class="copyright">
-    © 2019 Tizen Project, a <a href="http://www.linuxfoundation.org/" target="_blank">Linux Foundation</a> Project. All Rights Reserved.
-    Linux is a registered trademark of Linus Torvalds.<br>
-    Tizen is a registered trademark of The Linux Foundation. * Other names and brands may be claimed as the property of
-    others.<br>
-    Except as noted, this content is licensed under Creative Commons Attribution 3.0. For details, see the <a
-      href="https://www.tizen.org/content-license">Content License.</a><br>
   </div>
-</footer>
+  <div class="bottom_footer">
+    <div class="footer-copyright col-xs-12 col-md-8">
+      <p class="copyright">
+        Copyright &copy; 2019 Tizen Inc. All rights reserved.
+      </p>
     </div>
+    <div class="footer_social_nav">
+      <ul class="nav-social">
+        <li class="fa fa-github"><a href="https://github.com/samsung-test">GitHub</a></li>  
+        <li class="fa fa-twitter"><a href="https://twitter.com/TizenProject">Twitter</a></li>
+        <li class="fa fa-facebook"><a href="http://www.facebook.com/pages/Tizen-Project">Facebook</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
     <div id="templates"></div>
     <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="/js/common.js?v=03112019"></script>
-<script type="text/javascript" src="/js/handlebars-v4.0.11.js?v=03112019"></script>
-<script type="text/javascript" src="/js/widgets-data.js?v=03112019"></script>
-<script type="text/javascript" src="/js/widgets.js?v=03112019"></script>
+<script type="text/javascript" src="/js/common.js?v=10112019"></script>
+<script type="text/javascript" src="/js/handlebars-v4.0.11.js?v=10112019"></script>
+<script type="text/javascript" src="/js/widgets-data.js?v=10112019"></script>
+<script type="text/javascript" src="/js/widgets.js?v=10112019"></script>
 <script type="text/javascript" src="/js/toc.js"></script>
- 
+<script type="text/javascript" src="/js/tocs.js"></script>
+<script type="text/javascript" src="/js/archive.js"></script>
+<script type="text/javascript" src="/js/collections_tocs.js"></script>
+<script type="text/javascript" src="/js/highlight.pack.js"></script>
+<script type="text/javascript" src="/js/menu.js"></script>
+<script type="text/javascript" src="/js/stickyfill.min.js"></script>
+<script type="text/javascript" src="/js/metadata.js"></script>
 </body>
 </html>

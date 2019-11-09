@@ -9,268 +9,254 @@
 <meta name="keywords" content="Tizen, OS, Open Source"/>
 <base id="baseURL" href="/1.1/" />
 <meta id="docsVersion" content="1.1" />
-<meta name="last-modified" content="2019-11-03 23:54:25 +0530" />
+<meta name="last-modified" content="2019-11-10 00:23:31 +0530" />
 <meta http-equiv="cache-control" content="max-age=24" />
 <meta http-equiv="cache-control" content="no-cache" />
 <meta http-equiv="Cache-Control" content="no-store" />
 <meta http-equiv="pragma" content="no-cache" />
 <meta http-equiv="Expires" content="600" />
 
+<link rel="stylesheet" href="/css/font-awesome.min.css">
 <link rel="stylesheet" href="/css/bootstrap.min.css">
-<link rel="stylesheet" href="/css/styles.css?v=03112019">
+<link rel="stylesheet" href="/css/pygments/perldoc.css">
+<link rel="stylesheet" href="/css/style.css?v=10112019">
+<link rel="stylesheet" href="/css/github.css?v=10112019">
 
 <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
 
 </head>
 <body class="homepage hide-headerSearch">
-    <header class="navbar-wrapper header">
-    <nav class="navbar navbar-default navbar-static-top navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <ion-icon name="menu"></ion-icon>
-                </button>
-                <a class="navbar-brand active open" href="/">
-                    <!--<span class="brand-tizen"><img src="/images/logo.png" alt="logo"></span>-->
-                    <span class="brand-docs">Tizen Docs</span>
-                </a>
+	<header>
+    <div class="header">
+        <div class="fan"></div>
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="nav-primary">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <a class="logo" href="/" title="Tizen Documentation">
+                                Tizen
+                            </a>
+                        </div>
+                        <div class="navbar-collapse collapse">
+                            <ul class="primary nav navbar-nav">
+                                <li>
+                                    <a href="platform/about/tizen-open-source-overview">Platform</a>
+                                </li>
+                                <li>
+                                    <a href="application/">Application</a>
+                                </li>
+                                <li>
+                                    <a href="iot/">IoT</a>
+                                </li>
+                                <li>
+                                    <a href="https://developer.tizen.org/development/tizen-studio/download" target="_blank">Download</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
             </div>
-            <ul id="navbar" class="nav navbar-nav navbar-right navbar-collapse collapse">
-                <li>
-                    <a href="platform/about/tizen-open-source-overview">Platform</a>
-                </li>
-                <li>
-                    <a href="application/">Application</a>
-                </li>
-                <li>
-                    <a href="iot/">IoT</a>
-                </li>
-                <li>
-                    <a href="https://developer.tizen.org/development/tizen-studio/download" target="_blank">Download</a>
-                </li>
-            </ul>
-            <form action="/search.html" method="get" class="search-box">
-                <div class="input-group">
-                    <input type="search" name="q" placeholder="Search ..." autofocus="off" class="form-control">
-                    <div class="input-group-btn">
-                        <button type="submit" onclick="submitSearch()" title="Search" class="btn btn-default">
-                            <ion-icon name="search"></ion-icon>
-                        </button>
+        </div>
+        <!-- hero banner text -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="hero-text">
+                    <div class="hero-text-centered">
+                        <h1>Tizen Documentation</h1>
+                        <p>An open and flexible operating system built from the ground up to address the needs of
+                            all stakeholders of the mobile and connected device ecosystem, including device manufacturers, mobile operators, application developers and independent software vendors (ISVs).</p>
+                        <ul class="buttons">
+                            <li>
+                                <a class="button transparent-btn" href="https://www.tizen.org/user/register" target="_blank">
+                                    Register
+                                </a>
+                            </li>
+                            <li>
+                                <a class="button secondary-btn" href="platform/developing/cloning" target="_blank">
+                                    Get Tizen
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </form>
+            </div>
         </div>
-    </nav>
-</header>
-    <main>
-        <div class="landing-top">
-  <div class="container">
-    <div class="row">
-      <!--<div class="landing-image-right"><img src="/images/img_docs_banner_con.png"></div>
-      <p class="top-title">What is Tizen?</p>
-      <p class="body">Tizen is an open and flexible operating system built from the ground up to address the needs of
-        all stakeholders of the mobile and connected device ecosystem, including device manufacturers, mobile operators,
-        application developers and independent software vendors (ISVs).</p>
-      <p class="body">Tizen is developed by a community of developers, under open source governance, and is open to all
-        members who wish to participate.</p>-->
-        <div class="banner">
-          <h1 class="title">Documentation</h1>
-          <p>An open and flexible operating system built from the ground up to address the needs of
-            all stakeholders of the mobile and connected device ecosystem, including device manufacturers, mobile operators,
-            application developers and independent software vendors (ISVs).</p>
-            <form action="/search.html" method="get" class="search-box">
-              <div class="input-group">
-                  <input type="search" name="q" placeholder="Search ..." autofocus="off" class="form-control">
-                  <div class="input-group-btn">
-                      <button type="submit" onclick="submitSearch()" title="Search" class="btn btn-default">
-                          <ion-icon name="search"></ion-icon>
-                      </button>
-                  </div>
-              </div>
-          </form>
+        <!-- nav-secondary -->
+        <!-- data-offset-top should calculated as follows: (height of <header> - header of <nav>) -->
+        <nav class="nav-secondary-tabs" data-spy="affix" data-offset-top="385">
+            <div class="container-fluid">
+                <div class="navbar-collapse" aria-expanded="false" style="height: 1px;">
+                    <div class="search-form" id="search-div">
+    <form class="search-form form-inline ng-pristine ng-valid" id="searchForm" action="/search/">
+        <input class="search-field form-control ds-input" id="st-search-input" value="" name="q" placeholder="Search the docs" type="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;">
+        <div id="autocompleteContainer">
+            <div id="autocompleteResults"></div>
         </div>
+        <!-- <button type="submit" class="search-submit btn btn-default">Search</button> -->
+    </form>
+</div>
+<div class="sidebar-toggle">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</div>
+<div class="nav-container">
+    <div id="tabs">
+        <ul class="tabs" id="jsTOCHorizontal">
+
+        </ul>
+    </div>
+    <div class="ctrl-right hidden-xs hidden-sm">
+        <a href="javascript:void(0)" id="menu-toggle"><i class="fa fa-indent" aria-hidden="true"></i></a>
+        <div id="widgetVersionSwitcher"></div>
+    </div>
+</div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header> 
+    <div class="wrapper">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-body">
+					<main class="col-content main-content">
+						<section class="section">
+							<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 block">
+
+    <h2 id="open-source-project">Open Source Project</h2>
+
+    <p>Tizen is an open source software stack created for a wide array of devices with different form factors. The primary objectives of Tizen are to create an open software platform available for carriers, OEMs, and developers to make their innovative ideas a reality, and to introduce a successful, real-world product that improves the mobile experience for users.</p>
+
+    <p><a href="platform/developing/installing" class="button outline-btn">More</a></p>
+
+  </div>
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 block">
+
+    <h2 id="tizen-net">Tizen .NET</h2>
+
+    <p>Tizen .NET is an exciting new way to develop applications for the Tizen operating system, running on 50 million Samsung devices, including TVs, wearables, mobile phones, and many other IoT devices around the world.</p>
+
+    <p><a href="application/dotnet/index" class="button outline-btn">More</a></p>
+
+  </div>
+</div>
+
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 block">
+
+    <h3 id="iot-world-on-craftroom">IOT world on Craftroom</h3>
+
+    <p>The Internet of Things (IoT) is connected networks of various types of things, such as sensors, actuators, electronic devices, home appliances, and so on. These networks of end-devices, hubs, and servers enable exchange of data and execution of operations among things for specific purposes. Communications and executions through the connections are designed to happen without human interventions. In the broad sense, the IoT means a combination of software and platforms for automatic and intelligent services, as well as the networks itself.</p>
+
+    <p><a href="iot/index" class="button outline-btn">More</a></p>
+
+  </div>
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 block">
+
+    <h3 id="tizen-studio">Tizen Studio</h3>
+
+    <p>Tizen is a user-interactive and service-oriented open source project that allows you to create feature-rich applications for multiple device categories.</p>
+
+    <p><a href="application/index" class="button outline-btn">More</a></p>
+
+  </div>
+</div>
+<!-- end row -->
+
+						</section>
+					</main>
+					<nav class="col-nav">
+						<div id="sidebar-nav" class="sidebar hidden-sm hidden-xs">
+						    <div id="navbar" class="nav-sidebar">
+    <ul class="nav" id="jsTOCLeftNav">
+    </ul>
+</div>
+
+						</div>
+					</nav>
+					<div class="col-toc">
+						<div class="sidebar hidden-xs hidden-sm">
+							<div class="toc-nav">
+								<div class="feedback-links">
+									<ul>
+										
+                                        <li style="visibility: hidden">
+                                            <a href="">
+                                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i> 
+                                                Edit this page
+                                            </a>
+                                        </li>
+                                        
+										<li>
+                                            <a href="https://github.com/samsung-test/samsung-test.github.io/edit/1.1/index.md" target="_blank">
+                                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                                Edit Page
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://github.com/samsung-test/samsung-test.github.io/issues/new" class="nomunge" target="_blank">
+                                                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                                Report Issue
+                                            </a>
+                                        </li>
+									</ul>
+								</div>
+								
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="container">
+  <div class="top_footer">
+    <div class="footer-nav">
+      <nav class="footer_sub_nav">
+        <ul class="menu">
+          <li><a href="https://developer.tizen.org/">Developer</a></li>
+          <li><a href="https://dashboard.tizen.org/">Dashboard</a></li>
+          <li><a href="https://craftroom.tizen.org/">Craftroom</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="bottom_footer">
+    <div class="footer-copyright col-xs-12 col-md-8">
+      <p class="copyright">
+        Copyright &copy; 2019 Tizen Inc. All rights reserved.
+      </p>
+    </div>
+    <div class="footer_social_nav">
+      <ul class="nav-social">
+        <li class="fa fa-github"><a href="https://github.com/samsung-test">GitHub</a></li>  
+        <li class="fa fa-twitter"><a href="https://twitter.com/TizenProject">Twitter</a></li>
+        <li class="fa fa-facebook"><a href="http://www.facebook.com/pages/Tizen-Project">Facebook</a></li>
+      </ul>
     </div>
   </div>
 </div>
-<div class="landing-middle">
-  <div class="container">
-    <div class="row">
-      <h1 class="landing-middle-main-title">Get Started</h1>
-      <div class="landing-card">
-        <div class="landing-card-img">
-          <img src="/images/ic_docs_opensource.png">
-        </div>
-        <div class="landing-card-body">
-          <p class="title">Open Source Project</p>
-          <div class="body">
-            <ul>
-              <li>
-                <a href="platform/about/tizen-open-source-overview">What is Tizen Open Source Project?</a>
-              </li>
-              <li>
-                Developers can register for an account at: 
-                <a href="https://www.tizen.org/user/register">https://www.tizen.org/user/register</a>
-              </li>
-            </ul>
-            <a class="landing-card-download" href="platform/developing/cloning">
-              <ion-icon name="download"></ion-icon><b> Download Tizen Source</b>
-            </a>
-          </div>
-          <div class="landing-card-link">
-            <a href="platform/developing/installing">
-              More
-              <ion-icon name="arrow-dropright"></ion-icon>
-            </a>
-          </div>
-        </div>
-      </div>
 
-      <div class="landing-card">
-        <div class="landing-card-img">
-          <img src="/images/ic_docs_tizennet.png">
-        </div>
-        <div class="landing-card-body">
-          <p class="title">Tizen .NET</p>
-          <div class="body">
-            <ul>
-              <li><a href="application/dotnet/index">What is Tizen .NET Application?</a></li>
-              <li><a href="application/dotnet/get-started/overview">Creating Tizen .NET Applications</a></li>
-            </ul>
-            <a class="landing-card-download" href="https://marketplace.visualstudio.com/items?itemName=tizen.VisualStudioToolsforTizen">
-              <ion-icon name="download"></ion-icon><b> Download Visual Studio Tools for Tizen</b>
-            </a>
-          </div>
-          <div class="landing-card-link">
-            <a href="application/dotnet/index">
-              More
-              <ion-icon name="arrow-dropright"></ion-icon>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="landing-card">
-        <div class="landing-card-img">
-          <img src="/images/ic_docs_iot.png">
-        </div> 
-        <div class="landing-card-body">
-          <p class="title">IOT world on Craftroom</p>
-          <div class="horizon-divider"></div>
-          <div class="body">
-            <ul>
-              <li><a href="iot/index">What is Tizen IoT?</a></li>
-              <li><a href="iot/get-started/overview">How to make IoT devices</a></li>
-            </ul>
-          </div>
-          <div class="landing-card-link">
-            <a href="https://craftroom.tizen.org">
-              Go to Craftroom
-              <ion-icon name="arrow-dropright"></ion-icon>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="landing-card">
-        <div class="landing-card-img">
-          <img src="/images/ic_docs_tizenstudio.png">
-        </div>
-        <div class="landing-card-body">
-          <p class="title">Tizen Studio</p>
-          <div class="body">
-            <ul>
-              <li><a href="application/index">What is Tizen Application?</a></li>
-              <li><a href="application/native/get-started/overview">Creating Tizen Native Applications</a></li>
-              <li><a href="application/web/get-started/overview">Creating Tizen Web Applicaions</a></li> 
-            </ul>
-            <a class="landing-card-download" href="https://developer.tizen.org/development/tizen-studio/download">
-              <ion-icon name="download"></ion-icon><b> Download Tizen Studio</b>
-            </a>
-          </div>
-          <div class="landing-card-link">
-            <a href="application/tizen-studio/index">
-              More
-              <ion-icon name="arrow-dropright"></ion-icon>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-    </main>
-    <footer class="footer">
-  <div class="family-sites">
-    <ul>
-      <li>
-        <a href="https://developer.tizen.org/" target="_blank">
-          Developers
-        </a>
-      </li>
-      <li>
-        <a href="https://docs.tizen.org" target="_blank">
-          Docs
-        </a>
-      </li>
-      <li>
-        <a href="https://dashboard.tizen.org" target="_blank">
-          Dashboard
-        </a>
-      </li>
-      <li>
-        <a href="https://craftroom.tizen.org/" target="_blank">
-          Craftroom
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div class="outer-links">
-    <ul>
-      <li>
-        <a href="https://twitter.com/TizenProject" target="_blank">
-          <ion-icon name="logo-twitter"></ion-icon> Twitter
-        </a>
-      </li>
-      <li>
-        <a href="http://www.facebook.com/pages/Tizen-Project" target="_blank">
-          <ion-icon name="logo-facebook"></ion-icon> Facebook
-        </a>
-      </li>
-      <li>
-        <a href="https://bugs.tizen.org" target="_blank">
-          <ion-icon name="bug"></ion-icon> Bug Tracker
-        </a>
-      </li>
-      <li>
-        <a href="http://lists.tizen.org" target="_blank">
-          <ion-icon name="mail"></ion-icon> Mailing Lists
-        </a>
-      </li>
-      <li>
-        <a href="http://www.tizenstore.com" target="_blank">
-          <ion-icon name="cart"></ion-icon> Tizen Store
-        </a>
-      </li>
-    </ul>
-    </div>
-  <div class="copyright">
-    © 2019 Tizen Project, a <a href="http://www.linuxfoundation.org/" target="_blank">Linux Foundation</a> Project. All Rights Reserved.
-    Linux is a registered trademark of Linus Torvalds.<br>
-    Tizen is a registered trademark of The Linux Foundation. * Other names and brands may be claimed as the property of
-    others.<br>
-    Except as noted, this content is licensed under Creative Commons Attribution 3.0. For details, see the <a
-      href="https://www.tizen.org/content-license">Content License.</a><br>
-  </div>
-</footer>
     <div id="templates"></div>
     <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="/js/common.js?v=03112019"></script>
-<script type="text/javascript" src="/js/handlebars-v4.0.11.js?v=03112019"></script>
-<script type="text/javascript" src="/js/widgets-data.js?v=03112019"></script>
-<script type="text/javascript" src="/js/widgets.js?v=03112019"></script>
+<script type="text/javascript" src="/js/common.js?v=10112019"></script>
+<script type="text/javascript" src="/js/handlebars-v4.0.11.js?v=10112019"></script>
+<script type="text/javascript" src="/js/widgets-data.js?v=10112019"></script>
+<script type="text/javascript" src="/js/widgets.js?v=10112019"></script>
 <script type="text/javascript" src="/js/toc.js"></script>
-
+<script type="text/javascript" src="/js/tocs.js"></script>
+<script type="text/javascript" src="/js/archive.js"></script>
+<script type="text/javascript" src="/js/collections_tocs.js"></script>
+<script type="text/javascript" src="/js/highlight.pack.js"></script>
+<script type="text/javascript" src="/js/menu.js"></script>
+<script type="text/javascript" src="/js/stickyfill.min.js"></script>
+<script type="text/javascript" src="/js/metadata.js"></script>
 </body>
 </html>
