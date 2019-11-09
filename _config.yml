@@ -2,6 +2,8 @@
 title: Tizen Docs
 environment: production
 layout: default
+gitOrg: samsung-test
+gitRepo: samsung-test.github.io
 exclude:
 - README.md
 - Gemfile
@@ -14,4 +16,4 @@ defaults:
     values:
       layout: "docs"
 sass:
-    sass_dir: css
+    sass_dir: _scss
