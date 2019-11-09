@@ -6,27 +6,61 @@
 	{% include head.html %}
 </head>
 <body class="{{page.pageClass}}">
-    <div class="scroller">
-        {% include header.html %}
-		<main>
-        <div class="landing-tizen">
-            <div class="container">
-                <div class="row body-cover">
-                    {% include sidebar.html %}
-                    <div class="body" id="printableArea">
-                        <div class="text-right">
-                            <button class="print-btn hidden-print" onclick="printDiv('printableArea')">PRINT</button>
-                        </div>
-                        <div class="widgetLatestVersionNotification"></div>
-                        {{content}}
-                    </div>
-                </div>
-            </div>
-        </div>
-		</main>
-        {% include footer.html %}
-    </div>
+	{% if page.landing == true %}{% include global-header.html %}{% endif %} {% if page.landing != true %}{% include header.html %}{% endif %}
+    <div class="{% if page.landing == true %}wrapper{%else%}wrapper right-open{% endif %}">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-body">
+					<main class="col-content {% if page.landing == true %}main-content{%else%}content{% endif %}">
+						<section class="section">
+							{{ content }}
+						</section>
+					</main>
+					<nav class="col-nav">
+						<div id="sidebar-nav" class="sidebar hidden-sm hidden-xs">
+						    {% include side-menu.html %}
+						</div>
+					</nav>
+					<div class="col-toc">
+						<div class="sidebar hidden-xs hidden-sm">
+							<div class="toc-nav">
+								<div class="feedback-links">
+									<ul>
+										{% if edit_url != "" %}
+                                        <li style="visibility: hidden">
+                                            <a href="{{ edit_url }}">
+                                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i> 
+                                                Edit this page
+                                            </a>
+                                        </li>
+                                        {% endif %}
+										<li>
+                                            <a href="https://github.com/{{site.gitOrg}}/{{site.gitRepo}}/edit/{{site.docsBranch}}/{{page.path}}" target="_blank">
+                                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                                Edit Page
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://github.com/{{site.gitOrg}}/{{site.gitRepo}}/issues/new" class="nomunge" target="_blank">
+                                                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                                Report Issue
+                                            </a>
+                                        </li>
+									</ul>
+								</div>
+								{% unless page.notoc %} {% assign my_min = page.toc_min | default: site.toc_min | default: 2 %} {% assign my_max = page.toc_max | default: site.toc_max | default: 3 %} {% assign my_name = page.url | default: "unnamed" %}
+									<div id="side-toc-title">On this page:</div>
+									{% include toc_pure_liquid.html html=content sanitize=true class="inline_toc" id="my_toc" toc_min=my_min toc_max=my_max page_name=my_name %}
+								</div>
+								{% endunless %}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    {% include footer.html %}
     <div id="templates"></div>
-    {% include foot.html %} 
+    {% include foot.html %}
 </body>
 </html>
