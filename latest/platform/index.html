@@ -9,7 +9,7 @@
 <meta name="keywords" content=""/>
 <base id="baseURL" href="/latest/" />
 <meta id="docsVersion" content="1.1" />
-<meta name="last-modified" content="2019-11-10 18:38:38 +0530" />
+<meta name="last-modified" content="2019-11-11 01:04:02 +0530" />
 <meta http-equiv="cache-control" content="max-age=24" />
 <meta http-equiv="cache-control" content="no-cache" />
 <meta http-equiv="Cache-Control" content="no-store" />
@@ -19,8 +19,8 @@
 <link rel="stylesheet" href="/css/font-awesome.min.css">
 <link rel="stylesheet" href="/css/bootstrap.min.css">
 <link rel="stylesheet" href="/css/pygments/perldoc.css">
-<link rel="stylesheet" href="/css/style.css?v=10112019">
-<link rel="stylesheet" href="/css/github.css?v=10112019">
+<link rel="stylesheet" href="/css/style.css?v=11112019">
+<link rel="stylesheet" href="/css/github.css?v=11112019">
 
 <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
@@ -144,7 +144,6 @@
 						    
 
 <div id="navbar" class="nav-sidebar">
-    <div id="widgetVersionSwitcher"></div>
     <ul class="nav" id="jsTOCLeftNav">
         
         
@@ -152,21 +151,31 @@
         
     
         <li>
-            <a href="platform/about/work-flow" data-target="#item1" data-toggle="collapse" data-parent="#stacked-menu" aria-expanded="true">
-                Platform Overview
-                <span class="caret arrow"></span>
+            <a 
+                href="platform/about/work-flow" 
+                data-target="#item1" 
+                data-toggle="collapse" 
+                data-parent="#stacked-menu"
+                aria-expanded=" false "
+                class=" collapsed "
+                >
+                    Platform Overview
+                    <span class="caret arrow"></span>
             </a>
             
 
             
-            <ul class="nav collapse in" aria-expanded="true">
+            <ul class="nav collapse" aria-expanded="false" id="#item1">
             
 
                 
                 <li>
                     
                     
-                    <a href="platform/about/work-flow" class="">
+                    <a 
+                        href="platform/about/work-flow" 
+                        class=""
+                        >
                         Platform Development Workflow
                     </a>
                     
@@ -175,7 +184,10 @@
                 <li>
                     
                     
-                    <a href="platform/about/git-repo-structure" class="">
+                    <a 
+                        href="platform/about/git-repo-structure" 
+                        class=""
+                        >
                         Platform Git Repository Structure
                     </a>
                     
@@ -184,7 +196,10 @@
                 <li>
                     
                     
-                    <a href="platform/about/conventions" class="">
+                    <a 
+                        href="platform/about/conventions" 
+                        class=""
+                        >
                         Typographic Conventions
                     </a>
                     
@@ -199,21 +214,31 @@
         
     
         <li>
-            <a href="platform/developing/installing" data-target="#item1" data-toggle="collapse" data-parent="#stacked-menu" aria-expanded="true">
-                Platform Developing
-                <span class="caret arrow"></span>
+            <a 
+                href="platform/developing/installing" 
+                data-target="#item2" 
+                data-toggle="collapse" 
+                data-parent="#stacked-menu"
+                aria-expanded=" false "
+                class=" collapsed "
+                >
+                    Platform Developing
+                    <span class="caret arrow"></span>
             </a>
             
 
             
-            <ul class="nav collapse in" aria-expanded="true">
+            <ul class="nav collapse" aria-expanded="false" id="#item2">
             
 
                 
                 <li>
                     
                     
-                    <a href="platform/developing/installing" class="">
+                    <a 
+                        href="platform/developing/installing" 
+                        class=""
+                        >
                         Installing Development Tools
                     </a>
                     
@@ -222,7 +247,10 @@
                 <li>
                     
                     
-                    <a href="platform/developing/setting-up" class="">
+                    <a 
+                        href="platform/developing/setting-up" 
+                        class=""
+                        >
                         Setting up Development Environment
                     </a>
                     
@@ -231,7 +259,10 @@
                 <li>
                     
                     
-                    <a href="platform/developing/cloning" class="">
+                    <a 
+                        href="platform/developing/cloning" 
+                        class=""
+                        >
                         Cloning Tizen Source Files
                     </a>
                     
@@ -240,7 +271,10 @@
                 <li>
                     
                     
-                    <a href="platform/developing/building" class="">
+                    <a 
+                        href="platform/developing/building" 
+                        class=""
+                        >
                         Building Packages Locally with GBS
                     </a>
                     
@@ -249,7 +283,10 @@
                 <li>
                     
                     
-                    <a href="platform/developing/building-all" class="">
+                    <a 
+                        href="platform/developing/building-all" 
+                        class=""
+                        >
                         Building All Packages Locally with GBS
                     </a>
                     
@@ -258,7 +295,10 @@
                 <li>
                     
                     
-                    <a href="platform/developing/contributing" class="">
+                    <a 
+                        href="platform/developing/contributing" 
+                        class=""
+                        >
                         Contributing Code to Tizen
                     </a>
                     
@@ -267,7 +307,10 @@
                 <li>
                     
                     
-                    <a href="platform/developing/creating" class="">
+                    <a 
+                        href="platform/developing/creating" 
+                        class=""
+                        >
                         Creating Tizen Images with MIC
                     </a>
                     
@@ -276,7 +319,10 @@
                 <li>
                     
                     
-                    <a href="platform/developing/flashing" class="">
+                    <a 
+                        href="platform/developing/flashing" 
+                        class=""
+                        >
                         Flashing an Image to Device
                     </a>
                     
@@ -285,7 +331,10 @@
                 <li>
                     
                     
-                    <a href="platform/developing/tips" class="">
+                    <a 
+                        href="platform/developing/tips" 
+                        class=""
+                        >
                         Development Tips
                     </a>
                     
@@ -300,21 +349,31 @@
         
     
         <li>
-            <a href="platform/porting/overview" data-target="#item1" data-toggle="collapse" data-parent="#stacked-menu" aria-expanded="true">
-                Porting
-                <span class="caret arrow"></span>
+            <a 
+                href="platform/porting/overview" 
+                data-target="#item3" 
+                data-toggle="collapse" 
+                data-parent="#stacked-menu"
+                aria-expanded=" false "
+                class=" collapsed "
+                >
+                    Porting
+                    <span class="caret arrow"></span>
             </a>
             
 
             
-            <ul class="nav collapse in" aria-expanded="true">
+            <ul class="nav collapse" aria-expanded="false" id="#item3">
             
 
                 
                 <li>
                     
                     
-                    <a href="platform/porting/overview" class="">
+                    <a 
+                        href="platform/porting/overview" 
+                        class=""
+                        >
                         Overview
                     </a>
                     
@@ -323,7 +382,10 @@
                 <li>
                     
                     
-                    <a href="platform/porting/kernel" class="">
+                    <a 
+                        href="platform/porting/kernel" 
+                        class=""
+                        >
                         Kernel
                     </a>
                     
@@ -332,7 +394,10 @@
                 <li>
                     
                     
-                    <a href="platform/porting/system" class="">
+                    <a 
+                        href="platform/porting/system" 
+                        class=""
+                        >
                         System
                     </a>
                     
@@ -341,7 +406,10 @@
                 <li>
                     
                     
-                    <a href="platform/porting/graphics-and-ui" class="">
+                    <a 
+                        href="platform/porting/graphics-and-ui" 
+                        class=""
+                        >
                         Graphics and UI
                     </a>
                     
@@ -356,21 +424,31 @@
         
     
         <li>
-            <a href="platform/reference/gerrit-usage" data-target="#item1" data-toggle="collapse" data-parent="#stacked-menu" aria-expanded="true">
-                Reference
-                <span class="caret arrow"></span>
+            <a 
+                href="platform/reference/gerrit-usage" 
+                data-target="#item4" 
+                data-toggle="collapse" 
+                data-parent="#stacked-menu"
+                aria-expanded=" false "
+                class=" collapsed "
+                >
+                    Reference
+                    <span class="caret arrow"></span>
             </a>
             
 
             
-            <ul class="nav collapse in" aria-expanded="true">
+            <ul class="nav collapse" aria-expanded="false" id="#item4">
             
 
                 
                 <li>
                     
                     
-                    <a href="platform/reference/gerrit-usage" class="">
+                    <a 
+                        href="platform/reference/gerrit-usage" 
+                        class=""
+                        >
                         Gerrit
                     </a>
                     
@@ -379,36 +457,47 @@
                 <li>
                     
                     
-                    <a href="platform/reference/gbs/gbs-overview"
-                        class="hasChild ">
+                    <a 
+                        href="platform/reference/gbs/gbs-overview"
+                        class=""
+                        aria-expanded=" false "
+                        data-target="#item2" 
+                        data-toggle="collapse" 
+                        >
                         Git Build System (GBS)
                         <span class="caret arrow"></span>
                     </a>
                     
                     
-                    <ul class="nav collapse in" aria-expanded="true">
+                    <ul class="nav collapse" aria-expanded="false" id="#item2">
                     
                         
                         <li>
                             
-                            <a href="platform/reference/gbs/gbs-overview"
-                                class="">
+                            <a 
+                                href="platform/reference/gbs/gbs-overview"
+                                class=""
+                                >
                                 Overview
                             </a>
                         </li>
                         
                         <li>
                             
-                            <a href="platform/reference/gbs/gbs.conf"
-                                class="">
+                            <a 
+                                href="platform/reference/gbs/gbs.conf"
+                                class=""
+                                >
                                 GBS Configuration
                             </a>
                         </li>
                         
                         <li>
                             
-                            <a href="platform/reference/gbs/gbs-maintenance-models"
-                                class="">
+                            <a 
+                                href="platform/reference/gbs/gbs-maintenance-models"
+                                class=""
+                                >
                                 GBS Maintenance Models
                             </a>
                         </li>
@@ -420,36 +509,47 @@
                 <li>
                     
                     
-                    <a href="platform/reference/mic/mic-overview"
-                        class="hasChild ">
+                    <a 
+                        href="platform/reference/mic/mic-overview"
+                        class=""
+                        aria-expanded=" false "
+                        data-target="#item3" 
+                        data-toggle="collapse" 
+                        >
                         MIC Image Creator
                         <span class="caret arrow"></span>
                     </a>
                     
                     
-                    <ul class="nav collapse in" aria-expanded="true">
+                    <ul class="nav collapse" aria-expanded="false" id="#item3">
                     
                         
                         <li>
                             
-                            <a href="platform/reference/mic/mic-overview"
-                                class="">
+                            <a 
+                                href="platform/reference/mic/mic-overview"
+                                class=""
+                                >
                                 Overview
                             </a>
                         </li>
                         
                         <li>
                             
-                            <a href="platform/reference/mic/mic-customize-image"
-                                class="">
+                            <a 
+                                href="platform/reference/mic/mic-customize-image"
+                                class=""
+                                >
                                 Customizing Images
                             </a>
                         </li>
                         
                         <li>
                             
-                            <a href="platform/reference/mic/mic-reference"
-                                class="">
+                            <a 
+                                href="platform/reference/mic/mic-reference"
+                                class=""
+                                >
                                 MIC Reference
                             </a>
                         </li>
@@ -467,7 +567,7 @@
     </ul>
 </div>
 <script>
-    $("a[href$='/platform/']").addClass("currentPage");
+    $("a[href$='/platform/']").addClass("active currentPage");
 </script>
 						</div>
 					</nav>
@@ -545,10 +645,10 @@
     <div id="templates"></div>
     <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="/js/common.js?v=10112019"></script>
-<script type="text/javascript" src="/js/handlebars-v4.0.11.js?v=10112019"></script>
-<script type="text/javascript" src="/js/widgets-data.js?v=10112019"></script>
-<script type="text/javascript" src="/js/widgets.js?v=10112019"></script>
+<script type="text/javascript" src="/js/common.js?v=11112019"></script>
+<script type="text/javascript" src="/js/handlebars-v4.0.11.js?v=11112019"></script>
+<script type="text/javascript" src="/js/widgets-data.js?v=11112019"></script>
+<script type="text/javascript" src="/js/widgets.js?v=11112019"></script>
 <script type="text/javascript" src="/js/highlight.pack.js"></script>
 <script type="text/javascript" src="/js/tocs.js"></script>
 <script type="text/javascript" src="/js/menu.js"></script>
