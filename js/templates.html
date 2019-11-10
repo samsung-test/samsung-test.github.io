@@ -3,7 +3,7 @@
 	<select>
 	{{#each versions}}
 		{{#if this.published}}
-			<option value="{{this.branch}}">
+			<option value="{{this.branch}}" selected="{{#if this.latest}}selected{{/if}}">
 				{{this.title}} {{#if this.latest}}(current){{/if}}
 			</option>
 		{{/if}}	
