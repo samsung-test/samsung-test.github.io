@@ -130,9 +130,9 @@ function renderNav(docstoc) {
     outputHorzTabs.push('<li id="' + docstoc.horizontalnav[i].node + '"');
     if (docstoc.horizontalnav[i].path==pageURL || docstoc.horizontalnav[i].node==sectionToHighlight)
     {
-      outputHorzTabs.push(' class="active"');
+      outputHorzTabs.push(' class="active1"');
     }
-    outputHorzTabs.push('><a href="'+docstoc.horizontalnav[i].path+'">'+docstoc.horizontalnav[i].title+'</a></li>\n');
+    outputHorzTabs.push('><a href="'+docstoc.horizontalnav[i].path+'" class="active currentPage">'+docstoc.horizontalnav[i].title+'</a></li>\n');
   }
   if (outputLetNav.length==0)
   {
