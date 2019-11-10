@@ -1,5 +1,6 @@
 {% assign directory = page.path | split: '/' %}
 {% assign subdirectory = directory[0] %}
+{% assign currentPage = page.url | remove_first: "/" %}
 <div id="navbar" class="nav-sidebar">
     <ul class="nav" id="jsTOCLeftNav">
         {% for version in site.data.sidebar[subdirectory] %}
@@ -52,7 +53,7 @@
                             {% assign subsubmenufinalurl = subsubmenu.url %}
                             <a 
                                 href="{{subsubmenufinalurl}}"
-                                class="{% if subsubmenufinalurl == page.url %}active currentPage{% endif %}"
+                                class="{% if subsubmenufinalurl == currentPage %}active currentPage{% endif %}"
                                 >
                                 {{subsubmenu.page}}
                             </a>
@@ -63,7 +64,7 @@
                     {% assign submenufinalurl = submenu.url %}
                     <a 
                         href="{{submenufinalurl}}" 
-                        class="{% if submenufinalurl== page.url %}active currentPage{% endif %}"
+                        class="{% if submenufinalurl == currentPage %}active currentPage{% endif %}"
                         >
                         {{submenu.page}}
                     </a>
