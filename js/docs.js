@@ -239,22 +239,7 @@ if (readCookie("night") == "true") {
  *
  */
 
-$("#menu-toggle").click(function(e) {
-  console.log('menu clicked');
-  e.preventDefault();
-  $(".wrapper").toggleClass("right-open");
-  $(".col-toc").toggleClass("col-toc-hidden");   
-});
-$("#menu-toggle-left").click(function(e) {
-  e.preventDefault();
-  $(".col-nav").toggleClass("col-toc-hidden");
-});
-$(".navbar-toggle").click(function(){
-  $("#sidebar-nav").each(function(){
-    $(this).toggleClass("hidden-sm");
-    $(this).toggleClass("hidden-xs");
-  });
-});
+
 
 var navHeight = $('.navbar').outerHeight(true) + 80;
 

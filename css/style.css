@@ -466,7 +466,7 @@ section.section {
 .sidebar {
   position: -webkit-sticky;
   position: sticky;
-  top: 55px;
+  top: 98px;
   overflow: auto;
   max-height: calc(100vh - 55px);
   padding-top: 20px;
@@ -579,7 +579,8 @@ footer {
   padding: 10px;
   width: 100%;
   text-align: center;
-  font-size: 16px; }
+  font-size: 16px;
+  height: 43px; }
 
 .navbar-fixed-top {
   margin-top: 43px; }
