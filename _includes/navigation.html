@@ -21,26 +21,23 @@
         <ul class="tabs" id="jsTOCHorizontal">
             {% assign directory = page.path | split: '/' %}
             {% assign subdirectory = directory[0] %}
-            <li>
+            <li class="{% if subdirectory == 'platform' %}active{% endif %}">
                 <a 
                     href="platform/about/tizen-open-source-overview" 
-                    class="{% if subdirectory == 'platform' %}active{% endif %}"
                     >
                     Platform
                 </a>
             </li>
-            <li>
+            <li class="{% if subdirectory == 'application' %}active{% endif %}">
                 <a 
                     href="application/"
-                    class="{% if subdirectory == 'application' %}active{% endif %}"
                     >
                     Application
                 </a>
             </li>
-            <li>
+            <li class="{% if subdirectory == 'iot' %}active{% endif %}">
                 <a 
                     href="iot/"
-                    class="{% if subdirectory == 'iot' %}active{% endif %}"
                     >
                     IoT
                 </a>
