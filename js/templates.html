@@ -39,8 +39,8 @@ console.log('current url',currentUrl);
 // While page load select current version
 
 if (currentUrl == '/'){
-	$('#widgetVersionSwitcher select').val('/'+latestVersion+'/');
-	console.log('default','/'+latestVersion[0].title+'/');
+	$('#widgetVersionSwitcher select').val(latestVersion);
+	console.log('default',latestVersion[0].title);
 } else {
 	$('#widgetVersionSwitcher select').val(currentVersion);
 	console.log('not-default',currentVersion);
