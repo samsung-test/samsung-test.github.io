@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="icon"  href="/favicon.ico" />
-<title>Tizen Open Source Project</title>
+<title>GBS (Git Build System)</title>
 <meta name="description" content=""/>
 <meta name="keywords" content=""/>
 <base id="baseURL" href="/draft/" />
@@ -60,7 +60,7 @@
         <ul class="tabs" id="jsTOCHorizontal">
             
             
-            <li class="">
+            <li class="active">
                 <a 
                     href="platform/about/tizen-open-source-overview" 
                     >
@@ -74,7 +74,7 @@
                     Application
                 </a>
             </li>
-            <li class="active">
+            <li class="">
                 <a 
                     href="iot/"
                     >
@@ -99,43 +99,40 @@
 				<div class="col-body">
 					<main class="col-content content">
 						<section class="section">
-							<h1 id="iot-folder">IOT Folder</h1>
-<h1 id="tizen-open-source-project">Tizen Open Source Project</h1>
+							<h1 id="gbs-git-build-system">GBS (Git Build System)</h1>
 
-<p>Tizen is an open source software stack created for a wide array of devices with different form factors. The primary objectives of Tizen are to create an open software platform available for carriers, OEMs, and developers to make their innovative ideas a reality, and to introduce a successful, real-world product that improves the mobile experience for users. We have also wanted to make sure there is no central point of failure, where 1 industry player can restrict or control the innovations of another. The result is a full, production-quality consumer product with source code open for customization and porting.</p>
+<p>GBS (git-build-system) is a command line tool that supports Tizen package development. It is used to generate tarballs based on Git repositories, to do local test buildings, and to submit code to OBS (Tizen’s main build service).</p>
 
-<p>The Tizen operating system is available in multiple profiles to serve different industry requirements. The current Tizen profiles are Tizen IVI (in-vehicle infotainment), Tizen Mobile, Tizen TV, and Tizen Wearable. Additionally, as of Tizen 3.0, all profiles are built on top of a common, shared infrastructure called Tizen Common.</p>
+<p>Before going into further GBS details, make sure you have <a href="../../developing/setting-up.md">set up the development environment</a> and learned how to <a href="../../developing/installing.md">install and upgrade tools</a>.</p>
 
-<p>With Tizen:</p>
-
-<ul>
-  <li><strong>Device manufacturers</strong> can begin with 1 of the profiles and modify it to serve their own needs, or use the Tizen Common base to develop a new profile to meet the memory, processing, and power requirements of any device and quickly bring it to market.</li>
-  <li><strong>Mobile operators</strong> can work with device partners to customize the operating system and user experience to meet the needs of specific customer segments or demographics.</li>
-  <li><strong>Application developers and ISVs</strong> can take advantage of the power of native application development with the flexibility of unparalleled HTML5 support. Tizen also offers the potential for application developers to extend their reach to new “smart devices” running Tizen, including wearables, consumer electronics (such as TVs, gaming consoles, and DVRs), cars, and appliances.</li>
-</ul>
-
-<p>The Tizen project is a part of the <a href="https://www.linuxfoundation.org/projects/">Linux Foundation</a> and is governed by a Technical Steering Group, which is the primary decision-making body for the open source project, with a focus on platform development and delivery, along with the formation of working groups to support device verticals.</p>
-
-<p>The <a href="http://www.tizenassociation.org/">Tizen Association</a> has been formed to guide the industry role of Tizen, including gathering of requirements, identification and facilitation of service models, and overall industry marketing and education.</p>
-
-<h2 id="get-started-with-tizen">Get Started with Tizen</h2>
-
-<p>To get started with Tizen development:</p>
+<p>Afterwards, become familiar with GBS by reading the following instructions:</p>
 
 <ul>
-  <li>
-    <p>Get access</p>
-
-    <p>You can register for an account at <a href="https://www.tizen.org/user/register">https://www.tizen.org/user/register</a>.</p>
-  </li>
-  <li>
-    <p>Study the development workflow</p>
-
-    <p>Tizen developers use the Git and <a href="reference/gbs/gbs-overview.md">GBS command-line tools</a> for most of their work. Tizen source code is managed by <a href="reference/gerrit-usage.md">Gerrit</a>, a code review system for Git-based projects. Source code cloning, development, and review are done under ACL (Access Control Lists). Make sure you have access rights to them.</p>
-  </li>
+  <li><a href="gbs.conf.md">GBS Configuration</a> describes how to modify the GBS configuration.</li>
+  <li><a href="gbs-reference.md">GBS Reference</a> describes, in more detail, how to use GBS.</li>
+  <li><a href="gbs-faq.md">GBS Frequently Asked Questions</a> describes frequently asked questions.</li>
 </ul>
 
-<p>Start by reading the <a href="about/work-flow.md">Development Workflow</a> page.</p>
+<h2 id="source-code">Source Code</h2>
+
+<p>The source code is tracked in the <a href="https://github.com/01org/gbs">https://github.com/01org/gbs</a> repository.</p>
+
+<h2 id="license">License</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Copyright (c) 2012 Intel, Inc.
+This program is free software; you can redistribute it and/or modify it
+under the terms of the GNU General Public License as published by the Free
+Software Foundation; version 2 of the License
+This program is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
+for more details.
+You should have received a copy of the GNU General Public License along
+with this program; if not, write to the Free Software Foundation, Inc., 59
+Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+</code></pre></div></div>
+
+<h2 id="reference">Reference</h2>
+<p>The gbs build references the scripts of the SUSE Linux RPM builds: <a href="https://github.com/openSUSE/obs-build">https://github.com/openSUSE/obs-build</a>.</p>
 
 						</section>
 					</main>
@@ -153,14 +150,14 @@
     
         <li>
             <a 
-                href="iot/about/work-flow/" 
+                href="platform/about/work-flow/" 
                 data-target="#item1" 
                 data-toggle="collapse" 
                 data-parent="#stacked-menu"
                 aria-expanded=" false "
                 class=" collapsed "
                 >
-                    IOT Overview
+                    Platform Overview
                     <span class="caret arrow"></span>
             </a>
             
@@ -174,10 +171,10 @@
                     
                     
                     <a 
-                        href="iot/about/work-flow/" 
+                        href="platform/about/work-flow/" 
                         class=""
                         >
-                        IOT Development Workflow
+                        Platform Development Workflow
                     </a>
                     
                 </li>
@@ -186,10 +183,10 @@
                     
                     
                     <a 
-                        href="iot/about/git-repo-structure/" 
+                        href="platform/about/git-repo-structure/" 
                         class=""
                         >
-                        IOT Git Repository Structure
+                        Platform Git Repository Structure
                     </a>
                     
                 </li>
@@ -198,7 +195,7 @@
                     
                     
                     <a 
-                        href="iot/about/conventions/" 
+                        href="platform/about/conventions/" 
                         class=""
                         >
                         Typographic Conventions
@@ -216,14 +213,14 @@
     
         <li>
             <a 
-                href="iot/developing/installing" 
+                href="platform/developing/installing/" 
                 data-target="#item2" 
                 data-toggle="collapse" 
                 data-parent="#stacked-menu"
                 aria-expanded=" false "
                 class=" collapsed "
                 >
-                    IOT Developing
+                    Platform Developing
                     <span class="caret arrow"></span>
             </a>
             
@@ -237,7 +234,7 @@
                     
                     
                     <a 
-                        href="iot/developing/installing/" 
+                        href="platform/developing/installing/" 
                         class=""
                         >
                         Installing Development Tools
@@ -249,7 +246,7 @@
                     
                     
                     <a 
-                        href="iot/developing/setting-up/" 
+                        href="platform/developing/setting-up/" 
                         class=""
                         >
                         Setting up Development Environment
@@ -261,7 +258,7 @@
                     
                     
                     <a 
-                        href="iot/developing/cloning/" 
+                        href="platform/developing/cloning/" 
                         class=""
                         >
                         Cloning Tizen Source Files
@@ -273,7 +270,7 @@
                     
                     
                     <a 
-                        href="iot/developing/building/" 
+                        href="platform/developing/building/" 
                         class=""
                         >
                         Building Packages Locally with GBS
@@ -285,7 +282,7 @@
                     
                     
                     <a 
-                        href="iot/developing/building-all/" 
+                        href="platform/developing/building-all/" 
                         class=""
                         >
                         Building All Packages Locally with GBS
@@ -297,7 +294,7 @@
                     
                     
                     <a 
-                        href="iot/developing/contributing/" 
+                        href="platform/developing/contributing/" 
                         class=""
                         >
                         Contributing Code to Tizen
@@ -309,7 +306,7 @@
                     
                     
                     <a 
-                        href="iot/developing/creating/" 
+                        href="platform/developing/creating/" 
                         class=""
                         >
                         Creating Tizen Images with MIC
@@ -321,7 +318,7 @@
                     
                     
                     <a 
-                        href="iot/developing/flashing/" 
+                        href="platform/developing/flashing/" 
                         class=""
                         >
                         Flashing an Image to Device
@@ -333,7 +330,7 @@
                     
                     
                     <a 
-                        href="iot/developing/tips/" 
+                        href="platform/developing/tips/" 
                         class=""
                         >
                         Development Tips
@@ -351,7 +348,7 @@
     
         <li>
             <a 
-                href="iot/porting/overview/" 
+                href="platform/porting/overview/" 
                 data-target="#item3" 
                 data-toggle="collapse" 
                 data-parent="#stacked-menu"
@@ -372,7 +369,7 @@
                     
                     
                     <a 
-                        href="iot/porting/overview/" 
+                        href="platform/porting/overview/" 
                         class=""
                         >
                         Overview
@@ -384,7 +381,7 @@
                     
                     
                     <a 
-                        href="iot/porting/kernel/" 
+                        href="platform/porting/kernel/" 
                         class=""
                         >
                         Kernel
@@ -396,7 +393,7 @@
                     
                     
                     <a 
-                        href="iot/porting/system/" 
+                        href="platform/porting/system/" 
                         class=""
                         >
                         System
@@ -408,7 +405,7 @@
                     
                     
                     <a 
-                        href="iot/porting/graphics-and-ui/" 
+                        href="platform/porting/graphics-and-ui/" 
                         class=""
                         >
                         Graphics and UI
@@ -426,12 +423,12 @@
     
         <li>
             <a 
-                href="iot/reference/gerrit-usage/" 
+                href="platform/reference/gerrit-usage" 
                 data-target="#item4" 
                 data-toggle="collapse" 
                 data-parent="#stacked-menu"
-                aria-expanded=" false "
-                class=" collapsed "
+                aria-expanded=" true "
+                class=" not-collapsed "
                 >
                     Reference
                     <span class="caret arrow"></span>
@@ -439,7 +436,7 @@
             
 
             
-            <ul class="nav collapse" aria-expanded="false" id="#item4">
+            <ul class="nav collapse in" aria-expanded="true" id="#item4">
             
 
                 
@@ -447,7 +444,7 @@
                     
                     
                     <a 
-                        href="iot/reference/gerrit-usage/" 
+                        href="platform/reference/gerrit-usage/" 
                         class=""
                         >
                         Gerrit
@@ -459,9 +456,9 @@
                     
                     
                     <a 
-                        href="iot/reference/gbs/gbs-overview/"
+                        href="platform/reference/gbs/gbs-overview/"
                         class=""
-                        aria-expanded=" false "
+                        aria-expanded=" true "
                         data-target="#item2" 
                         data-toggle="collapse" 
                         >
@@ -470,14 +467,14 @@
                     </a>
                     
                     
-                    <ul class="nav collapse" aria-expanded="false" id="#item2">
+                    <ul class="nav collapse in" aria-expanded="true" id="#item2">
                     
                         
                         <li>
                             
                             <a 
-                                href="iot/reference/gbs/gbs-overview/"
-                                class=""
+                                href="platform/reference/gbs/gbs-overview/"
+                                class="active currentPage"
                                 >
                                 Overview
                             </a>
@@ -486,7 +483,7 @@
                         <li>
                             
                             <a 
-                                href="iot/reference/gbs/gbs.conf/"
+                                href="platform/reference/gbs/gbs.conf/"
                                 class=""
                                 >
                                 GBS Configuration
@@ -496,7 +493,7 @@
                         <li>
                             
                             <a 
-                                href="iot/reference/gbs/gbs-maintenance-models/"
+                                href="platform/reference/gbs/gbs-maintenance-models/"
                                 class=""
                                 >
                                 GBS Maintenance Models
@@ -511,9 +508,9 @@
                     
                     
                     <a 
-                        href="iot/reference/mic/mic-overview/"
+                        href="platform/reference/mic/mic-overview/"
                         class=""
-                        aria-expanded=" false "
+                        aria-expanded=" true "
                         data-target="#item3" 
                         data-toggle="collapse" 
                         >
@@ -522,13 +519,13 @@
                     </a>
                     
                     
-                    <ul class="nav collapse" aria-expanded="false" id="#item3">
+                    <ul class="nav collapse in" aria-expanded="true" id="#item3">
                     
                         
                         <li>
                             
                             <a 
-                                href="iot/reference/mic/mic-overview/"
+                                href="platform/reference/mic/mic-overview/"
                                 class=""
                                 >
                                 Overview
@@ -538,7 +535,7 @@
                         <li>
                             
                             <a 
-                                href="iot/reference/mic/mic-customize-image/"
+                                href="platform/reference/mic/mic-customize-image/"
                                 class=""
                                 >
                                 Customizing Images
@@ -548,7 +545,7 @@
                         <li>
                             
                             <a 
-                                href="iot/reference/mic/mic-reference/"
+                                href="platform/reference/mic/mic-reference/"
                                 class=""
                                 >
                                 MIC Reference
@@ -568,7 +565,7 @@
     </ul>
 </div>
 <script>
-    $("a[href$='/iot/']").addClass("active currentPage");
+    $("a[href$='/platform/reference/gbs/gbs-overview/']").addClass("active currentPage");
 </script>
 						</div>
 					</nav>
@@ -586,7 +583,7 @@
                                         </li>
                                         
 										<li>
-                                            <a href="https://github.com/samsung-test/samsung-test.github.io/edit/draft/iot/index.md" target="_blank">
+                                            <a href="https://github.com/samsung-test/samsung-test.github.io/edit/draft/platform/reference/gbs/gbs-overview.md" target="_blank">
                                                 <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                                                 Edit Page
                                             </a>
@@ -603,7 +600,9 @@
 									<div id="side-toc-title">On this page:</div>
 									
 <ul id="my_toc" class="inline_toc">
-  <li><a href="#get-started-with-tizen" class="nomunge">Get Started with Tizen</a></li>
+  <li><a href="#source-code" class="nomunge">Source Code</a></li>
+  <li><a href="#license" class="nomunge">License</a></li>
+  <li><a href="#reference" class="nomunge">Reference</a></li>
 </ul>
 
 

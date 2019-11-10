@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="icon"  href="/favicon.ico" />
-<title>Tizen Open Source Project</title>
+<title>Creating Tizen Images with MIC</title>
 <meta name="description" content=""/>
 <meta name="keywords" content=""/>
 <base id="baseURL" href="/draft/" />
@@ -60,7 +60,7 @@
         <ul class="tabs" id="jsTOCHorizontal">
             
             
-            <li class="">
+            <li class="active">
                 <a 
                     href="platform/about/tizen-open-source-overview" 
                     >
@@ -74,7 +74,7 @@
                     Application
                 </a>
             </li>
-            <li class="active">
+            <li class="">
                 <a 
                     href="iot/"
                     >
@@ -99,43 +99,123 @@
 				<div class="col-body">
 					<main class="col-content content">
 						<section class="section">
-							<h1 id="iot-folder">IOT Folder</h1>
-<h1 id="tizen-open-source-project">Tizen Open Source Project</h1>
+							<h1 id="creating-tizen-images-with-mic">Creating Tizen Images with MIC</h1>
 
-<p>Tizen is an open source software stack created for a wide array of devices with different form factors. The primary objectives of Tizen are to create an open software platform available for carriers, OEMs, and developers to make their innovative ideas a reality, and to introduce a successful, real-world product that improves the mobile experience for users. We have also wanted to make sure there is no central point of failure, where 1 industry player can restrict or control the innovations of another. The result is a full, production-quality consumer product with source code open for customization and porting.</p>
+<p>This topic provides information on how to create a Tizen image.</p>
 
-<p>The Tizen operating system is available in multiple profiles to serve different industry requirements. The current Tizen profiles are Tizen IVI (in-vehicle infotainment), Tizen Mobile, Tizen TV, and Tizen Wearable. Additionally, as of Tizen 3.0, all profiles are built on top of a common, shared infrastructure called Tizen Common.</p>
-
-<p>With Tizen:</p>
+<p>Before creating an image, study the following instructions:</p>
 
 <ul>
-  <li><strong>Device manufacturers</strong> can begin with 1 of the profiles and modify it to serve their own needs, or use the Tizen Common base to develop a new profile to meet the memory, processing, and power requirements of any device and quickly bring it to market.</li>
-  <li><strong>Mobile operators</strong> can work with device partners to customize the operating system and user experience to meet the needs of specific customer segments or demographics.</li>
-  <li><strong>Application developers and ISVs</strong> can take advantage of the power of native application development with the flexibility of unparalleled HTML5 support. Tizen also offers the potential for application developers to extend their reach to new “smart devices” running Tizen, including wearables, consumer electronics (such as TVs, gaming consoles, and DVRs), cars, and appliances.</li>
+  <li><a href="setting-up.md">Setting up the Development Environment</a></li>
+  <li><a href="installing.md">Installing Development Tools</a></li>
+  <li><a href="cloning.md">Cloning Tizen Source Files</a></li>
+  <li><a href="building.md">Building Packages Locally with GBS</a></li>
 </ul>
 
-<p>The Tizen project is a part of the <a href="https://www.linuxfoundation.org/projects/">Linux Foundation</a> and is governed by a Technical Steering Group, which is the primary decision-making body for the open source project, with a focus on platform development and delivery, along with the formation of working groups to support device verticals.</p>
+<h2 id="preparing-the-kickstart-file">Preparing the Kickstart File</h2>
 
-<p>The <a href="http://www.tizenassociation.org/">Tizen Association</a> has been formed to guide the industry role of Tizen, including gathering of requirements, identification and facilitation of service models, and overall industry marketing and education.</p>
+<p>Image creation requires a kickstart file that describes how to create an image. To prepare the kickstart file:</p>
 
-<h2 id="get-started-with-tizen">Get Started with Tizen</h2>
-
-<p>To get started with Tizen development:</p>
-
-<ul>
+<ol>
   <li>
-    <p>Get access</p>
+    <p>Download the original kickstart file:</p>
 
-    <p>You can register for an account at <a href="https://www.tizen.org/user/register">https://www.tizen.org/user/register</a>.</p>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ wget &lt;Snapshot_date_URL&gt;/builddata/images/&lt;Repository&gt;/image-configurations/&lt;kickstart_file&gt;
+</code></pre></div>    </div>
+
+    <ul>
+      <li>
+        <p>For example:</p>
+
+        <ul>
+          <li>
+            <p>Tizen: 4.0: Unified / standard / <code class="highlighter-rouge">mobile-wayland-armv7l-tm1.ks</code></p>
+
+            <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ wget http://download.tizen.org/releases/daily/tizen/unified/tizen-unified_20170627.1/builddata/images/standard/image-configurations/mobile-wayland-armv7l-tm1.ks
+</code></pre></div>            </div>
+          </li>
+          <li>
+            <p>Tizen: 4.0: Unified / emulator / <code class="highlighter-rouge">tv-emulator32-wayland.ks</code></p>
+
+            <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ wget http://download.tizen.org/releases/daily/tizen/unified/tizen-unified_20170627.1/builddata/images/emulator/image-configurations/tv-emulator32-wayland.ks
+</code></pre></div>            </div>
+          </li>
+          <li>
+            <p>Tizen: 3.0: Wearable / target-circle / <code class="highlighter-rouge">wearable-wayland-armv7l-circle.ks</code></p>
+
+            <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ wget http://download.tizen.org/releases/daily/tizen/3.0-wearable/tizen-3.0-wearable_20170627.1/builddata/images/target-circle/image-configurations/wearable-wayland-armv7l-circle.ks
+</code></pre></div>            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
   </li>
   <li>
-    <p>Study the development workflow</p>
+    <p>Modify the original kickstart file to include locally built RPMs into the Tizen image.</p>
 
-    <p>Tizen developers use the Git and <a href="reference/gbs/gbs-overview.md">GBS command-line tools</a> for most of their work. Tizen source code is managed by <a href="reference/gerrit-usage.md">Gerrit</a>, a code review system for Git-based projects. Source code cloning, development, and review are done under ACL (Access Control Lists). Make sure you have access rights to them.</p>
+    <p>For example: Tizen: 4.0: Unified / standard / <code class="highlighter-rouge">mobile-wayland-armv7l-tm1.ks</code></p>
+
+    <ul>
+      <li>
+        <p>The <code class="highlighter-rouge">repo</code> section of the original kickstart file:</p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>repo --name=unified-standard --baseurl=http://download.tizen.org/snapshots/tizen/unified/@BUILD_ID@/repos/standard/packages/ --ssl_verify=no
+repo --name=base_arm --baseurl=http://download.tizen.org/snapshots/tizen/base/latest/repos/arm/packages/ --ssl_verify=no
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>The <code class="highlighter-rouge">repo</code> section of the modified kickstart file:</p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>repo --name=unified-standard --baseurl=http://download.tizen.org/snapshots/tizen/unified/@BUILD_ID@/repos/standard/packages/ --ssl_verify=no --priority=99
+repo --name=base_arm --baseurl=http://download.tizen.org/snapshots/tizen/base/latest/repos/arm/packages/ --ssl_verify=no --priority=99
+repo --name=local --baseurl=file:///home/&lt;User&gt;/GBS-ROOT/local/repos/tizen3.0-tm1/armv7l/ --priority=1
+</code></pre></div>        </div>
+      </li>
+    </ul>
+
+    <blockquote>
+      <p><strong>Note</strong></p>
+
+      <ul>
+        <li>The <code class="highlighter-rouge">baseurl</code> property of the <code class="highlighter-rouge">local</code> repo specifies the file path where locally built RPMs are located.</li>
+        <li>Setting the priority of the <code class="highlighter-rouge">local</code> repository at 1 and the priorities of remote repositories at 99 guarantees that MIC uses the packages that exist in the local repository with a higher priority, when packages are available in both remote and local repositories.</li>
+        <li>To add new packages into a Tizen image, add the new packages’ names into the <code class="highlighter-rouge">%package</code> section, and add them into the <code class="highlighter-rouge">local</code> repository.</li>
+      </ul>
+    </blockquote>
   </li>
-</ul>
+</ol>
 
-<p>Start by reading the <a href="about/work-flow.md">Development Workflow</a> page.</p>
+<h2 id="creating-a-tizen-image">Creating a Tizen Image</h2>
+
+<p>To create a Tizen image:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ gbs createimage --ks-file=mobile-wayland-armv7l-tm1.ks
+</code></pre></div></div>
+
+<p>If you have more than 4 GB of RAM available, use the <code class="highlighter-rouge">--tmpfs</code> option to speed up the image creation:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ gbs createimage --ks-file=mobile-wayland-armv7l-tm1.ks --tmpfs
+</code></pre></div></div>
+
+<p>The following example shows the <code class="highlighter-rouge">gbs createimage</code> command output:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>...
+Info: Running scripts ...
+kickstart post script start
+Info: Checking filesystem /var/tmp/mic/build/imgcreate-Rii2MC/tmp-pVQesQ/platform.img
+Info: Checking filesystem /var/tmp/mic/build/imgcreate-Rii2MC/tmp-pVQesQ/data.img
+Info: Checking filesystem /var/tmp/mic/build/imgcreate-Rii2MC/tmp-pVQesQ/ums.img
+Info: Pack all loop images together to TM1-new-201609030819.tar.gz
+Info: The new image can be found here:
+/home/&lt;User&gt;/tizen/mic-output/TM1-201609030819.tar.gz
+/home/&lt;User&gt;/tizen/mic-output/TM1-201609030833.packages
+/home/&lt;User&gt;/tizen/mic-output/TM1-201609030819.xml
+Info: Finished.
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">TM1-201609030819.tar.gz</code> is the image file and <code class="highlighter-rouge">TM1-201609030833.packages</code> contains package info integrated in the image, including package name, version, and VCS information.</p>
+
+<p>Once the Tizen image is created, the final step is to flash the image to a target device for verification. For more information, see <a href="flashing.md">Flashing an Image to Device</a>.</p>
 
 						</section>
 					</main>
@@ -153,14 +233,14 @@
     
         <li>
             <a 
-                href="iot/about/work-flow/" 
+                href="platform/about/work-flow/" 
                 data-target="#item1" 
                 data-toggle="collapse" 
                 data-parent="#stacked-menu"
                 aria-expanded=" false "
                 class=" collapsed "
                 >
-                    IOT Overview
+                    Platform Overview
                     <span class="caret arrow"></span>
             </a>
             
@@ -174,10 +254,10 @@
                     
                     
                     <a 
-                        href="iot/about/work-flow/" 
+                        href="platform/about/work-flow/" 
                         class=""
                         >
-                        IOT Development Workflow
+                        Platform Development Workflow
                     </a>
                     
                 </li>
@@ -186,10 +266,10 @@
                     
                     
                     <a 
-                        href="iot/about/git-repo-structure/" 
+                        href="platform/about/git-repo-structure/" 
                         class=""
                         >
-                        IOT Git Repository Structure
+                        Platform Git Repository Structure
                     </a>
                     
                 </li>
@@ -198,7 +278,7 @@
                     
                     
                     <a 
-                        href="iot/about/conventions/" 
+                        href="platform/about/conventions/" 
                         class=""
                         >
                         Typographic Conventions
@@ -216,20 +296,20 @@
     
         <li>
             <a 
-                href="iot/developing/installing" 
+                href="platform/developing/installing/" 
                 data-target="#item2" 
                 data-toggle="collapse" 
                 data-parent="#stacked-menu"
-                aria-expanded=" false "
-                class=" collapsed "
+                aria-expanded=" true "
+                class=" not-collapsed "
                 >
-                    IOT Developing
+                    Platform Developing
                     <span class="caret arrow"></span>
             </a>
             
 
             
-            <ul class="nav collapse" aria-expanded="false" id="#item2">
+            <ul class="nav collapse in" aria-expanded="true" id="#item2">
             
 
                 
@@ -237,7 +317,7 @@
                     
                     
                     <a 
-                        href="iot/developing/installing/" 
+                        href="platform/developing/installing/" 
                         class=""
                         >
                         Installing Development Tools
@@ -249,7 +329,7 @@
                     
                     
                     <a 
-                        href="iot/developing/setting-up/" 
+                        href="platform/developing/setting-up/" 
                         class=""
                         >
                         Setting up Development Environment
@@ -261,7 +341,7 @@
                     
                     
                     <a 
-                        href="iot/developing/cloning/" 
+                        href="platform/developing/cloning/" 
                         class=""
                         >
                         Cloning Tizen Source Files
@@ -273,7 +353,7 @@
                     
                     
                     <a 
-                        href="iot/developing/building/" 
+                        href="platform/developing/building/" 
                         class=""
                         >
                         Building Packages Locally with GBS
@@ -285,7 +365,7 @@
                     
                     
                     <a 
-                        href="iot/developing/building-all/" 
+                        href="platform/developing/building-all/" 
                         class=""
                         >
                         Building All Packages Locally with GBS
@@ -297,7 +377,7 @@
                     
                     
                     <a 
-                        href="iot/developing/contributing/" 
+                        href="platform/developing/contributing/" 
                         class=""
                         >
                         Contributing Code to Tizen
@@ -309,8 +389,8 @@
                     
                     
                     <a 
-                        href="iot/developing/creating/" 
-                        class=""
+                        href="platform/developing/creating/" 
+                        class="active currentPage"
                         >
                         Creating Tizen Images with MIC
                     </a>
@@ -321,7 +401,7 @@
                     
                     
                     <a 
-                        href="iot/developing/flashing/" 
+                        href="platform/developing/flashing/" 
                         class=""
                         >
                         Flashing an Image to Device
@@ -333,7 +413,7 @@
                     
                     
                     <a 
-                        href="iot/developing/tips/" 
+                        href="platform/developing/tips/" 
                         class=""
                         >
                         Development Tips
@@ -351,7 +431,7 @@
     
         <li>
             <a 
-                href="iot/porting/overview/" 
+                href="platform/porting/overview/" 
                 data-target="#item3" 
                 data-toggle="collapse" 
                 data-parent="#stacked-menu"
@@ -372,7 +452,7 @@
                     
                     
                     <a 
-                        href="iot/porting/overview/" 
+                        href="platform/porting/overview/" 
                         class=""
                         >
                         Overview
@@ -384,7 +464,7 @@
                     
                     
                     <a 
-                        href="iot/porting/kernel/" 
+                        href="platform/porting/kernel/" 
                         class=""
                         >
                         Kernel
@@ -396,7 +476,7 @@
                     
                     
                     <a 
-                        href="iot/porting/system/" 
+                        href="platform/porting/system/" 
                         class=""
                         >
                         System
@@ -408,7 +488,7 @@
                     
                     
                     <a 
-                        href="iot/porting/graphics-and-ui/" 
+                        href="platform/porting/graphics-and-ui/" 
                         class=""
                         >
                         Graphics and UI
@@ -426,7 +506,7 @@
     
         <li>
             <a 
-                href="iot/reference/gerrit-usage/" 
+                href="platform/reference/gerrit-usage" 
                 data-target="#item4" 
                 data-toggle="collapse" 
                 data-parent="#stacked-menu"
@@ -447,7 +527,7 @@
                     
                     
                     <a 
-                        href="iot/reference/gerrit-usage/" 
+                        href="platform/reference/gerrit-usage/" 
                         class=""
                         >
                         Gerrit
@@ -459,7 +539,7 @@
                     
                     
                     <a 
-                        href="iot/reference/gbs/gbs-overview/"
+                        href="platform/reference/gbs/gbs-overview/"
                         class=""
                         aria-expanded=" false "
                         data-target="#item2" 
@@ -476,7 +556,7 @@
                         <li>
                             
                             <a 
-                                href="iot/reference/gbs/gbs-overview/"
+                                href="platform/reference/gbs/gbs-overview/"
                                 class=""
                                 >
                                 Overview
@@ -486,7 +566,7 @@
                         <li>
                             
                             <a 
-                                href="iot/reference/gbs/gbs.conf/"
+                                href="platform/reference/gbs/gbs.conf/"
                                 class=""
                                 >
                                 GBS Configuration
@@ -496,7 +576,7 @@
                         <li>
                             
                             <a 
-                                href="iot/reference/gbs/gbs-maintenance-models/"
+                                href="platform/reference/gbs/gbs-maintenance-models/"
                                 class=""
                                 >
                                 GBS Maintenance Models
@@ -511,7 +591,7 @@
                     
                     
                     <a 
-                        href="iot/reference/mic/mic-overview/"
+                        href="platform/reference/mic/mic-overview/"
                         class=""
                         aria-expanded=" false "
                         data-target="#item3" 
@@ -528,7 +608,7 @@
                         <li>
                             
                             <a 
-                                href="iot/reference/mic/mic-overview/"
+                                href="platform/reference/mic/mic-overview/"
                                 class=""
                                 >
                                 Overview
@@ -538,7 +618,7 @@
                         <li>
                             
                             <a 
-                                href="iot/reference/mic/mic-customize-image/"
+                                href="platform/reference/mic/mic-customize-image/"
                                 class=""
                                 >
                                 Customizing Images
@@ -548,7 +628,7 @@
                         <li>
                             
                             <a 
-                                href="iot/reference/mic/mic-reference/"
+                                href="platform/reference/mic/mic-reference/"
                                 class=""
                                 >
                                 MIC Reference
@@ -568,7 +648,7 @@
     </ul>
 </div>
 <script>
-    $("a[href$='/iot/']").addClass("active currentPage");
+    $("a[href$='/platform/developing/creating/']").addClass("active currentPage");
 </script>
 						</div>
 					</nav>
@@ -586,7 +666,7 @@
                                         </li>
                                         
 										<li>
-                                            <a href="https://github.com/samsung-test/samsung-test.github.io/edit/draft/iot/index.md" target="_blank">
+                                            <a href="https://github.com/samsung-test/samsung-test.github.io/edit/draft/platform/developing/creating.md" target="_blank">
                                                 <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                                                 Edit Page
                                             </a>
@@ -603,7 +683,8 @@
 									<div id="side-toc-title">On this page:</div>
 									
 <ul id="my_toc" class="inline_toc">
-  <li><a href="#get-started-with-tizen" class="nomunge">Get Started with Tizen</a></li>
+  <li><a href="#preparing-the-kickstart-file" class="nomunge">Preparing the Kickstart File</a></li>
+  <li><a href="#creating-a-tizen-image" class="nomunge">Creating a Tizen Image</a></li>
 </ul>
 
 
