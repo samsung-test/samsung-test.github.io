@@ -3,7 +3,7 @@
 	<select>
 	{{#each versions}}
 		{{#if this.published}}
-			<option value="{{this.branch}}" selected="{{#if this.latest}}selected{{/if}}">
+			<option value="{{this.branch}}">
 				{{this.title}} {{#if this.latest}}(current){{/if}}
 			</option>
 		{{/if}}	
@@ -38,7 +38,7 @@ console.log('current url',currentUrl);
 // While page load select current version
 
 if (currentUrl == '/'){
-	$('#widgetVersionSwitcher select').val(latestVersion);
+	$('#widgetVersionSwitcher select').val(latestVersion[0].title);
 	console.log('default',latestVersion[0].title);
 } else {
 	$('#widgetVersionSwitcher select').val(currentVersion);
