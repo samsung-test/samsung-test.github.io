@@ -37,7 +37,14 @@ currentUrl = window.location.pathname;
 console.log('current url',currentUrl);
 
 // While page load select current version
-$('#widgetVersionSwitcher select').val(currentVersion);
+
+if (currentUrl == '/'){
+	$('#widgetVersionSwitcher select').val('/'+latestVersion.title+'/');
+	console.log('default','/'+latestVersion.title+'/');
+} else {
+	$('#widgetVersionSwitcher select').val(currentVersion);
+	console.log('not-default',currentVersion);
+}
 
 // On Version change
 $('#widgetVersionSwitcher select').on('change', function () {
