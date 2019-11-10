@@ -1,7 +1,6 @@
 {% assign directory = page.path | split: '/' %}
 {% assign subdirectory = directory[0] %}
 <div id="navbar" class="nav-sidebar">
-    <div id="widgetVersionSwitcher"></div>
     <ul class="nav" id="jsTOCLeftNav">
         {% for version in site.data.sidebar[subdirectory] %}
         {% for menu in version.sidebar %}
@@ -9,38 +8,52 @@
         {% assign sections = finalurl | split: '/' %}
     
         <li>
-            <a href="{{finalurl}}" data-target="#item1" data-toggle="collapse" data-parent="#stacked-menu" aria-expanded="true">
-                {{menu.title}}
-                <span class="caret arrow"></span>
+            <a 
+                href="{{finalurl}}" 
+                data-target="#item{{ forloop.index }}" 
+                data-toggle="collapse" 
+                data-parent="#stacked-menu"
+                aria-expanded="{% if (sections[1] == directory[1] ) %} true {% else %} false {% endif %}"
+                class="{% if (sections[1] == directory[1] ) %} not-collapsed {% else %} collapsed {% endif %}"
+                >
+                    {{menu.title}}
+                    <span class="caret arrow"></span>
             </a>
             {% if menu.subfolderitems[0] %}
 
             {% if (sections[1] == directory[1] ) %}
-            <ul class="nav collapse" aria-expanded="false">
+            <ul class="nav collapse in" aria-expanded="true" id="#item{{ forloop.index }}">
             {% else %}
-            <ul class="nav collapse in" aria-expanded="true">
+            <ul class="nav collapse" aria-expanded="false" id="#item{{ forloop.index }}">
             {% endif %}
 
                 {% for submenu in menu.subfolderitems %}
                 <li>
                     {% if submenu.subfolderitems[0] %}
                     {% assign submenufinalurl = submenu.url %}
-                    <a href="{{submenufinalurl}}"
-                        class="hasChild {% if submenufinalurl == page.url %}active open{% endif %}">
+                    <a 
+                        href="{{submenufinalurl}}"
+                        class="{% if submenufinalurl == page.url %}active currentPage{% endif %}"
+                        aria-expanded="{% if (sections[1] == directory[1] ) %} true {% else %} false {% endif %}"
+                        data-target="#item{{ forloop.index }}" 
+                        data-toggle="collapse" 
+                        >
                         {{submenu.page}}
                         <span class="caret arrow"></span>
                     </a>
                     
                     {% if (sections[1] == directory[1] ) %}
-                    <ul class="nav collapse" aria-expanded="false">
+                    <ul class="nav collapse in" aria-expanded="true" id="#item{{ forloop.index }}">
                     {% else %}
-                    <ul class="nav collapse in" aria-expanded="true">
+                    <ul class="nav collapse" aria-expanded="false" id="#item{{ forloop.index }}">
                     {% endif %}
                         {% for subsubmenu in submenu.subfolderitems %}
                         <li>
                             {% assign subsubmenufinalurl = subsubmenu.url %}
-                            <a href="{{subsubmenufinalurl}}"
-                                class="{% if subsubmenufinalurl == page.url %}currentPage{% endif %}">
+                            <a 
+                                href="{{subsubmenufinalurl}}"
+                                class="{% if subsubmenufinalurl == page.url %}active currentPage{% endif %}"
+                                >
                                 {{subsubmenu.page}}
                             </a>
                         </li>
@@ -48,7 +61,10 @@
                     </ul>
                     {% else %}
                     {% assign submenufinalurl = submenu.url %}
-                    <a href="{{submenufinalurl}}" class="{% if submenufinalurl== page.url %}currentPage{% endif %}">
+                    <a 
+                        href="{{submenufinalurl}}" 
+                        class="{% if submenufinalurl== page.url %}active currentPage{% endif %}"
+                        >
                         {{submenu.page}}
                     </a>
                     {% endif %}
@@ -63,5 +79,5 @@
     </ul>
 </div>
 <script>
-    $("a[href$='{{page.url | remove_first: " / "  }}']").addClass("currentPage");
+    $("a[href$='{{page.url | remove_first: " / "  }}']").addClass("active currentPage");
 </script>
