@@ -589,6 +589,8 @@ footer {
   margin-top: 0; }
 .latestVersion .VersionNotification {
   display: none; }
+.latestVersion .sidebar {
+  top: 50px; }
 
 #widgetVersionSwitcher {
   float: left; }
