@@ -64,6 +64,7 @@ $('#widgetVersionSwitcher select').on('change', function () {
 });
 if (currentVersion == latestVersion[0].branch){
 	$('.widgetLatestVersionNotification').remove();
+	$('body').addClass('archiveVersion');
 };
 if (currentVersion == 'latest'){
 	$('.widgetLatestVersionNotification').remove();
