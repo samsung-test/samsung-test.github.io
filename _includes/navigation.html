@@ -16,11 +16,38 @@
     </button>
 </div>
 <div class="nav-container">
+    {% if (page.path != '/' ) %}
     <div id="tabs">
         <ul class="tabs" id="jsTOCHorizontal">
-
+            {% assign directory = page.path | split: '/' %}
+            {% assign subdirectory = directory[0] %}
+            <li>
+                <a 
+                    href="platform/about/tizen-open-source-overview" 
+                    class="{% if subdirectory == 'platform' %}active{% endif %}"
+                    >
+                    Platform
+                </a>
+            </li>
+            <li>
+                <a 
+                    href="application/"
+                    class="{% if subdirectory == 'application' %}active{% endif %}"
+                    >
+                    Application
+                </a>
+            </li>
+            <li>
+                <a 
+                    href="iot/"
+                    class="{% if subdirectory == 'iot' %}active{% endif %}"
+                    >
+                    IoT
+                </a>
+            </li>
         </ul>
     </div>
+    {% endif %}
     <div class="ctrl-right hidden-xs hidden-sm">
         <a href="javascript:void(0)" id="menu-toggle"><i class="fa fa-indent" aria-hidden="true"></i></a>
         <div id="widgetVersionSwitcher"></div>

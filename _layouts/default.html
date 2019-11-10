@@ -6,6 +6,7 @@
 	{% include head.html %}
 </head>
 <body class="{{page.pageClass}}">
+	<div class="widgetLatestVersionNotification"></div>
 	{% if page.landing == true %}{% include global-header.html %}{% endif %} {% if page.landing != true %}{% include header.html %}{% endif %}
     <div class="{% if page.landing == true %}wrapper{%else%}wrapper right-open{% endif %}">
 		<div class="container-fluid">
