@@ -5,7 +5,7 @@ desc: Tizen is an open and flexible operating system built from the ground up to
 keywords: Tizen, OS, Open Source
 pageClass: homepage hide-headerSearch
 landing: true
-notoc: true
+notoc: false
 notags: true
 ---
 
