@@ -1,0 +1,26 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% include head.html %}
+</head>
+<body class="{{page.pageClass}}">
+	<div class="widgetLatestVersionNotification"></div>
+	{% include header.html %}
+    <div class="{% if page.landing == true %}wrapper{%else%}wrapper right-open{% endif %}">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-body">
+					<main>
+						{{ content }}
+					</main>
+				</div>
+			</div>
+		</div>
+	</div>
+    {% include footer.html %}
+    <div id="templates"></div>
+    {% include foot.html %}
+</body>
+</html>
