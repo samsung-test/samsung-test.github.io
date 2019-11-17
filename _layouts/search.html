@@ -8,13 +8,25 @@
 <body class="{{page.pageClass}}">
 	<div class="widgetLatestVersionNotification"></div>
 	{% include header.html %}
-    <div class="{% if page.landing == true %}wrapper{%else%}wrapper right-open{% endif %}">
+    <div class="wrapper">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-body">
-					<main>
-						{{ content }}
+					<main class="col-content main-content">
+						<section class="section">
+							{{ content }}
+						</section>
 					</main>
+					<nav class="col-nav">
+						<div id="sidebar-nav" class="sidebar hidden-sm hidden-xs">
+						</div>
+					</nav>
+					<div class="col-toc">
+						<div class="sidebar hidden-xs hidden-sm">
+							<div class="toc-nav">
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
