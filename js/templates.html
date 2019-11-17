@@ -63,10 +63,10 @@ $('#widgetVersionSwitcher select').on('change', function () {
 });
 if (currentVersion == latestVersion[0].branch){
 	$('.widgetLatestVersionNotification').remove();
-};
-if (currentVersion != latestVersion[0].branch){
+} else {
 	$('body').removeClass('latestVersion');
-};
+}
+
 if (currentVersion == 'latest'){
 	$('.widgetLatestVersionNotification').remove();
 };
