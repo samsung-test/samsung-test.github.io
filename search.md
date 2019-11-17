@@ -15,7 +15,7 @@ permalink: search.html
 {% include footer.html %}
 <script>
 	window.data = {
-		{% for post in site.posts %}
+		{% for post in site.pages %}
 			{% if post.title %}
 				{% unless post.excluded_in_search %}
 					{% if added %},{% endif %}
