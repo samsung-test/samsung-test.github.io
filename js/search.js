@@ -80,7 +80,6 @@
 	window.index = lunr(function () {
 		this.field("id");
 		this.field("title", {boost: 10});
-		this.field("categories");
 		this.field("url");
 		this.field("content");
 	});
