@@ -571,6 +571,9 @@ footer {
   overflow: hidden; }
 
 .search-page {
+  padding-top: 110px; }
+
+.latestVersion .search-page {
   padding-top: 80px; }
 
 /*
