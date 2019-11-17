@@ -20,11 +20,11 @@ permalink: search.html
 				{% unless post.excluded_in_search %}
 					{% if added %},{% endif %}
 					{% assign added = false %}
-					"{{ post.url | slugify }}": {
+					"{{ post.url | slugify | remove_first: " / " }}": {
 						"id": "{{ post.url | slugify }}",
 						"title": "{{ post.title | xml_escape }}",
 						"categories": "{{ post.categories | join: ", " | xml_escape }}",
-						"url": " {{ post.url | remove_first: " / " }}",
+						"url": " {{ post.url | remove_first: "/" | xml_escape }}",
 						"content": {{ post.content | strip_html | replace_regex: "[\s/\n]+"," " | strip | jsonify }}
 					}
 					{% assign added = true %}
