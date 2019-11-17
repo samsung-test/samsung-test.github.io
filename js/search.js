@@ -89,7 +89,7 @@ layout: null
 
 	var query = decodeURIComponent((getQueryVariable("q") || "").replace(/\+/g, "%20")),
 		searchQueryContainerEl = document.getElementById("search-query-container"),
-		searchQueryEl = document.getElementById("search-query");
+		searchQueryEl = document.getElementById("st-search-input");
 
 	searchQueryEl.innerText = query;
 	searchQueryContainerEl.style.display = "inline";
