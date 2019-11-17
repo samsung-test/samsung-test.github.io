@@ -1,10 +1,11 @@
 ---
-layout: default
+layout: search
 title: Search
 sitemap: false
 landing: true
 notoc: true
 notags: true
+permalink: search.html
 ---
 
 <div class="wrapper space">
