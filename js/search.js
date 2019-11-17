@@ -93,7 +93,7 @@ layout: null
 		searchInput = document.getElementById("st-search-input");
 
 	searchQueryEl.innerText = query;
-	searchInput.innerText = query;
+	searchInput.value = query;
 	searchQueryContainerEl.style.display = "inline";
 
 	for (var key in window.data) {
