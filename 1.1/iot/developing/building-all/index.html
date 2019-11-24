@@ -9,7 +9,7 @@
 <meta name="keywords" content=""/>
 <base id="baseURL" href="/1.1/" />
 <meta id="docsVersion" content="1.1" />
-<meta name="last-modified" content="2019-11-24 21:17:37 +0530" />
+<meta name="last-modified" content="2019-11-24 22:08:18 +0530" />
 <meta http-equiv="cache-control" content="max-age=24" />
 <meta http-equiv="cache-control" content="no-cache" />
 <meta http-equiv="Cache-Control" content="no-store" />
@@ -25,69 +25,9 @@
 
 </head>
 <body class=" latestVersion">
-	<div class="widgetLatestVersionNotification"></div>
 	 <header>
     <div class="header">
-        <div class="container-fluid">
-            <div class="row">
-                <nav class="nav-primary">
-                    <div class="container-fluid">
-                        <div class="navbar-header">
-                            <a class="logo" href="/" title="Tizen Documentation">
-                                Tizen
-                            </a>
-                        </div>
-                        <div class="navbar-collapse collapse" id="navbar">
-                            <ul class="primary nav navbar-nav visible-xs">
-                                <li>
-                                    <a href="platform/developing/cloning">Get Tizen</a>
-                                </li>
-                                <li>
-                                    <a href="platform/about/tizen-open-source-overview">Platform</a>
-                                </li>
-                                <li>
-                                    <a href="application/">Application</a>
-                                </li>
-                                <li>
-                                    <a href="iot/">IoT</a>
-                                </li>
-                                <li>
-                                    <a href="https://developer.tizen.org/development/tizen-studio/download" target="_blank">Download</a>
-                                </li>
-                                <li>
-                                    <a href="https://www.tizen.org/user/register" target="_blank">Register</a>
-                                </li>
-                            </ul>
-                            <div class="widgetVersionSwitcher px-10"></div>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
-        <!-- hero banner text -->
-        <div class="container-fluid">
-            <div class="row">
-                <div class="hero-text">
-                    <div class="hero-text-centered">
-                        <h1>Tizen Documentation</h1>
-                        <p>An open and flexible operating system built from the ground up to address the needs of
-                            all stakeholders of the mobile and connected device ecosystem, including device manufacturers, mobile operators, application developers and independent software vendors (ISVs).
-                        </p>
-                        <div class="header-search">
-                            <form class="search-form" action="search.html">
-                                <input class="search-field form-control ds-input st-search-input" value="" name="q" placeholder="Search the docs" type="search" autocomplete="off" spellcheck="false" dir="auto">
-                                <button type="submit" class="search-button">
-                                    <i class="fa fa-search"></i>
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- nav-secondary -->
-        <!-- data-offset-top should calculated as follows: (height of <header> - header of <nav>) -->
-        <nav class="nav-secondary-tabs" data-spy="affix" data-offset-top="385">
+        <nav class="nav-secondary-tabs affix" >
             <div class="container-fluid">
                 <div class="navbar-collapse" aria-expanded="false" style="height: 1px;">
                     <div class="sidebar-toggle">
@@ -149,6 +89,7 @@
 				<div class="col-body">
 					<main class="col-content content">
 						<section class="section">
+							<div class="widgetLatestVersionNotification"></div>
 							<h1 id="building-all-packages-locally-with-gbs">Building All Packages Locally with GBS</h1>
 
 <p>You can perform a build for all Tizen packages using the Git Build System (GBS).</p>
@@ -1058,7 +999,7 @@ $ gbs build -A i586 --threads=4 --clean-once
 			</div>
 		</div>
 	</div>
-    <div class="container">
+    <div class="container-fluid">
   <div class="top_footer">
     <div class="footer-nav">
       <nav class="footer_sub_nav">
