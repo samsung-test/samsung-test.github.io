@@ -12,7 +12,6 @@ permalink: search.html
 	<p><span id="search-process">Loading</span> results <span id="search-query-container" style="display: none;">for "<strong id="search-query"></strong>"</span></p>
 	<ul id="search-results"></ul>
 </div>
-{% include footer.html %}
 <script>
 	window.data = {
 		{% for post in site.pages %}
