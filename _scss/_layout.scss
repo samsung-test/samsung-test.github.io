@@ -33,16 +33,15 @@
 */
 
 .header {
-    background: $bg-secondary;
     position: relative;
     z-index: 1;
     transition: all 0.1s ease;
-    background: #0d9474;
-    background-image: url(/images/patterns-png-transparent.png);
-    background-color: -moz-linear-gradient(45deg, #0d9474 0%, #2a6fa8 100%);
-    background-color: -o-linear-gradient(45deg, #0d9474 0%, #2a6fa8 100%);
-    background-color: -webkit-linear-gradient(45deg, #0d9474 0%, #2a6fa8 100%);
-    background-color: linear-gradient(45deg, #0d9474 0%, #2a6fa8 100%);
+    background: #0c2375;
+    //background-image: url(/images/patterns-png-transparent.png);
+    background: -moz-linear-gradient(45deg, #0d9474 0%, #2a6fa8 100%);
+    background: -o-linear-gradient(45deg, #0d9474 0%, #2a6fa8 100%);
+    background: -webkit-linear-gradient(45deg, #0d9474 0%, #2a6fa8 100%);
+    background: linear-gradient(45deg, #0d9474 0%, #2a6fa8 100%);
 }
 .nav-secondary-tabs.affix-top {
     position: relative;
@@ -263,5 +262,5 @@ footer {
     opacity: 1;
 }
 .search-page{
-    padding-top: 80px;
+    padding-top: 60px;
 }
