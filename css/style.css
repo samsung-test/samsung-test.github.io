@@ -375,11 +375,12 @@ dd, dt {
 */
 .logo {
   display: inline-block;
-  margin: 12px 10px 0 10px;
+  margin: 10px;
   color: #fff;
   font-weight: 600;
   font-size: 24px;
-  min-width: 100px; }
+  min-width: 100px;
+  float: left; }
   .logo:hover, .logo:focus, .logo:visited, .logo:Active {
     color: #f5f5f5; }
 
@@ -389,8 +390,7 @@ dd, dt {
 *
 */
 .header {
-  background: #35B5B0;
-  height: 440px;
+  background: #077CBC;
   position: relative;
   z-index: 1;
   transition: all 0.1s ease;
@@ -399,6 +399,9 @@ dd, dt {
   background: -o-linear-gradient(45deg, #0d9474 0%, #2a6fa8 100%);
   background: -webkit-linear-gradient(45deg, #0d9474 0%, #2a6fa8 100%);
   background: linear-gradient(45deg, #0d9474 0%, #2a6fa8 100%); }
+
+.nav-secondary-tabs.affix-top {
+  position: relative; }
 
 .columns,
 .col-body {
@@ -412,6 +415,13 @@ dd, dt {
   flex-direction: row;
   flex: 1;
   min-height: 555px; }
+
+.homepage .col-body {
+  max-width: 1024px;
+  margin: 0 auto; }
+
+.affix-top .container-fluid {
+  max-width: 1024px; }
 
 .col-content {
   flex: 1; }
@@ -434,7 +444,7 @@ dd, dt {
   min-height: 500px; }
 
 .main-content {
-  padding: 0 35px 25px 30px; }
+  padding: 30px 35px 25px 30px; }
 
 section.section {
   margin: 0 auto; }
@@ -560,7 +570,8 @@ footer {
 .footer_social_nav ul li + li {
   margin-left: 10px; }
 
-.footer_social_nav ul li a {
+.footer_social_nav ul li a,
+.footer_social_nav ul li a:hover {
   width: 32px;
   height: 32px;
   background-color: #82949E;
@@ -568,7 +579,8 @@ footer {
   color: #fff;
   display: block;
   text-indent: 9999px;
-  overflow: hidden; }
+  overflow: hidden;
+  opacity: 1; }
 
 .search-page {
   padding-top: 110px; }
@@ -605,23 +617,41 @@ footer {
 .latestVersion .content {
   padding: 80px 70px 20px 70px; }
 
-#widgetVersionSwitcher {
-  float: left; }
-  #widgetVersionSwitcher select {
+.widgetVersionSwitcher {
+  float: right; }
+  .widgetVersionSwitcher select {
     border: 0;
     background: transparent;
     color: #fff;
     margin: 14px;
     outline: none; }
-    #widgetVersionSwitcher select option {
+    .widgetVersionSwitcher select option {
       font-size: 13.5px;
       line-height: 16px;
       color: #1488c6;
       background: #fff;
       padding: 5px 15px; }
-      #widgetVersionSwitcher select option:hover {
+      .widgetVersionSwitcher select option:hover {
         background: #1488c6;
         color: #fff; }
+
+.affix-top .search-form,
+.affix-top .widgetVersionSwitcher,
+.affix-top .logo {
+  display: none; }
+.affix-top #tabs {
+  padding: 0;
+  margin-left: -15px; }
+
+.homepage .col-nav {
+  display: none; }
+
+.p-10 {
+  padding: 10px; }
+
+.px-10 {
+  padding-top: 10px;
+  padding-bottom: 10px; }
 
 .hero-text {
   -ms-flex-align: center;
@@ -633,7 +663,9 @@ footer {
   min-height: 20em;
   min-width: 400px;
   -ms-flex-pack: center;
-  justify-content: center; }
+  justify-content: center;
+  max-width: 1024px;
+  margin: 0 auto; }
   .hero-text h1 {
     color: #fff; }
   .hero-text ul {
@@ -740,8 +772,9 @@ footer {
     position: fixed;
     z-index: 100; }
   .nav-secondary-tabs .search-form {
-    margin: 5px 27px 0 -10px;
-    width: 240px; }
+    width: 240px;
+    float: right;
+    margin-right: 30px; }
 
 /*
 *
@@ -1249,7 +1282,7 @@ img.inline {
     transition: all 0.2s ease;
     width: 230px; }
 
-.nav-secondary-tabs .search-form input[type=search] {
+.search-form input[type=search] {
   background: rgba(0, 0, 0, 0.17) url("/images/search.png") no-repeat;
   background-position: 10px 9px;
   border: 0;
@@ -1273,20 +1306,20 @@ input[type=text],
   border: 0;
   margin: 0; }
 
-.nav-secondary-tabs .search-form input[type=search]:focus {
-  background: rgba(255, 255, 255, 0.17) url(/images/search.png) no-repeat;
+.search-form input[type=search]:focus {
+  background: rgba(255, 255, 255, 0.17) no-repeat;
   background-position: 10px 9px; }
 
 .nav-secondary-tabs.affix input[type=search],
 input[type=text] {
-  background: rgba(0, 0, 0, 0.17) url(/images/search.png) no-repeat;
+  background: rgba(0, 0, 0, 0.17) no-repeat;
   background-position: 10px 9px;
   border: 1px solid transparent;
   box-shadow: none;
   transition: all 0.2s ease; }
 
 .nav-secondary input[type=search] {
-  background: rgba(0, 0, 0, 0.17) url("/images/search.png") no-repeat;
+  background: rgba(0, 0, 0, 0.17) no-repeat;
   background-position: 10px 9px;
   border: 0;
   box-shadow: none;
@@ -1299,7 +1332,7 @@ input[type=text] {
   padding: 0px 0 0 35px; }
 
 .nav-secondary .search-form input[type=search]:focus {
-  background: rgba(255, 255, 255, 0.17) url(/images/search.png) no-repeat;
+  background: rgba(255, 255, 255, 0.17) no-repeat;
   background-position: 10px 9px; }
 
 .search-form input[type=search]::-webkit-input-placeholder {
@@ -1320,60 +1353,39 @@ input[type=text] {
   color: #fff;
   opacity: 1; }
 
-/*
-  *
-  * autocompleteResults  **********************************************************
-  *
-  */
-div#autocompleteResults {
-  display: none; }
+.search-form {
+  position: relative;
+  margin-top: 10px; }
+  .search-form .search-button {
+    position: absolute;
+    right: 5px;
+    top: 4px;
+    background: transparent;
+    border: 0;
+    outline: none;
+    font-size: 16px;
+    color: #fff; }
+  .search-form input[type=search] {
+    background: rgba(0, 0, 0, 0.17);
+    padding: 0 35px 0 10px; }
 
-div#autocompleteResults {
-  background: #E6F5FD;
-  border: 1px solid #eee;
-  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.28);
-  padding: 20px 0 15px 0px;
-  margin: 10px 0 0 0;
-  position: absolute;
-  width: 600px !important;
-  z-index: 9999; }
-
-ul.autocompleteList {
-  list-style: none; }
-
-.autocompleteList li {
-  padding: 5px 0 7px 0; }
-
-div#autocompleteResults span {
-  background: transparent !important;
-  color: #518cad; }
-
-.autocompleteTitle {
-  font-weight: bold;
-  font-size: large; }
-
-.autocompleteSelected {
-  background-color: #f5f5f5; }
-
-.autocompleteList {
-  list-style-type: none;
-  width: 400px;
-  /* commented out 0px padding to allow inherit padding, search results on autocompleteList were getting smashed up against left margin due to this */
-  /*  padding:0px; */
-  margin-bottom: 0px; }
-
-.autoCompleteResult {
-  border-bottom: 1px solid rgba(203, 205, 209, 0.4);
-  padding: 15px; }
-
-#autocompleteShowAll {
-  padding: 20px 15px 0 0; }
-
-.autocompleteList li {
-  width: 380px;
-  border: 0px;
-  padding-right: 20px;
-  margin: 0px; }
+.header-search {
+  margin-top: 60px;
+  margin-bottom: 80px; }
+  .header-search .search-form {
+    float: none;
+    background: #fff;
+    max-width: 550px;
+    margin: 10px auto;
+    border-radius: 3px; }
+    .header-search .search-form input[type=search] {
+      background: transparent;
+      color: #333;
+      padding: 5px 35px 5px 10px; }
+    .header-search .search-form .search-button {
+      color: #333;
+      font-size: 20px;
+      top: 2px; }
 
 /*
   *
@@ -1629,23 +1641,7 @@ input.gsc-search-button-v2 {
   min-width: 13px;
   margin-top: 2px; }
 
-/*
-*
-* for rescaling  **********************************************************
-*
-*/
-@media only screen and (min-width: 376px) and (max-width: 1150px) {
-  .nav-primary,
-  .hero-text,
-  .banner,
-  ul.primary.nav.navbar-nav,
-  .nav-secondary .logo {
-    display: none; }
-
-  .header,
-  .nav-secondary-tabs {
-    height: 55px; }
-
+@media only screen and (max-width: 1150px) {
   .tabs li a {
     font-size: 13px; }
 
@@ -1678,199 +1674,91 @@ input.gsc-search-button-v2 {
   .nav-sidebar ul li li a {
     border-left: 0;
     font-size: 12px;
-    margin-left: 0; } }
-@media only screen and (min-width: 376px) and (max-width: 900px) {
-  .sidebar {
-    position: fixed;
-    width: 100%;
-    z-index: 100; }
-
-  .main-content {
-    padding: 22px 35px 25px 30px; } }
-/*
-*
-* small displays mobile  **********************************************************
-*
-*/
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 670px) {
-  .logo,
-  .hero-text,
-  .banner,
-  .ctrl-right {
-    display: none; }
+    margin-left: 0; }
 
   .nav-container {
     overflow: visible;
-    height: auto; } }
-/* Portrait */
-@media only screen and (min-device-width: 320px) and (max-device-width: 667px) and (orientation: portrait) {
-  h1,
-  h2,
-  h3 {
-    margin-top: 10px;
-    margin-bottom: 0px; }
+    height: auto; }
 
-  h1 {
-    font-size: 24px;
-    line-height: 28px; }
+  #tabs {
+    display: none; }
 
-  h2 {
-    font-size: 20px; }
+  .header-search {
+    margin-top: 20px;
+    margin-bottom: 20px; }
 
-  h3 {
-    font-size: 18px; }
+  .top_footer,
+  .bottom_footer {
+    padding: 5px !important;
+    float: none; }
 
-  h4 {
-    font-size: 16px; }
+  .footer_sub_nav,
+  .footer_social_nav,
+  .footer-copyright {
+    float: none;
+    padding: 0;
+    display: block;
+    text-align: center; }
+    .footer_sub_nav ul,
+    .footer_social_nav ul,
+    .footer-copyright ul {
+      display: flex;
+      justify-content: center;
+      width: 100%; }
+      .footer_sub_nav ul li,
+      .footer_social_nav ul li,
+      .footer-copyright ul li {
+        float: none; }
 
-  .header {
-    height: 100px; }
+  .hero-text {
+    min-width: 100%; }
+    .hero-text .hero-text-centered {
+      max-width: 90%;
+      padding-top: 80px; }
+      .hero-text .hero-text-centered h1 {
+        display: none; }
+
+  .logo {
+    display: none; }
+
+  .affix .logo,
+  .affix-top .logo {
+    display: block; }
 
   .nav-secondary-tabs,
   .nav-secondary {
-    background-color: #000;
-    height: 100px; }
+    background-color: #000; }
+    .nav-secondary-tabs .search-form,
+    .nav-secondary .search-form {
+      display: none !important; }
 
-  .nav-secondary input[type=search] {
-    background: #4e4d4d url(/images/search.png) no-repeat;
-    background-position: 10px 9px; }
-
-  .nav-sidebar a {
-    color: #a8a8a8;
-    text-align: center; }
-
-  .tabs {
-    float: left;
-    margin: 0;
-    padding: 5px 0 0 17px; }
-
-  .tabs li a {
-    color: #fff;
-    padding: 17px 6px 10px 4px;
-    float: left;
-    opacity: 0.7;
-    font-size: 12px; }
-
-  .content {
-    padding: 120px 25px; }
-
-  .main-content {
-    padding: 10px 25px; }
-
-  .sidebar,
-  .sidebar-home {
-    background-color: #15212e;
-    border-right: 1px solid rgba(204, 204, 204, 0.29);
-    top: 51px;
-    left: 0;
-    display: block;
-    padding: 0;
-    overflow-x: hidden;
-    overflow-y: auto;
+  #navbar {
     position: fixed;
-    width: 100%; }
-
-  .sidebar-home,
-  .sidebar-home .affix {
-    background: #192837;
-    width: 100%; }
-
-  .search-form {
-    display: block !important; }
-
-  .component-full {
-    text-align: center; }
-
-  .component-full-copy {
-    width: 100%; }
-
-  .component-full-icon {
-    float: none; }
-
-  .top_footer {
-    padding: 50px 0 35px;
-    text-align: center; } }
-@media only screen and (min-device-width: 320px) and (max-device-width: 372px) and (orientation: portrait) {
-  .nav-secondary-tabs > .container-fluid {
-    padding-left: 5px;
-    padding-right: 5px; }
-
-  .tabs {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    justify-content: space-between;
+    top: 55px;
+    bottom: 0;
     width: 100%;
-    padding: 5px 0 0 0; }
-
-  .tabs li a {
-    margin-left: 0;
-    font-weight: normal; } }
-/* Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 667px) and (orientation: landscape) {
-  h1,
-  h2,
-  h3 {
-    margin-top: 10px;
-    margin-bottom: 0px; }
-
-  h1 {
-    font-size: 24px;
-    line-height: 28px; }
-
-  h2 {
-    font-size: 20px; }
-
-  h3 {
-    font-size: 18px; }
-
-  h4 {
-    font-size: 16px; }
-
-  .header,
-  .nav-secondary-tabs {
-    height: 100px; }
-
-  .nav-secondary {
-    background: #000;
-    height: 100px; }
-
-  .content {
-    padding: 120px 20px; }
-
-  .main-content {
-    padding: 0px 10px; }
-
-  .nav-sidebar a {
-    color: #a8a8a8; }
-
-  .sidebar,
-  .sidebar-home {
-    background-color: #15212e;
-    border-right: 1px solid rgba(204, 204, 204, 0.29);
-    top: 51px;
-    left: 0;
-    display: block;
-    padding: 0;
-    overflow-x: hidden;
-    overflow-y: auto;
-    position: fixed;
-    width: 100%; }
-
-  .component-full {
-    text-align: center; }
-
-  .component-full-copy {
-    width: 100%; }
-
-  .component-full-icon {
-    float: none; } }
+    text-align: center;
+    background: linear-gradient(45deg, #0d9474 0%, #2a6fa8 100%);
+    z-index: 2;
+    padding: 20px; }
+    #navbar ul {
+      width: 100%;
+      font-weight: 600;
+      float: none;
+      padding: 0;
+      margin: 0;
+      font-size: 20px; }
+    #navbar .widgetVersionSwitcher {
+      float: none;
+      position: absolute;
+      border: 0;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      font-weight: 600; } }
 /*
 *
-* medium displays mobile  **********************************************************
+* medium displays mobile  *****
 *
 */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1110px) {
@@ -1902,7 +1790,7 @@ input.gsc-search-button-v2 {
 /* Portrait */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .nav-secondary input[type=search] {
-    background: rgba(255, 255, 255, 0.17) url(/images/search.png) no-repeat;
+    background: rgba(255, 255, 255, 0.17) no-repeat;
     background-position: 10px 9px; } }
 /* Landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
@@ -1916,7 +1804,7 @@ input.gsc-search-button-v2 {
     width: 270px; }
 
   .nav-secondary input[type=search] {
-    background: rgba(255, 255, 255, 0.17) url(/images/search.png) no-repeat;
+    background: rgba(255, 255, 255, 0.17) no-repeat;
     background-position: 10px 9px; } }
 .navbar-toggle {
   display: block; }
@@ -1929,6 +1817,7 @@ input.gsc-search-button-v2 {
     display: block; } }
 @media (max-width: 1024px) {
   .nav-secondary-tabs.affix-top {
+    background-image: linear-gradient(45deg, #0d9474 0%, #2a6fa8 100%);
     background-color: rgba(0, 0, 0, 0.05);
     position: fixed;
     top: 0; } }

@@ -87,7 +87,7 @@
 	var query = decodeURIComponent((getQueryVariable("q") || "").replace(/\+/g, "%20")),
 		searchQueryContainerEl = document.getElementById("search-query-container"),
 		searchQueryEl = document.getElementById("search-query");
-		searchInput = document.getElementById("st-search-input");
+		searchInput = document.getElementsByClassName("st-search-input");
 
 	searchQueryEl.innerText = query;
 	searchInput.value = query;
