@@ -87,16 +87,10 @@
 @media only screen and (min-width: 1000px) {
     .col-nav,
     .col-toc {
-        flex: 0 0 19em;
+        flex: 0 0 16em;
     }
 }
 
-.content {
-    padding: 100px 70px 20px 70px;
-    max-width: 1024px;
-    min-width: 300px;
-    min-height: 500px;
-}
 
 .main-content {
     padding: 30px 35px 25px 30px;
@@ -146,7 +140,7 @@ section.section {
 .sidebar {
     position: -webkit-sticky;
     position: sticky;
-    top: 85px;
+    top: 55px;
     overflow: auto;
     max-height: calc(100vh - 55px);
     padding-top: 20px;
@@ -268,8 +262,5 @@ footer {
     opacity: 1;
 }
 .search-page{
-    padding-top: 110px;
-}
-.latestVersion .search-page{
     padding-top: 80px;
 }
