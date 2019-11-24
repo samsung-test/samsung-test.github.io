@@ -12,11 +12,12 @@
 
 .logo {
     display: inline-block;
-    margin: 12px 10px 0 10px;
+    margin: 10px;
     color: #fff;
     font-weight: 600;
     font-size: 24px;
     min-width: 100px;
+    float: left;
     &:hover,
     &:focus,
     &:visited,
@@ -33,9 +34,6 @@
 
 .header {
     background: $bg-secondary;
-    // animation: gradientswitch 80s infinite;
-    // -webkit-animation: gradientswitch 80s infinite;
-    height: $global-header-height;
     position: relative;
     z-index: 1;
     transition: all 0.1s ease;
@@ -45,63 +43,9 @@
     background: -webkit-linear-gradient(45deg, #0d9474 0%, #2a6fa8 100%);
     background: linear-gradient(45deg, #0d9474 0%, #2a6fa8 100%);
 }
-
-// @keyframes gradientswitch {
-//     0% {
-//         background: #0087C9;
-//     }
-//     16% {
-//         background: #EF4A53;
-//     }
-//     32% {
-//         background: #FFB463;
-//     }
-//     49% {
-//         background: #33D5D4;
-//     }
-//     65% {
-//         background: #254356;
-//     }
-//     81% {
-//         background: #5B4097
-//     }
-//     100% {
-//         background: #0087C9
-//     }
-// }
-
-// @-webkit-keyframes gradientswitch {
-//     0% {
-//         background: #0087C9;
-//     }
-//     16% {
-//         background: #EF4A53;
-//     }
-//     32% {
-//         background: #FFB463;
-//     }
-//     49% {
-//         background: #33D5D4;
-//     }
-//     65% {
-//         background: #254356;
-//     }
-//     81% {
-//         background: #5B4097
-//     }
-//     100% {
-//         background: #0087C9
-//     }
-// }
-
-// .fan {
-//     // background: linear-gradient(-120deg, rgba(245, 33, 33, 0) 87%, rgba(255, 255, 255, 0.08) 15%), linear-gradient(-110deg, rgba(27, 0, 255, 0) 85%, rgba(255, 255, 255, 0.08) 15%), linear-gradient(-103deg, rgba(255, 33, 33, 0) 84%, rgba(255, 255, 255, 0.08) 15%), radial-gradient(circle, rgba(0, 135, 201, 0) 0%, rgba(0, 135, 201, 0) 100%);
-
-//     position: absolute;
-//     height: 100%;
-//     width: 100%;
-//     z-index: -1;
-// }
+.nav-secondary-tabs.affix-top {
+    position: relative;
+}
 
 .columns,
 .col-body {
@@ -117,6 +61,14 @@
     flex-direction: row;
     flex: 1;
     min-height: 555px;
+}
+
+.homepage .col-body {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.affix-top .container-fluid{
+    max-width: 1024px;
 }
 
 .col-content {
@@ -147,7 +99,7 @@
 }
 
 .main-content {
-    padding: 0 35px 25px 30px;
+    padding: 30px 35px 25px 30px;
 }
 
 section.section {
@@ -303,7 +255,8 @@ footer {
     margin-left: 10px;
 }
 
-.footer_social_nav ul li a {
+.footer_social_nav ul li a,
+.footer_social_nav ul li a:hover{
     width: 32px;
     height: 32px;
     background-color: #82949E;
@@ -312,6 +265,7 @@ footer {
     display: block;
     text-indent: 9999px;
     overflow: hidden;
+    opacity: 1;
 }
 .search-page{
     padding-top: 110px;

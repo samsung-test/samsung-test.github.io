@@ -1,6 +1,5 @@
 <header>
     <div class="header">
-        <div class="fan"></div>
         <div class="container-fluid">
             <div class="row">
                 <nav class="nav-primary">
@@ -10,8 +9,11 @@
                                 Tizen
                             </a>
                         </div>
-                        <div class="navbar-collapse collapse">
-                            <ul class="primary nav navbar-nav">
+                        <div class="navbar-collapse collapse" id="navbar">
+                            <ul class="primary nav navbar-nav visible-xs">
+                                <li>
+                                    <a href="platform/developing/cloning">Get Tizen</a>
+                                </li>
                                 <li>
                                     <a href="platform/about/tizen-open-source-overview">Platform</a>
                                 </li>
@@ -24,7 +26,11 @@
                                 <li>
                                     <a href="https://developer.tizen.org/development/tizen-studio/download" target="_blank">Download</a>
                                 </li>
+                                <li>
+                                    <a href="https://www.tizen.org/user/register" target="_blank">Register</a>
+                                </li>
                             </ul>
+                            <div class="widgetVersionSwitcher px-10"></div>
                         </div>
                     </div>
                 </nav>
@@ -37,19 +43,16 @@
                     <div class="hero-text-centered">
                         <h1>Tizen Documentation</h1>
                         <p>An open and flexible operating system built from the ground up to address the needs of
-                            all stakeholders of the mobile and connected device ecosystem, including device manufacturers, mobile operators, application developers and independent software vendors (ISVs).</p>
-                        <ul class="buttons">
-                            <li>
-                                <a class="button transparent-btn" href="https://www.tizen.org/user/register" target="_blank">
-                                    Register
-                                </a>
-                            </li>
-                            <li>
-                                <a class="button secondary-btn" href="platform/developing/cloning" target="_blank">
-                                    Get Tizen
-                                </a>
-                            </li>
-                        </ul>
+                            all stakeholders of the mobile and connected device ecosystem, including device manufacturers, mobile operators, application developers and independent software vendors (ISVs).
+                        </p>
+                        <div class="header-search">
+                            <form class="search-form" action="search.html">
+                                <input class="search-field form-control ds-input st-search-input" value="" name="q" placeholder="Search the docs" type="search" autocomplete="off" spellcheck="false" dir="auto">
+                                <button type="submit" class="search-button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
