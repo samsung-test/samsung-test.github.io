@@ -2,7 +2,7 @@
 title: Tizen Open Source Project
 ---
 
-# Platform Folder of 1.1 branch
+# Platform Folder of 1.1 branch of new 
 
 # Tizen Open Source Project
 
