@@ -1,5 +1,7 @@
 ---
 title: Tizen Studio
+desc: Tizen studi 
+keywords: Tizen, OS, Open Source
 ---
 
 # Studio Folder
