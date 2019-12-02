@@ -4,9 +4,9 @@
 	<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="icon"  href="/favicon.ico" />
-<title>Get Started</title>
-<meta name="description" content="Tizen is an open and flexible operating system built from the ground up to address the needs of all stakeholders of the mobile and connected device ecosystem, including device manufacturers, mobile operators, application developers and independent software vendors (ISVs)."/>
-<meta name="keywords" content="Tizen, OS, Open Source"/>
+<title>Tizen Studio</title>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
 <base id="baseURL" href="/latest/" />
 <meta id="docsVersion" content="1.1" />
 <meta name="last-modified" content="2019-12-02 11:24:51 +0530" />
@@ -24,72 +24,13 @@
 
 
 </head>
-<body class="homepage hide-headerSearch latestVersion">
-	<header>
-        <div class="header">
+<body class=" latestVersion">
+	 <header>
+    <div class="header">
+        <nav class="nav-secondary-tabs affix" >
             <div class="container-fluid">
-                <div class="row">
-                    <nav class="nav-primary">
-                        <div class="container-fluid">
-                            <div class="navbar-header">
-                                <a class="logo" href="/" title="Tizen Documentation">
-                                    Tizen
-                                </a>
-                            </div>
-                            <div class="navbar-collapse collapse" id="navbar">
-                                <ul class="primary nav navbar-nav visible-xs">
-                                    <li>
-                                        <a href="platform/developing/cloning">Get Tizen</a>
-                                    </li>
-                                    <li>
-                                        <a href="platform/about/tizen-open-source-overview">Platform</a>
-                                    </li>
-                                    <li>
-                                        <a href="application/">Application</a>
-                                    </li>
-                                    <li>
-                                        <a href="iot/">IoT</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://developer.tizen.org/development/tizen-studio/download" target="_blank">Download</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.tizen.org/user/register" target="_blank">Register</a>
-                                    </li>
-                                </ul>
-                                <div class="widgetVersionSwitcher px-10"></div>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-            <!-- hero banner text -->
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="hero-text">
-                        <div class="hero-text-centered">
-                            <h1>Tizen Documentation</h1>
-                            <p>An open and flexible operating system built from the ground up to address the needs of
-                                all stakeholders of the mobile and connected device ecosystem, including device manufacturers, mobile operators, application developers and independent software vendors (ISVs).
-                            </p>
-                            <div class="header-search">
-                                <form class="search-form" action="search.html">
-                                    <input class="search-field form-control ds-input st-search-input" value="" name="q" placeholder="Search the docs" type="search" autocomplete="off" spellcheck="false" dir="auto">
-                                    <button type="submit" class="search-button">
-                                        <i class="fa fa-search"></i>
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- nav-secondary -->
-            <!-- data-offset-top should calculated as follows: (height of <header> - header of <nav>) -->
-            <nav class="nav-secondary-tabs" data-spy="affix" data-offset-top="385">
-                <div class="container-fluid">
-                    <div class="navbar-collapse" aria-expanded="false" style="height: 1px;">
-                        <div class="sidebar-toggle">
+                <div class="navbar-collapse" aria-expanded="false" style="height: 1px;">
+                    <div class="sidebar-toggle">
     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
@@ -139,66 +80,38 @@
     </div>
     
 </div>
-                    </div>
                 </div>
-            </nav>
-        </div>
-    </header> 
-    <div class="wrapper">
+            </div>
+        </nav>
+    </div>
+</header>
+    <div class="wrapper right-open">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-body">
-					<main class="col-content main-content">
+					<main class="col-content content">
 						<section class="section">
 							<div class="widgetLatestVersionNotification"></div>
-							<h1 id="get-started">Get Started</h1>
+							<h1 id="studio-folder">Studio Folder</h1>
 
-<h2 id="platform">Platform</h2>
+<h2 id="get-started-with-tizen">Get Started with Tizen</h2>
+
+<p>To get started with Tizen development:</p>
+
 <ul>
-  <li><a href="platform/about/tizen-open-source-overview.md">What is Tizen?</a></li>
   <li>
-    <p>Developers can register for an account at: <a href="https://www.tizen.org/user/register">https://www.tizen.org/user/register</a></p>
+    <p>Get access</p>
 
-    <p><img src="images/ic_docs_download.png" alt="Download" /> <a href="platform/developing/cloning.md"><strong>Download Tizen Source</strong></a></p>
+    <p>You can register for an account at <a href="https://www.tizen.org/user/register">https://www.tizen.org/user/register</a>.</p>
+  </li>
+  <li>
+    <p>Study the development workflow</p>
 
-    <p>&gt; <a href="platform/developing/installing.md">More</a></p>
+    <p>Tizen developers use the Git and <a href="reference/gbs/gbs-overview.md">GBS command-line tools</a> for most of their work. Tizen source code is managed by <a href="reference/gerrit-usage.md">Gerrit</a>, a code review system for Git-based projects. Source code cloning, development, and review are done under ACL (Access Control Lists). Make sure you have access rights to them.</p>
   </li>
 </ul>
 
-<h2 id="iot-world-on-craftroom">IOT world on Craftroom</h2>
-<ul>
-  <li><a href="iot/index.md">What is Tizen IoT?</a></li>
-  <li>
-    <p><a href="iot/get-started/overview.md">How to make IoT devices</a></p>
-
-    <p>&gt; <a href="https://craftroom.tizen.org/">Go to Craftroom</a></p>
-  </li>
-</ul>
-
-<h2 id="tizen-net">Tizen .NET</h2>
-<ul>
-  <li><a href="application/dotnet/index.md">What is Tizen .NET Application?</a></li>
-  <li>
-    <p><a href="application/dotnet/get-started/overview.md">Creating Tizen .NET Applications</a></p>
-
-    <p><img src="images/ic_docs_download.png" alt="Download" /> <a href="https://marketplace.visualstudio.com/items?itemName=tizen.VisualStudioToolsforTizen"><strong>Download Visual Studio Tools for Tizen</strong></a></p>
-
-    <p>&gt; <a href="application/dotnet/index.md">More</a></p>
-  </li>
-</ul>
-
-<h2 id="tizen-studio">Tizen Studio</h2>
-<ul>
-  <li><a href="application/index.md">What is Tizen Application?</a></li>
-  <li><a href="application/native/get-started/overview.md">Creating Tizen Native Applications</a></li>
-  <li>
-    <p><a href="application/web/get-started/overview.md">Creating Tizen Web Applications</a></p>
-
-    <p><img src="images/ic_docs_download.png" alt="Download" /> <a href="https://developer.tizen.org/development/tizen-studio/download"><strong>Download Tizen Studio</strong></a></p>
-
-    <p>&gt; <a href="application/tizen-studio/index.md">More</a></p>
-  </li>
-</ul>
+<p>Start by reading the <a href="about/work-flow.md">Development Workflow</a> page.</p>
 
 						</section>
 					</main>
@@ -210,10 +123,75 @@
 <div id="navbar" class="nav-sidebar">
     <ul class="nav" id="jsTOCLeftNav">
         
+        
+        
+        
+    
+        <li>
+            <a 
+                href="tizenstudio/index/" 
+                data-target="#item1" 
+                data-toggle="collapse" 
+                data-parent="#stacked-menu"
+                aria-expanded=" false "
+                class=" collapsed "
+                >
+                    Tizen Studio
+                    <span class="caret arrow"></span>
+            </a>
+            
+
+            
+            <ul class="nav collapse" aria-expanded="false" id="#item1">
+            
+
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="application/about/work-flow/" 
+                        class=""
+                        >
+                        Application Development Workflow
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="application/about/git-repo-structure/" 
+                        class=""
+                        >
+                        Application Git Repository Structure
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="application/about/conventions/" 
+                        class=""
+                        >
+                        Typographic Conventions
+                    </a>
+                    
+                </li>
+                
+            </ul>
+            
+        </li>
+    
+        
+        
     </ul>
 </div>
 <script>
-    $("a[href$='/get-started/']").addClass("active currentPage");
+    $("a[href$='/tizenstudio/']").addClass("active currentPage");
 </script>
 						</div>
 					</nav>
@@ -231,7 +209,7 @@
                                         </li>
                                         
 										<li>
-                                            <a href="https://github.com/samsung-test/samsung-test.github.io/edit/1.1/get-started.md" target="_blank">
+                                            <a href="https://github.com/samsung-test/samsung-test.github.io/edit/1.1/tizenstudio/index.md" target="_blank">
                                                 <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                                                 Edit Page
                                             </a>
@@ -243,6 +221,15 @@
                                             </a>
                                         </li>
 									</ul>
+								</div>
+								   
+									<div id="side-toc-title">On this page:</div>
+									
+<ul id="my_toc" class="inline_toc">
+  <li><a href="#get-started-with-tizen" class="nomunge">Get Started with Tizen</a></li>
+</ul>
+
+
 								</div>
 								
 						</div>
