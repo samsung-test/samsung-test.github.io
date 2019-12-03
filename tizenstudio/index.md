@@ -1,6 +1,6 @@
 ---
 title: Tizen Studio
-desc: Tizen studi 
+desc: Tizen studio 
 keywords: Tizen, OS, Open Source
 ---
 
