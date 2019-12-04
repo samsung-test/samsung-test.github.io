@@ -83,7 +83,7 @@ title: Tizen Studio
     position: relative;
     width: 100px;
     height: 90px;
-    background: url(./media/Download.png) no-repeat center top;
+    background: url(media/Download.png) no-repeat center top;
     /*Download icon*/
     background-position: 0 0 !important;
 }
@@ -214,6 +214,7 @@ Tizen Studio primarily consists of:
 - utilities for compiling applications to Tizen RT (Tizen RTOS kernel variant)
 
 Visit the following pages to explore more about Tizen Studio: 
+
 <div class="docs-ui-started">
   <div class="docs-ui-wearable">
     <span>
