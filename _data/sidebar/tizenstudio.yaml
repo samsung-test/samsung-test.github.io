@@ -1,6 +1,6 @@
 - sidebar:
-      - title: Nawab Tizen
-        url: application/about/work-flow/
+      - title: Overview
+        url: tizenstudio/index/
         subfolderitems:
           - page: Application Development Workflow
             url: application/about/work-flow/
