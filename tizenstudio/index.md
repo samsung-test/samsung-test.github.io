@@ -1,5 +1,5 @@
 ---
-Title: TS 
+title: Tizen Studio
 ---
 
 # Tizen Studio
