@@ -1,5 +1,5 @@
 - sidebar:
-      - title: Overview
+      - title: Tizen Studio
         url: tizenstudio/index
         subfolderitems:
           - page: Setup 
