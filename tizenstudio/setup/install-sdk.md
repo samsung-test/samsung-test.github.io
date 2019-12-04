@@ -18,7 +18,7 @@ Tizen Studio runs on Windows, Ubuntu, as well as macOS and for installation guid
         <div class="col-sm-12 col-md-12 col-lg-4 block">
             <div class="component">
                 <div class="component-icon">
-                    <a href="docker-for-mac/"> <img src="./media/apple1.png" alt="Docker Desktop for Mac"> </a>
+                    <a href="mac/"> <img src="./media/apple1.png" alt="Docker Desktop for Mac"> </a>
                 </div>
                 <h3 id="docker-for-mac"><a href="mac/">Mac</a></h3>
                 <p>A native application using the macOS sandbox security model which delivers all Docker tools to your Mac.</p>
@@ -36,7 +36,7 @@ Tizen Studio runs on Windows, Ubuntu, as well as macOS and for installation guid
         <div class="col-sm-12 col-md-12 col-lg-4 block">
             <div class="component">
                 <div class="component-icon">
-                    <a href="install/linux/ubuntu/"> <img src="./media/linux1.png" alt="Linux"> </a>
+                    <a href="linux/"> <img src="./media/linux1.png" alt="Linux"> </a>
                 </div>
                 <h3 id="docker-for-linux"><a href="linux">Linux</a></h3>
                 <p>Install Docker on a computer which already has a Linux distribution installed.</p>
