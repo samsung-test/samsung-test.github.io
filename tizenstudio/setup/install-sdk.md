@@ -1,3 +1,10 @@
+---
+title: Installation
+desc: Install Tizen
+keywords: Tizen, OS, Open Source, Install 
+---
+
+
 # Installation
 <style>
 #main:before, #main:after {
