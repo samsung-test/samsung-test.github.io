@@ -6,6 +6,7 @@ keywords: Tizen, OS, Open Source, Install
 
 # Installation
 This section explains about options available to install Tizen Studio on your development hardware. Tizen Studio runs on all major operating systems like Windows, macOS, Ubuntu. You can install any release of the Tizen Studio. However, it is recommended that you install the most recent release. 
+ 
  - Plan your installation: check for the necessary hardware and software requirements. 
  - Install Tizen Studio:  follow the installation guides for each operating system.
  - Configure: After installation, to have optimal development experience, configure various Tizen Studio components.  
