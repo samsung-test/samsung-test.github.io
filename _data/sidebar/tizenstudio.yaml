@@ -1,6 +1,6 @@
 - sidebar:
       - title: Overview
-        url: tizenstudio/index/
+        url: tizenstudio/index
         subfolderitems:
           - page: Setup 
             url: tizenstudio/setup/install-sdk/
