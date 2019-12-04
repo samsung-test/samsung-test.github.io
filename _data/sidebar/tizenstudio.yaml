@@ -1,10 +1,6 @@
 - sidebar:
       - title: Tizen Studio 
-        url: tizenstudio/index/
+        url: tizenstudio/index
         subfolderitems:
-          - page: Application Development Workflow
-            url: application/about/work-flow/
-          - page: Application Git Repository Structure
-            url: application/about/git-repo-structure/
-          - page: Typographic Conventions
-            url: application/about/conventions/
+          - page: Setup
+            url: tizenstudio/setup/install-sdk/
