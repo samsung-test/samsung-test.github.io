@@ -1,6 +1,17 @@
 - sidebar:
-      - title: Tizen Studio 
-        url: tizenstudio/index
+      - title: Nawab Tizen
+        url: application/about/work-flow/
         subfolderitems:
-          - page: Setup
-            url: tizenstudio/setup/install-sdk/
+          - page: Application Development Workflow
+            url: application/about/work-flow/
+          - page: Application Git Repository Structure
+            url: application/about/git-repo-structure/
+          - page: Typographic Conventions
+            url: application/about/conventions/
+      - title: Application Developing
+        url: application/developing/installing/
+        subfolderitems:
+          - page: Installing Development Tools
+            url: application/developing/installing/
+          - page: Setting up Development Environment
+            url:  application/developing/setting-up/
