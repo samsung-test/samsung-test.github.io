@@ -53,7 +53,7 @@ title: Tizen Studio
     position: relative;  
 }
 
-@media (max-width: 800px) {
+
     .docs-ui-started .docs-ui-wearable:before, 
     .docs-ui-started .docs-ui-tv:before, 
     .docs-ui-started .docs-ui-mobile:before, 
@@ -167,7 +167,7 @@ title: Tizen Studio
         width: 33%;
         padding-left: 0;
     }
-}
+
 
 a.docs-btn-more {
     display: inline-block;
