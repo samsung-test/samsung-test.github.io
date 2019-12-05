@@ -206,9 +206,7 @@ title: Tizen Studio
     <a href="tizenstudio/web-tools/index.md" class="docs-btn-more" style="padding-left: 0px;padding-right: 13px;">Web Tools</a>
     </span>
   </div>
-</div>
-
-<div class="docs-ui-star" style="margin-top: -71px;">
+  
   <div class="docs-ui-wear">
     <span>
         <a href="tizenstudio/configurable-sdk/configurable-sdk.md" class="docs-btn-more">Configurable - IoT SDK</a>
