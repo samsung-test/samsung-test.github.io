@@ -21,8 +21,8 @@ title: Tizen Studio
     padding: 0px 0;
     text-align: center;
     border: 0 none;
-    border-top: 0 px solid #dadada;
-    border-bottom: 0 px solid #dadada;
+    border-top: 0 solid #dadada;
+    border-bottom: 0 solid #dadada;
     box-sizing: border-box;
     position: relative;
     float: left;
@@ -40,8 +40,8 @@ title: Tizen Studio
     padding: 1px 0;
     text-align: center;
     border: 0 none;
-    border-top: 0 px solid #dadada;
-    border-bottom: 0 px solid #dadada;
+    border-top: 0 solid #dadada;
+    border-bottom: 0 solid #dadada;
     box-sizing: border-box;
     position: relative;
     float: left;
@@ -87,14 +87,13 @@ title: Tizen Studio
     position: relative;
     width: 100px;
     height: 90px;
-    background: url(media/Download.png) no-repeat center top;
+    background: url(tizenstudio/media/Download.png) no-repeat center top;
     /*Download icon*/
     background-position: 0 0 !important;
 }
 .docs-ui-started .docs-ui-wearable {
     width: 33%;
     padding-left: 0;
-    /* border-right: 1px solid #d1d1d1; */
 }
 .docs-ui-started .docs-ui-t:before {
     content: "";
@@ -103,7 +102,7 @@ title: Tizen Studio
     display: block;
     width: 85px;
     height: 90px;
-    background: url(./media/RT.png) no-repeat center top;
+    background: url(tizenstudio/media/RT.png) no-repeat center top;
     /*Platform*/
     background-position: 0 0 !important;
 }
@@ -118,7 +117,7 @@ title: Tizen Studio
     display: block;
     width: 100px;
     height: 90px;
-    background: url(./media/Csdk.png) no-repeat center top;
+    background: url(tizenstudio/media/Csdk.png) no-repeat center top;
     /*configure SDK*/
     background-position: 0 0 !important;
 }
@@ -133,7 +132,7 @@ title: Tizen Studio
     display: block;
     width: 85px;
     height: 90px;
-    background: url(./media/Tools.png) no-repeat center top;
+    background: url(tizenstudio/media/Tools.png) no-repeat center top;
     /*Native tools*/
     background-position: 0 0 !important;
 }
@@ -148,7 +147,7 @@ title: Tizen Studio
 	display: block;
     width: 100px;
     height: 90px;
-    background: url(./media/webtools.png) no-repeat center top;
+    background: url(tizenstudio/media/webtools.png) no-repeat center top;
     background-position: 0 0 !important;
     /*web tools*/
 }
@@ -164,7 +163,7 @@ title: Tizen Studio
 	display: block;
     width: 100px;
     height: 90px;
-    background: url(./media/SDK.png) no-repeat center top;
+    background: url(tizenstudio/media/SDK.png) no-repeat center top;
     background-position: 0 0 !important;
     /*configurable*/
 }
@@ -180,7 +179,7 @@ title: Tizen Studio
 	display: block;
     width: 100px;
     height: 90px;
-    background: url(media/IDEp.png) no-repeat center top;
+    background: url(tizenstudio/media/IDEp.png) no-repeat center top;
     /*RTIDE*/
     background-position: 0 0 !important;
 }
@@ -228,30 +227,30 @@ Visit the following pages to explore more about Tizen Studio:
 
   <div class="docs-ui-tv" style="padding-left: 0px;padding-right: 20px;">
     <span>
-        <a href="native-tools/index.md" class="docs-btn-more">Native Tools</a><br>
+        <a href="tizenstudio/native-tools/index.md" class="docs-btn-more">Native Tools</a><br>
     </span>
   </div>
  
    <div class="docs-ui-widget">
     <span>
-    <a href="web-tools/index.md" class="docs-btn-more" style="padding-left: 0px;padding-right: 13px;">Web Tools</a>
+    <a href="tizenstudio/web-tools/index.md" class="docs-btn-more" style="padding-left: 0px;padding-right: 13px;">Web Tools</a>
     </span>
   </div>
 
 <div class="docs-ui-star" style="margin-top: -71px;">
   <div class="docs-ui-wear">
     <span>
-    <a href="configurable-sdk/configurable-sdk.md" class="docs-btn-more">Configurable - IoT SDK</a>
+    <a href="tizenstudio/configurable-sdk/configurable-sdk.md" class="docs-btn-more">Configurable - IoT SDK</a>
         </span>
   </div>
   <div class="docs-ui-get">
     <span>
-    <a href="extension-sdk/overview.md" class="docs-btn-more">Extension SDK</a><br>
+    <a href="tizenstudio/extension-sdk/overview.md" class="docs-btn-more">Extension SDK</a><br>
     </span>
   </div>
 <div class="docs-ui-w">
     <span>
-    <a href="rt-ide/overview.md" class="docs-btn-more">Tizen RT IDE</a><br>
+    <a href="tizenstudio/rt-ide/overview.md" class="docs-btn-more">Tizen RT IDE</a><br>
     </span>
   </div>
 </div>
