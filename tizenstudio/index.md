@@ -70,7 +70,7 @@ title: Tizen Studio
         background-position: 0 6px;
     }
     .docs-ui-started .docs-ui-wearable:before {
-        content: "";
+        content: " ";
         display: block;
         margin: auto;
         position: relative;
@@ -84,7 +84,7 @@ title: Tizen Studio
         padding-left: 0;
     }
     .docs-ui-started .docs-ui-t:before {
-        content: "";
+        content: " ";
         margin: auto;
         position: relative;
         display: block;
@@ -98,7 +98,7 @@ title: Tizen Studio
         padding-left: 0;
     }
     .docs-ui-started .docs-ui-wear:before {
-        content: "";
+        content: " ";
         margin: auto;
         position: relative;
         display: block;
@@ -112,7 +112,7 @@ title: Tizen Studio
         padding-left: 0;
     }
     .docs-ui-started .docs-ui-tv:before {
-        content: "";
+        content: " ";
         margin: auto;
         position: relative;
         display: block;
@@ -126,7 +126,7 @@ title: Tizen Studio
         padding-left: 0;
     }
     .docs-ui-started .docs-ui-widget:before {
-        content: "";
+        content: " ";
         margin: auto;
         position: relative;
         display: block;
@@ -140,7 +140,7 @@ title: Tizen Studio
         padding-left: 0;
     }
     .docs-ui-started .docs-ui-get:before {
-        content: "";
+        content: " ";
         margin: auto;
         position: relative;
         display: block;
@@ -154,7 +154,7 @@ title: Tizen Studio
         padding-left: 0;
     }
     .docs-ui-star .docs-ui-w:before {
-        content: "";
+        content: " ";
         margin: auto;
         position: relative;
         display: block;
