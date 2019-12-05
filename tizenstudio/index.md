@@ -15,9 +15,8 @@ title: Tizen Studio
         display: table;
     }
     .docs-ui-started [class^="docs-ui-"] {
-        width: 100%; 
         height: 200px;
-        padding: 0px 0;
+        padding: 0;
         text-align: center;
         border: 0 none;
         border-top: 0 solid #dadada;
@@ -25,7 +24,7 @@ title: Tizen Studio
         box-sizing: border-box;
         position: relative;
         float: left;
-        margin: 2 auto 30px;
+        margin: 2px auto 30px;
     }
     .docs-ui-started [class^="docs-ui-"]>span {
         display: block;
@@ -33,34 +32,15 @@ title: Tizen Studio
         line-height: 32px;
         position: relative;   
     }
-    .docs-ui-star [class^="docs-ui-"] {
-        width: 100%; 
-        height: 200px;
-        padding: 1px 0;
-        text-align: center;
-        border: 0 none;
-        border-top: 0 solid #dadada;
-        border-bottom: 0 solid #dadada;
-        box-sizing: border-box;
-        position: relative;
-        float: left;
-        margin: 2 auto ;
-    }
-    .docs-ui-star [class^="docs-ui-"]>span {
-        display: block;
-        color: #333;
-        line-height: px;
-        position: relative;  
-    }
     .docs-ui-started .docs-ui-wearable:before, 
     .docs-ui-started .docs-ui-tv:before, 
     .docs-ui-started .docs-ui-mobile:before, 
     .docs-ui-started .docs-ui-widget:before, 
     .docs-ui-started .docs-ui-ide:before, 
-    .docs-ui-star .docs-ui-wear:before, 
-    .docs-ui-star .docs-ui-t:before, 
-    .docs-ui-start .docs-ui-w:before, 
-    .docs-ui-start .docs-ui-get:before, 
+    .docs-ui-started .docs-ui-wear:before, 
+    .docs-ui-started .docs-ui-t:before, 
+    .docs-ui-started .docs-ui-w:before, 
+    .docs-ui-started .docs-ui-get:before, 
     .docs-ui-started .docs-ui-watch:before {
         height: 85px;
         margin: 0 auto 25px;
@@ -95,6 +75,10 @@ title: Tizen Studio
         width: 33%;
         padding-left: 0;
     }
+     .docs-ui-started .docs-ui-wear {
+        width: 33%;
+        padding-left: 0;
+    }
     .docs-ui-started .docs-ui-wear:before {
         content: " ";
         margin: auto;
@@ -105,7 +89,7 @@ title: Tizen Studio
         background: url(tizenstudio/media/Csdk.png) no-repeat center top;
         background-position: 0 0 !important;
     }
-    .docs-ui-star .docs-ui-wear {
+    .docs-ui-started .docs-ui-wear {
         width: 33%;
         padding-left: 0;
     }
@@ -151,7 +135,7 @@ title: Tizen Studio
         width: 33%;
         padding-left: 0;
     }
-    .docs-ui-star .docs-ui-w:before {
+    .docs-ui-started .docs-ui-w:before {
         content: " ";
         margin: auto;
         position: relative;
@@ -161,7 +145,7 @@ title: Tizen Studio
         background: url(tizenstudio/media/IDEp.png) no-repeat center top;
         background-position: 0 0 !important;
     }
-    .docs-ui-star .docs-ui-w {
+    .docs-ui-started .docs-ui-w {
         width: 33%;
         padding-left: 0;
     }
@@ -206,7 +190,7 @@ title: Tizen Studio
     <a href="tizenstudio/web-tools/index.md" class="docs-btn-more" style="padding-left: 0px;padding-right: 13px;">Web Tools</a>
     </span>
   </div>
-  
+
   <div class="docs-ui-wear">
     <span>
         <a href="tizenstudio/configurable-sdk/configurable-sdk.md" class="docs-btn-more">Configurable - IoT SDK</a>
