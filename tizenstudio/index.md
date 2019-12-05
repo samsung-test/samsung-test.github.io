@@ -212,21 +212,21 @@ Visit the following pages to explore more about Tizen Studio:
     <a href="tizenstudio/web-tools/index.md" class="docs-btn-more" style="padding-left: 0px;padding-right: 13px;">Web Tools</a>
     </span>
   </div>
-
+</div>
 <div class="docs-ui-star" style="margin-top: -71px;">
   <div class="docs-ui-wear">
     <span>
-    <a href="tizenstudio/configurable-sdk/configurable-sdk.md" class="docs-btn-more">Configurable - IoT SDK</a>
-        </span>
+        <a href="tizenstudio/configurable-sdk/configurable-sdk.md" class="docs-btn-more">Configurable - IoT SDK</a>
+    </span>
   </div>
   <div class="docs-ui-get">
     <span>
-    <a href="tizenstudio/extension-sdk/overview.md" class="docs-btn-more">Extension SDK</a><br>
+        <a href="tizenstudio/extension-sdk/overview.md" class="docs-btn-more">Extension SDK</a><br>
     </span>
   </div>
-<div class="docs-ui-w">
+  <div class="docs-ui-w">
     <span>
-    <a href="tizenstudio/rt-ide/overview.md" class="docs-btn-more">Tizen RT IDE</a><br>
+        <a href="tizenstudio/rt-ide/overview.md" class="docs-btn-more">Tizen RT IDE</a><br>
     </span>
   </div>
 </div>
