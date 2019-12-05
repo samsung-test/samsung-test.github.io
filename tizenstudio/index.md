@@ -6,7 +6,9 @@ title: Tizen Studio
 
 # Tizen Studio
 
-**Tizen Studio 3.2 is now launched!**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Download](media/ic_docs_download.png)  **Download**](https://developer.tizen.org/development/tizen-studio/download)
+**Tizen Studio 3.2 is now launched!**
+
+[![Download](tizenstudio/media/ic_docs_download.png)  **Download**](https://developer.tizen.org/development/tizen-studio/download)
 
 <style>
 #main:before, #main:after {
