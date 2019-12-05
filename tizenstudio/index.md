@@ -178,11 +178,11 @@ a.docs-btn-more {
 
 <section id ="main">
 
-Tizen Studio is an official integrated development environment (IDE) for developing Tizen apps. This environment is built over Eclipse, it presents a unified environment where you can write, edit, debug, build, and publish your app. 
+<p>Tizen Studio is an official integrated development environment (IDE) for developing Tizen apps. This environment is built over Eclipse, it presents a unified environment where you can write, edit, debug, build, and publish your app.</p> 
 
-Tizen Studio runs on Windows®, Ubuntu, and MacOSX. For more information on the latest release, see the <a href="https://developer.tizen.org/development/tizen-studio/download">Download</a> page.
+<p>Tizen Studio runs on Windows®, Ubuntu, and MacOSX. For more information on the latest release, see the <a href="https://developer.tizen.org/development/tizen-studio/download">Download</a> page.</p>
 
-Tizen Studio primarily consists of: 
+<p>Tizen Studio primarily consists of:</p>
 <ul>
 <li>set of fast and feature-rich emulators for devices based on Tizen, for example: Smartphone, TV emulator, Smart watch and much more</li>
 <li>extensive tool chains to capture performance, usability, version compatibility</li>
@@ -192,9 +192,10 @@ Tizen Studio primarily consists of:
 <li>utilities for compiling applications to Tizen RT (Tizen RTOS kernel variant)</li>
 </ul>
 
-Visit the following pages to explore more about Tizen Studio: 
+<p>Visit the following pages to explore more about Tizen Studio: </p>
 
 <div class="docs-ui-started">
+
   <div class="docs-ui-wearable">
     <span>
     <a href="https://developer.tizen.org/development/tizen-studio/download" class="docs-btn-more">Download</a>
@@ -211,9 +212,9 @@ Visit the following pages to explore more about Tizen Studio:
     <span>
     <a href="tizenstudio/web-tools/index.md" class="docs-btn-more" style="padding-left: 0px;padding-right: 13px;">Web Tools</a>
     </span>
-  </div>
+    </div>
 
-<div class="docs-ui-star" style="margin-top: -71px;">
+    <div class="docs-ui-star" style="margin-top: -71px;">
   <div class="docs-ui-wear">
     <span>
     <a href="tizenstudio/configurable-sdk/configurable-sdk.md" class="docs-btn-more">Configurable - IoT SDK</a>
@@ -229,5 +230,6 @@ Visit the following pages to explore more about Tizen Studio:
     <a href="tizenstudio/rt-ide/overview.md" class="docs-btn-more">Tizen RT IDE</a><br>
     </span>
   </div>
+</div>
 </div>
 </section>
