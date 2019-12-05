@@ -53,7 +53,6 @@ title: Tizen Studio
     position: relative;  
 }
 
-
     .docs-ui-started .docs-ui-wearable:before, 
     .docs-ui-started .docs-ui-tv:before, 
     .docs-ui-started .docs-ui-mobile:before, 
