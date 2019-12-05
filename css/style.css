@@ -1002,8 +1002,17 @@ input:checked + .slider:before {
 */
 ul.buttons {
   list-style: none;
-  width: 450px;
-  margin: 0 auto; }
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  ul.buttons li {
+    padding: 0; }
+  ul.buttons a {
+    float: none;
+    margin: 0; }
 
 a.button {
   color: #fff; }
@@ -1356,13 +1365,13 @@ input[type=text] {
     padding: 0 35px 0 10px; }
 
 .header-search {
-  margin-top: 60px;
-  margin-bottom: 80px; }
+  margin-top: 30px;
+  margin-bottom: 45px; }
   .header-search .search-form {
     float: none;
     background: #fff;
     max-width: 550px;
-    margin: 10px auto;
+    margin: 0 auto 40px;
     border-radius: 3px; }
     .header-search .search-form input[type=search] {
       background: transparent;
@@ -1671,7 +1680,7 @@ input.gsc-search-button-v2 {
 
   .header-search {
     margin-top: 20px;
-    margin-bottom: 20px; }
+    margin-bottom: 40px; }
 
   .top_footer,
   .bottom_footer {
