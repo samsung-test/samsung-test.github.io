@@ -192,10 +192,9 @@ a.docs-btn-more {
 <li>utilities for compiling applications to Tizen RT (Tizen RTOS kernel variant)</li>
 </ul>
 
-<p>Visit the following pages to explore more about Tizen Studio: </p>
+Visit the following pages to explore more about Tizen Studio: 
 
 <div class="docs-ui-started">
-
   <div class="docs-ui-wearable">
     <span>
     <a href="https://developer.tizen.org/development/tizen-studio/download" class="docs-btn-more">Download</a>
@@ -212,9 +211,9 @@ a.docs-btn-more {
     <span>
     <a href="tizenstudio/web-tools/index.md" class="docs-btn-more" style="padding-left: 0px;padding-right: 13px;">Web Tools</a>
     </span>
-    </div>
+  </div>
 
-    <div class="docs-ui-star" style="margin-top: -71px;">
+<div class="docs-ui-star" style="margin-top: -71px;">
   <div class="docs-ui-wear">
     <span>
     <a href="tizenstudio/configurable-sdk/configurable-sdk.md" class="docs-btn-more">Configurable - IoT SDK</a>
@@ -230,6 +229,5 @@ a.docs-btn-more {
     <a href="tizenstudio/rt-ide/overview.md" class="docs-btn-more">Tizen RT IDE</a><br>
     </span>
   </div>
-</div>
 </div>
 </section>
