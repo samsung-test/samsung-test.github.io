@@ -2,12 +2,12 @@
   - title: Tizen
     url: tizenstudio/
     subfolderitems:
-      - page: Tizen Studio 
-        url: tizenstudio/
+      - page: Set Up 
+        url: tizenstudio/setup/install-sdk/
         subsubfolderitems:
-          - page: Set Up
-            url: tizenstudio/setup/install-sdk/
-      - page: Thing 3
-        url: /thing3.html
+          - page: Windows 
+            url: tizenstudio/setup/windows/
+      - page: Linux
+        url: tizenstudio/setup/ubuntu/
             
  
