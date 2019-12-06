@@ -2,7 +2,7 @@
       - title: Tizen Studio
         url: tizenstudio/
         subfolderitems:
-          - page: Setup 11
+          - page: 
             url: tizenstudio/setup/install-sdk/
           - page: Setup 12
             url: tizenstudio/setup/install-sdk/
@@ -15,3 +15,5 @@
                 url: tizenstudio/setup/install-sdk/
               - page: Setup 33
                 url: tizenstudio/setup/install-sdk/
+      - title: Application Developing
+        url: tizenstudio/
