@@ -49,7 +49,7 @@ The Internet of Things (IoT) is connected networks of various types of things, s
 
 Tizen is a user-interactive and service-oriented open source project that allows you to create feature-rich applications for multiple device categories.
 
-[More](application/index){: class="button outline-btn"}
+[More](tizenstudio/index){: class="button outline-btn"}
 
 </div>
 </div><!-- end row -->
