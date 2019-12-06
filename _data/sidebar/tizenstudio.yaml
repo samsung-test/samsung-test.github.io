@@ -2,7 +2,7 @@
       - title: Tizen Studio
         url: tizenstudio/
          subfolderitems:
-          - title: Tizen Setup
+          - page: Tizen Setup
             url: tizenstudio/setup/install-sdk/
              subfolderitems:
              - page: Setup 
