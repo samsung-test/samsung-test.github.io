@@ -1,5 +1,6 @@
 ---
 title: Tizen Open Source Project
+crumbtitle: Platform
 ---
 
 # Platform Folder

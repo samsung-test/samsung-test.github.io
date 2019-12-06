@@ -5,6 +5,10 @@ layout: default
 permalink: pretty
 gitOrg: samsung-test
 gitRepo: samsung-test.github.io
+breadcrumbs:
+  root:
+    hide: false  # show breadcrumbs on root/home page
+    image: false # Show image or title text
 exclude:
 - README.md
 - Gemfile

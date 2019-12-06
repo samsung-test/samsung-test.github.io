@@ -13,6 +13,7 @@
 				<div class="col-body">
 					<main class="col-content {% if page.landing == true %}main-content{%else%}content{% endif %}">
 						<section class="section">
+							{% include nav-breadcrumbs.html %}
 							<div class="widgetLatestVersionNotification"></div>
 							{{ content }}
 						</section>
