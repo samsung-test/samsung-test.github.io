@@ -1,6 +1,8 @@
 - sidebar: 
+  - title: Tizen
+    url: tizenstudio/
     subfolderitems:
-      - page: Tizen Studio
+      - page: Tizen Studio 
         url: tizenstudio/
         subsubfolderitems:
           - page: Set Up
