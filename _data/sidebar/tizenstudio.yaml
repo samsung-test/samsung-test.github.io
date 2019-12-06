@@ -1,14 +1,24 @@
-- sidebar:
-      - title: Tizen Studio 
+- sidebar: 
+    subfolderitems:
+      - page: Tizen Studio
         url: tizenstudio/
-         subfolderitems:
+        subsubfolderitems:
           - page: Set Up
             url: tizenstudio/setup/install-sdk/
-              subfolderitems:
-               - page: Windows  
-                 url: tizenstudio/setup/install-sdk/
-               - page: Ubuntu 
-                 url: tizenstudio/setup/install-sdk/
-               - page: Mac 
-                 url: tizenstudio/setup/install-sdk/
-         
+      - page: Thing 3
+        url: /thing3.html
+  - title: Group 2
+    subfolderitems:
+      - page: Piece 1
+        url: /piece1.html
+      - page: Piece 2
+        url: /piece2.html
+      - page: Piece 3
+        url: /piece3.html
+        subsubfolderitems:
+          - page: Subpiece 1
+            url: /subpiece1.html
+          - page: Subpiece2
+            url: /subpiece2.html
+            
+ 
