@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
 	{% include head.html %}
-	{%- include nav-breadcrumbs.html -%}
+	{% include nav-breadcrumbs.html %}
 </head>
 <body class="{{page.pageClass}} latestVersion">
 	{% if page.landing == true %}{% include global-header.html %}{% endif %} {% if page.landing != true %}{% include header.html %}{% endif %}
