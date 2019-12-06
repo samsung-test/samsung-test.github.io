@@ -4,7 +4,7 @@
          subfolderitems:
           - title: Tizen Setup
             url: tizenstudio/setup/install-sdk/
-            subfolderitems:
+             subfolderitems:
              - page: Setup 
                url: tizenstudio/setup/install-sdk/
              - page: Setup 
