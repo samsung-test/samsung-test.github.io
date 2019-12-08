@@ -4,8 +4,8 @@
 	<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="icon"  href="/favicon.ico" />
-<title>Tizen Documentation</title>
-<meta name="description" content="Additional requirements"/>
+<title>Meet Tizen Studio</title>
+<meta name="description" content="Tizen Studio"/>
 <meta name="keywords" content="Tizen, OS, Open Source"/>
 <base id="baseURL" href="/latest/" />
 <meta id="docsVersion" content="1.1" />
@@ -120,7 +120,7 @@
           
       
       <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-         <span property="name">Tizen Documentation</span>
+         <span property="name">Meet Tizen Studio</span>
          <meta property="position" content="3" />
       </li>
       
@@ -192,111 +192,45 @@
 </style>
 
 							<div class="widgetLatestVersionNotification"></div>
-							<h1 id="additional-requirements">Additional Requirements</h1>
+							<h1 id="overview">Overview</h1>
 
-<p>This page explains you the summary of various requirements that are necessary to configure your development environment for optimal and seamless development experience. Tizen studio tools such as Emulator, Web Inspector, and various other tools need to be configured specifically on your development hardware, such that the dependent development processes work efficiently.</p>
+<p>Tizen Studio is the official IDE for developing Web applications and Native applications for Tizen. Tizen Studio consists of a comprehensive set of tools such as emulator, toolchain, sample code, documentation, and so on. These tools are used to develop the Tizen applications. Tizen Studio runs on Windows®, Ubuntu, and macOS. The following figure shows various benefits that you can achieve using the IDE tools:</p>
 
-<h2 id="tizen-studio-emulator">Tizen Studio Emulator</h2>
+<p><img src="./media/ide.PNG" alt="Step 2" /></p>
 
-<p>Tizen Studio Emulator simulates Tizen based devices on your computer, so that you can test your Tizen applications without having the requirement of each physical device. Tizen Studio Emulator provides almost all of the capabilities of a real Tizen based device.</p>
+<h2 id="tizen-studio-views">Tizen Studio Views</h2>
 
-<p>To use Tizen Studio Emulator, ensure that your development hardware meets the following configurations:</p>
+<ul>
+  <li><strong>Project Explorer</strong>: 
+This view provides a hierarchical view of all the resources in the workspace. You can open files for editing or select resources for operations, such as building, packaging, signing, or validating an application.</li>
+  <li><strong>Edit</strong>:
+Code editing can be done in the editor area.</li>
+  <li><strong>Outline</strong>:
+This view shows the structure outline and Object hierarchy of C, C++, and JavaScript.</li>
+  <li><strong>Problem</strong>:
+This view shows the status of build and packaging error or warning.</li>
+  <li><strong>Console</strong>:
+This view shows the target or emulator log when applications are running.</li>
+  <li><strong>Property</strong>:
+This view shows the property of selected files on Project Explorer, such as file path, size, and name.</li>
+</ul>
 
-<table>
-<thead>
-<tr style="height: 18px;">
-<th style="width: 205.783px; height: 18px;"><strong>Component</strong></th>
-<th style="width: 505.217px; height: 18px;"><strong>Requirements&nbsp;</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr style="height: 18px;">
-<td style="width: 205.783px; height: 18px;"><strong>CPU</strong></td>
-<td style="width: 505.217px; height: 18px;">Support for Intel Virtualization Technology (VTx)</td>
-</tr>
-<tr style="height: 18px;">
-<td style="width: 205.783px; height: 18px;"><strong>Screen Resolution</strong></td>
-<td style="width: 505.217px; height: 18px;">1280 x 1024</td>
-</tr>
-<tr style="height: 165px;">
-<td style="width: 205.783px; height: 165px;">
-<p><strong>NVIDIA&reg; Graphics Card</strong></p>
-<p>&nbsp;</p>
-</td>
-<td style="width: 505.217px; height: 165px;">
-<p>If the host machine uses the NVIDIA&reg; Optimus&reg; technology, the emulator works with the onboard graphics card. To prevent this, either disable the Optimus&reg; technology or set the emulator to run with the external NVIDIA graphics card.</p>
-<p><b>Note</b></p> You must upgrade to the latest vendor-provided version of the graphics card driver for OpenGL&reg; ES acceleration.&lt;/p&gt;
-</td>
-</tr>
-<tr style="height: 92.6px;">
-<td style="width: 205.783px; height: 188.6px;" rowspan="2"><strong>System Drivers</strong>&nbsp;</td>
-<td style="width: 505.217px; height: 92.6px;">
-<p>Windows&reg;:</p>
-<p>To check and install the latest drivers, open&nbsp;<strong>Control Panel &gt; System and Security &gt; Windows Update</strong>.</p>
-</td>
-</tr>
-<tr style="height: 96px;">
-<td style="width: 505.217px; height: 96px;">
-<p>Ubuntu&reg;:&nbsp;</p>
-<p>To check and install the latest Ubuntu&nbsp;drivers, open&nbsp;<strong>System Settings &gt; Software &amp; Updates &gt; Additional Drivers</strong>.</p>
-</td>
-</tr>
-<tr style="height: 114px;">
-<td style="width: 205.783px; height: 114px;"><strong>Webcam</strong></td>
-<td style="width: 505.217px; height: 114px;">
-<p>Use the emulator with an inbuilt webcam. The webcam must support the USB Video Class (UVC) driver.</p>
-<p>The&nbsp;supported image formats are: &nbsp;<strong>UYYY, YYU420, YUY420,</strong> and <strong>YUYY.</strong></p>
-</td>
-</tr>
-</tbody>
-</table>
+<p><img src="./media/1.PNG" alt="Step 1" /></p>
 
-<h2 id="google-chrome-browser">Google Chrome® Browser</h2>
+<h2 id="tizen-studio-tools">Tizen Studio Tools</h2>
 
-<p>You can use the Web Inspector tool in the Google Chrome browser for debugging your applications. For more information, see <a href="../web-tools/web-inspector.md">Web Inspector</a>. The Web Inspector server uses the Web core of the platform.</p>
-
-<blockquote>
-  <p><strong>Note</strong></p>
-
-  <p>You must use Google Chrome™ browser version 52 or lower, such that all the functions of the Web Inspector work properly. For more information, see <a href="http://www.slimjet.com/chrome/google-chrome-old-version.php">Google Chrome™</a>.</p>
-</blockquote>
-
-<h2 id="t-trace">T-Trace</h2>
-
-<p>The T-Trace tool is a Tizen profiling tool that is used to optimize the performance of an application.</p>
-
-<p>The following table lists the requirements that you must ensure to use the T-Trace tool:</p>
-
-<table>
-<thead>
-<tr>
-<th>Component</th>
-<th>Requirement</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<b>T-Trace</b> 
-</td>
-<td>To use T-trace in Windows&reg; 8 and higher, you must install Python 2.7.X or higher.
-<br /> <br />
-To download and install Python, follow these steps: <br />
-<br />
-<ol>
-<li> Download an appropriate Python version for your hardware and Windows&reg;. For more information, see the  <a href="https://www.python.org/downloads/">Python website.</a>
-</li>
-
-<li>Run the downloaded installer file and follow the on-screen instructions.</li>
-</ol>
-
-<br /><strong>Note</strong>
-
-To use Python in native command prompt, set the <code>%PATH%</code> environment variable in <strong>My Computer &gt; Properties &gt; Advanced &gt; Environment Variables</strong>.
-</td>
-</tr>
-</tbody>
-</table>
+<ul>
+  <li><strong>Device Manager</strong>:
+Manages the connected devices and supports installation of applications. It also supports real target, virtual target, and remote target.</li>
+  <li><strong>Certificate Manager</strong>:
+Manages the certificate profile. It can create or import author certificate. It can also use default or import distributor certificate.</li>
+  <li><strong>Package Manager</strong>:
+Retrieves detailed information of the installed packages on the device, such as package name, label, path to the icon image, version, type, and installed storage.</li>
+  <li><strong>Emulator Manager</strong>:
+Creates an actual hardware environment that has real device controls, and you can check the application features, such as data processing and user scenarios.</li>
+  <li><strong>Dynamic Analyzer</strong>: 
+Helps in performance monitoring and is an analysis tool for your Native and Web applications on a Tizen device or an emulator.</li>
+</ul>
 
 						</section>
 					</main>
@@ -382,7 +316,7 @@ To use Python in native command prompt, set the <code>%PATH%</code> environment 
     </ul>
 </div>
 <script>
-    $("a[href$='/tizenstudio/setup/additional-requirements/']").addClass("active currentPage");
+    $("a[href$='/tizenstudio/setup/about_ide/']").addClass("active currentPage");
 </script>
 						</div>
 					</nav>
@@ -400,7 +334,7 @@ To use Python in native command prompt, set the <code>%PATH%</code> environment 
                                         </li>
                                         
 										<li>
-                                            <a href="https://github.com/samsung-test/samsung-test.github.io/edit/1.1/tizenstudio/setup/additional-requirements.md" target="_blank">
+                                            <a href="https://github.com/samsung-test/samsung-test.github.io/edit/1.1/tizenstudio/setup/about_ide.md" target="_blank">
                                                 <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                                                 Edit Page
                                             </a>
@@ -417,9 +351,8 @@ To use Python in native command prompt, set the <code>%PATH%</code> environment 
 									<div id="side-toc-title">On this page:</div>
 									
 <ul id="my_toc" class="inline_toc">
-  <li><a href="#tizen-studio-emulator" class="nomunge">Tizen Studio Emulator</a></li>
-  <li><a href="#google-chrome-browser" class="nomunge">Google Chrome® Browser</a></li>
-  <li><a href="#t-trace" class="nomunge">T-Trace</a></li>
+  <li><a href="#tizen-studio-views" class="nomunge">Tizen Studio Views</a></li>
+  <li><a href="#tizen-studio-tools" class="nomunge">Tizen Studio Tools</a></li>
 </ul>
 
 
