@@ -18,31 +18,28 @@ To have the optimal installation experience, follow these steps chronologically:
 - Launch installer
 - Verify installation
 
-<style type="text/css">
-a.clickable   { width: 100%; height: 100%; }
-a.clickable:hover   { background-color:; color: #FFFFF; }
-</style>
 ### System Prerequisites
 
 Ensure that the following system prerequisites are met:
 
 #### Hardware Requirements
+
 <table>
   <tr>
-      <td width=150px>CPU</td>
-    <td colspan="3" width=50px>Dual Core, 2Ghz or faster</td>
+      <td>CPU</td>
+    <td>Dual Core, 2Ghz or faster</td>
   </tr>
   <tr>
     <td>Architecture</td>
-    <td width=520px>x32 or x64 </td>
+    <td>x32 or x64 </td>
   </tr>
   <tr>
     <td>Memory</td>
-    <td colspan="3">3GB or more </td>
+    <td>3GB or more </td>
   </tr>
   <tr>
     <td>Disk Space</td>
-    <td colspan="3">6 GB or more </td>
+    <td>6 GB or more </td>
   </tr>
 </table> 
 
@@ -50,11 +47,11 @@ Ensure that the following system prerequisites are met:
 
 <table>
   <tr>
-    <th colspan="2" align=left>Ubuntu</th>
+    <th>Ubuntu</th>
   </tr>
   <tr>
-    <td width=150px>Version</td>
-    <td width=520px>16.04/ 14.04/ 18.04</td>
+    <td>Version</td>
+    <td>16.04/ 14.04/ 18.04</td>
   </tr>
   <tr>
     <td>Bit</td>
@@ -70,16 +67,16 @@ Ensure that the following system prerequisites are met:
   <tr>
     <td>Open JDK</td>
     <td width=520px>
-    <a href="https://download.java.net/java/GA/jdk10/10/binaries/openjdk-10_linux-x64_bin.tar.gz"  class="clickable" target="_blank">https://download.java.net/java/GA/jdk10/10/binaries/openjdk-10_linux-x64_bin.tar.gz</a>
+    <a href="https://download.java.net/java/GA/jdk10/10/binaries/openjdk-10_linux-x64_bin.tar.gz" target="_blank"> Click to Download</a>
     </td>
   </tr>
   <tr>
     <td>OpenJavaFX</td>
-    <td><a href="http://gluonhq.com/download/javafx-11-0-2-sdk-linux/" class="clickable" target="_blank">http://gluonhq.com/download/javafx-11-0-2-sdk-linux/</a></td>
+    <td><a href="http://gluonhq.com/download/javafx-11-0-2-sdk-linux/" target="_blank">Click to Download </a></td>
   </tr>
   <tr>
     <td>Tizen Studio setup file</td>
-    <td><a href=https://developer.tizen.org/development/tizen-studio/download# class="clickable" target="_blank">https://developer.tizen.org/development/tizen-studio/download#</a></td>
+    <td><a href=https://developer.tizen.org/development/tizen-studio/download# target="_blank">Click to Download</a></td>
   </tr>
 </table>
 
