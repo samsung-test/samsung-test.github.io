@@ -18,7 +18,7 @@ keywords: Tizen, OS, Open Source
 
 #### "GROUND": Bold and Distinctive Layout Design
 
-<img alt="Ridges are formed where air touches the ground" src="design/introduction/media/1.2.2_ground.png" width="390px" margin-left="4px" />  
+<img alt="Ridges are formed where air touches the ground" src="./design/introduction/media/1.2.2_ground.png" width="390px" margin-left="4px" />  
 
 *Ridges are formed where air touches the ground*
 
