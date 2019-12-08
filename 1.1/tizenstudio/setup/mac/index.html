@@ -4,8 +4,8 @@
 	<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="icon"  href="/favicon.ico" />
-<title>Frequently Asked Questions</title>
-<meta name="description" content="FAQ's"/>
+<title>Hardware Accelerated Execution Manager</title>
+<meta name="description" content="HAEM"/>
 <meta name="keywords" content="Tizen, OS, Open Source"/>
 <base id="baseURL" href="/1.1/" />
 <meta id="docsVersion" content="1.1" />
@@ -120,7 +120,7 @@
           
       
       <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-         <span property="name">Frequently Asked Questions</span>
+         <span property="name">Hardware Accelerated Execution Manager</span>
          <meta property="position" content="3" />
       </li>
       
@@ -192,74 +192,221 @@
 </style>
 
 							<div class="widgetLatestVersionNotification"></div>
-							<h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
+							<h1 id="install-tizen-studio-on-macos">Install Tizen Studio on MacOS</h1>
 
-<p>This page contains answers to most commonly asked questions or errors that you may encounter while installing Tizen studio and developing apps in Tizen Studio.</p>
+<p>This page explains the process to download and install Tizen Studio on your development hardware.</p>
+
+<p>To have the optimal installation experience, follow these steps chronologically:</p>
 
 <ul>
-  <li>
-    <p><strong>How to run Tizen Studio on Ubuntu 18.04?</strong></p>
-
-    <p>Tizen studio supports Ubuntu 18.04. However, Ubuntu 18.04 distribution does not include the runtime libraray <strong>libpng12-0</strong>. To experience optimal installation experience, install the runtime library and run the following command:</p>
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ wget http://mirrors.kernel.org/ubuntu/pool/main/libp/libpng/libpng12-0_1.2.54-1ubuntu1_amd64.deb
- $ sudo dpkg -i libpng12-0_1.2.54-1ubuntu1_amd64.deb 
-</code></pre></div>    </div>
-
-    <p>Generally, installing packages from older distributions may break apt installation system. Since its dependencies are also present in Ubuntu-18.04, it will not break apt installation system.</p>
-  </li>
-  <li>
-    <p><strong>How to manage certificates and package applications in different Ubuntu setups?</strong></p>
-
-    <p>In Linux operating systems, Tizen Certificate Manager in Tizen Studio stores the passwords of the certificates in the <strong>gnome-keyring</strong> application. Therefore, you must enable the gnome-keyring application to ensure that Tizen Studio functions flawlessly.</p>
-
-    <p>The remote login in a Linux desktop system does not have the <strong>DBUS_SESSION_BUS_ADDRESS</strong> variable set in the session. 
-  To store and lookup passwords in the host’s Login keyring, you must set the <strong>DBUS_SESSION_BUS_ADDRESS</strong> variable.
-  For more information, see Manage certificates through <a href="https://developer.tizen.org/community/tip-tech/how-manage-certificates-and-package-applications-different-ubuntu-setups">remote login, headless Linux sytems, and Docker containers</a>.</p>
-  </li>
-  <li>
-    <p><strong>What to do when Tizen Studio fails to launch?</strong></p>
-
-    <p>Tizen Studio fails to launch if you have incorrect JDK version installed on your system. Ensure that you have recommended version of JDK, OpenJDK installed.</p>
-
-    <p>Check your JDK version and download an appropriate version.</p>
-
-    <p>Verify you are using a supported version  JDK 8 or OpenJDK 10.</p>
-
-    <ol>
-      <li>On your terminal or console window,  type <code class="highlighter-rouge">java -version</code>.
-If this command does not show which version is installed, see <a href="https://www.java.com/en/download/help/version_manual.xml">How can I find which version of Java is installed without running an applet in Windows or Mac</a>.</li>
-      <li>Verify whether the available version is JDK 8 and OpenJDK 10.</li>
-      <li>Set or update your JAVA_HOME environment variable. For more information, see the installation pages.</li>
-    </ol>
-
-    <p>To download an earlier version of the JDK, see <a href="https://www.oracle.com/technetwork/java/archive-139210.html">Oracle Java Archive</a>.</p>
-  </li>
-  <li>
-    <p><strong>How to do form validation using Tizen Web?</strong></p>
-
-    <p>Form validation normally occurs at the server end after the client enters all necessary data. The user clicks <strong>Submit</strong> button to send the data to the server. 
-If the data entered by a client is incorrect or the data is missing, the server responds back and user needs to resubmit the form with corrrect information. 
-This process  server was an overhead on the server and time elaped was on higher side, For more information, see <a href="https://developer.tizen.org/community/tip-tech/form-validation-using-tizen-web">simple form validation in Tizen Web app</a>.</p>
-  </li>
-  <li>
-    <p><strong>How to implement vibration API in Tizen Web app?</strong></p>
-
-    <p>To provide tactile feedback to the user or to interact with user even when the device volume is low, vibration provides a better user experience and improves the perception of application. When it comes to the Tizen app development, external third party library is not required to implement vibration feature, as you can use the internal Tizen API, for more information, see <a href="https://developer.tizen.org/community/tip-tech/vibration-api-tizen-web-app">Vibration API</a>.</p>
-  </li>
-  <li>
-    <p><strong>How to troubleshoot compatibility with previous versions of Tizen Studio?</strong></p>
-
-    <p>The Following are the various conditions that can cause compatibility issues:</p>
+  <li>System prerequisites
     <ul>
-      <li>You are using an older workspace in the installed version of Tizen Studio.</li>
-      <li>The Tizen Web, Tizen Native and Tizen Native UI Builder perspectives are used.</li>
-      <li>The Tizen Native or Tizen Native Builder perspective was used previously.</li>
-      <li>After installing the latest Tizen Studio using the installer without installing other tools using package manager.</li>
+      <li>Hardware requirements</li>
+      <li>Software requirements</li>
+      <li>Additional requirements</li>
     </ul>
-
-    <p>For more information, see <a href="https://developer.tizen.org/community/tip-tech/trouble-shooting-compatibility-previous-versions-tizen-studio">troubleshooting for compatibility</a>.</p>
   </li>
+  <li>Setup OpenJDK in Macintosh</li>
+  <li>Launch installer</li>
+  <li>Verify installation</li>
 </ul>
+
+<h2 id="system-prerequisites">System Prerequisites</h2>
+
+<p>Ensure that the following system prerequisites are met:</p>
+
+<h3 id="hardware-requirements">Hardware Requirements</h3>
+<table>
+  <tr>
+      &lt;td width=150px&gt;CPU&lt;/td&gt;
+    &lt;td colspan="3" width=50px&gt;Dual Core, 2Ghz or faster&lt;/td&gt;
+  </tr>
+  <tr>
+    <td>Architecture</td>
+    &lt;td width=520px&gt;x64 only&lt;/td&gt;
+  </tr>
+  <tr>
+    <td>Memory</td>
+    <td colspan="3">3GB or more </td>
+  </tr>
+  <tr>
+    <td>Disk Space</td>
+    <td colspan="3">6 GB or more </td>
+  </tr>
+</table>
+
+<h3 id="software-requirements">Software Requirements</h3>
+<table>
+  <tr>
+    &lt;th colspan="2" align=left&gt;MacOSX&lt;/th&gt;
+  </tr>
+  <tr>
+    &lt;td width=150px&gt;Version&lt;/td&gt;
+    &lt;td width=520px&gt;10.13 (High Sierra)<br />10.12 (Sierra)<br />10.11 (El Captain)&lt;/td&gt;
+  </tr>
+  <tr>
+    <td>Bit</td>
+    <td>64 bit only</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Software</th>
+    <th>Download Link </th>
+  </tr>
+  <tr>
+    <td>Open JDK</td>
+    &lt;td width=520px&gt;<a href="https://download.java.net/java/GA/jdk10/10/binaries/openjdk-10_osx-x64_bin.tar.gz" target="_blank"> Click to download </a>&lt;/td&gt;
+  </tr>
+  <tr>
+    <td>OpenJavaFX</td>
+    <td><a href="http://gluonhq.com/download/javafx-11-0-2-sdk-mac" class="clickable" target="_blank">Click to download</a></td>
+  </tr>
+  <tr>
+    <td>Tizen Studio setup file</td>
+    <td><a href="https://developer.tizen.org/development/tizen-studio/download#" class="clickable" target="_blank">Click to download</a>     </td>
+  </tr>
+</table>
+
+<blockquote>
+  <p><strong>Note:</strong></p>
+
+  <ul>
+    <li>Download the relevant version based on the target device operating system, for example: <strong>openjdk-10_osx-x64_bin.tar.gz</strong>.</li>
+    <li>Ensure that you download the JavaFX <OS> SDK product only, for example: JavaFX Mac OS X SDK.</OS></li>
+  </ul>
+</blockquote>
+
+<p><strong>Disclaimer:</strong> The third party download links are subjected to change. Search and download the appropriate software.</p>
+
+<h3 id="additional-requirements">Additional Requirements</h3>
+
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Requirement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Prerequisite packages (<code>msgfmt</code>) to build PO files
+</td>
+<td>On the terminal prompt, type the following commands:
+<pre><code>$ brew install gettext
+$ brew link gettext -force
+$ which msgfmt
+/usr/local/bin/msgfmt
+</code></pre>
+<strong>Note</strong><br />
+To install Homebrew, see the<a href="http://brew.sh/">Homebrew documentation</a>.
+</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="set-up-open-jdk">Set Up Open JDK</h2>
+
+<p>To set up Open JDK, follow these steps:</p>
+
+<ol>
+  <li>Extract the downloaded <strong>openjdk-10_osx-x64_bin.tar.gz</strong> file at your preferred location.
+    <ul>
+      <li>
+        <p>Locate the <strong>jdk</strong> directory where you extracted the <strong>openjdk-10_osx-x64_bin.tar.gz</strong> file.</p>
+
+        <blockquote>
+          <p><strong>Note:</strong></p>
+
+          <p>The <strong>jdk</strong> directory is created as a result of extraction.</p>
+        </blockquote>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Copy the <strong>jdk</strong> folder, paste it in the <strong>Library/Java/JavaVirtualMachines</strong> location.</p>
+
+    <blockquote>
+      <p><strong>Note:</strong></p>
+
+      <p>This is the system default location, for all JDK files.</p>
+    </blockquote>
+  </li>
+  <li>Open terminal.</li>
+  <li>Type the <code class="highlighter-rouge">java –version</code> command to verify whether the OpenJDK version 10 is installed.
+    <blockquote>
+      <p><strong>Note:</strong></p>
+
+      <p>If the OpenJDK version 10 is not installed, proceed with step 5.</p>
+    </blockquote>
+  </li>
+  <li>Open the <strong>.profile</strong> or the <strong>.bash_profile file</strong>, add the <code class="highlighter-rouge">export JAVA_HOME =/Library/Java/JavaVirtualMachines/jdk-10.jdk/Contents/Home</code> line.</li>
+  <li>Type <code class="highlighter-rouge">java –version</code> command to verify whether the OpenJDK version 10 is installed.
+    <blockquote>
+      <p>Note:</p>
+
+      <ul>
+        <li>In this installation guide, setting up OpenJDK is covered. However,  Oracle JDK versions until version 10 are also supported.</li>
+        <li>For Oracle JDK 10 installation steps, see the <a href="https://docs.oracle.com/javase/10/install/installation-jdk-and-jre-macos.htm#JSJIG-GUID-F575EB4A-70D3-4AB4-A20E-DBE95171AB5F">Oracle official site</a>.</li>
+        <li>If you have installed Oracle JDK 10 or below already, you can skip the step.</li>
+      </ul>
+    </blockquote>
+  </li>
+</ol>
+
+<h2 id="launch-installer">Launch Installer</h2>
+
+<p>To launch the installer, follow these steps:</p>
+
+<ol>
+  <li>Double click on the downloaded installer file <strong>web-ide_Tizen_Studio_x.x-64.dmg</strong>.
+    <blockquote>
+      <p>Note:</p>
+
+      <p><strong>x.x</strong> represents the latest version of Tizen Studio, for example:web-ide_Tizen_Studio_<strong>3.2</strong>-64.dmg.</p>
+    </blockquote>
+  </li>
+  <li>Accept the software license.
+    <blockquote>
+      <p><strong>Note:</strong></p>
+
+      <p>The license contains important legal notices for using Tizen Studio. Read it fully, and click <strong>Accept</strong> only if you agree with the license terms.</p>
+    </blockquote>
+
+    <p><img src="./media/install_sdk_license.png" alt="Tizen Studio License Agreement" /></p>
+  </li>
+  <li>
+    <p>Click <strong>Browse</strong> and specify a new directory to set the SDK location and the data location.</p>
+
+    <p><img src="./media/install_sdk_directory.png" alt="Set SDK and data location" /></p>
+
+    <blockquote>
+      <p><strong>Note:</strong></p>
+
+      <p>If the new directory is valid, it shows no errors.</p>
+    </blockquote>
+  </li>
+  <li>Click <strong>Install</strong>.</li>
+  <li>
+    <p>Click <strong>Finish</strong> and close the installer.</p>
+
+    <p><img src="./media/migration_finish_instal.png" alt="Installation complete" /></p>
+    <blockquote>
+      <p><strong>Note:</strong></p>
+
+      <ul>
+        <li>If you want to install additional platforms and tools, launch  Package Manager by selecting the Launch Package Manager <strong>check box</strong> and click <strong>Finish</strong>.</li>
+        <li>Use Tizen Studio Package Manager, to install and update additional tools.</li>
+        <li>For more information on the Package Manager, see <a href="./update-sdk.md">Updating Tizen Studio</a>.</li>
+      </ul>
+    </blockquote>
+  </li>
+</ol>
+
+<h2 id="verify-installation">Verify Installation</h2>
+
+<p>To verify whether the installation is successful or not, click <strong>Tizen Studio icon</strong>. The Tizen Studio startup window must appear.</p>
 
 
 						</section>
@@ -346,7 +493,7 @@ This process  server was an overhead on the server and time elaped was on higher
     </ul>
 </div>
 <script>
-    $("a[href$='/tizenstudio/setup/faq/']").addClass("active currentPage");
+    $("a[href$='/tizenstudio/setup/mac/']").addClass("active currentPage");
 </script>
 						</div>
 					</nav>
@@ -364,7 +511,7 @@ This process  server was an overhead on the server and time elaped was on higher
                                         </li>
                                         
 										<li>
-                                            <a href="https://github.com/samsung-test/samsung-test.github.io/edit/1.1/tizenstudio/setup/faq.md" target="_blank">
+                                            <a href="https://github.com/samsung-test/samsung-test.github.io/edit/1.1/tizenstudio/setup/mac.md" target="_blank">
                                                 <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                                                 Edit Page
                                             </a>
@@ -381,7 +528,16 @@ This process  server was an overhead on the server and time elaped was on higher
 									<div id="side-toc-title">On this page:</div>
 									
 <ul id="my_toc" class="inline_toc">
-  <li><a href="#frequently-asked-questions" class="nomunge">Frequently Asked Questions</a></li>
+  <li><a href="#system-prerequisites" class="nomunge">System Prerequisites</a>
+    <ul>
+      <li><a href="#hardware-requirements" class="nomunge">Hardware Requirements</a></li>
+      <li><a href="#software-requirements" class="nomunge">Software Requirements</a></li>
+      <li><a href="#additional-requirements" class="nomunge">Additional Requirements</a></li>
+    </ul>
+  </li>
+  <li><a href="#set-up-open-jdk" class="nomunge">Set Up Open JDK</a></li>
+  <li><a href="#launch-installer" class="nomunge">Launch Installer</a></li>
+  <li><a href="#verify-installation" class="nomunge">Verify Installation</a></li>
 </ul>
 
 
