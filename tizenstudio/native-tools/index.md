@@ -1,5 +1,5 @@
 ---
-title: Native Tools 
+title: Native tools  
 desc: Tizen Studio
 keywords: Tizen, OS, Open Source
 ---

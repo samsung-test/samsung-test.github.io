@@ -1,3 +1,9 @@
+---
+title: Design 
+desc: Tizen Studio
+keywords: Tizen, OS, Open Source
+---
+
 # "Air"
 
 "Air" is one of the inspirations behind the Tizen design. The concept was introduced to achieve the key principles of openness, flow, curiosity, and focus. "Air" is a conceptual element that inspires an open, flexible, and rich visual experience. Designs should be created to satisfy users with visually reinforced presentations.
