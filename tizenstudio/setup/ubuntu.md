@@ -47,7 +47,7 @@ Ensure that the following system prerequisites are met:
 
 <table>
   <tr>
-    <th>Ubuntu</th>
+    <th colspan="2" align="left">Ubuntu</th>
   </tr>
   <tr>
     <td>Version</td>
@@ -66,7 +66,7 @@ Ensure that the following system prerequisites are met:
   </tr>
   <tr>
     <td>Open JDK</td>
-    <td width=520px>
+    <td>
     <a href="https://download.java.net/java/GA/jdk10/10/binaries/openjdk-10_linux-x64_bin.tar.gz" target="_blank"> Click to Download</a>
     </td>
   </tr>
