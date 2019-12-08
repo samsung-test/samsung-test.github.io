@@ -32,7 +32,7 @@ Select the following as per target operating system and follow the installation 
         <div class="col-sm-12 col-md-12 col-lg-4 block">
             <div class="component">
                 <div class="component-icon">
-                    <a href="./tizenstudio/setup/windows/"> <img src="./tizenstudio/setupmedia/win.png" alt="Windows"> </a>
+                    <a href="./tizenstudio/setup/win/"> <img src="./tizenstudio/setupmedia/win.png" alt="Windows"> </a>
                 </div>
                 <h3 id="tizen-for-windows"><a href="windows/">Windows</a></h3>
              </div>
@@ -40,7 +40,7 @@ Select the following as per target operating system and follow the installation 
         <div class="col-sm-12 col-md-12 col-lg-4 block">
             <div class="component">
                 <div class="component-icon">
-                    <a href="./tizenstudio/setup/ubuntu/"> <img src="./tizenstudio/setupmedia/linux1.png" alt="Linux"> </a>
+                    <a href="./tizenstudio/setup/linux/"> <img src="./tizenstudio/setupmedia/linux1.png" alt="Linux"> </a>
                 </div>
                 <h3 id="tizen-for-linux"><a href="ubuntu">Ubuntu</a></h3>
             </div>
