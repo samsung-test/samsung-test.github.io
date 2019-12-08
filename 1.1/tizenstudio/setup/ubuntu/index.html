@@ -4,9 +4,9 @@
 	<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="icon"  href="/favicon.ico" />
-<title>Installation</title>
-<meta name="description" content="Install Tizen"/>
-<meta name="keywords" content="Tizen, OS, Open Source, Install"/>
+<title>Install Tizen Studio on Ubuntu</title>
+<meta name="description" content="Install Tizen Studio on Ubuntu"/>
+<meta name="keywords" content="Tizen, OS, Open Source"/>
 <base id="baseURL" href="/1.1/" />
 <meta id="docsVersion" content="1.1" />
 <meta name="last-modified" content="2019-12-08 13:16:59 +0530" />
@@ -120,7 +120,7 @@
           
       
       <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-         <span property="name">Installation</span>
+         <span property="name">Install Tizen Studio on Ubuntu</span>
          <meta property="position" content="3" />
       </li>
       
@@ -192,50 +192,269 @@
 </style>
 
 							<div class="widgetLatestVersionNotification"></div>
-							<h1 id="installation">Installation</h1>
+							<h1 id="install-tizen-studio-on-ubuntu">Install Tizen Studio on Ubuntu</h1>
 
-<p>This page explains about options available to install Tizen Studio on your development hardware. Tizen Studio runs on all major operating systems like Windows, macOS, Ubuntu.You can install any release of the Tizen Studio. However, it is recommended that you install the most recent release and ensure the following:</p>
+<p>This page guides you with downloading and installing Tizen Studio on your development hardware.</p>
+
+<p>To have the optimal installation experience, follow these steps chronologically:</p>
 
 <ul>
-  <li>Plan your installation: check for the necessary hardware and software requirements.</li>
-  <li>Install Tizen Studio:  follow the installation guides for each operating system.</li>
-  <li>Configure: After installation, to have optimal development experience, configure various Tizen Studio components.</li>
+  <li>System prerequisites
+    <ul>
+      <li>Hardware requirements</li>
+      <li>Software requirements</li>
+    </ul>
+  </li>
+  <li>Setup Open JDK in Ubuntu</li>
+  <li>Install dependencies</li>
+  <li>Launch installer</li>
+  <li>Verify installation</li>
 </ul>
 
-<p>Select the following as per target operating system and follow the installation instructions:</p>
+<style type="text/css">
+a.clickable   { width: 100%; height: 100%; }
+a.clickable:hover   { background-color:; color: #FFFFF; }
+</style>
 
-<div class="component-container">
-    <!--start row-->
-    <div class="row">
-        <div class="col-sm-12 col-md-12 col-lg-4 block">
-            <div class="component">
-                <div class="component-icon">
-                    <a href="./tizenstudio/setup/mac/"> <img src="./tizenstudio/setup/media/apple1.png" alt="Mac" /> </a>
-                  <p></p>
-                </div>
-                <h3 id="tizen-for-mac"><a href="mac/">Mac</a></h3>
-            </div>
-        </div>
-        <div class="col-sm-12 col-md-12 col-lg-4 block">
-            <div class="component">
-                <div class="component-icon">
-                    <a href="./tizenstudio/setup/win/"> <img src="./tizenstudio/setup/media/win.png" alt="Windows" /> </a>
-                 <p></p>
-                </div>
-                <h3 id="tizen-for-windows"><a href="windows/">Windows</a></h3>
-             </div>
-        </div>
-        <div class="col-sm-12 col-md-12 col-lg-4 block">
-            <div class="component">
-                <div class="component-icon">
-                    <a href="./tizenstudio/setup/linux/"> <img src="./tizenstudio/setup/media/linux1.png" alt="Linux" /> </a>
-                  <p></p>
-                </div>
-                <h3 id="tizen-for-linux"><a href="ubuntu">Ubuntu</a></h3>
-            </div>
-        </div>
-    </div>
-</div>
+<h3 id="system-prerequisites">System Prerequisites</h3>
+
+<p>Ensure that the following system prerequisites are met:</p>
+
+<h4 id="hardware-requirements">Hardware Requirements</h4>
+<table>
+  <tr>
+      &lt;td width=150px&gt;CPU&lt;/td&gt;
+    &lt;td colspan="3" width=50px&gt;Dual Core, 2Ghz or faster&lt;/td&gt;
+  </tr>
+  <tr>
+    <td>Architecture</td>
+    &lt;td width=520px&gt;x32 or x64 &lt;/td&gt;
+  </tr>
+  <tr>
+    <td>Memory</td>
+    <td colspan="3">3GB or more </td>
+  </tr>
+  <tr>
+    <td>Disk Space</td>
+    <td colspan="3">6 GB or more </td>
+  </tr>
+</table>
+
+<h4 id="software-requirements">Software Requirements</h4>
+
+<table>
+  <tr>
+    &lt;th colspan="2" align=left&gt;Ubuntu&lt;/th&gt;
+  </tr>
+  <tr>
+    &lt;td width=150px&gt;Version&lt;/td&gt;
+    &lt;td width=520px&gt;16.04/ 14.04/ 18.04&lt;/td&gt;
+  </tr>
+  <tr>
+    <td>Bit</td>
+    <td>32 or 64 bit</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Software</th>
+    <th>Download Link </th>
+  </tr>
+  <tr>
+    <td>Open JDK</td>
+    &lt;td width=520px&gt;
+    <a href="https://download.java.net/java/GA/jdk10/10/binaries/openjdk-10_linux-x64_bin.tar.gz" class="clickable" target="_blank">https://download.java.net/java/GA/jdk10/10/binaries/openjdk-10_linux-x64_bin.tar.gz</a>
+    &lt;/td&gt;
+  </tr>
+  <tr>
+    <td>OpenJavaFX</td>
+    <td><a href="http://gluonhq.com/download/javafx-11-0-2-sdk-linux/" class="clickable" target="_blank">http://gluonhq.com/download/javafx-11-0-2-sdk-linux/</a></td>
+  </tr>
+  <tr>
+    <td>Tizen Studio setup file</td>
+    <td>&lt;a href=https://developer.tizen.org/development/tizen-studio/download# class="clickable" target="_blank"&gt;https://developer.tizen.org/development/tizen-studio/download#&lt;/a&gt;</td>
+  </tr>
+</table>
+
+<blockquote>
+  <p><strong>Note</strong></p>
+
+  <ul>
+    <li>Download the relevant version based on the target device operating system, for example, <strong>openjdk-10_linux-x64_bin.tar.gz</strong>.</li>
+    <li>Ensure that you download the JavaFX <OS> SDK product only, for example: JavaFX Linux SDK.</OS></li>
+  </ul>
+</blockquote>
+
+<p><strong>Disclaimer:</strong> The third party download links are subjected to change. Search and download the appropriate software.</p>
+
+<h2 id="set-up-open-jdk">Set Up Open JDK</h2>
+
+<p>To set up Open JDK, follow these steps:</p>
+
+<ol>
+  <li>Extract the downloaded <strong>openjdk-10_linux-x64_bin.tar.gz</strong> and  <strong>javafx-11-0-2-sdk-linux.zip</strong> files at your preferred location.
+    <ul>
+      <li>Locate the <strong>jdk-10</strong> and the <strong>javafx-sdk-11.0.2</strong> directories.
+        <blockquote>
+          <p><strong>Note</strong></p>
+
+          <p>The <strong>jdk-10</strong>, <strong>javafx-sdk-11.0.2</strong> directories are created as a result of extraction.</p>
+        </blockquote>
+      </li>
+    </ul>
+  </li>
+  <li>Copy all the files except the <strong>src.zip</strong> file from the <strong>lib</strong> sub directory located in the <strong>javafx-sdk-11.0.2</strong> directory.</li>
+  <li>Paste all the copied files in the <strong>lib</strong> folder located in the <strong>jdk-10</strong> directory.
+    <blockquote>
+      <p>Note:</p>
+
+      <ul>
+        <li>In this installation guide, setting up OpenJDK is covered. However, Oracle JDK versions until version 10 are also supported.</li>
+        <li>For Oracle JDK 10 installation steps, see the <a href="https://docs.oracle.com/javase/10/install/installation-jdk-and-jre-linux-platforms.htm#JSJIG-GUID-79FBE4A9-4254-461E-8EA7-A02D7979A161">Oracle official site</a>.</li>
+        <li>If you have installed Oracle JDK 10 or below already, you can skip <strong>Setting up OpenJDK</strong>.</li>
+      </ul>
+    </blockquote>
+  </li>
+</ol>
+
+<h3 id="set-up-open-jdk-path">Set Up Open JDK Path</h3>
+
+<p>To set up the JDK path, follow these steps:</p>
+
+<ol>
+  <li>Open the terminal.</li>
+  <li>Type the following command in the terminal to set JAVA_HOME as the OpenJDK directory path, for example:
+    <ul>
+      <li><code class="highlighter-rouge">JAVA_HOME=/home/&lt;username&gt;/Desktop/openJDK/jdk-10.0.2/</code>.</li>
+    </ul>
+  </li>
+  <li>Type the following commands in the terminal one after the other to complete the process:
+    <ul>
+      <li><code class="highlighter-rouge"> sudo apt update-alternatives --install /usr/bin/java java ${JAVA_HOME%*/}/bin/java 20000</code></li>
+      <li><code class="highlighter-rouge"> sudo apt update-alternatives --install /usr/bin/javac javac ${JAVA_HOME%*/}/bin/javac 20000</code></li>
+    </ul>
+  </li>
+  <li>Type the following command to get a list of JDK versions installed:
+    <ul>
+      <li><code class="highlighter-rouge"> sudo apt update-alternatives --config java</code>
+        <blockquote>
+          <p><strong>Note</strong></p>
+
+          <p>If there are multiple versions of JDK installed, enter the selection number to choose your desired JDK version.</p>
+        </blockquote>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>To configure the default Java compiler, type the following command:</p>
+
+    <ul>
+      <li>
+        <p><code class="highlighter-rouge"> sudo apt update-alternatives --config javac</code></p>
+
+        <blockquote>
+          <p><strong>Note</strong></p>
+
+          <p><strong>javac</strong> is used for compilation. For more information on the differences between java and javac, see the <a href="https://docs.oracle.com">Oracle documentation</a>.</p>
+        </blockquote>
+      </li>
+    </ul>
+  </li>
+  <li>Type the <code class="highlighter-rouge">java –version</code> command to verify whether the OpenJDK version 10 is installed.</li>
+</ol>
+
+<h2 id="install-dependencies">Install Dependencies</h2>
+
+<p>The installer package consists of basic and immediate libraries. However, the Tizen Studio application requires additional libraries in order to work flawlessly.</p>
+
+<p>To install the dependencies, open the terminal and execute the following commands:</p>
+
+<p><code class="highlighter-rouge">sudo apt install expect
+ sudo apt install gtk2-engines-pixbuf
+ sudo apt install libgnome2-0
+ sudo apt install qemu-user-static
+ sudo apt install libwebkitgtk-1.0-0
+ sudo apt install libwebkitgtk-1.0-0 cpio rpm2cpio
+ sudo apt install gettext
+ sudo apt install gksudo
+ sudo apt install module-init-tools
+ sudo apt install libudev-dev
+ sudo apt install libsdl1.2debian
+ sudo apt install bridge-utils
+ sudo apt install openvpn
+</code></p>
+
+<h3 id="install-emulator-dependencies">Install Emulator Dependencies</h3>
+
+<p>The Emulator also requires a few additional libraries to work smoothly. To install these dependencies, open the terminal and enter the following command:</p>
+
+<p><code class="highlighter-rouge"> sudo apt install acl bridge-utils openvpn libfontconfig1 libglib2.0-0 libjpeg-turbo8 libpixman-1-0 libpng12-0 libsdl1.2debian libsm6 libv4l-0 libx11-xcb1 libxcb-icccm4 libxcb-image0 libxcb-randr0 libxcb-render-util0 libxcb-shape0 libxcb-xfixes0 libxi6</code></p>
+
+<h2 id="launch-installer">Launch Installer</h2>
+
+<p>Navigate to the directory where you have saved the installer file and proceed with the further instructions.</p>
+
+<p>To launch the installer, follow these steps:</p>
+
+<ol>
+  <li>
+    <p>Open the terminal and execute the following commands:</p>
+
+    <ul>
+      <li><code class="highlighter-rouge">chmod +x web-ide_Tizen_Studio_x.x_ubuntu-64.bin</code></li>
+      <li><code class="highlighter-rouge">./web-ide_Tizen_Studio_x.x_ubuntu-64.bin</code>
+        <blockquote>
+          <p>Note:</p>
+
+          <p><strong>x.x</strong> represents the latest version of Tizen Studio, for example: web-ide_Tizen_Studio_<strong>3.3</strong>_ubuntu-64.bin.</p>
+        </blockquote>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Accept the software license.</p>
+
+    <blockquote>
+      <p><strong>Note</strong></p>
+
+      <p>The license contains important legal notices for using Tizen Studio. Read it fully, and click <strong>Accept</strong> only if you agree with the license terms.</p>
+    </blockquote>
+
+    <p><img src="./media/install_sdk_license.png" alt="Tizen Studio License Agreement" /></p>
+  </li>
+  <li>
+    <p>Click <strong>Browse</strong> and specify a new directory to set the SDK location and the SDK data location.</p>
+
+    <p><img src="./media/install_sdk_directory.png" alt="Set SDK and data location" /></p>
+
+    <blockquote>
+      <p><strong>Note</strong></p>
+
+      <p>If the new directory is valid, it shows no errors.</p>
+    </blockquote>
+  </li>
+  <li>Click <strong>Install</strong>.</li>
+  <li>
+    <p>Click <strong>Finish</strong> to close the installer.</p>
+
+    <p><img src="./media/migration_finish_instal.png" alt="Installation complete" /></p>
+
+    <blockquote>
+      <p><strong>Note</strong></p>
+
+      <p>If you want to install additional platforms and tools, launch Package Manager by selecting the Launch Package Manager <strong>check box</strong> and click <strong>Finish</strong>.</p>
+      <ul>
+        <li>Use Tizen Studio Package Manager, to install and update additional tools.</li>
+        <li>For more information on the Package Manager, see <a href="./update-sdk.md">Updating Tizen Studio</a>.</li>
+      </ul>
+    </blockquote>
+  </li>
+</ol>
+
+<h3 id="verify-installation">Verify Installation</h3>
+
+<p>To verify whether the installation is successful or not, click <strong>Tizen Studio icon</strong>. The Tizen Studio startup window must appear.</p>
 
 						</section>
 					</main>
@@ -292,7 +511,7 @@
                             
                             <a 
                                 href="tizenstudio/setup/install-sdk/"
-                                class="active currentPage"
+                                class=""
                                 >
                                 Setup
                             </a>
@@ -302,7 +521,7 @@
                             
                             <a 
                                 href="tizenstudio/setup/install-sdk/"
-                                class="active currentPage"
+                                class=""
                                 >
                                 Setup
                             </a>
@@ -321,7 +540,7 @@
     </ul>
 </div>
 <script>
-    $("a[href$='/tizenstudio/setup/install-sdk/']").addClass("active currentPage");
+    $("a[href$='/tizenstudio/setup/ubuntu/']").addClass("active currentPage");
 </script>
 						</div>
 					</nav>
@@ -339,7 +558,7 @@
                                         </li>
                                         
 										<li>
-                                            <a href="https://github.com/samsung-test/samsung-test.github.io/edit/1.1/tizenstudio/setup/install-sdk.md" target="_blank">
+                                            <a href="https://github.com/samsung-test/samsung-test.github.io/edit/1.1/tizenstudio/setup/ubuntu.md" target="_blank">
                                                 <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                                                 Edit Page
                                             </a>
@@ -356,10 +575,20 @@
 									<div id="side-toc-title">On this page:</div>
 									
 <ul id="my_toc" class="inline_toc">
-  <li><a href="#tizen-for-mac" class="nomunge">Mac</a>
+  <li><a href="#system-prerequisites" class="nomunge">System Prerequisites</a></li>
+  <li><a href="#set-up-open-jdk" class="nomunge">Set Up Open JDK</a>
     <ul>
-      <li><a href="#tizen-for-windows" class="nomunge">Windows</a></li>
-      <li><a href="#tizen-for-linux" class="nomunge">Ubuntu</a></li>
+      <li><a href="#set-up-open-jdk-path" class="nomunge">Set Up Open JDK Path</a></li>
+    </ul>
+  </li>
+  <li><a href="#install-dependencies" class="nomunge">Install Dependencies</a>
+    <ul>
+      <li><a href="#install-emulator-dependencies" class="nomunge">Install Emulator Dependencies</a></li>
+    </ul>
+  </li>
+  <li><a href="#launch-installer" class="nomunge">Launch Installer</a>
+    <ul>
+      <li><a href="#verify-installation" class="nomunge">Verify Installation</a></li>
     </ul>
   </li>
 </ul>
