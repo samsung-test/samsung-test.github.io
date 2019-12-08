@@ -4,9 +4,9 @@
 	<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="icon"  href="/favicon.ico" />
-<title>Installation</title>
-<meta name="description" content="Install Tizen"/>
-<meta name="keywords" content="Tizen, OS, Open Source, Install"/>
+<title>Frequently Asked Questions</title>
+<meta name="description" content="FAQ's"/>
+<meta name="keywords" content="Tizen, OS, Open Source"/>
 <base id="baseURL" href="/1.1/" />
 <meta id="docsVersion" content="1.1" />
 <meta name="last-modified" content="2019-12-08 13:11:11 +0530" />
@@ -120,7 +120,7 @@
           
       
       <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-         <span property="name">Installation</span>
+         <span property="name">Frequently Asked Questions</span>
          <meta property="position" content="3" />
       </li>
       
@@ -192,50 +192,75 @@
 </style>
 
 							<div class="widgetLatestVersionNotification"></div>
-							<h1 id="installation">Installation</h1>
+							<h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
 
-<p>This page explains about options available to install Tizen Studio on your development hardware. Tizen Studio runs on all major operating systems like Windows, macOS, Ubuntu.You can install any release of the Tizen Studio. However, it is recommended that you install the most recent release and ensure the following:</p>
+<p>This page contains answers to most commonly asked questions or errors that you may encounter while installing Tizen studio and developing apps in Tizen Studio.</p>
 
 <ul>
-  <li>Plan your installation: check for the necessary hardware and software requirements.</li>
-  <li>Install Tizen Studio:  follow the installation guides for each operating system.</li>
-  <li>Configure: After installation, to have optimal development experience, configure various Tizen Studio components.</li>
+  <li>
+    <p><strong>How to run Tizen Studio on Ubuntu 18.04?</strong></p>
+
+    <p>Tizen studio supports Ubuntu 18.04. However, Ubuntu 18.04 distribution does not include the runtime libraray <strong>libpng12-0</strong>. To experience optimal installation experience, install the runtime library and run the following command:</p>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ wget http://mirrors.kernel.org/ubuntu/pool/main/libp/libpng/libpng12-0_1.2.54-1ubuntu1_amd64.deb
+ $ sudo dpkg -i libpng12-0_1.2.54-1ubuntu1_amd64.deb 
+</code></pre></div>    </div>
+
+    <p>Generally, installing packages from older distributions may break apt installation system. Since its dependencies are also present in Ubuntu-18.04, it will not break apt installation system.</p>
+  </li>
+  <li>
+    <p><strong>How to manage certificates and package applications in different Ubuntu setups?</strong></p>
+
+    <p>In Linux operating systems, Tizen Certificate Manager in Tizen Studio stores the passwords of the certificates in the <strong>gnome-keyring</strong> application. Therefore, you must enable the gnome-keyring application to ensure that Tizen Studio functions flawlessly.</p>
+
+    <p>The remote login in a Linux desktop system does not have the <strong>DBUS_SESSION_BUS_ADDRESS</strong> variable set in the session. 
+  To store and lookup passwords in the host’s Login keyring, you must set the <strong>DBUS_SESSION_BUS_ADDRESS</strong> variable.
+  For more information, see Manage certificates through <a href="https://developer.tizen.org/community/tip-tech/how-manage-certificates-and-package-applications-different-ubuntu-setups">remote login, headless Linux sytems, and Docker containers</a>.</p>
+  </li>
+  <li>
+    <p><strong>What to do when Tizen Studio fails to launch?</strong></p>
+
+    <p>Tizen Studio fails to launch if you have incorrect JDK version installed on your system. Ensure that you have recommended version of JDK, OpenJDK installed.</p>
+
+    <p>Check your JDK version and download an appropriate version.</p>
+
+    <p>Verify you are using a supported version  JDK 8 or OpenJDK 10.</p>
+
+    <ol>
+      <li>On your terminal or console window,  type <code class="highlighter-rouge">java -version</code>.
+If this command does not show which version is installed, see <a href="https://www.java.com/en/download/help/version_manual.xml">How can I find which version of Java is installed without running an applet in Windows or Mac</a>.</li>
+      <li>Verify whether the available version is JDK 8 and OpenJDK 10.</li>
+      <li>Set or update your JAVA_HOME environment variable. For more information, see the installation pages.</li>
+    </ol>
+
+    <p>To download an earlier version of the JDK, see <a href="https://www.oracle.com/technetwork/java/archive-139210.html">Oracle Java Archive</a>.</p>
+  </li>
+  <li>
+    <p><strong>How to do form validation using Tizen Web?</strong></p>
+
+    <p>Form validation normally occurs at the server end after the client enters all necessary data. The user clicks <strong>Submit</strong> button to send the data to the server. 
+If the data entered by a client is incorrect or the data is missing, the server responds back and user needs to resubmit the form with corrrect information. 
+This process  server was an overhead on the server and time elaped was on higher side, For more information, see <a href="https://developer.tizen.org/community/tip-tech/form-validation-using-tizen-web">simple form validation in Tizen Web app</a>.</p>
+  </li>
+  <li>
+    <p><strong>How to implement vibration API in Tizen Web app?</strong></p>
+
+    <p>To provide tactile feedback to the user or to interact with user even when the device volume is low, vibration provides a better user experience and improves the perception of application. When it comes to the Tizen app development, external third party library is not required to implement vibration feature, as you can use the internal Tizen API, for more information, see <a href="https://developer.tizen.org/community/tip-tech/vibration-api-tizen-web-app">Vibration API</a>.</p>
+  </li>
+  <li>
+    <p><strong>How to troubleshoot compatibility with previous versions of Tizen Studio?</strong></p>
+
+    <p>The Following are the various conditions that can cause compatibility issues:</p>
+    <ul>
+      <li>You are using an older workspace in the installed version of Tizen Studio.</li>
+      <li>The Tizen Web, Tizen Native and Tizen Native UI Builder perspectives are used.</li>
+      <li>The Tizen Native or Tizen Native Builder perspective was used previously.</li>
+      <li>After installing the latest Tizen Studio using the installer without installing other tools using package manager.</li>
+    </ul>
+
+    <p>For more information, see <a href="https://developer.tizen.org/community/tip-tech/trouble-shooting-compatibility-previous-versions-tizen-studio">troubleshooting for compatibility</a>.</p>
+  </li>
 </ul>
 
-<p>Select the following as per target operating system and follow the installation instructions:</p>
-
-<div class="component-container">
-    <!--start row-->
-    <div class="row">
-        <div class="col-sm-12 col-md-12 col-lg-4 block">
-            <div class="component">
-                <div class="component-icon">
-                    <a href="./tizenstudio/setup/mac/"> <img src="./tizenstudio/setup/media/apple1.png" alt="Mac" /> </a>
-                  <p></p>
-                </div>
-                <h3 id="tizen-for-mac"><a href="mac/">Mac</a></h3>
-            </div>
-        </div>
-        <div class="col-sm-12 col-md-12 col-lg-4 block">
-            <div class="component">
-                <div class="component-icon">
-                    <a href="./tizenstudio/setup/win/"> <img src="./tizenstudio/setup/media/win.png" alt="Windows" /> </a>
-                 <p></p>
-                </div>
-                <h3 id="tizen-for-windows"><a href="windows/">Windows</a></h3>
-             </div>
-        </div>
-        <div class="col-sm-12 col-md-12 col-lg-4 block">
-            <div class="component">
-                <div class="component-icon">
-                    <a href="./tizenstudio/setup/linux/"> <img src="./tizenstudio/setup/media/linux1.png" alt="Linux" /> </a>
-                  <p></p>
-                </div>
-                <h3 id="tizen-for-linux"><a href="ubuntu">Ubuntu</a></h3>
-            </div>
-        </div>
-    </div>
-</div>
 
 						</section>
 					</main>
@@ -292,7 +317,7 @@
                             
                             <a 
                                 href="tizenstudio/setup/install-sdk/"
-                                class="active currentPage"
+                                class=""
                                 >
                                 Setup
                             </a>
@@ -302,7 +327,7 @@
                             
                             <a 
                                 href="tizenstudio/setup/install-sdk/"
-                                class="active currentPage"
+                                class=""
                                 >
                                 Setup
                             </a>
@@ -321,7 +346,7 @@
     </ul>
 </div>
 <script>
-    $("a[href$='/tizenstudio/setup/install-sdk/']").addClass("active currentPage");
+    $("a[href$='/tizenstudio/setup/faq/']").addClass("active currentPage");
 </script>
 						</div>
 					</nav>
@@ -339,7 +364,7 @@
                                         </li>
                                         
 										<li>
-                                            <a href="https://github.com/samsung-test/samsung-test.github.io/edit/1.1/tizenstudio/setup/install-sdk.md" target="_blank">
+                                            <a href="https://github.com/samsung-test/samsung-test.github.io/edit/1.1/tizenstudio/setup/faq.md" target="_blank">
                                                 <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                                                 Edit Page
                                             </a>
@@ -356,12 +381,7 @@
 									<div id="side-toc-title">On this page:</div>
 									
 <ul id="my_toc" class="inline_toc">
-  <li><a href="#tizen-for-mac" class="nomunge">Mac</a>
-    <ul>
-      <li><a href="#tizen-for-windows" class="nomunge">Windows</a></li>
-      <li><a href="#tizen-for-linux" class="nomunge">Ubuntu</a></li>
-    </ul>
-  </li>
+  <li><a href="#frequently-asked-questions" class="nomunge">Frequently Asked Questions</a></li>
 </ul>
 
 
