@@ -4,12 +4,12 @@
 	<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="icon"  href="/favicon.ico" />
-<title>Installation</title>
-<meta name="description" content="Install Tizen"/>
-<meta name="keywords" content="Tizen, OS, Open Source, Install"/>
-<base id="baseURL" href="/1.1/" />
+<title>Install Tizen Studio on Windows</title>
+<meta name="description" content="Install Tizen Studio"/>
+<meta name="keywords" content="Tizen, OS, Open Source"/>
+<base id="baseURL" href="/latest/" />
 <meta id="docsVersion" content="1.1" />
-<meta name="last-modified" content="2019-12-08 13:18:38 +0530" />
+<meta name="last-modified" content="2019-12-08 13:18:44 +0530" />
 <meta http-equiv="cache-control" content="max-age=24" />
 <meta http-equiv="cache-control" content="no-cache" />
 <meta http-equiv="Cache-Control" content="no-store" />
@@ -120,7 +120,7 @@
           
       
       <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-         <span property="name">Installation</span>
+         <span property="name">Install Tizen Studio on Windows</span>
          <meta property="position" content="3" />
       </li>
       
@@ -192,50 +192,227 @@
 </style>
 
 							<div class="widgetLatestVersionNotification"></div>
-							<h1 id="installation">Installation</h1>
+							<h1 id="install-tizen-studio-on-windows">Install Tizen Studio on Windows</h1>
 
-<p>This page explains about options available to install Tizen Studio on your development hardware. Tizen Studio runs on all major operating systems like Windows, macOS, Ubuntu.You can install any release of the Tizen Studio. However, it is recommended that you install the most recent release and ensure the following:</p>
+<p>This page explains the process to download and install Tizen Studio on your development hardware.</p>
+
+<p>To have optimal installation experience, follow these steps chronologically:</p>
 
 <ul>
-  <li>Plan your installation: check for the necessary hardware and software requirements.</li>
-  <li>Install Tizen Studio:  follow the installation guides for each operating system.</li>
-  <li>Configure: After installation, to have optimal development experience, configure various Tizen Studio components.</li>
+  <li>System prerequisites
+    <ul>
+      <li>Hardware requirements</li>
+      <li>Software requirements</li>
+    </ul>
+  </li>
+  <li>Setup OpenJDK in Windows</li>
+  <li>Launch installer</li>
+  <li>Verify installation</li>
 </ul>
 
-<p>Select the following as per target operating system and follow the installation instructions:</p>
+<style type="text/css">
+a.clickable   { width: 100%; height: 100%; }
+a.clickable:hover   { background-color: ; color: #FFFFF; }
+</style>
 
-<div class="component-container">
-    <!--start row-->
-    <div class="row">
-        <div class="col-sm-12 col-md-12 col-lg-4 block">
-            <div class="component">
-                <div class="component-icon">
-                    <a href="./tizenstudio/setup/mac/"> <img src="./tizenstudio/setup/media/apple1.png" alt="Mac" /> </a>
-                  <p></p>
-                </div>
-                <h3 id="tizen-for-mac"><a href="mac/">Mac</a></h3>
-            </div>
-        </div>
-        <div class="col-sm-12 col-md-12 col-lg-4 block">
-            <div class="component">
-                <div class="component-icon">
-                    <a href="./tizenstudio/setup/win/"> <img src="./tizenstudio/setup/media/win.png" alt="Windows" /> </a>
-                 <p></p>
-                </div>
-                <h3 id="tizen-for-windows"><a href="windows/">Windows</a></h3>
-             </div>
-        </div>
-        <div class="col-sm-12 col-md-12 col-lg-4 block">
-            <div class="component">
-                <div class="component-icon">
-                    <a href="./tizenstudio/setup/linux/"> <img src="./tizenstudio/setup/media/linux1.png" alt="Linux" /> </a>
-                  <p></p>
-                </div>
-                <h3 id="tizen-for-linux"><a href="ubuntu">Ubuntu</a></h3>
-            </div>
-        </div>
-    </div>
-</div>
+<h2 id="system-prerequisites">System Prerequisites</h2>
+
+<p>Ensure that the following system prerequisites are met:</p>
+
+<h3 id="hardware-requirements">Hardware Requirements</h3>
+<table>
+  <tr>
+      &lt;td width=150px&gt;CPU&lt;/td&gt;
+    &lt;td colspan="3" width=50px&gt;Dual Core, 2Ghz or faster&lt;/td&gt;
+  </tr>
+  <tr>
+    <td>Architecture</td>
+    &lt;td width=520px&gt;x32 or x64 &lt;/td&gt;
+  </tr>
+  <tr>
+    <td>Memory</td>
+    <td colspan="3">3GB or more </td>
+  </tr>
+  <tr>
+    <td>Disk space</td>
+    <td colspan="3">6 GB or more </td>
+  </tr>
+</table>
+
+<h3 id="software-requirements">Software Requirements</h3>
+<table>
+  <tr>
+    &lt;th colspan="2" align=left&gt;Windows&lt;/th&gt;
+  </tr>
+  <tr>
+    &lt;td width=150px&gt;Version&lt;/td&gt;
+    &lt;td width=520px&gt;7/8/10&lt;/td&gt;
+  </tr>
+  <tr>
+    <td>Bit</td>
+    <td>32 or 64 bit</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Software</th>
+    <th>Download Link </th>
+  </tr>
+  <tr>
+    <td>Open JDK</td>
+    &lt;td width=520px&gt;<a href="https://download.java.net/java/GA/jdk10/10/binaries/openjdk-10_windows-x64_bin.tar.gz" class="clickable" target="_blank">Download</a>&lt;/td&gt;
+  </tr>
+  <tr>
+    <td>OpenJavaFX</td>
+    <td>&lt;a href=http://gluonhq.com/download/javafx-11-0-2-sdk-windows/ class="clickable" target="_blank"&gt;Download&lt;/a&gt;</td>
+  </tr>
+  <tr>
+    <td>Tizen Studio setup file</td>
+    <td><a href="https://developer.tizen.org/development/tizen-studio/download#" class="clickable" target="_blank">Download</a></td>
+  </tr>
+</table>
+
+<blockquote>
+  <p><strong>Note:</strong></p>
+
+  <ul>
+    <li>Download the relevant version based on the target device operating system, for example, <strong>openjdk-10_windows-x64_bin.tar.gz</strong> and <strong>openjfx-11.0.2_windows-x64_bin-sdk.zip</strong></li>
+    <li>Ensure that you download the JavaFX <OS> SDK product only, for example: JavaFX Windows SDK.</OS></li>
+  </ul>
+</blockquote>
+
+<p><strong>Disclaimer:</strong> The third party download links are subjected to change. Search and download the appropriate software.</p>
+
+<h2 id="set-up-open-jdk">Set Up Open JDK</h2>
+
+<p>To set up the Open JDK, follow these steps:</p>
+
+<ol>
+  <li>Extract the downloaded <strong>openjdk-10_windows-x64_bin.tar.gz</strong>, and <strong>openjfx-11.0.2_windows-x64_bin-sdk.zip</strong> files at your preferred location.
+    <blockquote>
+      <p><strong>Note</strong></p>
+
+      <p>The <strong>openjdk-10_windows-x64_bin &gt; jdk-10</strong>, <strong>openjfx-11.0.2_windows-x64_bin-sdk</strong> directories are created as a result of extraction.</p>
+    </blockquote>
+  </li>
+  <li>Locate the <strong>jdk-10</strong> and the <strong>javafx-sdk-11.0.2</strong> directories after extraction.
+    <blockquote>
+      <p><strong>Note</strong></p>
+
+      <ul>
+        <li>The <strong>jdk-10</strong> is the sub directory under the <strong>openjdk-10_windows-x64_bin</strong> directory.</li>
+        <li>The <strong>javafx-sdk-11.0.2</strong> is the sub directory under the <strong>openjfx-11.0.2_windows-x64_bin-sdk</strong> directory.</li>
+      </ul>
+    </blockquote>
+  </li>
+  <li>Double click to open the <strong>javafx-sdk-11.0.2</strong> directory.</li>
+  <li>Copy all the files except the <strong>src.zip</strong> from the <strong>lib</strong> sub directory located in the <strong>javafx-sdk-11.0.2</strong> directory.</li>
+  <li>Paste all the copied files in the <strong>lib</strong> sub directory of the  <strong>jdk-10</strong> directory.</li>
+  <li>Copy all the files from the <strong>bin</strong> sub directory in the <strong>javafx-sdk-11.0.2</strong>.</li>
+  <li>
+    <p>Paste all the copied files in the <strong>bin</strong> sub directory of the <strong>jdk-10</strong> directory.</p>
+
+    <blockquote>
+      <p><strong>Note</strong></p>
+
+      <ul>
+        <li>In this installation guide, setting up OpenJDK is covered. However, Oracle JDK versions until version 10 are also supported.</li>
+        <li>For Oracle JDK 10 installation steps, see the <a href="https://docs.oracle.com/javase/10/install/installation-jdk-and-jre-microsoft-windows-platforms.htm#JSJIG-GUID-DAF345BA-B3E7-4CF2-B87A-B6662D691840">Oracle Documentation</a>.</li>
+        <li>If you have installed Oracle JDK 10 or below already, you can skip setting up OpenJDK.</li>
+      </ul>
+    </blockquote>
+  </li>
+</ol>
+
+<h3 id="set-up-open-jdk-path">Set Up Open JDK Path</h3>
+
+<p>To set up the JDK path, follow these steps:</p>
+
+<ol>
+  <li>On the Windows desktop, click <strong>Start &gt; Control Panel &gt; System and security &gt; System &gt; Advanced system settings</strong>, the System Properties window appears.</li>
+  <li>In the <strong>Startup and Recovery</strong> section, click <strong>Environment Variables</strong> the Environment Variables window appears.</li>
+  <li>Click <strong>New</strong> under <strong>User variables for {user}</strong> section, also in case the <strong>JAVA_HOME</strong> variable is already in the list, select it and click <strong>Edit</strong>, enter the following details:
+    <ul>
+      <li>Variable name: <strong>JAVA_HOME</strong></li>
+      <li>Variable value: <strong>C:\Path\to\your\openJDKtype</strong>, i.e. browse for the JDK directory path (for example, C:\Users\user\Desktop\jdk-10.0.2)</li>
+    </ul>
+  </li>
+  <li>Click <strong>OK</strong>, the Environment Variable list is updated with the <strong>JAVA_HOME</strong> variable.</li>
+  <li>Click <strong>New</strong> under the <strong>System variables</strong> section also in case, if the <strong>Path variable</strong> already exists, select it and click <strong>Edit</strong>, and enter the following details:
+    <ul>
+      <li>Variable name: <strong>Path</strong></li>
+      <li>Variable value: <strong>C:\Path \to\ openJDK\bin directory</strong>; i.e. browse for the <strong>bin</strong> subdirectory path in the JDK directory  (for example, C:\Users\user\Desktop\jdk-10.0.2\bin )</li>
+    </ul>
+  </li>
+  <li>Click <strong>OK</strong>, the System Variable list is updated with the <strong>Path</strong> variable.</li>
+  <li>Save and close the <strong>Environment Variables</strong> window.</li>
+  <li>Open Command Prompt and type the <code class="highlighter-rouge">java –version</code> command to verify whether the OpenJDK version 10 is installed or not. Entering the command must give the following output:</li>
+</ol>
+
+<p><code class="highlighter-rouge">windows console
+   C:\Users\exampleconsole&gt;java -version
+   openjdk version "10" 2018-03-20
+   OpenJDK Runtime Environment 18.3 (build 10+46)
+   OpenJDK 64-Bit Server VM 18.3 (build 10+46, mixed mode)
+  </code></p>
+
+<h2 id="launch-installer">Launch Installer</h2>
+
+<p>To launch the installer, follow these steps:</p>
+
+<ol>
+  <li>Double click <strong>web-ide_Tizen_Studio_x.x_windows-64.exe</strong> file.
+    <blockquote>
+      <p><strong>Note:</strong></p>
+
+      <p><strong>x.x</strong> represents the latest version of Tizen Studio, for example:web-ide_Tizen_Studio_<strong>3.3</strong>_windows-64.exe.</p>
+    </blockquote>
+  </li>
+  <li>
+    <p>Accept the software license.</p>
+
+    <blockquote>
+      <p><strong>Note:</strong></p>
+
+      <p>The license contains important legal notices for using Tizen Studio. Read it fully, and click <strong>Accept</strong> only if you agree with the license statement.</p>
+    </blockquote>
+
+    <p><img src="./media/install_sdk_license.png" alt="Tizen Studio License Agreement" /></p>
+  </li>
+  <li>
+    <p>Click <strong>Browse</strong> and specify a new directory to set the SDK data location.</p>
+
+    <p><img src="./media/install_sdk_directory.png" alt="Set SDK and data location" /></p>
+
+    <blockquote>
+      <p><strong>Note:</strong></p>
+
+      <p>If the new directory is valid, it shows no errors.</p>
+    </blockquote>
+  </li>
+  <li>Click <strong>Install</strong>.</li>
+  <li>
+    <p>Click <strong>Finish</strong> to close the installer.</p>
+
+    <p><img src="./media/migration_finish_instal.png" alt="Installation complete" /></p>
+
+    <blockquote>
+      <p><strong>Note:</strong></p>
+
+      <ul>
+        <li>If you install the Tizen Studio in a directory that requires administrator privileges for access, such as <code class="highlighter-rouge">C:\Program Files</code>, then administrator privileges are required to run the Tizen SDK tools.</li>
+        <li>If you want to install additional platforms and tools, launch Package Manager by selecting the Launch the Package Manager <strong>check box</strong> and click <strong>Finish</strong>.</li>
+        <li>Use Tizen Package Manager, to install and update additional tools.</li>
+        <li>For more information on the Package Manager, see <a href="./update-sdk.md">Updating Tizen Studio</a>.</li>
+      </ul>
+    </blockquote>
+  </li>
+</ol>
+
+<h2 id="verify-installation">Verify Installation</h2>
+
+<p>To verify whether the installation is successful or not, click <strong>Tizen Studio icon</strong>. The Tizen Studio startup window must appear.</p>
 
 						</section>
 					</main>
@@ -292,7 +469,7 @@
                             
                             <a 
                                 href="tizenstudio/setup/install-sdk/"
-                                class="active currentPage"
+                                class=""
                                 >
                                 Setup
                             </a>
@@ -302,7 +479,7 @@
                             
                             <a 
                                 href="tizenstudio/setup/install-sdk/"
-                                class="active currentPage"
+                                class=""
                                 >
                                 Setup
                             </a>
@@ -321,7 +498,7 @@
     </ul>
 </div>
 <script>
-    $("a[href$='/tizenstudio/setup/install-sdk/']").addClass("active currentPage");
+    $("a[href$='/tizenstudio/setup/windows/']").addClass("active currentPage");
 </script>
 						</div>
 					</nav>
@@ -339,7 +516,7 @@
                                         </li>
                                         
 										<li>
-                                            <a href="https://github.com/samsung-test/samsung-test.github.io/edit/1.1/tizenstudio/setup/install-sdk.md" target="_blank">
+                                            <a href="https://github.com/samsung-test/samsung-test.github.io/edit/1.1/tizenstudio/setup/windows.md" target="_blank">
                                                 <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                                                 Edit Page
                                             </a>
@@ -356,12 +533,19 @@
 									<div id="side-toc-title">On this page:</div>
 									
 <ul id="my_toc" class="inline_toc">
-  <li><a href="#tizen-for-mac" class="nomunge">Mac</a>
+  <li><a href="#system-prerequisites" class="nomunge">System Prerequisites</a>
     <ul>
-      <li><a href="#tizen-for-windows" class="nomunge">Windows</a></li>
-      <li><a href="#tizen-for-linux" class="nomunge">Ubuntu</a></li>
+      <li><a href="#hardware-requirements" class="nomunge">Hardware Requirements</a></li>
+      <li><a href="#software-requirements" class="nomunge">Software Requirements</a></li>
     </ul>
   </li>
+  <li><a href="#set-up-open-jdk" class="nomunge">Set Up Open JDK</a>
+    <ul>
+      <li><a href="#set-up-open-jdk-path" class="nomunge">Set Up Open JDK Path</a></li>
+    </ul>
+  </li>
+  <li><a href="#launch-installer" class="nomunge">Launch Installer</a></li>
+  <li><a href="#verify-installation" class="nomunge">Verify Installation</a></li>
 </ul>
 
 
