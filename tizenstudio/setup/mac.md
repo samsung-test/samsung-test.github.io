@@ -46,7 +46,7 @@ Ensure that the following system prerequisites are met:
 ### Software Requirements
 <table>
   <tr>
-    <th colspan="2" align=left>MacOSX</th>
+    <th>MacOSX</th>
   </tr>
   <tr>
     <td>Version</td>
