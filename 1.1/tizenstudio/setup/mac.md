@@ -14,8 +14,8 @@ To have the optimal installation experience, follow these steps chronologically:
 - Verify installation
 
 <style type="text/css">
-a.clickable   { width: 100%; height: 100%; }
-a.clickable:hover   { background-color:; color: #FFFFF; }
+  a.clickable   { width: 100%; height: 100%; }
+  a.clickable:hover   { background-color:; color: #FFFFF; }
 </style>
 
 ## System Prerequisites
