@@ -1,3 +1,13 @@
+---
+layout: default
+title: Tizen Documentation
+desc: TS
+keywords: Tizen, OS, Open Source
+landing: true
+notoc: true
+notags: true
+---
+
 # Introduction
 
 The guidelines we provide will show you how to design useful and aesthetically pleasing Tizen apps that users will enjoy.
