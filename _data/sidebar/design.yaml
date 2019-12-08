@@ -1,6 +1,6 @@
 - sidebar:
       - title: Introduction 
-        url: design/
+        url: design/introduction/air
         subfolderitems:
           - page: Design Principles   
             url: design/mobile/design-principles/
