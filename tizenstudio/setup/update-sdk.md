@@ -1,3 +1,10 @@
+---
+title: Update Tizen Studio
+desc: Tizen Studio
+keywords: Tizen, OS, Open Source
+---
+
+
 # Update Tizen Studio
 
 This page explains how to install, update, and remove packages using the Package Manager tool in Tizen Studio. It also guides advanced developers to manage packages with the CLI version of the tool. At its core, Tizen Studio primarily comprises of various packages that includes necessary files, metadata, installation, and removal scripts, and these packages have interdependencies. 
