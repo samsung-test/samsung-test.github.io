@@ -5,7 +5,7 @@
           - page: Setup 	  
             url: tizenstudio/setup/install-sdk/
             subfolderitems:	        
-              - page: Setup 
-                url: tizenstudio/setup/install-sdk/	
+               - page: Setup 
+                 url: tizenstudio/setup/install-sdk/	
                - page: Setup 	  
-                 url: tizenstudio/setup/install-sdk/	 
+                 url: tizenstudio/setup/install-sdk/
