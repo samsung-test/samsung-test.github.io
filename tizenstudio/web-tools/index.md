@@ -1,3 +1,10 @@
+---
+title: Web Tools 
+desc: Tizen Studio
+keywords: Tizen, OS, Open Source, Web tools
+---
+
+
 # Web Tools
 
 This page explains about various web application development tools supported in Tizen Studio. Tizen Studio IDE provides powerful tool chains to ease web-based app development and provides a platform that is consistent and fast. 
