@@ -1,3 +1,9 @@
+---
+title:  Hardware Accelerated Execution Manager
+desc: HAEM
+keywords: Tizen, OS, Open Source
+---
+
 # How to Develop Wearable Web Application with TAU
 
 TAU stands for Tizen Advanced UI framework, which is the Tizen Web UI framework. 
