@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon"  href="/favicon.ico" />
+<title>VMAX AD SDK on tizen</title>
+<meta name="description" content="Tizen Studio"/>
+<meta name="keywords" content="Tizen, OS, Open Source"/>
+<base id="baseURL" href="/1.1/" />
+<meta id="docsVersion" content="1.1" />
+<meta name="last-modified" content="2019-12-08 16:15:09 +0530" />
+<meta http-equiv="cache-control" content="max-age=24" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-store" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="Expires" content="600" />
+
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/pygments/perldoc.css">
+<link rel="stylesheet" href="/css/style.css?v=08122019">
+<link rel="stylesheet" href="/css/github.css?v=08122019">
+
+
+</head>
+<body class=" latestVersion">
+	 <header>
+    <div class="header">
+        <nav class="nav-secondary-tabs affix" >
+            <div class="container-fluid">
+                <div class="navbar-collapse" aria-expanded="false" style="height: 1px;">
+                    <div class="sidebar-toggle">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</div>
+<div class="nav-container">
+    <a class="logo" href="/" title="Tizen Documentation">
+        Tizen
+    </a>
+    <div id="tabs">
+        
+        
+        <ul class="tabs" id="jsTOCHorizontal">
+            <li class="">
+                <a href="platform/about/tizen-open-source-overview">Platform</a>
+            </li>
+            <li class="">
+                <a href="application/">Application</a>
+            </li>
+            <li class="">
+                <a href="iot/">IoT</a>
+            </li>
+            <li class="active">
+                <a href="tizenstudio/">Tizen Studio</a>
+            </li>
+        </ul>
+    </div>
+    <div class="ctrl-right hidden-xs hidden-sm">
+        <a href="javascript:void(0)" id="menu-toggle"><i class="fa fa-indent" aria-hidden="true"></i></a>
+        <div class="widgetVersionSwitcher"></div>
+    </div>
+    <div class="search-form">
+        <form action="search.html">
+            <input class="search-field form-control ds-input st-search-input" value="" name="q" placeholder="Search the docs" type="search" autocomplete="off" spellcheck="false" dir="auto">
+            <button type="submit" class="search-button">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+    </div>
+    
+</div>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+    <div class="wrapper right-open">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-body">
+					<main class="col-content content">
+						<section class="section">
+							<nav class="breadcrumbs bootstrap hidden-sm-down">
+   <ol class="breadcrumb list-unstyled" vocab="http://schema.org/" typeof="BreadcrumbList">
+
+       
+          
+      
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <a property="item" typeof="WebPage" href="/">
+            <span property="name">Tizen Documentation</span>
+            <meta property="position" content="1" />
+         </a>
+      </li>
+       
+          
+      
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <a property="item" typeof="WebPage" href="/tizenstudio/">
+            <span property="name">Tizen Studio</span>
+            <meta property="position" content="2" />
+         </a>
+      </li>
+       
+          
+      
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <span property="name">VMAX AD SDK on tizen</span>
+         <meta property="position" content="3" />
+      </li>
+      
+
+   </ol>
+</nav>
+
+
+
+<!-- This is an example of CSS. Maybe you want to implement the css code into your main css file or modify it as you want -->
+<style>
+   nav.breadcrumbs.bootstrap {
+      /* from Twitter Bootstrap 4 */
+      /* If you already use Twitter, you do not need these css lines above, cause they already in Twitter Bootstrap */
+      /* Additions: image integration */
+   }
+
+   nav.breadcrumbs.bootstrap ol {
+      margin-left: 0
+   }
+
+   nav.breadcrumbs.bootstrap .breadcrumb {
+      font-size: 1rem;
+      padding: 0.75rem 1rem;
+      margin-bottom: 1rem;
+      list-style: none;
+      background-color: #f1f2ed;
+      border-radius: 0.25rem;
+   }
+
+   nav.breadcrumbs.bootstrap .breadcrumb::after {
+      content: "";
+      display: table;
+      clear: both;
+   }
+
+   nav.breadcrumbs.bootstrap .breadcrumb-item {
+      float: left;
+   }
+
+   nav.breadcrumbs.bootstrap .breadcrumb-item+.breadcrumb-item::before {
+      display: inline-block;
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+      color: #818a91;
+      content: "/";
+   }
+
+   nav.breadcrumbs.bootstrap .breadcrumb-item+.breadcrumb-item:hover::before {
+      text-decoration: underline;
+   }
+
+   nav.breadcrumbs.bootstrap .breadcrumb-item+.breadcrumb-item:hover::before {
+      text-decoration: none;
+   }
+
+   nav.breadcrumbs.bootstrap .breadcrumb-item-active {
+      color: #818a91;
+   }
+
+   nav.breadcrumbs.bootstrap .breadcrumb .icon {
+      display: inline-block;
+   }
+
+   nav.breadcrumbs.bootstrap .breadcrumb .icon svg {
+      height: 0.8rem;
+      width: 0.8rem;
+   }
+</style>
+
+							<div class="widgetLatestVersionNotification"></div>
+							<h1 id="vmax-ad-sdk-on-tizen">VMAX AD SDK on tizen</h1>
+
+<p>VMAX™ is the one-stop solution that gives you complete control over your app monetization. It is a publisher-centric mediation SSP platform which sources ads from various sources and optimizes to maximize yield rate and fill rate.</p>
+
+<p>VMAX provides support for Ads in Tizen Native, Unity and Web applications.</p>
+<ol>
+  <li><strong>Native SDK</strong>: It is for the Application developers who want to build Tizen Native App, utilizing EFL (Enlightenment Foundation Libraries) for the UI. Among the other SDK’s available, Native SDK allows building Native feature-rich app.</li>
+  <li><strong>Unity SDK</strong>: Game developers can utilize this SDK to monetize various in-game ad placements.</li>
+  <li><strong>Webapp SDK</strong>: Web application developers can use this SDK for applications using web technologies (HTML, CSS &amp; Javascript).</li>
+</ol>
+
+<p>VMAX support wide range of ad formats to provide better user ad experience on Tizen.</p>
+
+<p><strong>Ad Formats</strong>:</p>
+
+<ol>
+  <li>Banner</li>
+  <li>Billboard</li>
+  <li>Interstitial</li>
+  <li>Interstitial Video</li>
+  <li>Native In Feed</li>
+  <li>Native Content stream</li>
+  <li>Rewarded Video</li>
+  <li>In-Stream Video</li>
+</ol>
+
+<p><strong>Getting Started</strong>:</p>
+
+<p>The VMAX Tizen SDK is designed to help you integrate Ads and fast track your way to monetizing your Tizen applications. It provides you with various mechanisms to request for Ads in your application.</p>
+
+<p>It is  very lightweight, modular &amp; feature-rich SDK. The VMAX™ SDK delivers highest yield ads for app publishers from Ad mediation partner, Programmatic, direct deals &amp; Agencies.</p>
+
+<p>The SDK has simple &amp; fully-managed Ad request methods.Our SDK lets you quickly and easily integrate with multiple ad partners.</p>
+
+<p>Step of Integration of VMAX Tizen SDK into you Native, Unity or Web app</p>
+
+<ol>
+  <li>
+    <p><a href="https://www.vmax.com/signup">Signup</a> on VMAX Dashboard</p>
+
+    <ol>
+      <li>
+        <p>Add an app</p>
+      </li>
+      <li>
+        <p>Create an adspot</p>
+      </li>
+      <li>
+        <p>Add mediation network</p>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <p>Add VMAX SDK in your project based on your app type (Native, Unity or Web app)</p>
+
+    <ol>
+      <li>
+        <p><a href="https://www.vmax.com/?ddownload=6495">Download Zip file</a>. You will find Three folder Native, Unity &amp; web App. Each folder contains SDK and Sample App</p>
+      </li>
+      <li>
+        <p>Choose right SDK based on you app type.</p>
+      </li>
+      <li>
+        <p>Add chosen SDK &amp; add into your project. You can refer sample app</p>
+      </li>
+      <li>
+        <p>Refer <a href="https://www.vmax.com/2017/10/27/introduction-vmax-tizen">Native</a>, <a href="https://www.vmax.com/2017/10/27/vmax-unity-sdk-tizen-introduction">Unity</a> and <a href="https://www.vmax.com/en/2017/10/27/vmax-webapp-sdk-tizen-introduction">Web app</a> link to follow detailed Instruction</p>
+      </li>
+    </ol>
+  </li>
+  <li>Add ad format specific code to request ads from VMAX</li>
+  <li>Add an ad network SDK into your app to receive ads from mediation partner</li>
+  <li>Compile your project and release for user</li>
+</ol>
+
+						</section>
+					</main>
+					<nav class="col-nav">
+						<div id="sidebar-nav" class="sidebar hidden-sm hidden-xs">
+						    
+
+
+<div id="navbar" class="nav-sidebar">
+    <ul class="nav" id="jsTOCLeftNav">
+        
+        
+        
+        
+    
+        <li>
+            <a 
+                href="tizenstudio/" 
+                data-target="#item1" 
+                data-toggle="collapse" 
+                data-parent="#stacked-menu"
+                aria-expanded=" false "
+                class=" collapsed "
+                >
+                    Tizen Studio
+                    <span class="caret arrow"></span>
+            </a>
+            
+
+            
+            <ul class="nav collapse" aria-expanded="false" id="#item1">
+            
+
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="tizenstudio/setup/install-sdk/"
+                        class=""
+                        aria-expanded=" false "
+                        data-target="#item1" 
+                        data-toggle="collapse" 
+                        >
+                        Setup
+                        <span class="caret arrow"></span>
+                    </a>
+                    
+                    
+                    <ul class="nav collapse" aria-expanded="false" id="#item1">
+                    
+                        
+                        <li>
+                            
+                            <a 
+                                href="tizenstudio/setup/install-sdk/"
+                                class=""
+                                >
+                                Setup
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a 
+                                href="tizenstudio/setup/install-sdk/"
+                                class=""
+                                >
+                                Setup
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+                
+            </ul>
+            
+        </li>
+    
+        
+        
+    </ul>
+</div>
+<script>
+    $("a[href$='/tizenstudio/extension-sdk/vmax/']").addClass("active currentPage");
+</script>
+						</div>
+					</nav>
+					<div class="col-toc">
+						<div class="sidebar hidden-xs hidden-sm">
+							<div class="toc-nav">
+								<div class="feedback-links">
+									<ul>
+										
+                                        <li style="visibility: hidden">
+                                            <a href="">
+                                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i> 
+                                                Edit this page
+                                            </a>
+                                        </li>
+                                        
+										<li>
+                                            <a href="https://github.com/samsung-test/samsung-test.github.io/edit/1.1/tizenstudio/extension-sdk/vmax.md" target="_blank">
+                                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                                Edit Page
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://github.com/samsung-test/samsung-test.github.io/issues/new" class="nomunge" target="_blank">
+                                                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                                Report Issue
+                                            </a>
+                                        </li>
+									</ul>
+								</div>
+								   
+									<div id="side-toc-title">On this page:</div>
+									
+
+
+								</div>
+								
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="container-fluid">
+  <div class="top_footer">
+    <div class="footer-nav">
+      <nav class="footer_sub_nav">
+        <ul class="menu">
+          <li><a href="https://developer.tizen.org/">Developer</a></li>
+          <li><a href="https://dashboard.tizen.org/">Dashboard</a></li>
+          <li><a href="https://craftroom.tizen.org/">Craftroom</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="bottom_footer">
+    <div class="footer-copyright col-xs-12 col-md-8">
+      <p class="copyright">
+        Copyright &copy; 2019 Tizen Inc. All rights reserved.
+      </p>
+    </div>
+    <div class="footer_social_nav">
+      <ul class="nav-social">
+        <li class="fa fa-github"><a href="https://github.com/samsung-test">GitHub</a></li>  
+        <li class="fa fa-twitter"><a href="https://twitter.com/TizenProject">Twitter</a></li>
+        <li class="fa fa-facebook"><a href="http://www.facebook.com/pages/Tizen-Project">Facebook</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+    <div id="templates"></div>
+    <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/common.js?v=08122019"></script>
+<script type="text/javascript" src="/js/handlebars-v4.0.11.js?v=08122019"></script>
+<script type="text/javascript" src="/js/widgets-data.js?v=08122019"></script>
+<script type="text/javascript" src="/js/widgets.js?v=08122019"></script>
+<script type="text/javascript" src="/js/highlight.pack.js"></script>
+<script type="text/javascript" src="/js/tocs.js"></script>
+<script type="text/javascript" src="/js/menu.js"></script>
+<script type="text/javascript" src="/js/stickyfill.min.js"></script>
+<script type="text/javascript" src="/js/metadata.js"></script>
+<script type="text/javascript" src="/js/docs.js"></script>
+</body>
+</html>
