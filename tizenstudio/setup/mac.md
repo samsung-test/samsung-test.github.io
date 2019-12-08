@@ -23,22 +23,23 @@ To have the optimal installation experience, follow these steps chronologically:
 Ensure that the following system prerequisites are met:
 
 ### Hardware Requirements
+
 <table>
   <tr>
-      <td width=150px>CPU</td>
-    <td colspan="3" width=50px>Dual Core, 2Ghz or faster</td>
+      <td>CPU</td>
+    <td>Dual Core, 2Ghz or faster</td>
   </tr>
   <tr>
     <td>Architecture</td>
-    <td width=520px>x64 only</td>
+    <td>x64 only</td>
   </tr>
   <tr>
     <td>Memory</td>
-    <td colspan="3">3GB or more </td>
+    <td>3GB or more </td>
   </tr>
   <tr>
     <td>Disk Space</td>
-    <td colspan="3">6 GB or more </td>
+    <td>6 GB or more </td>
   </tr>
 </table> 
 
@@ -48,8 +49,8 @@ Ensure that the following system prerequisites are met:
     <th colspan="2" align=left>MacOSX</th>
   </tr>
   <tr>
-    <td width=150px>Version</td>
-    <td width=520px>10.13 (High Sierra)<br>10.12 (Sierra)<br>10.11 (El Captain)</td>
+    <td>Version</td>
+    <td>10.13 (High Sierra)<br>10.12 (Sierra)<br>10.11 (El Captain)</td>
   </tr>
   <tr>
     <td>Bit</td>
@@ -64,7 +65,7 @@ Ensure that the following system prerequisites are met:
   </tr>
   <tr>
     <td>Open JDK</td>
-    <td width=520px><a href="https://download.java.net/java/GA/jdk10/10/binaries/openjdk-10_osx-x64_bin.tar.gz" target="_blank"> Click to download </a></td>
+    <td><a href="https://download.java.net/java/GA/jdk10/10/binaries/openjdk-10_osx-x64_bin.tar.gz" target="_blank"> Click to download </a></td>
   </tr>
   <tr>
     <td>OpenJavaFX</td>
