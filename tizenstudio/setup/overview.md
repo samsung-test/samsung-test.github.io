@@ -1,5 +1,5 @@
 ---
-title: Tizen Studio
+title: Overview
 ---
 # Overview 
 
