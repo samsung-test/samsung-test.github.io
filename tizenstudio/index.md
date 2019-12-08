@@ -180,31 +180,31 @@ title: Tizen Studio
 
   <div class="docs-ui-tv" style="padding-left: 0px;padding-right: 20px;">
     <span>
-        <a href="tizenstudio/native-tools/index.md" class="docs-btn-more">Native Tools</a><br>
+        <a href="tizenstudio/native-tools/" class="docs-btn-more">Native Tools</a><br>
     </span>
   </div>
  
    <div class="docs-ui-widget">
     <span>
-    <a href="tizenstudio/web-tools/index.md" class="docs-btn-more" style="padding-left: 0px;padding-right: 13px;">Web Tools</a>
+    <a href="tizenstudio/web-tools/" class="docs-btn-more" style="padding-left: 0px;padding-right: 13px;">Web Tools</a>
     </span>
   </div>
 
   <div class="docs-ui-wear">
     <span>
-        <a href="tizenstudio/configurable-sdk/configurable-sdk.md" class="docs-btn-more">Configurable - IoT SDK</a>
+        <a href="tizenstudio/configurable-sdk/configurable-sdk.md/" class="docs-btn-more">Configurable - IoT SDK</a>
     </span>
   </div>
 
   <div class="docs-ui-get">
     <span>
-        <a href="tizenstudio/extension-sdk/overview.md" class="docs-btn-more">Extension SDK</a><br>
+        <a href="tizenstudio/extension-sdk/overview.md/" class="docs-btn-more">Extension SDK</a><br>
     </span>
   </div>
 
   <div class="docs-ui-w">
     <span>
-        <a href="tizenstudio/rt-ide/overview.md" class="docs-btn-more">Tizen RT IDE</a><br>
+        <a href="tizenstudio/rt-ide/overview.md/" class="docs-btn-more">Tizen RT IDE</a><br>
     </span>
   </div>
 </div>
