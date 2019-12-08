@@ -14,11 +14,11 @@
         {% assign directory = page.path | split: '/' %}
         {% assign subdirectory = directory[0] %}
         <ul class="tabs" id="jsTOCHorizontal">
-            <li class="{% if subdirectory == 'platform' %}active{% endif %}">
-                <a href="platform/about/tizen-open-source-overview">Platform</a>
+            <li class="{% if subdirectory == 'design' %}active{% endif %}">
+                <a href="design/">Design</a>
             </li>
-            <li class="{% if subdirectory == 'application' %}active{% endif %}">
-                <a href="application/">Application</a>
+            <li class="{% if subdirectory == 'development' %}active{% endif %}">
+                <a href="application/">Development</a>
             </li>
             <li class="{% if subdirectory == 'iot' %}active{% endif %}">
                 <a href="iot/">IoT</a>
