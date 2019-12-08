@@ -14,9 +14,6 @@
         {% assign directory = page.path | split: '/' %}
         {% assign subdirectory = directory[0] %}
         <ul class="tabs" id="jsTOCHorizontal">
-            <li>
-                <a href="platform/developing/cloning">Get Tizen</a>
-            </li>
             <li class="{% if subdirectory == 'platform' %}active{% endif %}">
                 <a href="platform/about/tizen-open-source-overview">Platform</a>
             </li>
@@ -28,12 +25,6 @@
             </li>
             <li class="{% if subdirectory == 'tizenstudio' %}active{% endif %}">
                 <a href="tizenstudio/">Tizen Studio</a>
-            </li>
-            <li>
-                <a href="https://developer.tizen.org/development/tizen-studio/download" target="_blank">Download</a>
-            </li>
-            <li>
-                <a href="https://www.tizen.org/user/register" target="_blank">Register</a>
             </li>
         </ul>
     </div>

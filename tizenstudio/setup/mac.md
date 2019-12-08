@@ -1,3 +1,8 @@
+---
+title:  Hardware Accelerated Execution Manager
+desc: HAEM
+keywords: Tizen, OS, Open Source
+---
 
 # Install Tizen Studio on MacOS
 
@@ -13,43 +18,39 @@ To have the optimal installation experience, follow these steps chronologically:
 - Launch installer
 - Verify installation
 
-<style type="text/css">
-a.clickable   { width: 100%; height: 100%; }
-a.clickable:hover   { background-color:; color: #FFFFF; }
-</style>
-
 ## System Prerequisites
 
 Ensure that the following system prerequisites are met:
 
 ### Hardware Requirements
+
 <table>
   <tr>
-      <td width=150px>CPU</td>
-    <td colspan="3" width=50px>Dual Core, 2Ghz or faster</td>
+      <td>CPU</td>
+    <td>Dual Core, 2Ghz or faster</td>
   </tr>
   <tr>
     <td>Architecture</td>
-    <td width=520px>x64 only</td>
+    <td>x64 only</td>
   </tr>
   <tr>
     <td>Memory</td>
-    <td colspan="3">3GB or more </td>
+    <td>3GB or more </td>
   </tr>
   <tr>
     <td>Disk Space</td>
-    <td colspan="3">6 GB or more </td>
+    <td>6 GB or more </td>
   </tr>
 </table> 
 
 ### Software Requirements
 <table>
   <tr>
-    <th colspan="2" align=left>MacOSX</th>
+    <th>MacOSX</th>
   </tr>
   <tr>
-    <td width=150px>Version</td>
-    <td width=520px>10.13 (High Sierra)<br>10.12 (Sierra)<br>10.11 (El Captain)</td>
+    <td>Version</td>
+    <td>10.13 (High Sierra)<br>10.12 (Sierra)<br>10.11 (El Captain)</td>
   </tr>
   <tr>
     <td>Bit</td>
@@ -64,15 +65,15 @@ Ensure that the following system prerequisites are met:
   </tr>
   <tr>
     <td>Open JDK</td>
-    <td width=520px><a href="https://download.java.net/java/GA/jdk10/10/binaries/openjdk-10_osx-x64_bin.tar.gz" class="clickable" target="_blank">https://download.java.net/java/GA/jdk10/10/binaries/openjdk-10_osx-x64_bin.tar.gz" </a></td>
+    <td><a href="https://download.java.net/java/GA/jdk10/10/binaries/openjdk-10_osx-x64_bin.tar.gz" target="_blank"> Click to download </a></td>
   </tr>
   <tr>
     <td>OpenJavaFX</td>
-    <td><a href="http://gluonhq.com/download/javafx-11-0-2-sdk-mac" class="clickable" target="_blank"> http://gluonhq.com/download/javafx-11-0-2-sdk-mac</a></td>
+    <td><a href="http://gluonhq.com/download/javafx-11-0-2-sdk-mac" class="clickable" target="_blank">Click to download</a></td>
   </tr>
   <tr>
     <td>Tizen Studio setup file</td>
-    <td><a href="https://developer.tizen.org/development/tizen-studio/download#" class="clickable" target="_blank">https://developer.tizen.org/development/tizen-studio/download# </a></td>
+    <td><a href="https://developer.tizen.org/development/tizen-studio/download#" class="clickable" target="_blank">Click to download</a>     </td>
   </tr>
 </table>
 

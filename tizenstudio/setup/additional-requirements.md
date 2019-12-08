@@ -1,3 +1,9 @@
+---
+title: Tizen Documentation
+desc: Additional requirements
+keywords: Tizen, OS, Open Source
+---
+
 # Additional Requirements
 
 This page explains you the summary of various requirements that are necessary to configure your development environment for optimal and seamless development experience. Tizen studio tools such as Emulator, Web Inspector, and various other tools need to be configured specifically on your development hardware, such that the dependent development processes work efficiently. 

@@ -1,3 +1,9 @@
+---
+title: Install Tizen Studio on Ubuntu
+desc: Install Tizen Studio on Ubuntu
+keywords: Tizen, OS, Open Source
+---
+
 # Install Tizen Studio on Ubuntu
 
 This page guides you with downloading and installing Tizen Studio on your development hardware. 
@@ -41,6 +47,7 @@ Ensure that the following system prerequisites are met:
 </table> 
 
 #### Software Requirements
+
 <table>
   <tr>
     <th colspan="2" align=left>Ubuntu</th>

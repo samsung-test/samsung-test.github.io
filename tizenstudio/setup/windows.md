@@ -1,3 +1,10 @@
+---
+title: Install Tizen Studio on Windows
+desc: Install Tizen Studio 
+keywords: Tizen, OS, Open Source
+---
+
+
 # Install Tizen Studio on Windows
 
 This page explains the process to download and install Tizen Studio on your development hardware.

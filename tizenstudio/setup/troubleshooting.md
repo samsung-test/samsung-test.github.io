@@ -1,3 +1,8 @@
+---
+title: Troubleshooting 
+desc: Troubleshoot problems
+keywords: Tizen, OS, Open Source
+---
 ## Troubleshooting 
 
 This page provides the information needed to troubleshoot Tizen Studio. Participate in the [Tizen User Community forum](https://developer.tizen.org/forums), and suggest ways to improve the documentation. This page describes methodologies, techniques, and procedures for troubleshooting problems that might arise in the day-to-day operations while using Tizen Studio.

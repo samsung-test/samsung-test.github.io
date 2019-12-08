@@ -1,3 +1,9 @@
+---
+title:  Hardware Accelerated Execution Manager
+desc: HAEM
+keywords: Tizen, OS, Open Source
+---
+
 # How to Develop Tizen Web Applications?
 
 ### Introduction
