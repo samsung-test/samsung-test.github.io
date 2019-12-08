@@ -19,7 +19,7 @@ Display the most frequently used features on the first screen. Floating action b
 
 By focusing on the primary features and presenting them in a consistent way, you can design an app that is easy to use.
 
-<img alt="A floating action button" src="media/1.1.1.z3_floating_button.png" height="460px" />
+<img alt="A floating action button" src="./design/mobile/media/1.1.1.z3_floating_button.png" height="460px" />
 
 *A floating action button*
 
@@ -35,7 +35,7 @@ Providing multiple ways to access a single feature may confuse users. Tizen aims
 
 Avoid using hidden gestures or additional quick actions that require tutorials in your design. Find the most effective and reasonable way to perform an action and allow users to access it via an action button. If you need to add subordinate actions in the design, provide them in 'More' menu.
 
-<img alt="The More menu" src="media/1.1.1.png" height="460px" />
+<img alt="The More menu" src="./design/mobile/media/1.1.1.png" height="460px" />
 
 *The More menu*
 
@@ -49,7 +49,7 @@ Ensure that the access flow of your app does not include any redundant steps. El
 
 Help users instantly perform simple actions. For example, quick access to the Internet browser is a good feature to have. By facilitating user access to major websites, you can minimize the effort required.
 
-<img alt="Quick access feature for an Internet browser" src="media/1.2.1.png" height="460px" />
+<img alt="Quick access feature for an Internet browser" src="./design/mobile/media/1.2.1.png" height="460px" />
 
 *Quick access feature for an Internet browser*
 
@@ -57,7 +57,7 @@ Help users instantly perform simple actions. For example, quick access to the In
 
 Stacked layers create a visual hierarchy, and each layer comes with a clear direction of movement. When layers are assembled well, they create a flow that guides the users. For example, to inform users of new events that require user's attention, active notifications always slide down from the top, over the current screen users are working on. Refer to [Animations](../introduction/styles/animations.md) for more information.
  
-<img alt="An active notification." src="media/1.2.2.png" height="460px" />
+<img alt="An active notification." src="./design/mobile/media/1.2.2.png" height="460px" />
 
 *An active notification.*
 
@@ -68,7 +68,7 @@ Visual cues are another way to guide users. Also, carefully placed pop-up notifi
 
 A consistent design allows users to learn how to use new features faster. Consider what common actions are noticed by the average user and design your features to use the same actions. For example, the Back key is generally used for returning to previous pages or canceling current tasks. So, in your app, design the Back key to return to the previous page or cancel tasks, and avoid using it for something else.
 
-<img alt="Navigating back from a message" src="media/1.1.3.z3_navigation_back.png" height="460px" />
+<img alt="Navigating back from a message" src="./design/mobile/media/1.1.3.z3_navigation_back.png" height="460px" />
 
 *Navigating back from a message*
 
@@ -80,7 +80,7 @@ When you design screens for your app, ensure that the purpose of each screen is 
 
 Ensure that your app screen displays the most important content first. For example, in the detail view, show the essential information on the first screen and allow users to scroll down to see the additional information.
 
-<img alt="Display important information first" src="media/principle_contacts_03.png" height="460px" /> <img alt="Display important information first" src="media/principle_contacts_04.png" height="460px" margin-left="10px" />
+<img alt="Display important information first" src="./design/mobile/media/principle_contacts_03.png" height="460px" /> <img alt="Display important information first" src="./design/mobile/media/principle_contacts_04.png" height="460px" margin-left="10px" />
 
 *Display important information first*
 
@@ -88,7 +88,7 @@ Ensure that your app screen displays the most important content first. For examp
 
 Use different font sizes, weights, colors, and layouts to separate the information on the screen and allow important information to stand out. For example, the Contacts menu includes tabs, a search field, a contact list, and a floating action button on the same page. However, different styles and colors applied to these elements enable users to clearly separate them.
 
-<img alt="Clear distinction between different types of information" src="media/principle_contacts_05.png" height="460px" />
+<img alt="Clear distinction between different types of information" src="./design/mobile/media/principle_contacts_05.png" height="460px" />
 
 *Clear distinction between different types of information*
 
@@ -96,6 +96,6 @@ Use different font sizes, weights, colors, and layouts to separate the informati
 
 Apply consistent designs for interactive elements on the screen, and disable or hide the elements that are not available. For example, you can disable the 'Done' button to let users know that a required field is empty.
 
-<img alt="A disabled Done button shows that the required field is not filled." src="media/principle_contacts_06.png" height="460px" /> <img alt="A disabled Done button shows that the required field is not filled." src="media/principle_contacts_07.png" height="460px" margin-left="10px" />
+<img alt="A disabled Done button shows that the required field is not filled." src="./design/mobile/media/principle_contacts_06.png" height="460px" /> <img alt="A disabled Done button shows that the required field is not filled." src="./design/mobile/media/principle_contacts_07.png" height="460px" margin-left="10px" />
 
 *A disabled Done button shows that the required field is not filled.*
