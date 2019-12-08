@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon"  href="/favicon.ico" />
+<title>Hardware Accelerated Execution Manager</title>
+<meta name="description" content="HAEM"/>
+<meta name="keywords" content="Tizen, OS, Open Source"/>
+<base id="baseURL" href="/latest/" />
+<meta id="docsVersion" content="1.1" />
+<meta name="last-modified" content="2019-12-08 13:15:15 +0530" />
+<meta http-equiv="cache-control" content="max-age=24" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-store" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="Expires" content="600" />
+
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/pygments/perldoc.css">
+<link rel="stylesheet" href="/css/style.css?v=08122019">
+<link rel="stylesheet" href="/css/github.css?v=08122019">
+
+
+</head>
+<body class=" latestVersion">
+	 <header>
+    <div class="header">
+        <nav class="nav-secondary-tabs affix" >
+            <div class="container-fluid">
+                <div class="navbar-collapse" aria-expanded="false" style="height: 1px;">
+                    <div class="sidebar-toggle">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</div>
+<div class="nav-container">
+    <a class="logo" href="/" title="Tizen Documentation">
+        Tizen
+    </a>
+    <div id="tabs">
+        
+        
+        <ul class="tabs" id="jsTOCHorizontal">
+            <li>
+                <a href="platform/developing/cloning">Get Tizen</a>
+            </li>
+            <li class="">
+                <a href="platform/about/tizen-open-source-overview">Platform</a>
+            </li>
+            <li class="">
+                <a href="application/">Application</a>
+            </li>
+            <li class="">
+                <a href="iot/">IoT</a>
+            </li>
+            <li class="active">
+                <a href="tizenstudio/">Tizen Studio</a>
+            </li>
+            <li>
+                <a href="https://developer.tizen.org/development/tizen-studio/download" target="_blank">Download</a>
+            </li>
+            <li>
+                <a href="https://www.tizen.org/user/register" target="_blank">Register</a>
+            </li>
+        </ul>
+    </div>
+    <div class="ctrl-right hidden-xs hidden-sm">
+        <a href="javascript:void(0)" id="menu-toggle"><i class="fa fa-indent" aria-hidden="true"></i></a>
+        <div class="widgetVersionSwitcher"></div>
+    </div>
+    <div class="search-form">
+        <form action="search.html">
+            <input class="search-field form-control ds-input st-search-input" value="" name="q" placeholder="Search the docs" type="search" autocomplete="off" spellcheck="false" dir="auto">
+            <button type="submit" class="search-button">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+    </div>
+    
+</div>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+    <div class="wrapper right-open">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-body">
+					<main class="col-content content">
+						<section class="section">
+							<nav class="breadcrumbs bootstrap hidden-sm-down">
+   <ol class="breadcrumb list-unstyled" vocab="http://schema.org/" typeof="BreadcrumbList">
+
+       
+          
+      
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <a property="item" typeof="WebPage" href="/">
+            <span property="name">Tizen Documentation</span>
+            <meta property="position" content="1" />
+         </a>
+      </li>
+       
+          
+      
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <a property="item" typeof="WebPage" href="/tizenstudio/">
+            <span property="name">Tizen Studio</span>
+            <meta property="position" content="2" />
+         </a>
+      </li>
+       
+          
+      
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <span property="name">Hardware Accelerated Execution Manager</span>
+         <meta property="position" content="3" />
+      </li>
+      
+
+   </ol>
+</nav>
+
+
+
+<!-- This is an example of CSS. Maybe you want to implement the css code into your main css file or modify it as you want -->
+<style>
+   nav.breadcrumbs.bootstrap {
+      /* from Twitter Bootstrap 4 */
+      /* If you already use Twitter, you do not need these css lines above, cause they already in Twitter Bootstrap */
+      /* Additions: image integration */
+   }
+
+   nav.breadcrumbs.bootstrap ol {
+      margin-left: 0
+   }
+
+   nav.breadcrumbs.bootstrap .breadcrumb {
+      font-size: 1rem;
+      padding: 0.75rem 1rem;
+      margin-bottom: 1rem;
+      list-style: none;
+      background-color: #f1f2ed;
+      border-radius: 0.25rem;
+   }
+
+   nav.breadcrumbs.bootstrap .breadcrumb::after {
+      content: "";
+      display: table;
+      clear: both;
+   }
+
+   nav.breadcrumbs.bootstrap .breadcrumb-item {
+      float: left;
+   }
+
+   nav.breadcrumbs.bootstrap .breadcrumb-item+.breadcrumb-item::before {
+      display: inline-block;
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+      color: #818a91;
+      content: "/";
+   }
+
+   nav.breadcrumbs.bootstrap .breadcrumb-item+.breadcrumb-item:hover::before {
+      text-decoration: underline;
+   }
+
+   nav.breadcrumbs.bootstrap .breadcrumb-item+.breadcrumb-item:hover::before {
+      text-decoration: none;
+   }
+
+   nav.breadcrumbs.bootstrap .breadcrumb-item-active {
+      color: #818a91;
+   }
+
+   nav.breadcrumbs.bootstrap .breadcrumb .icon {
+      display: inline-block;
+   }
+
+   nav.breadcrumbs.bootstrap .breadcrumb .icon svg {
+      height: 0.8rem;
+      width: 0.8rem;
+   }
+</style>
+
+							<div class="widgetLatestVersionNotification"></div>
+							<h1 id="how-to-develop-wearable-web-application-with-tau">How to Develop Wearable Web Application with TAU</h1>
+
+<p>TAU stands for Tizen Advanced UI framework, which is the Tizen Web UI framework. 
+TAU helps you to:</p>
+<ul>
+  <li>Create, manage pages, and various kinds of UI components</li>
+  <li>Use utilities for Web applications such as using transition effect for pages</li>
+  <li>Support the Mobile and Wearable profiles</li>
+  <li>Support the circular UI for Wearable devices</li>
+</ul>
+
+<p>The concept of TAU is similar to jQuery Mobile, which is a commonly used Web UI system for making responsive Web sites and applications on the mobile devices. Compared to jQuery Mobile, TAU is much faster because it is made with pure JavaScript.
+TAU supports the layout styles and page navigation of Web applications. TAU makes it easy to develop your own Tizen Web application with the UI components provided by TAU.</p>
+
+<p><img src="./media/tau1.PNG" alt="Step 1" /></p>
+
+<p>This page explains how to develop a Wearable Web application in Tizen Studio using <strong>TAU</strong>.</p>
+
+<h2 id="tau-development-process">TAU Development Process</h2>
+
+<p><img src="./media/ta1.PNG" alt="Step 1" /></p>
+
+<p><img src="./media/ta2.PNG" alt="Step 2" /></p>
+
+<p><img src="./media/ta3.PNG" alt="Step 3" /></p>
+
+<p><img src="./media/ta4.PNG" alt="Step 4" /></p>
+
+<h2 id="web-application-with-tau">Web Application with TAU</h2>
+
+<p><img src="./media/w1.PNG" alt="Step 1" /></p>
+
+<p><img src="./media/w2.PNG" alt="Step 1" /></p>
+
+<p><img src="./media/w3.PNG" alt="Step 1" /></p>
+
+<p><img src="./media/w4.PNG" alt="Step 1" /></p>
+
+<p><img src="./media/w5.PNG" alt="Step 1" /></p>
+
+						</section>
+					</main>
+					<nav class="col-nav">
+						<div id="sidebar-nav" class="sidebar hidden-sm hidden-xs">
+						    
+
+
+<div id="navbar" class="nav-sidebar">
+    <ul class="nav" id="jsTOCLeftNav">
+        
+        
+        
+        
+    
+        <li>
+            <a 
+                href="tizenstudio/" 
+                data-target="#item1" 
+                data-toggle="collapse" 
+                data-parent="#stacked-menu"
+                aria-expanded=" false "
+                class=" collapsed "
+                >
+                    Tizen Studio
+                    <span class="caret arrow"></span>
+            </a>
+            
+
+            
+            <ul class="nav collapse" aria-expanded="false" id="#item1">
+            
+
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="tizenstudio/setup/install-sdk/"
+                        class=""
+                        aria-expanded=" false "
+                        data-target="#item1" 
+                        data-toggle="collapse" 
+                        >
+                        Setup
+                        <span class="caret arrow"></span>
+                    </a>
+                    
+                    
+                    <ul class="nav collapse" aria-expanded="false" id="#item1">
+                    
+                        
+                        <li>
+                            
+                            <a 
+                                href="tizenstudio/setup/install-sdk/"
+                                class=""
+                                >
+                                Setup
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a 
+                                href="tizenstudio/setup/install-sdk/"
+                                class=""
+                                >
+                                Setup
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+                
+            </ul>
+            
+        </li>
+    
+        
+        
+    </ul>
+</div>
+<script>
+    $("a[href$='/tizenstudio/setup/tau_quick_start_guide/']").addClass("active currentPage");
+</script>
+						</div>
+					</nav>
+					<div class="col-toc">
+						<div class="sidebar hidden-xs hidden-sm">
+							<div class="toc-nav">
+								<div class="feedback-links">
+									<ul>
+										
+                                        <li style="visibility: hidden">
+                                            <a href="">
+                                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i> 
+                                                Edit this page
+                                            </a>
+                                        </li>
+                                        
+										<li>
+                                            <a href="https://github.com/samsung-test/samsung-test.github.io/edit/1.1/tizenstudio/setup/tau_quick_start_guide.md" target="_blank">
+                                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                                Edit Page
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://github.com/samsung-test/samsung-test.github.io/issues/new" class="nomunge" target="_blank">
+                                                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                                Report Issue
+                                            </a>
+                                        </li>
+									</ul>
+								</div>
+								   
+									<div id="side-toc-title">On this page:</div>
+									
+<ul id="my_toc" class="inline_toc">
+  <li><a href="#tau-development-process" class="nomunge">TAU Development Process</a></li>
+  <li><a href="#web-application-with-tau" class="nomunge">Web Application with TAU</a></li>
+</ul>
+
+
+								</div>
+								
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="container-fluid">
+  <div class="top_footer">
+    <div class="footer-nav">
+      <nav class="footer_sub_nav">
+        <ul class="menu">
+          <li><a href="https://developer.tizen.org/">Developer</a></li>
+          <li><a href="https://dashboard.tizen.org/">Dashboard</a></li>
+          <li><a href="https://craftroom.tizen.org/">Craftroom</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="bottom_footer">
+    <div class="footer-copyright col-xs-12 col-md-8">
+      <p class="copyright">
+        Copyright &copy; 2019 Tizen Inc. All rights reserved.
+      </p>
+    </div>
+    <div class="footer_social_nav">
+      <ul class="nav-social">
+        <li class="fa fa-github"><a href="https://github.com/samsung-test">GitHub</a></li>  
+        <li class="fa fa-twitter"><a href="https://twitter.com/TizenProject">Twitter</a></li>
+        <li class="fa fa-facebook"><a href="http://www.facebook.com/pages/Tizen-Project">Facebook</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+    <div id="templates"></div>
+    <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/common.js?v=08122019"></script>
+<script type="text/javascript" src="/js/handlebars-v4.0.11.js?v=08122019"></script>
+<script type="text/javascript" src="/js/widgets-data.js?v=08122019"></script>
+<script type="text/javascript" src="/js/widgets.js?v=08122019"></script>
+<script type="text/javascript" src="/js/highlight.pack.js"></script>
+<script type="text/javascript" src="/js/tocs.js"></script>
+<script type="text/javascript" src="/js/menu.js"></script>
+<script type="text/javascript" src="/js/stickyfill.min.js"></script>
+<script type="text/javascript" src="/js/metadata.js"></script>
+<script type="text/javascript" src="/js/docs.js"></script>
+</body>
+</html>

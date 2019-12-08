@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon"  href="/favicon.ico" />
+<title>Hardware Accelerated Execution Manager</title>
+<meta name="description" content="HAEM"/>
+<meta name="keywords" content="Tizen, OS, Open Source"/>
+<base id="baseURL" href="/1.1/" />
+<meta id="docsVersion" content="1.1" />
+<meta name="last-modified" content="2019-12-08 13:15:10 +0530" />
+<meta http-equiv="cache-control" content="max-age=24" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-store" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="Expires" content="600" />
+
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/pygments/perldoc.css">
+<link rel="stylesheet" href="/css/style.css?v=08122019">
+<link rel="stylesheet" href="/css/github.css?v=08122019">
+
+
+</head>
+<body class=" latestVersion">
+	 <header>
+    <div class="header">
+        <nav class="nav-secondary-tabs affix" >
+            <div class="container-fluid">
+                <div class="navbar-collapse" aria-expanded="false" style="height: 1px;">
+                    <div class="sidebar-toggle">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</div>
+<div class="nav-container">
+    <a class="logo" href="/" title="Tizen Documentation">
+        Tizen
+    </a>
+    <div id="tabs">
+        
+        
+        <ul class="tabs" id="jsTOCHorizontal">
+            <li>
+                <a href="platform/developing/cloning">Get Tizen</a>
+            </li>
+            <li class="">
+                <a href="platform/about/tizen-open-source-overview">Platform</a>
+            </li>
+            <li class="">
+                <a href="application/">Application</a>
+            </li>
+            <li class="">
+                <a href="iot/">IoT</a>
+            </li>
+            <li class="active">
+                <a href="tizenstudio/">Tizen Studio</a>
+            </li>
+            <li>
+                <a href="https://developer.tizen.org/development/tizen-studio/download" target="_blank">Download</a>
+            </li>
+            <li>
+                <a href="https://www.tizen.org/user/register" target="_blank">Register</a>
+            </li>
+        </ul>
+    </div>
+    <div class="ctrl-right hidden-xs hidden-sm">
+        <a href="javascript:void(0)" id="menu-toggle"><i class="fa fa-indent" aria-hidden="true"></i></a>
+        <div class="widgetVersionSwitcher"></div>
+    </div>
+    <div class="search-form">
+        <form action="search.html">
+            <input class="search-field form-control ds-input st-search-input" value="" name="q" placeholder="Search the docs" type="search" autocomplete="off" spellcheck="false" dir="auto">
+            <button type="submit" class="search-button">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+    </div>
+    
+</div>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+    <div class="wrapper right-open">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-body">
+					<main class="col-content content">
+						<section class="section">
+							<nav class="breadcrumbs bootstrap hidden-sm-down">
+   <ol class="breadcrumb list-unstyled" vocab="http://schema.org/" typeof="BreadcrumbList">
+
+       
+          
+      
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <a property="item" typeof="WebPage" href="/">
+            <span property="name">Tizen Documentation</span>
+            <meta property="position" content="1" />
+         </a>
+      </li>
+       
+          
+      
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <a property="item" typeof="WebPage" href="/tizenstudio/">
+            <span property="name">Tizen Studio</span>
+            <meta property="position" content="2" />
+         </a>
+      </li>
+       
+          
+      
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <span property="name">Hardware Accelerated Execution Manager</span>
+         <meta property="position" content="3" />
+      </li>
+      
+
+   </ol>
+</nav>
+
+
+
+<!-- This is an example of CSS. Maybe you want to implement the css code into your main css file or modify it as you want -->
+<style>
+   nav.breadcrumbs.bootstrap {
+      /* from Twitter Bootstrap 4 */
+      /* If you already use Twitter, you do not need these css lines above, cause they already in Twitter Bootstrap */
+      /* Additions: image integration */
+   }
+
+   nav.breadcrumbs.bootstrap ol {
+      margin-left: 0
+   }
+
+   nav.breadcrumbs.bootstrap .breadcrumb {
+      font-size: 1rem;
+      padding: 0.75rem 1rem;
+      margin-bottom: 1rem;
+      list-style: none;
+      background-color: #f1f2ed;
+      border-radius: 0.25rem;
+   }
+
+   nav.breadcrumbs.bootstrap .breadcrumb::after {
+      content: "";
+      display: table;
+      clear: both;
+   }
+
+   nav.breadcrumbs.bootstrap .breadcrumb-item {
+      float: left;
+   }
+
+   nav.breadcrumbs.bootstrap .breadcrumb-item+.breadcrumb-item::before {
+      display: inline-block;
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+      color: #818a91;
+      content: "/";
+   }
+
+   nav.breadcrumbs.bootstrap .breadcrumb-item+.breadcrumb-item:hover::before {
+      text-decoration: underline;
+   }
+
+   nav.breadcrumbs.bootstrap .breadcrumb-item+.breadcrumb-item:hover::before {
+      text-decoration: none;
+   }
+
+   nav.breadcrumbs.bootstrap .breadcrumb-item-active {
+      color: #818a91;
+   }
+
+   nav.breadcrumbs.bootstrap .breadcrumb .icon {
+      display: inline-block;
+   }
+
+   nav.breadcrumbs.bootstrap .breadcrumb .icon svg {
+      height: 0.8rem;
+      width: 0.8rem;
+   }
+</style>
+
+							<div class="widgetLatestVersionNotification"></div>
+							<h2 id="install-tizen-studio-using-cli">Install Tizen Studio using CLI</h2>
+
+<p>This page explains how to install Command Line Interface (CLI) version of Tizen Studio. The CLI installer provides functional tools for running Tizen Studio without a Graphical User Interface (GUI) environment.
+The CLI installation is mostly intended for advanced developers. The Tizen Studio CLI installation is supported on all the major operating systems.</p>
+
+<h3 id="prerequisites">Prerequisites</h3>
+
+<ul>
+  <li>Ensure that you download the appropriate CLI installer for your operating system. For more information, see the <a href="https://developer.tizen.org/development/tizen-studio/download#">Download page</a>.</li>
+  <li>
+    <p>Ensure that you have Open JDK 10 or Oracle JDK 10 installed on your development hardware. For more information, see the following table to setup the Open JDK:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Operating System</th>
+          <th>Open JDK Setup Information</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Windows</td>
+          <td>link to section on GUI installation -ToDo-</td>
+        </tr>
+        <tr>
+          <td>Ubuntu</td>
+          <td>link -ToDo-</td>
+        </tr>
+        <tr>
+          <td>MacOS</td>
+          <td>link -ToDo-</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ul>
+
+<h3 id="tizen-studio-command-line-installation">Tizen Studio Command Line Installation</h3>
+
+<p>Tizen Studio command line installation takes minimal network resources and time to download and install on your development hardware.</p>
+
+<ul>
+  <li>
+    <p>To install Tizen Studio on Windows® using the CLI installer, double click the installer file. The console window appears and the installer gets executed automatically. You can follow the console window to see the installation progress.</p>
+  </li>
+  <li>
+    <p>To install Tizen Studio on Ubuntu® and MacOS®, navigate to the directory where you downloaded the installer file and follow these steps:</p>
+
+    <ol>
+      <li>Open the terminal.</li>
+      <li>Type the <code class="highlighter-rouge">chmod +x</code> command to apply the execute permission to the installer file.</li>
+      <li>
+        <p>Type the command with the following syntax:</p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  web-cli_Tizen_Studio_&lt;version&gt; [options] [&lt;directory path&gt;]
+     
+</code></pre></div>        </div>
+        <p>The following table identifies the standard command line options for the CLI installation. Command line options are case insensitive:</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Options</th>
+              <th>Descriptions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code class="highlighter-rouge">--show-license</code></td>
+              <td>Displays the Tizen Studio software license agreement.<br /><br /><b>Note</b><br /><br /> You must use this option alone. Do not use with other options.&lt;/br&gt;</td>
+            </tr>
+            <tr>
+              <td><code class="highlighter-rouge">--accept-license</code></td>
+              <td>Accepts the license terms.</td>
+            </tr>
+            <tr>
+              <td><code class="highlighter-rouge">--no-java-check</code></td>
+              <td>Skips the Java version check.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>The following table identifies the standard command line parameter for installation related tasks. Command line options are case insensitive:</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Parameter</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code class="highlighter-rouge">directory path</code></td>
+              <td>Specifies the installation directory path.<br /> <br /><strong>Note</strong><br /><br /> If you do not enter the path, Tizen Studio is installed in the default directory (<code class="highlighter-rouge">/home/{user}/tizen-studio</code>).</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li>Accept the license terms and type <strong>Y</strong> when prompted, to proceed with the installation.</li>
+      <li>Type the Tizen Studio installation location.</li>
+    </ol>
+
+    <p>The CLI installer begins installing Tizen Studio.</p>
+  </li>
+</ul>
+
+<blockquote>
+  <p><strong>Note</strong></p>
+
+  <p>By default, the Web App Development platform and related tools are installed. For installing Native application platform and tools use CLI Package Manager.</p>
+</blockquote>
+
+<h2 id="install-additional-packages">Install Additional Packages</h2>
+
+<p>The CLI package manager tool also provides you the option to install additional required packages and tools.</p>
+
+<p>To run the CLI Package Manager with the <code class="highlighter-rouge">install</code> command, use the following syntax:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>package-manager-cli install [--accept-license] [--no-java-check] [--proxy &lt;value&gt;] [-f &lt;file path&gt;] [-p &lt;password&gt;] &lt;package name&gt;[,...]
+</code></pre></div></div>
+<p>The following table identifies the standard command line parameters for CLI package management tasks. Command line options are case insensitive:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameters</th>
+      <th>Descriptions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">--accept-license</code></td>
+      <td>Accepts the license terms.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">--no-java-check</code></td>
+      <td>Skips the Java version check.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">--proxy &lt;value&gt;</code></td>
+      <td>Proxy configuration value. Use any one of the following values: direct, auto, or ip:port.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">-f, --file &lt;file path&gt;</code></td>
+      <td>If you want to install packages from a local SDK image, specify the full path of the SDK image file.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">-p, --password &lt;password&gt;</code></td>
+      <td>Administrator (sudo) password for authentication in Ubuntu only.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">&lt;package name&gt;[,...]</code></td>
+      <td>Name of the package that you want to install. You can enter multiple package names such as <strong>NativeIDE</strong> and <strong>Emulator</strong>.<br /><br />To retrieve the names of the installable packages, use the following command:<br /><code class="highlighter-rouge">package-manager-cli show-pkgs</code></td>
+    </tr>
+  </tbody>
+</table>
+
+
+						</section>
+					</main>
+					<nav class="col-nav">
+						<div id="sidebar-nav" class="sidebar hidden-sm hidden-xs">
+						    
+
+
+<div id="navbar" class="nav-sidebar">
+    <ul class="nav" id="jsTOCLeftNav">
+        
+        
+        
+        
+    
+        <li>
+            <a 
+                href="tizenstudio/" 
+                data-target="#item1" 
+                data-toggle="collapse" 
+                data-parent="#stacked-menu"
+                aria-expanded=" false "
+                class=" collapsed "
+                >
+                    Tizen Studio
+                    <span class="caret arrow"></span>
+            </a>
+            
+
+            
+            <ul class="nav collapse" aria-expanded="false" id="#item1">
+            
+
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="tizenstudio/setup/install-sdk/"
+                        class=""
+                        aria-expanded=" false "
+                        data-target="#item1" 
+                        data-toggle="collapse" 
+                        >
+                        Setup
+                        <span class="caret arrow"></span>
+                    </a>
+                    
+                    
+                    <ul class="nav collapse" aria-expanded="false" id="#item1">
+                    
+                        
+                        <li>
+                            
+                            <a 
+                                href="tizenstudio/setup/install-sdk/"
+                                class=""
+                                >
+                                Setup
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a 
+                                href="tizenstudio/setup/install-sdk/"
+                                class=""
+                                >
+                                Setup
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+                
+            </ul>
+            
+        </li>
+    
+        
+        
+    </ul>
+</div>
+<script>
+    $("a[href$='/tizenstudio/setup/tizen-cli/']").addClass("active currentPage");
+</script>
+						</div>
+					</nav>
+					<div class="col-toc">
+						<div class="sidebar hidden-xs hidden-sm">
+							<div class="toc-nav">
+								<div class="feedback-links">
+									<ul>
+										
+                                        <li style="visibility: hidden">
+                                            <a href="">
+                                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i> 
+                                                Edit this page
+                                            </a>
+                                        </li>
+                                        
+										<li>
+                                            <a href="https://github.com/samsung-test/samsung-test.github.io/edit/1.1/tizenstudio/setup/tizen-cli.md" target="_blank">
+                                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                                Edit Page
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://github.com/samsung-test/samsung-test.github.io/issues/new" class="nomunge" target="_blank">
+                                                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                                Report Issue
+                                            </a>
+                                        </li>
+									</ul>
+								</div>
+								   
+									<div id="side-toc-title">On this page:</div>
+									
+<ul id="my_toc" class="inline_toc">
+  <li><a href="#install-tizen-studio-using-cli" class="nomunge">Install Tizen Studio using CLI</a>
+    <ul>
+      <li><a href="#prerequisites" class="nomunge">Prerequisites</a></li>
+      <li><a href="#tizen-studio-command-line-installation" class="nomunge">Tizen Studio Command Line Installation</a></li>
+    </ul>
+  </li>
+  <li><a href="#install-additional-packages" class="nomunge">Install Additional Packages</a></li>
+</ul>
+
+
+								</div>
+								
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="container-fluid">
+  <div class="top_footer">
+    <div class="footer-nav">
+      <nav class="footer_sub_nav">
+        <ul class="menu">
+          <li><a href="https://developer.tizen.org/">Developer</a></li>
+          <li><a href="https://dashboard.tizen.org/">Dashboard</a></li>
+          <li><a href="https://craftroom.tizen.org/">Craftroom</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="bottom_footer">
+    <div class="footer-copyright col-xs-12 col-md-8">
+      <p class="copyright">
+        Copyright &copy; 2019 Tizen Inc. All rights reserved.
+      </p>
+    </div>
+    <div class="footer_social_nav">
+      <ul class="nav-social">
+        <li class="fa fa-github"><a href="https://github.com/samsung-test">GitHub</a></li>  
+        <li class="fa fa-twitter"><a href="https://twitter.com/TizenProject">Twitter</a></li>
+        <li class="fa fa-facebook"><a href="http://www.facebook.com/pages/Tizen-Project">Facebook</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+    <div id="templates"></div>
+    <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/common.js?v=08122019"></script>
+<script type="text/javascript" src="/js/handlebars-v4.0.11.js?v=08122019"></script>
+<script type="text/javascript" src="/js/widgets-data.js?v=08122019"></script>
+<script type="text/javascript" src="/js/widgets.js?v=08122019"></script>
+<script type="text/javascript" src="/js/highlight.pack.js"></script>
+<script type="text/javascript" src="/js/tocs.js"></script>
+<script type="text/javascript" src="/js/menu.js"></script>
+<script type="text/javascript" src="/js/stickyfill.min.js"></script>
+<script type="text/javascript" src="/js/metadata.js"></script>
+<script type="text/javascript" src="/js/docs.js"></script>
+</body>
+</html>
