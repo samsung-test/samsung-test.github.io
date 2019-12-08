@@ -1,6 +1,10 @@
-# VMAX AD SDK on tizen
+---
+title: VMAX AD SDK on tizen
+desc: Tizen Studio
+keywords: Tizen, OS, Open Source
+---
 
-## VMAX Tizen SDK Integration Guide
+# VMAX AD SDK on tizen
 
 VMAX&trade; is the one-stop solution that gives you complete control over your app monetization. It is a publisher-centric mediation SSP platform which sources ads from various sources and optimizes to maximize yield rate and fill rate.
 

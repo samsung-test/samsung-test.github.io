@@ -1,3 +1,8 @@
+---
+title: Configurable SDK
+desc: Configurable SDK
+keywords: Tizen, OS, Open Source, SDK, Configurable
+---
 
 Configurable SDK
 ================

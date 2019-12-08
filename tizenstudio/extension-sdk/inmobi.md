@@ -1,6 +1,10 @@
-# InMobi Tizen Ad SDK Programing Guide
+---
+title: InMobi Tizen Ad SDK 
+desc: Tizen Studio
+keywords: Tizen, OS, Open Source
+---
 
-## InMobi Tizen Ad SDK
+# InMobi Tizen Ad SDK
 
 The InMobi Tizen Ad SDK allows you to monetize your Tizen application with a wide range of advertisement formats. From banner ads to full-screen interstitial ads, you can deliver ads from the InMobi network for a better user experience.
 

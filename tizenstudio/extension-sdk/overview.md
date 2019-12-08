@@ -1,3 +1,10 @@
+---
+title: Extension SDK
+desc: Tizen Studio
+keywords: Tizen, OS, Open Source
+---
+
+
 # Extension SDK
 
 This page explains about using Extension SDK to extend the feature set of Tizen Studio. The Extension SDK maximizes on the capabilities, and functionalities of the Tizen Studio. Extension SDK helps you enrich the Tizen Studio capabilities by integrating one or more new functionalities or modifying the behaviour of existing functionalities.  

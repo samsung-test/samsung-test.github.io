@@ -1,3 +1,9 @@
+---
+title: In-app Purchase Programming Guide
+desc: Tizen Studio
+keywords: Tizen, OS, Open Source
+---
+
 # In-app Purchase Programming Guide
 
 By selling items from within your application, you can get a large revenue. You can implement In-Application Purchases (IAP) in your application using the AppControl mechanism for Tizen native and Web applications.
