@@ -5,8 +5,12 @@
           - page: Setup
             url: tizenstudio/setup/install-sdk/
             subfolderitems:
-              - page: Setup
-                url: tizenstudio/setup/install-sdk/
+              - page: Install on Windows 
+                url: tizenstudio/setup/windows/
+              - page: Install on Ubuntu 
+                url: tizenstudio/setup/ubuntu/
+              - page: Install on Mac 
+                url: tizenstudio/setup/mac/
       - title: Platform Developing
         url: platform/developing/installing/
         subfolderitems:
