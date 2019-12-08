@@ -14,10 +14,6 @@ This page explains about options available to install Tizen Studio on your devel
 
 Select the following as per target operating system and follow the installation instructions: 
 
-<br>
-<br>
-<br>
-
 <div class="component-container">
     <!--start row-->
     <div class="row">
