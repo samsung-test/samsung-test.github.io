@@ -133,7 +133,7 @@ Tizen Studio runs on Windows, Ubuntu, as well as macOS and for installation guid
         <div class="col-sm-12 col-md-12 col-lg-4 block">
             <div class="component">
                 <div class="component-icon">
-                    <a href="mac/"> <img src="./media/apple1.png" alt="Mac"> </a>
+                    <a href="mac/"> <img src="media/apple1.png" alt="Mac"> </a>
                 </div>
                 <h3 id="tizen-for-mac"><a href="mac/">Mac</a></h3>
             </div>
@@ -141,7 +141,7 @@ Tizen Studio runs on Windows, Ubuntu, as well as macOS and for installation guid
         <div class="col-sm-12 col-md-12 col-lg-4 block">
             <div class="component">
                 <div class="component-icon">
-                    <a href="windows/"> <img src="./media/win.png" alt="Windows"> </a>
+                    <a href="windows/"> <img src="media/win.png" alt="Windows"> </a>
                 </div>
                 <h3 id="tizen-for-windows"><a href="windows/">Windows</a></h3>
              </div>
@@ -149,9 +149,9 @@ Tizen Studio runs on Windows, Ubuntu, as well as macOS and for installation guid
         <div class="col-sm-12 col-md-12 col-lg-4 block">
             <div class="component">
                 <div class="component-icon">
-                    <a href="linux/"> <img src="./media/linux1.png" alt="Linux"> </a>
+                    <a href="ubuntu/"> <img src="media/linux1.png" alt="Linux"> </a>
                 </div>
-                <h3 id="tizen-for-linux"><a href="linux">Linux</a></h3>
+                <h3 id="tizen-for-linux"><a href="ubuntu">Ubuntu</a></h3>
             </div>
         </div>
     </div>
