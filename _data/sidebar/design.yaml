@@ -3,6 +3,6 @@
         url: design/introduction/air
         subfolderitems:
           - page: Design Principles   
-            url: design/mobile/design-principles/
+            url: design/mobile/design-principles
       - title: Styles
-        url: design/mobile/styles/
+        url: design/mobile/styles
