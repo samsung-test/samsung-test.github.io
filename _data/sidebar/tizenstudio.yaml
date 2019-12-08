@@ -11,9 +11,15 @@
                 url: tizenstudio/setup/ubuntu/
               - page: Install on Mac 
                 url: tizenstudio/setup/mac/
-      - title: Platform Developing
-        url: platform/developing/installing/
-        subfolderitems:
-          - page: Installing Development Tools
-            url: platform/developing/installing/ 
-          - page: Setting up Development Environment
+              - page: Install using CLI
+                url: tizenstudio/setup/mac/tizen-cli/
+              - page: Install on Mac 
+                url: tizenstudio/setup/mac/
+           - page: Update
+             url: tizenstudio/setup/update-sdk/
+           - page: Uninstall 
+             url: tizenstudio/setup/uninstall-sdk/
+      - title: Troubleshoot
+        url: tizenstudio/setup/troubleshooting/
+             
+  
