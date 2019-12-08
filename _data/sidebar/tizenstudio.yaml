@@ -12,7 +12,7 @@
               - page: Install on Mac 
                 url: tizenstudio/setup/mac/
               - page: Install using CLI
-                url: tizenstudio/setup/mac/tizen-cli/
+                url: tizenstudio/setup/tizen-cli/
       - title: Update
         url: tizenstudio/setup/update-sdk/
       - title: Uninstall 
