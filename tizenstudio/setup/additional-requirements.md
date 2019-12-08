@@ -1,6 +1,6 @@
 ---
 title: Tizen Documentation
-desc: Tizen is an open and flexible operating system built from the ground up to address the needs of all stakeholders of the mobile and connected device ecosystem, including device manufacturers, mobile operators, application developers and independent software vendors (ISVs).
+desc: Additional requirements
 keywords: Tizen, OS, Open Source
 ---
 
