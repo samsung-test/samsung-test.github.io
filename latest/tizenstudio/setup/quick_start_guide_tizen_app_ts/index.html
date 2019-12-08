@@ -4,9 +4,9 @@
 	<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="icon"  href="/favicon.ico" />
-<title>Installation</title>
-<meta name="description" content="Install Tizen"/>
-<meta name="keywords" content="Tizen, OS, Open Source, Install"/>
+<title>Hardware Accelerated Execution Manager</title>
+<meta name="description" content="HAEM"/>
+<meta name="keywords" content="Tizen, OS, Open Source"/>
 <base id="baseURL" href="/latest/" />
 <meta id="docsVersion" content="1.1" />
 <meta name="last-modified" content="2019-12-08 13:14:14 +0530" />
@@ -120,7 +120,7 @@
           
       
       <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-         <span property="name">Installation</span>
+         <span property="name">Hardware Accelerated Execution Manager</span>
          <meta property="position" content="3" />
       </li>
       
@@ -192,50 +192,58 @@
 </style>
 
 							<div class="widgetLatestVersionNotification"></div>
-							<h1 id="installation">Installation</h1>
+							<h1 id="develop-wearable-web-applications-using-template">Develop Wearable Web Applications using Template</h1>
 
-<p>This page explains about options available to install Tizen Studio on your development hardware. Tizen Studio runs on all major operating systems like Windows, macOS, Ubuntu.You can install any release of the Tizen Studio. However, it is recommended that you install the most recent release and ensure the following:</p>
+<h2 id="introduction">Introduction</h2>
+<p>Wearable Web applications are apps that help you monitor health, show time, play games, and much more. These applications are developed using various Web-native languages, such as HTML5, Cascading Style Sheets (CSS), and JavaScript.</p>
 
-<ul>
-  <li>Plan your installation: check for the necessary hardware and software requirements.</li>
-  <li>Install Tizen Studio:  follow the installation guides for each operating system.</li>
-  <li>Configure: After installation, to have optimal development experience, configure various Tizen Studio components.</li>
-</ul>
+<p>This page explains how to develop a Wearable Web application in Tizen Studio using <strong>Template</strong>.</p>
 
-<p>Select the following as per target operating system and follow the installation instructions:</p>
+<h2 id="system-requirements">System Requirements</h2>
 
-<div class="component-container">
-    <!--start row-->
-    <div class="row">
-        <div class="col-sm-12 col-md-12 col-lg-4 block">
-            <div class="component">
-                <div class="component-icon">
-                    <a href="./tizenstudio/setup/mac/"> <img src="./tizenstudio/setup/media/apple1.png" alt="Mac" /> </a>
-                  <p></p>
-                </div>
-                <h3 id="tizen-for-mac"><a href="mac/">Mac</a></h3>
-            </div>
-        </div>
-        <div class="col-sm-12 col-md-12 col-lg-4 block">
-            <div class="component">
-                <div class="component-icon">
-                    <a href="./tizenstudio/setup/win/"> <img src="./tizenstudio/setup/media/win.png" alt="Windows" /> </a>
-                 <p></p>
-                </div>
-                <h3 id="tizen-for-windows"><a href="windows/">Windows</a></h3>
-             </div>
-        </div>
-        <div class="col-sm-12 col-md-12 col-lg-4 block">
-            <div class="component">
-                <div class="component-icon">
-                    <a href="./tizenstudio/setup/linux/"> <img src="./tizenstudio/setup/media/linux1.png" alt="Linux" /> </a>
-                  <p></p>
-                </div>
-                <h3 id="tizen-for-linux"><a href="ubuntu">Ubuntu</a></h3>
-            </div>
-        </div>
-    </div>
-</div>
+<p><img src="./media/test.PNG" alt="Step 2" /></p>
+
+<h3 id="download-tizen-studio">Download Tizen Studio</h3>
+<p>You can download and install Tizen Studio using the IDE installer or the CLI installer. For more information, see https://developer.tizen.org/tizen-studio/download</p>
+
+<h2 id="tizen-studio-ui">Tizen Studio UI</h2>
+
+<p><img src="./media/1.PNG" alt="Step 1" /></p>
+
+<h2 id="create-project">Create Project</h2>
+
+<p><img src="./media/2.PNG" alt="Step 1" /></p>
+
+<p><img src="./media/3.PNG" alt="Step 2" /></p>
+
+<p><img src="./media/4.PNG" alt="Step 3" /></p>
+
+<h2 id="generate-author-certificate">Generate Author Certificate</h2>
+
+<p><img src="./media/ce1.PNG" alt="Step 1" /></p>
+
+<p><img src="./media/ce2.PNG" alt="Step 2" /></p>
+
+<p><img src="./media/ce3.PNG" alt="Step 3" /></p>
+
+<h2 id="running-application-on-emulator">Running Application on Emulator</h2>
+
+<p><img src="./media/em1.PNG" alt="Step 1" /></p>
+
+<p><img src="./media/em2.PNG" alt="Step 2" /></p>
+
+<p><img src="./media/em3.PNG" alt="Step 3" /></p>
+
+<h2 id="running-applications-on-target-device">Running Applications on Target Device</h2>
+
+<p><img src="./media/t1.PNG" alt="Step 1" /></p>
+
+<p><img src="./media/t2.PNG" alt="Step 2" /></p>
+
+<p><img src="./media/t3.PNG" alt="Step 3" /></p>
+
+<p><img src="./media/t4.PNG" alt="Step 4" /></p>
+
 
 						</section>
 					</main>
@@ -292,7 +300,7 @@
                             
                             <a 
                                 href="tizenstudio/setup/install-sdk/"
-                                class="active currentPage"
+                                class=""
                                 >
                                 Setup
                             </a>
@@ -302,7 +310,7 @@
                             
                             <a 
                                 href="tizenstudio/setup/install-sdk/"
-                                class="active currentPage"
+                                class=""
                                 >
                                 Setup
                             </a>
@@ -321,7 +329,7 @@
     </ul>
 </div>
 <script>
-    $("a[href$='/tizenstudio/setup/install-sdk/']").addClass("active currentPage");
+    $("a[href$='/tizenstudio/setup/quick_start_guide_tizen_app_ts/']").addClass("active currentPage");
 </script>
 						</div>
 					</nav>
@@ -339,7 +347,7 @@
                                         </li>
                                         
 										<li>
-                                            <a href="https://github.com/samsung-test/samsung-test.github.io/edit/1.1/tizenstudio/setup/install-sdk.md" target="_blank">
+                                            <a href="https://github.com/samsung-test/samsung-test.github.io/edit/1.1/tizenstudio/setup/quick_start_guide_tizen_app_ts.md" target="_blank">
                                                 <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                                                 Edit Page
                                             </a>
@@ -356,12 +364,17 @@
 									<div id="side-toc-title">On this page:</div>
 									
 <ul id="my_toc" class="inline_toc">
-  <li><a href="#tizen-for-mac" class="nomunge">Mac</a>
+  <li><a href="#introduction" class="nomunge">Introduction</a></li>
+  <li><a href="#system-requirements" class="nomunge">System Requirements</a>
     <ul>
-      <li><a href="#tizen-for-windows" class="nomunge">Windows</a></li>
-      <li><a href="#tizen-for-linux" class="nomunge">Ubuntu</a></li>
+      <li><a href="#download-tizen-studio" class="nomunge">Download Tizen Studio</a></li>
     </ul>
   </li>
+  <li><a href="#tizen-studio-ui" class="nomunge">Tizen Studio UI</a></li>
+  <li><a href="#create-project" class="nomunge">Create Project</a></li>
+  <li><a href="#generate-author-certificate" class="nomunge">Generate Author Certificate</a></li>
+  <li><a href="#running-application-on-emulator" class="nomunge">Running Application on Emulator</a></li>
+  <li><a href="#running-applications-on-target-device" class="nomunge">Running Applications on Target Device</a></li>
 </ul>
 
 
