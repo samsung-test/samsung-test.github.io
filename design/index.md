@@ -13,7 +13,7 @@ Let's begin by sharing our vision for Tizen app design and the visual language w
 ## Visions
 
 Tizen is a platform built for the future. It was developed to foster openness, which is essential for creating a rich user experience on mobile devices and the devices they connect to. Tizen nourishes users' curiosity, allows them to easily reach their goals, and lets them express their personality. Tizen is a platform designed to grow with users, enriching their daily life.
-
+design\mobile
 ![The OS of Everything](./design/media/1.1.png)
 
 
@@ -21,7 +21,7 @@ Tizen is a platform built for the future. It was developed to foster openness, w
 
 Tizen design principles explained in this section of the document are provided to suggest clear guidelines for developers, to design simple and easy-to-use apps for everyone.
 
-- [Design Principles](./design/mobile/design-principles.md)
+- [Design Principles](./design/mobile/design-principles/)
 
 
 ## TV
