@@ -22,8 +22,7 @@ The native application development phases and the tools used in each phase are a
 - [Run and Test Your Application](running-testing.md) 
 
  
-![Native application development](./media/nat1.png)
-
+![Native application development](./tizenstudio/native-tools/media/nat1.PNG)
 For advanced users, see [Command Line Interface (CLI)](../common-tools/command-line-interface.md).
 
 For a list of keyboard shortcuts related to the Tizen Studio and its tools, see [Keyboard Shortcuts](../common-tools/keyboard-shortcuts.md).
