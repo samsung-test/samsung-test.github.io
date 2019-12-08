@@ -4,12 +4,12 @@
 	<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="icon"  href="/favicon.ico" />
-<title>Hardware Accelerated Execution Manager</title>
-<meta name="description" content="HAEM"/>
+<title>Uninstall Tizen Studio</title>
+<meta name="description" content="Uninstall Tizen Studio"/>
 <meta name="keywords" content="Tizen, OS, Open Source"/>
-<base id="baseURL" href="/1.1/" />
+<base id="baseURL" href="/latest/" />
 <meta id="docsVersion" content="1.1" />
-<meta name="last-modified" content="2019-12-08 13:19:22 +0530" />
+<meta name="last-modified" content="2019-12-08 13:19:29 +0530" />
 <meta http-equiv="cache-control" content="max-age=24" />
 <meta http-equiv="cache-control" content="no-cache" />
 <meta http-equiv="Cache-Control" content="no-store" />
@@ -120,7 +120,7 @@
           
       
       <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-         <span property="name">Hardware Accelerated Execution Manager</span>
+         <span property="name">Uninstall Tizen Studio</span>
          <meta property="position" content="3" />
       </li>
       
@@ -192,77 +192,113 @@
 </style>
 
 							<div class="widgetLatestVersionNotification"></div>
-							<h1 id="how-to-develop-tizen-web-applications">How to Develop Tizen Web Applications?</h1>
+							<h1 id="uninstall-tizen-studio">Uninstall Tizen Studio</h1>
 
-<h3 id="introduction">Introduction</h3>
-<p>Web applications involve the standards for building and rendering web pages such as HTML, CSS, and JavaScript. The following figure illustrates the basic structure of a Tizen Web application:</p>
+<p>This page explains how to uninstall Tizen Studio from your system. The Tizen Studio uninstaller removes all the installed Tizen platforms and the tools. During the uninstallation procedure, all the data stored in the installation directory is removed, including any customizations or any other data you have stored within that directory. Make a back up of any data you want to keep prior to performing the uninstallation procedure.</p>
 
-<p><img src="./media/web_app.png" alt="Web applications" /></p>
+<p>You can uninstall Tizen Studio in one of the following ways:</p>
+<ul>
+  <li>Using GUI uninstaller</li>
+  <li>Using CLI uninstaller</li>
+</ul>
 
-<h2 id="how-to-create-tizen-web-project">How to create Tizen Web project?</h2>
+<blockquote>
+  <p><strong>Note</strong></p>
 
-<p><img src="./media/step1.png" alt="Step 1" /></p>
+  <p>For more information on how to remove a single package or multiple packages, see <a href="update-sdk.md">Updating Tizen Studio</a>.</p>
+</blockquote>
 
-<p><img src="./media/step2.png" alt="Step 2" /></p>
+<h2 id="gui-uninstaller">GUI Uninstaller</h2>
 
-<p><img src="./media/step3.png" alt="Step 3" /></p>
+<p>With an intuitive interface, the GUI uninstaller simplifies the uninstallation process. You can easily uninstall Tizen Studio and the related platforms and packages.</p>
 
-<h2 id="how-to-implement-tizen-web-applications">How to implement Tizen Web applications?</h2>
+<p>To uninstall Tizen Studio using GUI uninstaller, follow these steps:</p>
 
-<p>Following are the four implementation stages for a digital watch application:</p>
+<ol>
+  <li>Back up all the data and the files in case you want to keep them for future reference.
+    <blockquote>
+      <p><strong>Note</strong></p>
 
-<p><img src="./media/imp_pla.png" alt="implementation plan" /></p>
+      <p>Once you start the uninstallation process, the process is irreversible. You cannot restore the removed files.</p>
+    </blockquote>
+  </li>
+  <li>Launch Tizen Studio uninstaller, click the <strong>uninstaller icon.</strong></li>
+  <li>
+    <p>Check the following section to make a choice of components that you want to uninstall.</p>
 
-<h2 id="how-to-add-user-interface-layout-to-a-digital-watch">How to add user interface layout to a digital watch?</h2>
+    <ul>
+      <li>
+        <p><strong>SDK data</strong><br />
+The SDK data directory typically contains user-created data files, including emulator images, log files, and tool configuration files.</p>
+      </li>
+      <li>
+        <p><strong>KeyStore</strong><br />
+The keystore directory is located inside the SDK data directory and contains the author and distributor certificate files. If the certificate files are deleted, you cannot restore them from any Tizen seller market site. If you plan to install another Tizen Studio version or reinstall Tizen Studio later, it is strongly recommended that you back up the certificate files or keep the keystore directory by unchecking the <strong>KeyStore</strong> component.</p>
 
-<p>Following are the steps to add user interface layout to a digital watch:</p>
+        <blockquote>
+          <p><strong>Note</strong></p>
 
-<p><img src="./media/ste1.png" alt="Step 1" /></p>
+          <p>If you do not select SDK data or KeyStore components, you can keep the SDK data or KeyStore files in their directories for future        re-use.</p>
+        </blockquote>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>To remove all the installed platforms, packages, tools, and the user-created data and the files, click <strong>Uninstall</strong>.</p>
 
-<p><img src="./media/ste2.png" alt="Step 2" /></p>
+    <p><img src="./media/uninstall_sdk_selection.png" alt="Uninstaller selections" /></p>
+  </li>
+  <li>
+    <p>If you click the <strong>checkbox</strong> to uninstall the SDK data or the KeyStore components, they get uninstalled during the process. In case you want to keep one of them, uncheck the respective <strong>checkbox</strong>.</p>
 
-<p><img src="./media/ste3.png" alt="Step 3" /></p>
+    <p><img src="./media/uninstall_sdk_progress.png" alt="Uninstallation in progress" /></p>
+  </li>
+</ol>
 
-<h2 id="how-to-add-watch-functionality-to-a-digital-watch">How to add watch functionality to a digital watch?</h2>
+<h2 id="cli-uninstaller">CLI Uninstaller</h2>
 
-<p>Following are the steps to implement the functionality of the digital watch using JavaScript and standard APIs:</p>
+<p>For advanced users, Tizen Studio provides a CLI uninstaller. The following procedure facilitates removing Tizen Studio and the related platforms and packages.</p>
 
-<p><img src="./media/fu1.png" alt="Func 1" /></p>
+<p>To uninstall Tizen Studio using the CLI uninstaller, run th eCLI Package Manager with <code class="highlighter-rouge">uninstall</code> command using the following syntax:</p>
 
-<p><img src="./media/fu2.png" alt="Func 2" /></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   package-manager-cli uninstall [-p &lt;password&gt;] &lt;package name&gt;[,...] | [--all]
+</code></pre></div></div>
 
-<p><img src="./media/fu3.png" alt="Func 3" /></p>
+<p>The following table explains various command parameters to perform uninstallation tasks:</p>
 
-<p><img src="./media/fu4.png" alt="Func 4" /></p>
+<p><strong>Table: Uninstall command parameters</strong></p>
 
-<p><img src="./media/fu5.png" alt="Func 5" /></p>
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">-p, --password &lt;password&gt;</code></td>
+      <td>Administrator (sudo) password for authentication.<br /> Works in Ubuntu only.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">--all</code></td>
+      <td>Uninstalls the entire Tizen Studio with tools and platforms including user-created data, emulator images, and settings.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">&lt;package name&gt;[,...]</code></td>
+      <td>Name of the package you want to uninstall. You can enter multiple package names such as <strong>NativeIDE</strong> and <strong>Emulator</strong>.<br />To retrieve the names of the uninstallable packages, use the following command:<br /><code class="highlighter-rouge">package-manager-cli show-pkgs</code></td>
+    </tr>
+  </tbody>
+</table>
 
-<p><img src="./media/fu6.png" alt="Func 6" /></p>
-
-<h2 id="how-to-add-battery-ui-layout-to-a-digital-watch">How to add battery UI layout to a digital watch?</h2>
-
-<p>Following are the steps to implement the user interface layout for the battery, and add a background image to the digital watch using HTML and CSS:</p>
-
-<p><img src="./media/ba1.png" alt="Battery 1" /></p>
-
-<p><img src="./media/ba2.png" alt="Battery 2" /></p>
-
-<p><img src="./media/ba3.png" alt="Battery 3" /></p>
-
-<p><img src="./media/ba4.png" alt="Battery 4" /></p>
-
-<h2 id="how-to-add-battery-functionality-to-a-digital-watch">How to add battery functionality to a digital watch?</h2>
-
-<p>Following are the steps to implement the functionality of the battery indicator using JavaScript and the Tizen Device API:</p>
-
-<p><img src="./media/bf1.png" alt="Func 1" /></p>
-
-<p><img src="./media/bf2.png" alt="Func 2" /></p>
-
-<p><img src="./media/bf3.png" alt="Func 3" /></p>
-
-<p><img src="./media/bf4.png" alt="Func 4" /></p>
-
+<h2 id="related-information">Related Information</h2>
+<ul>
+  <li>Dependencies
+    <ul>
+      <li>Tizen Studio 1.0 and Higher</li>
+    </ul>
+  </li>
+</ul>
 
 						</section>
 					</main>
@@ -348,7 +384,7 @@
     </ul>
 </div>
 <script>
-    $("a[href$='/tizenstudio/setup/quick_start_guide/']").addClass("active currentPage");
+    $("a[href$='/tizenstudio/setup/uninstall-sdk/']").addClass("active currentPage");
 </script>
 						</div>
 					</nav>
@@ -366,7 +402,7 @@
                                         </li>
                                         
 										<li>
-                                            <a href="https://github.com/samsung-test/samsung-test.github.io/edit/1.1/tizenstudio/setup/quick_start_guide.md" target="_blank">
+                                            <a href="https://github.com/samsung-test/samsung-test.github.io/edit/1.1/tizenstudio/setup/uninstall-sdk.md" target="_blank">
                                                 <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                                                 Edit Page
                                             </a>
@@ -383,13 +419,9 @@
 									<div id="side-toc-title">On this page:</div>
 									
 <ul id="my_toc" class="inline_toc">
-  <li><a href="#introduction" class="nomunge">Introduction</a></li>
-  <li><a href="#how-to-create-tizen-web-project" class="nomunge">How to create Tizen Web project?</a></li>
-  <li><a href="#how-to-implement-tizen-web-applications" class="nomunge">How to implement Tizen Web applications?</a></li>
-  <li><a href="#how-to-add-user-interface-layout-to-a-digital-watch" class="nomunge">How to add user interface layout to a digital watch?</a></li>
-  <li><a href="#how-to-add-watch-functionality-to-a-digital-watch" class="nomunge">How to add watch functionality to a digital watch?</a></li>
-  <li><a href="#how-to-add-battery-ui-layout-to-a-digital-watch" class="nomunge">How to add battery UI layout to a digital watch?</a></li>
-  <li><a href="#how-to-add-battery-functionality-to-a-digital-watch" class="nomunge">How to add battery functionality to a digital watch?</a></li>
+  <li><a href="#gui-uninstaller" class="nomunge">GUI Uninstaller</a></li>
+  <li><a href="#cli-uninstaller" class="nomunge">CLI Uninstaller</a></li>
+  <li><a href="#related-information" class="nomunge">Related Information</a></li>
 </ul>
 
 
