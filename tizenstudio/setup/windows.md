@@ -149,7 +149,7 @@ To launch the installer, follow these steps:
    >
    >The license contains important legal notices for using Tizen Studio. Read it fully, and click **Accept** only if you agree with the license statement.
 
-   ![Tizen Studio License Agreement](./media/install_sdk_license.png)
+   ![Tizen Studio License Agreement](tizenstudio/setup/media/install_sdk_license.png)
 
 3. Click **Browse** and specify a new directory to set the SDK data location. 
 
@@ -162,14 +162,14 @@ To launch the installer, follow these steps:
 4. Click **Install**.
 5. Click **Finish** to close the installer.
 
-   ![Installation complete](./media/migration_finish_instal.png)
+   ![Installation complete](tizenstudio/setup/media/migration_finish_instal.png)
 
    >**Note:**
    >
    > - If you install the Tizen Studio in a directory that requires administrator privileges for access, such as `C:\Program Files`, then administrator privileges are required to run the Tizen SDK tools.
    > - If you want to install additional platforms and tools, launch Package Manager by selecting the Launch the Package Manager **check box** and click **Finish**.
    > - Use Tizen Package Manager, to install and update additional tools. 
-   > - For more information on the Package Manager, see [Updating Tizen Studio](./update-sdk.md).
+   > - For more information on the Package Manager, see [Updating Tizen Studio](tizenstudio/setup/update-sdk.md).
 
 ## Verify Installation   
 
