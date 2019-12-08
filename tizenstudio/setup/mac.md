@@ -1,3 +1,8 @@
+---
+title:  Hardware Accelerated Execution Manager
+desc: HAEM
+keywords: Tizen, OS, Open Source
+---
 
 # Install Tizen Studio on MacOS
 
