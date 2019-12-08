@@ -18,16 +18,12 @@ To have optimal installation experience, follow these steps chronologically:
 - Launch installer
 - Verify installation
 
-<style type="text/css">
-a.clickable   { width: 100%; height: 100%; }
-a.clickable:hover   { background-color: ; color: #FFFFF; }
-</style>
-
 ## System Prerequisites
 
 Ensure that the following system prerequisites are met:
 
 ### Hardware Requirements
+
 <table>
   <tr>
       <td width=150px>CPU</td>
@@ -48,6 +44,7 @@ Ensure that the following system prerequisites are met:
 </table> 
 
 ### Software Requirements
+
 <table>
   <tr>
     <th colspan="2" align=left>Windows</th>
@@ -69,15 +66,15 @@ Ensure that the following system prerequisites are met:
   </tr>
   <tr>
     <td>Open JDK</td>
-    <td width=520px><a href="https://download.java.net/java/GA/jdk10/10/binaries/openjdk-10_windows-x64_bin.tar.gz" class="clickable" target="_blank">Download</a></td>
+    <td width=520px><a href="https://download.java.net/java/GA/jdk10/10/binaries/openjdk-10_windows-x64_bin.tar.gz"  target="_blank">Click to Download</a></td>
   </tr>
   <tr>
     <td>OpenJavaFX</td>
-    <td><a href=http://gluonhq.com/download/javafx-11-0-2-sdk-windows/ class="clickable" target="_blank">Download</a></td>
+    <td><a href=http://gluonhq.com/download/javafx-11-0-2-sdk-windows/ class="clickable" target="_blank">Click to Download</a></td>
   </tr>
   <tr>
     <td>Tizen Studio setup file</td>
-    <td><a href="https://developer.tizen.org/development/tizen-studio/download#" class="clickable" target="_blank">Download</a></td>
+    <td><a href="https://developer.tizen.org/development/tizen-studio/download#" target="_blank">Click to Download</a></td>
   </tr>
 </table>
 
