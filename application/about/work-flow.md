@@ -1,5 +1,7 @@
 ---
 title: Tizen Development Workflow
+redirect_from:
+  - application/about/
 ---
 
 # Tizen Development Workflow
