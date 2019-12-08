@@ -26,20 +26,20 @@ Ensure that the following system prerequisites are met:
 
 <table>
   <tr>
-      <td width=150px>CPU</td>
-    <td colspan="3" width=50px>Dual Core, 2Ghz or faster</td>
+      <td>CPU</td>
+    <td>Dual Core, 2Ghz or faster</td>
   </tr>
   <tr>
     <td>Architecture</td>
-    <td width=520px>x32 or x64 </td>
+    <td>x32 or x64 </td>
   </tr>
   <tr>
     <td>Memory</td>
-    <td colspan="3">3GB or more </td>
+    <td>3GB or more </td>
   </tr>
   <tr>
     <td>Disk space</td>
-    <td colspan="3">6 GB or more </td>
+    <td>6 GB or more </td>
   </tr>
 </table> 
 
@@ -50,8 +50,8 @@ Ensure that the following system prerequisites are met:
     <th colspan="2" align=left>Windows</th>
   </tr>
   <tr>
-    <td width=150px>Version</td>
-    <td width=520px>7/8/10</td>
+    <td>Version</td>
+    <td>7/8/10</td>
   </tr>
   <tr>
     <td>Bit</td>
@@ -66,11 +66,11 @@ Ensure that the following system prerequisites are met:
   </tr>
   <tr>
     <td>Open JDK</td>
-    <td width=520px><a href="https://download.java.net/java/GA/jdk10/10/binaries/openjdk-10_windows-x64_bin.tar.gz"  target="_blank">Click to Download</a></td>
+    <td><a href="https://download.java.net/java/GA/jdk10/10/binaries/openjdk-10_windows-x64_bin.tar.gz"  target="_blank">Click to Download</a></td>
   </tr>
   <tr>
     <td>OpenJavaFX</td>
-    <td><a href=http://gluonhq.com/download/javafx-11-0-2-sdk-windows/ class="clickable" target="_blank">Click to Download</a></td>
+    <td><a href=http://gluonhq.com/download/javafx-11-0-2-sdk-windows/ target="_blank">Click to Download</a></td>
   </tr>
   <tr>
     <td>Tizen Studio setup file</td>
