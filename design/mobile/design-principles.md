@@ -1,3 +1,10 @@
+---
+title: Design Principles
+desc: Tizen Studio
+keywords: Tizen, OS, Open Source
+---
+
+
 # Design Principles
 
 Tizen design principles explained in this section of the document are provided to suggest clear guidelines for developers, to design simple and easy-to-use apps for everyone.

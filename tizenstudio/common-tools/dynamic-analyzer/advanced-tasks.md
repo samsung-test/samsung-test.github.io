@@ -1,3 +1,10 @@
+---
+title: Handling Advanced Dynamic Analyzer Tasks
+desc: Tizen Studio
+keywords: Tizen, OS, Open Source
+---
+
+
 # Handling Advanced Dynamic Analyzer Tasks
 
 This topic explains some additional functionality of the Dynamic Analyzer.
