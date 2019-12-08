@@ -13,11 +13,6 @@ To have the optimal installation experience, follow these steps chronologically:
 - Launch installer
 - Verify installation
 
-<style type="text/css">
-  a.clickable   { width: 100%; height: 100%; }
-  a.clickable:hover   { background-color:; color: #FFFFF; }
-</style>
-
 ## System Prerequisites
 
 Ensure that the following system prerequisites are met:
@@ -64,15 +59,15 @@ Ensure that the following system prerequisites are met:
   </tr>
   <tr>
     <td>Open JDK</td>
-    <td width=520px><a href="https://download.java.net/java/GA/jdk10/10/binaries/openjdk-10_osx-x64_bin.tar.gz" class="clickable" target="_blank">https://download.java.net/java/GA/jdk10/10/binaries/openjdk-10_osx-x64_bin.tar.gz" </a></td>
+    <td width=520px><a href="https://download.java.net/java/GA/jdk10/10/binaries/openjdk-10_osx-x64_bin.tar.gz" target="_blank"> Click to download </a></td>
   </tr>
   <tr>
     <td>OpenJavaFX</td>
-    <td><a href="http://gluonhq.com/download/javafx-11-0-2-sdk-mac" class="clickable" target="_blank"> http://gluonhq.com/download/javafx-11-0-2-sdk-mac</a></td>
+    <td><a href="http://gluonhq.com/download/javafx-11-0-2-sdk-mac" class="clickable" target="_blank">Click to download</a></td>
   </tr>
   <tr>
     <td>Tizen Studio setup file</td>
-    <td><a href="https://developer.tizen.org/development/tizen-studio/download#" class="clickable" target="_blank">https://developer.tizen.org/development/tizen-studio/download# </a></td>
+    <td><a href="https://developer.tizen.org/development/tizen-studio/download#" class="clickable" target="_blank">Click to download</a>     </td>
   </tr>
 </table>
 
