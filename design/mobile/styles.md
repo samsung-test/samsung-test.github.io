@@ -10,7 +10,7 @@ keywords: Tizen, OS, Open Source
 
 The Tizen offers a single background gradient called "Midday" as the default Home screen background since Tizen SDK 2.4. It captures colors and natural gradients of the sky.
 
-![Midday, the new theme color for the Tizen mobile.](media/2.4_a.png)
+![Midday, the new theme color for the Tizen mobile.](design/mobile/media/2.4_a.png)
 *Midday, the new theme color for the Tizen mobile since Tizen SDK 2.4.*
 
 ## Color Swatch
@@ -20,31 +20,31 @@ For basic action buttons, such as 'Go' and 'Stop', Tizen 2.4 uses clear and dist
 
 | No.            | Color          | HSB code       | Swatch         | Component      |
 |----------------|----------------|----------------|----------------|----------------|
-| 1              | White          | \#FFFFFF       | ![Swatch White](media/swatch_white.png) | Primary text / Primary color|
-| 2              | Gray           | \#666666       |  ![Swatch Gray](media/swatch_gray.png)     | Secondary text |
-| 3              | Black          | \#000000       | ![Swatch Black](media/swatch_black.png)        | Primary text / Primary color |
-| 4              | Green          | \#2AB842       | ![Swatch Green](media/swatch_green.png)     | Start          |
-| 5              | Red            | \#E12222       | ![Swatch Red](media/swatch_red.png)        | Stop           |
-| 6              | Yellow         | \#FFB400       | ![Swatch Yellow](media/swatch_yellow.png)       | Snooze, Favorite(star) |
+| 1              | White          | \#FFFFFF       | ![Swatch White](design/mobilemedia/swatch_white.png) | Primary text / Primary color|
+| 2              | Gray           | \#666666       |  ![Swatch Gray](design/mobilemedia/swatch_gray.png)     | Secondary text |
+| 3              | Black          | \#000000       | ![Swatch Black](design/mobilemedia/swatch_black.png)        | Primary text / Primary color |
+| 4              | Green          | \#2AB842       | ![Swatch Green](design/mobilemedia/swatch_green.png)     | Start          |
+| 5              | Red            | \#E12222       | ![Swatch Red](design/mobilemedia/swatch_red.png)        | Stop           |
+| 6              | Yellow         | \#FFB400       | ![Swatch Yellow](design/mobilemedia/swatch_yellow.png)       | Snooze, Favorite(star) |
 
 
 ## Font Styles
 
 Different text colors may be used depending on the level of text information and background colors. The following are examples of the primary and secondary text colors in the Tizen Mobile SDK 2.4.
 
-<img src="media/2.3_a.png" alt="White text against a dark background (theme color)" width="260px" />
+<img src="design/mobile/media/2.3_a.png" alt="White text against a dark background (theme color)" width="260px" />
 
 *White text against a dark background (theme color)*
 
-<img src="media/2.3_b.png" alt="Colored text against a white background" width="260px" />
+<img src="design/mobile/media/2.3_b.png" alt="Colored text against a white background" width="260px" />
 
 *Colored text against a white background*
 
-<img src="media/2.3_c.png" alt="Black primary text against a white background" width="260px" />
+<img src="design/mobile/media/2.3_c.png" alt="Black primary text against a white background" width="260px" />
 
 *Black primary text against a white background*
 
-<img src="media/2.3_d.png" alt="Gray secondary text against a light blue background" width="260px" />
+<img src="design/mobile/media/2.3_d.png" alt="Gray secondary text against a light blue background" width="260px" />
 
 *Gray secondary text against a light blue background*
 
@@ -52,7 +52,7 @@ The following examples show how different text colors appear on the call log scr
 
 Once again, the text colors should be decided based on the color of the background. Black or gray text usually fails to stand out against darker backgrounds, resulting in decreased visibility.
 
- | <img src="media/2.3_g.png" alt="#" width="260px" />| <img src="media/2.3_f.png" alt="#" width="260px" /> |
+ | <img src="design/mobile/media/2.3_g.png" alt="#" width="260px" />| <img src="design/mobile/media/2.3_f.png" alt="#" width="260px" /> |
 |:--:|:--:|
 | *Do* | *Don't* |
 
@@ -64,12 +64,12 @@ Tizen mobile devices use multilayered page structure, with the main theme backgr
 
 The list view is one example that can help you understand how superimposed layers with gradient and text items appear against the background. Semi-transparent stripes of gradient on top of the main background create subtle dividers for each list item, above which list item text layer is placed.
 
-<img alt="Multilayered screen structurecreated by layers of different opacities over the background gradient." src="media/2.4.3_c.png" height="300px" margin-right="4px" /> <img alt="Multilayered screen structurecreated by layers of different opacities over the background gradient." src="media/2.2.2_a.png" height="300px" margin-right="4px" />
+<img alt="Multilayered screen structurecreated by layers of different opacities over the background gradient." src="design/mobile/media/2.4.3_c.png" height="300px" margin-right="4px" /> <img alt="Multilayered screen structurecreated by layers of different opacities over the background gradient." src="design/mobile/media/2.2.2_a.png" height="300px" margin-right="4px" />
 
 *Multilayered screen structurecreated by layers of different opacities over the background gradient.*
 
 Different opacity levels on a list create an interesting gradient. On the item list layer, the opacity level of the first list item is 100 percent, and it decreases by 4 percent for each item after it until the twentieth item. After the twentieth item, the opacity level begins to increase by 4 percent until it reaches 100 percent again.
 
-<img alt="Scrolling a list" src="media/list_scroll.png" width="91%" />
+<img alt="Scrolling a list" src="design/mobile/media/list_scroll.png" width="91%" />
 
 *Scrolling a list*
