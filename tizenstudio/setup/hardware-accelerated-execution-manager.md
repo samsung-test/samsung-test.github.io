@@ -1,3 +1,9 @@
+---
+title:  Hardware Accelerated Execution Manager
+desc: HAEM
+keywords: Tizen, OS, Open Source
+---
+
 # Hardware Accelerated Execution Manager
 
 The Intel Hardware Accelerated Execution Manager (Intel&reg; HAXM) is a hardware-assisted virtualization engine (hypervisor). This hypervisor uses Intel Virtualization Technology (VT) to speed-up the Tizen application emulation on the Windows&reg; and the macOS host machines. When you combine the Tizen x86 emulator images with [Tizen Studio](../index.md), Intel&reg; HAXM speed-ups the Tizen emulation on the Intel-VT-enabled systems.
