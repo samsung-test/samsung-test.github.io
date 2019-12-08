@@ -1,3 +1,9 @@
+---
+title: Native Tools 
+desc: Tizen Studio
+keywords: Tizen, OS, Open Source
+---
+
 # Native Tools
 
 This page explains about various native application development tools supported in Tizen Studio. With Tizen Studio IDE, the native app development is simplified, as it supports app development using languages such as C and C++.
