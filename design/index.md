@@ -1,11 +1,7 @@
 ---
-layout: default
 title: Tizen Documentation
 desc: TS
 keywords: Tizen, OS, Open Source
-landing: true
-notoc: true
-notags: true
 ---
 
 # Introduction
