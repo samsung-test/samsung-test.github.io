@@ -1,5 +1,5 @@
 ---
-title: Tizen Documentation
+title: Tizen Design
 desc: TS
 keywords: Tizen, OS, Open Source
 ---
