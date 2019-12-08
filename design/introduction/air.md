@@ -18,7 +18,7 @@ keywords: Tizen, OS, Open Source
 
 #### "GROUND": Bold and Distinctive Layout Design
 
-<img alt="Ridges are formed where air touches the ground" src="media/1.2.2_ground.png" width="390px" margin-left="4px" />  
+<img alt="Ridges are formed where air touches the ground" src="design/introduction/media/1.2.2_ground.png" width="390px" margin-left="4px" />  
 
 *Ridges are formed where air touches the ground*
 
@@ -30,7 +30,7 @@ The "Air" concept embraces the beauty of less and pursues minimalism in the layo
 
 "Atmosphere" represents natural tones, colors, and moods present in the design. Inspired by the colorful gradients found in nature, such as deep blue skies with a slight hint of white cloud, sunrises, sunsets, and the Northern Lights, "Atmosphere" emphasizes the use of color gradients to achieve a natural, aesthetic design. A well-implemented "Atmosphere" can vastly enhance user experience.
 
-<img alt="Color inspiration from nature" src="media/air_atmosphere_mobile.png" width="390px" margin-left="4px" /> <img alt="Color inspiration from nature" src="media/air_atmosphere_gear.png" width="390px" margin-left="4px" />  
+<img alt="Color inspiration from nature" src="design/introduction/media/air_atmosphere_mobile.png" width="390px" margin-left="4px" /> <img alt="Color inspiration from nature" src="design/introduction/media/air_atmosphere_gear.png" width="390px" margin-left="4px" />  
 
 *Color inspiration from nature*
 
@@ -42,7 +42,7 @@ We recommend contrasting color combinations in the background and foreground to 
 
 The "Wind" concept is based on animations providing users with feedback for each interaction, while conveying meaningful information to help orient users. For example, page-turning effects visually suggest the direction of navigation, and page-end effects inform users that they have reached the last page of the current content. Uniform, harmonious animations on the screen allow for a pleasant visual experience while maximizing the responsiveness of the design.
 
-<img alt="The wind is the flow of the content" src="media/air_wind.png" width="390px" margin-left="4px" />  
+<img alt="The wind is the flow of the content" src="design/introduction/media/air_wind.png" width="390px" margin-left="4px" />  
 
 *The wind is the flow of the content*
 
