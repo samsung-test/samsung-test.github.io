@@ -7,7 +7,7 @@ gitOrg: samsung-test
 gitRepo: samsung-test.github.io
 breadcrumbs:
   root:
-    hide: true  # show breadcrumbs on root/home page
+    hide: false  # show breadcrumbs on root/home page
     image: false # Show image or title text
 exclude:
 - README.md
