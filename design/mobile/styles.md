@@ -1,3 +1,9 @@
+---
+title: Design Principles
+desc: Tizen Studio
+keywords: Tizen, OS, Open Source
+---
+
 # Styles
 
 ## Theme Colors
