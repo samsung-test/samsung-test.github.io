@@ -1,3 +1,10 @@
+---
+title: Uninstall Tizen Studio
+desc: Uninstall Tizen Studio
+keywords: Tizen, OS, Open Source
+---
+
+
 # Uninstall Tizen Studio
 
 This page explains how to uninstall Tizen Studio from your system. The Tizen Studio uninstaller removes all the installed Tizen platforms and the tools. During the uninstallation procedure, all the data stored in the installation directory is removed, including any customizations or any other data you have stored within that directory. Make a back up of any data you want to keep prior to performing the uninstallation procedure.
