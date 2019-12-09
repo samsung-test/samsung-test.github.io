@@ -76,7 +76,7 @@ Ensure that the following system prerequisites are met:
   </tr>
   <tr>
     <td>Tizen Studio setup file</td>
-    <td><a href=https://developer.tizen.org/development/tizen-studio/download# target="_blank">Click to Download</a></td>
+    <td><a href="https://developer.tizen.org/development/tizen-studio/download#" target="_blank">Click to Download</a></td>
   </tr>
 </table>
 
