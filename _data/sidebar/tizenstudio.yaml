@@ -13,11 +13,17 @@
                 url: tizenstudio/setup/mac/
               - page: Install using CLI
                 url: tizenstudio/setup/tizen-cli/
-      - title: Update
-        url: tizenstudio/setup/update-sdk/
-      - title: Uninstall 
-        url: tizenstudio/setup/uninstall-sdk/
-      - title: Troubleshoot
-        url: tizenstudio/setup/troubleshooting/
+          - page: Update
+            url: tizenstudio/setup/update-sdk/
+          - page: Uninstall 
+            url: tizenstudio/setup/uninstall-sdk/
+          - page: Troubleshoot Errors
+            url: tizenstudio/setup/troubleshooting/
+      - title: Configure Tizen Studio
+        url: tizenstudio/setup/additional-requirements
+        subfolderitems:
+          - page: Hardware Acceleration for Tizen
+            url: tizenstudio/setup/hardware-accelerated-execution-manager/
+           
              
   
