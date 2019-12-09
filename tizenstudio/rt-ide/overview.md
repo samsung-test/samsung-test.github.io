@@ -1,3 +1,9 @@
+---
+title: TizenRT
+desc: TizenRT
+keywords: Tizen, OS, Open Source
+---
+
 # TizenRT
 
 Tizen platform is commercialized on smart TVs, smartphones, wearable devices (Gear S, Gear Fit), and smart home appliances. However, low-end and low-cost IoT devices, such as home appliances without display and wearable bands with a small LCD, have received less attention. The objective of TizenRT is to extend the Tizen platform device coverage to these kind of low-end devices.
