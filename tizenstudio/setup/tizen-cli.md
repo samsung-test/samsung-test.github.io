@@ -16,9 +16,9 @@ The CLI installation is mostly intended for advanced developers. The Tizen Studi
 
  | Operating System  | Setup Information  |  
  |-------------------|-----------------------------|
- |    Windows        | [Open JDK instructions](./tizenstudio/setup/windows/#set-up-open-jdk) |
- |    Ubuntu         | [Open JDK instructions]([Open JDK](./tizenstudio/setup/ubuntu/#set-up-open-jdk)| 
- |    MacOS          | [Open JDK instructions](./tizenstudio/setup/mac/#set-up-open-jdk)  | 
+ |    Windows        | [Open JDK instructions](./tizenstudio/setup/windows/#set-up-open-jdk)|
+ |    Ubuntu         | [Open JDK instructions](./tizenstudio/setup/ubuntu/#set-up-open-jdk)| 
+ |    MacOS          | [Open JDK instructions](./tizenstudio/setup/mac/#set-up-open-jdk)| 
 
 ### Tizen Studio Command Line Installation  
 
