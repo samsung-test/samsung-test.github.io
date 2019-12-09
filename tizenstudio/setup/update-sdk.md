@@ -37,9 +37,9 @@ The Package Manager window consists of the following logical areas:
 
 - **Header area** comprises of the following elements:
 
-    - **Trouble Shooting** ![Inside Trouble Shooting icon](./tizenstudio/setup/media/updating_sdk_icon_troubleshoot.png): You can  access troubleshooting guides that help you resolve common issues related to Package Manager.
-    - **Configuration** ![Configuration icon](./tizenstudio/setup/media/updating_sdk_icon_config.png): You can change the Package Manager configuration and other related settings, such as package repository locations, proxy options, and so on.
-    - **Information** ![Information icon](./tizenstudio/setup/media/updating_sdk_icon_info.png): You can access the details of Package Manager, such as version number, installation path, package repository URL, distribution name, and package snapshot.
+    - **Trouble Shooting**: You can  access troubleshooting guides that help you resolve common issues related to Package Manager.
+    - **Configuration**: You can change the Package Manager configuration and other related settings, such as package repository locations, proxy options, and so on.
+    - **Information**: You can access the details of Package Manager, such as version number, installation path, package repository URL, distribution name, and package snapshot.
     
     **Figure: Header area**
 
