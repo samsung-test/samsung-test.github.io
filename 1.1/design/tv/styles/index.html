@@ -4,12 +4,12 @@
 	<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="icon"  href="/favicon.ico" />
-<title>Design Principles for TV</title>
-<meta name="description" content="APrinciples"/>
-<meta name="keywords" content="Tizen, OS, Open Source, principles"/>
-<base id="baseURL" href="/latest/" />
+<title>Styles</title>
+<meta name="description" content="Styles"/>
+<meta name="keywords" content="Tizen, OS, Open Source, style"/>
+<base id="baseURL" href="/1.1/" />
 <meta id="docsVersion" content="1.1" />
-<meta name="last-modified" content="2019-12-09 11:33:16 +0530" />
+<meta name="last-modified" content="2019-12-09 11:37:50 +0530" />
 <meta http-equiv="cache-control" content="max-age=24" />
 <meta http-equiv="cache-control" content="no-cache" />
 <meta http-equiv="Cache-Control" content="no-store" />
@@ -93,7 +93,7 @@
           
       
       <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-         <a property="item" typeof="WebPage" href="/latest/">
+         <a property="item" typeof="WebPage" href="/1.1/">
             <span property="name">Documentation</span>
             <meta property="position" content="1" />
          </a>
@@ -102,7 +102,7 @@
           
       
       <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-         <a property="item" typeof="WebPage" href="/latest/design/">
+         <a property="item" typeof="WebPage" href="/1.1/design/">
             <span property="name">Tizen Design</span>
             <meta property="position" content="2" />
          </a>
@@ -111,7 +111,7 @@
           
       
       <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-         <span property="name">Design Principles for TV</span>
+         <span property="name">Styles</span>
          <meta property="position" content="3" />
       </li>
       
@@ -182,83 +182,97 @@
 </style>
 
 							<div class="widgetLatestVersionNotification"></div>
-							<h1 id="design-principles">Design Principles</h1>
+							<h1 id="styles">Styles</h1>
 
-<p>The Tizen 4.0 TV design principles provide a clear and comfortable
-visual identity for your application. The harmonious and delightful
-elements help the user get information easily and enjoy content fully.</p>
-
-<p>There are 3 design principles used in Tizen 4.0 TVs:</p>
+<p>Tizen TV applications use various styles to improve the clarity and usability of the information on the screen:</p>
 
 <ul>
-  <li><a href="#simplicity">Simplicity</a></li>
-  <li><a href="#natural-intuitiveness">Natural intuitiveness</a></li>
-  <li><a href="#breathing-space">Breathing space</a></li>
+  <li><a href="#background-color">Background color</a></li>
+  <li><a href="#theme">Theme</a></li>
+  <li><a href="#color-swatch">Color swatch</a></li>
+  <li><a href="#font-style">Font style</a></li>
 </ul>
 
-<h2 id="simplicity">Simplicity</h2>
+<h2 id="background-color">Background Color</h2>
 
-<p>Using many decorative elements on the screen at the same time can confuse and distract the user.</p>
+<p>The Tizen TV uses a dark color (RGB 0,0,0) as a fullscreen background. The color has some transparency (opacity 95%), to allow the user to see the current screen image through the dark color.</p>
 
-<p>Simplify your application design to allow the user to clearly identify the content.</p>
+<p><img src="media/st_01_bg_color.png" alt="Background color" /><br />
+<em>Background color for fullscreen.</em></p>
 
-<h3 id="circular-icons">Circular Icons</h3>
+<h2 id="theme">Theme</h2>
 
-<p>Tizen 4.0 TV icons are circular, covering a smaller area than
-rectangular icons. Consequently, the user can see more of the screen
-background.</p>
+<p>The UI components have 2 themes available: dark and light.</p>
 
-<p><img src="media/dp_01_sim_circle_re-850x478.png" alt="circular icons" /></p>
+<p>Each theme is used based on the background color. Since the background color is usually dark, the dark theme is mainly used. However, if the background is light, the light theme is applied.</p>
 
-<p><em>Circular icons taking less space on the screen.</em></p>
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="media/st_02_theme_dark_normal_re-300x83.png" alt="dark theme" /></th>
+      <th style="text-align: center"><img src="media/st_03_theme_light_normal-300x83.png" alt="light theme" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><em>Dark theme</em></td>
+      <td style="text-align: center"><em>Light theme</em></td>
+    </tr>
+  </tbody>
+</table>
 
-<h3 id="hidden-inactive-icons">Hidden Inactive Icons</h3>
+<h2 id="color-swatch">Color Swatch</h2>
 
-<p>An inactive icon partly hides itself to take up even less space on the screen. This approach also allows the user to recognize active icons without visual interruption from inactive icons.</p>
+<p>The Tizen TV uses clear and distinct colors to allow various item states (such as normal, focused, selected, and disabled) to be easily recognized.</p>
 
-<p><img src="media/dp_02_sim_hide.png" alt="hidden inactive icons" /></p>
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">No.</th>
+      <th style="text-align: center">Color</th>
+      <th style="text-align: center">RGB / Opacity</th>
+      <th style="text-align: center">Swatch</th>
+      <th style="text-align: center">Components</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">Black</td>
+      <td style="text-align: center">0,0,0 / 95%</td>
+      <td style="text-align: center"><img alt="" height="30" src="media/st_05_color_swatch_black.png" width="120" /></td>
+      <td style="text-align: center">Background dim</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">2</td>
+      <td style="text-align: center">White</td>
+      <td style="text-align: center">0, 0, 0 / 100%</td>
+      <td style="text-align: center"><img alt="" height="30" src="media/st_06_color_swatch_white.png" width="120" /></td>
+      <td style="text-align: center">Normal text</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">3</td>
+      <td style="text-align: center">Grey</td>
+      <td style="text-align: center">220, 220, 220 / 100%</td>
+      <td style="text-align: center"><img alt="" height="30" src="media/st_07_color_swatch_grey.png" width="120" /></td>
+      <td style="text-align: center">Popup</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">4</td>
+      <td style="text-align: center">Blue</td>
+      <td style="text-align: center">0, 129, 198 / 100%</td>
+      <td style="text-align: center"><img alt="" height="30" src="media/st_08_color_swatch_blue.png" width="120" /></td>
+      <td style="text-align: center">Selected color</td>
+    </tr>
+  </tbody>
+</table>
 
-<p><em>Inactive icons are hidden.</em></p>
+<h2 id="font-style">Font Style</h2>
 
-<h3 id="no-unnecessary-decorations">No Unnecessary Decorations</h3>
+<p>Different font styles are used to help the user easily recognize different states or importance levels of items. To ensure clear visibility, the style is determined based on the color background.</p>
 
-<p>Within functional design elements, clean up unnecessary decorations, such as a divider bar. Instead, use more functionally-effective visual expressions or separate information. It makes the UI look cleaner and more organized.</p>
-
-<p><img src="media/dp_03_sim_clean-850x478.png" alt="No divider bar" /></p>
-
-<p><em>No divider bar between different pieces of information.</em></p>
-
-<h2 id="natural-intuitiveness">Natural Intuitiveness</h2>
-
-<p>Enhance the usability and make the interface naturally familiar to the user by, for example, using shadow effects. This allows the user to access content and information easily with a pleasing natural visual balance.</p>
-
-<h3 id="shadow-effect">Shadow Effect</h3>
-
-<p>Shadow effects can add subtle but clear emphasis to generated items. The effect is natural and consequently also harmonizes with the content. The user can focus better without any visual strain.</p>
-
-<p><img src="media/dp_04_nat_shadow_re-850x478.png" alt="shadow effect" /></p>
-
-<p><em>Shadow effect emphasizes the element.</em></p>
-
-<h2 id="breathing-space">Breathing Space</h2>
-
-<p>A screen that is full of design elements can be eye-catching, but it makes the user unable to focus on any specific item. Use screen space properly to guide the user’s attention.</p>
-
-<h3 id="allow-empty-space">Allow Empty Space</h3>
-
-<p>A right amount of empty space between different pieces of information makes the UI both easier to understand and more pleasing to look at. Do not think that precious screen space is wasted. Properly used empty space is a proven technique for better screen design.</p>
-
-<p><img src="media/dp_05_bre_space_re-850x478.png" alt="Space" /></p>
-
-<p><em>Leave breathing room between the elements.</em></p>
-
-<h3 id="prioritize-and-balance">Prioritize and Balance</h3>
-
-<p>Prioritize elements on the screen based on their importance, and balance the primary and secondary elements accordingly. When the information is correctly balanced, the most important content elements are displayed in the most visible manner.</p>
-
-<p><img src="media/dp_06_bre_balance_re-850x106.png" alt="balance" /></p>
-
-<p><em>Less important back key information is dimmed.</em></p>
+<p><img src="media/st_04_font_style_states_re-850x511.png" alt="font styles" /><br />
+<em>Different font styles for different states.</em></p>
 
 
 						</section>
@@ -334,7 +348,7 @@ background.</p>
     </ul>
 </div>
 <script>
-    $("a[href$='/design/tv/introduction/abc/']").addClass("active currentPage");
+    $("a[href$='/design/tv/styles/']").addClass("active currentPage");
 </script>
 						</div>
 					</nav>
@@ -352,7 +366,7 @@ background.</p>
                                         </li>
                                         
 										<li>
-                                            <a href="https://github.com/samsung-test/samsung-test.github.io/edit/1.1/design/tv/introduction/abc.md" target="_blank">
+                                            <a href="https://github.com/samsung-test/samsung-test.github.io/edit/1.1/design/tv/styles.md" target="_blank">
                                                 <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                                                 Edit Page
                                             </a>
@@ -369,24 +383,10 @@ background.</p>
 									<div id="side-toc-title">On this page:</div>
 									
 <ul id="my_toc" class="inline_toc">
-  <li><a href="#simplicity" class="nomunge">Simplicity</a>
-    <ul>
-      <li><a href="#circular-icons" class="nomunge">Circular Icons</a></li>
-      <li><a href="#hidden-inactive-icons" class="nomunge">Hidden Inactive Icons</a></li>
-      <li><a href="#no-unnecessary-decorations" class="nomunge">No Unnecessary Decorations</a></li>
-    </ul>
-  </li>
-  <li><a href="#natural-intuitiveness" class="nomunge">Natural Intuitiveness</a>
-    <ul>
-      <li><a href="#shadow-effect" class="nomunge">Shadow Effect</a></li>
-    </ul>
-  </li>
-  <li><a href="#breathing-space" class="nomunge">Breathing Space</a>
-    <ul>
-      <li><a href="#allow-empty-space" class="nomunge">Allow Empty Space</a></li>
-      <li><a href="#prioritize-and-balance" class="nomunge">Prioritize and Balance</a></li>
-    </ul>
-  </li>
+  <li><a href="#background-color" class="nomunge">Background Color</a></li>
+  <li><a href="#theme" class="nomunge">Theme</a></li>
+  <li><a href="#color-swatch" class="nomunge">Color Swatch</a></li>
+  <li><a href="#font-style" class="nomunge">Font Style</a></li>
 </ul>
 
 
