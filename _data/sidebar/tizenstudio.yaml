@@ -26,6 +26,8 @@
             url: tizenstudio/setup/hardware-accelerated-execution-manager/
           - page: Hardware Acceleration for Tizen
             url: tizenstudio/setup/hardware-accelerated-execution-manager/
+      - title: Frequently Asked Questions
+        url: tizenstudio/setup/faq
       - title: Extension SDK
         url: tizenstudio/extension-sdk/overview
         subfolderitems:
@@ -36,6 +38,7 @@
                 url: tizenstudio/extension-sdk/inmobi/
               - page: VMax
                 url: tizenstudio/extension-sdk/inmobi/
+            
           
            
              
