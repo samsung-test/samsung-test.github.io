@@ -31,19 +31,19 @@ The Package Manager window is made up of the following logical areas as identifi
 
 **Figure: Package Manager main window**
 
-![Package Manager main window](./media/updating_sdk_main.png)
+![Package Manager main window](./tizenstudio/setup/media/updating_sdk_main.png)
 
 The Package Manager window consists of the following logical areas:
 
 - **Header area** comprises of the following elements:
 
-    - **Trouble Shooting** ![Inside Trouble Shooting icon](./media/updating_sdk_icon_troubleshoot.png): You can  access troubleshooting guides that help you resolve common issues related to Package Manager.
-    - **Configuration** ![Configuration icon](./media/updating_sdk_icon_config.png): You can change the Package Manager configuration and other related settings, such as package repository locations, proxy options, and so on.
-    - **Information** ![Information icon](./media/updating_sdk_icon_info.png): You can access the details of Package Manager, such as version number, installation path, package repository URL, distribution name, and package snapshot.
+    - **Trouble Shooting** ![Inside Trouble Shooting icon](./tizenstudio/setup/media/updating_sdk_icon_troubleshoot.png): You can  access troubleshooting guides that help you resolve common issues related to Package Manager.
+    - **Configuration** ![Configuration icon](./tizenstudio/setup/media/updating_sdk_icon_config.png): You can change the Package Manager configuration and other related settings, such as package repository locations, proxy options, and so on.
+    - **Information** ![Information icon](./tizenstudio/setup/media/updating_sdk_icon_info.png): You can access the details of Package Manager, such as version number, installation path, package repository URL, distribution name, and package snapshot.
     
     **Figure: Header area**
 
-     ![Header area](./media/header_area.png)
+     ![Header area](./tizenstudio/setup/media/header_area.png)
 - **Main area** comprises of the following tabs:
 
     - **Main SDK**: It enables you to install and remove packages, platforms, and tools. In addition, the filter button narrows down the choice of the package list display based on the selected profiles.
@@ -55,13 +55,13 @@ The Package Manager window consists of the following logical areas:
 
      **Figure: Main area with package list**
 
-     ![Package list](./media/updating_sdk_main_area.png)
+     ![Package list](./tizenstudio/setup/media/updating_sdk_main_area.png)
 
 - **Description area**: It enables you to view the detailed description of each package or platform that is currently selected on the list in the main area.
 
     **Figure: Description area**
 
-    ![Description area](./media/updating_sdk_description.png)
+    ![Description area](./tizenstudio/setup/media/updating_sdk_description.png)
 
 ## Update Packages
 
@@ -77,7 +77,7 @@ To update the existing packages, click **Updates available**.
     
 **Figure: Updates available button**
 
-![Updates available button](./media/updating_sdk_updates.png)
+![Updates available button](./tizenstudio/setup/media/updating_sdk_updates.png)
 
 >**Note**
 >
@@ -90,7 +90,7 @@ Package Manager also facilitates offline upgrade with an update image for all th
 
 To install the packages with an image file, follow these steps:
 
-1. In Package Manager, click ![Configuration icon](./media/updating_sdk_icon_config.png).
+1. In Package Manager, click ![Configuration icon](./tizenstudio/setup/media/updating_sdk_icon_config.png).
 2. In the **Configuration** window that appears, enter the full path of the image file in **Package Repository**. Alternatively, to select the image file, click **Browse** next to the combo box. 
 3. To close the **Configuration** window, click **Open**.
 
@@ -121,18 +121,18 @@ Package Manager also provides you the flexibility to install an individual prefe
 
 To install individual packages for a particular platform or tool, follow these steps: 
 
-1. Click ![Expander](./media/expander_button.png) located on the left of the main area of the window for each platform or tool to view more packages and tools.
+1. Click ![Expander](./tizenstudio/setup/media/expander_button.png) located on the left of the main area of the window for each platform or tool to view more packages and tools.
 2. Click **install** next to the package, if want to install that package.
  
 **Figure: Install platform packages**
 
-![Installing platform packages](./media/updating_sdk_install_platform.png)
+![Installing platform packages](./tizenstudio/setup/media/updating_sdk_install_platform.png)
 
 ## Cancel Installation
 
 The Package Manager tool gives you total control over the installation related tasks, you can cancel an installation anytime. 
 
-To cancel the installation process, click ![Cancel](./media/cancel_button.png) under the **Progress** tab next to the respective package. 
+To cancel the installation process, click ![Cancel](./tizenstudio/setup/media/cancel_button.png) under the **Progress** tab next to the respective package. 
 
 >**Note:** 
 >
@@ -140,13 +140,13 @@ To cancel the installation process, click ![Cancel](./media/cancel_button.png) u
 
 **Figure: Cancel installation**
 
-![Cancelling the installation](./media/updating_sdk_install_cancel.png)
+![Cancelling the installation](./tizenstudio/setup/media/updating_sdk_install_cancel.png)
 
 ## Retry Cancelled Installation 
 
 The Package Manager tool also provides utmost flexibility. It enables you to retry a cancelled installation anytime. 
 
-To retry a cancelled or failed installation, click ![Retry icon](./media/updating_sdk_icon_retry.png) under the **Progress** tab next to the respective package. 
+To retry a cancelled or failed installation, click ![Retry icon](./tizenstudio/setup/media/updating_sdk_icon_retry.png) under the **Progress** tab next to the respective package. 
 
 >**Note:**
 >
@@ -156,7 +156,7 @@ To retry a cancelled or failed installation, click ![Retry icon](./media/updatin
 
 The Package Manager tool also provides an intuitive user interface that helps you to remove any package, platform, or tool with ease. 
 
-To remove a package, click ![delete](./media/delete.png) located next to the respective package. 
+To remove a package, click ![delete](./tizenstudio/setup/media/delete.png) located next to the respective package. 
 
 >**Note:**
 >
@@ -165,7 +165,7 @@ To remove a package, click ![delete](./media/delete.png) located next to the res
 
 **Figure: Remove packages**
 
-![Remove packages](./media/updating_sdk_install_remove.png)
+![Remove packages](./tizenstudio/setup/media/updating_sdk_install_remove.png)
 
 ## Monitor Progress
 
@@ -173,7 +173,7 @@ Tizen Studio provides a progress bar where you can monitor the installation, upd
 
 **Figure: Progress tab**
 
-![Progress tab](./media/updating_sdk_progress.png)
+![Progress tab](./tizenstudio/setup/media/updating_sdk_progress.png)
 
 ## Update Packages using CLI
 
