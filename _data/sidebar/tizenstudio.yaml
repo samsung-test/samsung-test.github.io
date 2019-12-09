@@ -27,15 +27,15 @@
           - page: Hardware Acceleration for Tizen
             url: tizenstudio/setup/hardware-accelerated-execution-manager/
       - title: Extension SDK
-        url: tizenstudio/extension-sdk/overview/
+        url: tizenstudio/extension-sdk/overview
         subfolderitems:
           - page: In app purchases
-            url: tizenstudio/extensionsdk/in-app-purchase/
+            url: tizenstudio/extension-sdk/in-app-purchase/
             subfolderitems: 
               - page: In Mobi 
-                url: tizenstudio/extensionsdk/inmobi/
+                url: tizenstudio/extension-sdk/inmobi/
               - page: VMax
-                url: tizenstudio/extensionsdk/inmobi/
+                url: tizenstudio/extension-sdk/inmobi/
           
            
              
