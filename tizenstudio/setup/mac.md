@@ -1,5 +1,5 @@
 ---
-title:  Hardware Accelerated Execution Manager
+title:  MacOS
 desc: HAEM
 keywords: Tizen, OS, Open Source
 ---
