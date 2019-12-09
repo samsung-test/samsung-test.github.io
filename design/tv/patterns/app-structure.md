@@ -1,3 +1,9 @@
+---
+title: TV App Structure
+desc: Structure
+keywords: Tizen, OS, Open Source, Structure
+---
+
 # App Structure
 
 The structure of the Tizen 4.0 TV platform consists of layers which are used to display UI components and other items.
