@@ -20,7 +20,7 @@
           - page: Troubleshoot Errors
             url: tizenstudio/setup/troubleshooting/
       - title: Get Started
-        url: tizenstudio/quick_start_guide
+        url: tizenstudio/setup/quick_start_guide
         subfolderitems:
           - page: Web Application Development 
             url: tizenstudio/setup/quick_start_guide/
