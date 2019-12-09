@@ -25,7 +25,6 @@ Select the following as per target operating system and follow the installation 
                 </div>
              <br>
                 <h3 id="tizen-for-mac"><a href="mac/">Mac</a></h3>
-             </br>
             </div>
         </div>
         <div class="col-sm-12 col-md-12 col-lg-4 block">
@@ -36,7 +35,6 @@ Select the following as per target operating system and follow the installation 
                 </div>
                  <br>
                 <h3 id="tizen-for-windows"><a href="windows/">Windows</a></h3>
-             </br>
              </div>
         </div>
         <div class="col-sm-12 col-md-12 col-lg-4 block">
@@ -47,7 +45,6 @@ Select the following as per target operating system and follow the installation 
                 </div>
                  <br>
                 <h3 id="tizen-for-linux"><a href="ubuntu">Ubuntu</a></h3>
-               </br>
             </div>
         </div>
     </div>
