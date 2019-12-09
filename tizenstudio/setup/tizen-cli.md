@@ -1,6 +1,6 @@
 ---
-title:  Hardware Accelerated Execution Manager
-desc: HAEM
+title:  Install Tizen Studio using CLI
+desc: Install
 keywords: Tizen, OS, Open Source, HAEM
 ---
 
