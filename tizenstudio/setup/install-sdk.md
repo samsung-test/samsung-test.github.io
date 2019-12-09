@@ -23,7 +23,9 @@ Select the following as per target operating system and follow the installation 
                     <a href="./tizenstudio/setup/mac/"> <img src="./tizenstudio/setup/media/apple1.png" alt="Mac"> </a>
                   <p></p>
                 </div>
+             <br>
                 <h3 id="tizen-for-mac"><a href="mac/">Mac</a></h3>
+             </br>
             </div>
         </div>
         <div class="col-sm-12 col-md-12 col-lg-4 block">
@@ -32,7 +34,9 @@ Select the following as per target operating system and follow the installation 
                     <a href="./tizenstudio/setup/win/"> <img src="./tizenstudio/setup/media/win.png" alt="Windows"> </a>
                  <p></p>
                 </div>
+                 <br>
                 <h3 id="tizen-for-windows"><a href="windows/">Windows</a></h3>
+             </br>
              </div>
         </div>
         <div class="col-sm-12 col-md-12 col-lg-4 block">
@@ -41,7 +45,9 @@ Select the following as per target operating system and follow the installation 
                     <a href="./tizenstudio/setup/linux/"> <img src="./tizenstudio/setup/media/linux1.png" alt="Linux"> </a>
                   <p></p>
                 </div>
+                 <br>
                 <h3 id="tizen-for-linux"><a href="ubuntu">Ubuntu</a></h3>
+               </br>
             </div>
         </div>
     </div>
