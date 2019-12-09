@@ -4,7 +4,7 @@ desc: Web Apps
 keywords: Tizen, OS, Open Source
 ---
 
-# Get Started with Developing Tizen Web Applications
+# Get Started to Develop Tizen Web Application
 
 ### Introduction
 Web applications involve the standards for building and rendering web pages such as HTML, CSS, and JavaScript. The following figure illustrates the basic structure of a Tizen Web application:
