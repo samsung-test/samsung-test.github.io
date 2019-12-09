@@ -26,7 +26,7 @@ Ensure that the following system prerequisites are met:
 
 <table>
   <tr>
-      <td>CPU</td>
+    <td>CPU</td>
     <td>Dual Core, 2Ghz or faster</td>
   </tr>
   <tr>
@@ -35,11 +35,11 @@ Ensure that the following system prerequisites are met:
   </tr>
   <tr>
     <td>Memory</td>
-    <td>3GB or more </td>
+    <td>3GB or more</td>
   </tr>
   <tr>
     <td>Disk Space</td>
-    <td>6 GB or more </td>
+    <td>6 GB or more</td>
   </tr>
 </table> 
 
@@ -178,11 +178,11 @@ To launch the installer, follow these steps:
    >
    >The license contains important legal notices for using Tizen Studio. Read it fully, and click **Accept** only if you agree with the license terms.
 
-   ![Tizen Studio License Agreement](./media/install_sdk_license.png)
+   ![Tizen Studio License Agreement](./tizenstudio/setup/media/install_sdk_license.png)
 
 3. Click **Browse** and specify a new directory to set the SDK location and the SDK data location.
 
-   ![Set SDK and data location](./media/install_sdk_directory.png)
+   ![Set SDK and data location](./tizenstudio/setup/media/install_sdk_directory.png)
    
    >**Note** 
    > 
@@ -190,13 +190,13 @@ To launch the installer, follow these steps:
 4. Click **Install**.
 5. Click **Finish** to close the installer.
 
-   ![Installation complete](./media/migration_finish_instal.png)
+   ![Installation complete](./tizenstudio/setup/media/migration_finish_instal.png)
 
    > **Note**
    >
    >If you want to install additional platforms and tools, launch Package Manager by selecting the Launch Package Manager **check box** and click **Finish**.
    > - Use Tizen Studio Package Manager, to install and update additional tools. 
-   > - For more information on the Package Manager, see [Updating Tizen Studio](./update-sdk.md).
+   > - For more information on the Package Manager, see [Updating Tizen Studio](./tizenstudio/setup/update-sdk/).
 
 ### Verify Installation
    
