@@ -19,6 +19,13 @@
             url: tizenstudio/setup/uninstall-sdk/
           - page: Troubleshoot Errors
             url: tizenstudio/setup/troubleshooting/
+      - title: Get Started
+        url: tizenstudio/quick_start_guide
+        subfolderitems:
+          - page: Web Application Development 
+            url: tizenstudio/setup/quick_start_guide/
+          - page: Wearable Application Development 
+            url: tizenstudio/setup/quick_start_guide_tizen_app_ts/
       - title: Configure Tizen Studio
         url: tizenstudio/setup/additional-requirements
         subfolderitems:
