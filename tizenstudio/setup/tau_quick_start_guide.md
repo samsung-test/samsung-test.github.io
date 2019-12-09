@@ -1,6 +1,6 @@
 ---
 title:  Get Started to Develop Wearable Applications
-desc: HAEM
+desc: Get Started 
 keywords: Tizen, OS, Open Source
 ---
 
