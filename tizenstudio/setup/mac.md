@@ -1,6 +1,6 @@
 ---
 title:  MacOS
-desc: HAEM
+desc: Installation
 keywords: Tizen, OS, Open Source
 ---
 
