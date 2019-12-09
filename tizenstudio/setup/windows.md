@@ -70,7 +70,7 @@ Ensure that the following system prerequisites are met:
   </tr>
   <tr>
     <td>OpenJavaFX</td>
-    <td><a href=http://gluonhq.com/download/javafx-11-0-2-sdk-windows/ target="_blank">Click to Download</a></td>
+    <td><a href="http://gluonhq.com/download/javafx-11-0-2-sdk-windows/" target="_blank">Click to Download</a></td>
   </tr>
   <tr>
     <td>Tizen Studio setup file</td>
@@ -149,7 +149,7 @@ To launch the installer, follow these steps:
    >
    >The license contains important legal notices for using Tizen Studio. Read it fully, and click **Accept** only if you agree with the license statement.
 
-   ![Tizen Studio License Agreement](tizenstudio/setup/media/install_sdk_license.png)
+   ![Tizen Studio License Agreement](./tizenstudio/setup/media/install_sdk_license.png)
 
 3. Click **Browse** and specify a new directory to set the SDK data location. 
 
