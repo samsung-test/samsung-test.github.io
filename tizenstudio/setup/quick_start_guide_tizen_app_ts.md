@@ -1,4 +1,10 @@
-# How to Develop Wearable Web Applications using Template
+---
+title:  Geting Started for Wearable
+desc: Web Apps 
+keywords: Tizen, OS, Open Source
+---
+
+# Get Started to Develop Wearable Web Applications using Template
 
 ## Introduction
 Wearable Web applications are apps that help you monitor health, show time, play games, and much more. These applications are developed using various Web-native languages, such as HTML5, Cascading Style Sheets (CSS), and JavaScript.
