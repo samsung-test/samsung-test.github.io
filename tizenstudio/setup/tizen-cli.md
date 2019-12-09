@@ -15,7 +15,7 @@ The CLI installation is mostly intended for advanced developers. The Tizen Studi
 - Ensure that you have Open JDK 10 or Oracle JDK 10 installed on your development hardware. For more information, see the following table to setup the Open JDK: 
 
  | Operating System  | Setup Information  |  
- |-------------------|-----------------------------|
+ |-------------------|------------------------------------------|
  |    Windows        | [Open JDK instructions](./tizenstudio/setup/windows/#set-up-open-jdk)|
  |    Ubuntu         | [Open JDK instructions](./tizenstudio/setup/ubuntu/#set-up-open-jdk)| 
  |    MacOS          | [Open JDK instructions](./tizenstudio/setup/mac/#set-up-open-jdk)| 
