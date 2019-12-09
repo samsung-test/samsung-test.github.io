@@ -1,3 +1,8 @@
+---
+title: Design Principles
+desc: Design Principles
+keywords: Tizen, OS, Open Source,Design, Principles
+---
 
 # Design Principles
 
