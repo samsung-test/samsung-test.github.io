@@ -1,10 +1,10 @@
 ---
-title:  Hardware Accelerated Execution Manager
-desc: HAEM
-keywords: Tizen, OS, Open Source
+title:  Get Started to Develop Web Applications
+desc: Get Started 
+keywords: Tizen, OS, Open Source, started, Get Started
 ---
 
-# Develop Wearable Web Applications using Template
+# Get Started to Develop Web Applications
 
 ## Introduction
 Wearable Web applications are apps that help you monitor health, show time, play games, and much more. These applications are developed using various Web-native languages, such as HTML5, Cascading Style Sheets (CSS), and JavaScript.
