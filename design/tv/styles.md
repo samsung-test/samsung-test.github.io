@@ -1,3 +1,10 @@
+---
+title: Styles
+desc: Styles
+keywords: Tizen, OS, Open Source, style
+---
+
+
 # Styles
 
 Tizen TV applications use various styles to improve the clarity and usability of the information on the screen:
