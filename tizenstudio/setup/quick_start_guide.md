@@ -1,10 +1,10 @@
 ---
-title:  Hardware Accelerated Execution Manager
-desc: HAEM
+title:  Geting started for Web
+desc: Web Apps 
 keywords: Tizen, OS, Open Source
 ---
 
-# How to Develop Tizen Web Applications?
+# Get Started with Developing Tizen Web Applications
 
 ### Introduction
 Web applications involve the standards for building and rendering web pages such as HTML, CSS, and JavaScript. The following figure illustrates the basic structure of a Tizen Web application:
