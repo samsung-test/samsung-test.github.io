@@ -107,7 +107,7 @@ $ which msgfmt
 /usr/local/bin/msgfmt
 </code></pre>
 <strong>Note</strong><br>
-To install Homebrew, see the<a href="http://brew.sh/">Homebrew documentation</a>.
+To install Homebrew, see the <a href="http://brew.sh/">Homebrew documentation</a>.
 </td>
 </tr>
 </tbody>
@@ -159,7 +159,7 @@ To launch the installer, follow these steps:
    ![Tizen Studio License Agreement](./media/install_sdk_license.png)
 3. Click **Browse** and specify a new directory to set the SDK location and the data location. 
    
-   ![Set SDK and data location](./media/install_sdk_directory.png)
+   ![Set SDK and data location](./tizenstudio/setup/media/install_sdk_directory.png)
    
    >**Note:** 
    > 
@@ -167,12 +167,12 @@ To launch the installer, follow these steps:
 4. Click **Install**.
 5. Click **Finish** and close the installer.
    
-   ![Installation complete](./media/migration_finish_instal.png)
+   ![Installation complete](./tizenstudio/setup/media/migration_finish_instal.png)
    > **Note:**
    >
    > - If you want to install additional platforms and tools, launch  Package Manager by selecting the Launch Package Manager **check box** and click **Finish**.
    > - Use Tizen Studio Package Manager, to install and update additional tools. 
-   > - For more information on the Package Manager, see [Updating Tizen Studio](./update-sdk.md).
+   > - For more information on the Package Manager, see [Updating Tizen Studio](./tizenstudio/setup/update-sdk/).
 
 ## Verify Installation
 
