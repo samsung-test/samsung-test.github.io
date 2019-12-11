@@ -63,5 +63,8 @@
     {% include footer.html %}
     <div id="templates"></div>
     {% include foot.html %}
+    {% if jekyll.environment == 'production' %}
+    {% include analytics.html %}
+    {% endif %}
 </body>
 </html>
