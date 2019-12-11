@@ -10,9 +10,11 @@ notags: true
 ---
 # Analytics link
 
-https://michaelsoolee.com/google-analytics-jekyll/
+https://michaelsoolee.com/google-analytics-jekyll/   applied this 
 
 
+
+https://github.com/hendrikschneider/jekyll-analytics
 
 # Trademarks
 
