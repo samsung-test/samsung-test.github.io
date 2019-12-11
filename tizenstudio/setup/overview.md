@@ -3,7 +3,7 @@ title: Overview
 ---
 # Overview 
 
-**Tizen Studio 3.2 is now launched!**
+**Tizen Studio 3.5 is now launched!**
 
 [![Download](tizenstudio/media/ic_docs_download.png)  **Download**](https://developer.tizen.org/development/tizen-studio/download)
 
