@@ -1,3 +1,10 @@
+---
+title: Meet Tizen Studio 
+desc: Tizen Studio
+keywords: Tizen, OS, Open Source
+---
+# introduction
+
 <section class="tiles">
 								<article class="style1">
 									<span class="image">
