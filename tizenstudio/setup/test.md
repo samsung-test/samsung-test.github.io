@@ -143,7 +143,7 @@ keywords: Tizen, OS, Open Source
 					</div>
           
           
-   <!-- Scripts -->
+<!-- Scripts -->
   <script src="./tizenstudio/setup/assets/js/jquery.min.js"></script>
   <script src="./tizenstudio/setup/assets/js/browser.min.js"></script>
   <script src="./tizenstudio/setup/assets/js/breakpoints.min.js"></script>
