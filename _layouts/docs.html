@@ -15,7 +15,15 @@
 						<section class="section">
 							{% include nav-breadcrumbs.html %}
 							<div class="widgetLatestVersionNotification"></div>
-							{{ content }}
+							<h1 class="page-title">
+								{{title}}
+							</h1>
+							<div class="page-read-time">
+								{% include read-time.html %}
+							</div>
+							<div class="page-content">
+								{{ content }}
+							</div>
 						</section>
 					</main>
 					<nav class="col-nav">
