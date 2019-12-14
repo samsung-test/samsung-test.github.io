@@ -9,7 +9,7 @@
 <meta name="keywords" content=""/>
 <base id="baseURL" href="/1.1/" />
 <meta id="docsVersion" content="1.1" />
-<meta name="last-modified" content="2019-12-14 14:35:44 +0530" />
+<meta name="last-modified" content="2019-12-14 14:51:15 +0530" />
 <meta http-equiv="cache-control" content="max-age=24" />
 <meta http-equiv="cache-control" content="no-cache" />
 <meta http-equiv="Cache-Control" content="no-store" />
@@ -33,7 +33,8 @@
 
 </head>
 <body class=" latestVersion">
-	 <header>
+	 
+	<header>
     <div class="header">
         <nav class="nav-secondary-tabs affix" >
             <div class="container-fluid">
@@ -63,14 +64,23 @@
             <li class="active">
                 <a href="iot/">IoT</a>
             </li>
-            <li class="">
-                <a href="tizenstudio/setup/overview/">Visual Studio</a>
+            <li class=" dropdown">
+                <a href="tizenstudio/setup/overview/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visual Studio<span class="caret"></span></a>
+                <ul class="dropdown-menu nav-main">
+                    <li><a href="#">Visual Studio Tools For Tizen</a></li>
+                    <li><a href="#">Visual Studio Code Extension For Tizen</a></li>
+                    <li><a href="#">Visual Studio For Mac Extension for Tizen</a></li>
+                 </ul>
             </li>
             <li class="">
                 <a href="tizenstudio/setup/overview/">Tizen Studio</a>
             </li>
-             <li class="active">
-                <a href="tizenstudio/setup/overview/">IoT</a>
+             <li class="active dropdown">
+                <a href="tizenstudio/setup/overview/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">IoT<span class="caret"></span></a>
+                <ul class="dropdown-menu nav-main">
+                    <li><a href="#">IoT Extension SDK</a></li>
+                    <li><a href="#">IoT partners</a></li>
+                 </ul>
             </li>
             <li class="">
                 <a href="tizenstudio/setup/overview/">Blogs</a>
@@ -141,7 +151,7 @@
 
 							<div class="widgetLatestVersionNotification"></div>
 							<h1 class="page-title">
-								
+								System Recovery
 							</h1>
 							<div class="page-read-time">
 								<span class="reading-time" title="Estimated read time">
