@@ -321,3 +321,7 @@ footer {
       height: 0.8rem;
       width: 0.8rem;
    }
+
+   .page-content h1:first-child {
+       display: none;
+   }
