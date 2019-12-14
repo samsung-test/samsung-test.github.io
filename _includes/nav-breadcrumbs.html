@@ -27,17 +27,14 @@
    </ol>
 </nav>
 <div>
-{% raw %}
 <span class="reading-time" title="Estimated read time">
-  {% assign words = content | number_of_words %}
+  {% assign words = page.content | number_of_words %}
   {% if words < 360 %}
     1 min
   {% else %}
     {{ words | divided_by:180 }} mins
   {% endif %}
 </span>
-
-{% endraw %}
 </div>
 
 <!-- This is an example of CSS. Maybe you want to implement the css code into your main css file or modify it as you want -->
