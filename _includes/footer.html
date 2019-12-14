@@ -16,6 +16,9 @@
         Copyright &copy; {{ site.time | | date: '%Y'}} Tizen Inc. All rights reserved.
       </p>
     </div>
+    {% if site.disqus.shortname %}
+      {% include disqus_comments.html %}
+    {% endif %}
     <div class="footer_social_nav">
       <ul class="nav-social">
         <li class="fa fa-github"><a href="https://github.com/{{site.gitOrg}}">GitHub</a></li>  
