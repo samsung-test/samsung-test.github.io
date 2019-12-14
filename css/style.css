@@ -1004,7 +1004,7 @@ input:checked + .slider:before {
   list-style: none; }
   .tabs li a {
     color: #fff;
-    padding: 17px 19px 14px 15px;
+    padding: 17px 15px 14px 15px;
     float: left;
     font-weight: 600; }
     .tabs li a:hover {
