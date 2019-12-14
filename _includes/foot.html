@@ -10,3 +10,6 @@
 <script type="text/javascript" src="/js/stickyfill.min.js"></script>
 <script type="text/javascript" src="/js/metadata.js"></script>
 <script type="text/javascript" src="/js/docs.js"></script>
+{% if site.disqus.shortname %}
+  {% include disqus_comments.html %}
+{% endif %}
