@@ -5,8 +5,6 @@ keywords: Tizen, OS, Open Source
 comments: true
 ---
 
-## Frequently Asked Questions 
-
 This page contains answers to most commonly asked questions or errors that you may encounter while installing Tizen studio and developing apps in Tizen Studio.
 
 
