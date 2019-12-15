@@ -2,6 +2,7 @@
 title:  Frequently Asked Questions
 desc: FAQ's
 keywords: Tizen, OS, Open Source
+comments: true
 ---
 
 ## Frequently Asked Questions 
