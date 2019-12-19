@@ -40,20 +40,20 @@ To install Intel&reg; HAXM on Windows&reg;, follow these steps:
 
 1. Open the downloaded DMG file and run the installer.
 2. In the User Account Control dialog that appears, to accept the UAC prompt, click **Yes**.  
-   ![UAC prompt](./media/hardware_uac_prompt.png)
+   ![UAC prompt](./tizenstudio/setup/media/hardware_uac_prompt.png)
 
 3. To start the installation, click **Install**.  
-   ![Start installation](./media/hardware_start_instal.png)  
+   ![Start installation]./tizenstudio/setup/media/hardware_start_instal.png)  
 
    To access the documentation, click **Intel&reg; HAXM Documentation**.
 
    The following screen shows the installation in-progress:
    
-   ![Confirm installation](./media/hardware_instal.png)
+   ![Confirm installation](./tizenstudio/setup/media/hardware_instal.png)
 
 4. When the Intel&reg; HAXM installation is completed, to exit the installer, click **Finish**.
 
-   ![Finish](./media/hardware_finish.png)
+   ![Finish](./tizenstudio/setup/media/hardware_finish.png)
 
 Intel&reg; HAXM is successfully installed.
 
@@ -64,7 +64,7 @@ sc query intelhaxm
 ```
 
 If Intel&reg; HAXM is working, the command displays a status message indicating that the state is "4 RUNNING".  
-![4 RUNNING status](./media/hardware_4_running.png)
+![4 RUNNING status](./tizenstudio/setup/media/hardware_4_running.png)
 
 ### How to Start and Stop Intel&reg; HAXM?
 
@@ -94,10 +94,10 @@ If there is an installation failure because of the hardware requirements, check 
 - Ensure that **Data Execution Prevention** is enabled in Windows&reg;. In the Windows&reg; platform, click **Control Panel > System** and then select **Advanced system settings**. In the **Advanced** tab that appears, select **Performance section**, **Options** (or **Settings**), and **Data Execution Prevention**. Ensure that **DEP** is enabled.
 - Ensure that **Hyper-V** is disabled in Windows&reg; 8 or higher:  
   1. In the **Start** menu, run **Programs and Features**.  
-![Run Programs and Features](./media/hardware_run_program.png)  
+![Run Programs and Features](./tizenstudio/setup/media/hardware_run_program.png)  
   2. In the **Programs and Features** window that appears, click **Turn Windows features on or off**.
   3. In the **Turn Windows features on or off** window that appears, disable **Hyper-V** and click **OK**.  
-![Disable Hyper-V](./media/hardware_hyper_v.png)  
+![Disable Hyper-V](./tizenstudio/setup/media/hardware_hyper_v.png)  
   4. Reboot the computer.
 
 <a name="on_MacOS"></a>
@@ -123,24 +123,24 @@ To install Intel&reg; HAXM on macOS, follow these steps:
 1. Open the downloaded DMG file and run the installer.
 
 2. To start the installation, click **Continue**.  
-![Start installation](./media/hardware_os_start_instal.png)
+![Start installation](./tizenstudio/setup/media/hardware_os_start_instal.png)
 
 3. Either adjust the amount of RAM to be allocated to Intel&reg; HAXM or set it to **2048 MB** as the default value.  
-![Default value](./media/hardware_os_default.png)  
+![Default value](./tizenstudio/setup/media/hardware_os_default.png)  
 The installer also functions as a configuration tool for Intel&reg; HAXM. To change the memory settings later, run the installer again.
 
 4. Verify your Intel&reg; HAXM memory allocation settings, and click **Continue**.  
-![Memory limit](./media/hardware_os_continue.png)
+![Memory limit](./tizenstudio/setup/media/hardware_os_continue.png)
 
 5. Check the capacity and the disk location of the HAXM driver, and click **Install**.  
-![Installation type](./media/hardware_os_instal.png)
+![Installation type](./tizenstudio/setup/media/hardware_os_instal.png)
 
 6. Type your password.  
-	![Type password](./media/hardware_os_pass.png)
+	![Type password](./tizenstudio/setup/media/hardware_os_pass.png)
 
 7. When the Intel&reg; HAXM installation is finished, to exit the installer, click **Close**.
 
-   ![Exit the installer](./media/hardware_os_close.png)
+   ![Exit the installer](./tizenstudio/setup/media/hardware_os_close.png)
 
 The Intel&reg; HAXM gets successfully installed.
 

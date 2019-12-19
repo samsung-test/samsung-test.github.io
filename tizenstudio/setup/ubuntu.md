@@ -67,7 +67,7 @@ Ensure that the following system prerequisites are met:
   <tr>
     <td>Open JDK</td>
     <td>
-    <a href="https://download.java.net/java/GA/jdk10/10/binaries/openjdk-10_linux-x64_bin.tar.gz" target="_blank"> Click to Download</a>
+    <a href="https://download.java.net/java/GA/jdk10/10/binaries/openjdk-10_linux-x64_bin.tar.gz" target="_blank">Click to Download</a>
     </td>
   </tr>
   <tr>
@@ -137,21 +137,8 @@ The installer package consists of basic and immediate libraries. However, the Ti
 
 To install the dependencies, open the terminal and execute the following commands: 
 
-```sudo apt install expect
- sudo apt install gtk2-engines-pixbuf
- sudo apt install libgnome2-0
- sudo apt install qemu-user-static
- sudo apt install libwebkitgtk-1.0-0
- sudo apt install libwebkitgtk-1.0-0 cpio rpm2cpio
- sudo apt install gettext
- sudo apt install gksudo
- sudo apt install module-init-tools
- sudo apt install libudev-dev
- sudo apt install libsdl1.2debian
- sudo apt install bridge-utils
- sudo apt install openvpn
+```sudo apt install expect  sudo apt install gtk2-engines-pixbuf sudo apt install libgnome2-0 sudo apt install qemu-user-static sudo apt install libwebkitgtk-1.0-0 sudo apt install libwebkitgtk-1.0-0 cpio rpm2cpio sudo apt install gettext sudo apt install gksudo sudo apt install module-init-tools sudo apt install libudev-dev sudo apt install libsdl1.2debian sudo apt install bridge-utils sudo apt install openvpn
  ```
-
  
 ### Install Emulator Dependencies
 

@@ -1,8 +1,21 @@
 - sidebar:
       - title: Introduction 
-        url: design/introduction/air
+        url: design/introduction/index
         subfolderitems:
-          - page: Design Principles   
-            url: design/mobile/design-principles
-      - title: Styles
-        url: design/mobile/styles
+          - page: Tizen Design Inspiration  
+            url: design/introduction/air/
+          - page: Styles   
+            url: design/introduction/styles/
+      - title: Design for TV
+        url: design/tv/design-principles
+        subfolderitems:
+          - page: Styles   
+            url: design/tv/styles/
+          - page: Design Pattrens
+            url: design/tv/overview/
+            subfolderitems:
+              - page: TV App Structure  
+                url: design/tv/patterns/app-structure/
+            
+       
+        

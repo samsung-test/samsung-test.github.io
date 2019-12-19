@@ -6,7 +6,8 @@
 	{% include head.html %}
 </head>
 <body class="{{page.pageClass}} latestVersion">
-	{% if page.landing == true %}{% include global-header.html %}{% endif %} {% if page.landing != true %}{% include header.html %}{% endif %}
+	{% if page.landing == true %}{% include global-header.html %}{% endif %} 
+	{% if page.landing != true %}{% include header.html %}{% endif %}
     <div class="{% if page.landing == true %}wrapper{%else%}wrapper right-open{% endif %}">
 		<div class="container-fluid">
 			<div class="row">
@@ -15,7 +16,15 @@
 						<section class="section">
 							{% include nav-breadcrumbs.html %}
 							<div class="widgetLatestVersionNotification"></div>
-							{{ content }}
+							<h1 class="page-title">
+								{{page.title}}
+							</h1>
+							<div class="page-read-time">
+								{% include read-time.html %}
+							</div>
+							<div class="page-content">
+								{{ content }}
+							</div>
 						</section>
 					</main>
 					<nav class="col-nav">
@@ -28,14 +37,6 @@
 							<div class="toc-nav">
 								<div class="feedback-links">
 									<ul>
-										{% if edit_url != "" %}
-                                        <li style="visibility: hidden">
-                                            <a href="{{ edit_url }}">
-                                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i> 
-                                                Edit this page
-                                            </a>
-                                        </li>
-                                        {% endif %}
 										<li>
                                             <a href="https://github.com/{{site.gitOrg}}/{{site.gitRepo}}/edit/{{site.docsBranch}}/{{page.path}}" target="_blank">
                                                 <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
@@ -61,6 +62,7 @@
 			</div>
 		</div>
 	</div>
+	
     {% include footer.html %}
     <div id="templates"></div>
     {% include foot.html %}

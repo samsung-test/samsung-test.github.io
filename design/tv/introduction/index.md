@@ -1,7 +1,7 @@
 ---
-title: Design Principles
-desc: Design Principles
-keywords: Tizen, OS, Open Source,Design, Principles
+title: Introduction
+desc: Principles 
+keywords: Tizen, OS, Open Source, principles
 ---
 
 # Design Principles
@@ -84,4 +84,3 @@ Prioritize elements on the screen based on their importance, and balance the pri
 ![balance](media/dp_06_bre_balance_re-850x106.png)
 
 *Less important back key information is dimmed.*
-

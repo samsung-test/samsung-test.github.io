@@ -15,7 +15,7 @@ You can uninstall Tizen Studio in one of the following ways:
 
 > **Note**
 >  
-> For more information on how to remove a single package or multiple packages, see [Updating Tizen Studio](update-sdk.md).
+> For more information on how to remove a single package or multiple packages, see [Updating Tizen Studio](./tizenstudio/setup/update-sdk/).
 
 ## GUI Uninstaller
 
@@ -38,15 +38,15 @@ To uninstall Tizen Studio using GUI uninstaller, follow these steps:
 
      > **Note**  
      > 
-     > If you do not select SDK data or KeyStore components, you can keep the SDK data or KeyStore files in their directories for future        re-use.
+     > If you do not select SDK data or KeyStore components, you can keep the SDK data or KeyStore files in their directories for future re-use.
 
 4. To remove all the installed platforms, packages, tools, and the user-created data and the files, click **Uninstall**.
 
-   ![Uninstaller selections](./media/uninstall_sdk_selection.png)
+   ![Uninstaller selections](./tizenstudio/setup/media/uninstall_sdk_selection.png)
 
 5. If you click the **checkbox** to uninstall the SDK data or the KeyStore components, they get uninstalled during the process. In case you want to keep one of them, uncheck the respective **checkbox**.
 
-   ![Uninstallation in progress](./media/uninstall_sdk_progress.png)
+   ![Uninstallation in progress](./tizenstudio/setup/media/uninstall_sdk_progress.png)
 
 ## CLI Uninstaller
 

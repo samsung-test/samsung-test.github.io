@@ -47,11 +47,11 @@ Ensure that the following system prerequisites are met:
 
 <table>
   <tr>
-    <th colspan="2" align=left>Windows</th>
+                <th colspan="2" align=left>Windows</th>
   </tr>
   <tr>
     <td>Version</td>
-    <td>7/8/10</td>
+    <td> 7/8/10 </td>
   </tr>
   <tr>
     <td>Bit</td>
@@ -66,15 +66,15 @@ Ensure that the following system prerequisites are met:
   </tr>
   <tr>
     <td>Open JDK</td>
-    <td><a href="https://download.java.net/java/GA/jdk10/10/binaries/openjdk-10_windows-x64_bin.tar.gz"  target="_blank">Click to Download</a></td>
+    <td><a href="https://download.java.net/java/GA/jdk10/10/binaries/openjdk-10_windows-x64_bin.tar.gz" class="clickable"  target="_blank">Click to Download</a></td>
   </tr>
   <tr>
     <td>OpenJavaFX</td>
-    <td><a href=http://gluonhq.com/download/javafx-11-0-2-sdk-windows/ target="_blank">Click to Download</a></td>
+    <td><a href="http://gluonhq.com/download/javafx-11-0-2-sdk-windows/" class="clickable" target="_blank">Click to Download</a></td>
   </tr>
   <tr>
     <td>Tizen Studio setup file</td>
-    <td><a href="https://developer.tizen.org/development/tizen-studio/download#" target="_blank">Click to Download</a></td>
+    <td><a href="https://developer.tizen.org/development/tizen-studio/download#" class="clickable" target="_blank">Click to Download</a></td>
   </tr>
 </table>
 
@@ -149,7 +149,7 @@ To launch the installer, follow these steps:
    >
    >The license contains important legal notices for using Tizen Studio. Read it fully, and click **Accept** only if you agree with the license statement.
 
-   ![Tizen Studio License Agreement](tizenstudio/setup/media/install_sdk_license.png)
+   ![Tizen Studio License Agreement](./tizenstudio/setup/media/install_sdk_license.png)
 
 3. Click **Browse** and specify a new directory to set the SDK data location. 
 

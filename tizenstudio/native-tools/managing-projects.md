@@ -1,3 +1,9 @@
+---
+title: Manage Projects
+desc: Manage Projects
+keywords: Tizen, OS, Open Source
+---
+
 # Managing Projects
 
 The Tizen Studio provides the following set of tools to help you create and manage your native application projects:
