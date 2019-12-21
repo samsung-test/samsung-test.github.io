@@ -1161,8 +1161,7 @@ code {
   color: #0c5176 !important;
   font-size: 90%;
   padding: 3px 7px;
-  overflow-x: scroll;
-  white-space: nowrap; }
+  overflow-x: scroll; }
 
 pre code {
   overflow-x: auto;
