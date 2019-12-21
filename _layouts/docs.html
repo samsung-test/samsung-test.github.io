@@ -24,6 +24,9 @@
 							</div>
 							<div class="page-content">
 								{{ content }}
+								{% if site.disqus.shortname %}
+            						{% include disqus_comments.html %}
+         						{% endif %}
 							</div>
 						</section>
 					</main>
