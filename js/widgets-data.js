@@ -1,7 +1,7 @@
 var widgetsData = {  
    versions:[ 
       {  
-         "title":"5.5",
+         "title":"Tizen 5.5",
          "branch":"1.1",
          "desc":"",
          "releaseDate":"21st Nov",
@@ -9,7 +9,7 @@ var widgetsData = {
          "published":true
       },
       {  
-         "title":"5.0",
+         "title":"Tizen 5.0",
          "branch":"1.0",
          "desc":"",
          "releaseDate":"21st Nov",
