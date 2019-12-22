@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon"  href="/favicon.ico" />
+<title>Customizing Images</title>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<base id="baseURL" href="/5.5/" />
+<meta id="docsVersion" content="5.5" />
+<meta name="last-modified" content="2019-12-22 22:02:02 +0530" />
+<meta http-equiv="cache-control" content="max-age=24" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-store" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="Expires" content="600" />
+
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/pygments/perldoc.css">
+<link rel="stylesheet" href="/css/style.css?v=22122019">
+<link rel="stylesheet" href="/css/github.css?v=22122019">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154449679-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-154449679-1');
+</script>
+
+</head>
+<body class=" latestVersion">
+	 
+	<header>
+    <div class="header">
+        <nav class="nav-secondary-tabs affix" >
+            <div class="container-fluid">
+                <div class="navbar-collapse" aria-expanded="false" style="height: 1px;">
+                    <div class="sidebar-toggle">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</div>
+<div class="nav-container">
+    <a class="logo" href="/" title="Tizen Documentation">
+        Tizen
+    </a>
+    <div id="tabs">
+        
+        
+        <ul class="tabs" id="jsTOCHorizontal">
+            <li class="">
+                <a href="design/">Design</a>
+            </li>
+            <li class="">
+                <a href="application/">Platform</a>
+            </li>
+            <li class=" dropdown">
+                <a href="visualstudio/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visual Studio<span class="caret"></span></a>
+                <ul class="dropdown-menu nav-main">    
+                    <h6 class="dropdown-header">Visual Studio Tools For Tizen</h6>
+                    <li><a href="visualstudio/vstools/index/">VS Tools for Tizen</a></li>
+                    <h6 class="dropdown-header">Visual Studio Code Extension For Tizen</h6>
+                    <li><a href="visualstudio/vscode-ext/index/">/a>VS Code Extension For Tizen</li>
+                    <h6 class="dropdown-header">Visual Studio Code Extension For Tizen</h6>
+                    <li><a href="visualstudio/vstools-mac/overview/">VS For Mac Extension for Tizen</a></li>
+                 </ul>
+            </li>
+            <li class="">
+                <a href="tizenstudio/setup/overview/">Tizen Studio</a>
+            </li>
+             <li class=" dropdown">
+                <a href="iot/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">IoT<span class="caret"></span></a>
+                <ul class="dropdown-menu nav-main">
+                    <li><a href="iot/extensionsdk/">IoT Extension SDK</a></li>
+                    <li><a href="iot/iot-partners/nubison/">IoT partners</a></li>
+                 </ul>
+            </li>
+            <li class="">
+                <a href="tizenstudio/setup/overview/">Blogs</a>
+            </li>
+            <li class="">
+                <a href="tizenstudio/setup/overview/">Community</a>
+            </li>
+        </ul>
+    </div>
+    <div class="ctrl-right hidden-xs hidden-sm">
+        <a href="javascript:void(0)" id="menu-toggle"><i class="fa fa-indent" aria-hidden="true"></i></a>
+        <div class="widgetVersionSwitcher"></div>
+    </div>
+    <div class="search-form">
+        <form action="search.html">
+            <input class="search-field form-control ds-input st-search-input" value="" name="q" placeholder="Search the docs" type="search" autocomplete="off" spellcheck="false" dir="auto">
+            <button type="submit" class="search-button">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+    </div>
+    
+</div>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+    <div class="wrapper right-open">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-body">
+					<main class="col-content content">
+						<section class="section">
+							<nav class="breadcrumbs bootstrap hidden-sm-down">
+   <ol class="breadcrumb list-unstyled" vocab="http://schema.org/" typeof="BreadcrumbList">
+
+       
+          
+      
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <a property="item" typeof="WebPage" href="/5.5/">
+            <span property="name">Documentation</span>
+            <meta property="position" content="1" />
+         </a>
+      </li>
+       
+          
+      
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <a property="item" typeof="WebPage" href="/5.5/platform/">
+            <span property="name">Platform</span>
+            <meta property="position" content="2" />
+         </a>
+      </li>
+       
+          
+      
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <span property="name">Customizing Images</span>
+         <meta property="position" content="3" />
+      </li>
+      
+   </ol>
+</nav>
+
+
+							<div class="widgetLatestVersionNotification"></div>
+							<h1 class="page-title">
+								Customizing Images
+							</h1>
+							<div class="page-read-time">
+								<span class="reading-time" title="Estimated read time">
+    
+    
+    16 mins read
+    
+</span>
+							</div>
+							<div class="page-content">
+								<h1 id="gbs-build">gbs build</h1>
+
+<p>Use the <code class="highlighter-rouge">gbs build</code> subcommand to build the source code and generate RPM packages locally.</p>
+
+<p>For command usage details, enter:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ gbs build -help
+</code></pre></div></div>
+
+<h2 id="command-workflow">Command Workflow</h2>
+
+<p>The <code class="highlighter-rouge">gbs build</code> command requires the following input:</p>
+
+<ul>
+  <li>Git projects that contain RPM packaging files</li>
+  <li>
+    <p>Binary RPM repositories (remote or local)</p>
+
+    <p>The binary RPM repositories contain all the binary RPM packages used to create the chroot environment and build packages, which can be remote, like tizen release or snapshot repositories, or local. The local repository supports 2 types:</p>
+
+    <ul>
+      <li>Standard repository with existing repodata</li>
+      <li>Normal directory containing RPM packages. GBS finds all RPM packages within the directory.</li>
+    </ul>
+
+    <p>To configure a repository, see <a href="gbs.conf.md">GBS Configuration</a>.</p>
+  </li>
+  <li>Project build configurations (such as macros and flags)</li>
+</ul>
+
+<p>The following figure shows the basic GBS build workflow. The figure illustrates that input and output are both repositories, and the output repository is located at <code class="highlighter-rouge">~/GBS-ROOT/locals/repos/</code> by default. You can change the repository path by using the <code class="highlighter-rouge">--buildroot</code> option.</p>
+
+<p><strong>Figure: GBS build workflow</strong></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> ____________________
+|                    |      ___________
+| Source Code (GIT)  |----&gt;|           |      _________________________
+|____________________|     |           |     |                         |
+ ____________________      |           |     |  Local repository of    |
+|                    |     |           |     |                         |
+|    Build config    |----&gt;| GBS build |----&gt;|                         |
+|____________________|     |           |     |                         |
+ ____________________      |           |     |  build RPM packages     |
+|                    |     |           |     |(~/GBS-ROOT/local/repos/)|
+|Binary repositories |     |           |     |_________________________|
+|in GBS conf         |----&gt;|___________|                  |
+|(Remote or Local)   |           ^                        |
+|____________________|           |________________________|
+</code></pre></div></div>
+
+<p>Local repos in the GBS build root (<code class="highlighter-rouge">~/GBS-ROOT</code> by default) affect build results, so make sure that repositories do not contain old or unnecessary RPM packages. While running the <code class="highlighter-rouge">gbs build</code> command, you can specify the <code class="highlighter-rouge">--clean-repos</code> option to clean up local GBS-created repositories before building. To avoid problems, also set a different GBS build root directory for each profile. The GBS build directory can be defined in many ways:</p>
+
+<ul>
+  <li>By default, the GBS build puts all output files under <code class="highlighter-rouge">~/GBS-ROOT/</code>.</li>
+  <li>If the <code class="highlighter-rouge">TIZEN_BUILD_ROOT</code> environment variable exists, <code class="highlighter-rouge">${TIZEN_BUILD_ROOT}</code> is used as the output top directory.</li>
+  <li>If the <code class="highlighter-rouge">-B</code> option is specified, the specified directory is used, even if <code class="highlighter-rouge">${TIZEN_BUILD_ROOT}</code> exists.</li>
+</ul>
+
+<blockquote>
+  <p><strong>Note</strong></p>
+
+  <p>All RPM packages under the output repository (by default, <code class="highlighter-rouge">~/GBS-ROOT/local/repos/&lt;VERSION&gt;/</code>) are used when building packages. Since all the packages under the output repository are applied to the build environment, avoid unexpected results by making sure that the output repository is clean.</p>
+</blockquote>
+
+<p>The following example shows the structure of the GBS build root directory in the workflow output:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gbs output top dir
+|-- local
+| |-- cache # repodata and RPMs from remote repositories
+| |-- repos # generated local repo top directory
+| | |-- tizen # distro one: tizen
+| | | |-- armv7l # store armv7l RPM packages
+| | | |-- i586 # store x86 RPM packages
+| | `-- tizen2.0 # build for distro two: tizen2.0
+| | `-- i586 # the same as above
+| |-- scratch.armv7l.0 # first build root for arm build
+| |-- scratch.i586.0 # second build root for x86 build
+| |-- scratch.i586.1 # third build root for x86 build
+| |-- scratch.i586.2 # fourth build root for x86 build
+| |-- scratch.i586.3 # fifth build root for x86 build
+| | # The above build root dir can be used by gbs chroot &lt;build root dir&gt;
+| `-- sources # sources generated for build, including tarball, spec, patches, etc.
+| |-- tizen
+| `-- tizen2.0
+`-- meta # meta data used by gbs
+</code></pre></div></div>
+
+<h2 id="examples">Examples</h2>
+
+<p>To perform a basic build:</p>
+
+<ul>
+  <li>Build a single package:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cd package1$ gbs build -A i586
+</code></pre></div>    </div>
+  </li>
+  <li>Build a package for different architectures:
+    <blockquote>
+      <p><strong>Note</strong></p>
+
+      <p>Supported architectures include x86_64, i586, armv6l, armv7hl, armv7l, aarch64, mips, and mipsel.</p>
+    </blockquote>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ gbs build -A armv7l #build package for armv7l
+$ gbs build -A i586 #build package for i586
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Make a clean build by deleting the old build root.</p>
+
+    <p>The <code class="highlighter-rouge">--clean</code> option must be specified if the repository has been changed, for example, to another release.</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ gbs build -A armv7l --clean
+</code></pre></div>    </div>
+  </li>
+  <li>Build the package with a specific commit:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ gbs build -A armv7l --commit=&lt;COMMIT_ID&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Use the <code class="highlighter-rouge">--overwrite</code> option to trigger a rebuild.</p>
+
+    <p>If you have already built before, and want to rebuild, specify the <code class="highlighter-rouge">--overwrite</code> option or the packages are skipped.</p>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ gbs build -A i586 --overwrite
+</code></pre></div>    </div>
+
+    <p>If you change the commit or specify the <code class="highlighter-rouge">--include-all</code> option, it always rebuilds. In these cases, the <code class="highlighter-rouge">--overwrite</code> option is not needed.</p>
+  </li>
+  <li>Output the debug info:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ gbs build -A i586 --debug
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Build against a local repository.</p>
+
+    <p>You can configure the local repo in the <code class="highlighter-rouge">.gbs.conf</code> file or through the command line.</p>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ gbs build -R /path/to/repo/dir/ -A i586
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Use the <code class="highlighter-rouge">--noinit</code> option to build a package in offline mode.</p>
+
+    <p>This option can only be used if the build root is ready. When it is used, GBS does not connect the remote repository, and skips parsing and checking the repository and initializing the build environment. The package is built directly.</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ gbs build -A i586 # build first and create build environment
+$ gbs build -A i586 --noinit # use --noinit to start building directly
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Build with all uncommitted changes using the <code class="highlighter-rouge">--include-all</code> option.</p>
+
+    <p>In the following examples, the Git tree contains 1 modified file and 2 extra files:</p>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git status -s
+M ail.pc.in
+?? base.repo
+?? main.repo
+</code></pre></div>    </div>
+    <ul>
+      <li>
+        <p>Build without the <code class="highlighter-rouge">--include-all</code> option</p>
+
+        <p>Only committed files are built. None of the modified files, which are neither committed nor added, are built:</p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ gbs build -A i586
+warning: the following untracked files would NOT be included: base.repo main.repo
+warning: the following uncommitted changes would NOT be included: ail.pc.in
+warning: you can specify '--include-all' option to include these uncommitted and untracked files.
+....
+info: Binaries RPM packages can be found here:
+/home/test/GBS-ROOT/local/scratch.i586.0/home/abuild/rpmbuild/RPMS/
+info: Done
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Build with the <code class="highlighter-rouge">--include-all</code> option</p>
+
+        <p>All the files are built:</p>
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ gbs build -A i586
+warning: the following untracked files would NOT be included: base.repo main.repo
+warning: the following uncommitted changes would NOT be included: ail.pc.in
+warning: you can specify '--include-all' option to include these uncommitted and untracked files.
+....
+info: Binaries RPM packages can be found here:
+/home/test/GBS-ROOT/local/scratch.i586.0/home/abuild/rpmbuild/RPMS/
+info: Done
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Use <code class="highlighter-rouge">.gitignore</code> to ignore specific files when using the <code class="highlighter-rouge">--include-all</code> option.</p>
+
+        <p>If you want to ignore some file types, update your <code class="highlighter-rouge">.gitignore</code>:</p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cat .gitignore
+.*
+*/.*
+*.pyc
+*.patch*
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="incremental-build">Incremental Build</h2>
+
+<p>Starting from GBS 0.10, the <code class="highlighter-rouge">gbs build</code> subcommand supports the <code class="highlighter-rouge">--incremental</code> option, which allows you to build incrementally.</p>
+
+<p>The incremental mode is designed for development and verification of single packages. It is not intended to replace the standard mode. Only 1 package can be built at a time using the incremental mode.</p>
+
+<p>The incremental mode sets up the build environment in multiple steps, finishing by mounting the local Git tree of a package in the chroot build environment.</p>
+
+<blockquote>
+  <p><strong>Note</strong></p>
+
+  <p>Because GBS mounts your Git tree to the build root, be very careful when you remove your build root. You need to make sure you have already unmounted the source tree manually before you remove it.</p>
+</blockquote>
+
+<p>The incremental mode has the following benefits:</p>
+
+<ul>
+  <li>The build environment uses the latest source code and changes to source do not trigger a new build environment (in the chroot).</li>
+  <li>The Git source tree becomes the source of the builds. Any change made in the Git repository followed by invocation of the build script builds the changed sources.</li>
+  <li>If the build fails for some reason, the build script continues from the spot where it has failed, once the code has been changed to fix the problem causing the failure.</li>
+</ul>
+
+<p>Incremental building is, in many ways, similar to traditional code development, where changes are made to sources, followed by running make to test and compile the changes. However, it enables development using the build environment of the target, instead of the host OS.</p>
+
+<p>The incremental mode has some limitations, mostly related to packaging and how the sources are maintained. Among others, it depends on how the RPM spec file is composed:</p>
+
+<ul>
+  <li>
+    <p>The incremental mode does not support patches in the spec file. All source has to be maintained as part of the Git tree.</p>
+  </li>
+  <li>
+    <p>The incremental mode requires a clean packaging workflow. Exotic workflows in the spec files do not always work well, because the incremental mode expects the following model:</p>
+
+    <ol>
+      <li>Code preparation (%prep)</li>
+      <li>Code building (%build)</li>
+      <li>Code installation (%install)</li>
+    </ol>
+  </li>
+  <li>
+    <p>The %prep section can only contain the %setup macro to unpack the tarball, and must not contain other source code-related operations, such as unpacking another source or applying patches.</p>
+  </li>
+  <li>
+    <p>Because the %build section is run every time, if the %build script has configuration scripts (auto-tools), binaries can be regenerated, causing a complete build every time. To avoid this, use the following macros, which can be overridden using the <code class="highlighter-rouge">--no-configure</code> option:</p>
+
+    <ul>
+      <li>%configure: runs the configure script with pre-defined paths and options.</li>
+      <li>%reconfigure: regenerates the scripts and runs %configure.</li>
+      <li>%autogen: runs the autogen script.</li>
+    </ul>
+  </li>
+  <li>
+    <p>You can build only a single package. You cannot build multiple packages in parallel.</p>
+  </li>
+  <li>
+    <p>The tarball’s name in the spec file must be <code class="highlighter-rouge">%{name}-%{version}.{tar.gz|tar.bz2|zip|...}</code>. Otherwise, GBS cannot mount the source code to build the root correctly.</p>
+  </li>
+</ul>
+
+<p>The following example uses the dlog source code. First, it builds with the <code class="highlighter-rouge">--incremental</code> option, then modifies 1 source file and triggers the incremental build again. You can see that only modified source code gets compiled during the incremental build.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cd dlog
+# first build:
+$ gbs build -A i586 --incremental
+$ vim log.c # change code
+# second build:
+$ gbs build -A i586 --incremental
+info: generate repositories ...
+info: build conf has been downloaded at:
+/var/tmp/test-gbs/tizen.conf
+info: Start building packages from: /home/test/packages/dlog (git)
+info: Prepare sources...
+info: Retrieving repo metadata...
+info: Parsing package data...
+info: *** overwriting dlog-0.4.1-5.1 i586 ***
+info: Next pass:
+dlog
+info: *** building dlog-0.4.1-5.1 i586 tizen (worker: 0) ***
+info: Doing incremental build
+[ 0s] Memory limit set to 10854336KB
+[ 0s] Using BUILD_ROOT=/home/test/GBS-ROOT/local/scratch.i586.0
+[ 0s] Using BUILD_ARCH=i686:i586:i486:i386:noarch
+[ 0s] test-desktop started "build dlog.spec" at Thu Sep 13 07:36:14 UTC 2012.
+[ 0s] -----------------------------------------------------------------
+[ 0s] ----- building dlog.spec (user abuild)
+[ 0s] -----------------------------------------------------------------
+[ 0s] -----------------------------------------------------------------
+[ 0s] + rpmbuild --short-circuit -bc /home/abuild/rpmbuild/SOURCES/dlog.spec
+[ 0s] Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.XLz8je
+[ 0s] + umask 022
+[ 0s] + export LD_AS_NEEDED
+[ 4s] + make -j4
+[ 4s] make all-am
+[ 4s] make[1]: Entering directory /home/abuild/rpmbuild/BUILD/dlog-0.4.1
+[ 4s] /bin/sh ./libtool --tag=CC --mode=compile gcc -c -o log.lo log.c
+[ 4s] mv -f .deps/log.Tpo .deps/log.Plo
+[ 4s] /bin/sh ./libtool --tag=CC --mode=link gcc -o libdlog.la /usr/lib log.lo
+[ 4s] libtool: link: gcc -shared .libs/log.o -o .libs/libdlog.so.0.0.0
+[ 4s] libtool: link: ar cru .libs/libdlog.a log.o
+[ 4s] libtool: link: ranlib .libs/libdlog.a
+[ 4s] make[1]: Leaving directory /home/abuild/rpmbuild/BUILD/dlog-0.4.1
+[ 4s] + exit 0
+[ 4s] finished "build dlog.spec" at Thu Sep 13 07:36:18 UTC 2012.
+[ 4s]
+info: finished incremental building dlog
+info: Local repo can be found here:
+/home/test/GBS-ROOT/local/repos/tizen/
+info: Done
+</code></pre></div></div>
+
+<p>From the build log, you can see that only <code class="highlighter-rouge">log.c</code> has been re-compiled. That is the point of the incremental build behavior.</p>
+
+<p>The <code class="highlighter-rouge">--noinit</code> option can be used together with <code class="highlighter-rouge">--incremental</code> to make a build more quickly:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ gbs build --incremental --noinit
+</code></pre></div></div>
+
+<h2 id="multiple-package-build-dependency-build">Multiple Package Build (Dependency Build)</h2>
+
+<p>Multiple package build has been supported since GBS 0.10. If packages have dependencies on each other, GBS builds them in the correct order calculated by the dependency relationships. Previously built RPMs are used to build the packages that depend on them. This process is called a dependency build.</p>
+
+<p>To perform a multiple package build:</p>
+
+<ul>
+  <li>
+    <p>Build all packages under a specific package directory:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ mkdir tizen-packages
+$ cp package1 package2 package3 ... tizen-packages/
+$ gbs build -A i586 tizen-packages # build all packages under tizen-packages
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Build multiple packages in parallel with the <code class="highlighter-rouge">--threads</code> option:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># current directory have multiple packages, --threads can be used to set the max build worker at the same time
+$ gbs build -A armv7l --threads=4
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Select a group of packages to be built:</p>
+
+    <ul>
+      <li>The <code class="highlighter-rouge">--binary-from-file</code> option specifies a text file that contains a name list of RPM packages to be built. The format in the text file is 1 package per line.</li>
+      <li>The <code class="highlighter-rouge">--binary-list</code> option specifies a list in which the package names are separated by commas.</li>
+    </ul>
+
+    <p>When the number of packages is small and the packages can be clearly listed in the command line, use the <code class="highlighter-rouge">--binary-list</code> option for simplicity.</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ gbs build -A i586 --binary-from-file=/path/to/packages.list
+$ gbs build -A i586 --binary-list=&lt;pkg1&gt;,&lt;pkg2&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Exclude certain packages:</p>
+
+    <ul>
+      <li>The <code class="highlighter-rouge">--exclude</code> option specifies a list in which the names of packages to be ignored are separated by commas.</li>
+      <li>The <code class="highlighter-rouge">--exclude-from-file</code> option specifies a text file that contains a name list of packages to be ignored.</li>
+    </ul>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ gbs build -A i586 tizen-packages --exclude=&lt;pkg1&gt;
+$ gbs build -A i586 tizen-packages --exclude=&lt;pkg1&gt;,&lt;pkg2&gt;
+$ gbs build -A i586 tizen-packages --exclude-from-file=/path/to/packages.list
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Build packages based on dependencies:</p>
+
+    <ul>
+      <li>The <code class="highlighter-rouge">--deps</code> option enables GBS to build specific packages, together with all related packages on which they depend.</li>
+      <li>The <code class="highlighter-rouge">--rdep</code> option enables GBS to build specific packages, together with all related packages that depend on them.</li>
+    </ul>
+
+    <p>The specific packages can be included by the <code class="highlighter-rouge">--binary-from-file</code> or <code class="highlighter-rouge">--binary-list</code> option, and excluded by the <code class="highlighter-rouge">--exclude</code> or <code class="highlighter-rouge">--exclude-from-file</code> option.</p>
+
+    <p>The <code class="highlighter-rouge">--deps</code> and <code class="highlighter-rouge">--rdep</code> options are compatible. When added at the same time, besides the specific packages, GBS builds not only the related packages on which they depend, but also all the related packages that depend on them.</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ gbs build -A i586 --binary-list=&lt;pkg1&gt;,&lt;pkg2&gt; --deps
+$ gbs build -A i586 --binary-list=&lt;pkg1&gt;,&lt;pkg2&gt; --rdeps
+$ gbs build -A i586 --binary-list=&lt;pkg1&gt;,&lt;pkg2&gt; --deps --rdeps
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="useful-building-options">Useful Building Options</h2>
+
+<p>The <code class="highlighter-rouge">gbs build</code> command offers some useful options:</p>
+
+<ul>
+  <li>
+    <p>Install extra packages to build a root</p>
+
+    <p>The <code class="highlighter-rouge">--extra-packs=&lt;packages separated by commas&gt;</code> option can be used to install extra packages:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ gbs build -A i586 --extra-packs=&lt;pkg1&gt;,&lt;pkg2&gt; --deps
+$ gbs build -A i586 --extra-packs=&lt;pkg1&gt;,&lt;pkg2&gt; --rdeps
+$ gbs build -A i586 --extra-packs=&lt;pkg1&gt;,&lt;pkg2&gt; --deps --rdeps
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Keep all packages in the build root</p>
+
+    <p>Generally, the GBS build removes unnecessary packages in the build root. While transferring to build another package, you can use the <code class="highlighter-rouge">--keep-packs</code> option to keep all unnecessary packages, and just install missing required build packages. This option can be used to speed up building multiple packages.</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ gbs build --keep-packs
+</code></pre></div>    </div>
+
+    <p>The <code class="highlighter-rouge">--keep-packs</code> option can be used to create 1 build root for building multiple packages. Once the build root is ready, you can use the <code class="highlighter-rouge">--noinit</code> option to build these packages quickly.</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ gbs build pkg1/ --keep-packs -A i586
+$ gbs build pkg2/ --keep-packs -A i586
+$ gbs build pkg3/ --keep-packs -A i586
+</code></pre></div>    </div>
+
+    <p>Now, the build root (<code class="highlighter-rouge">~/GBS-ROOT/local/scratch.i586.0</code>) is ready for building <code class="highlighter-rouge">pkg1</code>, <code class="highlighter-rouge">pkg2</code>, and <code class="highlighter-rouge">pkg3</code>. You can use the <code class="highlighter-rouge">--noinit</code> option to build them offline, and need waste no time to check for repository updates and build root.</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ gbs build pkg1 --noinit
+$ gbs build pkg2 --noinit
+$ gbs build pkg3 --noinit
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="forcing-gbs-to-work-in-the-native-mode">Forcing GBS to Work in the Native Mode</h3>
+
+<p>Use the <code class="highlighter-rouge">--fallback-to-native</code> option to force GBS to perform packaging for non-native packages in the native packaging mode in the packaging phase of the building process, that is, ignore the upstream branch and create a tarball from HEAD (by default) or specified commit without generating any patch. Adding the <code class="highlighter-rouge">--fallback-to-native</code> option when issuing the <code class="highlighter-rouge">gbs build</code> or <code class="highlighter-rouge">gbs export</code> command is equivalent to adding the <code class="highlighter-rouge">fallback_to_native = true</code> property into the <code class="highlighter-rouge">[general]</code> section of the GBS configuration file.</p>
+
+<blockquote>
+  <p><strong>Note</strong></p>
+
+  <p>This option serves as a work-around solution for solving export failures of some non-native packages caused by a tricky engineering problem. For Tizen native packages, GBS always performs packaging in the native packaging mode.</p>
+</blockquote>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ gbs build -A i586 --fallback-to-native
+</code></pre></div></div>
+
+<h3 id="skipping-the-building-of-the-srcrpm-file">Skipping the Building of the src.rpm File</h3>
+
+<p>Normally, 2 types of package files are created during the package building process:</p>
+
+<ul>
+  <li>Binary, or executable, package file</li>
+  <li>Source package file</li>
+</ul>
+
+<p>The source package file (<code class="highlighter-rouge">src.rpm</code>) contains everything needed to recreate a specific version of a package. This makes the <code class="highlighter-rouge">src.rpm</code> file a great way to distribute source code. However, it is optional when developing source code, especially when the source Git tree is huge.</p>
+
+<p>Adding the <code class="highlighter-rouge">--skip-srcrpm</code> option enables GBS to skip the building of the <code class="highlighter-rouge">src.rpm</code> file, speeding up the building process of huge source Git trees during development:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cd &lt;Path_to_crosswalk&gt;
+$ gbs build -A i586 --skip-srcrpm
+</code></pre></div></div>
+
+<h3 id="using-distributed-compiler-networks">Using Distributed Compiler Networks</h3>
+
+<p>Though GBS provides the <code class="highlighter-rouge">--threads</code> option to speed up the build process by activating multiple build workers, the efficiency of just using multiple build workers in 1 local machine is far from satisfactory, especially for a huge Git tree, such as crosswalk.</p>
+
+<p>To improve the build process efficiency further, use the <code class="highlighter-rouge">--icecream</code> option, which activates distributed compiler networks. The option makes GBS use build workers on both the local machine and distributed networks.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ gbs build -A i586 --icecream=10
+</code></pre></div></div>
+
+<h2 id="fetching-the-project-build-conf-and-customizing-the-build-root-for-advanced-users">Fetching the Project Build Conf and Customizing the Build Root (for Advanced Users)</h2>
+
+<p>The project build conf describes the build configurations for the project, including all macros, packages, and flags predefined in the build environment. In Tizen releases, the build conf is released together with the released repository.</p>
+
+<ul>
+  <li>
+    <p>Fetch the build conf automatically with the <code class="highlighter-rouge">gbs build</code> command</p>
+
+    <p>Starting from GBS 0.7.1, by default, GBS fetches the build conf from a remote repository (if you specify the remote Tizen repository) and stores it in your temporary environment:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ gbs build -A i586
+info: generate repositories ...
+info: build conf has been downloaded at:
+/var/tmp/&lt;user&gt;-gbs/tizen2.0.conf
+info: generate tar ball: packaging/acpid-2.0.14.tar.bz2
+[sudo] password for &lt;user&gt;:
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Build the package using your own project build conf, by using the <code class="highlighter-rouge">-D</code> option</p>
+
+    <p>You can save and modify the build conf, and use it for your own purposes:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cp /var/tmp/&lt;user&gt;-gbs/tizen2.0.conf ~/tizen2.0.conf
+$ gbs build -A i586 -D ~/tizen2.0.conf
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>To customize the build config, see <a href="http://en.opensuse.org/openSUSE:Build_Service_prjconf">http://en.opensuse.org/openSUSE:Build_Service_prjconf</a>.</p>
+
+								
+            						
+
+
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = 'https://samsung-test.github.io/5.5//platform/reference/gbs/gbs-build/';
+      this.page.identifier = 'https://samsung-test.github.io/5.5//platform/reference/gbs/gbs-build/';
+    };
+    (function() {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://samsung-test.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+         						
+							</div>
+						</section>
+					</main>
+					<nav class="col-nav">
+						<div id="sidebar-nav" class="sidebar hidden-sm hidden-xs">
+						    
+
+
+<div id="navbar" class="nav-sidebar">
+    <ul class="nav" id="jsTOCLeftNav">
+        
+        
+        
+        
+    
+        <li>
+            <a 
+                href="platform/about/index/" 
+                data-target="#item1" 
+                data-toggle="collapse" 
+                data-parent="#stacked-menu"
+                aria-expanded=" false "
+                class=" collapsed "
+                >
+                    Platform Overview
+                    <span class="caret arrow"></span>
+            </a>
+            
+
+            
+            <ul class="nav collapse" aria-expanded="false" id="#item1">
+            
+
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/what-is-tizen/overview/"
+                        class=""
+                        aria-expanded=" false "
+                        data-target="#item1" 
+                        data-toggle="collapse" 
+                        >
+                        Profiles
+                        <span class="caret arrow"></span>
+                    </a>
+                    
+                    
+                    <ul class="nav collapse" aria-expanded="false" id="#item1">
+                    
+                        
+                        <li>
+                            
+                            <a 
+                                href="platform/what-is-tizen/profiles/wearable/"
+                                class=""
+                                >
+                                Wearables
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a 
+                                href="platform/what-is-tizen/profiles/tv/"
+                                class=""
+                                >
+                                TV
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a 
+                                href="platform/what-is-tizen/profiles/mobile/"
+                                class=""
+                                >
+                                Mobile
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+                
+            </ul>
+            
+        </li>
+    
+        
+        
+        
+    
+        <li>
+            <a 
+                href="platform/what-is tizen/index/" 
+                data-target="#item2" 
+                data-toggle="collapse" 
+                data-parent="#stacked-menu"
+                aria-expanded=" false "
+                class=" collapsed "
+                >
+                    Versions
+                    <span class="caret arrow"></span>
+            </a>
+            
+
+            
+            <ul class="nav collapse" aria-expanded="false" id="#item2">
+            
+
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/what-is-tizen/overview/"
+                        class=""
+                        aria-expanded=" false "
+                        data-target="#item1" 
+                        data-toggle="collapse" 
+                        >
+                        Profiles
+                        <span class="caret arrow"></span>
+                    </a>
+                    
+                    
+                    <ul class="nav collapse" aria-expanded="false" id="#item1">
+                    
+                        
+                        <li>
+                            
+                            <a 
+                                href="platform/what-is-tizen/wearable/"
+                                class=""
+                                >
+                                Wearables
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a 
+                                href="platform/what-is-tizen/tv/"
+                                class=""
+                                >
+                                TV
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a 
+                                href="platform/what-is-tizen/mobile/"
+                                class=""
+                                >
+                                Mobile
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+                
+            </ul>
+            
+        </li>
+    
+        
+        
+        
+    
+        <li>
+            <a 
+                href="platform/developing/installing/" 
+                data-target="#item3" 
+                data-toggle="collapse" 
+                data-parent="#stacked-menu"
+                aria-expanded=" false "
+                class=" collapsed "
+                >
+                    Platform Developing
+                    <span class="caret arrow"></span>
+            </a>
+            
+
+            
+            <ul class="nav collapse" aria-expanded="false" id="#item3">
+            
+
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/developing/installing/" 
+                        class=""
+                        >
+                        Installing Development Tools
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/developing/setting-up/" 
+                        class=""
+                        >
+                        Setting up Development Environment
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/developing/cloning/" 
+                        class=""
+                        >
+                        Cloning Tizen Source Files
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/developing/building/" 
+                        class=""
+                        >
+                        Building Packages Locally with GBS
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/developing/building-all/" 
+                        class=""
+                        >
+                        Building All Packages Locally with GBS
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/developing/contributing/" 
+                        class=""
+                        >
+                        Contributing Code to Tizen
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/developing/creating/" 
+                        class=""
+                        >
+                        Creating Tizen Images with MIC
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/developing/flashing/" 
+                        class=""
+                        >
+                        Flashing an Image to Device
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/developing/tips/" 
+                        class=""
+                        >
+                        Development Tips
+                    </a>
+                    
+                </li>
+                
+            </ul>
+            
+        </li>
+    
+        
+        
+        
+    
+        <li>
+            <a 
+                href="platform/porting/overview/" 
+                data-target="#item4" 
+                data-toggle="collapse" 
+                data-parent="#stacked-menu"
+                aria-expanded=" false "
+                class=" collapsed "
+                >
+                    Porting
+                    <span class="caret arrow"></span>
+            </a>
+            
+
+            
+            <ul class="nav collapse" aria-expanded="false" id="#item4">
+            
+
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/porting/overview/" 
+                        class=""
+                        >
+                        Overview
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/porting/kernel/" 
+                        class=""
+                        >
+                        Kernel
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/porting/system/" 
+                        class=""
+                        >
+                        System
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/porting/graphics-and-ui/" 
+                        class=""
+                        >
+                        Graphics and UI
+                    </a>
+                    
+                </li>
+                
+            </ul>
+            
+        </li>
+    
+        
+        
+        
+    
+        <li>
+            <a 
+                href="platform/reference/gerrit-usage" 
+                data-target="#item5" 
+                data-toggle="collapse" 
+                data-parent="#stacked-menu"
+                aria-expanded=" true "
+                class=" not-collapsed "
+                >
+                    Reference
+                    <span class="caret arrow"></span>
+            </a>
+            
+
+            
+            <ul class="nav collapse in" aria-expanded="true" id="#item5">
+            
+
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/reference/gerrit-usage/" 
+                        class=""
+                        >
+                        Gerrit
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/reference/gbs/gbs-overview/"
+                        class=""
+                        aria-expanded=" true "
+                        data-target="#item2" 
+                        data-toggle="collapse" 
+                        >
+                        Git Build System (GBS)
+                        <span class="caret arrow"></span>
+                    </a>
+                    
+                    
+                    <ul class="nav collapse in" aria-expanded="true" id="#item2">
+                    
+                        
+                        <li>
+                            
+                            <a 
+                                href="platform/reference/gbs/gbs-overview/"
+                                class=""
+                                >
+                                Overview
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a 
+                                href="platform/reference/gbs/gbs.conf/"
+                                class=""
+                                >
+                                GBS Configuration
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a 
+                                href="platform/reference/gbs/gbs-maintenance-models/"
+                                class=""
+                                >
+                                GBS Maintenance Models
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/reference/mic/mic-overview/"
+                        class=""
+                        aria-expanded=" true "
+                        data-target="#item3" 
+                        data-toggle="collapse" 
+                        >
+                        MIC Image Creator
+                        <span class="caret arrow"></span>
+                    </a>
+                    
+                    
+                    <ul class="nav collapse in" aria-expanded="true" id="#item3">
+                    
+                        
+                        <li>
+                            
+                            <a 
+                                href="platform/reference/mic/mic-overview/"
+                                class=""
+                                >
+                                Overview
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a 
+                                href="platform/reference/mic/mic-customize-image/"
+                                class=""
+                                >
+                                Customizing Images
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a 
+                                href="platform/reference/mic/mic-reference/"
+                                class=""
+                                >
+                                MIC Reference
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+                
+            </ul>
+            
+        </li>
+    
+        
+        
+    </ul>
+</div>
+<script>
+    $("a[href$='/platform/reference/gbs/gbs-build/']").addClass("active currentPage");
+</script>
+						</div>
+					</nav>
+					<div class="col-toc">
+						<div class="sidebar hidden-xs hidden-sm">
+							<div class="toc-nav">
+								<div class="feedback-links">
+									<ul>
+										<li>
+                                            <a href="https://github.com/samsung-test/samsung-test.github.io/edit/5.5/platform/reference/gbs/gbs-build.md" target="_blank">
+                                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                                Edit Page
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://github.com/samsung-test/samsung-test.github.io/issues/new" class="nomunge" target="_blank">
+                                                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                                Report Issue
+                                            </a>
+                                        </li>
+									</ul>
+								</div>
+								   
+									<div id="side-toc-title">On this page:</div>
+									
+<ul id="my_toc" class="inline_toc">
+  <li><a href="#command-workflow" class="nomunge">Command Workflow</a></li>
+  <li><a href="#examples" class="nomunge">Examples</a></li>
+  <li><a href="#incremental-build" class="nomunge">Incremental Build</a></li>
+  <li><a href="#multiple-package-build-dependency-build" class="nomunge">Multiple Package Build (Dependency Build)</a></li>
+  <li><a href="#useful-building-options" class="nomunge">Useful Building Options</a>
+    <ul>
+      <li><a href="#forcing-gbs-to-work-in-the-native-mode" class="nomunge">Forcing GBS to Work in the Native Mode</a></li>
+      <li><a href="#skipping-the-building-of-the-srcrpm-file" class="nomunge">Skipping the Building of the src.rpm File</a></li>
+      <li><a href="#using-distributed-compiler-networks" class="nomunge">Using Distributed Compiler Networks</a></li>
+    </ul>
+  </li>
+  <li><a href="#fetching-the-project-build-conf-and-customizing-the-build-root-for-advanced-users" class="nomunge">Fetching the Project Build Conf and Customizing the Build Root (for Advanced Users)</a></li>
+</ul>
+
+
+								</div>
+								
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+    <div class="container-fluid">
+  <div class="top_footer">
+    <div class="footer-nav">
+      <nav class="footer_sub_nav">
+        <ul class="menu">
+          <li><a href="https://developer.tizen.org/">Developer</a></li>
+          <li><a href="https://dashboard.tizen.org/">Dashboard</a></li>
+          <li><a href="https://craftroom.tizen.org/">Craftroom</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="bottom_footer">
+    <div class="footer-copyright col-xs-12 col-md-8">
+      <p class="copyright">
+        Copyright &copy; 2019 Tizen Inc. All rights reserved.
+      </p>
+    </div>
+    <div class="footer_social_nav">
+      <ul class="nav-social">
+        <li class="fa fa-github"><a href="https://github.com/samsung-test">GitHub</a></li>  
+        <li class="fa fa-twitter"><a href="https://twitter.com/TizenProject">Twitter</a></li>
+        <li class="fa fa-facebook"><a href="http://www.facebook.com/pages/Tizen-Project">Facebook</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+    <div id="templates"></div>
+    <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/common.js?v=22122019"></script>
+<script type="text/javascript" src="/js/handlebars-v4.0.11.js?v=22122019"></script>
+<script type="text/javascript" src="/js/widgets-data.js?v=22122019"></script>
+<script type="text/javascript" src="/js/widgets.js?v=22122019"></script>
+<script type="text/javascript" src="/js/highlight.pack.js"></script>
+<script type="text/javascript" src="/js/tocs.js"></script>
+<script type="text/javascript" src="/js/menu.js"></script>
+<script type="text/javascript" src="/js/stickyfill.min.js"></script>
+<script type="text/javascript" src="/js/metadata.js"></script>
+<script type="text/javascript" src="/js/docs.js"></script>
+
+</body>
+</html>
