@@ -1,6 +1,6 @@
 - sidebar:
       - title: IoT Extension SDK
-        url: iot/index/
+        url: iot/extensionsdk/index
         subfolderitems:
           - page: IOT Git Repository Structure
             url: iot/about/git-repo-structure/
