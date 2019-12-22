@@ -14,6 +14,7 @@ notags: true
 The following table defines some basic terminology used in Tizen.
 
 
+
 | Term                     | Definition                               |
 | ------------------------ | ---------------------------------------- |
 | `.edc` file              | EDC (Edje Data Collection) file is a text script file that contains the code describing the position, size, and other parameters of graphical elements that compose the visual aspect of the Tizen native application. Using the Edje library tools, an EDC file must be compiled into a `.edj` file, which is a UI layout binary. |
