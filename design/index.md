@@ -3,7 +3,6 @@ title: Tizen Design
 desc: TS
 keywords: Tizen, OS, Open Source
 comments: true
-
 ---
 
 # Introduction
