@@ -4,12 +4,12 @@
 	<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="icon"  href="/favicon.ico" />
-<title>Typographic Conventions</title>
-<meta name="description" content=""/>
-<meta name="keywords" content=""/>
-<base id="baseURL" href="/1.1/" />
+<title>Tizen .NET Application</title>
+<meta name="description" content="Tizen .NET Application"/>
+<meta name="keywords" content="Tizen, OS, Open Source"/>
+<base id="baseURL" href="/latest/" />
 <meta id="docsVersion" content="1.1" />
-<meta name="last-modified" content="2019-12-22 16:17:53 +0530" />
+<meta name="last-modified" content="2019-12-22 16:18:03 +0530" />
 <meta http-equiv="cache-control" content="max-age=24" />
 <meta http-equiv="cache-control" content="no-cache" />
 <meta http-equiv="Cache-Control" content="no-store" />
@@ -61,10 +61,10 @@
             <li class="">
                 <a href="application/">Platform</a>
             </li>
-            <!--li class="active">
+            <!--li class="">
                 <a href="iot/">IoT</a-->
             </li>
-            <li class=" dropdown">
+            <li class="active dropdown">
                 <a href="tizenstudio/setup/overview/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visual Studio<span class="caret"></span></a>
                 <ul class="dropdown-menu nav-main">
                     <li><a href="#">Visual Studio Tools For Tizen</a></li>
@@ -75,7 +75,7 @@
             <li class="">
                 <a href="tizenstudio/setup/overview/">Tizen Studio</a>
             </li>
-             <li class="active dropdown">
+             <li class=" dropdown">
                 <a href="iot/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">IoT<span class="caret"></span></a>
                 <ul class="dropdown-menu nav-main">
                     <li><a href="iot/extensionsdk/">IoT Extension SDK</a></li>
@@ -123,7 +123,7 @@
           
       
       <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-         <a property="item" typeof="WebPage" href="/1.1/">
+         <a property="item" typeof="WebPage" href="/latest/">
             <span property="name">Documentation</span>
             <meta property="position" content="1" />
          </a>
@@ -132,26 +132,8 @@
           
       
       <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-         <a property="item" typeof="WebPage" href="/1.1/iot/">
-            <span property="name">IoT extension SDK</span>
-            <meta property="position" content="2" />
-         </a>
-      </li>
-       
-          
-      
-      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-         <a property="item" typeof="WebPage" href="/1.1/iot/extensionsdk/">
-            <span property="name">IoT extension SDK</span>
-            <meta property="position" content="3" />
-         </a>
-      </li>
-       
-          
-      
-      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-         <span property="name">Typographic Conventions</span>
-         <meta property="position" content="4" />
+         <span property="name">Tizen .NET Application</span>
+         <meta property="position" content="2" />
       </li>
       
    </ol>
@@ -160,63 +142,103 @@
 
 							<div class="widgetLatestVersionNotification"></div>
 							<h1 class="page-title">
-								Typographic Conventions
+								Tizen .NET Application
 							</h1>
 							<div class="page-read-time">
 								<span class="reading-time" title="Estimated read time">
     
     
-    1 min read
+    3 mins read
     
 </span>
 							</div>
 							<div class="page-content">
-								<h1 id="typographic-conventions">Typographic Conventions</h1>
+								<h1 id="tizen-net-application">Tizen .NET Application</h1>
 
-<p>This documentation set uses the following typographic conventions:</p>
+<p>Tizen .NET is an exciting new way to develop applications for the Tizen operating system, running on 50 million Samsung devices, including TVs, wearables, mobile phones, and many other IoT devices around the world.</p>
+
+<p>The existing Tizen frameworks are either C-based with no advantages of a managed runtime, or HTML5-based with fewer features and lower performance than the C-based solution. With Tizen .NET, you can use the C# programming language and the Common Language Infrastructure standards, and have benefits from a managed runtime for faster application development and code execution that is efficient and secure.</p>
+
+<p>To start developing Tizen applications using .NET, see <a href="get-started/mobile/first-app.md">Creating Your First Tizen .NET Application with Visual Studio</a>.</p>
+
+<h2 id="managed-runtime-advantages">Managed Runtime Advantages</h2>
+
+<p>Managed runtime offers the following advantages to your application development:</p>
 
 <ul>
   <li>
-    <p>[Optional_Argument]</p>
+    <p><strong>Faster development</strong></p>
 
-    <p>The square brackets, [], indicate an optional argument.</p>
+    <p>Application development is accelerated as the managed runtime handles many functions that otherwise have to be coded into the application.</p>
   </li>
   <li>
-    <p>&lt;Variable&gt;</p>
+    <p><strong>Safer code</strong></p>
 
-    <p>The angle brackets, &lt;&gt;, indicate a variable. Replace &lt;Variable&gt; with an actual value.</p>
+    <p>Managed runtime can handle bound checking, type safety, garbage collection, memory protection services, and objects that are invoked directly. Tizen Web API already provides some of the mentioned benefits, but does not provide type safety as JavaScript is not a strongly typed language.</p>
   </li>
   <li>
-    <table>
-      <tbody>
-        <tr>
-          <td>x</td>
-          <td>y</td>
-          <td>z</td>
-        </tr>
-      </tbody>
-    </table>
+    <p><strong>Lower deployment costs</strong></p>
 
-    <p>The vertical bar, |, indicates that only 1 of the options can be selected.</p>
+    <p>Component-based architecture makes it easier and faster to deploy applications in an enterprise environment characterized by multiple platforms, devices, and legacy systems.</p>
   </li>
   <li>
-    <p>\</p>
+    <p><strong>Better quality software</strong></p>
 
-    <p>The backslash, \, indicates that the new line followed is a continuance of a long statement. For example, the following 2 command line statements are equivalent:</p>
+    <p>Managed runtime helps you to focus on the business logic and the code specific to the application, while reducing the number of errors in the code.</p>
+  </li>
+  <li>
+    <p><strong>Cross-platform support</strong></p>
 
-    <ul>
-      <li>With backslash:
-        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ tar -zxvf \
-repo.tar.gz
-</code></pre></div>        </div>
-      </li>
-      <li>Without backslash:
-        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ tar -zxvf repo.tar.gz
-</code></pre></div>        </div>
-      </li>
-    </ul>
+    <p>The managed code is portable. Tizen .NET applications can have large portions of their logic applied to other systems supported by the .NET Core and Xamarin.Forms.</p>
   </li>
 </ul>
+
+<h2 id="tizen-net-features-and-components">Tizen .NET Features and Components</h2>
+
+<p>Tizen .NET enables you to build .NET applications with Xamarin.Forms and Tizen .NET framework. Xamarin.Forms allows you to easily create a user interface, and TizenFX API provides numerous interfaces to much of the hardware that is found in modern TV, mobile, wearable, and IoT devices.</p>
+
+<p><strong>Figure: Tizen .NET architecture</strong></p>
+
+<p><img src="media/cs_overview.png" alt="Tizen .NET architecture" /></p>
+
+<p>Tizen .NET consists of the following main components:</p>
+
+<ul>
+  <li>
+    <p><strong>.NET Core</strong></p>
+
+    <p><a href="https://docs.microsoft.com/en-us/dotnet/core/about">.NET Core</a> is an <a href="https://github.com/dotnet/coreclr/blob/master/LICENSE.TXT">open-source</a>, general-purpose development platform maintained by Microsoft and the .NET community on <a href="https://github.com/dotnet/core">GitHub</a>. It’s cross-platform (supporting Windows, macOS, and Linux) and can be used to build device, cloud, and IoT applications.</p>
+
+    <p>See <a href="https://docs.microsoft.com/en-us/dotnet/core/about">About .NET Core</a> to learn more about .NET Core, including its characteristics, supported languages and frameworks, and key APIs.</p>
+  </li>
+  <li>
+    <p><strong>Xamarin.Forms</strong></p>
+
+    <p><a href="https://developer.xamarin.com/guides/xamarin-forms/getting-started/">Xamarin.Forms</a> provides cross-platform APIs, which allow you to create user interfaces that can be shared across platforms. The Visual Studio Tools for Tizen enables Tizen support for Xamarin.Forms.</p>
+  </li>
+  <li>
+    <p><strong>Tizen.Wearable.CircularUI</strong></p>
+
+    <p><a href="https://samsung.github.io/Tizen.CircularUI/index.html">Tizen.Wearable.CircularUI</a> provides Tizen wearable-specific user interfaces. It is a set of extension APIs of Xamarin.Forms. Tizen.Wearable.CircularUI APIs are supported only on Tizen wearable devices with Tizen .NET support, unlike the Xamarin.Forms which support cross platforms.</p>
+  </li>
+  <li>
+    <p><strong>TizenFX API</strong></p>
+
+    <p><a href="api/overview.md">TizenFX API</a> allows applications to call into platform-specific functionality from the shared code. This functionality enables Xamarin.Forms applications to do things a native application can do, without causing the portable part of the application to become littered with operating system-specific details.</p>
+
+    <p>TizenFX supports C# APIs, which expose Tizen-specific features such as Tizen application framework, account management, location services, media services, and connectivity.</p>
+  </li>
+</ul>
+
+<h3 id="visual-studio-tools-for-tizen">Visual Studio Tools for Tizen</h3>
+
+<p>Visual Studio Tools for Tizen provides Tizen-specific tools to improve your productivity.</p>
+
+<p>You can create a Tizen .NET application project with the Project Wizard in Visual Studio Tools for Tizen. When you create a new project with a specific template, the Project Wizard uses it to automatically create basic functionalities and default project files and folders for the application.</p>
+
+<p><a href="https://marketplace.visualstudio.com/items?itemName=tizen.VSToolsforTizen" target="_blank"><img src="media/ic_docs_download.png" alt="Download" /></a> The Visual Studio Tools for Tizen extension is registered in the Visual Studio Marketplace. You can <a href="../vstools/install.md">install the extension</a> from the Visual Studio Marketplace in the Visual Studio IDE. To download the latest Visual Studio Tools for Tizen click the button. To use Visual Studio 2017, download <a href="https://marketplace.visualstudio.com/items?itemName=tizen.VisualStudioToolsforTizen">Visual Studio Tools for Tizen for Visual Studio 2017</a>.</p>
+
+<p>For more information, see <a href="../vstools/index.md">the guides of Visual Studio Tools for Tizen</a></p>
 
 								
             						
@@ -225,8 +247,8 @@ repo.tar.gz
   <div id="disqus_thread"></div>
   <script>
     var disqus_config = function () {
-      this.page.url = 'https://samsung-test.github.io/1.1//iot/extensionsdk/about/conventions/';
-      this.page.identifier = 'https://samsung-test.github.io/1.1//iot/extensionsdk/about/conventions/';
+      this.page.url = 'https://samsung-test.github.io/latest//visualstudio/';
+      this.page.identifier = 'https://samsung-test.github.io/latest//visualstudio/';
     };
     (function() {
       var d = document, s = d.createElement('script');
@@ -256,14 +278,14 @@ repo.tar.gz
     
         <li>
             <a 
-                href="iot/" 
+                href="/visualstudio/" 
                 data-target="#item1" 
                 data-toggle="collapse" 
                 data-parent="#stacked-menu"
                 aria-expanded=" false "
                 class=" collapsed "
                 >
-                    IoT
+                    .NET Application
                     <span class="caret arrow"></span>
             </a>
             
@@ -277,10 +299,72 @@ repo.tar.gz
                     
                     
                     <a 
-                        href="iot/extensionsdk/index/" 
+                        href="visualstudio/get-started/overview/"
+                        class=""
+                        aria-expanded=" false "
+                        data-target="#item1" 
+                        data-toggle="collapse" 
+                        >
+                        Get Started
+                        <span class="caret arrow"></span>
+                    </a>
+                    
+                    
+                    <ul class="nav collapse" aria-expanded="false" id="#item1">
+                    
+                        
+                        <li>
+                            
+                            <a 
+                                href="visualstudio/tv/first-app"
+                                class=""
+                                >
+                                TV
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a 
+                                href="visualstudio/wearable/first-app/"
+                                class=""
+                                >
+                                Wearable
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a 
+                                href="visualstudio/mobile/first-app/"
+                                class=""
+                                >
+                                Mobile
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a 
+                                href="visualstudio/nui/quickstart/"
+                                class=""
+                                >
+                                NUI
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="visualstudio/setup/update-sdk/" 
                         class=""
                         >
-                        IoT Extension SDK
+                        Guides
                     </a>
                     
                 </li>
@@ -289,10 +373,10 @@ repo.tar.gz
                     
                     
                     <a 
-                        href="iot/extensionsdk/about/git-repo-structure/" 
+                        href="visualstudio/setup/uninstall-sdk/" 
                         class=""
                         >
-                        IOT Git Repository Structure
+                        Uninstall
                     </a>
                     
                 </li>
@@ -301,10 +385,10 @@ repo.tar.gz
                     
                     
                     <a 
-                        href="iot/extensionsdk/about/conventions/" 
-                        class="active currentPage"
+                        href="visualstudio/setup/troubleshooting/" 
+                        class=""
                         >
-                        Typographic Conventions
+                        Troubleshoot Errors
                     </a>
                     
                 </li>
@@ -319,14 +403,14 @@ repo.tar.gz
     
         <li>
             <a 
-                href="iot/developing/installing" 
+                href="visualstudio/setup/quick_start_guide" 
                 data-target="#item2" 
                 data-toggle="collapse" 
                 data-parent="#stacked-menu"
                 aria-expanded=" false "
                 class=" collapsed "
                 >
-                    IOT Developing
+                    Get Started
                     <span class="caret arrow"></span>
             </a>
             
@@ -340,10 +424,10 @@ repo.tar.gz
                     
                     
                     <a 
-                        href="iot/extensionsdk/developing/installing/" 
+                        href="visualstudio/setup/quick_start_guide/" 
                         class=""
                         >
-                        Installing Development Tools
+                        Web Application Development
                     </a>
                     
                 </li>
@@ -352,94 +436,10 @@ repo.tar.gz
                     
                     
                     <a 
-                        href="iot/extensionsdk/developing/setting-up/" 
+                        href="visualstudio/setup/quick_start_guide_tizen_app_ts/" 
                         class=""
                         >
-                        Setting up Development Environment
-                    </a>
-                    
-                </li>
-                
-                <li>
-                    
-                    
-                    <a 
-                        href="iot/extensionsdk/developing/cloning/" 
-                        class=""
-                        >
-                        Cloning Tizen Source Files
-                    </a>
-                    
-                </li>
-                
-                <li>
-                    
-                    
-                    <a 
-                        href="iot/extensionsdk/developing/building/" 
-                        class=""
-                        >
-                        Building Packages Locally with GBS
-                    </a>
-                    
-                </li>
-                
-                <li>
-                    
-                    
-                    <a 
-                        href="iot/extensionsdk/developing/building-all/" 
-                        class=""
-                        >
-                        Building All Packages Locally with GBS
-                    </a>
-                    
-                </li>
-                
-                <li>
-                    
-                    
-                    <a 
-                        href="iot/extensionsdk/developing/contributing/" 
-                        class=""
-                        >
-                        Contributing Code to Tizen
-                    </a>
-                    
-                </li>
-                
-                <li>
-                    
-                    
-                    <a 
-                        href="iot/extensionsdk/developing/creating/" 
-                        class=""
-                        >
-                        Creating Tizen Images with MIC
-                    </a>
-                    
-                </li>
-                
-                <li>
-                    
-                    
-                    <a 
-                        href="iot/extensionsdk/developing/flashing/" 
-                        class=""
-                        >
-                        Flashing an Image to Device
-                    </a>
-                    
-                </li>
-                
-                <li>
-                    
-                    
-                    <a 
-                        href="iot/extensionsdk/developing/tips/" 
-                        class=""
-                        >
-                        Development Tips
+                        Wearable Application Development
                     </a>
                     
                 </li>
@@ -454,20 +454,20 @@ repo.tar.gz
     
         <li>
             <a 
-                href="iot/extensionsdk/porting/overview/" 
+                href="visualstudio/setup/additional-requirements" 
                 data-target="#item3" 
                 data-toggle="collapse" 
                 data-parent="#stacked-menu"
-                aria-expanded=" true "
-                class=" not-collapsed "
+                aria-expanded=" false "
+                class=" collapsed "
                 >
-                    Porting
+                    Configure Tizen Studio
                     <span class="caret arrow"></span>
             </a>
             
 
             
-            <ul class="nav collapse in" aria-expanded="true" id="#item3">
+            <ul class="nav collapse" aria-expanded="false" id="#item3">
             
 
                 
@@ -475,10 +475,10 @@ repo.tar.gz
                     
                     
                     <a 
-                        href="iot/extensionsdk/porting/overview/" 
+                        href="visualstudio/setup/hardware-accelerated-execution-manager/" 
                         class=""
                         >
-                        Overview
+                        Hardware Acceleration for Tizen
                     </a>
                     
                 </li>
@@ -487,34 +487,10 @@ repo.tar.gz
                     
                     
                     <a 
-                        href="iot/extensionsdk/porting/kernel/" 
+                        href="visualstudio/setup/hardware-accelerated-execution-manager/" 
                         class=""
                         >
-                        Kernel
-                    </a>
-                    
-                </li>
-                
-                <li>
-                    
-                    
-                    <a 
-                        href="iot/extensionsdk/porting/system/" 
-                        class=""
-                        >
-                        System
-                    </a>
-                    
-                </li>
-                
-                <li>
-                    
-                    
-                    <a 
-                        href="iot/extensionsdk/porting/graphics-and-ui/" 
-                        class=""
-                        >
-                        Graphics and UI
+                        Hardware Acceleration for Tizen
                     </a>
                     
                 </li>
@@ -529,140 +505,16 @@ repo.tar.gz
     
         <li>
             <a 
-                href="iot/extensionsdk/reference/gerrit-usage/" 
+                href="visualstudio/setup/faq" 
                 data-target="#item4" 
                 data-toggle="collapse" 
                 data-parent="#stacked-menu"
-                aria-expanded=" true "
-                class=" not-collapsed "
+                aria-expanded=" false "
+                class=" collapsed "
                 >
-                    Reference
+                    Frequently Asked Questions
                     <span class="caret arrow"></span>
             </a>
-            
-
-            
-            <ul class="nav collapse in" aria-expanded="true" id="#item4">
-            
-
-                
-                <li>
-                    
-                    
-                    <a 
-                        href="iot/extensionsdk/reference/gerrit-usage/" 
-                        class=""
-                        >
-                        Gerrit
-                    </a>
-                    
-                </li>
-                
-                <li>
-                    
-                    
-                    <a 
-                        href="iot/extensionsdk/reference/gbs/gbs-overview/"
-                        class=""
-                        aria-expanded=" true "
-                        data-target="#item2" 
-                        data-toggle="collapse" 
-                        >
-                        Git Build System (GBS)
-                        <span class="caret arrow"></span>
-                    </a>
-                    
-                    
-                    <ul class="nav collapse in" aria-expanded="true" id="#item2">
-                    
-                        
-                        <li>
-                            
-                            <a 
-                                href="iot/extensionsdk/reference/gbs/gbs-overview/"
-                                class=""
-                                >
-                                Overview
-                            </a>
-                        </li>
-                        
-                        <li>
-                            
-                            <a 
-                                href="iot/extensionsdk/reference/gbs/gbs.conf/"
-                                class=""
-                                >
-                                GBS Configuration
-                            </a>
-                        </li>
-                        
-                        <li>
-                            
-                            <a 
-                                href="iot/extensionsdk/reference/gbs/gbs-maintenance-models/"
-                                class=""
-                                >
-                                GBS Maintenance Models
-                            </a>
-                        </li>
-                        
-                    </ul>
-                    
-                </li>
-                
-                <li>
-                    
-                    
-                    <a 
-                        href="iot/extensionsdk/reference/mic/mic-overview/"
-                        class=""
-                        aria-expanded=" true "
-                        data-target="#item3" 
-                        data-toggle="collapse" 
-                        >
-                        MIC Image Creator
-                        <span class="caret arrow"></span>
-                    </a>
-                    
-                    
-                    <ul class="nav collapse in" aria-expanded="true" id="#item3">
-                    
-                        
-                        <li>
-                            
-                            <a 
-                                href="iot/extensionsdk/reference/mic/mic-overview/"
-                                class=""
-                                >
-                                Overview
-                            </a>
-                        </li>
-                        
-                        <li>
-                            
-                            <a 
-                                href="iot/extensionsdk/reference/mic/mic-customize-image/"
-                                class=""
-                                >
-                                Customizing Images
-                            </a>
-                        </li>
-                        
-                        <li>
-                            
-                            <a 
-                                href="iot/extensionsdk/reference/mic/mic-reference/"
-                                class=""
-                                >
-                                MIC Reference
-                            </a>
-                        </li>
-                        
-                    </ul>
-                    
-                </li>
-                
-            </ul>
             
         </li>
     
@@ -672,14 +524,14 @@ repo.tar.gz
     
         <li>
             <a 
-                href="iot/iot-partners/nubison/" 
+                href="visualstudio/extension-sdk/overview" 
                 data-target="#item5" 
                 data-toggle="collapse" 
                 data-parent="#stacked-menu"
                 aria-expanded=" false "
                 class=" collapsed "
                 >
-                    IoT Partners
+                    Extension SDK
                     <span class="caret arrow"></span>
             </a>
             
@@ -693,11 +545,41 @@ repo.tar.gz
                     
                     
                     <a 
-                        href="iot-partners/nubison/" 
+                        href="visualstudio/extension-sdk/in-app-purchase/"
                         class=""
+                        aria-expanded=" false "
+                        data-target="#item1" 
+                        data-toggle="collapse" 
                         >
-                        IoT Things park
+                        In app purchases
+                        <span class="caret arrow"></span>
                     </a>
+                    
+                    
+                    <ul class="nav collapse" aria-expanded="false" id="#item1">
+                    
+                        
+                        <li>
+                            
+                            <a 
+                                href="visualstudio/extension-sdk/inmobi/"
+                                class=""
+                                >
+                                In Mobi
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a 
+                                href="visualstudio/extension-sdk/inmobi/"
+                                class=""
+                                >
+                                VMax
+                            </a>
+                        </li>
+                        
+                    </ul>
                     
                 </li>
                 
@@ -710,7 +592,7 @@ repo.tar.gz
     </ul>
 </div>
 <script>
-    $("a[href$='/iot/extensionsdk/about/conventions/']").addClass("active currentPage");
+    $("a[href$='/visualstudio/']").addClass("active currentPage");
 </script>
 						</div>
 					</nav>
@@ -720,7 +602,7 @@ repo.tar.gz
 								<div class="feedback-links">
 									<ul>
 										<li>
-                                            <a href="https://github.com/samsung-test/samsung-test.github.io/edit/1.1/iot/extensionsdk/about/conventions.md" target="_blank">
+                                            <a href="https://github.com/samsung-test/samsung-test.github.io/edit/1.1/visualstudio/index.md" target="_blank">
                                                 <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                                                 Edit Page
                                             </a>
@@ -736,6 +618,14 @@ repo.tar.gz
 								   
 									<div id="side-toc-title">On this page:</div>
 									
+<ul id="my_toc" class="inline_toc">
+  <li><a href="#managed-runtime-advantages" class="nomunge">Managed Runtime Advantages</a></li>
+  <li><a href="#tizen-net-features-and-components" class="nomunge">Tizen .NET Features and Components</a>
+    <ul>
+      <li><a href="#visual-studio-tools-for-tizen" class="nomunge">Visual Studio Tools for Tizen</a></li>
+    </ul>
+  </li>
+</ul>
 
 
 								</div>
