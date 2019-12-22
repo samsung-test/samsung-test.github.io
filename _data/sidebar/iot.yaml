@@ -63,8 +63,8 @@
                  url: iot/extensionsdk/reference/mic/mic-customize-image/
                - page: MIC Reference
                  url: iot/extensionsdk/reference/mic/mic-reference/
-        - title: IoT Partners
-          url: iot/iot-partners/nubison/
-          subfolderitems:
-             - page: IoT Things park
-               url: iot-partners/nubison/
+      - title: IoT Partners
+        url: iot/iot-partners/nubison/
+        subfolderitems:
+          - page: IoT Things park
+            url: iot-partners/nubison/
