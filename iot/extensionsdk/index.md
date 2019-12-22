@@ -1,3 +1,9 @@
+---
+title: IoT extension SDK
+desc: IoT 
+keywords: Tizen, OS, Open Source, Install 
+comments: true
+---
 # IoT extension SDK
 
 The Internet of Things (IoT) is connected networks of various types  of things, such as sensors, actuators, electronic devices, home  appliances, and so on. These networks of end-devices, hubs, and servers  enable exchange of data and execution of operations among things for  specific purposes. Communications and executions through the connections  are designed to happen without human interventions. In the broad sense,  the IoT means a combination of software and platforms for automatic and  intelligent services, as well as the networks itself.

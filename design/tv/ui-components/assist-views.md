@@ -1,3 +1,9 @@
+---
+title: Assist Views
+desc: Assist Views
+keywords: Tizen, OS, Open Source
+---
+
 # Assist Views
 
 Assist views provide additional information to the user.
