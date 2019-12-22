@@ -1,15 +1,13 @@
 - sidebar:
-      - title: IoT
-        url: iot/
+      - title: IoT Extension SDK
+        url: iot/extensionsdk/index/
         subfolderitems:
-          - page: IoT Extension SDK
-            url: iot/extensionsdk/index/
           - page: IOT Git Repository Structure
             url: iot/extensionsdk/about/git-repo-structure/
           - page: Typographic Conventions
             url: iot/extensionsdk/about/conventions/
-      - title: IOT Developing
-        url: iot/developing/installing
+      - title: IoT Developing
+        url: iot/extensionsdk/developing/installing
         subfolderitems:
           - page: Installing Development Tools
             url: iot/extensionsdk/developing/installing/ 
