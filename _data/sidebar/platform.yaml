@@ -3,26 +3,24 @@
         url: platform/about/index/
         subfolderitems:
           - page: Profiles
-            url: platform/what-is-tizen/overview/
+            url: platform/about/overview/
             subfolderitems:
               - page: Wearables
-                url: platform/what-is-tizen/profiles/wearable/ 
+                url: platform/about/wearable/ 
               - page: TV
-                url: platform/what-is-tizen/profiles/tv/
+                url: platform/about/tv/
               - page: Mobile
-                url: platform/what-is-tizen/profiles/mobile/
-      - title: Versions
-        url: platform/what-is tizen/index/
-        subfolderitems:
-          - page: Profiles
-            url: platform/what-is-tizen/overview/
-            subfolderitems:
-              - page: Wearables
-                url: platform/what-is-tizen/wearable/ 
-              - page: TV
-                url: platform/what-is-tizen/tv/
-              - page: Mobile
-                url: platform/what-is-tizen/mobile/    
+                url: platform/about/mobile/
+          - page: Versions
+            url: platform/about/overview/
+      - title: Tizen 3.0
+        url: platform/versions/tizen-3-0/
+      - title: Tizen 4.0 M1
+        url: platform/versions/tizen-4-0-m1/
+      - title: Tizen 5.0 M2
+        url: platform/versions/tizen-3-0/
+      - title: Tizen 5.5 M2
+        url: platform/versions/tizen-4-0-m1/  
       - title: Platform Developing
         url: platform/developing/installing/
         subfolderitems:
