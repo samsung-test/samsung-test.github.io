@@ -1,6 +1,10 @@
 ---
 title: Tizen IoT with Nubison Cloud
+desc: Tizen IoT with Nubison Cloud
+keywords: Tizen, OS, Open Source, Install 
+comments: true
 ---
+
 # Tizen IoT with Nubison Cloud
 
 The Nubison IoT cloud is a cloud-based IoT platform that provides smart solutions and intelligent services by connecting various things easily, as well as collecting and analyzing IoT data in real time.
