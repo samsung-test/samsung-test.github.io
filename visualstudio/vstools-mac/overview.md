@@ -1,5 +1,8 @@
 ---
-title: Visual Studio for Mac Extension for Tizen
+title: Setup
+desc: Install Tizen
+keywords: Tizen, OS, Open Source, Install 
+comments: true
 ---
 # Visual Studio for Mac Extension for Tizen
 

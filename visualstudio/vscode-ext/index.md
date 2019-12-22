@@ -1,5 +1,8 @@
 ---
 title: Prerequisites of Visual Studio Code Extension for Tizen
+desc: Prerequisites of Visual Studio Code Extension for Tizen
+keywords: Tizen, OS, Open Source, Install 
+comments: true
 ---
 # Prerequisites of Visual Studio Code Extension for Tizen
 
