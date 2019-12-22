@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon"  href="/favicon.ico" />
+<title>Assist Views</title>
+<meta name="description" content="Assist Views"/>
+<meta name="keywords" content="Tizen, OS, Open Source"/>
+<base id="baseURL" href="/1.1/" />
+<meta id="docsVersion" content="1.1" />
+<meta name="last-modified" content="2019-12-22 15:56:13 +0530" />
+<meta http-equiv="cache-control" content="max-age=24" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-store" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="Expires" content="600" />
+
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/pygments/perldoc.css">
+<link rel="stylesheet" href="/css/style.css?v=22122019">
+<link rel="stylesheet" href="/css/github.css?v=22122019">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154449679-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-154449679-1');
+</script>
+
+</head>
+<body class=" latestVersion">
+	 
+	<header>
+    <div class="header">
+        <nav class="nav-secondary-tabs affix" >
+            <div class="container-fluid">
+                <div class="navbar-collapse" aria-expanded="false" style="height: 1px;">
+                    <div class="sidebar-toggle">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</div>
+<div class="nav-container">
+    <a class="logo" href="/" title="Tizen Documentation">
+        Tizen
+    </a>
+    <div id="tabs">
+        
+        
+        <ul class="tabs" id="jsTOCHorizontal">
+            <li class="active">
+                <a href="design/">Design</a>
+            </li>
+            <li class="">
+                <a href="application/">Platform</a>
+            </li>
+            <!--li class="">
+                <a href="iot/">IoT</a-->
+            </li>
+            <li class=" dropdown">
+                <a href="tizenstudio/setup/overview/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visual Studio<span class="caret"></span></a>
+                <ul class="dropdown-menu nav-main">
+                    <li><a href="#">Visual Studio Tools For Tizen</a></li>
+                    <li><a href="#">Visual Studio Code Extension For Tizen</a></li>
+                    <li><a href="#">Visual Studio For Mac Extension for Tizen</a></li>
+                 </ul>
+            </li>
+            <li class="">
+                <a href="tizenstudio/setup/overview/">Tizen Studio</a>
+            </li>
+             <li class=" dropdown">
+                <a href="iot/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">IoT<span class="caret"></span></a>
+                <ul class="dropdown-menu nav-main">
+                    <li><a href="iot/extensionsdk/">IoT Extension SDK</a></li>
+                    <li><a href="iot/iot-partners/nubison/">IoT partners</a></li>
+                 </ul>
+            </li>
+            <li class="">
+                <a href="tizenstudio/setup/overview/">Blogs</a>
+            </li>
+            <li class="">
+                <a href="tizenstudio/setup/overview/">Community</a>
+            </li>
+        </ul>
+    </div>
+    <div class="ctrl-right hidden-xs hidden-sm">
+        <a href="javascript:void(0)" id="menu-toggle"><i class="fa fa-indent" aria-hidden="true"></i></a>
+        <div class="widgetVersionSwitcher"></div>
+    </div>
+    <div class="search-form">
+        <form action="search.html">
+            <input class="search-field form-control ds-input st-search-input" value="" name="q" placeholder="Search the docs" type="search" autocomplete="off" spellcheck="false" dir="auto">
+            <button type="submit" class="search-button">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+    </div>
+    
+</div>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+    <div class="wrapper right-open">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-body">
+					<main class="col-content content">
+						<section class="section">
+							<nav class="breadcrumbs bootstrap hidden-sm-down">
+   <ol class="breadcrumb list-unstyled" vocab="http://schema.org/" typeof="BreadcrumbList">
+
+       
+          
+      
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <a property="item" typeof="WebPage" href="/1.1/">
+            <span property="name">Documentation</span>
+            <meta property="position" content="1" />
+         </a>
+      </li>
+       
+          
+      
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <a property="item" typeof="WebPage" href="/1.1/design/">
+            <span property="name">Tizen Design</span>
+            <meta property="position" content="2" />
+         </a>
+      </li>
+       
+          
+      
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <span property="name">Assist Views</span>
+         <meta property="position" content="3" />
+      </li>
+      
+   </ol>
+</nav>
+
+
+							<div class="widgetLatestVersionNotification"></div>
+							<h1 class="page-title">
+								Assist Views
+							</h1>
+							<div class="page-read-time">
+								<span class="reading-time" title="Estimated read time">
+    
+    
+    1 min read
+    
+</span>
+							</div>
+							<div class="page-content">
+								<h1 id="assist-views">Assist Views</h1>
+
+<p>Assist views provide additional information to the user.</p>
+
+<p>The following UI components are assist views:</p>
+
+<ul>
+  <li><a href="#popup">Popup</a></li>
+  <li><a href="#toast">Toast</a></li>
+  <li><a href="#context-popup">Context popup</a></li>
+</ul>
+
+<h2 id="popup">Popup</h2>
+
+<p>A popup allows the user to set and confirm a value, or asks them to make a decision immediately.</p>
+
+<h3 id="action-popup">Action Popup</h3>
+
+<p>Action popups consist of content, action buttons, and an optional title. An action popup appears at the center of the screen.</p>
+
+<p>The following guidelines apply to action popups:</p>
+
+<ul>
+  <li>When the action popup appears, the background screen is dimmed.</li>
+  <li>The title is limited to 1 line of text.</li>
+  <li>Content can include text, an icon, and additional items.</li>
+  <li>The action popup has 2 action buttons, by default.</li>
+</ul>
+
+<p><img src="media/uc_04_1_ui_popup_1_action-850x478.png" alt="popup 1 action" /><br />
+<em>Action popup</em></p>
+
+<h3 id="function-popup">Function Popup</h3>
+
+<p>Function popups are used to change or set a value and to confirm the change at the same time. A function popup can appear at the left side or the bottom of screen. It consists of a slider and an optional title.</p>
+
+<p>The following guideline applies to function popups:</p>
+
+<ul>
+  <li>When the function popup appears, the background screen is not dimmed.</li>
+</ul>
+
+<p><img src="media/uc_04_1_ui_popup_2_function-850x478.png" alt="popup 2 function" /></p>
+
+<p><em>Function popup at the bottom of the screen</em></p>
+
+<h2 id="toast">Toast</h2>
+
+<p>Toasts are used to provide simple notifications. They cannot be controlled by the user. A toast contains only text, and it disappears after a few seconds.</p>
+
+<p><img src="media/uc_04_2_ui_toast.png" alt="toast" /><br /></p>
+
+<p><em>Toast notification</em></p>
+
+<h2 id="context-popup">Context Popup</h2>
+
+<p>Context popups provide access to options related to a currently-selected item. A context popup appears as a list near the selected item.</p>
+
+<p>A context popup item can be in either of the following states:</p>
+
+<ul>
+  <li>Normal</li>
+  <li>Focused</li>
+  <li>Selected</li>
+  <li>Disabled</li>
+</ul>
+
+<p><img src="media/uc_04_3_ui_context_popup_re-850x478.png" alt="context popup" /><br />
+<em>Context popup</em></p>
+
+
+								
+            						
+
+
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = 'https://samsung-test.github.io/1.1//design/tv/ui-components/assist-views/';
+      this.page.identifier = 'https://samsung-test.github.io/1.1//design/tv/ui-components/assist-views/';
+    };
+    (function() {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://samsung-test.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+         						
+							</div>
+						</section>
+					</main>
+					<nav class="col-nav">
+						<div id="sidebar-nav" class="sidebar hidden-sm hidden-xs">
+						    
+
+
+<div id="navbar" class="nav-sidebar">
+    <ul class="nav" id="jsTOCLeftNav">
+        
+        
+        
+        
+    
+        <li>
+            <a 
+                href="design/introduction/index" 
+                data-target="#item1" 
+                data-toggle="collapse" 
+                data-parent="#stacked-menu"
+                aria-expanded=" false "
+                class=" collapsed "
+                >
+                    Introduction
+                    <span class="caret arrow"></span>
+            </a>
+            
+
+            
+            <ul class="nav collapse" aria-expanded="false" id="#item1">
+            
+
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="design/introduction/air/" 
+                        class=""
+                        >
+                        Tizen Design Inspiration
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="design/introduction/styles/" 
+                        class=""
+                        >
+                        Styles
+                    </a>
+                    
+                </li>
+                
+            </ul>
+            
+        </li>
+    
+        
+        
+        
+    
+        <li>
+            <a 
+                href="design/tv/design-principles" 
+                data-target="#item2" 
+                data-toggle="collapse" 
+                data-parent="#stacked-menu"
+                aria-expanded=" true "
+                class=" not-collapsed "
+                >
+                    Design for TV
+                    <span class="caret arrow"></span>
+            </a>
+            
+
+            
+            <ul class="nav collapse in" aria-expanded="true" id="#item2">
+            
+
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="design/tv/styles/" 
+                        class=""
+                        >
+                        Styles
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="design/tv/overview/"
+                        class=""
+                        aria-expanded=" true "
+                        data-target="#item2" 
+                        data-toggle="collapse" 
+                        >
+                        Design Pattrens
+                        <span class="caret arrow"></span>
+                    </a>
+                    
+                    
+                    <ul class="nav collapse in" aria-expanded="true" id="#item2">
+                    
+                        
+                        <li>
+                            
+                            <a 
+                                href="design/tv/patterns/app-structure/"
+                                class=""
+                                >
+                                TV App Structure
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+                
+            </ul>
+            
+        </li>
+    
+        
+        
+    </ul>
+</div>
+<script>
+    $("a[href$='/design/tv/ui-components/assist-views/']").addClass("active currentPage");
+</script>
+						</div>
+					</nav>
+					<div class="col-toc">
+						<div class="sidebar hidden-xs hidden-sm">
+							<div class="toc-nav">
+								<div class="feedback-links">
+									<ul>
+										<li>
+                                            <a href="https://github.com/samsung-test/samsung-test.github.io/edit/1.1/design/tv/ui-components/assist-views.md" target="_blank">
+                                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                                Edit Page
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://github.com/samsung-test/samsung-test.github.io/issues/new" class="nomunge" target="_blank">
+                                                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                                Report Issue
+                                            </a>
+                                        </li>
+									</ul>
+								</div>
+								   
+									<div id="side-toc-title">On this page:</div>
+									
+<ul id="my_toc" class="inline_toc">
+  <li><a href="#popup" class="nomunge">Popup</a>
+    <ul>
+      <li><a href="#action-popup" class="nomunge">Action Popup</a></li>
+      <li><a href="#function-popup" class="nomunge">Function Popup</a></li>
+    </ul>
+  </li>
+  <li><a href="#toast" class="nomunge">Toast</a></li>
+  <li><a href="#context-popup" class="nomunge">Context Popup</a></li>
+</ul>
+
+
+								</div>
+								
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+    <div class="container-fluid">
+  <div class="top_footer">
+    <div class="footer-nav">
+      <nav class="footer_sub_nav">
+        <ul class="menu">
+          <li><a href="https://developer.tizen.org/">Developer</a></li>
+          <li><a href="https://dashboard.tizen.org/">Dashboard</a></li>
+          <li><a href="https://craftroom.tizen.org/">Craftroom</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="bottom_footer">
+    <div class="footer-copyright col-xs-12 col-md-8">
+      <p class="copyright">
+        Copyright &copy; 2019 Tizen Inc. All rights reserved.
+      </p>
+    </div>
+    <div class="footer_social_nav">
+      <ul class="nav-social">
+        <li class="fa fa-github"><a href="https://github.com/samsung-test">GitHub</a></li>  
+        <li class="fa fa-twitter"><a href="https://twitter.com/TizenProject">Twitter</a></li>
+        <li class="fa fa-facebook"><a href="http://www.facebook.com/pages/Tizen-Project">Facebook</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+    <div id="templates"></div>
+    <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/common.js?v=22122019"></script>
+<script type="text/javascript" src="/js/handlebars-v4.0.11.js?v=22122019"></script>
+<script type="text/javascript" src="/js/widgets-data.js?v=22122019"></script>
+<script type="text/javascript" src="/js/widgets.js?v=22122019"></script>
+<script type="text/javascript" src="/js/highlight.pack.js"></script>
+<script type="text/javascript" src="/js/tocs.js"></script>
+<script type="text/javascript" src="/js/menu.js"></script>
+<script type="text/javascript" src="/js/stickyfill.min.js"></script>
+<script type="text/javascript" src="/js/metadata.js"></script>
+<script type="text/javascript" src="/js/docs.js"></script>
+
+</body>
+</html>

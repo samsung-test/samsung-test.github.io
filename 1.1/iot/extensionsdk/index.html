@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon"  href="/favicon.ico" />
+<title>IoT extension SDK</title>
+<meta name="description" content="IoT"/>
+<meta name="keywords" content="Tizen, OS, Open Source, Install"/>
+<base id="baseURL" href="/1.1/" />
+<meta id="docsVersion" content="1.1" />
+<meta name="last-modified" content="2019-12-22 15:56:13 +0530" />
+<meta http-equiv="cache-control" content="max-age=24" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-store" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="Expires" content="600" />
+
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/pygments/perldoc.css">
+<link rel="stylesheet" href="/css/style.css?v=22122019">
+<link rel="stylesheet" href="/css/github.css?v=22122019">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154449679-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-154449679-1');
+</script>
+
+</head>
+<body class=" latestVersion">
+	 
+	<header>
+    <div class="header">
+        <nav class="nav-secondary-tabs affix" >
+            <div class="container-fluid">
+                <div class="navbar-collapse" aria-expanded="false" style="height: 1px;">
+                    <div class="sidebar-toggle">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</div>
+<div class="nav-container">
+    <a class="logo" href="/" title="Tizen Documentation">
+        Tizen
+    </a>
+    <div id="tabs">
+        
+        
+        <ul class="tabs" id="jsTOCHorizontal">
+            <li class="">
+                <a href="design/">Design</a>
+            </li>
+            <li class="">
+                <a href="application/">Platform</a>
+            </li>
+            <!--li class="active">
+                <a href="iot/">IoT</a-->
+            </li>
+            <li class=" dropdown">
+                <a href="tizenstudio/setup/overview/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visual Studio<span class="caret"></span></a>
+                <ul class="dropdown-menu nav-main">
+                    <li><a href="#">Visual Studio Tools For Tizen</a></li>
+                    <li><a href="#">Visual Studio Code Extension For Tizen</a></li>
+                    <li><a href="#">Visual Studio For Mac Extension for Tizen</a></li>
+                 </ul>
+            </li>
+            <li class="">
+                <a href="tizenstudio/setup/overview/">Tizen Studio</a>
+            </li>
+             <li class="active dropdown">
+                <a href="iot/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">IoT<span class="caret"></span></a>
+                <ul class="dropdown-menu nav-main">
+                    <li><a href="iot/extensionsdk/">IoT Extension SDK</a></li>
+                    <li><a href="iot/iot-partners/nubison/">IoT partners</a></li>
+                 </ul>
+            </li>
+            <li class="">
+                <a href="tizenstudio/setup/overview/">Blogs</a>
+            </li>
+            <li class="">
+                <a href="tizenstudio/setup/overview/">Community</a>
+            </li>
+        </ul>
+    </div>
+    <div class="ctrl-right hidden-xs hidden-sm">
+        <a href="javascript:void(0)" id="menu-toggle"><i class="fa fa-indent" aria-hidden="true"></i></a>
+        <div class="widgetVersionSwitcher"></div>
+    </div>
+    <div class="search-form">
+        <form action="search.html">
+            <input class="search-field form-control ds-input st-search-input" value="" name="q" placeholder="Search the docs" type="search" autocomplete="off" spellcheck="false" dir="auto">
+            <button type="submit" class="search-button">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+    </div>
+    
+</div>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+    <div class="wrapper right-open">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-body">
+					<main class="col-content content">
+						<section class="section">
+							<nav class="breadcrumbs bootstrap hidden-sm-down">
+   <ol class="breadcrumb list-unstyled" vocab="http://schema.org/" typeof="BreadcrumbList">
+
+       
+          
+      
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <a property="item" typeof="WebPage" href="/1.1/">
+            <span property="name">Documentation</span>
+            <meta property="position" content="1" />
+         </a>
+      </li>
+       
+          
+      
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <a property="item" typeof="WebPage" href="/1.1/iot/">
+            <span property="name">IoT extension SDK</span>
+            <meta property="position" content="2" />
+         </a>
+      </li>
+       
+          
+      
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <span property="name">IoT extension SDK</span>
+         <meta property="position" content="3" />
+      </li>
+      
+   </ol>
+</nav>
+
+
+							<div class="widgetLatestVersionNotification"></div>
+							<h1 class="page-title">
+								IoT extension SDK
+							</h1>
+							<div class="page-read-time">
+								<span class="reading-time" title="Estimated read time">
+    
+    
+    1 min read
+    
+</span>
+							</div>
+							<div class="page-content">
+								<h1 id="iot-extension-sdk">IoT extension SDK</h1>
+
+<p>The Internet of Things (IoT) is connected networks of various types  of things, such as sensors, actuators, electronic devices, home  appliances, and so on. These networks of end-devices, hubs, and servers  enable exchange of data and execution of operations among things for  specific purposes. Communications and executions through the connections  are designed to happen without human interventions. In the broad sense,  the IoT means a combination of software and platforms for automatic and  intelligent services, as well as the networks itself.</p>
+
+<p>The IoT applications are extensive, for example, home automation with  smart consumer electronics and appliances, smart factories that consist  of connected manufacturing equipment, and transportation systems for  connected vehicles and traffic control, etc. Each application is  realized through the operations of physical device control, networking,  data analysis, and decision making. In general, the IoT end devices are  lightweight, low-cost, and power-efficient. While, the back-end systems  have the capability to analyze data from the end devices and to make  decisions based on pre-defined algorithms or trained intelligence. For  competitive IoT ecosystems, it is required to be scalable in attaching  new forms of devices to the networks; and to be sufficient controls  available from the networks. Further, from the end devices to the  services, all the components have to be tightly integrated throughout  the whole ecosystem.</p>
+
+<p>To address IoT-specific requirements, Tizen IoT is derived from Tizen. Tizen IoT is the Tizen implementation for the <a href="https://smartthings.developer.samsung.com/develop/index.html">SmartThings ecosystem</a>.</p>
+
+<p>Tizen IoT is composed of:</p>
+
+<ul>
+  <li><a href="get-started/setting-up-board.md">Lightweight OS</a> for IoT devices,</li>
+  <li><a href="guides/peripheral-io-api.md">Peripheral I/O API</a> for the access and control of the devices, and</li>
+  <li><a href="guides/things-api-5.0.md">Things SDK API</a> for the integration with the <a href="https://smartthings.developer.samsung.com/develop/index.html">SmartThings Cloud</a>.</li>
+</ul>
+
+<p>Connected with the Cloud, the SmartThings App on your smart phone  provides easy and convenient ways for users to manage and configure the  devices and the services. For more information about Samsung’s  SmartThings solution, see <a href="https://smartthings.developer.samsung.com/">SmartThings website.</a></p>
+
+<p><strong>Figure: SmartThings Ecosystem</strong></p>
+
+<p><a href="https://smartthings.developer.samsung.com/"><img src="media/ST_dev_eco_diagram.png" alt="SmartThings Ecosystem" /></a></p>
+
+<p><a href="https://smartthings.developer.samsung.com/">Source: https://smartthings.developer.samsung.com/</a></p>
+
+								
+            						
+
+
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = 'https://samsung-test.github.io/1.1//iot/extensionsdk/';
+      this.page.identifier = 'https://samsung-test.github.io/1.1//iot/extensionsdk/';
+    };
+    (function() {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://samsung-test.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+         						
+							</div>
+						</section>
+					</main>
+					<nav class="col-nav">
+						<div id="sidebar-nav" class="sidebar hidden-sm hidden-xs">
+						    
+
+
+<div id="navbar" class="nav-sidebar">
+    <ul class="nav" id="jsTOCLeftNav">
+        
+        
+        
+        
+    
+        <li>
+            <a 
+                href="iot/" 
+                data-target="#item1" 
+                data-toggle="collapse" 
+                data-parent="#stacked-menu"
+                aria-expanded=" false "
+                class=" collapsed "
+                >
+                    IoT
+                    <span class="caret arrow"></span>
+            </a>
+            
+
+            
+            <ul class="nav collapse" aria-expanded="false" id="#item1">
+            
+
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="iot/extensionsdk/index/" 
+                        class=""
+                        >
+                        IoT Extension SDK
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="iot/extensionsdk/about/git-repo-structure/" 
+                        class=""
+                        >
+                        IOT Git Repository Structure
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="iot/extensionsdk/about/conventions/" 
+                        class=""
+                        >
+                        Typographic Conventions
+                    </a>
+                    
+                </li>
+                
+            </ul>
+            
+        </li>
+    
+        
+        
+        
+    
+        <li>
+            <a 
+                href="iot/developing/installing" 
+                data-target="#item2" 
+                data-toggle="collapse" 
+                data-parent="#stacked-menu"
+                aria-expanded=" false "
+                class=" collapsed "
+                >
+                    IOT Developing
+                    <span class="caret arrow"></span>
+            </a>
+            
+
+            
+            <ul class="nav collapse" aria-expanded="false" id="#item2">
+            
+
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="iot/extensionsdk/developing/installing/" 
+                        class=""
+                        >
+                        Installing Development Tools
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="iot/extensionsdk/developing/setting-up/" 
+                        class=""
+                        >
+                        Setting up Development Environment
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="iot/extensionsdk/developing/cloning/" 
+                        class=""
+                        >
+                        Cloning Tizen Source Files
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="iot/extensionsdk/developing/building/" 
+                        class=""
+                        >
+                        Building Packages Locally with GBS
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="iot/extensionsdk/developing/building-all/" 
+                        class=""
+                        >
+                        Building All Packages Locally with GBS
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="iot/extensionsdk/developing/contributing/" 
+                        class=""
+                        >
+                        Contributing Code to Tizen
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="iot/extensionsdk/developing/creating/" 
+                        class=""
+                        >
+                        Creating Tizen Images with MIC
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="iot/extensionsdk/developing/flashing/" 
+                        class=""
+                        >
+                        Flashing an Image to Device
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="iot/extensionsdk/developing/tips/" 
+                        class=""
+                        >
+                        Development Tips
+                    </a>
+                    
+                </li>
+                
+            </ul>
+            
+        </li>
+    
+        
+        
+        
+    
+        <li>
+            <a 
+                href="iot/extensionsdk/porting/overview/" 
+                data-target="#item3" 
+                data-toggle="collapse" 
+                data-parent="#stacked-menu"
+                aria-expanded=" true "
+                class=" not-collapsed "
+                >
+                    Porting
+                    <span class="caret arrow"></span>
+            </a>
+            
+
+            
+            <ul class="nav collapse in" aria-expanded="true" id="#item3">
+            
+
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="iot/extensionsdk/porting/overview/" 
+                        class=""
+                        >
+                        Overview
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="iot/extensionsdk/porting/kernel/" 
+                        class=""
+                        >
+                        Kernel
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="iot/extensionsdk/porting/system/" 
+                        class=""
+                        >
+                        System
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="iot/extensionsdk/porting/graphics-and-ui/" 
+                        class=""
+                        >
+                        Graphics and UI
+                    </a>
+                    
+                </li>
+                
+            </ul>
+            
+        </li>
+    
+        
+        
+        
+    
+        <li>
+            <a 
+                href="iot/extensionsdk/reference/gerrit-usage/" 
+                data-target="#item4" 
+                data-toggle="collapse" 
+                data-parent="#stacked-menu"
+                aria-expanded=" true "
+                class=" not-collapsed "
+                >
+                    Reference
+                    <span class="caret arrow"></span>
+            </a>
+            
+
+            
+            <ul class="nav collapse in" aria-expanded="true" id="#item4">
+            
+
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="iot/extensionsdk/reference/gerrit-usage/" 
+                        class=""
+                        >
+                        Gerrit
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="iot/extensionsdk/reference/gbs/gbs-overview/"
+                        class=""
+                        aria-expanded=" true "
+                        data-target="#item2" 
+                        data-toggle="collapse" 
+                        >
+                        Git Build System (GBS)
+                        <span class="caret arrow"></span>
+                    </a>
+                    
+                    
+                    <ul class="nav collapse in" aria-expanded="true" id="#item2">
+                    
+                        
+                        <li>
+                            
+                            <a 
+                                href="iot/extensionsdk/reference/gbs/gbs-overview/"
+                                class=""
+                                >
+                                Overview
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a 
+                                href="iot/extensionsdk/reference/gbs/gbs.conf/"
+                                class=""
+                                >
+                                GBS Configuration
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a 
+                                href="iot/extensionsdk/reference/gbs/gbs-maintenance-models/"
+                                class=""
+                                >
+                                GBS Maintenance Models
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="iot/extensionsdk/reference/mic/mic-overview/"
+                        class=""
+                        aria-expanded=" true "
+                        data-target="#item3" 
+                        data-toggle="collapse" 
+                        >
+                        MIC Image Creator
+                        <span class="caret arrow"></span>
+                    </a>
+                    
+                    
+                    <ul class="nav collapse in" aria-expanded="true" id="#item3">
+                    
+                        
+                        <li>
+                            
+                            <a 
+                                href="iot/extensionsdk/reference/mic/mic-overview/"
+                                class=""
+                                >
+                                Overview
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a 
+                                href="iot/extensionsdk/reference/mic/mic-customize-image/"
+                                class=""
+                                >
+                                Customizing Images
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a 
+                                href="iot/extensionsdk/reference/mic/mic-reference/"
+                                class=""
+                                >
+                                MIC Reference
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+                
+            </ul>
+            
+        </li>
+    
+        
+        
+        
+    
+        <li>
+            <a 
+                href="iot/iot-partners/nubison/" 
+                data-target="#item5" 
+                data-toggle="collapse" 
+                data-parent="#stacked-menu"
+                aria-expanded=" false "
+                class=" collapsed "
+                >
+                    IoT Partners
+                    <span class="caret arrow"></span>
+            </a>
+            
+
+            
+            <ul class="nav collapse" aria-expanded="false" id="#item5">
+            
+
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="iot-partners/nubison/" 
+                        class=""
+                        >
+                        IoT Things park
+                    </a>
+                    
+                </li>
+                
+            </ul>
+            
+        </li>
+    
+        
+        
+    </ul>
+</div>
+<script>
+    $("a[href$='/iot/extensionsdk/']").addClass("active currentPage");
+</script>
+						</div>
+					</nav>
+					<div class="col-toc">
+						<div class="sidebar hidden-xs hidden-sm">
+							<div class="toc-nav">
+								<div class="feedback-links">
+									<ul>
+										<li>
+                                            <a href="https://github.com/samsung-test/samsung-test.github.io/edit/1.1/iot/extensionsdk/index.md" target="_blank">
+                                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                                Edit Page
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://github.com/samsung-test/samsung-test.github.io/issues/new" class="nomunge" target="_blank">
+                                                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                                Report Issue
+                                            </a>
+                                        </li>
+									</ul>
+								</div>
+								   
+									<div id="side-toc-title">On this page:</div>
+									
+
+
+								</div>
+								
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+    <div class="container-fluid">
+  <div class="top_footer">
+    <div class="footer-nav">
+      <nav class="footer_sub_nav">
+        <ul class="menu">
+          <li><a href="https://developer.tizen.org/">Developer</a></li>
+          <li><a href="https://dashboard.tizen.org/">Dashboard</a></li>
+          <li><a href="https://craftroom.tizen.org/">Craftroom</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="bottom_footer">
+    <div class="footer-copyright col-xs-12 col-md-8">
+      <p class="copyright">
+        Copyright &copy; 2019 Tizen Inc. All rights reserved.
+      </p>
+    </div>
+    <div class="footer_social_nav">
+      <ul class="nav-social">
+        <li class="fa fa-github"><a href="https://github.com/samsung-test">GitHub</a></li>  
+        <li class="fa fa-twitter"><a href="https://twitter.com/TizenProject">Twitter</a></li>
+        <li class="fa fa-facebook"><a href="http://www.facebook.com/pages/Tizen-Project">Facebook</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+    <div id="templates"></div>
+    <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/common.js?v=22122019"></script>
+<script type="text/javascript" src="/js/handlebars-v4.0.11.js?v=22122019"></script>
+<script type="text/javascript" src="/js/widgets-data.js?v=22122019"></script>
+<script type="text/javascript" src="/js/widgets.js?v=22122019"></script>
+<script type="text/javascript" src="/js/highlight.pack.js"></script>
+<script type="text/javascript" src="/js/tocs.js"></script>
+<script type="text/javascript" src="/js/menu.js"></script>
+<script type="text/javascript" src="/js/stickyfill.min.js"></script>
+<script type="text/javascript" src="/js/metadata.js"></script>
+<script type="text/javascript" src="/js/docs.js"></script>
+
+</body>
+</html>
