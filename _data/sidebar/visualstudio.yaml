@@ -19,7 +19,7 @@
             url: visualstudio/setup/uninstall-sdk/
           - page: Troubleshoot Errors
             url: visualstudio/setup/troubleshooting/
-      - title: Get Started
+      - title: Visual Studio Tools for Tizen
         url: visualstudio/setup/quick_start_guide
         subfolderitems:
           - page: Web Application Development 

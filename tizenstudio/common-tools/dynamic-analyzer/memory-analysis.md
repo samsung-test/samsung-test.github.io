@@ -1,3 +1,9 @@
+---
+title: Performing Memory Analysis
+desc: Performing Memory Analysis
+keywords: Tizen, OS, Open Source, Install 
+comments: true
+---
 # Performing Memory Analysis
 
 You can analyze the memory usage of an application in the **Memory** tab of the Dynamic Analyzer.

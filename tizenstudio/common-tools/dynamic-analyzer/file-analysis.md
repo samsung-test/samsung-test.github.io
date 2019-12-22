@@ -1,3 +1,10 @@
+---
+title: Performing File Analysis
+desc: Performing Analysis
+keywords: Tizen, OS, Open Source, Install 
+comments: true
+---
+
 # Performing File Analysis
 
 The **File** tab of the Dynamic Analyzer shows information associated with file operations. The **File** tab can be enabled or disabled in runtime from the **Configuration** dialog. If the file analysis capabilities are disabled, the file API information is not displayed.

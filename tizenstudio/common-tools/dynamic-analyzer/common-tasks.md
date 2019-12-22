@@ -1,3 +1,11 @@
+---
+title: Handling Common Dynamic Analyzer Tasks
+desc: Analyzer
+keywords: Tizen, OS, Open Source, Install 
+comments: true
+---
+
+
 # Handling Common Dynamic Analyzer Tasks
 
 The common tasks in the Dynamic Analyzer show how you can launch the Dynamic Analyzer and understand its user interface. Once you have installed your application on the emulator or Tizen device, you are ready to run the Dynamic Analyzer.

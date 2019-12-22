@@ -1,3 +1,8 @@
+---
+title: Prerequisites 
+---
+
+
 # Prerequisites for the Tizen Studio
 
 Check the following prerequisites before attempting to install the Tizen Studio.

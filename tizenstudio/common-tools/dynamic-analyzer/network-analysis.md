@@ -1,3 +1,9 @@
+---
+title: Performing Network Analysis
+desc: Performing Network Analysis
+keywords: Tizen, OS, Open Source, Install 
+comments: true
+---
 # Performing Network Analysis
 
 The **Network** tab of the Dynamic Analyzer displays network information. It only supports the socket APIs of glibc.

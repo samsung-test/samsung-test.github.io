@@ -1,3 +1,10 @@
+---
+title: Performing OpenGL Analysis 
+desc: Performing OpenGL Analysis
+keywords: Tizen, OS, Open Source, Install 
+comments: true
+---
+
 # Performing OpenGL Analysis
 
 The **OpenGL ES** (Open Graphics Library) tab of the Dynamic Analyzer displays information about OpenGL&reg; 2.0 and EvasGL.
