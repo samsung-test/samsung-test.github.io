@@ -1,5 +1,5 @@
 ---
-title: etting up ARTIK530/ARTIK530S without SD Card
+title: Setting up ARTIK530/ARTIK530S without SD Card
 ---
 
 ## Installing Tizen Studio
