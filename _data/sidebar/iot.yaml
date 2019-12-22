@@ -1,6 +1,6 @@
 - sidebar:
-      - title: IOT Overview
-        url: iot/about/work-flow/
+      - title: IoT
+        url: iot/
         subfolderitems:
           - page: IOT Development Workflow
             url: iot/about/work-flow/
