@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon"  href="/favicon.ico" />
+<title>Setup</title>
+<meta name="description" content="Install Tizen"/>
+<meta name="keywords" content="Tizen, OS, Open Source, Install"/>
+<base id="baseURL" href="/latest/" />
+<meta id="docsVersion" content="5.5" />
+<meta name="last-modified" content="2019-12-22 22:24:54 +0530" />
+<meta http-equiv="cache-control" content="max-age=24" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-store" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="Expires" content="600" />
+
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/pygments/perldoc.css">
+<link rel="stylesheet" href="/css/style.css?v=22122019">
+<link rel="stylesheet" href="/css/github.css?v=22122019">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154449679-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-154449679-1');
+</script>
+
+</head>
+<body class=" latestVersion">
+	 
+	<header>
+    <div class="header">
+        <nav class="nav-secondary-tabs affix" >
+            <div class="container-fluid">
+                <div class="navbar-collapse" aria-expanded="false" style="height: 1px;">
+                    <div class="sidebar-toggle">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</div>
+<div class="nav-container">
+    <a class="logo" href="/" title="Tizen Documentation">
+        Tizen
+    </a>
+    <div id="tabs">
+        
+        
+        <ul class="tabs" id="jsTOCHorizontal">
+            <li class="">
+                <a href="design/">Design</a>
+            </li>
+            <li class="">
+                <a href="application/">Platform</a>
+            </li>
+            <li class="active dropdown">
+                <a href="visualstudio/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visual Studio<span class="caret"></span></a>
+                <ul class="dropdown-menu nav-main">    
+                    <h6 class="dropdown-header">Visual Studio Tools For Tizen</h6>
+                    <li><a href="visualstudio/vstools/index/">VS Tools for Tizen</a></li>
+                    <h6 class="dropdown-header">Visual Studio Code Extension For Tizen</h6>
+                    <li><a href="visualstudio/vscode-ext/index/">/a>VS Code Extension For Tizen</li>
+                    <h6 class="dropdown-header">Visual Studio Code Extension For Tizen</h6>
+                    <li><a href="visualstudio/vstools-mac/overview/">VS For Mac Extension for Tizen</a></li>
+                 </ul>
+            </li>
+            <li class="">
+                <a href="tizenstudio/setup/overview/">Tizen Studio</a>
+            </li>
+             <li class=" dropdown">
+                <a href="iot/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">IoT<span class="caret"></span></a>
+                <ul class="dropdown-menu nav-main">
+                    <li><a href="iot/extensionsdk/">IoT Extension SDK</a></li>
+                    <li><a href="iot/iot-partners/nubison/">IoT partners</a></li>
+                 </ul>
+            </li>
+            <li class="">
+                <a href="tizenstudio/setup/overview/">Blogs</a>
+            </li>
+            <li class="">
+                <a href="tizenstudio/setup/overview/">Community</a>
+            </li>
+        </ul>
+    </div>
+    <div class="ctrl-right hidden-xs hidden-sm">
+        <a href="javascript:void(0)" id="menu-toggle"><i class="fa fa-indent" aria-hidden="true"></i></a>
+        <div class="widgetVersionSwitcher"></div>
+    </div>
+    <div class="search-form">
+        <form action="search.html">
+            <input class="search-field form-control ds-input st-search-input" value="" name="q" placeholder="Search the docs" type="search" autocomplete="off" spellcheck="false" dir="auto">
+            <button type="submit" class="search-button">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+    </div>
+    
+</div>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+    <div class="wrapper right-open">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-body">
+					<main class="col-content content">
+						<section class="section">
+							<nav class="breadcrumbs bootstrap hidden-sm-down">
+   <ol class="breadcrumb list-unstyled" vocab="http://schema.org/" typeof="BreadcrumbList">
+
+       
+          
+      
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <a property="item" typeof="WebPage" href="/latest/">
+            <span property="name">Documentation</span>
+            <meta property="position" content="1" />
+         </a>
+      </li>
+       
+          
+      
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <a property="item" typeof="WebPage" href="/latest/visualstudio/">
+            <span property="name">Tizen .NET Application</span>
+            <meta property="position" content="2" />
+         </a>
+      </li>
+       
+          
+      
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <span property="name">Setup</span>
+         <meta property="position" content="3" />
+      </li>
+      
+   </ol>
+</nav>
+
+
+							<div class="widgetLatestVersionNotification"></div>
+							<h1 class="page-title">
+								Setup
+							</h1>
+							<div class="page-read-time">
+								<span class="reading-time" title="Estimated read time">
+    
+    
+    4 mins read
+    
+</span>
+							</div>
+							<div class="page-content">
+								<h1 id="visual-studio-for-mac-extension-for-tizen">Visual Studio for Mac Extension for Tizen</h1>
+
+<p>Visual Studio for Mac Extension for Tizen is an extension for Microsoft Visual Studio for Mac. It enables you to develop Tizen .NET applications easily with Visual Studio for Mac.</p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<p>To work with Visual Studio for Mac Extension for Tizen, your computer must have:</p>
+
+<ul>
+  <li>At least 5.6 GB of available disk space</li>
+  <li>macOS Mojave 10.14: Community, Professional, and Enterprise.</li>
+  <li>
+    <p>Visual Studio 2019 for Mac (Community, Professional, Enterprise) Version 8.2 and higher.</p>
+  </li>
+  <li>
+    <p>Java Development Kit (JDK)</p>
+
+    <p>You must install Oracle Java Development Kit (JDK) 8 or OpenJDK 12 to use 
+Tizen Baseline SDK. Make sure you download and install the EXACT version.</p>
+
+    <ul>
+      <li>
+        <p><a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">Oracle Java Development Kit(JDK) 8</a> and <a href="https://support.apple.com/kb/DL1572">Java for OS X 2015-001</a></p>
+      </li>
+      <li>
+        <p>OpenJDK 12 and OpenJFX: <a href="../tizen-studio/setup/openjdk.md#install-openjdk-for-macos">OpenJDK 12 and OpenJFX Installation Guide</a>.</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>For Oracle JDK, Java for OS X 2015-001 is required to support legacy Java software on macOS.</p>
+
+<p><a name="setup"></a></p>
+<h2 id="visual-studio-for-mac-extension-for-tizen-installation">Visual Studio for Mac Extension for Tizen Installation</h2>
+
+<p>This section describes how to install the <strong>Visual Studio for Mac Extension for Tizen</strong> and the <strong>Baseline SDK</strong> to use the Tizen SDK tools.</p>
+
+<h3 id="install-the-extension">Install the Extension</h3>
+
+<p>To install Visual Studio for Mac Extension for Tizen:</p>
+
+<ol>
+  <li>
+    <p>In the Visual Studio Mac IDE menu, go to <strong>Visual Studio</strong> and click <strong>Extensions…</strong>.</p>
+
+    <p><img src="media/install-extension1.png" alt="Install extension" /></p>
+  </li>
+  <li>
+    <p>Extension Manager dialog is opened. Click <strong>Gallery</strong> at the top left.</p>
+
+    <p><img src="media/install-extension2.png" alt="Extension Manager" /></p>
+  </li>
+  <li>
+    <p>Click <strong>Refresh</strong> to get the latest extensions.</p>
+
+    <p><img src="media/install-extension3.png" alt="Browse Extension" /></p>
+  </li>
+  <li>
+    <p>After the extension list is refreshed, expand the <strong>IDE extensions</strong> in the <strong>Gallery</strong> tab and select the 
+<strong>Visual Studio for Mac Extension for Tizen</strong>. Click <strong>Install…</strong> at the bottom right.</p>
+
+    <p><img src="media/install-extension4.png" alt="Install Popup" />
+ <img src="media/install-extension5.png" alt="Install Popup1" /></p>
+  </li>
+  <li>
+    <p>Click <strong>Install</strong> in the pop-up window.</p>
+
+    <p><img src="media/install-extension6.png" alt="Install Popup2" /></p>
+
+    <p>The extension is installed. Restart the IDE once to complete the installation.</p>
+
+    <p>After successful installation, <strong>Tizen</strong> is in the project wizard.</p>
+
+    <p><img src="media/install-extension7.png" alt="Project Wizard" /></p>
+  </li>
+</ol>
+
+<h3 id="install-the-tizen-baseline-sdk">Install the Tizen Baseline SDK</h3>
+
+<p>After installing the Visual Studio Mac Extension for Tizen, you must set up the Tizen baseline SDK:</p>
+
+<ol>
+  <li>In the Visual Studio Mac IDE menu, go to <strong>Tools &gt; Tizen &gt; Tizen Package Manager</strong>.</li>
+  <li>
+    <p>Select <strong>Install new Tizen SDK</strong>.</p>
+
+    <blockquote>
+      <p><strong>Note</strong></p>
+
+      <p>If Tizen Studio is already installed in your computer, simply <a href="#set-tizen-baseline-sdk">set the Tizen baseline SDK path</a> to the existing SDK instead of reinstalling it.</p>
+    </blockquote>
+
+    <p><img src="media/howtoinstall-installwizard1.png" alt="Select new installation" /></p>
+  </li>
+  <li>
+    <p>Read the license document and click <strong>I Agree</strong>.</p>
+
+    <p><img src="media/howtoinstall-installwizard2.png" alt="Agree to license details" /></p>
+  </li>
+  <li>
+    <p>Enter the root directory path where you want to install and click <strong>Next</strong>.</p>
+
+    <p><img src="media/howtoinstall-installwizard3.png" alt="Set the installation path" /></p>
+
+    <p>The Tizen SDK installer is downloaded and the baseline SDK is installed automatically.</p>
+
+    <p><img src="media/howtoinstall-installwizard4.png" alt="Installer download" /></p>
+
+    <p><img src="media/howtoinstall-installwizard5.png" alt="Baseline SDK installation" /></p>
+
+    <p>Finally, the Tizen Package Manager installs the Tizen SDK tools.</p>
+
+    <p><img src="media/howtoinstall-installwizard6.png" alt="Tool installation" /></p>
+  </li>
+</ol>
+
+<p><a name="set-tizen-baseline-sdk"></a></p>
+<h3 id="set-the-tizen-baseline-sdk-path">Set the Tizen Baseline SDK Path</h3>
+
+<p>You can also use the Tizen Package Manager to set up the Tizen baseline SDK path or each tool path directly:</p>
+
+<ul>
+  <li>To set up the Tizen Baseline SDK path:
+    <ol>
+      <li>In the Visual Studio IDE menu, go to <strong>Tools &gt; Tizen &gt; Tizen Package Manager</strong>.</li>
+      <li>
+        <p>Select <strong>Use installed Tizen SDK</strong>.</p>
+
+        <p><img src="media/howtoinstall-installwizard7.png" alt="Baseline SDK Install" /></p>
+      </li>
+      <li>
+        <p>Enter the root directory of your existing Tizen Studio installation.</p>
+
+        <p><img src="media/howtoinstall-installwizard8.png" alt="Baseline SDK Install" /></p>
+      </li>
+    </ol>
+
+    <blockquote>
+      <p><strong>Note</strong><br />
+If the installer gives a warning about your Tizen Studio version being too low, update Tizen Studio by using the Tizen Package Manager after setting the tool path.</p>
+    </blockquote>
+  </li>
+  <li>To set up each tool path directly:
+    <ol>
+      <li>In the Visual Studio Mac IDE menu, go to <strong>Project &gt; Solution Options &gt; Tizen &gt; Tools</strong>.</li>
+      <li>
+        <p>Enter the root directory of your existing Tizen Studio installation in the <strong>Tool Path</strong> field.</p>
+
+        <p><img src="media/howtoinstall-checktoolpath.png" alt="Check the SDK tool path" /></p>
+
+        <p>The other tools paths are automatically set up.</p>
+      </li>
+    </ol>
+  </li>
+</ul>
+
+<h3 id="install-emulator-images">Install Emulator Images</h3>
+
+<p>If you do not have a real device, you can run applications in the Tizen Emulator.</p>
+
+<p>To download emulator images, you can use the Tizen Package Manager or the Tizen Emulator Manager:</p>
+
+<ul>
+  <li>To use the Tizen Package Manager:
+    <ol>
+      <li>In the Visual Studio Mac IDE menu, go to <strong>Tools &gt; Tizen &gt; Tizen Package Manager</strong>.</li>
+      <li>
+        <p>Select the profiles and versions you want to install and click <strong>Install</strong>.</p>
+
+        <p><img src="media/howtoinstall-packagemanager.png" alt="Package Manager" /></p>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <p>To use the Tizen Emulator Manager:</p>
+
+    <blockquote>
+      <p><strong>Note</strong></p>
+
+      <p>The Tizen Emulator Manager shows the emulator images installation window only when no images are installed on your computer.</p>
+    </blockquote>
+
+    <ol>
+      <li>In the Visual Studio Mac IDE menu, go to <strong>Tools &gt; Tizen &gt; Tizen Emulator Manager</strong>.</li>
+      <li>
+        <p>Select the profiles and versions you want to install and click <strong>OK</strong>.</p>
+
+        <p><img src="media/howtoinstall-emulatormanager.png" alt="Emulator Manager" /></p>
+      </li>
+    </ol>
+  </li>
+</ul>
+
+<h2 id="troubleshoot">Troubleshoot</h2>
+
+<p>If you encounter problems with the installation:</p>
+
+<ul>
+  <li>
+    <p>To make sure the baseline Tizen SDK is installed correctly, check the tool path by selecting <strong>Project &gt; Solution Options &gt; Tizen &gt; Tools</strong>.</p>
+
+    <p><img src="media/howtoinstall-checktoolpath.png" alt="Check the SDK tool path" /></p>
+  </li>
+</ul>
+
+
+								
+            						
+
+
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = 'https://samsung-test.github.io/latest//visualstudio/vstools-mac/overview/';
+      this.page.identifier = 'https://samsung-test.github.io/latest//visualstudio/vstools-mac/overview/';
+    };
+    (function() {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://samsung-test.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+         						
+							</div>
+						</section>
+					</main>
+					<nav class="col-nav">
+						<div id="sidebar-nav" class="sidebar hidden-sm hidden-xs">
+						    
+
+
+<div id="navbar" class="nav-sidebar">
+    <ul class="nav" id="jsTOCLeftNav">
+        
+        
+        
+        
+    
+        <li>
+            <a 
+                href="/visualstudio/" 
+                data-target="#item1" 
+                data-toggle="collapse" 
+                data-parent="#stacked-menu"
+                aria-expanded=" false "
+                class=" collapsed "
+                >
+                    .NET Application
+                    <span class="caret arrow"></span>
+            </a>
+            
+
+            
+            <ul class="nav collapse" aria-expanded="false" id="#item1">
+            
+
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="visualstudio/get-started/overview/"
+                        class=""
+                        aria-expanded=" false "
+                        data-target="#item1" 
+                        data-toggle="collapse" 
+                        >
+                        Get Started
+                        <span class="caret arrow"></span>
+                    </a>
+                    
+                    
+                    <ul class="nav collapse" aria-expanded="false" id="#item1">
+                    
+                        
+                        <li>
+                            
+                            <a 
+                                href="visualstudio/tv/first-app"
+                                class=""
+                                >
+                                TV
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a 
+                                href="visualstudio/wearable/first-app/"
+                                class=""
+                                >
+                                Wearable
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a 
+                                href="visualstudio/mobile/first-app/"
+                                class=""
+                                >
+                                Mobile
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a 
+                                href="visualstudio/nui/quickstart/"
+                                class=""
+                                >
+                                NUI
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="visualstudio/setup/update-sdk/" 
+                        class=""
+                        >
+                        Guides
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="visualstudio/setup/uninstall-sdk/" 
+                        class=""
+                        >
+                        Uninstall
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="visualstudio/setup/troubleshooting/" 
+                        class=""
+                        >
+                        Troubleshoot Errors
+                    </a>
+                    
+                </li>
+                
+            </ul>
+            
+        </li>
+    
+        
+        
+        
+    
+        <li>
+            <a 
+                href="visualstudio/setup/quick_start_guide" 
+                data-target="#item2" 
+                data-toggle="collapse" 
+                data-parent="#stacked-menu"
+                aria-expanded=" false "
+                class=" collapsed "
+                >
+                    Visual Studio Tools for Tizen
+                    <span class="caret arrow"></span>
+            </a>
+            
+
+            
+            <ul class="nav collapse" aria-expanded="false" id="#item2">
+            
+
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="visualstudio/setup/quick_start_guide/" 
+                        class=""
+                        >
+                        Web Application Development
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="visualstudio/setup/quick_start_guide_tizen_app_ts/" 
+                        class=""
+                        >
+                        Wearable Application Development
+                    </a>
+                    
+                </li>
+                
+            </ul>
+            
+        </li>
+    
+        
+        
+        
+    
+        <li>
+            <a 
+                href="visualstudio/setup/additional-requirements" 
+                data-target="#item3" 
+                data-toggle="collapse" 
+                data-parent="#stacked-menu"
+                aria-expanded=" false "
+                class=" collapsed "
+                >
+                    Configure Tizen Studio
+                    <span class="caret arrow"></span>
+            </a>
+            
+
+            
+            <ul class="nav collapse" aria-expanded="false" id="#item3">
+            
+
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="visualstudio/setup/hardware-accelerated-execution-manager/" 
+                        class=""
+                        >
+                        Hardware Acceleration for Tizen
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="visualstudio/setup/hardware-accelerated-execution-manager/" 
+                        class=""
+                        >
+                        Hardware Acceleration for Tizen
+                    </a>
+                    
+                </li>
+                
+            </ul>
+            
+        </li>
+    
+        
+        
+        
+    
+        <li>
+            <a 
+                href="visualstudio/setup/faq" 
+                data-target="#item4" 
+                data-toggle="collapse" 
+                data-parent="#stacked-menu"
+                aria-expanded=" false "
+                class=" collapsed "
+                >
+                    Frequently Asked Questions
+                    <span class="caret arrow"></span>
+            </a>
+            
+        </li>
+    
+        
+        
+        
+    
+        <li>
+            <a 
+                href="visualstudio/extension-sdk/overview" 
+                data-target="#item5" 
+                data-toggle="collapse" 
+                data-parent="#stacked-menu"
+                aria-expanded=" false "
+                class=" collapsed "
+                >
+                    Extension SDK
+                    <span class="caret arrow"></span>
+            </a>
+            
+
+            
+            <ul class="nav collapse" aria-expanded="false" id="#item5">
+            
+
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="visualstudio/extension-sdk/in-app-purchase/"
+                        class=""
+                        aria-expanded=" false "
+                        data-target="#item1" 
+                        data-toggle="collapse" 
+                        >
+                        In app purchases
+                        <span class="caret arrow"></span>
+                    </a>
+                    
+                    
+                    <ul class="nav collapse" aria-expanded="false" id="#item1">
+                    
+                        
+                        <li>
+                            
+                            <a 
+                                href="visualstudio/extension-sdk/inmobi/"
+                                class=""
+                                >
+                                In Mobi
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a 
+                                href="visualstudio/extension-sdk/inmobi/"
+                                class=""
+                                >
+                                VMax
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+                
+            </ul>
+            
+        </li>
+    
+        
+        
+    </ul>
+</div>
+<script>
+    $("a[href$='/visualstudio/vstools-mac/overview/']").addClass("active currentPage");
+</script>
+						</div>
+					</nav>
+					<div class="col-toc">
+						<div class="sidebar hidden-xs hidden-sm">
+							<div class="toc-nav">
+								<div class="feedback-links">
+									<ul>
+										<li>
+                                            <a href="https://github.com/samsung-test/samsung-test.github.io/edit/5.5/visualstudio/vstools-mac/overview.md" target="_blank">
+                                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                                Edit Page
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://github.com/samsung-test/samsung-test.github.io/issues/new" class="nomunge" target="_blank">
+                                                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                                Report Issue
+                                            </a>
+                                        </li>
+									</ul>
+								</div>
+								   
+									<div id="side-toc-title">On this page:</div>
+									
+<ul id="my_toc" class="inline_toc">
+  <li><a href="#prerequisites" class="nomunge">Prerequisites</a></li>
+  <li><a href="#visual-studio-for-mac-extension-for-tizen-installation" class="nomunge">Visual Studio for Mac Extension for Tizen Installation</a>
+    <ul>
+      <li><a href="#install-the-extension" class="nomunge">Install the Extension</a></li>
+      <li><a href="#install-the-tizen-baseline-sdk" class="nomunge">Install the Tizen Baseline SDK</a></li>
+      <li><a href="#set-the-tizen-baseline-sdk-path" class="nomunge">Set the Tizen Baseline SDK Path</a></li>
+      <li><a href="#install-emulator-images" class="nomunge">Install Emulator Images</a></li>
+    </ul>
+  </li>
+  <li><a href="#troubleshoot" class="nomunge">Troubleshoot</a></li>
+</ul>
+
+
+								</div>
+								
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+    <div class="container-fluid">
+  <div class="top_footer">
+    <div class="footer-nav">
+      <nav class="footer_sub_nav">
+        <ul class="menu">
+          <li><a href="https://developer.tizen.org/">Developer</a></li>
+          <li><a href="https://dashboard.tizen.org/">Dashboard</a></li>
+          <li><a href="https://craftroom.tizen.org/">Craftroom</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="bottom_footer">
+    <div class="footer-copyright col-xs-12 col-md-8">
+      <p class="copyright">
+        Copyright &copy; 2019 Tizen Inc. All rights reserved.
+      </p>
+    </div>
+    <div class="footer_social_nav">
+      <ul class="nav-social">
+        <li class="fa fa-github"><a href="https://github.com/samsung-test">GitHub</a></li>  
+        <li class="fa fa-twitter"><a href="https://twitter.com/TizenProject">Twitter</a></li>
+        <li class="fa fa-facebook"><a href="http://www.facebook.com/pages/Tizen-Project">Facebook</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+    <div id="templates"></div>
+    <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/common.js?v=22122019"></script>
+<script type="text/javascript" src="/js/handlebars-v4.0.11.js?v=22122019"></script>
+<script type="text/javascript" src="/js/widgets-data.js?v=22122019"></script>
+<script type="text/javascript" src="/js/widgets.js?v=22122019"></script>
+<script type="text/javascript" src="/js/highlight.pack.js"></script>
+<script type="text/javascript" src="/js/tocs.js"></script>
+<script type="text/javascript" src="/js/menu.js"></script>
+<script type="text/javascript" src="/js/stickyfill.min.js"></script>
+<script type="text/javascript" src="/js/metadata.js"></script>
+<script type="text/javascript" src="/js/docs.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon"  href="/favicon.ico" />
+<title>Troubleshooting</title>
+<meta name="description" content="Troubleshoot problems"/>
+<meta name="keywords" content="Tizen, OS, Open Source"/>
+<base id="baseURL" href="/latest/" />
+<meta id="docsVersion" content="5.5" />
+<meta name="last-modified" content="2019-12-22 22:24:54 +0530" />
+<meta http-equiv="cache-control" content="max-age=24" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-store" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="Expires" content="600" />
+
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/pygments/perldoc.css">
+<link rel="stylesheet" href="/css/style.css?v=22122019">
+<link rel="stylesheet" href="/css/github.css?v=22122019">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154449679-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-154449679-1');
+</script>
+
+</head>
+<body class=" latestVersion">
+	 
+	<header>
+    <div class="header">
+        <nav class="nav-secondary-tabs affix" >
+            <div class="container-fluid">
+                <div class="navbar-collapse" aria-expanded="false" style="height: 1px;">
+                    <div class="sidebar-toggle">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</div>
+<div class="nav-container">
+    <a class="logo" href="/" title="Tizen Documentation">
+        Tizen
+    </a>
+    <div id="tabs">
+        
+        
+        <ul class="tabs" id="jsTOCHorizontal">
+            <li class="">
+                <a href="design/">Design</a>
+            </li>
+            <li class="">
+                <a href="application/">Platform</a>
+            </li>
+            <li class=" dropdown">
+                <a href="visualstudio/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visual Studio<span class="caret"></span></a>
+                <ul class="dropdown-menu nav-main">    
+                    <h6 class="dropdown-header">Visual Studio Tools For Tizen</h6>
+                    <li><a href="visualstudio/vstools/index/">VS Tools for Tizen</a></li>
+                    <h6 class="dropdown-header">Visual Studio Code Extension For Tizen</h6>
+                    <li><a href="visualstudio/vscode-ext/index/">/a>VS Code Extension For Tizen</li>
+                    <h6 class="dropdown-header">Visual Studio Code Extension For Tizen</h6>
+                    <li><a href="visualstudio/vstools-mac/overview/">VS For Mac Extension for Tizen</a></li>
+                 </ul>
+            </li>
+            <li class="active">
+                <a href="tizenstudio/setup/overview/">Tizen Studio</a>
+            </li>
+             <li class=" dropdown">
+                <a href="iot/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">IoT<span class="caret"></span></a>
+                <ul class="dropdown-menu nav-main">
+                    <li><a href="iot/extensionsdk/">IoT Extension SDK</a></li>
+                    <li><a href="iot/iot-partners/nubison/">IoT partners</a></li>
+                 </ul>
+            </li>
+            <li class="">
+                <a href="tizenstudio/setup/overview/">Blogs</a>
+            </li>
+            <li class="">
+                <a href="tizenstudio/setup/overview/">Community</a>
+            </li>
+        </ul>
+    </div>
+    <div class="ctrl-right hidden-xs hidden-sm">
+        <a href="javascript:void(0)" id="menu-toggle"><i class="fa fa-indent" aria-hidden="true"></i></a>
+        <div class="widgetVersionSwitcher"></div>
+    </div>
+    <div class="search-form">
+        <form action="search.html">
+            <input class="search-field form-control ds-input st-search-input" value="" name="q" placeholder="Search the docs" type="search" autocomplete="off" spellcheck="false" dir="auto">
+            <button type="submit" class="search-button">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+    </div>
+    
+</div>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+    <div class="wrapper right-open">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-body">
+					<main class="col-content content">
+						<section class="section">
+							<nav class="breadcrumbs bootstrap hidden-sm-down">
+   <ol class="breadcrumb list-unstyled" vocab="http://schema.org/" typeof="BreadcrumbList">
+
+       
+          
+      
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <a property="item" typeof="WebPage" href="/latest/">
+            <span property="name">Documentation</span>
+            <meta property="position" content="1" />
+         </a>
+      </li>
+       
+          
+      
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <a property="item" typeof="WebPage" href="/latest/tizenstudio/">
+            <span property="name">Tizen Studio</span>
+            <meta property="position" content="2" />
+         </a>
+      </li>
+       
+          
+      
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <span property="name">Troubleshooting</span>
+         <meta property="position" content="3" />
+      </li>
+      
+   </ol>
+</nav>
+
+
+							<div class="widgetLatestVersionNotification"></div>
+							<h1 class="page-title">
+								Troubleshooting
+							</h1>
+							<div class="page-read-time">
+								<span class="reading-time" title="Estimated read time">
+    
+    
+    7 mins read
+    
+</span>
+							</div>
+							<div class="page-content">
+								<h2 id="troubleshooting">Troubleshooting</h2>
+
+<p>This page provides the information needed to troubleshoot Tizen Studio. Participate in the <a href="https://developer.tizen.org/forums">Tizen User Community forum</a>, and suggest ways to improve the documentation. This page describes methodologies, techniques, and procedures for troubleshooting problems that might arise in the day-to-day operations while using Tizen Studio.</p>
+
+<h2 id="issue-haxm-fails-to-install">Issue: HAXM fails to install</h2>
+<p><strong>Description:</strong> You encounter an HAXM installation failure.</p>
+
+<p><strong>Solution:</strong></p>
+<ul>
+  <li>Ensure that <strong>VT</strong>, <strong>Execute Disable Bit</strong> option is enabled in BIOS</li>
+  <li>
+    <p>Ensure that <strong>Data Execution Prevention</strong> is enabled in Windows®</p>
+
+    <ul>
+      <li>
+        <p>To enable <strong>Data Execution Prevention</strong>On the Windows®, follow these steps:</p>
+
+        <ol>
+          <li>Click <strong>Control Panel &gt; System and Security &gt; System</strong>.</li>
+          <li>Select <strong>Advanced system settings</strong>.</li>
+          <li>In the left navigation bar, Click <strong>Advanced</strong>.</li>
+          <li>In <strong>Performance section</strong>, click <strong>Settings</strong>.</li>
+          <li>In <strong>Performance Options</strong> dialogue window that appears, click <strong>Data Execution Prevention</strong>.</li>
+          <li>Select <strong>Turn on DEP</strong>.</li>
+          <li>Click <strong>Apply</strong> and click <strong>OK</strong>.</li>
+        </ol>
+      </li>
+    </ul>
+  </li>
+  <li>Ensure that <strong>Hyper-V</strong> is disabled (on Windows® 8 or after).
+    <ol>
+      <li>In the <strong>Start</strong> menu Run <strong>Programs and Features</strong>.<br />
+<img src="./media/hardware_run_program.png" alt="Run Programs and Features" /></li>
+      <li>In the <strong>Programs and Features</strong> window, click <strong>Turn Windows features on or off</strong>.</li>
+      <li>In the <strong>Turn Windows features on or off</strong> window that appears, disable <strong>Hyper-V</strong> and click <strong>OK</strong>.<br />
+<img src="./media/hardware_hyper_v.png" alt="Disable Hyper-V" /></li>
+      <li>Reboot the computer.</li>
+    </ol>
+  </li>
+</ul>
+
+<h2 id="issue-haxm-installation-fails-due-to-intel-execute-disable-xd-bit-capability">Issue: HAXM installation fails due to Intel Execute Disable (XD) Bit capability</h2>
+
+<p><strong>Description:</strong>
+ While installing Intel HAXM, you may encounter an error regarding the Intel XD support.
+  This error message can be triggered by the following conditions:</p>
+
+<ul>
+  <li>Intel XD is not supported by your computer�s processor</li>
+  <li>Intel XD is not enabled</li>
+</ul>
+
+<p><strong>Solution:</strong></p>
+<ul>
+  <li><strong>For Intel XD not supported</strong></li>
+</ul>
+
+<p>Intel HAXM requires an Intel processor with Execute Disable (XD) Bit functionality and cannot be used on systems not supporting this hardware feature. To determine the capabilities of your Intel processor, see [official site] (http://ark.intel.com/).</p>
+
+<ul>
+  <li><strong>For Intel XD not enabled</strong>
+    <blockquote>
+      <p><strong>Note</strong></p>
+
+      <p>Apple based computers have Intel XD permanently enabled, if the feature is supported by the processor.</p>
+    </blockquote>
+  </li>
+</ul>
+
+<p>If you receive an error message that Intel XD is not enabled, it implies that your computer does not meet the minimum system requirements to use Intel HAXM.In addition, to determine the capabilities of your Intel processor, see <a href="http://ark.intel.com/">official site</a>.</p>
+
+<h2 id="issue-haxm-installation-fails-due-to-intel-virtualization-technology-vt-x">Issue: HAXM installation fails due to Intel Virtualization Technology (VT-x)</h2>
+<p><strong>Description:</strong>
+  When installing Intel HAXM, you may encounter an error regarding Intel VT-x support. This error message can be triggered by the following conditions:</p>
+
+<ul>
+  <li>Intel VT-x is not supported by your computer�s processor</li>
+  <li>Intel VT-x is not enabled</li>
+</ul>
+
+<p><strong>Resolution:</strong></p>
+<ul>
+  <li><strong>Intel VT-x is not supported</strong></li>
+</ul>
+
+<p>Intel HAXM requires an Intel processor with Intel VT-x functionality and cannot be used on systems lacking this hardware feature. To determine the capabilities of your Intel processor, see <a href="http://ark.intel.com/">official site</a>.</p>
+
+<ul>
+  <li><strong>Intel VT-x is not enabled</strong>
+    <blockquote>
+      <p><strong>Note</strong></p>
+
+      <p>Apple based computers have Intel VT-x permanently enabled, if the feature is supported by the processor.</p>
+    </blockquote>
+  </li>
+</ul>
+
+<p>If you receive an error message indicating that Intel VT is not enabled, your computer does not meet the minimum system requirements to use Intel HAXM. To determine the capabilities of your Intel processor, see the <a href="http://ark.intel.com/">official site</a>.</p>
+
+<h2 id="issue-visual-studio-throws-errors-when-using-tizennetsdk-100">Issue: Visual Studio throws errors when using Tizen.NET.SDK 1.0.0</h2>
+
+<p><strong>Description:</strong></p>
+
+<p>Visual Studio Tools for Tizen support Visual Studio 2019 (16.0 or higher version), yet you encounter errors while using Tizen.NET.SDK 1.0.0 or 1.0.1 as shown in the following:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Severity    Code	    Description	Project	File	Line	   Suppression State
+Error	  NETSDK1013	The TargetFramework value 'tizen40' was not recognized. It may be misspelled. If not, then the TargetFrameworkIdentifier and/or TargetFrameworkVersion properties must be specified explicitly.	AnalogWatch.Tizen.Wearable	C:\Program Files\dotnet\sdk\2.1.700\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.TargetFrameworkInference.targets	96
+</code></pre></div></div>
+<p><strong>Resolution:</strong></p>
+
+<p>This error occurs due to the recent changes in visual studio project system. You can resolve the issue by following
+either of the options:</p>
+
+<ol>
+  <li>
+    <p>Use Tizen.NET.Sdk 1.0.3
+Since Tizen.NET.Sdk 1.0.3, Tizen.NET can be used as a custom SDK for MSBuild.</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;Project Sdk="Tizen.NET.Sdk/1.0.3"&gt;
+
+&lt;PropertyGroup&gt;
+   &lt;OutputType&gt;Exe&lt;/OutputType&gt;
+   &lt;TargetFramework&gt;tizen40&lt;/TargetFramework&gt;
+&lt;/PropertyGroup&gt;
+
+&lt;/Project&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Use Microsoft.NET.Sdk, if you want to continue working with existing Tizen project using legacy Tizen.NET.Sdk. Add the following lines to your <strong>csproj</strong> file:</p>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;Project Sdk="Microsoft.NET.Sdk"&gt;
+
+&lt;PropertyGroup&gt;
+   &lt;OutputType&gt;Exe&lt;/OutputType&gt;
+   &lt;TargetFramework&gt;tizen40&lt;/TargetFramework&gt;
+   &lt;!- Workaround: Set TargetFrameworkIdentifier to avoid Tizen TFM issue on VS2019 --&gt;
+   &lt;TargetFrameworkIdentifier&gt;Tizen&lt;/TargetFrameworkIdentifier&gt; 
+   &lt;TargetFrameworkVersion&gt;v4.0&lt;/TargetFrameworkVersion&gt;
+&lt;/PropertyGroup&gt;
+
+&lt;/Project&gt;
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="issue-cannot-use-external-library-fsharpcoredll-in-net-core-sdk-preview-version">Issue: Cannot use external library (FSharp.Core.dll) in .NET Core SDK preview version</h2>
+<p><strong>Description:</strong>  While trying to use external libraries, you get an error.</p>
+
+<p><strong>Resolution:</strong></p>
+
+<ol>
+  <li>Switch from .NET Core SDK preview version (v3.0.0-preview5) to .NET Core SDK preview version 2.2.102</li>
+  <li>Build using Visual Studio (right click on the <strong>Project &gt; Build</strong>) and the FSharp.Core.dll library gets included in the build directory, and using the functions from FSharp.Core will also resolve the issue.</li>
+</ol>
+
+<h2 id="issue-screen-reader-not-working">Issue: Screen Reader not working</h2>
+
+<p><strong>Description:</strong> 
+The screen reader is not working</p>
+
+<p><strong>Resolution:</strong></p>
+<ul>
+  <li>Check whether the accessibility TTS(screen reader - voice assistant) and SystemSettings.AccessibilityTtsEnabled is enabled. For more information, see <a href="https://developer.tizen.org/dev-guide/csapi/api/Tizen.System.SystemSettings.html#Tizen_System_SystemSettings_AccessibilityTtsEnabled">Accessibility</a>.</li>
+</ul>
+
+<h2 id="issue-emulator-terminates-unexpectdly-on-macos">Issue: Emulator terminates unexpectdly on MacOS®</h2>
+
+<p><strong>Description:</strong> If you use a Macbook that has both Intel HD and NVIDIA graphics, the emulator terminates nexpectedly while you execute the emulator with OpenGL ES version 1.1 or 2.0.</p>
+
+<p><strong>Resolution:</strong></p>
+<ol>
+  <li>Verify the emulator configuration in <strong>Emulator Manager</strong>.</li>
+  <li>On <strong>General tab</strong> in the Emulator configuration window, set <strong>OpenGL ES version to version 2.0</strong> or to <strong>version 3.0.</strong></li>
+</ol>
+
+<h2 id="issue-ui-display-perspective-issues-on-macos">Issue: UI display perspective issues on MacOS</h2>
+<p><strong>Description:</strong> : After updating Tizen Studio, UI perspectives are not displayed properly.</p>
+
+<p><strong>Resolution:</strong></p>
+
+<ul>
+  <li>
+    <p>In MacOS, if the UI perspectives are not displayed properly, after you update Tizen Studio. It is recommended to restart the IDE, doing so clears the cache from the previous installation.</p>
+  </li>
+  <li>
+    <p>In case, you see any old perspective, it is recommended to create a new workspace and import the projects to the new workspace to resolve the issue.</p>
+  </li>
+</ul>
+
+<h2 id="issue-not-able-to-view-connection-explorer">Issue: Not able to view Connection Explorer</h2>
+
+<p><strong>Description:</strong> Cannot view Connection Explorer.</p>
+
+<p><strong>Resolution:</strong>
+Since Tizen Studio 2.0 and higher,<strong>Connection Explorer</strong> is replaced with <strong>Device Manager</strong>. Additionally, You can fix this issues in following ways:</p>
+
+<ul>
+  <li>Reset the perspective:
+    <ol>
+      <li>In Tizen Studio menu, select <strong>Window &gt; Perspective &gt; Reset Perspective</strong>.</li>
+      <li>After updating Tizen Studio to higher version, run the following command:
+<code class="highlighter-rouge">eclipse.exe -clean -clearPersistedState</code></li>
+      <li>Launch the Tizen Studio normally.</li>
+    </ol>
+  </li>
+</ul>
+
+<blockquote>
+  <p><strong>Note:</strong></p>
+
+  <p>You can create unit tests for Tizen Studio versions higher than 2.3.1.</p>
+</blockquote>
+
+<h2 id="issue-preview-tab-does-not-appear">Issue: Preview tab does not appear</h2>
+
+<p><strong>Description:</strong></p>
+
+<p>The preview tab in the Web Page Editor does not appear.</p>
+
+<p><strong>Resolution:</strong></p>
+<ul>
+  <li>Use Web SDK HTML Editor, that enhanced features compared to the Web Page Editor.</li>
+  <li>Instead of the preview tab in the Web Page Editor, use the preview feature by pressing the <strong>Ctrl + 4</strong> combination of keys in Web SDK HTML Editor.</li>
+  <li>In Rapid Development Support (RDS) mode, the web unit test result is not updated.</li>
+</ul>
+
+<h2 id="issue-cannot-launch-tizen-studio-with-gdb-client">Issue: Cannot launch Tizen Studio with GDB Client</h2>
+
+<p><strong>Description:</strong> Tizen Studio fails to launch with GDB client on Ubuntu 18.04
+<strong>Resolution:</strong></p>
+
+<p>Ubuntu 18.04 does not come with readline6 dev package,to install the readline6 dev package, run the following command, for 64 bit system:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ wget http://mirrors.edge.kernel.org/ubuntu/pool/main/r/readline6/libreadline6-dev_6.3-8ubuntu2_amd64.deb
+$ wget http://mirrors.edge.kernel.org/ubuntu/pool/main/r/readline6/libreadline6_6.3-8ubuntu2_amd64.deb 
+$ sudo dpkg -i libreadline6_6.3-8ubuntu2_amd64.deb
+$ sudo dpkg -i libreadline6-dev_6.3-8ubuntu2_amd64.deb 
+</code></pre></div></div>
+
+<p>Xenial (16.04) contains libreadline6-dev package, but Ubuntu 18.04 does not. You can download and install it with the preceding commands.</p>
+
+<h2 id="issue-emulator-stuck-at-booting-kernel">Issue: Emulator stuck at booting kernel</h2>
+
+<p><strong>Description:</strong> Emulator gets stuck at booting kernel</p>
+
+<p><strong>Resolution:</strong></p>
+
+<p>The cause for such an issue is that the user has insufficient permissions. To resolve this problem, after installing KVM for Ubuntu-18.04, run the following command:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo adduser $USER kvm
+</code></pre></div></div>
+<p>After the command is executed,  “kvm” group(/dev/kvm) will be added into the group file(/etc/group).</p>
+
+<blockquote>
+  <p><strong>Note</strong></p>
+
+  <p>To apply this change, you must restart or logout/login.</p>
+</blockquote>
+
+
+								
+            						
+
+
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = 'https://samsung-test.github.io/latest//tizenstudio/setup/troubleshooting/';
+      this.page.identifier = 'https://samsung-test.github.io/latest//tizenstudio/setup/troubleshooting/';
+    };
+    (function() {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://samsung-test.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+         						
+							</div>
+						</section>
+					</main>
+					<nav class="col-nav">
+						<div id="sidebar-nav" class="sidebar hidden-sm hidden-xs">
+						    
+
+
+<div id="navbar" class="nav-sidebar">
+    <ul class="nav" id="jsTOCLeftNav">
+        
+        
+        
+        
+    
+        <li>
+            <a 
+                href="tizenstudio/setup/overview/" 
+                data-target="#item1" 
+                data-toggle="collapse" 
+                data-parent="#stacked-menu"
+                aria-expanded=" true "
+                class=" not-collapsed "
+                >
+                    Tizen Studio
+                    <span class="caret arrow"></span>
+            </a>
+            
+
+            
+            <ul class="nav collapse in" aria-expanded="true" id="#item1">
+            
+
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="tizenstudio/setup/install-sdk/"
+                        class=""
+                        aria-expanded=" true "
+                        data-target="#item1" 
+                        data-toggle="collapse" 
+                        >
+                        Setup
+                        <span class="caret arrow"></span>
+                    </a>
+                    
+                    
+                    <ul class="nav collapse in" aria-expanded="true" id="#item1">
+                    
+                        
+                        <li>
+                            
+                            <a 
+                                href="tizenstudio/setup/windows/"
+                                class=""
+                                >
+                                Install on Windows
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a 
+                                href="tizenstudio/setup/ubuntu/"
+                                class=""
+                                >
+                                Install on Ubuntu
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a 
+                                href="tizenstudio/setup/mac/"
+                                class=""
+                                >
+                                Install on Mac
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a 
+                                href="tizenstudio/setup/tizen-cli/"
+                                class=""
+                                >
+                                Install using CLI
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="tizenstudio/setup/update-sdk/" 
+                        class=""
+                        >
+                        Update
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="tizenstudio/setup/uninstall-sdk/" 
+                        class=""
+                        >
+                        Uninstall
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="tizenstudio/setup/troubleshooting/" 
+                        class="active currentPage"
+                        >
+                        Troubleshoot Errors
+                    </a>
+                    
+                </li>
+                
+            </ul>
+            
+        </li>
+    
+        
+        
+        
+    
+        <li>
+            <a 
+                href="tizenstudio/setup/quick_start_guide" 
+                data-target="#item2" 
+                data-toggle="collapse" 
+                data-parent="#stacked-menu"
+                aria-expanded=" true "
+                class=" not-collapsed "
+                >
+                    Get Started
+                    <span class="caret arrow"></span>
+            </a>
+            
+
+            
+            <ul class="nav collapse in" aria-expanded="true" id="#item2">
+            
+
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="tizenstudio/setup/quick_start_guide/" 
+                        class=""
+                        >
+                        Web Application Development
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="tizenstudio/setup/quick_start_guide_tizen_app_ts/" 
+                        class=""
+                        >
+                        Wearable Application Development
+                    </a>
+                    
+                </li>
+                
+            </ul>
+            
+        </li>
+    
+        
+        
+        
+    
+        <li>
+            <a 
+                href="tizenstudio/setup/additional-requirements" 
+                data-target="#item3" 
+                data-toggle="collapse" 
+                data-parent="#stacked-menu"
+                aria-expanded=" true "
+                class=" not-collapsed "
+                >
+                    Configure Tizen Studio
+                    <span class="caret arrow"></span>
+            </a>
+            
+
+            
+            <ul class="nav collapse in" aria-expanded="true" id="#item3">
+            
+
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="tizenstudio/setup/hardware-accelerated-execution-manager/" 
+                        class=""
+                        >
+                        Hardware Acceleration for Tizen
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="tizenstudio/setup/hardware-accelerated-execution-manager/" 
+                        class=""
+                        >
+                        Hardware Acceleration for Tizen
+                    </a>
+                    
+                </li>
+                
+            </ul>
+            
+        </li>
+    
+        
+        
+        
+    
+        <li>
+            <a 
+                href="tizenstudio/setup/faq" 
+                data-target="#item4" 
+                data-toggle="collapse" 
+                data-parent="#stacked-menu"
+                aria-expanded=" true "
+                class=" not-collapsed "
+                >
+                    FAQ's
+                    <span class="caret arrow"></span>
+            </a>
+            
+        </li>
+    
+        
+        
+        
+    
+        <li>
+            <a 
+                href="tizenstudio/extension-sdk/overview" 
+                data-target="#item5" 
+                data-toggle="collapse" 
+                data-parent="#stacked-menu"
+                aria-expanded=" false "
+                class=" collapsed "
+                >
+                    Extension SDK
+                    <span class="caret arrow"></span>
+            </a>
+            
+
+            
+            <ul class="nav collapse" aria-expanded="false" id="#item5">
+            
+
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="tizenstudio/extension-sdk/in-app-purchase/"
+                        class=""
+                        aria-expanded=" false "
+                        data-target="#item1" 
+                        data-toggle="collapse" 
+                        >
+                        In app purchases
+                        <span class="caret arrow"></span>
+                    </a>
+                    
+                    
+                    <ul class="nav collapse" aria-expanded="false" id="#item1">
+                    
+                        
+                        <li>
+                            
+                            <a 
+                                href="tizenstudio/extension-sdk/inmobi/"
+                                class=""
+                                >
+                                In Mobi
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a 
+                                href="tizenstudio/extension-sdk/inmobi/"
+                                class=""
+                                >
+                                VMax
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+                
+            </ul>
+            
+        </li>
+    
+        
+        
+    </ul>
+</div>
+<script>
+    $("a[href$='/tizenstudio/setup/troubleshooting/']").addClass("active currentPage");
+</script>
+						</div>
+					</nav>
+					<div class="col-toc">
+						<div class="sidebar hidden-xs hidden-sm">
+							<div class="toc-nav">
+								<div class="feedback-links">
+									<ul>
+										<li>
+                                            <a href="https://github.com/samsung-test/samsung-test.github.io/edit/5.5/tizenstudio/setup/troubleshooting.md" target="_blank">
+                                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                                Edit Page
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://github.com/samsung-test/samsung-test.github.io/issues/new" class="nomunge" target="_blank">
+                                                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                                Report Issue
+                                            </a>
+                                        </li>
+									</ul>
+								</div>
+								   
+									<div id="side-toc-title">On this page:</div>
+									
+<ul id="my_toc" class="inline_toc">
+  <li><a href="#troubleshooting" class="nomunge">Troubleshooting</a></li>
+  <li><a href="#issue-haxm-fails-to-install" class="nomunge">Issue: HAXM fails to install</a></li>
+  <li><a href="#issue-haxm-installation-fails-due-to-intel-execute-disable-xd-bit-capability" class="nomunge">Issue: HAXM installation fails due to Intel Execute Disable (XD) Bit capability</a></li>
+  <li><a href="#issue-haxm-installation-fails-due-to-intel-virtualization-technology-vt-x" class="nomunge">Issue: HAXM installation fails due to Intel Virtualization Technology (VT-x)</a></li>
+  <li><a href="#issue-visual-studio-throws-errors-when-using-tizennetsdk-100" class="nomunge">Issue: Visual Studio throws errors when using Tizen.NET.SDK 1.0.0</a></li>
+  <li><a href="#issue-cannot-use-external-library-fsharpcoredll-in-net-core-sdk-preview-version" class="nomunge">Issue: Cannot use external library (FSharp.Core.dll) in .NET Core SDK preview version</a></li>
+  <li><a href="#issue-screen-reader-not-working" class="nomunge">Issue: Screen Reader not working</a></li>
+  <li><a href="#issue-emulator-terminates-unexpectdly-on-macos" class="nomunge">Issue: Emulator terminates unexpectdly on MacOS®</a></li>
+  <li><a href="#issue-ui-display-perspective-issues-on-macos" class="nomunge">Issue: UI display perspective issues on MacOS</a></li>
+  <li><a href="#issue-not-able-to-view-connection-explorer" class="nomunge">Issue: Not able to view Connection Explorer</a></li>
+  <li><a href="#issue-preview-tab-does-not-appear" class="nomunge">Issue: Preview tab does not appear</a></li>
+  <li><a href="#issue-cannot-launch-tizen-studio-with-gdb-client" class="nomunge">Issue: Cannot launch Tizen Studio with GDB Client</a></li>
+  <li><a href="#issue-emulator-stuck-at-booting-kernel" class="nomunge">Issue: Emulator stuck at booting kernel</a></li>
+</ul>
+
+
+								</div>
+								
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+    <div class="container-fluid">
+  <div class="top_footer">
+    <div class="footer-nav">
+      <nav class="footer_sub_nav">
+        <ul class="menu">
+          <li><a href="https://developer.tizen.org/">Developer</a></li>
+          <li><a href="https://dashboard.tizen.org/">Dashboard</a></li>
+          <li><a href="https://craftroom.tizen.org/">Craftroom</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="bottom_footer">
+    <div class="footer-copyright col-xs-12 col-md-8">
+      <p class="copyright">
+        Copyright &copy; 2019 Tizen Inc. All rights reserved.
+      </p>
+    </div>
+    <div class="footer_social_nav">
+      <ul class="nav-social">
+        <li class="fa fa-github"><a href="https://github.com/samsung-test">GitHub</a></li>  
+        <li class="fa fa-twitter"><a href="https://twitter.com/TizenProject">Twitter</a></li>
+        <li class="fa fa-facebook"><a href="http://www.facebook.com/pages/Tizen-Project">Facebook</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+    <div id="templates"></div>
+    <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/common.js?v=22122019"></script>
+<script type="text/javascript" src="/js/handlebars-v4.0.11.js?v=22122019"></script>
+<script type="text/javascript" src="/js/widgets-data.js?v=22122019"></script>
+<script type="text/javascript" src="/js/widgets.js?v=22122019"></script>
+<script type="text/javascript" src="/js/highlight.pack.js"></script>
+<script type="text/javascript" src="/js/tocs.js"></script>
+<script type="text/javascript" src="/js/menu.js"></script>
+<script type="text/javascript" src="/js/stickyfill.min.js"></script>
+<script type="text/javascript" src="/js/metadata.js"></script>
+<script type="text/javascript" src="/js/docs.js"></script>
+
+</body>
+</html>
