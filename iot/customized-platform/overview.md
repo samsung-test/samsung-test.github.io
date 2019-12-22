@@ -1,5 +1,5 @@
 ---
-Title:Customized Platform Guide (Only for Tizen 4.0)
+title: Customized Platform Guide (Only for Tizen 4.0)
 ---
 
 ## Introduction
