@@ -1,66 +1,66 @@
 - sidebar:
       - title: IoT Extension SDK
-        url: iot/extensionsdk/index/
+        url: iot/index/
         subfolderitems:
           - page: IOT Git Repository Structure
-            url: iot/extensionsdk/about/git-repo-structure/
+            url: iot/about/git-repo-structure/
           - page: Typographic Conventions
-            url: iot/extensionsdk/about/conventions/
+            url: iot/about/conventions/
       - title: IoT Developing
-        url: iot/extensionsdk/developing/installing
+        url: iot/developing/installing
         subfolderitems:
           - page: Installing Development Tools
-            url: iot/extensionsdk/developing/installing/ 
+            url: iot/developing/installing/ 
           - page: Setting up Development Environment
-            url:  iot/extensionsdk/developing/setting-up/
+            url:  iot/developing/setting-up/
           - page: Cloning Tizen Source Files
-            url: iot/extensionsdk/developing/cloning/
+            url: iot/developing/cloning/
           - page: Building Packages Locally with GBS
-            url: iot/extensionsdk/developing/building/
+            url: iot/developing/building/
           - page: Building All Packages Locally with GBS
-            url: iot/extensionsdk/developing/building-all/
+            url: iot/developing/building-all/
           - page: Contributing Code to Tizen
-            url: iot/extensionsdk/developing/contributing/
+            url: iot/developing/contributing/
           - page: Creating Tizen Images with MIC
-            url: iot/extensionsdk/developing/creating/
+            url: iot/developing/creating/
           - page: Flashing an Image to Device
-            url: iot/extensionsdk/developing/flashing/
+            url: iot/developing/flashing/
           - page: Development Tips
-            url: iot/extensionsdk/developing/tips/ 
+            url: iot/developing/tips/ 
       - title: Porting
-        url: iot/extensionsdk/porting/overview/
+        url: iot/porting/overview/
         subfolderitems:
           - page: Overview
-            url: iot/extensionsdk/porting/overview/
+            url: iot/porting/overview/
           - page: Kernel
-            url: iot/extensionsdk/porting/kernel/
+            url: iot/porting/kernel/
           - page: System
-            url: iot/extensionsdk/porting/system/
+            url: iot/porting/system/
           - page: Graphics and UI
-            url: iot/extensionsdk/porting/graphics-and-ui/          
+            url: iot/porting/graphics-and-ui/          
       - title: Reference
-        url: iot/extensionsdk/reference/gerrit-usage/
+        url: iot/reference/gerrit-usage/
         subfolderitems:
           - page: Gerrit
-            url: iot/extensionsdk/reference/gerrit-usage/
+            url: iot/reference/gerrit-usage/
           - page: Git Build System (GBS)
-            url:  iot/extensionsdk/reference/gbs/gbs-overview/      
+            url:  iot/reference/gbs/gbs-overview/      
             subfolderitems:
                - page: Overview
-                 url: iot/extensionsdk/reference/gbs/gbs-overview/
+                 url: iot/reference/gbs/gbs-overview/
                - page: GBS Configuration
-                 url: iot/extensionsdk/reference/gbs/gbs.conf/
+                 url: iot/reference/gbs/gbs.conf/
                - page: GBS Maintenance Models
-                 url: iot/extensionsdk/reference/gbs/gbs-maintenance-models/
+                 url: iot/reference/gbs/gbs-maintenance-models/
           - page: MIC Image Creator
-            url: iot/extensionsdk/reference/mic/mic-overview/
+            url: iot/reference/mic/mic-overview/
             subfolderitems:
                - page: Overview
-                 url: iot/extensionsdk/reference/mic/mic-overview/
+                 url: iot/reference/mic/mic-overview/
                - page: Customizing Images
-                 url: iot/extensionsdk/reference/mic/mic-customize-image/
+                 url: iot/reference/mic/mic-customize-image/
                - page: MIC Reference
-                 url: iot/extensionsdk/reference/mic/mic-reference/
+                 url: iot/reference/mic/mic-reference/
       - title: IoT Partners
         url: iot/iot-partners/nubison/
         subfolderitems:
