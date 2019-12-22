@@ -1,0 +1,52 @@
+- sidebar:
+      - title: .NET Application
+        url: /visualstudio/
+        subfolderitems:
+          - page: Get Started
+            url: visualstudio/get-started/overview/
+            subfolderitems:
+              - page: TV 
+                url: visualstudio/tv/first-app
+              - page: Wearable 
+                url: visualstudio/wearable/first-app/
+              - page: Mobile
+                url: visualstudio/mobile/first-app/
+              - page: NUI
+                url: visualstudio/nui/quickstart/
+          - page: Guides
+            url: visualstudio/setup/update-sdk/
+          - page: Uninstall 
+            url: visualstudio/setup/uninstall-sdk/
+          - page: Troubleshoot Errors
+            url: visualstudio/setup/troubleshooting/
+      - title: Get Started
+        url: visualstudio/setup/quick_start_guide
+        subfolderitems:
+          - page: Web Application Development 
+            url: visualstudio/setup/quick_start_guide/
+          - page: Wearable Application Development 
+            url: visualstudio/setup/quick_start_guide_tizen_app_ts/
+      - title: Configure Tizen Studio
+        url: visualstudio/setup/additional-requirements
+        subfolderitems:
+          - page: Hardware Acceleration for Tizen
+            url: visualstudio/setup/hardware-accelerated-execution-manager/
+          - page: Hardware Acceleration for Tizen
+            url: visualstudio/setup/hardware-accelerated-execution-manager/
+      - title: Frequently Asked Questions
+        url: visualstudio/setup/faq
+      - title: Extension SDK
+        url: visualstudio/extension-sdk/overview
+        subfolderitems:
+          - page: In app purchases
+            url: visualstudio/extension-sdk/in-app-purchase/
+            subfolderitems: 
+              - page: In Mobi 
+                url: visualstudio/extension-sdk/inmobi/
+              - page: VMax
+                url: visualstudio/extension-sdk/inmobi/
+            
+          
+           
+             
+  
