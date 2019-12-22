@@ -2,8 +2,8 @@
       - title: IoT
         url: iot/
         subfolderitems:
-          - page: IOT Development Workflow
-            url: iot/about/work-flow/
+          - page: IoT Extension SDK
+            url: iot/extensionsdk/
           - page: IOT Git Repository Structure
             url: iot/about/git-repo-structure/
           - page: Typographic Conventions
