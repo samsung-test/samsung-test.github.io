@@ -1,7 +1,6 @@
 ---
 title: Installation
 ---
-# Overview 
 
 **Tizen Studio 3.5 is now launched!**
 
