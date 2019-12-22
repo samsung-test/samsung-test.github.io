@@ -1,6 +1,6 @@
 - sidebar:
       - title: .NET Application
-        url: /visualstudio/
+        url: /visualstudio/index
         subfolderitems:
           - page: Get Started
             url: visualstudio/get-started/overview/
