@@ -1,13 +1,28 @@
 - sidebar:
       - title: Platform Overview
-        url: platform/about/work-flow/
+        url: platform/about/index/
         subfolderitems:
-          - page: Platform Development Workflow
-            url: platform/about/work-flow/
-          - page: Platform Git Repository Structure
-            url: platform/about/git-repo-structure/
-          - page: Typographic Conventions
-            url: platform/about/conventions/
+          - page: Profiles
+            url: platform/what-is-tizen/overview/
+            subfolderitems:
+              - page: Wearables
+                url: platform/what-is-tizen/profiles/wearable/ 
+              - page: TV
+                url: platform/what-is-tizen/profiles/tv/
+              - page: Mobile
+                url: platform/what-is-tizen/profiles/mobile/
+      - title: Versions
+        url: platform/what-is tizen/index/
+        subfolderitems:
+          - page: Profiles
+            url: platform/what-is-tizen/overview/
+            subfolderitems:
+              - page: Wearables
+                url: platform/what-is-tizen/wearable/ 
+              - page: TV
+                url: platform/what-is-tizen/tv/
+              - page: Mobile
+                url: platform/what-is-tizen/mobile/    
       - title: Platform Developing
         url: platform/developing/installing/
         subfolderitems:

@@ -1,3 +1,11 @@
+---
+title: Tizen Wearable
+desc: Tizen Wearable
+
+keywords: Tizen, OS, Open Source, Install 
+comments: true
+---
+
 # Tizen Wearable
 
 Tizen Wearable profile makes it easy to develop applications for wearable rotary devices or sensors that support rotary events for user interaction. A rotary device can rotate clockwise or counter-clockwise, and dispatch an event for each movement.

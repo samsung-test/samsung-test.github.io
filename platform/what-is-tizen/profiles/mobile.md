@@ -1,3 +1,10 @@
+---
+title: Tizen Mobile
+desc: Tizen Mobile
+keywords: Tizen, OS, Open Source, Install 
+comments: true
+---
+
 # Tizen Mobile
 
 Tizen Mobile profile provides an effortless mobile experience with Tizen OS and a clutter-free, intuitive interface making it easy to understand and use. The profile comes preloaded with essential applications for the ease of new smart phone users. The device manufacture makes mobile devices more efficient; for example, the Ultra Data Saving mode in Samsung Z2 saves up to 40% in mobile data traffic by blocking unnecessary background applications from consuming data and by using a data compression technology, hence ensuring the simplest and most cost-efficient 4G experience.

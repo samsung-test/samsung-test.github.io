@@ -1,3 +1,10 @@
+---
+title: Tizen TV
+desc: Tizen TV
+keywords: Tizen, OS, Open Source, Install 
+comments: true
+---
+
 # Tizen TV
 
 Tizen TV profile allows you to develop applications for Samsung Smart TVs.
