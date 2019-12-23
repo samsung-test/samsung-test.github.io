@@ -1,8 +1,10 @@
 - sidebar:
       - title: Tizen Studio
-        url: tizenstudio/setup/overview/
+        url: tizenstudio/setup/about-ide/
         subfolderitems:
-          - page: Setup
+          - page: Overview
+            url: tizenstudio/setup/install-sdk/
+          - page: Installation 
             url: tizenstudio/setup/install-sdk/
             subfolderitems:
               - page: Install on Windows 
