@@ -7,7 +7,7 @@
                 subfolderitems:
               - page: API privilege Checker 
                 url: visualstudio/vstools/api-privilege-checker/
-              - page: Certificate Manager T
+              - page: Certificate Manager 
                 url: visualstudio/vstools/certificate-manager/
               - page: Device Manager 
                 url: visualstudio/vstools/device-manager/
