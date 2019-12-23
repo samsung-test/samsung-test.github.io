@@ -13,6 +13,22 @@
                 url: visualstudio/get-started/mfirst-app/
               - page: NUI
                 url: visualstudio/get-started/quickstart/
+      - title: Visual Studio Tools For Tizen 
+        url: visualstudio/vstools/index/
+        subfolderitems:
+              - page: Tools  
+                url: #
+      - title: Visual Studio Code extension For Tizen
+        url: visualstudio/vscode-ext/index/
+        subfolderitems:
+              - page: Tools
+                url: #
+      - title: Visual Studio Mac Extension For Tizen 
+        url: visualstudio/vstools-mac/index/
+        subfolderitems:
+              - page: Tools
+                url: #
+
           
            
              
