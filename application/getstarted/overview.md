@@ -3,6 +3,7 @@ title:  Get Started with Web Applications
 desc: Get Started with Web Applications
 keywords: Tizen, OS, Open Source
 comments: true
+crumbtitle: Get Started
 ---
 
 # Get Started with Web Applications
