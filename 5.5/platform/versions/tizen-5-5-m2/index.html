@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon"  href="/favicon.ico" />
+<title>Tizen 5.5</title>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<base id="baseURL" href="/5.5/" />
+<meta id="docsVersion" content="5.5" />
+<meta name="last-modified" content="2019-12-23 11:05:39 +0530" />
+<meta http-equiv="cache-control" content="max-age=24" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-store" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="Expires" content="600" />
+
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/pygments/perldoc.css">
+<link rel="stylesheet" href="/css/style.css?v=23122019">
+<link rel="stylesheet" href="/css/github.css?v=23122019">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154449679-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-154449679-1');
+</script>
+
+</head>
+<body class=" latestVersion">
+	 
+	<header>
+    <div class="header">
+        <nav class="nav-secondary-tabs affix" >
+            <div class="container-fluid">
+                <div class="navbar-collapse" aria-expanded="false" style="height: 1px;">
+                    <div class="sidebar-toggle">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</div>
+<div class="nav-container">
+    <a class="logo" href="/" title="Tizen Documentation">
+        Tizen
+    </a>
+    <div id="tabs">
+        
+        
+        <ul class="tabs" id="jsTOCHorizontal">
+            <li class="">
+                <a href="design/">Design</a>
+            </li>
+            <li class="active">
+                <a href="platform/">Platform</a>
+            </li>
+            <li class="">
+                <a href="application/">Application</a>
+            </li>
+            <li class=" dropdown">
+                <a href="visualstudio/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visual Studio<span class="caret"></span></a>
+                <ul class="dropdown-menu nav-main">    
+                    <li><a href="visualstudio/vstools/index/">VS Tools for Tizen</a></li>
+                    <li><a href="visualstudio/vscode-ext/index/">VS Code Extension For Tizen</li>
+                    <li><a href="visualstudio/vstools-mac/overview/">VS For Mac Extension for Tizen</a></li>
+                 </ul>
+            </li>
+            <li class="">
+                <a href="tizenstudio/setup/overview/">Tizen Studio</a>
+            </li>
+             <li class=" dropdown">
+                <a href="iot/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">IoT<span class="caret"></span></a>
+                <ul class="dropdown-menu nav-main">
+                    <li><a href="iot/extensionsdk/">IoT Extension SDK</a></li>
+                    <li><a href="iot/iot-partners/nubison/">IoT partners</a></li>
+                 </ul>
+            </li>
+            <li class="">
+                <a href="tizenstudio/setup/overview/">Blogs</a>
+            </li>
+            <li class="">
+                <a href="tizenstudio/setup/overview/">Community</a>
+            </li>
+        </ul>
+    </div>
+    <div class="ctrl-right hidden-xs hidden-sm">
+        <a href="javascript:void(0)" id="menu-toggle"><i class="fa fa-indent" aria-hidden="true"></i></a>
+        <div class="widgetVersionSwitcher"></div>
+    </div>
+    <div class="search-form">
+        <form action="search.html">
+            <input class="search-field form-control ds-input st-search-input" value="" name="q" placeholder="Search the docs" type="search" autocomplete="off" spellcheck="false" dir="auto">
+            <button type="submit" class="search-button">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+    </div>
+    
+</div>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+    <div class="wrapper right-open">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-body">
+					<main class="col-content content">
+						<section class="section">
+							<nav class="breadcrumbs bootstrap hidden-sm-down">
+   <ol class="breadcrumb list-unstyled" vocab="http://schema.org/" typeof="BreadcrumbList">
+
+       
+          
+      
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <a property="item" typeof="WebPage" href="/5.5/">
+            <span property="name">Documentation</span>
+            <meta property="position" content="1" />
+         </a>
+      </li>
+       
+          
+      
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <a property="item" typeof="WebPage" href="/5.5/platform/">
+            <span property="name">Platform</span>
+            <meta property="position" content="2" />
+         </a>
+      </li>
+       
+          
+      
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <span property="name">Tizen 5.5</span>
+         <meta property="position" content="3" />
+      </li>
+      
+   </ol>
+</nav>
+
+
+							<div class="widgetLatestVersionNotification"></div>
+							<h1 class="page-title">
+								Tizen 5.5
+							</h1>
+							<div class="page-read-time">
+								<span class="reading-time" title="Estimated read time">
+    
+    
+    6 mins read
+    
+</span>
+							</div>
+							<div class="page-content">
+								<h1 id="tizen-55">Tizen 5.5</h1>
+
+<p><a href="../../release-notes/tizen-5-5-m2.md">The second milestone (M2) release of Tizen 5.5</a> was announced in October 2019.
+Tizen is an open-source operating system (OS) maintained by Samsung and is developed and optimized for smart devices since 2012.
+Currently, more than 130+ million Tizen-based devices such as TVs, watches, Family-Hubs, IoT based home appliances, and so on are commercialised.</p>
+
+<p>The following Samsung devices are commercialised with Tizen OS:
+Samsung TVs (launched in 2015), Galaxy Wearables (launched in 2014), Family-Hub Refrigerators (launched in 2016), Smart Signage (launched in 2019), Air Conditioners (launched in 2019), Flip board (launched in 2019) and so on.</p>
+
+<p>The key features of Tizen 5.5 are the enhancement of development environment and core, supporting AI component and the expansion of IoT profile.</p>
+
+<h2 id="enhancement-of-development-environment-and-core-component">Enhancement of Development Environment and Core Component</h2>
+
+<ul>
+  <li>
+    <p><strong>Tizen .NET</strong></p>
+
+    <p>It is the development environment for developing high quality and high performance application in C#. There is the enhancement in Tizen Development environment in Tizen 5.5.</p>
+
+    <p>The latest Xamarin.Forms 4.0 and the latest .NET Core 3.0 are now supported. Xamarin.Forms on Tizen .NET is a complete cross-platform UI toolkit that allows you to create native UI. The latest .NET Core supports unloading DLL, AOT, pre-loading, pre-initialization, Tiered complications and MPGO for enhancing application launching time. Also, there is memory optimization by reducing relocation of DLL files, pre-loading for resource sharing and so on. The .NET Core 3.0 Runtime is faster, lighter than its previous version. With all these enhancements, the application launching time is reduced by 28% and memory usage is reduced by 20%. New Tizen extension for the official visual studio for Mac is also released in Tizen 5.5. The key features of the Tizen extension are the Tizen.NET application development environment, the Tizen IDE tools, and the application debugging using .NET Core debugger.</p>
+
+    <p><img src="media/5.5_1_XamarinForms.png" alt="img" /></p>
+
+    <p><img src="media/5.5_2_VisualStudio.png" alt="img" /></p>
+  </li>
+  <li>
+    <p><strong>Watchface Complication API</strong></p>
+
+    <p>Tizen 5.5 provides an easy way to create custom complications in a watch face. These APIs provide various kinds of complication types. You can deploy various kinds of complication services such as health, battery, air pollution, and so on by using these APIs.</p>
+
+    <p><img src="media/5.5_3_Complication.png" alt="img" /></p>
+  </li>
+  <li>
+    <p><strong>Supports Lottie animation</strong></p>
+
+    <p>The Lottie animations are supported in Tizen 5.5. Lottie was named by AirBnB. It is a library that renders ‘After Effects animations’ in real time. The animation is exported as a Lottie file which has a JSON format. The file contains information about visual shapes such as rectangle, circle, path and fill methods like the traditional vector graphics elements.</p>
+
+    <p><img src="media/5.5_3_Lottie.png" alt="img" /></p>
+  </li>
+  <li>
+    <p><strong>Multi-assistant Framework</strong></p>
+
+    <p>It aims to support various AI assistants at the same time for better usability. The framework defines a common interface for making an assistant of the multi-assistant framework. It also provides an expandable wake-up engine that recognizes invocation keyword for each assistant and supports to add a new keyword.</p>
+  </li>
+  <li>
+    <p><strong>Multi-device distributed web engine</strong></p>
+
+    <p>It is designed for both memory resource requirements mitigation and JavaScript execution speed enhancement to overcome the resource constraints of the low-end devices. With the prior multi-process design of the web engine, the memory usage of the renderers becomes significant as multiple tabs are created. CPU resource consumption of the renderer processes is also substantial as web applications get complicated.
+To manage hardware resources and to make resource usage predictable in low-end devices, the multi-device distributed web engine introduces features for offloading renderer processes over the network to resource-free devices while the browser process runs on the local low-end device.</p>
+  </li>
+  <li>
+    <p><strong>User Awareness Framework</strong></p>
+
+    <p>Smart devices could provide useful services based on the user presence context. Tizen 5.5 supports User Awareness Framework based on multiple sensors. Currently, Wi-Fi, BLE, motion, and light sensors are supported and it could be extended to support other types of sensors based plug-in architecture.</p>
+  </li>
+</ul>
+
+<h2 id="on-device-ai">On Device AI</h2>
+
+<ul>
+  <li>
+    <p><strong>Machine Learning (ML)</strong></p>
+
+    <p>A new Tizen domain, Machine Learning (ML) is introduced along with its ML Inference API sets: “Pipeline ML API” and “Single ML API”. ML Inference API sets allow application developers to apply their machine learning mechanisms or neural network models easily and efficiently. Especially if the intelligence application has multiple sensors, multiple neural network models, and complex topology of data paths, Pipeline ML API can help implement the system efficiently with less time and effort. If developers need to use neural network models preloaded with the platform, APIs in Media Vision are appropriate because ML Inference APIs require developers to supply neural network models. In other words, for predefined special functions, Media Vision is appropriate and for general or custom functions, ML Inference is appropriate.</p>
+
+    <p>ML API sets are based on <a href="https://github.com/nnsuite/nnstreamer">NNStreamer</a> that allows construction of the GStreamer pipelines that consists of the conventional GStreamer media plugins and the neural network plugins. There are plans to expand its functionality to on-device training in the later releases of Tizen. The ML API set has two API subsets, Pipeline ML API and Single ML API. ML API sets of the current version of Tizen support machine learning inferences only.</p>
+
+    <p>Pipeline ML API set allows you to construct and execute GStreamer pipelines with the conventional GStreamer plugins and neural network plugins provided by NNStreamer. With this API set, you can construct pipelines with multiple instances of neural network models, input streams, and various stream path manipulators.</p>
+
+    <p>For input streams, you may use camera, mic, files, or arbitrary inputs from applications. However, your applications need to acquire appropriate privileges for the given inputs. For output streams, you may use files or callback functions of the application. Single ML API set allows you to invoke a given neural network model such as .tflite TensorFlow-lite model file with a single instance of input buffer easily.</p>
+
+    <p>In Tizen 5.5, ML API sets allow TensorFlow-lite 1.13 and custom C libraries for model files. Although, NNStreamer itself supports more neural network frameworks such as TensorFlow, Caffe2, PyTorch, custom Python codes, Movidius NCSDK, and so on. However, device developers can install such frameworks and enable ML API sets to utilize such frameworks.</p>
+
+    <blockquote>
+      <p><strong>Note</strong></p>
+
+      <p>Few of the GStreamer plugins that are white-listed are allowed with Tizen Application APIs, on the other hand, all the plugins of NNStreamer are allowed.</p>
+    </blockquote>
+  </li>
+  <li>
+    <p><strong>Media Vision</strong></p>
+
+    <p>In Tizen 2.4 release, bar code recognition and generation features were added to Media Vision. Since then in Tizen 5.5 release, features such as detection, recognition and tracking of face and images have been added to Media Vision. These features are based on traditional computer vision technology and guarantee good execution speed on low-end hardware. With the rapid development of AI technology, the demand for DNN-based vision technologies has increased. In response to this growing trend, Media Vision has applied the AI Framework to some of the existing and new functions.
+In Tizen 5.5, you can recognize the face and facial landmark by calling MediaVision API, that is based on AI Frameworks such as Caffe and TF-Lite. In addition, an interface for image classification and object detection is also provided, and it is supported to use a reference model provided by Tizen or a model trained by developer.</p>
+  </li>
+</ul>
+
+<h2 id="building-an-iot-device-ecosystem">Building an IoT Device Ecosystem</h2>
+
+<p>To build the Tizen IoT device ecosystem. Tizen open-source community worked in collaboration with other partners. With the result, Tizen IoT profile supports open hardware platforms such as RPI3 and SDTA7X2.
+Several IoT Cloud solutions are also integrated in Tizen 5.5. Tizen 5.5 provides IoT Headless and IoT Headed profile based on the building blocks for supporting various purpose devices.
+Tizen 5.5 provides IoT total solution of the open hardware platform, platform OS and IoT cloud.</p>
+
+<p><img src="media/5.5_4_IoT.png" alt="img" /></p>
+
+<p>For more information, see <a href="https://docs.tizen.org/iot/iot-partners/">IoT Partners</a>.</p>
+
+								
+            						
+
+
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = 'https://samsung-test.github.io/5.5//platform/versions/tizen-5-5-m2/';
+      this.page.identifier = 'https://samsung-test.github.io/5.5//platform/versions/tizen-5-5-m2/';
+    };
+    (function() {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://samsung-test.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+         						
+							</div>
+						</section>
+					</main>
+					<nav class="col-nav">
+						<div id="sidebar-nav" class="sidebar hidden-sm hidden-xs">
+						    
+
+
+<div id="navbar" class="nav-sidebar">
+    <ul class="nav" id="jsTOCLeftNav">
+        
+        
+        
+        
+    
+        <li>
+            <a 
+                href="platform/about/index" 
+                data-target="#item1" 
+                data-toggle="collapse" 
+                data-parent="#stacked-menu"
+                aria-expanded=" false "
+                class=" collapsed "
+                >
+                    Platform Overview
+                    <span class="caret arrow"></span>
+            </a>
+            
+
+            
+            <ul class="nav collapse" aria-expanded="false" id="#item1">
+            
+
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/about/overview/"
+                        class=""
+                        aria-expanded=" false "
+                        data-target="#item1" 
+                        data-toggle="collapse" 
+                        >
+                        Profiles
+                        <span class="caret arrow"></span>
+                    </a>
+                    
+                    
+                    <ul class="nav collapse" aria-expanded="false" id="#item1">
+                    
+                        
+                        <li>
+                            
+                            <a 
+                                href="platform/about/wearable/"
+                                class=""
+                                >
+                                Wearables
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a 
+                                href="platform/about/tv/"
+                                class=""
+                                >
+                                TV
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a 
+                                href="platform/about/mobile/"
+                                class=""
+                                >
+                                Mobile
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/versions/tizen-5-5-m2/"
+                        class=""
+                        aria-expanded=" false "
+                        data-target="#item2" 
+                        data-toggle="collapse" 
+                        >
+                        Versions
+                        <span class="caret arrow"></span>
+                    </a>
+                    
+                    
+                    <ul class="nav collapse" aria-expanded="false" id="#item2">
+                    
+                        
+                        <li>
+                            
+                            <a 
+                                href="platform/versions/tizen-5-0-m2/"
+                                class=""
+                                >
+                                Tizen 5.0
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a 
+                                href="platform/versions/tizen-4-0-m2/"
+                                class=""
+                                >
+                                Tizen 4.0 M2
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a 
+                                href="platform/versions/tizen-4-0-m1/"
+                                class=""
+                                >
+                                Tizen 4.0 M1
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a 
+                                href="platform/versions/tizen-3-0/"
+                                class=""
+                                >
+                                Tizen 3.0
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+                
+            </ul>
+            
+        </li>
+    
+        
+        
+        
+    
+        <li>
+            <a 
+                href="platform/developing/installing/" 
+                data-target="#item2" 
+                data-toggle="collapse" 
+                data-parent="#stacked-menu"
+                aria-expanded=" false "
+                class=" collapsed "
+                >
+                    Platform Developing
+                    <span class="caret arrow"></span>
+            </a>
+            
+
+            
+            <ul class="nav collapse" aria-expanded="false" id="#item2">
+            
+
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/developing/installing/" 
+                        class=""
+                        >
+                        Installing Development Tools
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/developing/setting-up/" 
+                        class=""
+                        >
+                        Setting up Development Environment
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/developing/cloning/" 
+                        class=""
+                        >
+                        Cloning Tizen Source Files
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/developing/building/" 
+                        class=""
+                        >
+                        Building Packages Locally with GBS
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/developing/building-all/" 
+                        class=""
+                        >
+                        Building All Packages Locally with GBS
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/developing/contributing/" 
+                        class=""
+                        >
+                        Contributing Code to Tizen
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/developing/creating/" 
+                        class=""
+                        >
+                        Creating Tizen Images with MIC
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/developing/flashing/" 
+                        class=""
+                        >
+                        Flashing an Image to Device
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/developing/tips/" 
+                        class=""
+                        >
+                        Development Tips
+                    </a>
+                    
+                </li>
+                
+            </ul>
+            
+        </li>
+    
+        
+        
+        
+    
+        <li>
+            <a 
+                href="platform/porting/overview/" 
+                data-target="#item3" 
+                data-toggle="collapse" 
+                data-parent="#stacked-menu"
+                aria-expanded=" false "
+                class=" collapsed "
+                >
+                    Porting
+                    <span class="caret arrow"></span>
+            </a>
+            
+
+            
+            <ul class="nav collapse" aria-expanded="false" id="#item3">
+            
+
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/porting/overview/" 
+                        class=""
+                        >
+                        Overview
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/porting/kernel/" 
+                        class=""
+                        >
+                        Kernel
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/porting/system/" 
+                        class=""
+                        >
+                        System
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/porting/graphics-and-ui/" 
+                        class=""
+                        >
+                        Graphics and UI
+                    </a>
+                    
+                </li>
+                
+            </ul>
+            
+        </li>
+    
+        
+        
+        
+    
+        <li>
+            <a 
+                href="platform/reference/gerrit-usage" 
+                data-target="#item4" 
+                data-toggle="collapse" 
+                data-parent="#stacked-menu"
+                aria-expanded=" false "
+                class=" collapsed "
+                >
+                    Reference
+                    <span class="caret arrow"></span>
+            </a>
+            
+
+            
+            <ul class="nav collapse" aria-expanded="false" id="#item4">
+            
+
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/reference/gerrit-usage/" 
+                        class=""
+                        >
+                        Gerrit
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/reference/gbs/gbs-overview/"
+                        class=""
+                        aria-expanded=" false "
+                        data-target="#item2" 
+                        data-toggle="collapse" 
+                        >
+                        Git Build System (GBS)
+                        <span class="caret arrow"></span>
+                    </a>
+                    
+                    
+                    <ul class="nav collapse" aria-expanded="false" id="#item2">
+                    
+                        
+                        <li>
+                            
+                            <a 
+                                href="platform/reference/gbs/gbs-overview/"
+                                class=""
+                                >
+                                Overview
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a 
+                                href="platform/reference/gbs/gbs.conf/"
+                                class=""
+                                >
+                                GBS Configuration
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a 
+                                href="platform/reference/gbs/gbs-maintenance-models/"
+                                class=""
+                                >
+                                GBS Maintenance Models
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/reference/mic/mic-overview/"
+                        class=""
+                        aria-expanded=" false "
+                        data-target="#item3" 
+                        data-toggle="collapse" 
+                        >
+                        MIC Image Creator
+                        <span class="caret arrow"></span>
+                    </a>
+                    
+                    
+                    <ul class="nav collapse" aria-expanded="false" id="#item3">
+                    
+                        
+                        <li>
+                            
+                            <a 
+                                href="platform/reference/mic/mic-overview/"
+                                class=""
+                                >
+                                Overview
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a 
+                                href="platform/reference/mic/mic-customize-image/"
+                                class=""
+                                >
+                                Customizing Images
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a 
+                                href="platform/reference/mic/mic-reference/"
+                                class=""
+                                >
+                                MIC Reference
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+                
+            </ul>
+            
+        </li>
+    
+        
+        
+    </ul>
+</div>
+<script>
+    $("a[href$='/platform/versions/tizen-5-5-m2/']").addClass("active currentPage");
+</script>
+						</div>
+					</nav>
+					<div class="col-toc">
+						<div class="sidebar hidden-xs hidden-sm">
+							<div class="toc-nav">
+								<div class="feedback-links">
+									<ul>
+										<li>
+                                            <a href="https://github.com/samsung-test/samsung-test.github.io/edit/5.5/platform/versions/tizen-5-5-m2.md" target="_blank">
+                                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                                Edit Page
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://github.com/samsung-test/samsung-test.github.io/issues/new" class="nomunge" target="_blank">
+                                                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                                Report Issue
+                                            </a>
+                                        </li>
+									</ul>
+								</div>
+								   
+									<div id="side-toc-title">On this page:</div>
+									
+<ul id="my_toc" class="inline_toc">
+  <li><a href="#enhancement-of-development-environment-and-core-component" class="nomunge">Enhancement of Development Environment and Core Component</a></li>
+  <li><a href="#on-device-ai" class="nomunge">On Device AI</a></li>
+  <li><a href="#building-an-iot-device-ecosystem" class="nomunge">Building an IoT Device Ecosystem</a></li>
+</ul>
+
+
+								</div>
+								
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+    <div class="container-fluid">
+  <div class="top_footer">
+    <div class="footer-nav">
+      <nav class="footer_sub_nav">
+        <ul class="menu">
+          <li><a href="https://developer.tizen.org/">Developer</a></li>
+          <li><a href="https://dashboard.tizen.org/">Dashboard</a></li>
+          <li><a href="https://craftroom.tizen.org/">Craftroom</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="bottom_footer">
+    <div class="footer-copyright col-xs-12 col-md-8">
+      <p class="copyright">
+        Copyright &copy; 2019 Tizen Inc. All rights reserved.
+      </p>
+    </div>
+    <div class="footer_social_nav">
+      <ul class="nav-social">
+        <li class="fa fa-github"><a href="https://github.com/samsung-test">GitHub</a></li>  
+        <li class="fa fa-twitter"><a href="https://twitter.com/TizenProject">Twitter</a></li>
+        <li class="fa fa-facebook"><a href="http://www.facebook.com/pages/Tizen-Project">Facebook</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+    <div id="templates"></div>
+    <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/common.js?v=23122019"></script>
+<script type="text/javascript" src="/js/handlebars-v4.0.11.js?v=23122019"></script>
+<script type="text/javascript" src="/js/widgets-data.js?v=23122019"></script>
+<script type="text/javascript" src="/js/widgets.js?v=23122019"></script>
+<script type="text/javascript" src="/js/highlight.pack.js"></script>
+<script type="text/javascript" src="/js/tocs.js"></script>
+<script type="text/javascript" src="/js/menu.js"></script>
+<script type="text/javascript" src="/js/stickyfill.min.js"></script>
+<script type="text/javascript" src="/js/metadata.js"></script>
+<script type="text/javascript" src="/js/docs.js"></script>
+
+</body>
+</html>

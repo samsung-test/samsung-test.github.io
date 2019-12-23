@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon"  href="/favicon.ico" />
+<title>Introduction to Tizen</title>
+<meta name="description" content="Introduction to Tizen"/>
+<meta name="keywords" content="Tizen, OS, Open Source"/>
+<base id="baseURL" href="/5.5/" />
+<meta id="docsVersion" content="5.5" />
+<meta name="last-modified" content="2019-12-23 11:05:39 +0530" />
+<meta http-equiv="cache-control" content="max-age=24" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-store" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="Expires" content="600" />
+
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/pygments/perldoc.css">
+<link rel="stylesheet" href="/css/style.css?v=23122019">
+<link rel="stylesheet" href="/css/github.css?v=23122019">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154449679-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-154449679-1');
+</script>
+
+</head>
+<body class=" latestVersion">
+	 
+	<header>
+    <div class="header">
+        <nav class="nav-secondary-tabs affix" >
+            <div class="container-fluid">
+                <div class="navbar-collapse" aria-expanded="false" style="height: 1px;">
+                    <div class="sidebar-toggle">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</div>
+<div class="nav-container">
+    <a class="logo" href="/" title="Tizen Documentation">
+        Tizen
+    </a>
+    <div id="tabs">
+        
+        
+        <ul class="tabs" id="jsTOCHorizontal">
+            <li class="">
+                <a href="design/">Design</a>
+            </li>
+            <li class="active">
+                <a href="platform/">Platform</a>
+            </li>
+            <li class="">
+                <a href="application/">Application</a>
+            </li>
+            <li class=" dropdown">
+                <a href="visualstudio/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visual Studio<span class="caret"></span></a>
+                <ul class="dropdown-menu nav-main">    
+                    <li><a href="visualstudio/vstools/index/">VS Tools for Tizen</a></li>
+                    <li><a href="visualstudio/vscode-ext/index/">VS Code Extension For Tizen</li>
+                    <li><a href="visualstudio/vstools-mac/overview/">VS For Mac Extension for Tizen</a></li>
+                 </ul>
+            </li>
+            <li class="">
+                <a href="tizenstudio/setup/overview/">Tizen Studio</a>
+            </li>
+             <li class=" dropdown">
+                <a href="iot/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">IoT<span class="caret"></span></a>
+                <ul class="dropdown-menu nav-main">
+                    <li><a href="iot/extensionsdk/">IoT Extension SDK</a></li>
+                    <li><a href="iot/iot-partners/nubison/">IoT partners</a></li>
+                 </ul>
+            </li>
+            <li class="">
+                <a href="tizenstudio/setup/overview/">Blogs</a>
+            </li>
+            <li class="">
+                <a href="tizenstudio/setup/overview/">Community</a>
+            </li>
+        </ul>
+    </div>
+    <div class="ctrl-right hidden-xs hidden-sm">
+        <a href="javascript:void(0)" id="menu-toggle"><i class="fa fa-indent" aria-hidden="true"></i></a>
+        <div class="widgetVersionSwitcher"></div>
+    </div>
+    <div class="search-form">
+        <form action="search.html">
+            <input class="search-field form-control ds-input st-search-input" value="" name="q" placeholder="Search the docs" type="search" autocomplete="off" spellcheck="false" dir="auto">
+            <button type="submit" class="search-button">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+    </div>
+    
+</div>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+    <div class="wrapper right-open">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-body">
+					<main class="col-content content">
+						<section class="section">
+							<nav class="breadcrumbs bootstrap hidden-sm-down">
+   <ol class="breadcrumb list-unstyled" vocab="http://schema.org/" typeof="BreadcrumbList">
+
+       
+          
+      
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <a property="item" typeof="WebPage" href="/5.5/">
+            <span property="name">Documentation</span>
+            <meta property="position" content="1" />
+         </a>
+      </li>
+       
+          
+      
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <a property="item" typeof="WebPage" href="/5.5/platform/">
+            <span property="name">Platform</span>
+            <meta property="position" content="2" />
+         </a>
+      </li>
+       
+          
+      
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <a property="item" typeof="WebPage" href="/5.5/platform/about/">
+            <span property="name">Platform</span>
+            <meta property="position" content="3" />
+         </a>
+      </li>
+       
+          
+      
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <span property="name">Introduction to Tizen</span>
+         <meta property="position" content="4" />
+      </li>
+      
+   </ol>
+</nav>
+
+
+							<div class="widgetLatestVersionNotification"></div>
+							<h1 class="page-title">
+								Introduction to Tizen
+							</h1>
+							<div class="page-read-time">
+								<span class="reading-time" title="Estimated read time">
+    
+    
+    5 mins read
+    
+</span>
+							</div>
+							<div class="page-content">
+								<h1 id="introduction-to-tizen">Introduction to Tizen</h1>
+
+<p>Tizen is an open source operating system based on Linux, hosted by the Linux Foundation, and open to all developers.  Tizen has evolved to connect everything, from smart TVs, smart phones, and wearable devices to IoT (Internet of Things) devices. Devices powered by Tizen can provide seamless connectivity to Tizen developers and device users among various device types.</p>
+
+<h2 id="connect-everything">Connect Everything</h2>
+
+<p>As diverse devices are getting smarter and more connected, there is a strong need for a software platform for integrated services with connected products. Tizen is designed for this and has been evolving to connect everything. To support different types of devices with a seamless user experience, Tizen categorizes the features and functions as profiles. There are currently 4 profiles available, and the number keeps growing as more products are included in the ecosystem. In the near future, lots of Internet-connected devices are anticipated to be on the market and IoT services are expected to pervade everyone’s daily life. Tizen is moving forward to the future of everything connected.</p>
+
+<p><strong>Figure: Connecting different devices</strong></p>
+
+<p><img src="media/about_tizen_1.png" alt="Connecting different devices" /></p>
+
+<h2 id="openness-optimization-and-opportunities">Openness, Optimization, and Opportunities</h2>
+
+<p>Tizen is a Linux-based, open-source software platform. Anyone can contribute and freely develop the system software and applications, which is beneficial for both device manufacturers and application developers. Furthermore, by supporting Web applications with open Web technologies, Tizen provides developers flexibility and extensibility. Based on the open ecosystem, the user can expect various experiences from Tizen devices and services. With its openness, Tizen can pursue continuing progress and expand the ecosystem.</p>
+
+<p>Tizen is built to work on diverse devices, and profiles are defined accordingly. Currently, 3 profiles are supported:</p>
+
+<ul>
+  <li><a href="profiles/wearable.md">Wearable</a></li>
+  <li><a href="profiles/tv.md">TV</a></li>
+  <li><a href="profiles/mobile.md">Mobile</a></li>
+</ul>
+
+<p>The features of each profile provide product-optimized functionality and performance.</p>
+
+<p>From Tizen 3.0, all profiles are built on top of a common, shared infrastructure called <strong>Tizen Common</strong>. Based on the common components, devices and features under new categories or profiles can be easily added for emerging technologies. Therefore, Tizen is adaptable and customizable for new products. In the foreseeable future, for example, IoT devices and services are expected to be prevalent and Tizen is taking proactive steps toward the opportunities in these new markets.</p>
+
+<p><strong>Figure: Common infrastructure for various profiles</strong></p>
+
+<p><img src="media/about_tizen_2.png" alt="Common infrastructure for various profiles" /></p>
+
+<h2 id="iot-capability">IoT Capability</h2>
+
+<p>The most important strengths that enable Tizen to move to the next level are IoT and convergence capabilities:</p>
+
+<ul>
+  <li>
+    <p><strong>Device Convergence</strong>: Tizen provides a device-to-device convergence framework for easy data sharing and direct remote control between devices. Using this framework, you can handle events or data on the remote device as if they were local. Device Convergence in Tizen opens up a host of capabilities that developers can use to create a new way of experiencing connectivity.</p>
+
+    <p><strong>Figure: Device Convergence</strong></p>
+
+    <p><img src="media/about_tizen_5.png" alt="Device Convergence" /></p>
+  </li>
+  <li>
+    <p><strong>IoTivity for Connectivity</strong>: In an IoT world, where everything is connected, it is important that a software platform supports seamless connectivity among all devices. For seamless connectivity, Tizen is closely co-operating with Open Connected Foundation (OCF), which is taking the lead in providing specifications and an open-source solution for IoT connectivity. OCF is getting great support from companies including Cisco, GE, Mediatek, Intel®, and Samsung. OCF’s standard is being implemented as open source and called IoTivity. All profiles in Tizen 3.0 include IoTivity, which means that all Tizen devices are IoTivity-ready.</p>
+
+    <p><strong>Figure: IoTivity for Connectivity</strong></p>
+
+    <p><img src="media/about_tizen_6.png" alt="IoTivity for Connectivity" /></p>
+  </li>
+</ul>
+
+<h2 id="convergence-platform-for-the-emerging-era">Convergence Platform for the Emerging Era</h2>
+
+<p>Since 2012, Tizen has been expanding as smart gadgets have become generalized and connected. By accommodating various device types, Tizen is gearing up for the new era of convergence. As of now, there is a wide variety of Tizen devices on the market:</p>
+
+<ul>
+  <li>Mobile phones: Samsung Z series (Z1, Z2, Z3, Z4)</li>
+  <li>Tablets: DIGMA Plane 8501 3G</li>
+  <li>Wearables: Samsung Galaxy Watch series (Galaxy Watch, Galaxy Watch Active, Galaxy Watch Active 2), Gear series (Gear 2, Gear 2 Neo, Gear S, Gear S2, Gear S3)</li>
+  <li>Smart TVs: Samsung SUHD, UHD, LED TVs</li>
+  <li>Cameras: Samsung NX-series, Gear 360</li>
+  <li>Smart appliances: Samsung Family Hub Fridge</li>
+</ul>
+
+<p>Over 3 million units of Tizen phones were sold in 2015. In addition, Samsung is holding the highest market share in the global TV market and its recent models are all based on the Tizen platform. It is expected for the Tizen platform to broaden its ecosystem with increasing market requirements and user demands.</p>
+
+<h2 id="productivity">Productivity</h2>
+
+<p>To facilitate developing Tizen applications, <a href="/application/tizen-studio/">Tizen Studio</a> is provided as an integrated development environment (IDE). It helps you to develop, build, debug, profile, and emulate Tizen applications. Tizen Studio is equipped with useful developer tools, including native UI builder, emulator, and Dynamic Analyzer for profiling. In the integrated environment, you can enjoy comfortable and productive development of Tizen Native and Web applications.</p>
+
+<p><strong>Figure: Tizen Studio tools</strong></p>
+
+<p><img src="media/about_tizen_3.png" alt="Tizen Studio tools" /></p>
+
+<h2 id="application-marketplace">Application Marketplace</h2>
+
+<p>As a platform, Tizen provides the foundation for many different applications and services, which lead to rich user experiences and new business opportunities. For easy access and reliable trade of applications, efficient distribution channels are necessary for both users and developers. <a href="http://www.tizenstore.com/">Tizen Store</a> is a marketplace of Tizen applications, where users can find useful applications and developers can distribute their valuable creations. It provides various application categories, such as All Games, Education, Entertainment, Kids, Finance, Lifestyle, and Social Networking. Users can download applications of their choice and enrich their experiences with the Tizen devices. Application developers can monetize or share their applications for free in the marketplace.</p>
+
+<p><strong>Figure: Tizen Store</strong></p>
+
+<p><img src="media/about_tizen_4.png" alt="Tizen Store" /></p>
+
+<h2 id="versions">Versions</h2>
+
+<p>The latest versions of the Tizen platform include:</p>
+
+<ul>
+  <li><a href="versions/tizen-5-5-m2.md">Tizen 5.5</a></li>
+  <li><a href="versions/tizen-5-0-m2.md">Tizen 5.0</a></li>
+  <li><a href="versions/tizen-4-0-m2.md">Tizen 4.0 M2</a></li>
+  <li><a href="versions/tizen-4-0-m1.md">Tizen 4.0 M1</a></li>
+  <li><a href="versions/tizen-3-0.md">Tizen 3.0</a></li>
+</ul>
+
+								
+            						
+
+
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = 'https://samsung-test.github.io/5.5//platform/about/overview/';
+      this.page.identifier = 'https://samsung-test.github.io/5.5//platform/about/overview/';
+    };
+    (function() {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://samsung-test.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+         						
+							</div>
+						</section>
+					</main>
+					<nav class="col-nav">
+						<div id="sidebar-nav" class="sidebar hidden-sm hidden-xs">
+						    
+
+
+<div id="navbar" class="nav-sidebar">
+    <ul class="nav" id="jsTOCLeftNav">
+        
+        
+        
+        
+    
+        <li>
+            <a 
+                href="platform/about/index" 
+                data-target="#item1" 
+                data-toggle="collapse" 
+                data-parent="#stacked-menu"
+                aria-expanded=" true "
+                class=" not-collapsed "
+                >
+                    Platform Overview
+                    <span class="caret arrow"></span>
+            </a>
+            
+
+            
+            <ul class="nav collapse in" aria-expanded="true" id="#item1">
+            
+
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/about/overview/"
+                        class=""
+                        aria-expanded=" true "
+                        data-target="#item1" 
+                        data-toggle="collapse" 
+                        >
+                        Profiles
+                        <span class="caret arrow"></span>
+                    </a>
+                    
+                    
+                    <ul class="nav collapse in" aria-expanded="true" id="#item1">
+                    
+                        
+                        <li>
+                            
+                            <a 
+                                href="platform/about/wearable/"
+                                class=""
+                                >
+                                Wearables
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a 
+                                href="platform/about/tv/"
+                                class=""
+                                >
+                                TV
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a 
+                                href="platform/about/mobile/"
+                                class=""
+                                >
+                                Mobile
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/versions/tizen-5-5-m2/"
+                        class=""
+                        aria-expanded=" true "
+                        data-target="#item2" 
+                        data-toggle="collapse" 
+                        >
+                        Versions
+                        <span class="caret arrow"></span>
+                    </a>
+                    
+                    
+                    <ul class="nav collapse in" aria-expanded="true" id="#item2">
+                    
+                        
+                        <li>
+                            
+                            <a 
+                                href="platform/versions/tizen-5-0-m2/"
+                                class=""
+                                >
+                                Tizen 5.0
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a 
+                                href="platform/versions/tizen-4-0-m2/"
+                                class=""
+                                >
+                                Tizen 4.0 M2
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a 
+                                href="platform/versions/tizen-4-0-m1/"
+                                class=""
+                                >
+                                Tizen 4.0 M1
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a 
+                                href="platform/versions/tizen-3-0/"
+                                class=""
+                                >
+                                Tizen 3.0
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+                
+            </ul>
+            
+        </li>
+    
+        
+        
+        
+    
+        <li>
+            <a 
+                href="platform/developing/installing/" 
+                data-target="#item2" 
+                data-toggle="collapse" 
+                data-parent="#stacked-menu"
+                aria-expanded=" false "
+                class=" collapsed "
+                >
+                    Platform Developing
+                    <span class="caret arrow"></span>
+            </a>
+            
+
+            
+            <ul class="nav collapse" aria-expanded="false" id="#item2">
+            
+
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/developing/installing/" 
+                        class=""
+                        >
+                        Installing Development Tools
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/developing/setting-up/" 
+                        class=""
+                        >
+                        Setting up Development Environment
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/developing/cloning/" 
+                        class=""
+                        >
+                        Cloning Tizen Source Files
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/developing/building/" 
+                        class=""
+                        >
+                        Building Packages Locally with GBS
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/developing/building-all/" 
+                        class=""
+                        >
+                        Building All Packages Locally with GBS
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/developing/contributing/" 
+                        class=""
+                        >
+                        Contributing Code to Tizen
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/developing/creating/" 
+                        class=""
+                        >
+                        Creating Tizen Images with MIC
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/developing/flashing/" 
+                        class=""
+                        >
+                        Flashing an Image to Device
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/developing/tips/" 
+                        class=""
+                        >
+                        Development Tips
+                    </a>
+                    
+                </li>
+                
+            </ul>
+            
+        </li>
+    
+        
+        
+        
+    
+        <li>
+            <a 
+                href="platform/porting/overview/" 
+                data-target="#item3" 
+                data-toggle="collapse" 
+                data-parent="#stacked-menu"
+                aria-expanded=" false "
+                class=" collapsed "
+                >
+                    Porting
+                    <span class="caret arrow"></span>
+            </a>
+            
+
+            
+            <ul class="nav collapse" aria-expanded="false" id="#item3">
+            
+
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/porting/overview/" 
+                        class=""
+                        >
+                        Overview
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/porting/kernel/" 
+                        class=""
+                        >
+                        Kernel
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/porting/system/" 
+                        class=""
+                        >
+                        System
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/porting/graphics-and-ui/" 
+                        class=""
+                        >
+                        Graphics and UI
+                    </a>
+                    
+                </li>
+                
+            </ul>
+            
+        </li>
+    
+        
+        
+        
+    
+        <li>
+            <a 
+                href="platform/reference/gerrit-usage" 
+                data-target="#item4" 
+                data-toggle="collapse" 
+                data-parent="#stacked-menu"
+                aria-expanded=" false "
+                class=" collapsed "
+                >
+                    Reference
+                    <span class="caret arrow"></span>
+            </a>
+            
+
+            
+            <ul class="nav collapse" aria-expanded="false" id="#item4">
+            
+
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/reference/gerrit-usage/" 
+                        class=""
+                        >
+                        Gerrit
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/reference/gbs/gbs-overview/"
+                        class=""
+                        aria-expanded=" false "
+                        data-target="#item2" 
+                        data-toggle="collapse" 
+                        >
+                        Git Build System (GBS)
+                        <span class="caret arrow"></span>
+                    </a>
+                    
+                    
+                    <ul class="nav collapse" aria-expanded="false" id="#item2">
+                    
+                        
+                        <li>
+                            
+                            <a 
+                                href="platform/reference/gbs/gbs-overview/"
+                                class=""
+                                >
+                                Overview
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a 
+                                href="platform/reference/gbs/gbs.conf/"
+                                class=""
+                                >
+                                GBS Configuration
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a 
+                                href="platform/reference/gbs/gbs-maintenance-models/"
+                                class=""
+                                >
+                                GBS Maintenance Models
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="platform/reference/mic/mic-overview/"
+                        class=""
+                        aria-expanded=" false "
+                        data-target="#item3" 
+                        data-toggle="collapse" 
+                        >
+                        MIC Image Creator
+                        <span class="caret arrow"></span>
+                    </a>
+                    
+                    
+                    <ul class="nav collapse" aria-expanded="false" id="#item3">
+                    
+                        
+                        <li>
+                            
+                            <a 
+                                href="platform/reference/mic/mic-overview/"
+                                class=""
+                                >
+                                Overview
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a 
+                                href="platform/reference/mic/mic-customize-image/"
+                                class=""
+                                >
+                                Customizing Images
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a 
+                                href="platform/reference/mic/mic-reference/"
+                                class=""
+                                >
+                                MIC Reference
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+                
+            </ul>
+            
+        </li>
+    
+        
+        
+    </ul>
+</div>
+<script>
+    $("a[href$='/platform/about/overview/']").addClass("active currentPage");
+</script>
+						</div>
+					</nav>
+					<div class="col-toc">
+						<div class="sidebar hidden-xs hidden-sm">
+							<div class="toc-nav">
+								<div class="feedback-links">
+									<ul>
+										<li>
+                                            <a href="https://github.com/samsung-test/samsung-test.github.io/edit/5.5/platform/about/overview.md" target="_blank">
+                                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                                Edit Page
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://github.com/samsung-test/samsung-test.github.io/issues/new" class="nomunge" target="_blank">
+                                                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                                Report Issue
+                                            </a>
+                                        </li>
+									</ul>
+								</div>
+								   
+									<div id="side-toc-title">On this page:</div>
+									
+<ul id="my_toc" class="inline_toc">
+  <li><a href="#connect-everything" class="nomunge">Connect Everything</a></li>
+  <li><a href="#openness-optimization-and-opportunities" class="nomunge">Openness, Optimization, and Opportunities</a></li>
+  <li><a href="#iot-capability" class="nomunge">IoT Capability</a></li>
+  <li><a href="#convergence-platform-for-the-emerging-era" class="nomunge">Convergence Platform for the Emerging Era</a></li>
+  <li><a href="#productivity" class="nomunge">Productivity</a></li>
+  <li><a href="#application-marketplace" class="nomunge">Application Marketplace</a></li>
+  <li><a href="#versions" class="nomunge">Versions</a></li>
+</ul>
+
+
+								</div>
+								
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+    <div class="container-fluid">
+  <div class="top_footer">
+    <div class="footer-nav">
+      <nav class="footer_sub_nav">
+        <ul class="menu">
+          <li><a href="https://developer.tizen.org/">Developer</a></li>
+          <li><a href="https://dashboard.tizen.org/">Dashboard</a></li>
+          <li><a href="https://craftroom.tizen.org/">Craftroom</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="bottom_footer">
+    <div class="footer-copyright col-xs-12 col-md-8">
+      <p class="copyright">
+        Copyright &copy; 2019 Tizen Inc. All rights reserved.
+      </p>
+    </div>
+    <div class="footer_social_nav">
+      <ul class="nav-social">
+        <li class="fa fa-github"><a href="https://github.com/samsung-test">GitHub</a></li>  
+        <li class="fa fa-twitter"><a href="https://twitter.com/TizenProject">Twitter</a></li>
+        <li class="fa fa-facebook"><a href="http://www.facebook.com/pages/Tizen-Project">Facebook</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+    <div id="templates"></div>
+    <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/common.js?v=23122019"></script>
+<script type="text/javascript" src="/js/handlebars-v4.0.11.js?v=23122019"></script>
+<script type="text/javascript" src="/js/widgets-data.js?v=23122019"></script>
+<script type="text/javascript" src="/js/widgets.js?v=23122019"></script>
+<script type="text/javascript" src="/js/highlight.pack.js"></script>
+<script type="text/javascript" src="/js/tocs.js"></script>
+<script type="text/javascript" src="/js/menu.js"></script>
+<script type="text/javascript" src="/js/stickyfill.min.js"></script>
+<script type="text/javascript" src="/js/metadata.js"></script>
+<script type="text/javascript" src="/js/docs.js"></script>
+
+</body>
+</html>
