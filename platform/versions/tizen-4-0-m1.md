@@ -1,3 +1,8 @@
+---
+title: Tizen 4.0 M1
+crumbtitle: Tizen 4.0 M1
+---
+
 # Tizen 4.0 M1
 
 The [first milestone (M1) of Tizen 4.0 was released](../../release-notes/tizen-4-0-m1.md) in May 2017, marking a new turning point for the platform, which is currently the most successful Linux-based embedded OS in the world.

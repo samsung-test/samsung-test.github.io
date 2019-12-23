@@ -1,3 +1,8 @@
+---
+title: Tizen 5.5
+crumbtitle: Tizen 5.5
+---
+
 # Tizen 5.5
 
 [The second milestone (M2) release of Tizen 5.5](../../release-notes/tizen-5-5-m2.md) was announced in October 2019.

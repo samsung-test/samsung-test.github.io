@@ -1,3 +1,8 @@
+---
+title: Tizen 3.0
+crumbtitle: Tizen 3.0
+---
+
 # Tizen 3.0
 
 In the last 4 years Tizen has expanded its horizon from mobile devices, smart watch, to TV. Tizen currently runs in many commercially available devices. But the true potential of Tizen lies ahead and will be realized with support for the 'Internet of Things (IoT)', which connects everything.
