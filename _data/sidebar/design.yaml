@@ -11,20 +11,18 @@
         subfolderitems:
           - page: Styles   
             url: design/tv/styles/
-          - page: Design Pattrens
+          - page: Design Patterns
             url: design/tv/overview/
             subfolderitems:
               - page: TV App Structure  
                 url: design/tv/patterns/app-structure/
-      - title: Design for TV
+      - title: Design for Wearable
         url: design/tv/design-principles
         subfolderitems:
           - page: Styles   
             url: design/tv/styles/
-          - page: Design Pattrens
-            url: design/tv/overview/
             subfolderitems:
-              - page: TV App Structure  
-                url: design/tv/patterns/app-structure/           
+              - page: Wearable App Structure  
+                url: design/tv/wearable/           
        
         
