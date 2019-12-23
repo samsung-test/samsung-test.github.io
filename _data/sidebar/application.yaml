@@ -1,13 +1,19 @@
 - sidebar:
-      - title: Application Overview
-        url: application/about/work-flow/
+      - title: Get Started
+        url: application/getstarted/overview/
         subfolderitems:
-          - page: Application Development Workflow
-            url: application/about/work-flow/
-          - page: Application Git Repository Structure
-            url: application/about/git-repo-structure/
-          - page: Typographic Conventions
-            url: application/about/conventions/
+          - page: Wearable
+            url: application/getstarted/wfirst-app/
+          - page: Watch
+            url: application/getstarted/wwfirst-app-watch/
+          - page: TV 
+            url: application/getstarted/tvfirst-app/
+          - page: Smart TV 
+            url: application/getstarted/first-samsung-tv-app/
+          - page: Mobile
+            url: application/getstarted/mfirst-app/
+          - page: Wearable Web Widget 
+            url: application/getstarted/first-app-widget/
       - title: Application Developing
         url: application/developing/installing/
         subfolderitems:
