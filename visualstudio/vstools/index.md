@@ -1,10 +1,9 @@
 ---
-title: Setup
-desc: Install Tizen
+title: Visual Studio Tools for Tizen
+desc: Visual Studio Tools for Tizen
 keywords: Tizen, OS, Open Source, Install 
 comments: true
 ---
-
 
 # Visual Studio Tools for Tizen
 
