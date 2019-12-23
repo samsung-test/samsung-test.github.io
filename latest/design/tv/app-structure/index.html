@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon"  href="/favicon.ico" />
+<title>TV App Structure</title>
+<meta name="description" content="Structure"/>
+<meta name="keywords" content="Tizen, OS, Open Source, Structure"/>
+<base id="baseURL" href="/latest/" />
+<meta id="docsVersion" content="5.5" />
+<meta name="last-modified" content="2019-12-23 12:15:59 +0530" />
+<meta http-equiv="cache-control" content="max-age=24" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-store" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="Expires" content="600" />
+
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/pygments/perldoc.css">
+<link rel="stylesheet" href="/css/style.css?v=23122019">
+<link rel="stylesheet" href="/css/github.css?v=23122019">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154449679-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-154449679-1');
+</script>
+
+</head>
+<body class=" latestVersion">
+	 
+	<header>
+    <div class="header">
+        <nav class="nav-secondary-tabs affix" >
+            <div class="container-fluid">
+                <div class="navbar-collapse" aria-expanded="false" style="height: 1px;">
+                    <div class="sidebar-toggle">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</div>
+<div class="nav-container">
+    <a class="logo" href="/" title="Tizen Documentation">
+        Tizen
+    </a>
+    <div id="tabs">
+        
+        
+        <ul class="tabs" id="jsTOCHorizontal">
+            <li class="active">
+                <a href="design/">Design</a>
+            </li>
+            <li class="">
+                <a href="platform/">Platform</a>
+            </li>
+            <li class="">
+                <a href="application/">Application</a>
+            </li>
+            <li class=" dropdown">
+                <a href="visualstudio/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visual Studio<span class="caret"></span></a>
+                <ul class="dropdown-menu nav-main">    
+                    <li><a href="visualstudio/vstools/">VS Tools for Tizen</a></li>
+                    <li><a href="visualstudio/vscode-ext/">VS Code Extension For Tizen</li>
+                    <li><a href="visualstudio/vstools-mac/overview/">VS For Mac Extension for Tizen</a></li>
+                 </ul>
+            </li>
+            <li class="">
+                <a href="tizenstudio/setup/overview/">Tizen Studio</a>
+            </li>
+             <li class=" dropdown">
+                <a href="iot/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">IoT<span class="caret"></span></a>
+                <ul class="dropdown-menu nav-main">
+                    <li><a href="iot/extensionsdk/">IoT Extension SDK</a></li>
+                    <li><a href="iot/iot-partners/nubison/">IoT partners</a></li>
+                 </ul>
+            </li>
+            <li class="">
+                <a href="tizenstudio/setup/overview/">Blogs</a>
+            </li>
+            <li class="">
+                <a href="tizenstudio/setup/overview/">Community</a>
+            </li>
+        </ul>
+    </div>
+    <div class="ctrl-right hidden-xs hidden-sm">
+        <a href="javascript:void(0)" id="menu-toggle"><i class="fa fa-indent" aria-hidden="true"></i></a>
+        <div class="widgetVersionSwitcher"></div>
+    </div>
+    <div class="search-form">
+        <form action="search.html">
+            <input class="search-field form-control ds-input st-search-input" value="" name="q" placeholder="Search the docs" type="search" autocomplete="off" spellcheck="false" dir="auto">
+            <button type="submit" class="search-button">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+    </div>
+    
+</div>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+    <div class="wrapper right-open">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-body">
+					<main class="col-content content">
+						<section class="section">
+							<nav class="breadcrumbs bootstrap hidden-sm-down">
+   <ol class="breadcrumb list-unstyled" vocab="http://schema.org/" typeof="BreadcrumbList">
+
+       
+          
+      
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <a property="item" typeof="WebPage" href="/latest/">
+            <span property="name">Documentation</span>
+            <meta property="position" content="1" />
+         </a>
+      </li>
+       
+          
+      
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <a property="item" typeof="WebPage" href="/latest/design/">
+            <span property="name">Tizen Design</span>
+            <meta property="position" content="2" />
+         </a>
+      </li>
+       
+          
+      
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <span property="name">TV App Structure</span>
+         <meta property="position" content="3" />
+      </li>
+      
+   </ol>
+</nav>
+
+
+							<div class="widgetLatestVersionNotification"></div>
+							<h1 class="page-title">
+								TV App Structure
+							</h1>
+							<div class="page-read-time">
+								<span class="reading-time" title="Estimated read time">
+    
+    
+    1 min read
+    
+</span>
+							</div>
+							<div class="page-content">
+								<h1 id="app-structure">App Structure</h1>
+
+<p>The structure of the Tizen 4.0 TV platform consists of layers which are used to display UI components and other items.</p>
+
+<p>The following basic screens are included in the structure of the Tizen 4.0 TV platform:</p>
+
+<ul>
+  <li><a href="#source-screen">Source screen</a></li>
+  <li><a href="#partial-screen">Partial screen</a></li>
+  <li><a href="#full-screen">Full screen</a></li>
+  <li><a href="#detail-screen">Detail screen</a></li>
+</ul>
+
+<h2 id="source-screen">Source Screen</h2>
+
+<p>A source screen is the basic screen view. It is the base of every screen.</p>
+
+<p><img src="./design/tv/patterns/media/pt_01_source_screen-850x478.png" alt="Structure of source screen" /><br />
+<em>Structure of the source screen</em></p>
+
+<h2 id="partial-screen">Partial Screen</h2>
+
+<p>A partial screen is a temporary view of the screen, such as the Home menu. It has no history and it cannot be shown with other partial screens at the same time.</p>
+
+<p><img src="./design/tv/patterns/media/pt_02_partial_screen-850x478.png" alt="partial screen" /><br />
+<em>Partial screen example of a popup screen</em></p>
+
+<h2 id="full-screen">Full Screen</h2>
+
+<p>A full screen is the main view of each application. It provides the way to access detailed content and can be switched with other full screens.</p>
+
+<p><img src="./design/tv/patterns/media/pt_03_full_screen_re-850x478.png" alt="full screen" /><br />
+<em>Full screen example of a movie screen</em></p>
+
+<h2 id="detail-screen">Detail Screen</h2>
+
+<p>A detail screen is the lower depth of the full screen. It contains the detailed view of application content, such as movies, pictures, and songs.</p>
+
+<p><img src="./design/tv/patterns/media/pt_04_detail_screen-850x478.png" alt="detail screen" /><br />
+<em>Detail screen example of a movie play screen</em></p>
+
+
+								
+            						
+
+
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = 'https://samsung-test.github.io/latest//design/tv/app-structure/';
+      this.page.identifier = 'https://samsung-test.github.io/latest//design/tv/app-structure/';
+    };
+    (function() {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://samsung-test.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+         						
+							</div>
+						</section>
+					</main>
+					<nav class="col-nav">
+						<div id="sidebar-nav" class="sidebar hidden-sm hidden-xs">
+						    
+
+
+<div id="navbar" class="nav-sidebar">
+    <ul class="nav" id="jsTOCLeftNav">
+        
+        
+        
+        
+    
+        <li>
+            <a 
+                href="design/introduction/index" 
+                data-target="#item1" 
+                data-toggle="collapse" 
+                data-parent="#stacked-menu"
+                aria-expanded=" false "
+                class=" collapsed "
+                >
+                    Introduction
+                    <span class="caret arrow"></span>
+            </a>
+            
+
+            
+            <ul class="nav collapse" aria-expanded="false" id="#item1">
+            
+
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="design/introduction/air/" 
+                        class=""
+                        >
+                        Tizen Design Inspiration
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="design/introduction/styles/" 
+                        class=""
+                        >
+                        Styles
+                    </a>
+                    
+                </li>
+                
+            </ul>
+            
+        </li>
+    
+        
+        
+        
+    
+        <li>
+            <a 
+                href="design/tv/design-principles" 
+                data-target="#item2" 
+                data-toggle="collapse" 
+                data-parent="#stacked-menu"
+                aria-expanded=" true "
+                class=" not-collapsed "
+                >
+                    Design for TV
+                    <span class="caret arrow"></span>
+            </a>
+            
+
+            
+            <ul class="nav collapse in" aria-expanded="true" id="#item2">
+            
+
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="design/tv/styles/" 
+                        class=""
+                        >
+                        Styles
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="design/tv/overview/"
+                        class=""
+                        aria-expanded=" true "
+                        data-target="#item2" 
+                        data-toggle="collapse" 
+                        >
+                        Design Patterns
+                        <span class="caret arrow"></span>
+                    </a>
+                    
+                    
+                    <ul class="nav collapse in" aria-expanded="true" id="#item2">
+                    
+                        
+                        <li>
+                            
+                            <a 
+                                href="design/tv/patterns/app-structure/"
+                                class=""
+                                >
+                                TV App Structure
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+                
+            </ul>
+            
+        </li>
+    
+        
+        
+        
+    
+        <li>
+            <a 
+                href="design/tv/design-principles" 
+                data-target="#item3" 
+                data-toggle="collapse" 
+                data-parent="#stacked-menu"
+                aria-expanded=" true "
+                class=" not-collapsed "
+                >
+                    Design for Wearable
+                    <span class="caret arrow"></span>
+            </a>
+            
+
+            
+            <ul class="nav collapse in" aria-expanded="true" id="#item3">
+            
+
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="design/tv/styles/"
+                        class=""
+                        aria-expanded=" true "
+                        data-target="#item1" 
+                        data-toggle="collapse" 
+                        >
+                        Styles
+                        <span class="caret arrow"></span>
+                    </a>
+                    
+                    
+                    <ul class="nav collapse in" aria-expanded="true" id="#item1">
+                    
+                        
+                        <li>
+                            
+                            <a 
+                                href="design/tv/wearable/"
+                                class=""
+                                >
+                                Wearable App Structure
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+                
+            </ul>
+            
+        </li>
+    
+        
+        
+    </ul>
+</div>
+<script>
+    $("a[href$='/design/tv/app-structure/']").addClass("active currentPage");
+</script>
+						</div>
+					</nav>
+					<div class="col-toc">
+						<div class="sidebar hidden-xs hidden-sm">
+							<div class="toc-nav">
+								<div class="feedback-links">
+									<ul>
+										<li>
+                                            <a href="https://github.com/samsung-test/samsung-test.github.io/edit/5.5/design/tv/app-structure.md" target="_blank">
+                                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                                Edit Page
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://github.com/samsung-test/samsung-test.github.io/issues/new" class="nomunge" target="_blank">
+                                                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                                Report Issue
+                                            </a>
+                                        </li>
+									</ul>
+								</div>
+								   
+									<div id="side-toc-title">On this page:</div>
+									
+<ul id="my_toc" class="inline_toc">
+  <li><a href="#source-screen" class="nomunge">Source Screen</a></li>
+  <li><a href="#partial-screen" class="nomunge">Partial Screen</a></li>
+  <li><a href="#full-screen" class="nomunge">Full Screen</a></li>
+  <li><a href="#detail-screen" class="nomunge">Detail Screen</a></li>
+</ul>
+
+
+								</div>
+								
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+    <div class="container-fluid">
+  <div class="top_footer">
+    <div class="footer-nav">
+      <nav class="footer_sub_nav">
+        <ul class="menu">
+          <li><a href="https://developer.tizen.org/">Developer</a></li>
+          <li><a href="https://dashboard.tizen.org/">Dashboard</a></li>
+          <li><a href="https://craftroom.tizen.org/">Craftroom</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="bottom_footer">
+    <div class="footer-copyright col-xs-12 col-md-8">
+      <p class="copyright">
+        Copyright &copy; 2019 Tizen Inc. All rights reserved.
+      </p>
+    </div>
+    <div class="footer_social_nav">
+      <ul class="nav-social">
+        <li class="fa fa-github"><a href="https://github.com/samsung-test">GitHub</a></li>  
+        <li class="fa fa-twitter"><a href="https://twitter.com/TizenProject">Twitter</a></li>
+        <li class="fa fa-facebook"><a href="http://www.facebook.com/pages/Tizen-Project">Facebook</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+    <div id="templates"></div>
+    <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/common.js?v=23122019"></script>
+<script type="text/javascript" src="/js/handlebars-v4.0.11.js?v=23122019"></script>
+<script type="text/javascript" src="/js/widgets-data.js?v=23122019"></script>
+<script type="text/javascript" src="/js/widgets.js?v=23122019"></script>
+<script type="text/javascript" src="/js/highlight.pack.js"></script>
+<script type="text/javascript" src="/js/tocs.js"></script>
+<script type="text/javascript" src="/js/menu.js"></script>
+<script type="text/javascript" src="/js/stickyfill.min.js"></script>
+<script type="text/javascript" src="/js/metadata.js"></script>
+<script type="text/javascript" src="/js/docs.js"></script>
+
+</body>
+</html>
