@@ -6,21 +6,15 @@
             url: visualstudio/get-started/overview/
             subfolderitems:
               - page: TV 
-                url: visualstudio/tv/first-app
+                url: visualstudio/tv/tvfirst-app/
               - page: Wearable 
-                url: visualstudio/wearable/first-app/
+                url: visualstudio/wearable/wfirst-app/
               - page: Mobile
-                url: visualstudio/mobile/first-app/
+                url: visualstudio/mobile/mfirst-app/
               - page: NUI
                 url: visualstudio/nui/quickstart/
-          - page: Guides
-            url: visualstudio/setup/update-sdk/
-          - page: Uninstall 
-            url: visualstudio/setup/uninstall-sdk/
-          - page: Troubleshoot Errors
-            url: visualstudio/setup/troubleshooting/
       - title: Visual Studio Tools for Tizen
-        url: visualstudio/setup/quick_start_guide
+        url: visualstudio/vstools/index/
         subfolderitems:
           - page: Web Application Development 
             url: visualstudio/setup/quick_start_guide/
