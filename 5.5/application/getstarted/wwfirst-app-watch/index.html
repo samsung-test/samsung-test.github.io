@@ -1,0 +1,1470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon"  href="/favicon.ico" />
+<title>Create Your First Tizen Wearable Web Application using Sample</title>
+<meta name="description" content="Create Your First Tizen Wearable Web Application using Sample"/>
+<meta name="keywords" content="Tizen, OS, Open Source"/>
+<base id="baseURL" href="/5.5/" />
+<meta id="docsVersion" content="5.5" />
+<meta name="last-modified" content="2019-12-23 11:43:14 +0530" />
+<meta http-equiv="cache-control" content="max-age=24" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-store" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="Expires" content="600" />
+
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/pygments/perldoc.css">
+<link rel="stylesheet" href="/css/style.css?v=23122019">
+<link rel="stylesheet" href="/css/github.css?v=23122019">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154449679-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-154449679-1');
+</script>
+
+</head>
+<body class=" latestVersion">
+	 
+	<header>
+    <div class="header">
+        <nav class="nav-secondary-tabs affix" >
+            <div class="container-fluid">
+                <div class="navbar-collapse" aria-expanded="false" style="height: 1px;">
+                    <div class="sidebar-toggle">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</div>
+<div class="nav-container">
+    <a class="logo" href="/" title="Tizen Documentation">
+        Tizen
+    </a>
+    <div id="tabs">
+        
+        
+        <ul class="tabs" id="jsTOCHorizontal">
+            <li class="">
+                <a href="design/">Design</a>
+            </li>
+            <li class="">
+                <a href="platform/">Platform</a>
+            </li>
+            <li class="active">
+                <a href="application/">Application</a>
+            </li>
+            <li class=" dropdown">
+                <a href="visualstudio/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visual Studio<span class="caret"></span></a>
+                <ul class="dropdown-menu nav-main">    
+                    <li><a href="visualstudio/vstools/index/">VS Tools for Tizen</a></li>
+                    <li><a href="visualstudio/vscode-ext/index/">VS Code Extension For Tizen</li>
+                    <li><a href="visualstudio/vstools-mac/overview/">VS For Mac Extension for Tizen</a></li>
+                 </ul>
+            </li>
+            <li class="">
+                <a href="tizenstudio/setup/overview/">Tizen Studio</a>
+            </li>
+             <li class=" dropdown">
+                <a href="iot/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">IoT<span class="caret"></span></a>
+                <ul class="dropdown-menu nav-main">
+                    <li><a href="iot/extensionsdk/">IoT Extension SDK</a></li>
+                    <li><a href="iot/iot-partners/nubison/">IoT partners</a></li>
+                 </ul>
+            </li>
+            <li class="">
+                <a href="tizenstudio/setup/overview/">Blogs</a>
+            </li>
+            <li class="">
+                <a href="tizenstudio/setup/overview/">Community</a>
+            </li>
+        </ul>
+    </div>
+    <div class="ctrl-right hidden-xs hidden-sm">
+        <a href="javascript:void(0)" id="menu-toggle"><i class="fa fa-indent" aria-hidden="true"></i></a>
+        <div class="widgetVersionSwitcher"></div>
+    </div>
+    <div class="search-form">
+        <form action="search.html">
+            <input class="search-field form-control ds-input st-search-input" value="" name="q" placeholder="Search the docs" type="search" autocomplete="off" spellcheck="false" dir="auto">
+            <button type="submit" class="search-button">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+    </div>
+    
+</div>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+    <div class="wrapper right-open">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-body">
+					<main class="col-content content">
+						<section class="section">
+							<nav class="breadcrumbs bootstrap hidden-sm-down">
+   <ol class="breadcrumb list-unstyled" vocab="http://schema.org/" typeof="BreadcrumbList">
+
+       
+          
+      
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <a property="item" typeof="WebPage" href="/5.5/">
+            <span property="name">Documentation</span>
+            <meta property="position" content="1" />
+         </a>
+      </li>
+       
+          
+      
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <a property="item" typeof="WebPage" href="/5.5/application/">
+            <span property="name">Application</span>
+            <meta property="position" content="2" />
+         </a>
+      </li>
+       
+          
+      
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <span property="name">Create Your First Tizen Wearable Web Application using Sample</span>
+         <meta property="position" content="3" />
+      </li>
+      
+   </ol>
+</nav>
+
+
+							<div class="widgetLatestVersionNotification"></div>
+							<h1 class="page-title">
+								Create Your First Tizen Wearable Web Application using Sample
+							</h1>
+							<div class="page-read-time">
+								<span class="reading-time" title="Estimated read time">
+    
+    
+    16 mins read
+    
+</span>
+							</div>
+							<div class="page-content">
+								<h1 id="create-your-first-tizen-wearable-web-application-using-sample">Create Your First Tizen Wearable Web Application using Sample</h1>
+
+<p>Wearable Web applications are apps that help you to monitor health, show time, play games, and much more on your wrist. These applications are developed using various Web-native languages, such as HTML5, Cascading Style Sheets (CSS), and JavaScript.</p>
+
+<p>This page helps you to develop a Tizen wearable application using Tizen Studio sample with Web-native languages. You can learn how to customize the UI of a basic app and run it on an emulator, a simulator, and a target device. In addition, you can publish an app on the Samsung Galaxy Store for wearables.</p>
+
+<p>This page also demonstrates an example of a basic wearable Web application sample that displays the current time, which is set as a watch face.</p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<p>Ensure that you download and install Tizen Studio. For more information, see the <a href="../../../tizen-studio/setup/install-sdk.md">installation guide</a>.</p>
+
+<h2 id="develop-wearable-web-application-using-sample">Develop Wearable Web Application using Sample</h2>
+
+<p>To develop a wearable Web application that displays text and graphics on the screen, follow these steps:</p>
+
+<ol>
+  <li>
+    <p><a href="#create-project">Create project</a>.</p>
+  </li>
+  <li>
+    <p><a href="#design-ui">Design UI</a>.</p>
+  </li>
+  <li>
+    <p><a href="#build-application">Build application</a>.</p>
+  </li>
+  <li>
+    <p><a href="#run-application">Run application</a>.</p>
+  </li>
+  <li>
+    <p><a href="#submit-application-on-samsung-galaxy-store">Submit application on Samsung Galaxy Store</a>.</p>
+  </li>
+</ol>
+
+<p>Tizen Studio includes various <a href="../../../tizen-studio/Web-tools/index.md">Web tools</a> that help you to create new functionalities and design intuitive UI with utmost ease.</p>
+
+<h2 id="create-project">Create Project</h2>
+
+<p>To create an application project, follow these steps:</p>
+
+<ol>
+  <li>
+    <p>Launch Tizen Studio.</p>
+  </li>
+  <li>
+    <p>In the Tizen Studio menu, select <strong>File &gt; New &gt; Tizen Project</strong>.</p>
+
+    <p><img src="media/create_project_1.png" alt="Creating a new Tizen Web project" /></p>
+  </li>
+  <li>
+    <p>In the Project Wizard window that appears, specify the project details.</p>
+
+    <p>Project Wizard is used to create the basic application skeleton with the required folder structure and mandatory files. You can easily create different applications by selecting an applicable sample for Project Wizard to use.</p>
+
+    <ol>
+      <li>
+        <p>Select the <strong>Sample</strong> project type and click <strong>Next</strong>.</p>
+
+        <p><img src="media/create_project_wizard_type_sample.png" alt="Selecting the project type" /></p>
+      </li>
+      <li>
+        <p>Select the <strong>Wearable</strong> profile and version from the drop-down list and click <strong>Next</strong>.</p>
+
+        <p><img src="media/create_project_wizard_version_sample.png" alt="Selecting the profile and version" /></p>
+      </li>
+      <li>
+        <p>Select <strong>Web Application</strong> as the application type and click <strong>Next</strong>.</p>
+
+        <p><img src="media/create_project_wizard_app_web_sample.png" alt="Selecting the application type" /></p>
+      </li>
+      <li>
+        <p>Select the <strong>Watch &gt; Basic Watch</strong> sample and click <strong>Next</strong>.</p>
+
+        <p><img src="media/create_project_wizard_sample.png" alt="Selecting the sample" /></p>
+      </li>
+      <li>
+        <p>Enter a project name that has a maximum length of 3-50 characters and a unique package ID.</p>
+
+        <p><img src="media/create_project_wizard_properties_ww_watch.png" alt="Defining properties" /></p>
+      </li>
+      <li>
+        <p>Click <strong>More properties</strong> to specify <strong>Location</strong> and <strong>Working sets</strong>, and then click <strong>Finish</strong>.</p>
+
+        <p>Project Wizard sets up your application project and creates the required application files using the default content from the sample. For more information, see <a href="../../../tizen-studio/Web-tools/project-wizard.md">Creating Tizen Projects with Tizen Project Wizard</a>.</p>
+
+        <p>Your application project is now created.</p>
+      </li>
+    </ol>
+  </li>
+</ol>
+
+<p>You can see the created project in the <strong>Project Explorer</strong> view.</p>
+
+<p><img src="media/basic_app_project_explorer_ww_watch.png" alt="Application in the Project Explorer" /></p>
+
+<p>The <strong>Project Explorer</strong> view contains the following files and folders:</p>
+
+<ul>
+  <li>
+    <p><strong>css</strong>: Folder for CSS files used by the application to style its content.</p>
+  </li>
+  <li>
+    <p><strong>js</strong>: Folder for JavaScript files used by the application to implement its functional logic.</p>
+  </li>
+  <li>
+    <p><strong>config.xml</strong>: Application configuration file used by the platform to install and launch the application.</p>
+  </li>
+  <li>
+    <p><strong>icon.png</strong>: Application icon file used by the platform to represent the application.</p>
+  </li>
+  <li>
+    <p><strong>index.html</strong>: Main HTML file for the layout of the application screen.</p>
+  </li>
+</ul>
+
+<blockquote>
+  <p><strong>Note</strong></p>
+
+  <p>In this <a href="#create-project">Create Project</a> example, no configuration changes are required.</p>
+</blockquote>
+
+<h3 id="manage-application-configuration">Manage Application Configuration</h3>
+
+<p>To view and modify the application configuration, follow these steps:</p>
+
+<ol>
+  <li>
+    <p>In the <strong>Project Explorer</strong> view, double-click the <strong>config.xml</strong> file of the application.</p>
+  </li>
+  <li>
+    <p>In the Web application configuration editor that appears, you can view and modify the configuration details.</p>
+
+    <p><img src="media/basic_app_config_ww_watch.png" alt="Configuring the application" /></p>
+
+    <ul>
+      <li>
+        <p><strong>Overview</strong>: Defines general information, such as the name and icon of the application.</p>
+      </li>
+      <li>
+        <p><strong>Features</strong>: Defines required software and hardware features. This information is used for application filtering in Samsung Galaxy Store.</p>
+      </li>
+      <li>
+        <p><strong>Privileges</strong>: Defines the security-sensitive APIs or API groups accessed and used by the application.</p>
+      </li>
+      <li>
+        <p><strong>Localization</strong>: Defines localized values for the application name, description, and license.</p>
+      </li>
+      <li>
+        <p><strong>Policy</strong>: Requests network resource permissions to access the external network resources.</p>
+      </li>
+      <li>
+        <p><strong>Preferences</strong>: Defines name-value pairs that can be set or retrieved through the application.</p>
+      </li>
+      <li>
+        <p><strong>Tizen</strong>: Edits the Tizen schema extension properties of the application.</p>
+      </li>
+      <li>
+        <p><strong>Source</strong>: Views and edits the source code of the <strong>config.xml</strong> file. Changes made and saved on the other tabs are reflected in the source code and vice versa.</p>
+
+        <blockquote>
+          <p><strong>Note</strong></p>
+
+          <p>The <strong>config.xml</strong> file must conform to both the XML file format and the W3C specification requirements. Editing the file in the <strong>Source</strong> tab is intended for advanced users only.</p>
+        </blockquote>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>To save the changes, in Tizen Studio, select <strong>File &gt; Save All</strong>.</p>
+  </li>
+</ol>
+
+<p>For more information, see <a href="../../tutorials/process/setting-properties.md#set_widget">Setting the Web Application Configuration</a>.</p>
+
+<h3 id="understand-source-code">Understand Source Code</h3>
+
+<p>Following are the key highlights of an application to understand how the application is designed and how it works based on different Samsung Wearable platforms. For more information on the source code related to the UI, see <a href="#design-ui">Design UI</a>.</p>
+
+<ul>
+  <li>
+    <p>The watch application category settings are defined in the <strong>config.xml</strong> file. The file defines the application as a watch application through a category:</p>
+
+    <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;widget</span> <span class="na">xmlns=</span><span class="s">"http://www.w3.org/ns/widgets"</span> <span class="na">xmlns:tizen=</span><span class="s">"http://tizen.org/ns/widgets"</span>
+        <span class="na">id=</span><span class="s">"http://yourdomain/BasicWatch"</span> <span class="na">version=</span><span class="s">"1.0.0"</span> <span class="na">viewmodes=</span><span class="s">"maximized"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;tizen:application</span> <span class="na">id=</span><span class="s">"4lVHc7hUkz.BasicWatch"</span> <span class="na">package=</span><span class="s">"4lVHc7hUkz"</span> <span class="na">required_version=</span><span class="s">"2.3.1"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;tizen:category</span> <span class="na">name=</span><span class="s">"http://tizen.org/category/wearable_clock"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;content</span> <span class="na">src=</span><span class="s">"index.html"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;feature</span> <span class="na">name=</span><span class="s">"http://tizen.org/feature/screen.shape.circle"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;feature</span> <span class="na">name=</span><span class="s">"http://tizen.org/feature/screen.size.all"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;icon</span> <span class="na">src=</span><span class="s">"icon.png"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;name&gt;</span>BasicWatch<span class="nt">&lt;/name&gt;</span>
+   <span class="nt">&lt;tizen:profile</span> <span class="na">name=</span><span class="s">"wearable"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/widget&gt;</span>
+</code></pre></div>    </div>
+
+    <blockquote>
+      <p><strong>Note</strong></p>
+
+      <p>By default, the BasicWatch sample application category is defined as <code class="highlighter-rouge">&lt;tizen:category name="http://tizen.org/category/wearable_clock"/&gt;</code>. To run your application on Samsung Gear and Samsung Gear Active devices, use <code class="highlighter-rouge">&lt;tizen:category name="com.samsung.wmanager.WATCH_CLOCK"/&gt;</code>.</p>
+    </blockquote>
+  </li>
+  <li>
+    <p>On a low-powered wearable device, an ambient mode is available. In this mode, the watch application shows a limited UI and receives only the ambient tick event every minute to reduce the power consumption.</p>
+
+    <p>If the application contains a custom UI for the <a href="../../tutorials/event-handling.md#ambient">ambient mode</a>, the ambient mode support is also shown in the <strong>config.xml</strong> file. However, the BasicWatch sample application does not support a custom ambient UI.</p>
+  </li>
+</ul>
+
+<h2 id="design-ui">Design UI</h2>
+
+<p>The wearable application is created with the <strong>Basic Watch</strong> sample. It has a simple user interface that consists of four images, a background image and separate images for the hour, minute, and second hands of the clock. The clock hands rotate on the screen every second to show the current time.</p>
+
+<p>The UI is created using <a href="https://www.w3schools.com">W3C/HTML</a>. The W3C specifications provide HTML and CSS features for creating a user interface. With HTML, you can define the structure of the application screens, while CSS allows you to define the look and feel of the screens.</p>
+
+<p><strong>Figure: User interface in the Basic Watch sample</strong></p>
+
+<p><img src="media/basic_app_running_ww_watch.png" alt="User interface in the Basic Watch sample" /></p>
+
+<h3 id="create-basic-ui">Create Basic UI</h3>
+
+<p>The UI in the <strong>Basic Watch</strong> sample uses HTML Document Object Model (DOM), which is a structured model to control Web elements. It is an official W3C standard to express the document regardless of platforms or languages, and the foundation of the HTML5 APIs. The template contains the following components:</p>
+
+<ul>
+  <li>
+    <p>The <code class="highlighter-rouge"><span class="nt">&lt;html&gt;</span></code> element is the top-level element of the HTML DOM tree that wraps the entire document. It has <code class="highlighter-rouge">&lt;head&gt;</code> and <code class="highlighter-rouge">&lt;body&gt;</code> elements as child nodes:</p>
+
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+   <span class="nt">&lt;head&gt;</span>
+      <span class="c">&lt;!--Content--&gt;</span>
+   <span class="nt">&lt;/head&gt;</span>
+   <span class="nt">&lt;body&gt;</span>
+      <span class="c">&lt;!--Content--&gt;</span>
+   <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>The <code class="highlighter-rouge">&lt;head&gt;</code> element contains the following information that the browser refers to when rendering the body element to interpret the information, such as the title of the HTML document, and the location of the related CSS and JavaScript files:</p>
+
+    <ul>
+      <li><code class="highlighter-rouge">&lt;title&gt;</code>: Defines the title of the document.</li>
+      <li><code class="highlighter-rouge">&lt;meta&gt;</code>: Defines the information, such as encoding, creator, and keywords of the document.</li>
+      <li><code class="highlighter-rouge">&lt;style&gt;</code>, <code class="highlighter-rouge">&lt;link&gt;</code>: Sets the styles of the document.</li>
+      <li><code class="highlighter-rouge">&lt;script&gt;</code>, <code class="highlighter-rouge">&lt;noscript&gt;</code>: Adds functions to the document.</li>
+    </ul>
+
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;head&gt;</span>
+   <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1.0, maximum-scale=1.0"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"description"</span> <span class="na">content=</span><span class="s">"Tizen Wearable Web Basic Watch Face"</span><span class="nt">/&gt;</span>
+
+   <span class="nt">&lt;title&gt;</span>Basic Watch<span class="nt">&lt;/title&gt;</span>
+
+   <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">type=</span><span class="s">"text/css"</span> <span class="na">href=</span><span class="s">"css/style.css"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>The <code class="highlighter-rouge">&lt;body&gt;</code> element defines the area displaying content on the browser screen. In this case, it defines the main UI elements, such as background image and clock hands:</p>
+
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;body&gt;</span>
+   <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"background"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"components-main"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"hand-main-hour"</span><span class="nt">&gt;&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"hand-main-minute"</span><span class="nt">&gt;&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"hand-main-second"</span><span class="nt">&gt;&lt;/div&gt;</span>
+         <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+   <span class="nt">&lt;/div&gt;</span>
+
+   <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"js/app.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="modify-existing-components-using-css">Modify Existing Components using CSS</h3>
+
+<p>CSS specifies the layout and styling of the Web application.</p>
+
+<p>Following are the various ways to connect CSS with HTML:</p>
+<ul>
+  <li><code class="highlighter-rouge">style</code> attribute in an HTML element.</li>
+  <li><code class="highlighter-rouge">&lt;link&gt;</code> element in the <code class="highlighter-rouge">&lt;head&gt;</code> element.</li>
+  <li><code class="highlighter-rouge">@import</code> attribute in the CSS area.</li>
+  <li><code class="highlighter-rouge">&lt;style&gt;</code> element in the <code class="highlighter-rouge">&lt;head&gt;</code> element.</li>
+</ul>
+
+<p>Applying the style of an HTML element directly with the <code class="highlighter-rouge">style</code> attribute has the highest priority. On the other hand, creating a separate CSS file and managing it separately is convenient when it comes to applying changes in the future.</p>
+
+<p>In the <strong>Basic Watch</strong> sample, the CSS file is connected to the HTML file using a <code class="highlighter-rouge">&lt;link&gt;</code> element in the <code class="highlighter-rouge">&lt;head&gt;</code> element:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;head&gt;</span>
+   <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span>
+         <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1.0, maximum-scale=1.0"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"description"</span> <span class="na">content=</span><span class="s">"Tizen Wearable Web Basic Watch Face"</span><span class="nt">/&gt;</span>
+
+   <span class="nt">&lt;title&gt;</span>Basic Watch<span class="nt">&lt;/title&gt;</span>
+
+   <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">type=</span><span class="s">"text/css"</span> <span class="na">href=</span><span class="s">"css/style.css"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+</code></pre></div></div>
+
+<p>The lines in the <strong>css/style.css</strong> file describe the styling of the main UI elements using the IDs defined in the HTML file.</p>
+
+<p>Each main element is represented by a specific image file. The background image covers the entire screen. The clock hand images are placed such that they start from the upper middle of the screen, for example, 12:00 noon or midnight time.</p>
+
+<ul>
+  <li>
+    <p><strong>css/style.css</strong>:</p>
+
+    <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">#background</span> <span class="p">{</span>
+   <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+   <span class="nl">height</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+   <span class="nl">background-image</span><span class="p">:</span> <span class="sx">url("../image/watch_bg.png")</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#components-main</span> <span class="p">{</span>
+   <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
+   <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+   <span class="nl">height</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#hand-main-hour</span> <span class="p">{</span>
+   <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
+   <span class="nl">left</span><span class="p">:</span> <span class="m">172.5px</span><span class="p">;</span>
+   <span class="nl">top</span><span class="p">:</span> <span class="m">0px</span><span class="p">;</span>
+   <span class="nl">width</span><span class="p">:</span> <span class="m">15px</span><span class="p">;</span>
+   <span class="nl">height</span><span class="p">:</span> <span class="m">360px</span><span class="p">;</span>
+   <span class="nl">background-image</span><span class="p">:</span> <span class="sx">url("../image/watch_hand_hour.png")</span><span class="p">;</span>
+   <span class="nl">background-position</span><span class="p">:</span> <span class="nb">center</span> <span class="nb">top</span><span class="p">;</span>
+   <span class="nl">background-size</span><span class="p">:</span> <span class="n">contain</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#hand-main-minute</span> <span class="p">{</span>
+   <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
+   <span class="nl">left</span><span class="p">:</span> <span class="m">172px</span><span class="p">;</span>
+   <span class="nl">top</span><span class="p">:</span> <span class="m">0px</span><span class="p">;</span>
+   <span class="nl">width</span><span class="p">:</span> <span class="m">16px</span><span class="p">;</span>
+   <span class="nl">height</span><span class="p">:</span> <span class="m">360px</span><span class="p">;</span>
+   <span class="nl">background-image</span><span class="p">:</span> <span class="sx">url("../image/watch_hand_minute.png")</span><span class="p">;</span>
+   <span class="nl">background-position</span><span class="p">:</span> <span class="nb">center</span> <span class="nb">top</span><span class="p">;</span>
+   <span class="nl">background-size</span><span class="p">:</span> <span class="n">contain</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#hand-main-second</span> <span class="p">{</span>
+   <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
+   <span class="nl">left</span><span class="p">:</span> <span class="m">172px</span><span class="p">;</span>
+   <span class="nl">top</span><span class="p">:</span> <span class="m">0px</span><span class="p">;</span>
+   <span class="nl">width</span><span class="p">:</span> <span class="m">16px</span><span class="p">;</span>
+   <span class="nl">height</span><span class="p">:</span> <span class="m">360px</span><span class="p">;</span>
+   <span class="nl">background-image</span><span class="p">:</span> <span class="sx">url("../image/watch_hand_second.png")</span><span class="p">;</span>
+   <span class="nl">background-position</span><span class="p">:</span> <span class="nb">center</span> <span class="nb">top</span><span class="p">;</span>
+   <span class="nl">background-size</span><span class="p">:</span> <span class="n">contain</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong>index.html</strong>:</p>
+
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"background"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"components-main"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"hand-main-hour"</span><span class="nt">&gt;&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"hand-main-minute"</span><span class="nt">&gt;&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"hand-main-second"</span><span class="nt">&gt;&lt;/div&gt;</span>
+   <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>By default, the watch uses a background image. You can change the CSS code and replace the background image with a background color. In the following example, background is changed to dark blue <code class="highlighter-rouge">#3805AF</code>:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">#background</span> <span class="p">{</span>
+   <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+   <span class="nl">height</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+   <span class="nl">background-color</span><span class="p">:</span> <span class="m">#3805AF</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><img src="media/simple_ui_modified_ww_watch.png" alt="Screen with a background color" /></p>
+
+<h3 id="display-current-time-with-w3c">Display Current Time with W3C</h3>
+
+<p>To display the current time, use the <a href="../../api/latest/w3c_api/w3c_api_w.html#transforms">CSS Transforms</a> API in the <strong>app.js</strong> file:</p>
+
+<ol>
+  <li>
+    <p>When the application is shown on the device screen, initialize it to update the clock hands every second:</p>
+
+    <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">init</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">bindEvents</span><span class="p">();</span>
+
+    <span class="cm">/* Update the clock hands every second */</span>
+    <span class="nx">setInterval</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nx">updateTime</span><span class="p">();</span>
+    <span class="p">},</span> <span class="mi">1000</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nb">window</span><span class="p">.</span><span class="nx">onload</span> <span class="o">=</span> <span class="nx">init</span><span class="p">();</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>To retrieve the current time, use <code class="highlighter-rouge">updateTime()</code> and call the <code class="highlighter-rouge">rotateElement()</code> method for each clock hand:</p>
+
+    <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">updateTime</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">datetime</span> <span class="o">=</span> <span class="nx">tizen</span><span class="p">.</span><span class="nx">time</span><span class="p">.</span><span class="nx">getCurrentDateTime</span><span class="p">(),</span>
+        <span class="nx">hour</span> <span class="o">=</span> <span class="nx">datetime</span><span class="p">.</span><span class="nx">getHours</span><span class="p">(),</span>
+        <span class="nx">minute</span> <span class="o">=</span> <span class="nx">datetime</span><span class="p">.</span><span class="nx">getMinutes</span><span class="p">(),</span>
+        <span class="nx">second</span> <span class="o">=</span> <span class="nx">datetime</span><span class="p">.</span><span class="nx">getSeconds</span><span class="p">();</span>
+
+    <span class="cm">/* Rotate the clock hands */</span>
+    <span class="nx">rotateElement</span><span class="p">(</span><span class="dl">'</span><span class="s1">hand-main-hour</span><span class="dl">'</span><span class="p">,</span> <span class="p">(</span><span class="nx">hour</span> <span class="o">+</span> <span class="p">(</span><span class="nx">minute</span> <span class="o">/</span> <span class="mi">60</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="nx">second</span> <span class="o">/</span> <span class="mi">3600</span><span class="p">))</span> <span class="o">*</span> <span class="mi">30</span><span class="p">);</span>
+    <span class="nx">rotateElement</span><span class="p">(</span><span class="dl">'</span><span class="s1">hand-main-minute</span><span class="dl">'</span><span class="p">,</span> <span class="p">(</span><span class="nx">minute</span> <span class="o">+</span> <span class="nx">second</span> <span class="o">/</span> <span class="mi">60</span><span class="p">)</span> <span class="o">*</span> <span class="mi">6</span><span class="p">);</span>
+    <span class="nx">rotateElement</span><span class="p">(</span><span class="dl">'</span><span class="s1">hand-main-second</span><span class="dl">'</span><span class="p">,</span> <span class="nx">second</span> <span class="o">*</span> <span class="mi">6</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>To rotate the clock hand based on the angle that is calculated from the current time, use <code class="highlighter-rouge">rotateElement(elementID, angle)</code>:</p>
+
+    <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">rotateElement</span><span class="p">(</span><span class="nx">elementID</span><span class="p">,</span> <span class="nx">angle</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">element</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">#</span><span class="dl">'</span> <span class="o">+</span> <span class="nx">elementID</span><span class="p">);</span>
+
+    <span class="nx">element</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">transform</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">rotate(</span><span class="dl">'</span> <span class="o">+</span> <span class="nx">angle</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">deg)</span><span class="dl">'</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="build-application">Build Application</h2>
+
+<p>After you have created the application project, you can implement the required features. In the example mentioned in this page, only the default features from the project template are used. Hence, no code changes are required.</p>
+
+<p>When you build your application, the building process performs a validation check. It also compiles the JavaScript and the CSS files.</p>
+
+<p>You can build the application in one of the following ways:</p>
+
+<ul>
+  <li>
+    <p><strong>Automatically</strong></p>
+
+    <p>The automatic build means that Tizen Studio automatically builds the application whenever you change a source or resource file, and save the application project.</p>
+
+    <p>To use the automatic build, follow these steps:</p>
+
+    <ol>
+      <li>In the <strong>Project Explorer</strong> view, select the project.</li>
+      <li>
+        <p>In the Tizen Studio menu, select <strong>Project &gt; Build Automatically</strong>.</p>
+
+        <p><img src="media/build_automatic_ww_watch.png" alt="Using the automatic build" /></p>
+      </li>
+    </ol>
+
+    <p>You can toggle the automatic build on and off by selecting <strong>Project &gt; Build Automatically</strong>.</p>
+  </li>
+  <li>
+    <p><strong>Manually</strong></p>
+
+    <p>The manual build means that you determine when an application is built.</p>
+
+    <p>To manually build an application, in the <strong>Project Explorer</strong> view, right-click the project and select <strong>Build Project</strong>.</p>
+
+    <p><img src="media/build_manual_w.png" alt="Manually building the application" /></p>
+
+    <p>Alternatively, in the <strong>Project Explorer</strong> view, you can select the project and Press <strong>F10</strong>.</p>
+  </li>
+</ul>
+
+<p>After you have built the application, you can run the application.</p>
+
+<h2 id="run-application">Run Application</h2>
+
+<p>You can run the Web application using an <a href="../../tutorials/process/run-debug-app.md#emulator">emulator</a> or a <a href="../../tutorials/process/run-debug-app.md#target">target device</a>.</p>
+
+<blockquote>
+  <p><strong>Note</strong></p>
+
+  <p>Since the Web Simulator does not support a circular UI, this topic does not cover the instructions for running the application on the <a href="../../tutorials/process/run-debug-app.md#simulator">Web Simulator</a>.</p>
+</blockquote>
+
+<h3 id="run-application-on-emulator">Run Application on Emulator</h3>
+
+<p>To run the application on the emulator, follow these steps:</p>
+
+<ol>
+  <li>
+    <p>Launch an emulator instance in <a href="../../../tizen-studio/common-tools/emulator-manager.md">Emulator Manager</a>:</p>
+
+    <ol>
+      <li>
+        <p>In the Tizen Studio menu, select <strong>Tools &gt; Emulator Manager</strong>.</p>
+
+        <p><img src="media/emulator_icon.png" alt="Emulator Manager" /></p>
+      </li>
+      <li>
+        <p>In the <strong>Emulator Manager</strong> window that appears, select a wearable emulator from the list and click <strong>Launch</strong>. If no applicable emulator instance exists, <a href="../../../tizen-studio/common-tools/emulator-manager.md#create">create a new one</a>.</p>
+
+        <p><img src="media/emulator_instance_launch_wearable.png" alt="Launching the emulator" /></p>
+
+        <p>The emulator is launched. You can also see the new emulator instance and its folder structure in <strong>Tools &gt; Device Manager</strong>.</p>
+
+        <p><img src="media/emulator_window_wearable.png" alt="Emulator" /></p>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <p>Generate a security profile.</p>
+
+    <p>Before you run the application, you must <a href="../../../tizen-studio/common-tools/certificate-registration.md">sign your application package with a certificate profile</a> in Tizen Studio.</p>
+  </li>
+  <li>
+    <p>Run the application:</p>
+
+    <ol>
+      <li>
+        <p>In the <strong>Project Explorer</strong> view, right-click the project and select <strong>Run As &gt; Tizen Web Application</strong>.</p>
+
+        <p><img src="media/app_run_w.png" alt="Running the application" /></p>
+
+        <p>Alternatively, you can select the project in the <strong>Project Explorer</strong> view and perform one of the following:</p>
+
+        <ul>
+          <li>Press <strong>Ctrl + F11</strong>.</li>
+          <li>In the toolbar, click <img src="media/run_app_ww.png" alt="Run application icon" />.</li>
+        </ul>
+
+        <p>If you have created multiple emulator instances, select the instance you want from the drop-down list in the toolbar. If you select an offline emulator, it is automatically launched when you run the application.</p>
+
+        <p><img src="media/app_run_multiple_emulators.png" alt="Selecting the emulator to use" /></p>
+      </li>
+      <li>
+        <p>Verify whether the application launches on the emulator.</p>
+
+        <p><img src="media/emulator_running_watch_ww.png" alt="Application running in the emulator" /></p>
+
+        <blockquote>
+          <p><strong>Note</strong></p>
+
+          <p>If the emulator display is switched off, you cannot see the application launch. To activate, click the power key in the lower-right corner of the emulator.</p>
+        </blockquote>
+      </li>
+      <li>
+        <p>Change the watch face.</p>
+
+        <p>To change the device watch face and enable the installed watch application visible on the home screen, follow these steps:</p>
+
+        <p><img src="media/watch_run_change_ww.png" alt="Changing the watch face" /></p>
+
+        <ol>
+          <li>
+            <p>If the emulator display is switched off, activate it by clicking the power key in the lower-right corner of the emulator.</p>
+          </li>
+          <li>
+            <p>On the home screen, when the default watch face appears, click the power key.</p>
+          </li>
+          <li>
+            <p>In the apps screen, select <strong>Settings &gt; Watch faces and styles &gt; Watch faces</strong>.</p>
+          </li>
+          <li>
+            <p>Swipe right until you find your application icon, and select it. The <strong>Clock changed</strong> message appears.</p>
+          </li>
+          <li>
+            <p>Click the back key in the upper-right corner of the emulator device multiple times, until the home screen with your new watch face appears.</p>
+
+            <p><img src="media/emulator_running_watch_ww.png" alt="Application running in the emulator" /></p>
+          </li>
+        </ol>
+
+        <p>While the application is running, you can see the logs, exception messages, and debug information using the <strong>Log</strong> view in Tizen Studio. To see the logs in Tizen Studio, select <strong>Window &gt; Show View &gt; Log</strong>.</p>
+      </li>
+    </ol>
+  </li>
+</ol>
+
+<p>For more information, see <a href="../../../tizen-studio/common-tools/emulator-control-panel.md">Using Emulator Control Keys, Menu, and Panel</a> and <a href="../../../tizen-studio/common-tools/emulator-features.md">Using Extended Emulator Features</a>.</p>
+
+<h3 id="run-on-target-device">Run on Target Device</h3>
+
+<p>To run the application on a target device, follow these steps:</p>
+
+<ol>
+  <li>Connect the wearable target device to your computer:
+    <ol>
+      <li>Define the settings on the device:
+        <ul>
+          <li>
+            <p>Select <strong>Settings &gt; Connections</strong>, and switch on <strong>Bluetooth</strong>.</p>
+
+            <p><img src="media/emulator_target_bt.png" alt="Switch on Bluetooth" /></p>
+
+            <p><img src="media/emulator_target_bt2.png" alt="Switch on Bluetooth" /></p>
+          </li>
+          <li>
+            <p>Select <strong>Settings &gt; Connections</strong>, and switch on <strong>Wi-Fi</strong>.</p>
+
+            <p>The device and the computer must be connected to the same Wi-Fi network.</p>
+
+            <p><img src="media/emulator_target_wifi.png" alt="Switch on Wi-Fi" /></p>
+
+            <blockquote>
+              <p><strong>Note</strong></p>
+
+              <p>After connecting to the Wi-Fi network, the IP address appears on the device.</p>
+            </blockquote>
+          </li>
+          <li>
+            <p>Select <strong>Settings &gt; Gear info</strong>, and switch on <strong>Debugging</strong>.</p>
+
+            <p><img src="media/emulator_target_debug.png" alt="Switch on debugging" /></p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>In <strong>Tools &gt; Device Manager</strong>, verify whether the device is connected.</p>
+
+        <p><img src="media/remote_connected_ww.png" alt="Device is connected" /></p>
+
+        <blockquote>
+          <p><strong>Note</strong></p>
+
+          <p>Tizen Studio automatically detects the device. In the Tizen Studio toolbar, the device appears in the device list. You can also connect your device using <a href="../wearable/first-app.md#remote_device">Remote Device Manager</a>.</p>
+        </blockquote>
+      </li>
+      <li>
+        <p>To allow the Samsung Wearable device to read log data and copy application files from the wearable device, install the application manually and select the accept mark.</p>
+
+        <p><img src="media/remote_allow_gear_ww.png" alt="Allow Gear to access data" /></p>
+
+        <blockquote>
+          <p><strong>Note</strong></p>
+
+          <p>In the first attempt, the connection fails and the device asks for user confirmation.</p>
+        </blockquote>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <p>Generate an author certificate.</p>
+
+    <p>Before you run the application, you must <a href="../../../tizen-studio/common-tools/certificate-registration.md">sign your application package with a certificate profile</a> in Tizen Studio.</p>
+  </li>
+  <li>
+    <p>Run the application:</p>
+
+    <ol>
+      <li>
+        <p>In <strong>Tools &gt; Device Manager</strong>, select the device.</p>
+      </li>
+      <li>
+        <p>In the <strong>Project Explorer</strong> view, right-click the project and select <strong>Run As &gt; Tizen Web Application</strong>.</p>
+
+        <p><img src="media/app_run_w.png" alt="Running the application on a target device" /></p>
+
+        <p>Alternatively, you can select the project in the <strong>Project Explorer</strong> view and perform one of the following:</p>
+
+        <ul>
+          <li>Press <strong>Ctrl + F11</strong>.</li>
+          <li>In the toolbar, click <img src="media/run_app_ww.png" alt="Run application icon" />.</li>
+        </ul>
+
+        <p>If you have both connected device and emulator instances, then select the device from the drop-down list in the toolbar.</p>
+
+        <p><img src="media/app_run_multiple_device.png" alt="Selecting the device to use" /></p>
+      </li>
+      <li>
+        <p>Verify whether the application launches on the target device.</p>
+
+        <blockquote>
+          <p><strong>Note</strong></p>
+
+          <p>The application launches with default launch configuration.</p>
+        </blockquote>
+
+        <p>To create and use the custom launch configuration, follow these steps:</p>
+
+        <ol>
+          <li>
+            <p>In the <strong>Project Explorer</strong> view, right-click the project and select <strong>Run As &gt; Run Configurations</strong>.</p>
+          </li>
+          <li>
+            <p>In the <strong>Run Configurations</strong> window that appears, select <img src="media/run_new_config_wn.png" alt="New Launch Configuration icon" /> and specify the configuration details.</p>
+
+            <p><img src="media/run_configurations_w.png" alt="Run Configurations window" /></p>
+          </li>
+          <li>
+            <p>To launch the application, click <strong>Run</strong>.</p>
+          </li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+</ol>
+
+<h2 id="submit-application-on-samsung-galaxy-store">Submit Application on Samsung Galaxy Store</h2>
+
+<p><a href="https://seller.samsungapps.com/">Samsung Galaxy Store</a> is an app store designed specifically for Samsung Galaxy and Watch devices. It caters in over 180 countries to download and install the apps that users want on their Samsung Galaxy and Watch devices. Samsung Galaxy Store has a wide variety of useful apps in categories, such as Entertainment, Finance, Health, Music, and Social Networking.</p>
+
+<p><img src="media/galaxystore_sns.jpg" alt="Samsung Galaxy Store" /></p>
+
+<p>To submit and distribute your app, you need to submit your app package and details on <a href="https://seller.samsungapps.com/">Seller Office at Samsung Galaxy Store</a>.</p>
+
+<p><img src="media/samsung_galaxy_store_portal.png" alt="Samsung Galaxy Store" /></p>
+
+<p>For more information on how to distribute your app for Samsung Galaxy Gear and Wearable, see <a href="https://developer.samsung.com/galaxy-watch/distribute/how-to-distribute">Samsung Galaxy Watch Distribution</a>.</p>
+
+								
+            						
+
+
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = 'https://samsung-test.github.io/5.5//application/getstarted/wwfirst-app-watch/';
+      this.page.identifier = 'https://samsung-test.github.io/5.5//application/getstarted/wwfirst-app-watch/';
+    };
+    (function() {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://samsung-test.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+         						
+							</div>
+						</section>
+					</main>
+					<nav class="col-nav">
+						<div id="sidebar-nav" class="sidebar hidden-sm hidden-xs">
+						    
+
+
+<div id="navbar" class="nav-sidebar">
+    <ul class="nav" id="jsTOCLeftNav">
+        
+        
+        
+        
+    
+        <li>
+            <a 
+                href="application/getstarted/overview/" 
+                data-target="#item1" 
+                data-toggle="collapse" 
+                data-parent="#stacked-menu"
+                aria-expanded=" true "
+                class=" not-collapsed "
+                >
+                    Get Started
+                    <span class="caret arrow"></span>
+            </a>
+            
+
+            
+            <ul class="nav collapse in" aria-expanded="true" id="#item1">
+            
+
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="application/getstarted/wfirst-app/" 
+                        class=""
+                        >
+                        Wearable
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="application/getstarted/wwfirst-app-watch/" 
+                        class="active currentPage"
+                        >
+                        Watch
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="application/getstarted/tvfirst-app/" 
+                        class=""
+                        >
+                        TV
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="application/getstarted/first-samsung-tv-app/" 
+                        class=""
+                        >
+                        Smart TV
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="application/getstarted/mfirst-app/" 
+                        class=""
+                        >
+                        Mobile
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="application/getstarted/first-app-widget/" 
+                        class=""
+                        >
+                        Wearable Web Widget
+                    </a>
+                    
+                </li>
+                
+            </ul>
+            
+        </li>
+    
+        
+        
+        
+    
+        <li>
+            <a 
+                href="application/developing/installing/" 
+                data-target="#item2" 
+                data-toggle="collapse" 
+                data-parent="#stacked-menu"
+                aria-expanded=" false "
+                class=" collapsed "
+                >
+                    Application Developing
+                    <span class="caret arrow"></span>
+            </a>
+            
+
+            
+            <ul class="nav collapse" aria-expanded="false" id="#item2">
+            
+
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="application/developing/installing/" 
+                        class=""
+                        >
+                        Installing Development Tools
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="application/developing/setting-up/" 
+                        class=""
+                        >
+                        Setting up Development Environment
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="application/developing/cloning/" 
+                        class=""
+                        >
+                        Cloning Tizen Source Files
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="application/developing/building/" 
+                        class=""
+                        >
+                        Building Packages Locally with GBS
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="application/developing/building-all/" 
+                        class=""
+                        >
+                        Building All Packages Locally with GBS
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="application/developing/contributing/" 
+                        class=""
+                        >
+                        Contributing Code to Tizen
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="application/developing/creating/" 
+                        class=""
+                        >
+                        Creating Tizen Images with MIC
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="application/developing/flashing/" 
+                        class=""
+                        >
+                        Flashing an Image to Device
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="application/developing/tips/" 
+                        class=""
+                        >
+                        Development Tips
+                    </a>
+                    
+                </li>
+                
+            </ul>
+            
+        </li>
+    
+        
+        
+        
+    
+        <li>
+            <a 
+                href="application/porting/overview" 
+                data-target="#item3" 
+                data-toggle="collapse" 
+                data-parent="#stacked-menu"
+                aria-expanded=" false "
+                class=" collapsed "
+                >
+                    Porting
+                    <span class="caret arrow"></span>
+            </a>
+            
+
+            
+            <ul class="nav collapse" aria-expanded="false" id="#item3">
+            
+
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="application/porting/overview/" 
+                        class=""
+                        >
+                        Overview
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="application/porting/kernel/" 
+                        class=""
+                        >
+                        Kernel
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="application/porting/system/" 
+                        class=""
+                        >
+                        System
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="application/porting/graphics-and-ui/" 
+                        class=""
+                        >
+                        Graphics and UI
+                    </a>
+                    
+                </li>
+                
+            </ul>
+            
+        </li>
+    
+        
+        
+        
+    
+        <li>
+            <a 
+                href="application/reference/gerrit-usage/" 
+                data-target="#item4" 
+                data-toggle="collapse" 
+                data-parent="#stacked-menu"
+                aria-expanded=" false "
+                class=" collapsed "
+                >
+                    Reference
+                    <span class="caret arrow"></span>
+            </a>
+            
+
+            
+            <ul class="nav collapse" aria-expanded="false" id="#item4">
+            
+
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="application/reference/gerrit-usage/" 
+                        class=""
+                        >
+                        Gerrit
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="application/reference/gbs/gbs-overview/"
+                        class=""
+                        aria-expanded=" false "
+                        data-target="#item2" 
+                        data-toggle="collapse" 
+                        >
+                        Git Build System (GBS)
+                        <span class="caret arrow"></span>
+                    </a>
+                    
+                    
+                    <ul class="nav collapse" aria-expanded="false" id="#item2">
+                    
+                        
+                        <li>
+                            
+                            <a 
+                                href="application/reference/gbs/gbs-overview/"
+                                class=""
+                                >
+                                Overview
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a 
+                                href="application/reference/gbs/gbs.conf/"
+                                class=""
+                                >
+                                GBS Configuration
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a 
+                                href="application/reference/gbs/gbs-maintenance-models/"
+                                class=""
+                                >
+                                GBS Maintenance Models
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="application/reference/mic/mic-overview/"
+                        class=""
+                        aria-expanded=" false "
+                        data-target="#item3" 
+                        data-toggle="collapse" 
+                        >
+                        MIC Image Creator
+                        <span class="caret arrow"></span>
+                    </a>
+                    
+                    
+                    <ul class="nav collapse" aria-expanded="false" id="#item3">
+                    
+                        
+                        <li>
+                            
+                            <a 
+                                href="application/reference/mic/mic-overview/"
+                                class=""
+                                >
+                                Overview
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a 
+                                href="application/reference/mic/mic-customize-image/"
+                                class=""
+                                >
+                                Customizing Images
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a 
+                                href="application/reference/mic/mic-reference/"
+                                class=""
+                                >
+                                MIC Reference
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+                
+            </ul>
+            
+        </li>
+    
+        
+        
+    </ul>
+</div>
+<script>
+    $("a[href$='/application/getstarted/wwfirst-app-watch/']").addClass("active currentPage");
+</script>
+						</div>
+					</nav>
+					<div class="col-toc">
+						<div class="sidebar hidden-xs hidden-sm">
+							<div class="toc-nav">
+								<div class="feedback-links">
+									<ul>
+										<li>
+                                            <a href="https://github.com/samsung-test/samsung-test.github.io/edit/5.5/application/getstarted/wwfirst-app-watch.md" target="_blank">
+                                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                                Edit Page
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://github.com/samsung-test/samsung-test.github.io/issues/new" class="nomunge" target="_blank">
+                                                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                                Report Issue
+                                            </a>
+                                        </li>
+									</ul>
+								</div>
+								   
+									<div id="side-toc-title">On this page:</div>
+									
+<ul id="my_toc" class="inline_toc">
+  <li><a href="#prerequisites" class="nomunge">Prerequisites</a></li>
+  <li><a href="#develop-wearable-web-application-using-sample" class="nomunge">Develop Wearable Web Application using Sample</a></li>
+  <li><a href="#create-project" class="nomunge">Create Project</a>
+    <ul>
+      <li><a href="#manage-application-configuration" class="nomunge">Manage Application Configuration</a></li>
+      <li><a href="#understand-source-code" class="nomunge">Understand Source Code</a></li>
+    </ul>
+  </li>
+  <li><a href="#design-ui" class="nomunge">Design UI</a>
+    <ul>
+      <li><a href="#create-basic-ui" class="nomunge">Create Basic UI</a></li>
+      <li><a href="#modify-existing-components-using-css" class="nomunge">Modify Existing Components using CSS</a></li>
+      <li><a href="#display-current-time-with-w3c" class="nomunge">Display Current Time with W3C</a></li>
+    </ul>
+  </li>
+  <li><a href="#build-application" class="nomunge">Build Application</a></li>
+  <li><a href="#run-application" class="nomunge">Run Application</a>
+    <ul>
+      <li><a href="#run-application-on-emulator" class="nomunge">Run Application on Emulator</a></li>
+      <li><a href="#run-on-target-device" class="nomunge">Run on Target Device</a></li>
+    </ul>
+  </li>
+  <li><a href="#submit-application-on-samsung-galaxy-store" class="nomunge">Submit Application on Samsung Galaxy Store</a></li>
+</ul>
+
+
+								</div>
+								
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+    <div class="container-fluid">
+  <div class="top_footer">
+    <div class="footer-nav">
+      <nav class="footer_sub_nav">
+        <ul class="menu">
+          <li><a href="https://developer.tizen.org/">Developer</a></li>
+          <li><a href="https://dashboard.tizen.org/">Dashboard</a></li>
+          <li><a href="https://craftroom.tizen.org/">Craftroom</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="bottom_footer">
+    <div class="footer-copyright col-xs-12 col-md-8">
+      <p class="copyright">
+        Copyright &copy; 2019 Tizen Inc. All rights reserved.
+      </p>
+    </div>
+    <div class="footer_social_nav">
+      <ul class="nav-social">
+        <li class="fa fa-github"><a href="https://github.com/samsung-test">GitHub</a></li>  
+        <li class="fa fa-twitter"><a href="https://twitter.com/TizenProject">Twitter</a></li>
+        <li class="fa fa-facebook"><a href="http://www.facebook.com/pages/Tizen-Project">Facebook</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+    <div id="templates"></div>
+    <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/common.js?v=23122019"></script>
+<script type="text/javascript" src="/js/handlebars-v4.0.11.js?v=23122019"></script>
+<script type="text/javascript" src="/js/widgets-data.js?v=23122019"></script>
+<script type="text/javascript" src="/js/widgets.js?v=23122019"></script>
+<script type="text/javascript" src="/js/highlight.pack.js"></script>
+<script type="text/javascript" src="/js/tocs.js"></script>
+<script type="text/javascript" src="/js/menu.js"></script>
+<script type="text/javascript" src="/js/stickyfill.min.js"></script>
+<script type="text/javascript" src="/js/metadata.js"></script>
+<script type="text/javascript" src="/js/docs.js"></script>
+
+</body>
+</html>
