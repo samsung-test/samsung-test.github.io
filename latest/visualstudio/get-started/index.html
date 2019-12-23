@@ -4,9 +4,9 @@
 	<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="icon"  href="/favicon.ico" />
-<title>Tizen Mobile</title>
-<meta name="description" content="Tizen Mobile"/>
-<meta name="keywords" content="Tizen, OS, Open Source, Install"/>
+<title>Tizen .NET Application</title>
+<meta name="description" content="Tizen .NET Application"/>
+<meta name="keywords" content="Tizen, OS, Open Source"/>
 <base id="baseURL" href="/latest/" />
 <meta id="docsVersion" content="5.5" />
 <meta name="last-modified" content="2019-12-23 10:29:54 +0530" />
@@ -58,13 +58,13 @@
             <li class="">
                 <a href="design/">Design</a>
             </li>
-            <li class="active">
+            <li class="">
                 <a href="platform/">Platform</a>
             </li>
             <li class="">
                 <a href="application/">Application</a>
             </li>
-            <li class=" dropdown">
+            <li class="active dropdown">
                 <a href="visualstudio/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visual Studio<span class="caret"></span></a>
                 <ul class="dropdown-menu nav-main">    
                     <li><a href="visualstudio/vstools/index/">VS Tools for Tizen</a></li>
@@ -132,8 +132,8 @@
           
       
       <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-         <a property="item" typeof="WebPage" href="/latest/platform/">
-            <span property="name">Platform</span>
+         <a property="item" typeof="WebPage" href="/latest/visualstudio/">
+            <span property="name">Tizen .NET Application</span>
             <meta property="position" content="2" />
          </a>
       </li>
@@ -141,17 +141,8 @@
           
       
       <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-         <a property="item" typeof="WebPage" href="/latest/platform/about/">
-            <span property="name">Platform</span>
-            <meta property="position" content="3" />
-         </a>
-      </li>
-       
-          
-      
-      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-         <span property="name">Tizen Mobile</span>
-         <meta property="position" content="4" />
+         <span property="name">Tizen .NET Application</span>
+         <meta property="position" content="3" />
       </li>
       
    </ol>
@@ -160,60 +151,103 @@
 
 							<div class="widgetLatestVersionNotification"></div>
 							<h1 class="page-title">
-								Tizen Mobile
+								Tizen .NET Application
 							</h1>
 							<div class="page-read-time">
 								<span class="reading-time" title="Estimated read time">
     
     
-    1 min read
+    3 mins read
     
 </span>
 							</div>
 							<div class="page-content">
-								<h1 id="tizen-mobile">Tizen Mobile</h1>
+								<h1 id="tizen-net-application">Tizen .NET Application</h1>
 
-<p>Tizen Mobile profile provides an effortless mobile experience with Tizen OS and a clutter-free, intuitive interface making it easy to understand and use. The profile comes preloaded with essential applications for the ease of new smart phone users. The device manufacture makes mobile devices more efficient; for example, the Ultra Data Saving mode in Samsung Z2 saves up to 40% in mobile data traffic by blocking unnecessary background applications from consuming data and by using a data compression technology, hence ensuring the simplest and most cost-efficient 4G experience.</p>
+<p>Tizen .NET is an exciting new way to develop applications for the Tizen operating system, running on 50 million Samsung devices, including TVs, wearables, mobile phones, and many other IoT devices around the world.</p>
 
-<h2 id="developing-applications-for-tizen-mobile">Developing Applications for Tizen Mobile</h2>
+<p>The existing Tizen frameworks are either C-based with no advantages of a managed runtime, or HTML5-based with fewer features and lower performance than the C-based solution. With Tizen .NET, you can use the C# programming language and the Common Language Infrastructure standards, and have benefits from a managed runtime for faster application development and code execution that is efficient and secure.</p>
 
-<p>To develop applications for the Mobile profile:</p>
+<p>To start developing Tizen applications using .NET, see <a href="get-started/mobile/first-app.md">Creating Your First Tizen .NET Application with Visual Studio</a>.</p>
 
-<ul>
-  <li><a href="../../../application/dotnet/get-started/mobile/first-app.md">Create Mobile .NET Applications</a></li>
-  <li><a href="../../../application/web/get-started/mobile/first-app.md">Create Mobile Web Applications</a></li>
-  <li><a href="../../../application/native/get-started/mobile/first-app.md">Create Mobile Native Applications</a></li>
-</ul>
+<h2 id="managed-runtime-advantages">Managed Runtime Advantages</h2>
 
-<h2 id="design-guidelines-for-tizen-mobile">Design Guidelines for Tizen Mobile</h2>
-
-<p>Tizen design principles suggest some clear guidelines that help you to design simple and easy-to-use applications for everyone:</p>
-<ul>
-  <li><a href="https://developer.tizen.org/design/mobile/design-principles" target="_blank">Design Principles</a></li>
-</ul>
-
-<h2 id="tizen-mobile-devices">Tizen Mobile Devices</h2>
-
-<p>Samsung Electronics expanded the Tizen ecosystem with the introduction of the Samsung Z4, a 4G smart phone that combines performance and essential features with a simplified user experience.</p>
-
-<p>For the first time on the Z Series, the Samsung Z4 is equipped with a front and rear camera optimized for social media and a wide range of features focused on convenience and productivity, including quick and easy access to the most frequently used functions. Additionally, with 4G LTE, VoLTE, and VoWiFi (voice over Wi-Fi), the Samsung Z4 offers faster network connectivity.</p>
-
-<p><strong>Figure: Mobile Samsung Z devices</strong></p>
-
-<p><img src="media/samsung-z.png" alt="Mobile Samsung Z devices" /></p>
-
-<p>When developing applications for Samsung Z devices, the following device and SDK version matches are recommended:</p>
+<p>Managed runtime offers the following advantages to your application development:</p>
 
 <ul>
-  <li>Samsung Z4 and Tizen 3.0</li>
-  <li>Samsung Z2 and Tizen 2.4</li>
-  <li>Samsung Z3 and Tizen 2.4</li>
-  <li>Samsung Z1 and Tizen 2.3.1</li>
+  <li>
+    <p><strong>Faster development</strong></p>
+
+    <p>Application development is accelerated as the managed runtime handles many functions that otherwise have to be coded into the application.</p>
+  </li>
+  <li>
+    <p><strong>Safer code</strong></p>
+
+    <p>Managed runtime can handle bound checking, type safety, garbage collection, memory protection services, and objects that are invoked directly. Tizen Web API already provides some of the mentioned benefits, but does not provide type safety as JavaScript is not a strongly typed language.</p>
+  </li>
+  <li>
+    <p><strong>Lower deployment costs</strong></p>
+
+    <p>Component-based architecture makes it easier and faster to deploy applications in an enterprise environment characterized by multiple platforms, devices, and legacy systems.</p>
+  </li>
+  <li>
+    <p><strong>Better quality software</strong></p>
+
+    <p>Managed runtime helps you to focus on the business logic and the code specific to the application, while reducing the number of errors in the code.</p>
+  </li>
+  <li>
+    <p><strong>Cross-platform support</strong></p>
+
+    <p>The managed code is portable. Tizen .NET applications can have large portions of their logic applied to other systems supported by the .NET Core and Xamarin.Forms.</p>
+  </li>
 </ul>
 
-<h3 id="reference-mobile-device">Reference Mobile Device</h3>
+<h2 id="tizen-net-features-and-components">Tizen .NET Features and Components</h2>
 
-<p>TM1 is a reference device for the Tizen Mobile profile. It is not for sale.</p>
+<p>Tizen .NET enables you to build .NET applications with Xamarin.Forms and Tizen .NET framework. Xamarin.Forms allows you to easily create a user interface, and TizenFX API provides numerous interfaces to much of the hardware that is found in modern TV, mobile, wearable, and IoT devices.</p>
+
+<p><strong>Figure: Tizen .NET architecture</strong></p>
+
+<p><img src="media/cs_overview.png" alt="Tizen .NET architecture" /></p>
+
+<p>Tizen .NET consists of the following main components:</p>
+
+<ul>
+  <li>
+    <p><strong>.NET Core</strong></p>
+
+    <p><a href="https://docs.microsoft.com/en-us/dotnet/core/about">.NET Core</a> is an <a href="https://github.com/dotnet/coreclr/blob/master/LICENSE.TXT">open-source</a>, general-purpose development platform maintained by Microsoft and the .NET community on <a href="https://github.com/dotnet/core">GitHub</a>. It’s cross-platform (supporting Windows, macOS, and Linux) and can be used to build device, cloud, and IoT applications.</p>
+
+    <p>See <a href="https://docs.microsoft.com/en-us/dotnet/core/about">About .NET Core</a> to learn more about .NET Core, including its characteristics, supported languages and frameworks, and key APIs.</p>
+  </li>
+  <li>
+    <p><strong>Xamarin.Forms</strong></p>
+
+    <p><a href="https://developer.xamarin.com/guides/xamarin-forms/getting-started/">Xamarin.Forms</a> provides cross-platform APIs, which allow you to create user interfaces that can be shared across platforms. The Visual Studio Tools for Tizen enables Tizen support for Xamarin.Forms.</p>
+  </li>
+  <li>
+    <p><strong>Tizen.Wearable.CircularUI</strong></p>
+
+    <p><a href="https://samsung.github.io/Tizen.CircularUI/index.html">Tizen.Wearable.CircularUI</a> provides Tizen wearable-specific user interfaces. It is a set of extension APIs of Xamarin.Forms. Tizen.Wearable.CircularUI APIs are supported only on Tizen wearable devices with Tizen .NET support, unlike the Xamarin.Forms which support cross platforms.</p>
+  </li>
+  <li>
+    <p><strong>TizenFX API</strong></p>
+
+    <p><a href="api/overview.md">TizenFX API</a> allows applications to call into platform-specific functionality from the shared code. This functionality enables Xamarin.Forms applications to do things a native application can do, without causing the portable part of the application to become littered with operating system-specific details.</p>
+
+    <p>TizenFX supports C# APIs, which expose Tizen-specific features such as Tizen application framework, account management, location services, media services, and connectivity.</p>
+  </li>
+</ul>
+
+<h3 id="visual-studio-tools-for-tizen">Visual Studio Tools for Tizen</h3>
+
+<p>Visual Studio Tools for Tizen provides Tizen-specific tools to improve your productivity.</p>
+
+<p>You can create a Tizen .NET application project with the Project Wizard in Visual Studio Tools for Tizen. When you create a new project with a specific template, the Project Wizard uses it to automatically create basic functionalities and default project files and folders for the application.</p>
+
+<p><a href="https://marketplace.visualstudio.com/items?itemName=tizen.VSToolsforTizen" target="_blank"><img src="media/ic_docs_download.png" alt="Download" /></a> The Visual Studio Tools for Tizen extension is registered in the Visual Studio Marketplace. You can <a href="../vstools/install.md">install the extension</a> from the Visual Studio Marketplace in the Visual Studio IDE. To download the latest Visual Studio Tools for Tizen click the button. To use Visual Studio 2017, download <a href="https://marketplace.visualstudio.com/items?itemName=tizen.VisualStudioToolsforTizen">Visual Studio Tools for Tizen for Visual Studio 2017</a>.</p>
+
+<p>For more information, see <a href="../vstools/index.md">the guides of Visual Studio Tools for Tizen</a></p>
 
 								
             						
@@ -222,8 +256,8 @@
   <div id="disqus_thread"></div>
   <script>
     var disqus_config = function () {
-      this.page.url = 'https://samsung-test.github.io/latest//platform/about/mobile/';
-      this.page.identifier = 'https://samsung-test.github.io/latest//platform/about/mobile/';
+      this.page.url = 'https://samsung-test.github.io/latest//visualstudio/get-started/';
+      this.page.identifier = 'https://samsung-test.github.io/latest//visualstudio/get-started/';
     };
     (function() {
       var d = document, s = d.createElement('script');
@@ -253,20 +287,20 @@
     
         <li>
             <a 
-                href="platform/about/index" 
+                href="/visualstudio/get-started/index" 
                 data-target="#item1" 
                 data-toggle="collapse" 
                 data-parent="#stacked-menu"
-                aria-expanded=" true "
-                class=" not-collapsed "
+                aria-expanded=" false "
+                class=" collapsed "
                 >
-                    Platform Overview
+                    .NET Application
                     <span class="caret arrow"></span>
             </a>
             
 
             
-            <ul class="nav collapse in" aria-expanded="true" id="#item1">
+            <ul class="nav collapse" aria-expanded="false" id="#item1">
             
 
                 
@@ -274,34 +308,24 @@
                     
                     
                     <a 
-                        href="platform/about/overview/"
+                        href="visualstudio/get-started/overview/"
                         class=""
-                        aria-expanded=" true "
+                        aria-expanded=" false "
                         data-target="#item1" 
                         data-toggle="collapse" 
                         >
-                        Profiles
+                        Get Started
                         <span class="caret arrow"></span>
                     </a>
                     
                     
-                    <ul class="nav collapse in" aria-expanded="true" id="#item1">
+                    <ul class="nav collapse" aria-expanded="false" id="#item1">
                     
                         
                         <li>
                             
                             <a 
-                                href="platform/about/wearable/"
-                                class=""
-                                >
-                                Wearables
-                            </a>
-                        </li>
-                        
-                        <li>
-                            
-                            <a 
-                                href="platform/about/tv/"
+                                href="visualstudio/tv/tvfirst-app/"
                                 class=""
                                 >
                                 TV
@@ -311,72 +335,30 @@
                         <li>
                             
                             <a 
-                                href="platform/about/mobile/"
-                                class="active currentPage"
+                                href="visualstudio/wearable/wfirst-app/"
+                                class=""
+                                >
+                                Wearable
+                            </a>
+                        </li>
+                        
+                        <li>
+                            
+                            <a 
+                                href="visualstudio/mobile/mfirst-app/"
+                                class=""
                                 >
                                 Mobile
                             </a>
                         </li>
                         
-                    </ul>
-                    
-                </li>
-                
-                <li>
-                    
-                    
-                    <a 
-                        href="platform/versions/tizen-5-5-m2/"
-                        class=""
-                        aria-expanded=" true "
-                        data-target="#item2" 
-                        data-toggle="collapse" 
-                        >
-                        Versions
-                        <span class="caret arrow"></span>
-                    </a>
-                    
-                    
-                    <ul class="nav collapse in" aria-expanded="true" id="#item2">
-                    
-                        
                         <li>
                             
                             <a 
-                                href="platform/versions/tizen-5-0-m2/"
+                                href="visualstudio/nui/quickstart/"
                                 class=""
                                 >
-                                Tizen 5.0
-                            </a>
-                        </li>
-                        
-                        <li>
-                            
-                            <a 
-                                href="platform/versions/tizen-4-0-m2/"
-                                class=""
-                                >
-                                Tizen 4.0 M2
-                            </a>
-                        </li>
-                        
-                        <li>
-                            
-                            <a 
-                                href="platform/versions/tizen-4-0-m1/"
-                                class=""
-                                >
-                                Tizen 4.0 M1
-                            </a>
-                        </li>
-                        
-                        <li>
-                            
-                            <a 
-                                href="platform/versions/tizen-3-0/"
-                                class=""
-                                >
-                                Tizen 3.0
+                                NUI
                             </a>
                         </li>
                         
@@ -394,14 +376,14 @@
     
         <li>
             <a 
-                href="platform/developing/installing/" 
+                href="visualstudio/vstools/index/" 
                 data-target="#item2" 
                 data-toggle="collapse" 
                 data-parent="#stacked-menu"
                 aria-expanded=" false "
                 class=" collapsed "
                 >
-                    Platform Developing
+                    Visual Studio Tools for Tizen
                     <span class="caret arrow"></span>
             </a>
             
@@ -415,10 +397,10 @@
                     
                     
                     <a 
-                        href="platform/developing/installing/" 
+                        href="visualstudio/setup/quick_start_guide/" 
                         class=""
                         >
-                        Installing Development Tools
+                        Web Application Development
                     </a>
                     
                 </li>
@@ -427,94 +409,10 @@
                     
                     
                     <a 
-                        href="platform/developing/setting-up/" 
+                        href="visualstudio/setup/quick_start_guide_tizen_app_ts/" 
                         class=""
                         >
-                        Setting up Development Environment
-                    </a>
-                    
-                </li>
-                
-                <li>
-                    
-                    
-                    <a 
-                        href="platform/developing/cloning/" 
-                        class=""
-                        >
-                        Cloning Tizen Source Files
-                    </a>
-                    
-                </li>
-                
-                <li>
-                    
-                    
-                    <a 
-                        href="platform/developing/building/" 
-                        class=""
-                        >
-                        Building Packages Locally with GBS
-                    </a>
-                    
-                </li>
-                
-                <li>
-                    
-                    
-                    <a 
-                        href="platform/developing/building-all/" 
-                        class=""
-                        >
-                        Building All Packages Locally with GBS
-                    </a>
-                    
-                </li>
-                
-                <li>
-                    
-                    
-                    <a 
-                        href="platform/developing/contributing/" 
-                        class=""
-                        >
-                        Contributing Code to Tizen
-                    </a>
-                    
-                </li>
-                
-                <li>
-                    
-                    
-                    <a 
-                        href="platform/developing/creating/" 
-                        class=""
-                        >
-                        Creating Tizen Images with MIC
-                    </a>
-                    
-                </li>
-                
-                <li>
-                    
-                    
-                    <a 
-                        href="platform/developing/flashing/" 
-                        class=""
-                        >
-                        Flashing an Image to Device
-                    </a>
-                    
-                </li>
-                
-                <li>
-                    
-                    
-                    <a 
-                        href="platform/developing/tips/" 
-                        class=""
-                        >
-                        Development Tips
+                        Wearable Application Development
                     </a>
                     
                 </li>
@@ -529,14 +427,14 @@
     
         <li>
             <a 
-                href="platform/porting/overview/" 
+                href="visualstudio/setup/additional-requirements" 
                 data-target="#item3" 
                 data-toggle="collapse" 
                 data-parent="#stacked-menu"
                 aria-expanded=" false "
                 class=" collapsed "
                 >
-                    Porting
+                    Configure Tizen Studio
                     <span class="caret arrow"></span>
             </a>
             
@@ -550,10 +448,10 @@
                     
                     
                     <a 
-                        href="platform/porting/overview/" 
+                        href="visualstudio/setup/hardware-accelerated-execution-manager/" 
                         class=""
                         >
-                        Overview
+                        Hardware Acceleration for Tizen
                     </a>
                     
                 </li>
@@ -562,34 +460,10 @@
                     
                     
                     <a 
-                        href="platform/porting/kernel/" 
+                        href="visualstudio/setup/hardware-accelerated-execution-manager/" 
                         class=""
                         >
-                        Kernel
-                    </a>
-                    
-                </li>
-                
-                <li>
-                    
-                    
-                    <a 
-                        href="platform/porting/system/" 
-                        class=""
-                        >
-                        System
-                    </a>
-                    
-                </li>
-                
-                <li>
-                    
-                    
-                    <a 
-                        href="platform/porting/graphics-and-ui/" 
-                        class=""
-                        >
-                        Graphics and UI
+                        Hardware Acceleration for Tizen
                     </a>
                     
                 </li>
@@ -604,20 +478,39 @@
     
         <li>
             <a 
-                href="platform/reference/gerrit-usage" 
+                href="visualstudio/setup/faq" 
                 data-target="#item4" 
                 data-toggle="collapse" 
                 data-parent="#stacked-menu"
                 aria-expanded=" false "
                 class=" collapsed "
                 >
-                    Reference
+                    Frequently Asked Questions
+                    <span class="caret arrow"></span>
+            </a>
+            
+        </li>
+    
+        
+        
+        
+    
+        <li>
+            <a 
+                href="visualstudio/extension-sdk/overview" 
+                data-target="#item5" 
+                data-toggle="collapse" 
+                data-parent="#stacked-menu"
+                aria-expanded=" false "
+                class=" collapsed "
+                >
+                    Extension SDK
                     <span class="caret arrow"></span>
             </a>
             
 
             
-            <ul class="nav collapse" aria-expanded="false" id="#item4">
+            <ul class="nav collapse" aria-expanded="false" id="#item5">
             
 
                 
@@ -625,111 +518,37 @@
                     
                     
                     <a 
-                        href="platform/reference/gerrit-usage/" 
-                        class=""
-                        >
-                        Gerrit
-                    </a>
-                    
-                </li>
-                
-                <li>
-                    
-                    
-                    <a 
-                        href="platform/reference/gbs/gbs-overview/"
+                        href="visualstudio/extension-sdk/in-app-purchase/"
                         class=""
                         aria-expanded=" false "
-                        data-target="#item2" 
+                        data-target="#item1" 
                         data-toggle="collapse" 
                         >
-                        Git Build System (GBS)
+                        In app purchases
                         <span class="caret arrow"></span>
                     </a>
                     
                     
-                    <ul class="nav collapse" aria-expanded="false" id="#item2">
+                    <ul class="nav collapse" aria-expanded="false" id="#item1">
                     
                         
                         <li>
                             
                             <a 
-                                href="platform/reference/gbs/gbs-overview/"
+                                href="visualstudio/extension-sdk/inmobi/"
                                 class=""
                                 >
-                                Overview
+                                In Mobi
                             </a>
                         </li>
                         
                         <li>
                             
                             <a 
-                                href="platform/reference/gbs/gbs.conf/"
+                                href="visualstudio/extension-sdk/inmobi/"
                                 class=""
                                 >
-                                GBS Configuration
-                            </a>
-                        </li>
-                        
-                        <li>
-                            
-                            <a 
-                                href="platform/reference/gbs/gbs-maintenance-models/"
-                                class=""
-                                >
-                                GBS Maintenance Models
-                            </a>
-                        </li>
-                        
-                    </ul>
-                    
-                </li>
-                
-                <li>
-                    
-                    
-                    <a 
-                        href="platform/reference/mic/mic-overview/"
-                        class=""
-                        aria-expanded=" false "
-                        data-target="#item3" 
-                        data-toggle="collapse" 
-                        >
-                        MIC Image Creator
-                        <span class="caret arrow"></span>
-                    </a>
-                    
-                    
-                    <ul class="nav collapse" aria-expanded="false" id="#item3">
-                    
-                        
-                        <li>
-                            
-                            <a 
-                                href="platform/reference/mic/mic-overview/"
-                                class=""
-                                >
-                                Overview
-                            </a>
-                        </li>
-                        
-                        <li>
-                            
-                            <a 
-                                href="platform/reference/mic/mic-customize-image/"
-                                class=""
-                                >
-                                Customizing Images
-                            </a>
-                        </li>
-                        
-                        <li>
-                            
-                            <a 
-                                href="platform/reference/mic/mic-reference/"
-                                class=""
-                                >
-                                MIC Reference
+                                VMax
                             </a>
                         </li>
                         
@@ -746,7 +565,7 @@
     </ul>
 </div>
 <script>
-    $("a[href$='/platform/about/mobile/']").addClass("active currentPage");
+    $("a[href$='/visualstudio/get-started/']").addClass("active currentPage");
 </script>
 						</div>
 					</nav>
@@ -756,7 +575,7 @@
 								<div class="feedback-links">
 									<ul>
 										<li>
-                                            <a href="https://github.com/samsung-test/samsung-test.github.io/edit/5.5/platform/about/mobile.md" target="_blank">
+                                            <a href="https://github.com/samsung-test/samsung-test.github.io/edit/5.5/visualstudio/get-started/index.md" target="_blank">
                                                 <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                                                 Edit Page
                                             </a>
@@ -773,11 +592,10 @@
 									<div id="side-toc-title">On this page:</div>
 									
 <ul id="my_toc" class="inline_toc">
-  <li><a href="#developing-applications-for-tizen-mobile" class="nomunge">Developing Applications for Tizen Mobile</a></li>
-  <li><a href="#design-guidelines-for-tizen-mobile" class="nomunge">Design Guidelines for Tizen Mobile</a></li>
-  <li><a href="#tizen-mobile-devices" class="nomunge">Tizen Mobile Devices</a>
+  <li><a href="#managed-runtime-advantages" class="nomunge">Managed Runtime Advantages</a></li>
+  <li><a href="#tizen-net-features-and-components" class="nomunge">Tizen .NET Features and Components</a>
     <ul>
-      <li><a href="#reference-mobile-device" class="nomunge">Reference Mobile Device</a></li>
+      <li><a href="#visual-studio-tools-for-tizen" class="nomunge">Visual Studio Tools for Tizen</a></li>
     </ul>
   </li>
 </ul>
