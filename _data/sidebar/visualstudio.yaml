@@ -5,12 +5,20 @@
               - page: Installing Visual Studio Tools For Tizen 
                 url: visualstudio/vstools/install/
                 subfolderitems:
-              - page: Visual Studio Tools For Tizen 
-                url: visualstudio/vstools/install/
+              - page: API privilege Checker Tool
+                url: visualstudio/vstools/api-privilege-checker/
+              - page: Certificate Manager Tool  
+                url: visualstudio/vstools/certificate-manager/
+              - page: Certificate Manager Tool  
+                url: visualstudio/vstools/device-manager/
+              - page: Certificate Manager Tool  
+                url: visualstudio/vstools/emulator-manager/
+              - page: Certificate Manager Tool  
+                url: visualstudio/vstools/log-viewer/
       - title: Visual Studio Code extension For Tizen
-        url: visualstudio/vscode-ext/index/
+        url: visualstudio/vscode-ext/
       - title: Visual Studio Mac Extension For Tizen 
-        url: visualstudio/vstools-mac/index/
+        url: visualstudio/vstools-mac/
           
            
              

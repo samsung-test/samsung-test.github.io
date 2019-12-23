@@ -1,3 +1,10 @@
+---
+title:  Installing Visual Studio Tools For Tizen 
+desc: Installing Visual Studio Tools For Tizen 
+keywords: Tizen, OS, Open Source
+comments: true
+---
+
 # Introduction
 
 Visual Studio Tools for Tizen provides Tizen-specific tools to improve your productivity. You can create, build, and debug Tizen applications using Visual Studio. Using Visual Studio Tools for Tizen you can:
