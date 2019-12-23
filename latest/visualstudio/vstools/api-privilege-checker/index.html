@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon"  href="/favicon.ico" />
+<title>API and Privilege Checker</title>
+<meta name="description" content="API and Privilege Checker"/>
+<meta name="keywords" content="Tizen, OS, Open Source"/>
+<base id="baseURL" href="/latest/" />
+<meta id="docsVersion" content="5.5" />
+<meta name="last-modified" content="2019-12-23 12:28:23 +0530" />
+<meta http-equiv="cache-control" content="max-age=24" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-store" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="Expires" content="600" />
+
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/pygments/perldoc.css">
+<link rel="stylesheet" href="/css/style.css?v=23122019">
+<link rel="stylesheet" href="/css/github.css?v=23122019">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154449679-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-154449679-1');
+</script>
+
+</head>
+<body class=" latestVersion">
+	 
+	<header>
+    <div class="header">
+        <nav class="nav-secondary-tabs affix" >
+            <div class="container-fluid">
+                <div class="navbar-collapse" aria-expanded="false" style="height: 1px;">
+                    <div class="sidebar-toggle">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</div>
+<div class="nav-container">
+    <a class="logo" href="/" title="Tizen Documentation">
+        Tizen
+    </a>
+    <div id="tabs">
+        
+        
+        <ul class="tabs" id="jsTOCHorizontal">
+            <li class="">
+                <a href="design/">Design</a>
+            </li>
+            <li class="">
+                <a href="platform/">Platform</a>
+            </li>
+            <li class="">
+                <a href="application/">Application</a>
+            </li>
+            <li class="active dropdown">
+                <a href="visualstudio/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visual Studio<span class="caret"></span></a>
+                <ul class="dropdown-menu nav-main">    
+                    <li><a href="visualstudio/vstools/">VS Tools for Tizen</a></li>
+                    <li><a href="visualstudio/vscode-ext/">VS Code Extension For Tizen</li>
+                    <li><a href="visualstudio/vstools-mac/overview/">VS For Mac Extension for Tizen</a></li>
+                 </ul>
+            </li>
+            <li class="">
+                <a href="tizenstudio/setup/overview/">Tizen Studio</a>
+            </li>
+             <li class=" dropdown">
+                <a href="iot/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">IoT<span class="caret"></span></a>
+                <ul class="dropdown-menu nav-main">
+                    <li><a href="iot/extensionsdk/">IoT Extension SDK</a></li>
+                    <li><a href="iot/iot-partners/nubison/">IoT partners</a></li>
+                 </ul>
+            </li>
+            <li class="">
+                <a href="tizenstudio/setup/overview/">Blogs</a>
+            </li>
+            <li class="">
+                <a href="tizenstudio/setup/overview/">Community</a>
+            </li>
+        </ul>
+    </div>
+    <div class="ctrl-right hidden-xs hidden-sm">
+        <a href="javascript:void(0)" id="menu-toggle"><i class="fa fa-indent" aria-hidden="true"></i></a>
+        <div class="widgetVersionSwitcher"></div>
+    </div>
+    <div class="search-form">
+        <form action="search.html">
+            <input class="search-field form-control ds-input st-search-input" value="" name="q" placeholder="Search the docs" type="search" autocomplete="off" spellcheck="false" dir="auto">
+            <button type="submit" class="search-button">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+    </div>
+    
+</div>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+    <div class="wrapper right-open">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-body">
+					<main class="col-content content">
+						<section class="section">
+							<nav class="breadcrumbs bootstrap hidden-sm-down">
+   <ol class="breadcrumb list-unstyled" vocab="http://schema.org/" typeof="BreadcrumbList">
+
+       
+          
+      
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <a property="item" typeof="WebPage" href="/latest/">
+            <span property="name">Documentation</span>
+            <meta property="position" content="1" />
+         </a>
+      </li>
+       
+          
+      
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <a property="item" typeof="WebPage" href="/latest/visualstudio/">
+            <span property="name">Tizen .NET Application</span>
+            <meta property="position" content="2" />
+         </a>
+      </li>
+       
+          
+      
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <a property="item" typeof="WebPage" href="/latest/visualstudio/vstools/">
+            <span property="name">Visual Studio Tools for Tizen</span>
+            <meta property="position" content="3" />
+         </a>
+      </li>
+       
+          
+      
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+         <span property="name">API and Privilege Checker</span>
+         <meta property="position" content="4" />
+      </li>
+      
+   </ol>
+</nav>
+
+
+							<div class="widgetLatestVersionNotification"></div>
+							<h1 class="page-title">
+								API and Privilege Checker
+							</h1>
+							<div class="page-read-time">
+								<span class="reading-time" title="Estimated read time">
+    
+    
+    2 mins read
+    
+</span>
+							</div>
+							<div class="page-content">
+								<h1 id="api-and-privilege-checker">API and Privilege Checker</h1>
+
+<p>Tizen provides an API and privilege checker tool, Tizen API Checker, which enables you to detect potential issues with privileges and APIs in your Tizen .NET application. This section explains how to:</p>
+<ul>
+  <li>Run Tizen API Checker</li>
+  <li>Quick-fix Tizen API Checker findings</li>
+</ul>
+
+<p>Tizen API Checker allows you to detect the following issues at compile time and fix them using the Quick Actions functionality of Visual Studio:</p>
+
+<ul>
+  <li>
+    <p><strong>Undefined privileges</strong></p>
+
+    <p>If an application uses a method, which requires a privilege that is not defined in the application manifest file, an error message appears.</p>
+
+    <p>For example, the <code class="highlighter-rouge">GetCallHandleList()</code> method of the <a href="https://developer.tizen.org/dev-guide/csapi/api/Tizen.Telephony.Call.html">Tizen.Telephony.Call</a> class requires the <code class="highlighter-rouge">http://tizen.org/privilege/telephony</code> privilege. If you use this method in your application without defining the privilege in the manifest file, an error appears when you try to run the application.</p>
+  </li>
+  <li>
+    <p><strong>Unused privileges</strong></p>
+
+    <p>If an application contains privileges, which are not used by any APIs in the application, a warning message appears.</p>
+  </li>
+</ul>
+
+<h2 id="run-tizen-api-checker">Run Tizen API Checker</h2>
+
+<p>To run Tizen API Checker in your application, follow these steps:</p>
+
+<ol>
+  <li>In the <strong>Solution Explorer</strong> view, select the project you want to analyze.</li>
+  <li>
+    <p>In the Visual Studio menu, select <strong>Tools &gt; Tizen &gt; Run APIChecker on Solution</strong>.</p>
+
+    <p><img src="media/api-checker-launch.png" alt="Run API and Privilege Checker" /></p>
+  </li>
+</ol>
+
+<p>When you run Tizen API Checker, the project is automatically built and Tizen API Checker verification is done during the build process.
+When the verification is completed, the detected issues are listed in the <strong>Error List</strong> view. The view contains a detailed description of an issue, the file name and the line number in which the issue occurred. \
+Undefined privileges are reported as errors, while unused privileges are reported as warnings.</p>
+
+<p><img src="media/api-checker-issues.png" alt="Error list" /></p>
+
+<h2 id="quick-fix-tizen-api-checker-findings">Quick-fix Tizen API Checker Findings</h2>
+
+<p>Undefined privileges are reported as errors. To fix the undefined privilege errors, follow these steps:</p>
+
+<ol>
+  <li>
+    <p>In the <strong>Error List</strong> view, click the missing privilege error.</p>
+
+    <p>The Quick Actions functionality in Visual Studio displays a light bulb on the left margin, next to the code line with the error.</p>
+  </li>
+  <li>
+    <p>To reslove the error automatically, click the light bulb <img src="media/yellow_bulb_dropdown.png" alt="yellow bulb drop-down" />, and select the applicable item from the drop-down list.</p>
+
+    <p>You can see the newly-added privilege in the <code class="highlighter-rouge">tizen-manifest.xml</code> file. The missing privilege error is automatically removed from the <strong>Error List</strong> view.</p>
+
+    <p><img src="media/api-checker-quickfix.png" alt="Quick-fixing" /></p>
+  </li>
+</ol>
+
+<p>Unused privileges are reported as warnings. You can execute the application successfully with warnings. 
+To remove the warnings, you can remove the unused privileges from the<code class="highlighter-rouge">tizen-manifest.xml</code> file.</p>
+
+								
+            						
+
+
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = 'https://samsung-test.github.io/latest//visualstudio/vstools/api-privilege-checker/';
+      this.page.identifier = 'https://samsung-test.github.io/latest//visualstudio/vstools/api-privilege-checker/';
+    };
+    (function() {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://samsung-test.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+         						
+							</div>
+						</section>
+					</main>
+					<nav class="col-nav">
+						<div id="sidebar-nav" class="sidebar hidden-sm hidden-xs">
+						    
+
+
+<div id="navbar" class="nav-sidebar">
+    <ul class="nav" id="jsTOCLeftNav">
+        
+        
+        
+        
+    
+        <li>
+            <a 
+                href="visualstudio/vstools/index" 
+                data-target="#item1" 
+                data-toggle="collapse" 
+                data-parent="#stacked-menu"
+                aria-expanded=" true "
+                class=" not-collapsed "
+                >
+                    Overview
+                    <span class="caret arrow"></span>
+            </a>
+            
+
+            
+            <ul class="nav collapse in" aria-expanded="true" id="#item1">
+            
+
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="visualstudio/vstools/install/" 
+                        class=""
+                        >
+                        Installing Visual Studio Tools For Tizen
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="visualstudio/vstools/api-privilege-checker/" 
+                        class="active currentPage"
+                        >
+                        API privilege Checker Tool
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="visualstudio/vstools/certificate-manager/" 
+                        class=""
+                        >
+                        Certificate Manager Tool
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="visualstudio/vstools/device-manager/" 
+                        class=""
+                        >
+                        Certificate Manager Tool
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="visualstudio/vstools/emulator-manager/" 
+                        class=""
+                        >
+                        Certificate Manager Tool
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+                    <a 
+                        href="visualstudio/vstools/log-viewer/" 
+                        class=""
+                        >
+                        Certificate Manager Tool
+                    </a>
+                    
+                </li>
+                
+            </ul>
+            
+        </li>
+    
+        
+        
+        
+    
+        <li>
+            <a 
+                href="visualstudio/vscode-ext/" 
+                data-target="#item2" 
+                data-toggle="collapse" 
+                data-parent="#stacked-menu"
+                aria-expanded=" false "
+                class=" collapsed "
+                >
+                    Visual Studio Code extension For Tizen
+                    <span class="caret arrow"></span>
+            </a>
+            
+        </li>
+    
+        
+        
+        
+    
+        <li>
+            <a 
+                href="visualstudio/vstools-mac/" 
+                data-target="#item3" 
+                data-toggle="collapse" 
+                data-parent="#stacked-menu"
+                aria-expanded=" false "
+                class=" collapsed "
+                >
+                    Visual Studio Mac Extension For Tizen
+                    <span class="caret arrow"></span>
+            </a>
+            
+        </li>
+    
+        
+        
+    </ul>
+</div>
+<script>
+    $("a[href$='/visualstudio/vstools/api-privilege-checker/']").addClass("active currentPage");
+</script>
+						</div>
+					</nav>
+					<div class="col-toc">
+						<div class="sidebar hidden-xs hidden-sm">
+							<div class="toc-nav">
+								<div class="feedback-links">
+									<ul>
+										<li>
+                                            <a href="https://github.com/samsung-test/samsung-test.github.io/edit/5.5/visualstudio/vstools/api-privilege-checker.md" target="_blank">
+                                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                                Edit Page
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://github.com/samsung-test/samsung-test.github.io/issues/new" class="nomunge" target="_blank">
+                                                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                                Report Issue
+                                            </a>
+                                        </li>
+									</ul>
+								</div>
+								   
+									<div id="side-toc-title">On this page:</div>
+									
+<ul id="my_toc" class="inline_toc">
+  <li><a href="#run-tizen-api-checker" class="nomunge">Run Tizen API Checker</a></li>
+  <li><a href="#quick-fix-tizen-api-checker-findings" class="nomunge">Quick-fix Tizen API Checker Findings</a></li>
+</ul>
+
+
+								</div>
+								
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+    <div class="container-fluid">
+  <div class="top_footer">
+    <div class="footer-nav">
+      <nav class="footer_sub_nav">
+        <ul class="menu">
+          <li><a href="https://developer.tizen.org/">Developer</a></li>
+          <li><a href="https://dashboard.tizen.org/">Dashboard</a></li>
+          <li><a href="https://craftroom.tizen.org/">Craftroom</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="bottom_footer">
+    <div class="footer-copyright col-xs-12 col-md-8">
+      <p class="copyright">
+        Copyright &copy; 2019 Tizen Inc. All rights reserved.
+      </p>
+    </div>
+    <div class="footer_social_nav">
+      <ul class="nav-social">
+        <li class="fa fa-github"><a href="https://github.com/samsung-test">GitHub</a></li>  
+        <li class="fa fa-twitter"><a href="https://twitter.com/TizenProject">Twitter</a></li>
+        <li class="fa fa-facebook"><a href="http://www.facebook.com/pages/Tizen-Project">Facebook</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+    <div id="templates"></div>
+    <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/common.js?v=23122019"></script>
+<script type="text/javascript" src="/js/handlebars-v4.0.11.js?v=23122019"></script>
+<script type="text/javascript" src="/js/widgets-data.js?v=23122019"></script>
+<script type="text/javascript" src="/js/widgets.js?v=23122019"></script>
+<script type="text/javascript" src="/js/highlight.pack.js"></script>
+<script type="text/javascript" src="/js/tocs.js"></script>
+<script type="text/javascript" src="/js/menu.js"></script>
+<script type="text/javascript" src="/js/stickyfill.min.js"></script>
+<script type="text/javascript" src="/js/metadata.js"></script>
+<script type="text/javascript" src="/js/docs.js"></script>
+
+</body>
+</html>
