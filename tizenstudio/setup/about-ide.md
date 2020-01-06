@@ -8,7 +8,7 @@ keywords: Tizen, OS, Open Source
 
 Tizen Studio is the official IDE for developing Web applications and Native applications for Tizen. Tizen Studio consists of a comprehensive set of tools such as emulator, toolchain, sample code, documentation, and so on. These tools are used to develop the Tizen applications. Tizen Studio runs on Windows®, Ubuntu, and macOS. The following figure shows various benefits that you can achieve using the IDE tools:
 
-![Step 2](./media/ide.PNG)
+![Step 2](./tizenstudio/setup/media/ide.PNG)
 
 ## Tizen Studio Views
 
@@ -25,7 +25,7 @@ This view shows the target or emulator log when applications are running.
 -	**Property**:
 This view shows the property of selected files on Project Explorer, such as file path, size, and name.
 
-![Step 1](./media/1.PNG)
+![Step 1](./tizenstudio/setup/media/1.PNG)
 
 ## Tizen Studio Tools
 
