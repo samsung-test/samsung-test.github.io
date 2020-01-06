@@ -4,8 +4,6 @@ desc: Install
 keywords: Tizen, OS, Open Source, HAEM
 ---
 
-## Install Tizen Studio using CLI  
-
 This page explains how to install Command Line Interface (CLI) version of Tizen Studio. The CLI installer provides functional tools for running Tizen Studio without a Graphical User Interface (GUI) environment.
 The CLI installation is mostly intended for advanced developers. The Tizen Studio CLI installation is supported on all the major operating systems. 
 
