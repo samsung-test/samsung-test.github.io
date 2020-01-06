@@ -1,3 +1,10 @@
+---
+title:  Get Started for Wearable
+desc: Get Started for Wearable
+keywords: Tizen, OS, Open Source
+comments: true
+---
+
 # Get Started for Wearable
 
 The Get Started Tutorial teaches you how to create basic Tizen applications for wearable device, especially smart watches.
