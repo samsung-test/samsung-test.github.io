@@ -1,3 +1,10 @@
+---
+title:  Frequently Asked Questions
+desc: FAQ's
+keywords: Tizen, OS, Open Source
+comments: true
+---
+
 # Get Started for Mobile
 
 The Get Started Tutorial teaches you how to create basic Tizen applications for mobile devices.
