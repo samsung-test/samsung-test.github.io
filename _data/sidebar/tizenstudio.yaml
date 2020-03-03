@@ -1,0 +1,6 @@
+- sidebar:
+      - title: Tizen Studio
+        url: tizenstudio/
+        subfolderitems:
+          - page: Set Up
+            url:  tizenstudio/setup/install-sdk/
