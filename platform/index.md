@@ -7,8 +7,6 @@ Tizen is an open source software stack created for a wide array of devices with 
 
 The Tizen operating system is available in multiple profiles to serve different industry requirements. The current Tizen profiles are Tizen IVI (in-vehicle infotainment), Tizen Mobile, Tizen TV, and Tizen Wearable. Additionally, as of Tizen 3.0, all profiles are built on top of a common, shared infrastructure called Tizen Common.
 
-With Tizen:
-
 - **Device manufacturers** can begin with 1 of the profiles and modify it to serve their own needs, or use the Tizen Common base to develop a new profile to meet the memory, processing, and power requirements of any device and quickly bring it to market.
 - **Mobile operators** can work with device partners to customize the operating system and user experience to meet the needs of specific customer segments or demographics.
 - **Application developers and ISVs** can take advantage of the power of native application development with the flexibility of unparalleled HTML5 support. Tizen also offers the potential for application developers to extend their reach to new "smart devices" running Tizen, including wearables, consumer electronics (such as TVs, gaming consoles, and DVRs), cars, and appliances.
