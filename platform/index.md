@@ -26,4 +26,4 @@ To get started with development:
 
   Linux developers use the Git and [GBS command-line tools](reference/gbs/gbs-overview.md) for most of their work. Source code is managed by [Gerrit](reference/gerrit-usage.md), a code review system for Git-based projects. Source code cloning, development, and review are done under ACL (Access Control Lists). Make sure you have access rights to them.
 
-Start by reading the [Development Workflow](about/work-flow.md) page.
+  Start by reading the [Development Workflow](about/work-flow.md) page.
