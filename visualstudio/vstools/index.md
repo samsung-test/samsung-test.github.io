@@ -8,6 +8,7 @@ comments: true
 # Visual Studio Tools for Tizen
 
 Visual Studio Tools for Tizen provides Tizen-specific tools to improve your productivity:
+- HELLO 
 
 - [Project Wizard](tools/project-wizard.md)
 
