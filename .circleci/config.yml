@@ -26,7 +26,6 @@ jobs:
           rm -rf ../output
           mkdir ../output
           cp -r _site/* ../output
-          gem update --system 3.4.17
 
           LATEST_VERSION=$(curl https://raw.githubusercontent.com/samsung-test/samsung-test.github.io/toc/js/latest-version.txt)
           if [[ $LATEST_VERSION = $CIRCLE_BRANCH ]]
